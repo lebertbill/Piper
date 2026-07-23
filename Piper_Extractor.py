@@ -274,7 +274,7 @@ with st.sidebar:
         agents_config['molecular_model'] = st.text_input("Molecular Model", value=agents_config.get('molecular_model', 'openai/gpt-5-mini'))
         agents_config['structure_parser_model'] = st.text_input("Structure Parser Model", value=agents_config.get('structure_parser_model', 'google/gemini-3-flash-p'))
         agents_config['classifier_model'] = st.text_input("Classifier Model", value=agents_config.get('classifier_model', 'openai/gpt-5-mini'))
-        agents_config['smiles_extractor_model'] = st.text_input("SMILES Extractor Model", value=agents_config.get('smiles_extractor_model', 'openai/gpt-5-mini'))
+    #    agents_config['smiles_extractor_model'] = st.text_input("SMILES Extractor Model", value=agents_config.get('smiles_extractor_model', 'openai/gpt-5-mini'))
         agents_config['label_resolver_model'] = st.text_input("Label Resolver Model", value=agents_config.get('label_resolver_model', 'openai/gpt-5-mini'))
         agents_config['advanced_structure_model'] = st.text_input("Advanced Structure Model", value=agents_config.get('advanced_structure_model', 'google/gemini-3-flash-preview'))
         agents_config['reaction_table_detector_model'] = st.text_input("Reaction Table Detector Model", value=agents_config.get('reaction_table_detector_model', 'openai/gpt-5-mini'))
