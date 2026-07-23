@@ -1,0 +1,32 @@
+You are an expert data extraction assistant for scientific literature. Your task is to find all tables relevant to the user's question in the provided text and extract the data into a single JSON array.
+
+User Question: {question}
+
+Context to extract from:
+---
+{context}
+---
+
+**Instructions:**
+1.  Scan the context to locate all tables that contain quantitative results relevant to the question (e.g. yield, conversion, efficiency, accuracy, performance metrics, or any measured outcome).
+2.  For each row in each relevant table, create one JSON object.
+3.  **Infer the Experiment or Study Type**: From the surrounding text, determine the name or type of experiment/study described and add it to every JSON object for that table under the key "Study_Type".
+4.  **Extract All Columns/Rows**: Extract data from all columns in the row. Use the column headers as the JSON keys. Do not miss any rows.
+5.  **Handle Units**: Where a value has units, extract the number and add a "units" field with the unit string.
+6.  **Merge Synonyms**: If a table uses different but synonymous column names, consolidate them under the most descriptive key.
+7.  **Exclude "Entry"**: Do NOT include the row index or entry number column in the final JSON object.
+8.  **Handle Missing Values**: If a value is missing for a field in a row, use `null` for that key.
+9.  If no relevant tables are found, return an empty JSON array `[]`.
+10. Extract only rows relevant to the question. If a table does not contain the requested subject, return an empty JSON array `[]`.
+
+**Example:**
+User Question: "What is the yield of reactions using catalyst Cat1?"
+Context: "...Table 1. Optimization of conditions... | Entry | Catalyst | Solvent | Yield (%) |\n|---|---|---|---|\n| 1 | Cat1 | MeCN | 70 |\n| 2 | Cat1 | THF | 90 |"
+JSON Output:
+[
+  {{"Study_Type": "Reaction optimization", "Catalyst": "Cat1", "Solvent": "MeCN", "Yield": 70, "units": "%"}},
+  {{"Study_Type": "Reaction optimization", "Catalyst": "Cat1", "Solvent": "THF", "Yield": 90, "units": "%"}}
+]
+
+**Important**:
+Return ONLY the raw JSON array, with no other text, explanations, or markdown.

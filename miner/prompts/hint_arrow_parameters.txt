@@ -1,0 +1,20 @@
+ARROW PARAMETERS — Additional Extraction Requirement
+=====================================================
+
+The structure parser has confirmed that this reaction scheme contains reagents, catalysts,
+or conditions written directly above or below the reaction arrow — not just inside the table.
+{arrow_mapping_line}
+What this means for extraction:
+- These arrow-level parameters are GLOBAL to the reaction: they apply to every single row
+  in the table unless a specific row explicitly overrides them.
+- Do NOT silently absorb them into a generic "conditions" bucket. Each parameter (catalyst,
+  ligand, base, solvent, oxidant, light source, temperature, time, etc.) must appear as its
+  own structured condition entry in EVERY reaction object you produce.
+- If the table varies one of these parameters across rows (e.g., different catalysts per row),
+  use the row-specific value for that entry and keep all other arrow parameters constant.
+- Pay attention to stoichiometry notation above the arrow (e.g., "10 mol%", "2.0 equiv",
+  "1.0 M") — capture value and unit separately.
+
+Example: if the arrow shows "4-Dimethylaminopyridine (1 mol%), Cs2CO3, MeCN, blue LEDs, rt, 4 hr"
+and the table only varies the base, then every extracted entry must still carry the 4-Dimethylaminopyridine
+catalyst, solvent, light source, temperature, and time as individual conditions.

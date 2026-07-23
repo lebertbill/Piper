@@ -1,0 +1,12 @@
+# Pinned requirements for the isolated visualheist venv.
+# This venv is SEPARATE from other internal tools...
+# transformers<=4.49 while the main Piper venv uses 4.57+.
+# The venv is auto-created by miner/visualheist_extractor.py on first use.
+transformers==4.49.0
+torch
+Pillow
+pdf2image
+einops
+safetensors
+huggingface_hub
+timm

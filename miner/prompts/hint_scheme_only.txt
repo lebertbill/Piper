@@ -1,0 +1,21 @@
+IMAGE/TABLE RELATIONSHIP — Scheme Image + Markdown Text
+========================================================
+
+The structure parser has determined that for this item:
+- The IMAGE contains ONLY the reaction scheme (arrow, reactants, products, arrow-level
+  conditions). The table data rows are NOT embedded in the image.
+- A MARKDOWN TEXT version of the table has been extracted from the document and is
+  provided separately below. This text contains all the row-by-row data.
+
+What this means for extraction:
+- Use the IMAGE as the authoritative source for:
+    • Reactant and product structures (SMILES via OCSR tools)
+    • Reaction arrow conditions (catalyst, base, solvent, temperature, time, etc.)
+    • Any structural drawings or labels visible in the scheme
+- Use the MARKDOWN TABLE TEXT as the authoritative source for:
+    • All individual row entries (conditions, yields, entry IDs)
+    • Exact column values — the markdown text is more reliable than trying to OCR
+      a table that is not present in the image
+- Do NOT attempt to count rows from the image — use the markdown row count.
+- Do NOT ignore the markdown table in favour of the image for row data.
+  The image scheme provides the reaction context; the text provides the data.

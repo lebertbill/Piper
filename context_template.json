@@ -1,0 +1,59 @@
+{
+    "question": " ",
+    "folder_path": " ",
+    "model": {
+        "mode": "remote",
+        "rag_model_name": "openai/gpt-4o",
+        "chunk_summarization_model": "openai/gpt-4o",
+        "model_name": "openai/gpt-4o",
+        "base_url": "https://openrouter.ai/api/v1",
+        "openrouter_url": "https://openrouter.ai/api/v1",
+        "max_summary_words": 500,
+        "extraction_model": "openai/gpt-4o",
+        "hybrid_synthesis_model": "google/gemini-2.5-flash",
+        "agents": {
+            "article_context_model": "openai/gpt-4o",
+            "reaction_model": "openai/gpt-4o",
+            "text_reaction_model": "openai/gpt-4o",
+            "r_group_model": "openai/gpt-4o",
+            "molecular_model": "openai/gpt-4o",
+            "structure_parser_model": "google/gemini-3-flash-preview",
+            "classifier_model": "openai/gpt-4o",
+            "label_resolver_model": "google/gemini-3-flash-preview",
+            "advanced_structure_model": "google/gemini-3-flash-preview",
+            "reaction_table_detector_model": "openai/gpt-4o",
+            "fixed_condition_extractor_model": "openai/gpt-4o",
+            "smiles_repair_model": "openai/gpt-4o"
+        },
+        "query_classification_model": "openai/gpt-4o",
+        "entity_extraction_model": "openai/gpt-4o"
+    },
+    "embedding": {
+        "provider": "gemini",
+        "gemini_model": "google/gemini-embedding-2-preview",
+        "faiss_index_path": "papers_faiss",
+        "embedding_model": "google/gemini-embedding-2-preview"
+    },
+    "chunking": {
+        "chunk_words": 600,
+        "chunk_overlap_words": 120,
+        "max_summary_words": 250
+    },
+    "retrieval": {
+        "top_k_general": 8,
+        "top_k_filtered": 6,
+        "top_k_structured": 20
+    },
+    "crossref": {
+        "email": " "
+    },
+    "debug_mode": false,
+    "query_responder": true,
+    "chunk_by_document": false,
+    "enable_visualheist_fallback": true,
+    "force_reingest": false,
+    "build_global_labels": false,
+    "enable_scope_table_processing": true,
+    "force_enable_visualheist_fallback": false,
+    "extracted_data_root": "extracted_data"
+}

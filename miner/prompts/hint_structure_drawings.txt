@@ -1,0 +1,22 @@
+ADDITIONAL STRUCTURE DRAWINGS — Extra Molecular Structures in Image
+====================================================================
+
+The structure parser has identified that this image contains molecular structures
+drawn OUTSIDE the main reaction arrow scheme — for example, in a corner legend box,
+an inset panel, a footnote region, or alongside the table rows.
+{labels_line}
+What this means for extraction:
+- These are NOT part of the reaction arrow itself (they are not reactants or products
+  of the main transformation), but they ARE chemically meaningful — they typically
+  represent reagents, solvents, catalysts, ligands, or reference compounds that the
+  table cells refer to by a short label or abbreviation.
+- When you encounter a table cell value (e.g., "Solvent A", "L3", "ox-1") that matches
+  a label on one of these drawn structures, treat the drawn structure as the full
+  chemical identity of that cell value.
+- Do NOT guess or fabricate SMILES for these compounds — their structures are drawn
+  explicitly in the image. Use your visual understanding to identify them.
+- If a drawn structure has no visible label, it is still worth noting its approximate
+  structure in 'additional_info' if it appears contextually relevant to a table row.
+- These structures are also being resolved by the label registry system, which will
+  supply verified SMILES after extraction. Your role is to correctly link cell values
+  to their labels so the registry can match them.

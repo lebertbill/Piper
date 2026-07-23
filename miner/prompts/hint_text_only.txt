@@ -1,0 +1,16 @@
+IMAGE/TABLE RELATIONSHIP — Text-Only Extraction
+================================================
+
+The structure parser has determined that NO reaction image is available for this item.
+The table data exists only as Markdown text — there is no scheme image to analyse.
+
+What this means for extraction:
+- Extract ALL reaction data from the Markdown table text provided below.
+- You will not have visual access to molecular structures, so rely on:
+    • Text-based SMILES or InChI strings if present in the table
+    • Chemical names written in the table cells or caption
+    • Abbreviations that can be resolved from context or the document text
+- If SMILES cannot be determined from text alone, record the chemical name or
+  abbreviation as the 'text' field and leave 'smiles' empty — do not guess structures.
+- Column headers, units, and footnotes should still be parsed and expanded normally.
+- Do not fabricate structural data that is not present in the text.

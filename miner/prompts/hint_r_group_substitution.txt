@@ -1,0 +1,22 @@
+R-GROUP SUBSTITUTION — Variable Structure Expansion Required
+=============================================================
+
+The structure parser has confirmed that this image uses explicit R-group notation:
+the reaction scheme draws a GENERAL structure with named variable substituents
+(R¹, R², R³, Ar, Ar¹, X, Y, etc.) rather than specific molecules, and the table
+enumerates the concrete substituent values for each row/entry.
+
+What this means for extraction:
+- The drawn structure is a TEMPLATE, not a real molecule. Do not extract its SMILES
+  as-is — it will contain asterisks (*) or R-group placeholders.
+- For EACH table row, read the R-group values from that row (e.g., R¹ = OMe, R² = CF3)
+  and substitute them into the template SMILES to produce a specific, valid SMILES string.
+- Record the exact substituent values used in the 'additional_info' field for that entry
+  so the substitution is transparent and auditable.
+- If a row is missing a value for one of the R-groups, do your best to infer it from
+  context (e.g., a "standard" column or a baseline entry) or mark it as unknown.
+- Resolve all asterisks (*) in tool-provided SMILES using the visual scheme image before
+  including them in the output. A final SMILES containing * is a failure.
+
+Example: if the scheme shows Ar-C(=O)-R¹ and row 3 has Ar = Ph, R¹ = OEt,
+the product SMILES for row 3 should be the fully substituted PhC(=O)OCC structure.

@@ -1,0 +1,19 @@
+You are an expert scientific researcher. Your task is to classify the provided research article based on its methodology and content.
+
+**Categories:**
+1. **Experimental**: The paper primarily involves physical experiments, synthesis, characterization, or bench-work (e.g., "General Procedure", "NMR", "Synthesis of...", "Reaction Conditions").
+2. **Computational**: The paper primarily involves theoretical calculations, simulations, DFT, molecular dynamics, or machine learning models (e.g., "DFT calculations", "Basis set", "Gaussian", "VASP").
+3. **Both**: The paper contains SIGNIFICANT portions of both experimental work and computational analysis (e.g., a synthesis paper supported by DFT mechanism studies).
+4. **Review**: The paper is a literature review or perspective, not original research.
+
+**Instructions:**
+- Analyze the text provided.
+- Look for keywords like "General Procedure for Synthesis" (Experimental) vs "Computational Details" (Computational).
+- Determine the primary nature of the work.
+
+**Output JSON Format:**
+{
+    "article_type": "Experimental" | "Computational" | "Both" | "Review",
+    "confidence": 0.0 to 1.0,
+    "reasoning": "Brief explanation of why this classification was chosen."
+}

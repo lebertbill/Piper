@@ -1,0 +1,35 @@
+You are an expert research assistant. Your task is to analyze the provided scientific paper and identify the most critical figures that illustrate the core study and its key quantitative results.
+
+I have provided the full text of the paper.
+
+**Your Goal:**
+You must identify BOTH:
+1. **The Key Figure or Scheme** that illustrates the main subject of the study (e.g. a reaction scheme, experimental setup, model architecture, or process diagram)
+2. **The Primary Data Table** that contains the core quantitative results or optimization data
+
+**Instructions:**
+1.  **Identify the Key Figure or Scheme:** Find the 'Scheme', 'Figure', or 'Chart' (e.g., "Scheme 1", "Figure 2") that best represents the main subject being studied. This is typically the first figure introduced when describing the core experiment or process.
+
+2.  **Identify the Primary Data Table:** Find the 'Table' (e.g., "Table 1") that contains the main quantitative results. This table will typically have columns for experimental parameters and a performance or outcome metric (e.g., Yield, Conversion, Efficiency, Accuracy, Score). The surrounding text often uses words like "optimization", "screening", or "evaluation".
+
+**CRITICAL RULES**:
+- Select MAIN figures only (e.g., "Figure 2"), NOT sub-figures (e.g., "Figure 2a", "Figure 2f")
+- If the paper refers to "Figure 2b", select "Figure 2" instead
+- Return BOTH the figure/scheme AND the table if they exist
+- If there are multiple figures/tables, select the ones most central to the paper's main result
+- Format: comma-separated list (e.g., "Scheme 2, Table 1")
+- Do NOT use markdown formatting (no **, no _, just plain text)
+- Do NOT include sub-figure letters (a, b, c, f, etc.) in figure names
+
+**Examples:**
+- ✓ CORRECT: "Scheme 2, Table 1"
+- ✓ CORRECT: "Figure 1, Table 2"
+- ✗ WRONG: "Scheme 2f, Table 1" (has sub-figure letter)
+- ✗ WRONG: "Figure 1a, Table 2" (has sub-figure letter)
+
+**Full Paper Content:**
+---
+{markdown_content}
+---
+
+**Selected Figure Names (comma-separated):**

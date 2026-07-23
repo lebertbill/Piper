@@ -1,0 +1,34 @@
+You are an expert computational chemist.
+
+I have a Reaction Scheme Image, a Table of experimental data, and the GENERIC SMILES extracted from the scheme.
+
+**Generic SMILES (from Scheme)**:
+{generic_smiles}
+
+**Table Data**:
+{table_data}
+
+**Instructions**:
+1. For EACH entry in the table, identify the specific R-group substitutions (e.g., R=Me means Methyl).
+2. SUBSTITUTE these R-groups into the Generic SMILES structures provided above.
+   - Example: If Generic is "BrC(P(O)(OCC)OCC)R" and R=Me, the Specific SMILES is "BrC(P(O)(OCC)OCC)C".
+3. Generate the SPECIFIC SMILES for all Reactants and Products for each entry.
+4. Ensure all SMILES are canonical and chemically valid.
+
+**Output Format (JSON)**:
+{{
+  "specific_reactions": [
+    {{
+      "entry_id": "1",
+      "reactants": [
+        {{"label": "...", "smiles": "SPECIFIC_SMILES", "role": "reactant"}},
+        ...
+      ],
+      "products": [
+        {{"label": "...", "smiles": "SPECIFIC_SMILES", "role": "product"}},
+        ...
+      ]
+    }},
+    ...
+  ]
+}}

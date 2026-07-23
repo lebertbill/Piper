@@ -1,0 +1,22 @@
+FOOTNOTE COLUMNS — Footnote Expansion Required
+===============================================
+
+The structure parser has identified that the following table columns contain values
+that reference footnotes (superscript markers such as a, b, c, †, ‡, *, §):
+
+    Columns with footnote dependencies: {columns}
+
+What this means for extraction:
+- A cell value like "92a" or "85†" does NOT mean the yield is literally "92a".
+  The superscript marker qualifies the value — it points to a footnote that explains
+  the exact measurement method, a deviation, or an additional condition.
+- Read ALL footnotes printed below (or beside) the table carefully before extracting.
+- For each cell in the listed columns that carries a footnote marker:
+  1. Extract the base value normally (e.g., yield = 92%).
+  2. Find the corresponding footnote text.
+  3. Add the footnote expansion as a structured entry in 'additional_info' or 'conditions'
+     for that reaction row (e.g., {"role": "additional_info", "text": "yield by 19F NMR"}).
+- If a footnote indicates a NEGATIVE condition (e.g., "without Ni catalyst", "no base"),
+  follow the subtractive footnote rule from the core rules: REMOVE that component from
+  the conditions list rather than just adding a note.
+- Do not silently drop footnote markers. Every marker must be resolved and recorded.

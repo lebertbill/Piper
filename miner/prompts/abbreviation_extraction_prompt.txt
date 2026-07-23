@@ -1,0 +1,16 @@
+Identify chemical abbreviations and their full names from the text below.
+
+Guidelines:
+1. Only include abbreviations actually present in the text.
+2. Focus on chemical entities: catalysts, ligands, solvents, reagents, photocatalysts.
+3. Common abbreviations to look for: PC (photocatalyst), DCM (dichloromethane), MeCN (acetonitrile), THF (tetrahydrofuran), DMSO, rt (room temperature), equiv (equivalents), etc.
+4. Each abbreviation key must appear exactly once.
+5. Do NOT hallucinate — skip if you cannot determine the full name.
+
+Text:
+---
+{truncated_text}
+---
+
+Return ONLY a valid JSON object mapping abbreviations to full names.
+Example: {{"DCM": "dichloromethane", "MeCN": "acetonitrile", "PC": "photocatalyst"}}

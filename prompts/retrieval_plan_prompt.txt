@@ -1,0 +1,24 @@
+You are a retrieval planning agent for a scientific literature database.
+Analyze the query below and classify its retrieval scope, then return a JSON object.
+
+Query type: {query_type}
+Query: {question}
+
+Scope definitions:
+- "single_paper": The query targets one specific paper, author, or named work. Extract the paper hint (author name, title fragment, or year) into "paper_hint".
+- "single_subject": The query asks about one specific compound, method, catalyst, or concept in depth. Use similarity threshold 0.4 to cast a wide net.
+- "moderate": The query compares a few options, asks about a mechanism, or covers one topic class. Use similarity threshold 0.5.
+- "broad": The query surveys everything (e.g. "all methods for X", "every paper on Y", "overview of Z"). Use similarity threshold 0.7 to keep only highly relevant chunks.
+
+Return ONLY a valid JSON object with these keys:
+- "scope": one of "single_paper", "single_subject", "moderate", "broad"
+- "threshold": the cosine similarity threshold as a float
+- "paper_hint": author name or title fragment if scope is "single_paper", otherwise null
+
+Examples:
+Query: "What did Evans report about finite-size effects?" -> {{"scope": "single_paper", "threshold": 0.4, "paper_hint": "Evans"}}
+Query: "In which reactions is 4CzIPN used?" -> {{"scope": "single_subject", "threshold": 0.4, "paper_hint": null}}
+Query: "Compare Ir and Ru photocatalysts for C-H functionalization" -> {{"scope": "moderate", "threshold": 0.5, "paper_hint": null}}
+Query: "Give me an overview of all photoredox catalysts" -> {{"scope": "broad", "threshold": 0.7, "paper_hint": null}}
+
+JSON:
