@@ -144,6 +144,16 @@ These settings are controlled from the sidebar of the **Chat** page and are not 
 | Final Answer Synthesis | `model.hybrid_synthesis_model` | Synthesizes all chunk summaries and KG context into the final answer. Multimodal — receives figure images at synthesis time. |
 | RAG Model | `model.rag_model_name` | Used by structural (SMARTS/SMILES) search, HippoRAG, hybrid search, and the Enrich KG step — separate from Chunk Summarization above. |
 
+### Web Search Background (saved to context.json)
+
+Adds an optional **Background** section above the paper-grounded answer, generated via OpenRouter's built-in web search plugin. It only runs for general/recommendation queries (not filtered or list queries), runs concurrently with retrieval so it adds no extra latency, and requires `OPENROUTER_API_KEY` — no separate search-provider key needed. Not available in local mode.
+
+| Setting | Key | Default | Description |
+|---|---|---|---|
+| Enable Web Search Background | `model.web_search_enabled` | `false` | Toggles the feature on. Sidebar checkbox on the Chat page. |
+| Web Search Max Results | `model.web_search_max_results` | `5` | Number of web results considered when generating the background section. Sidebar input on the Chat page (1–25). |
+| Web Search Max Iterations | `model.web_search_max_iterations` | `3` | Retry attempts for the web search call. Not exposed in the sidebar — edit `context.json` directly to change it. |
+
 ---
 
 ## context.json reference
@@ -166,6 +176,9 @@ Full structure with all supported keys:
     "hybrid_synthesis_model": "google/gemini-2.5-flash",
     "query_classification_model": "openai/gpt-4o",
     "entity_extraction_model": "openai/gpt-4o",
+    "web_search_enabled": true,
+    "web_search_max_results": 5,
+    "web_search_max_iterations": 3,
     "agents": {
       "article_context_model": "google/gemini-3-flash-preview",
       "reaction_model": "openai/gpt-4o",
