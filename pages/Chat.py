@@ -34,13 +34,13 @@ def _is_structural_query(q: str) -> bool:
     return bool(re.match(r'^[A-Za-z0-9\[\]\(\)=#@+\-\\/.%:*]+$', q) and len(q) < 200)
 
 
-async def _run_graph_query(query: str, synthesis_model_override: str = "google/gemini-2.5-flash") -> tuple[str, list[str]]:
+async def _run_graph_query(query: str, synthesis_model_override: str = "google/gemini-2.5-flash") -> tuple[str, str, list[str]]:
     """Structural query path: SMARTS/SMILES → hybrid search, reaction>> → PPR + similarity."""
     from models import generate_final_answer
 
     G = _load_saved_graph()
     if G is None:
-        return "No knowledge graph found. Click **▶ Build / Rebuild Graph** in the sidebar first.", []
+        return "No knowledge graph found. Click **▶ Build / Rebuild Graph** in the sidebar first.", "", []
     idx = _load_saved_index()
 
     lines: list[str] = []
@@ -81,7 +81,7 @@ async def _run_graph_query(query: str, synthesis_model_override: str = "google/g
             result = engine.search(smarts_query=query, reaction_smiles=None, synthesise_answer=False)
             results = result.get("results", [])
             if not results:
-                return f"No reactions found containing substructure `{query}`.", []
+                return f"No reactions found containing substructure `{query}`.", "", []
             lines.append(f"**{len(results)} reactions** contain this substructure:\n")
             lines.append("| Score | Paper | Table | Entry | Yield | Catalyst |")
             lines.append("|---|---|---|---|---|---|")
@@ -100,10 +100,10 @@ async def _run_graph_query(query: str, synthesis_model_override: str = "google/g
             except Exception:
                 pass
 
-    answer = await generate_final_answer(
+    answer, reasoning = await generate_final_answer(
         query, ["\n".join(lines)], model_name_override=synthesis_model_override
     )
-    return answer, []
+    return answer, reasoning, []
 
 
 def _collect_images(docs, limit: int = 4, seen: set | None = None) -> list[dict]:
@@ -147,10 +147,11 @@ async def _run_rag_query(
     model_entity: str = "openai/gpt-4o",
     model_summarize: str = "openai/gpt-4o",
     model_synthesis: str = "google/gemini-2.5-flash",
-) -> tuple[str, list[str]]:
+) -> tuple[str, str, list[str]]:
     """
     Route queries through the fusion pipeline (Gemini FAISS + GraphRAG PPR, RRF-fused).
     Structural queries (SMARTS/SMILES/reaction>>) always use the graph path.
+    Returns (answer, reasoning, image_paths).
     """
     if _is_structural_query(question):
         return await _run_graph_query(question, synthesis_model_override=model_synthesis)
@@ -158,6 +159,8 @@ async def _run_rag_query(
     from rag.embeddings import EmbeddingRetriever
     from rag.query_router import extract_entities, _classify_query_with_fallback
     from rag.retriever_logic import handle_hybrid_graphrag_query, handle_list_query, handle_recommendation_query
+    from models import generate_web_background
+    from context import load_config
 
     retriever = EmbeddingRetriever(db_path=db_path, model_name="gemini")
 
@@ -170,10 +173,24 @@ async def _run_rag_query(
     image_paths = _collect_images([d for d, _ in mm_chunks], limit=4, seen=seen_image_paths)
 
     retrieved_docs: list = []
+    reasoning = ""
     query_type = await _classify_query_with_fallback(question, model_override=model_classify)
+
+    # Web search background primer — a short "general knowledge" supplement, never a
+    # competing answer source. Kicked off concurrently with the main retrieval/synthesis
+    # below so it adds no latency beyond whichever finishes last. Gated to conceptual
+    # query types (general/recommendation) — never filtered/list queries, where the user
+    # wants something specific pulled from the corpus, not outside context.
+    _web_cfg = load_config().get("model", {})
+    _web_task = None
+    if _web_cfg.get("web_search_enabled") and query_type in ("general_query", "recommendation_query"):
+        _web_task = asyncio.create_task(
+            generate_web_background(question, model_name_override=model_synthesis)
+        )
+
     if query_type in ("general_query", "filtered_query"):
         entities = await extract_entities(question, model_override=model_entity) if query_type == "filtered_query" else None
-        answer, retrieved_docs = await handle_hybrid_graphrag_query(retriever, question, entities,
+        answer, reasoning, retrieved_docs = await handle_hybrid_graphrag_query(retriever, question, entities,
                                                      query_type=query_type,
                                                      model_override=model_summarize,
                                                      synthesis_model=model_synthesis,
@@ -183,16 +200,28 @@ async def _run_rag_query(
         answer = await handle_list_query(retriever, entities, question=question,
                                          model_override=model_summarize)
     elif query_type == "recommendation_query":
-        answer, retrieved_docs = await handle_recommendation_query(retriever, question,
+        answer, reasoning, retrieved_docs = await handle_recommendation_query(retriever, question,
                                                     model_override=model_summarize,
                                                     synthesis_model=model_synthesis,
                                                     conversation_history=conversation_history)
     else:
-        answer, retrieved_docs = await handle_hybrid_graphrag_query(retriever, question,
+        answer, reasoning, retrieved_docs = await handle_hybrid_graphrag_query(retriever, question,
                                                      query_type=query_type,
                                                      model_override=model_summarize,
                                                      synthesis_model=model_synthesis,
                                                      conversation_history=conversation_history)
+
+    # Merge the web background primer, if one was requested. Awaited last so it never
+    # blocks the main answer beyond whichever of the two tasks finishes later. Any
+    # failure here is swallowed — the corpus-grounded answer always ships regardless.
+    if _web_task is not None:
+        try:
+            background = await _web_task
+        except Exception as e:
+            print(f"[WebBackground] failed: {e}")
+            background = None
+        if background and background.strip().upper() != "NONE":
+            answer = f"**Background**\n\n{background.strip()}\n\n---\n\n{answer}"
 
     # Source 2: the docs actually retrieved/summarized for the answer (fusion + graph +
     # refinement round) — this is where multimodal figure chunks are most likely to show up,
@@ -201,7 +230,7 @@ async def _run_rag_query(
     if retrieved_docs:
         image_paths += _collect_images(retrieved_docs, limit=6, seen=seen_image_paths)
 
-    return answer, image_paths
+    return answer, reasoning, image_paths
 
 PROJECT_ROOT = Path(__file__).parent.parent
 KG_DIR = PROJECT_ROOT / "kg"
@@ -360,6 +389,11 @@ with st.sidebar:
     st.markdown("---")
     st.caption("Steps")
     run_pipeline = st.button("▶ Build / Rebuild Graph", type="primary", use_container_width=True)
+    force_reenrich = st.checkbox(
+        "Force re-enrich all (ignore resume)", value=False, key="force_reenrich_apps",
+        help="Enrich KG normally skips articles already marked enriched from a prior run. "
+             "Check this to re-process every article from scratch regardless.",
+    )
     run_enrich = st.button("▶ Enrich KG", use_container_width=True)
     run_embeddings = False
 
@@ -431,6 +465,21 @@ with st.sidebar:
                                    "Used by structural (SMARTS/SMILES) search, HippoRAG, hybrid search, "
                                    "and the Enrich KG step — separate from chunk summarization above.")
 
+    _web_search_enabled = st.checkbox(
+        "🌐 Enable Web Search Background", value=bool(_m.get("web_search_enabled", False)),
+        key="rag_web_search_enabled",
+        help="Adds a short, separate 'Background' primer above the answer using OpenRouter's "
+             "web search, for general/recommendation questions only. Never replaces or blends "
+             "with the paper-grounded answer — runs concurrently, fails silently, costs extra "
+             "only when the model decides a primer is warranted.",
+    )
+    _web_search_max_results = _m.get("web_search_max_results", 5)
+    if _web_search_enabled:
+        _web_search_max_results = st.number_input(
+            "Web Search Max Results", min_value=1, max_value=25,
+            value=int(_m.get("web_search_max_results", 5)), key="rag_web_search_max_results",
+        )
+
     if st.button("💾 Save RAG Model Settings", use_container_width=True, key="rag_models_save_btn"):
         from context import CONTEXT_FILE
         _cfg.setdefault("model", {})
@@ -441,6 +490,8 @@ with st.sidebar:
         _cfg["model"]["chunk_summarization_model"] = _model_summarize
         _cfg["model"]["hybrid_synthesis_model"] = _model_synthesis
         _cfg["model"]["rag_model_name"] = _model_rag_name
+        _cfg["model"]["web_search_enabled"] = _web_search_enabled
+        _cfg["model"]["web_search_max_results"] = _web_search_max_results
         with open(CONTEXT_FILE, "w") as _f:
             json.dump(_cfg, _f, indent=4)
         st.success("RAG model settings saved to context.json")
@@ -590,15 +641,17 @@ if run_enrich:
                     model_name=_enrich_model,
                     run_preference=preferred_run,
                 )
-                _stats = _asyncio.run(_agent.enrich(progress_callback=_enrich_cb))
+                _stats = _asyncio.run(_agent.enrich(progress_callback=_enrich_cb, force=force_reenrich))
                 # Invalidate saved-graph cache so other tabs pick up enriched nodes
                 _load_saved_graph.clear()
                 _get_hippo_engine.clear()
                 _get_hybrid_engine.clear()
                 st.success(
                     f"Enrichment complete — "
-                    f"**{_stats['n_articles']}** articles · "
-                    f"**{_stats['n_names_filled']}** names filled · "
+                    f"**{_stats['n_articles']}** articles enriched"
+                    + (f" · **{_stats['n_skipped_already_enriched']}** skipped (already enriched)"
+                       if _stats.get('n_skipped_already_enriched') else "")
+                    + f" · **{_stats['n_names_filled']}** names filled · "
                     f"**{_stats['n_entries_verified']}** entries verified · "
                     f"**{_stats['n_concepts_added']}** concepts added · "
                     f"**{_stats.get('n_tables_summarised', 0)}** tables summarised"
@@ -907,6 +960,10 @@ with tab_rag:
         with msg_area:
             for msg in st.session_state["rag_messages"]:
                 with st.chat_message(msg["role"]):
+                    _reasoning_text = msg.get("reasoning", "")
+                    if _reasoning_text:
+                        with st.expander("🤔 Thinking", expanded=False):
+                            st.caption(_reasoning_text)
                     st.markdown(msg["content"])
                     imgs = msg.get("images", [])
                     if imgs:
@@ -942,7 +999,7 @@ with tab_rag:
             st.session_state["rag_messages"].append({"role": "user", "content": rag_prompt})
             with st.spinner(_spinner_label):
                 _loop = _get_or_create_eventloop()
-                _response, _images = _loop.run_until_complete(
+                _response, _reasoning, _images = _loop.run_until_complete(
                     _run_rag_query(
                         _faiss_dir, rag_prompt,
                         conversation_history=_history,
@@ -955,6 +1012,7 @@ with tab_rag:
             st.session_state["rag_messages"].append({
                 "role": "assistant",
                 "content": _response or "No answer could be generated. Check the terminal for errors.",
+                "reasoning": _reasoning,
                 "images": _images,
             })
             # ── Auto-save session ─────────────────────────────────────────────

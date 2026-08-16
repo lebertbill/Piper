@@ -131,7 +131,7 @@ async def handle_general_query(retriever: EmbeddingRetriever, question: str, mod
     summaries = [s for s in await asyncio.gather(*tasks) if s and s.strip()]
     if not summaries:
         return "The retrieved documents did not yield usable summaries for your query."
-    final_answer = await generate_final_answer(question, summaries, model_name_override=synthesis_model or model_override)
+    final_answer, _ = await generate_final_answer(question, summaries, model_name_override=synthesis_model or model_override)
     return final_answer or "No answer could be generated from the retrieved documents."
 
 
@@ -362,7 +362,7 @@ async def handle_filtered_query(retriever: EmbeddingRetriever, question: str, en
     summaries = [s for s in await asyncio.gather(*tasks) if s and s.strip()]
     if not summaries:
         return "The retrieved documents did not yield usable summaries for your query."
-    final_answer = await generate_final_answer(question, summaries, model_name_override=synthesis_model or model_override)
+    final_answer, _ = await generate_final_answer(question, summaries, model_name_override=synthesis_model or model_override)
     return final_answer or "No answer could be generated from the retrieved documents."
 
 
@@ -485,7 +485,7 @@ async def handle_hybrid_graphrag_query(
     model_override: str = None,
     synthesis_model: str = None,
     conversation_history: list | None = None,
-) -> tuple[str, list[Document]]:
+) -> tuple[str, str, list[Document]]:
     """
     Hybrid RAG: Gemini FAISS + GraphRAG PPR fused via adaptive RRF.
 
@@ -497,9 +497,9 @@ async def handle_hybrid_graphrag_query(
       5. Iterative refinement — after first answer, identifies gaps and fires a
          targeted second retrieval round to fill them.
 
-    Returns (answer, retrieved_docs) — retrieved_docs is every doc actually used for
-    synthesis (round 1 + any refinement round), so callers can pull image_path from
-    the exact chunks the answer was built from, not a separate disconnected search.
+    Returns (answer, reasoning, retrieved_docs) — retrieved_docs is every doc actually
+    used for synthesis (round 1 + any refinement round), so callers can pull image_path
+    from the exact chunks the answer was built from, not a separate disconnected search.
     """
     print("\n▶️ Executing Hybrid GraphRAG Query Path…")
     config = load_config()
@@ -525,9 +525,9 @@ async def handle_hybrid_graphrag_query(
         summaries.append(f"[Reaction Graph Context]\n{graph_context_text}")
 
     if not summaries:
-        return "Could not find relevant information for your query in either the article index or reaction graph.", []
+        return "Could not find relevant information for your query in either the article index or reaction graph.", "", []
 
-    first_answer = await generate_final_answer(
+    first_answer, first_reasoning = await generate_final_answer(
         question, summaries, model_name_override=synthesis_model,
         conversation_history=conversation_history,
     )
@@ -553,15 +553,18 @@ async def handle_hybrid_graphrag_query(
                     extra_summaries.append(f"[Reaction Graph Context — refinement]\n{extra_graph}")
                 if extra_summaries:
                     all_summaries = summaries + extra_summaries
-                    final_answer = await generate_final_answer(
+                    final_answer, final_reasoning = await generate_final_answer(
                         question, all_summaries, model_name_override=synthesis_model,
                         conversation_history=conversation_history,
                     )
-                    return final_answer or first_answer, top_docs + extra_top
+                    return (final_answer or first_answer,
+                            final_reasoning or first_reasoning,
+                            top_docs + extra_top)
             except Exception as e:
                 print(f"[HybridRAG] Refinement failed, keeping first answer: {e}")
 
-    return first_answer or "No answer could be generated from the retrieved documents.", top_docs
+    return (first_answer or "No answer could be generated from the retrieved documents.",
+            first_reasoning, top_docs)
 
 
 async def handle_recommendation_query(
@@ -570,13 +573,13 @@ async def handle_recommendation_query(
     model_override: str = None,
     synthesis_model: str = None,
     conversation_history: list | None = None,
-) -> tuple[str, list[Document]]:
+) -> tuple[str, str, list[Document]]:
     """
     Recommendation RAG: adaptive fusion retrieval with recommendation-structured synthesis.
     Uses 50/50 FAISS/Graph weights, source tagging, multi-hop expansion, and iterative
     refinement — same machinery as handle_hybrid_graphrag_query.
 
-    Returns (answer, retrieved_docs) — see handle_hybrid_graphrag_query docstring.
+    Returns (answer, reasoning, retrieved_docs) — see handle_hybrid_graphrag_query docstring.
     """
     print("\n▶️ Executing Recommendation Query Path…")
     config = load_config()
@@ -600,9 +603,9 @@ async def handle_recommendation_query(
         summaries.append(f"[Reaction Graph Context]\n{graph_context_text}")
 
     if not summaries:
-        return "Could not find relevant information to make a recommendation. Try rephrasing or asking a more specific question.", []
+        return "Could not find relevant information to make a recommendation. Try rephrasing or asking a more specific question.", "", []
 
-    first_answer = await generate_recommendation_answer(
+    first_answer, first_reasoning = await generate_recommendation_answer(
         question, summaries, model_name_override=synthesis_model,
         conversation_history=conversation_history,
     )
@@ -627,12 +630,15 @@ async def handle_recommendation_query(
                 if extra_graph:
                     extra_summaries.append(f"[Reaction Graph Context — refinement]\n{extra_graph}")
                 if extra_summaries:
-                    final_answer = await generate_recommendation_answer(
+                    final_answer, final_reasoning = await generate_recommendation_answer(
                         question, summaries + extra_summaries, model_name_override=synthesis_model,
                         conversation_history=conversation_history,
                     )
-                    return final_answer or first_answer, top_docs + extra_top
+                    return (final_answer or first_answer,
+                            final_reasoning or first_reasoning,
+                            top_docs + extra_top)
             except Exception as e:
                 print(f"[RecommendationRAG] Refinement failed, keeping first answer: {e}")
 
-    return first_answer or "Could not generate a recommendation from the retrieved documents.", top_docs
+    return (first_answer or "Could not generate a recommendation from the retrieved documents.",
+            first_reasoning, top_docs)

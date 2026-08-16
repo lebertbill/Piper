@@ -234,18 +234,45 @@ class KGEnrichmentAgent:
 
     # ── Public API ─────────────────────────────────────────────────────────────
 
-    async def enrich(self, progress_callback: Optional[Callable[[str], None]] = None) -> dict:
-        """Enrich all articles. Returns summary stats dict."""
-        papers = list({
-            data["title"]
-            for _, data in self.G.nodes(data=True)
-            if data.get("node_type") == "Article"
-        })
+    async def enrich(self, progress_callback: Optional[Callable[[str], None]] = None,
+                      force: bool = False) -> dict:
+        """
+        Enrich all articles. Returns summary stats dict.
 
-        total = dict(n_articles=0, n_names_filled=0, n_iupac_names_filled=0,
+        Resumable: each Article node is stamped enriched=True (+ enriched_at
+        timestamp) once its enrichment pass completes, and the graph is saved
+        after every article not just at the end so an interrupted run
+        (closed tab, error, etc.) doesn't lose prior progress. Subsequent runs
+        skip nodes already marked enriched=True unless force=True.
+        """
+        import time as _time
+
+        articles = [
+            (node, data["title"])
+            for node, data in self.G.nodes(data=True)
+            if data.get("node_type") == "Article"
+        ]
+        # De-dupe by title in case of stray duplicate nodes, keep first occurrence
+        seen_titles = set()
+        deduped = []
+        for node, title in articles:
+            if title in seen_titles:
+                continue
+            seen_titles.add(title)
+            deduped.append((node, title))
+        articles = deduped
+
+        total = dict(n_articles=0, n_skipped_already_enriched=0,
+                     n_names_filled=0, n_iupac_names_filled=0,
                      n_entries_verified=0, n_concepts_added=0, n_tables_summarised=0)
 
-        for paper in papers:
+        for node, paper in articles:
+            if not force and self.G.nodes[node].get("enriched"):
+                total["n_skipped_already_enriched"] += 1
+                if progress_callback:
+                    progress_callback(f"Skipping (already enriched): {paper}")
+                continue
+
             if progress_callback:
                 progress_callback(f"Enriching: {paper}")
             result = await self._enrich_article(paper, cb=progress_callback)
@@ -256,8 +283,10 @@ class KGEnrichmentAgent:
             total["n_concepts_added"] += result.get("concept_added", 0)
             total["n_tables_summarised"] += result.get("tables_summarised", 0)
 
-        # Persist the enriched graph
-        self._save_graph()
+            self.G.nodes[node]["enriched"] = True
+            self.G.nodes[node]["enriched_at"] = _time.strftime("%Y-%m-%d %H:%M:%S")
+            self._save_graph()  # incremental save — survives interruption
+
         return total
 
     # ── Per-article orchestration ──────────────────────────────────────────────
