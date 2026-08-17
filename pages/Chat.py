@@ -995,7 +995,7 @@ with tab_rag:
 
         # ── Chat input ────────────────────────────────────────────────────────
         if rag_prompt := st.chat_input(
-            "Ask anything — prose, SMILES, SMARTS, or reaction>> …",
+            "Ask anything related to extracted articles…",
             key="rag_chat_input",
         ):
             if ">>" in rag_prompt:
