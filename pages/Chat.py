@@ -15,6 +15,9 @@ st.set_page_config(
     layout="wide",
 )
 
+#used in chat deployment to restrict users
+READ_ONLY = os.environ.get("PIPER_READ_ONLY", "false").lower() == "true"
+
 def _get_or_create_eventloop():
     try:
         return asyncio.get_running_loop()
@@ -361,10 +364,11 @@ with st.sidebar:
         "Data root",
         value=str(DEFAULT_DATA_ROOT),
         help="Path to the folder containing paper subfolders",
+        disabled=READ_ONLY,
     )
-    tanimoto = st.slider("Tanimoto threshold (SIMILAR_TO edges)", 0.5, 1.0, 0.7, 0.05)
-    rxn_sim = st.slider("Reaction similarity threshold (SIMILAR_REACTION edges)", 0.6, 1.0, 0.85, 0.05)
-    top_n_graph = st.number_input("Max nodes in graph viz", min_value=50, max_value=500, value=200, step=50)
+    tanimoto = st.slider("Tanimoto threshold (SIMILAR_TO edges)", 0.5, 1.0, 0.7, 0.05, disabled=READ_ONLY)
+    rxn_sim = st.slider("Reaction similarity threshold (SIMILAR_REACTION edges)", 0.6, 1.0, 0.85, 0.05, disabled=READ_ONLY)
+    top_n_graph = st.number_input("Max nodes in graph viz", min_value=50, max_value=500, value=200, step=50, disabled=READ_ONLY)
 
     st.markdown("---")
     st.caption("Run selection")
@@ -376,6 +380,7 @@ with st.sidebar:
         "Preferred run (global)",
         options=["(first available)"] + _all_run_names,
         help="Applied to every paper. Override per paper in the Overview tab.",
+        disabled=READ_ONLY,
     )
     preferred_run = "" if preferred_run == "(first available)" else preferred_run
 
@@ -388,13 +393,14 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption("Steps")
-    run_pipeline = st.button("▶ Build / Rebuild Graph", type="primary", use_container_width=True)
+    run_pipeline = st.button("▶ Build / Rebuild Graph", type="primary", use_container_width=True, disabled=READ_ONLY)
     force_reenrich = st.checkbox(
         "Force re-enrich all (ignore resume)", value=False, key="force_reenrich_apps",
         help="Enrich KG normally skips articles already marked enriched from a prior run. "
              "Check this to re-process every article from scratch regardless.",
+        disabled=READ_ONLY,
     )
-    run_enrich = st.button("▶ Enrich KG", use_container_width=True)
+    run_enrich = st.button("▶ Enrich KG", use_container_width=True, disabled=READ_ONLY)
     run_embeddings = False
 
     st.markdown("---")
@@ -407,6 +413,7 @@ with st.sidebar:
         value=_cfg.get("extracted_data_root", _default_data_root_rag),
         key="rag_data_root_apps",
         help="Path to extracted_data/ used for RAG indexing.",
+        disabled=READ_ONLY,
     )
     if os.path.isdir(_rag_data_root):
         from rag.graph.loader import get_available_runs as _avail_fn, _pick_run
@@ -416,6 +423,7 @@ with st.sidebar:
             "Preferred run (RAG)",
             options=["(first available)"] + _rag_run_names,
             key="rag_pref_run_apps",
+            disabled=READ_ONLY,
         )
         _rag_pref = "" if _rag_pref == "(first available)" else _rag_pref
         if "rag_per_paper_runs_apps" not in st.session_state:
@@ -427,14 +435,14 @@ with st.sidebar:
                     _cur = st.session_state["rag_per_paper_runs_apps"].get(_p, "")
                     _eff = _cur or _pick_run(_r, _rag_pref)
                     _ch = st.selectbox(_p[:55], options=_r, index=_r.index(_eff) if _eff in _r else 0,
-                                       key=f"rag_run_apps_{_p}", label_visibility="visible")
+                                       key=f"rag_run_apps_{_p}", label_visibility="visible", disabled=READ_ONLY)
                     st.session_state["rag_per_paper_runs_apps"][_p] = _ch
     else:
         _rag_avail = {}
         _rag_pref = ""
     _faiss_dir = str(PROJECT_ROOT / _cfg.get("embedding", {}).get("faiss_index_path", "papers_faiss"))
-    _force_reingest = st.checkbox("Force Re-ingest", value=False, key="rag_force_apps")
-    build_index_btn = st.button("▶ Build / Rebuild RAG Index", use_container_width=True, key="rag_build_apps")
+    _force_reingest = st.checkbox("Force Re-ingest", value=False, key="rag_force_apps", disabled=READ_ONLY)
+    build_index_btn = st.button("▶ Build / Rebuild RAG Index", use_container_width=True, key="rag_build_apps", disabled=READ_ONLY)
 
     st.markdown("---")
     st.caption("RAG Models")
@@ -442,7 +450,7 @@ with st.sidebar:
     _emb = _cfg.get("embedding", {})
 
     def _model_box(label, key, default, help_text):
-        return st.text_input(label, value=default, key=key, help=help_text)
+        return st.text_input(label, value=default, key=key, help=help_text, disabled=READ_ONLY)
 
     _model_embedding = _model_box("Embedding Model",         "rag_model_embedding",
                                    _emb.get("embedding_model", "google/gemini-embedding-2-preview"),
@@ -472,15 +480,17 @@ with st.sidebar:
              "web search, for general/recommendation questions only. Never replaces or blends "
              "with the paper-grounded answer — runs concurrently, fails silently, costs extra "
              "only when the model decides a primer is warranted.",
+        disabled=READ_ONLY,
     )
     _web_search_max_results = _m.get("web_search_max_results", 5)
     if _web_search_enabled:
         _web_search_max_results = st.number_input(
             "Web Search Max Results", min_value=1, max_value=25,
             value=int(_m.get("web_search_max_results", 5)), key="rag_web_search_max_results",
+            disabled=READ_ONLY,
         )
 
-    if st.button("💾 Save RAG Model Settings", use_container_width=True, key="rag_models_save_btn"):
+    if st.button("💾 Save RAG Model Settings", use_container_width=True, key="rag_models_save_btn", disabled=READ_ONLY):
         from context import CONTEXT_FILE
         _cfg.setdefault("model", {})
         _cfg.setdefault("embedding", {})
