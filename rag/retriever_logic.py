@@ -423,7 +423,7 @@ async def _run_fusion_retrieval(
     graph_context_text = ""
     graph_ranked: list[tuple[str, float]] = []
     try:
-        kg_dir = Path(__file__).parent / "kg"
+        kg_dir = Path(__file__).parent.parent / "kg"
         graph_path = kg_dir / "graph" / "reaction_network.json"
         index_path = kg_dir / "embeddings" / "reaction_index.faiss"
 
