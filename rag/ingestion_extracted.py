@@ -14,11 +14,13 @@ so text and image are always in sync — no separate extraction_results.json loo
 """
 from __future__ import annotations
 
+import asyncio
 import hashlib
 import re
 from pathlib import Path
 
 from .pdf2chunks import Chunk
+from metadata import extract_metadata as _extract_pdf_metadata
 
 # Greedy .+ so paths containing ')' (e.g. Rh(I) in title) are captured fully.
 # Used only on single lines via fullmatch — greediness is safe line-by-line.
@@ -257,6 +259,34 @@ def chunk_markdown_file(
     return chunks
 
 
+async def _fetch_citation_metadata(
+    data_root: Path, paper_titles: list[str], concurrency: int = 6
+) -> dict[str, dict]:
+    sem = asyncio.Semaphore(concurrency)
+    results: dict[str, dict] = {}
+
+    async def fetch_one(paper_title: str) -> None:
+        pdf_path = data_root / f"{paper_title}.pdf"
+        if not pdf_path.exists():
+            return
+        async with sem:
+            try:
+                meta = await _extract_pdf_metadata(str(pdf_path))
+            except Exception as e:
+                print(f"  [metadata] {paper_title[:50]:<52} lookup failed: {e}")
+                return
+        authors = meta.get("authors") or []
+        if authors:
+            results[paper_title] = {
+                "authors": ", ".join(authors),
+                "year": meta.get("year", ""),
+                "journal": meta.get("journal", ""),
+            }
+
+    await asyncio.gather(*(fetch_one(t) for t in paper_titles))
+    return results
+
+
 # ── Main ingestion function ───────────────────────────────────────────────────
 
 def ingest_extracted_data(
@@ -288,6 +318,10 @@ def ingest_extracted_data(
     all_chunks: list[Chunk] = []
     n_papers = 0
 
+    print("Looking up author/year/journal metadata via CrossRef…")
+    citation_meta = asyncio.run(_fetch_citation_metadata(data_root, list(run_selection.keys())))
+    print(f"  Resolved citation metadata for {len(citation_meta)}/{len(run_selection)} papers")
+
     for paper_title, run_name in sorted(run_selection.items()):
         processed_dir = data_root / paper_title / run_name / "processed"
         if not processed_dir.exists():
@@ -302,6 +336,7 @@ def ingest_extracted_data(
         md_path = md_files[0]
         paper_chunks = chunk_markdown_file(
             md_path, paper_title, run_name,
+            extra_metadata=citation_meta.get(paper_title),
             chunk_words=chunk_words,
             chunk_overlap=chunk_overlap,
         )

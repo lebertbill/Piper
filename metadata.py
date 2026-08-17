@@ -173,19 +173,20 @@ async def extract_metadata(pdf_path: str = None) -> dict:
         if doi:
             metadata['DOI'] = doi
 
-        title = parse_pdf_structurally_for_title(pdf_path)
-        if title:
-            metadata['title'] = title
-
         try:
             reader = PdfReader(pdf_path)
             props = reader.metadata
-            if not metadata.get('title') and getattr(props, 'title', None):
+            if getattr(props, 'title', None):
                 metadata['title'] = props.title
-            if not metadata.get('authors') and getattr(props, 'author', None):
+            if getattr(props, 'author', None):
                 metadata['authors'] = [props.author]
         except Exception:
             pass
+
+        if not doi and not metadata.get('title'):
+            title = parse_pdf_structurally_for_title(pdf_path)
+            if title:
+                metadata['title'] = title
 
     # Priority 3: CrossRef (use the best info found from the PDF)
     crossref_meta = await fetch_crossref_metadata(

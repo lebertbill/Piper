@@ -175,10 +175,15 @@ def _short_citation(source: dict) -> str:
 
     # If we have real authors, use last name of first author
     if authors:
-        first = authors.split(",")[0].strip()
+        author_list = [a.strip() for a in authors.split(",") if a.strip()]
+        first = author_list[0] if author_list else ""
         last_name = first.split()[-1] if first else ""
-        suffix = f" et al., {year}" if year else " et al."
-        return f"{last_name}{suffix}"
+        if last_name:
+            if len(author_list) > 1:
+                suffix = f" et al., {year}" if year else " et al."
+            else:
+                suffix = f", {year}" if year else ""
+            return f"{last_name}{suffix}"
 
     folder = title or ""
     # "Author[et al.] - YEAR"
