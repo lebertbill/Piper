@@ -1,0 +1,750 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC([C](C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_ocsr": "C=[C][Si](C)(C)OC([C](C)I)c1ccccc1",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile/Methanol 9:1",
+          "smiles": "CC#N.CO"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 6,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 54,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile/Methanol 9:1",
+          "smiles": "CC#N.CO"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 2,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 57,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile",
+          "smiles": "CC#N"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 3,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 55,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Dichloromethane (CH2Cl2)",
+          "smiles": "ClCH2Cl"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 36,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Ethyl acetate (EtOAc)",
+          "smiles": "CCOC(=O)C"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "not determined"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        },
+        {
+          "role": "additional_info",
+          "text": "Not determined."
+        }
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 57,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "tert-Butyronitrile (t-BuCN)",
+          "smiles": "CC(C)(C)C#N"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 1,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 42,
+          "unit": "%"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        }
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 22.5,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "not determined"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        },
+        {
+          "role": "additional_info",
+          "text": "Not determined."
+        }
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "4f",
+          "smiles": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1",
+          "smiles_llm": "C=[C][Si](C)(C)OC(C(C)I)c1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dtbbpy)(ppy)2]PF6",
+          "quantity": 2.5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Tributylamine (Bu3N)",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "HCl in Methanol",
+          "quantity": 2,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran/Water 99:1",
+          "smiles": "C1CCOC1.O"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED"
+        },
+        {
+          "role": "time",
+          "text": "photoredox reaction time",
+          "value": 22.5,
+          "unit": "h"
+        },
+        {
+          "role": "time",
+          "text": "acidic desilylation reaction time",
+          "value": 10,
+          "unit": "min"
+        },
+        {
+          "role": "yield",
+          "text": "not determined"
+        },
+        {
+          "role": "scale",
+          "text": "reaction scale",
+          "quantity": 0.07,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "6f",
+          "smiles": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_llm": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_ocsr": "C=[C][C](C)C(O)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Photoredox catalysis reaction time; acidic desilylation reaction time: 10 min."
+        },
+        {
+          "role": "additional_info",
+          "text": "Yield determined by quantitative 1H NMR with ethylene carbonate as an internal standard."
+        },
+        {
+          "role": "additional_info",
+          "text": "Not determined."
+        }
+      ]
+    }
+  ]
+}

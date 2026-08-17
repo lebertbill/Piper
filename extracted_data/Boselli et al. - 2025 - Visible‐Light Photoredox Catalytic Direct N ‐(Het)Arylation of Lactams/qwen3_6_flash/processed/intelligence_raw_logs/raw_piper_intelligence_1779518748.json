@@ -1,0 +1,658 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "smiles_ocsr": "Cn1ccc2ccccc21",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 80,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 42,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "DMSO instead of DMA"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir(ppy)3",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 78,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Ir(ppy)3 instead of 4CzIPN"
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 32,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "1 equiv. of 1-methylindole 6a"
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3a",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 80,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "3a instead of 3d"
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "0 °C"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 50,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "0 °C instead of rt"
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ru(bpy)3]Cl2",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Green LEDs",
+          "quantity": 167,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 78,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "[Ru(bpy)3]Cl2 and Green LEDs (167 mW) instead of 4CzIPN and Blue LEDs"
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "no light"
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "no 4CzIPN"
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "label": "3d",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "smiles": "Cn1ccc2ccccc21",
+          "label": "6a",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMA",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "60 °C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "quantity": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "label": "7a",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "no light, 60 °C"
+      ]
+    }
+  ]
+}

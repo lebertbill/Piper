@@ -1,0 +1,90 @@
+Label Resolver Diagnostic Log — 2026-05-24 20:17:32
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['HAT1', 'HAT2', 'HAT3', '4CzIPN', '4DPAIPN', 'Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6'] → image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['HAT1', 'HAT2', 'HAT3', '4CzIPN', '4DPAIPN', 'Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/grok_4_3/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+  Exists   : True
+  [Tier 0 NameMap] 'HAT1' → pubchem_lookup via name='sodium thiophenolate'
+  [Tier 0 NameMap] 'HAT2' → pubchem_lookup via name='diphenyl disulfide'
+  [Tier 0 NameMap] 'HAT3' → pubchem_lookup via name='sodium 2-mercaptoethanesulfonate'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] '4DPAIPN' → pubchem_lookup via name='2,4,5,6-tetrakis(diphenylamino)isophthalonitrile'
+  [Tier 0 NameMap] 'Ir(dtbbpy)(ppy)2PF6' → name '[Ir(dtbbpy)(ppy)2]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['HAT1', 'HAT2', 'HAT3', '4CzIPN', '4DPAIPN']  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  [OCSR] image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  [Tier 3] 'Ir(dtbbpy)(ppy)2PF6': bbox=0 atoms=40 smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC=CC=C2C2 wildcard=True
+  [Tier 3] 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6': bbox=1 atoms=54 smiles=*C1=CC=[C]2C(=C1)C1C=C(*)C=C[N]1[Ir]21345([C]2=C(C(F)=CC(F)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+    [Tier 5 PubChem] 'Ir(dtbbpy)(ppy)2PF6' → name_map name: '[Ir(dtbbpy)(ppy)2]PF6'
+    [Tier 5 PubChem] 'Ir(dtbbpy)(ppy)2PF6' → no hit (tried ['[Ir(dtbbpy)(ppy)2]PF6', '[Ir(dtbbpy)(ppy)2)PF6'])
+    [Tier 5 PubChem] 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6' → no hit (tried ['Ir[(dF(CF3)ppy]2(dtbbpy)]PF6', 'Ir((dF(CF3)ppy)2(dtbbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+    [Tier 6] 'Ir(dtbbpy)(ppy)2PF6' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dtbbpy)(ppy)2]PF6' — name only, no SMILES
+    [NameResolve Organomet] llm_name_to_smiles: score=56  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=C2)C(C)(C)C)N3[Ir]4(C5=C(C=C(F)C=C5C(F
+    [Tier 6→llm_name_to_smiles] 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6' name='Ir[(dF(CF3)ppy]2(dtbbpy)]PF6' → CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=C2)C(C)(C)C)N3[Ir]
+  [Tier 6 LLM Vision] resolved=['Ir(dtbbpy)(ppy)2PF6', 'Ir[(dF(CF3)ppy]2(dtbbpy)]PF6']
+  [InlineResolver] Column 'Photocatalyst' labels ['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6'] from image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/grok_4_3/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+  Exists   : True
+  [Tier 0 NameMap] 'Ir[dF(CF3)(ppy)]2(dtbbpy)PF6' → name '[Ir{dF(CF3)ppy}2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+  [OCSR] image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+  [Tier 3] 'Ir[dF(CF3)(ppy)]2(dtbbpy)PF6': bbox=1 atoms=54 smiles=*C1=*C2C3=CC(*)=CC=[C]3[Ir]3456([C]7=C(C(F)=CC(F)=C7)C7=CC=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+    [Tier 5 PubChem] 'Ir[dF(CF3)(ppy)]2(dtbbpy)PF6' → name_map name: '[Ir{dF(CF3)ppy}2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'Ir[dF(CF3)(ppy)]2(dtbbpy)PF6' → no hit (tried ['[Ir{dF(CF3)ppy}2(dtbbpy)]PF6', '[Ir{dF(CF3)ppy}2(dtbbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+    [NameResolve Organomet] llm_name_to_smiles: score=55  CC(C)(C)c1cc[n+](cc1)-c2cc(cc[n+]2C(C)(C)C)[Ir-]34([n+]5ccccc5-c6c3cc(
+    [Tier 6→llm_name_to_smiles] 'Ir[dF(CF3)(ppy)]2(dtbbpy)PF6' name='[Ir{dF(CF3)ppy}2(dtbbpy)]PF6' → CC(C)(C)c1cc[n+](cc1)-c2cc(cc[n+]2C(C)(C)C)[Ir-]34
+  [Tier 6 LLM Vision] resolved=['Ir[dF(CF3)(ppy)]2(dtbbpy)PF6']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', 'CO2', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/grok_4_3/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png
+  Exists   : True
+  [Tier 0 NameMap] 'CO2' → llm_name_to_smiles via name='Introduction
+
+Carbon dioxide'
+  [Tier 0 NameMap] resolved=['CO2']  remaining=['1a', '2a']
+  [OCSR] image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CCl)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=9 smiles=*C1=CC=C(CCl)C=C1 wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=9 smiles=*CC1=CC=C(*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '2a' → r_value='* = Ph, * = CO2H'
+    [Tier 4] R-group candidates: ['1a', '2a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*C1=CC=C(CCl)C=C1)
+    [Tier 4] '1a' ✅ match: ClCC1=CC=C(C=C1)C1=CC=CC=C1
+    [Tier 4 graph] '2a' r=* = Ph, * = CO2H fallback (smi=*CC1=CC=C(*)C=C1)
+    [Tier 4] '2a' ✅ match: OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=[]

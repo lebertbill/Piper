@@ -1,0 +1,35 @@
+Label Resolver Diagnostic Log — 2026-06-18 14:09:15
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 6' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 8' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ["1a'", "3aa'", '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Thianthrenium-Enabled_Chromium-Catalyzed_Deuterated_Alkyl_Addition_to_Aldehydes_via_Photoactive_Electron_Donor-Acceptor_/default_run/processed/Thianthrenium-Enabled_Chromium-Catalyzed_Deuterated_Alkyl_Addition_to_Aldehydes_via_Photoactive_Electron_Donor-Acceptor__artifacts/image_000003_92d1f6af67bff91fe801c7fb8960c08765ef26eb69f7cda161f7720c55bd9e7c.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=["1a'", "3aa'", '2a']
+  [OCSR] image_000003_92d1f6af67bff91fe801c7fb8960c08765ef26eb69f7cda161f7720c55bd9e7c.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['13"']  smiles=[3H+]CCCc1ccccc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['24']  smiles=*C(=O)CCc1ccccc1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['144']  smiles=OC(CCCc1ccccc1)CCc1ccccc1  wildcard=False
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=["1a'", "3aa'", '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=["1a'", "3aa'", '2a']
+  [Tier 3] '1a'': symbol/coord count mismatch (11 vs 10), using original
+  [Tier 3] '1a'': bbox=0 atoms=10 smiles=[3H+]CCCc1ccccc1 wildcard=False
+  [Tier 3] '2a': bbox=2 atoms=11 smiles=C=C(C)CCC1=O*=CC=C1 wildcard=True
+  [Tier 3] '3aa'': bbox=4 atoms=19 smiles=CC(CCCc1ccccc1)COc1ccccc1 wildcard=False
+  [Tier 3 BBox Match] resolved=["1a'", "3aa'"]  remaining=['2a']
+    [Tier 4 LLM] '2a' → r_value='H'
+    [Tier 4] R-group candidates: ['2a']
+    [Tier 4 graph] '2a' r=H fallback (smi=*C(=O)CCc1ccccc1)
+    [Tier 4] '2a' ✅ match: O=CCCc1ccccc1
+  [Tier 4 R-group Sub] resolved=['2a']  remaining=[]

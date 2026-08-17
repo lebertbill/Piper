@@ -1,0 +1,54 @@
+Label Resolver Diagnostic Log — 2026-05-23 11:41:23
+================================================================================
+
+  [GlobalRegistry] VisualHeist override: image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png → visualheist_page_01_figure_1.png
+  [GlobalRegistry] labels=['1a', '2a', '4a', '3a'] → visualheist_page_01_figure_1.png
+  [GlobalRegistry] VisualHeist override: image_000006_891d1c04cfdfc00359d44969640f56fc1ca0a1e9a3a1d4a4f97b1ad9b86f586c.png → visualheist_page_01_figure_1.png
+  [GlobalRegistry] labels=['4CzIPN', '5CzIBN', '4CzPN'] → visualheist_page_01_figure_1.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '4a', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides/qwen3_6_flash/processed/visualheist_page_01_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [OCSR] visualheist_page_01_figure_1.png: 13 bboxes, 1 coref pairs
+  [OCSR]   pair [4,5]: texts=['RI', '=', 'Alkyl or Aryl', 'Y =', 'MgX; X or H']  smiles=*/C(C)=C(/[1*])C.CC.CC  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [Tier 3] '1a': bbox_idx=None out of range (n=13)
+  [Tier 3] '2a': bbox_idx=None out of range (n=13)
+  [Tier 3] '4a': bbox_idx=None out of range (n=13)
+  [Tier 3] '3a': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+    [Tier 4 LLM] '1a' → r_value='R1 = H'
+    [Tier 4 LLM] '2a' → r_value='R1 = OAr2'
+    [Tier 4 LLM] '3a' → r_value='R1 = NTsAr3'
+    [Tier 4 LLM] '4a' → r_value='R1 = Alkyl or Aryl'
+    [Tier 4] R-group candidates: ['1a', '2a', '3a', '4a']
+    [Tier 4 graph] '1a' r=R1 = H fallback (smi=*/C(C)=C(/[1*])C.CC.CC)
+    [Tier 4 graph] '2a' r=R1 = OAr2 fallback (smi=*/C(C)=C(/[1*])C.CC.CC)
+    [Tier 4 graph] '3a' r=R1 = NTsAr3 fallback (smi=*/C(C)=C(/[1*])C.CC.CC)
+    [Tier 4 graph] '4a' r=R1 = Alkyl or Aryl fallback (smi=*/C(C)=C(/[1*])C.CC.CC)
+    [Tier 4] '1a' 🔄 corrected: C/C(Y)=C(\R1)[*]
+    [Tier 4] '2a' 🔄 corrected: CC(=C(C)OAr)OAr
+    [Tier 4] '3a' 🔄 corrected: CC(=C(C)N(c1ccccc1)S(=O)(=O)c2ccc(C)cc2)N(c3ccccc3
+    [Tier 4] '4a' 🔄 corrected: [*]/C(Y)=C(/R1)[*]
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3a', '4a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '5CzIBN', '4CzPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides/qwen3_6_flash/processed/visualheist_page_01_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '5CzIBN' → opsin_lookup via name='2,3,4,5,6-pentakis(carbazol-9-yl)benzonitrile'
+  [Tier 0 NameMap] '4CzPN' → opsin_lookup via name='1,2,4,5-tetrakis(carbazol-9-yl)-3,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN', '5CzIBN', '4CzPN']  remaining=[]

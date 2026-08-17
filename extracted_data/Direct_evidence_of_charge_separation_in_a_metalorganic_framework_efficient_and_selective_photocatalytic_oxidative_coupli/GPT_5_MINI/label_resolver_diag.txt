@@ -1,0 +1,78 @@
+Label Resolver Diagnostic Log — 2026-06-12 12:27:44
+================================================================================
+
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['dibenzylimine', 'benzylamine']
+  Image    : extracted_data/Direct_evidence_of_charge_separation_in_a_metalorganic_framework_efficient_and_selective_photocatalytic_oxidative_coupli/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['dibenzylimine', 'benzylamine']
+  [OCSR] visualheist_page_02_table_2.png: 40 bboxes, 38 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,3]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,4]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,5]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,6]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,7]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,8]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,9]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,10]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,11]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,12]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,13]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,14]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,15]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,16]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,17]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,18]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,19]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,20]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,21]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,22]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,23]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,24]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,25]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,26]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,27]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,28]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,29]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,30]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,31]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,32]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,33]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,34]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,35]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,36]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,37]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,38]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [2,39]: texts=[]  smiles=N/A  wildcard=
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['dibenzylimine', 'benzylamine']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['dibenzylimine', 'benzylamine']
+  [Tier 3] 'benzylamine': no graph data at bbox 0 (coords=0, edges=0, symbols=8)
+  [Tier 3] 'dibenzylimine': no graph data at bbox 2 (coords=0, edges=0, symbols=15)
+  [Tier 3 BBox Match] resolved=[]  remaining=['benzylamine', 'dibenzylimine']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['benzylamine', 'dibenzylimine']
+    [Tier 5 PubChem] 'benzylamine' → hit via 'benzylamine': C1=CC=C(C=C1)CN
+    [Tier 5 PubChem] 'dibenzylimine' → no hit (tried ['dibenzylimine'])
+  [Tier 5 PubChem] resolved=['benzylamine']  remaining=['dibenzylimine']
+    [Tier 6→pubchem_lookup] 'dibenzylimine' name='N-benzyl-1-phenylmethanimine' → C1=CC=C(C=C1)CN=CC2=CC=CC=C2
+  [Tier 6 LLM Vision] resolved=['dibenzylimine']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['222']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_evidence_of_charge_separation_in_a_metalorganic_framework_efficient_and_selective_photocatalytic_oxidative_coupli/GPT_5_MINI/processed/Direct_evidence_of_charge_separation_in_a_metalorganic_framework_efficient_and_selective_photocatalytic_oxidative_coupli_artifacts/image_000004_b99b961342f3edab4f27d55eef338bb296702b5d82728f43763fe6c537859de0.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['222']
+  [OCSR] image_000004_b99b961342f3edab4f27d55eef338bb296702b5d82728f43763fe6c537859de0.png: 2 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['222']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['222']
+  [Tier 3] '222': bbox=1 atoms=15 smiles=C(=N\Cc1ccccc1)/c1ccccc1 wildcard=False
+  [Tier 3 BBox Match] resolved=['222']  remaining=[]

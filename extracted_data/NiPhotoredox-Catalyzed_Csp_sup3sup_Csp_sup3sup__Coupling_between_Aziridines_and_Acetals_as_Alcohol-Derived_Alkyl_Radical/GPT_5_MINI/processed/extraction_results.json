@@ -1,0 +1,2389 @@
+[
+    {
+        "document": "NiPhotoredox-Catalyzed_Csp_sup3sup_Csp_sup3sup__Coupling_between_Aziridines_and_Acetals_as_Alcohol-Derived_Alkyl_Radical",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of aziridine alkylation with benzaldehyde dialkyl acetals.",
+        "image_path": "extracted_data/NiPhotoredox-Catalyzed_Csp_sup3sup_Csp_sup3sup__Coupling_between_Aziridines_and_Acetals_as_Alcohol-Derived_Alkyl_Radical/GPT_5_MINI/processed/visualheist_page_02_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "NH4Br",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[NH4+].[Br-]",
+                        "resolved_smiles": "[NH4+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "(°C)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "equiv"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/no. of lamps"
+                    }
+                ],
+                "additional_info": [
+                    "NH4Br was used instead of LiBr (footnote a).",
+                    "Three fans were used to cool the reaction (footnote b).",
+                    "Column header: '3 (rsm)' indicates the reported 3-value used rsm in parentheses"
+                ]
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "25a"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "25b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 32.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 2.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.8"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 25.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Three fans were used to cool the reaction (footnote b)."
+                ]
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 2 lamps",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "25 b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 68.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 4.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.8"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 25.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Three fans were used to cool the reaction (footnote b)."
+                ]
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 2 lamps",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "28 b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 70.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 4.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.8"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/2",
+                        "quantity": 25.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Three fans were used to cool the reaction (footnote b)."
+                ]
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 2.4,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 2 lamps",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "31 b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 79.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 4.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.8"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/2",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Three fans were used to cool the reaction (footnote b)."
+                ]
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 2.4,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "31 b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 34.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/2",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Three fans were used to cool the reaction (footnote b)."
+                ]
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 2.4,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "26 b"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 72.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "No fans were used to cool the reaction (footnote c)."
+                ]
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 2.4,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "NiBr2·glyme",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni].Br.Br.OCCO",
+                        "resolved_smiles": "[Ni](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38 c"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 4.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "Ni(COD) 2"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "No fans were used to cool the reaction (footnote c)."
+                ]
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.1,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "NiBr2·glyme",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni].Br.Br.OCCO",
+                        "resolved_smiles": "[Ni](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiBr",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Li+].[Br-]",
+                        "resolved_smiles": "[Li+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.057,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 50% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38 c"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 58.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "NiBr 2 •glyme"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "NH4Br",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[NH4+].[Br-]",
+                        "resolved_smiles": "[NH4+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38 c"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.1"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "NiBr 2 •glyme"
+                    }
+                ],
+                "additional_info": [
+                    "NH4Br was used instead of LiBr (footnote a).",
+                    "Three fans were used to cool the reaction (footnote b).",
+                    "Column header: '3 (rsm)' indicates the reported 3-value used rsm in parentheses"
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "NH4Br",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[NH4+].[Br-]",
+                        "resolved_smiles": "[NH4+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38 c"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "1.8"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "NiBr 2 •glyme"
+                    }
+                ],
+                "additional_info": [
+                    "NH4Br was used instead of LiBr (footnote a).",
+                    "Three fans were used to cool the reaction (footnote b).",
+                    "Column header: '3 (rsm)' indicates the reported 3-value used rsm in parentheses"
+                ]
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "NH4Br",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[NH4+].[Br-]",
+                        "resolved_smiles": "[NH4+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38 c"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "NiBr 2 •glyme"
+                    }
+                ],
+                "additional_info": [
+                    "NH4Br was used instead of LiBr (footnote a).",
+                    "Three fans were used to cool the reaction (footnote b).",
+                    "Column header: '3 (rsm)' indicates the reported 3-value used rsm in parentheses"
+                ]
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N2C(C3=CC=C(C=C3)F)C2",
+                        "smiles_ocsr": "FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N2CC2c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C15H14FNO2S",
+                        "molecular_weight": 291.35
+                    },
+                    {
+                        "smiles": "CO[CH](OC)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.8,
+                        "unit": "equiv",
+                        "smiles_llm": "COC(COC)c1ccccc1",
+                        "smiles_ocsr": "CO[CH](OC)c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)c1ccccc1",
+                        "molecular_formula": "C9H12O2",
+                        "molecular_weight": 152.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "text": "3",
+                        "smiles_llm": "CC(Cc1ccc(F)cc1)NS(=O)(=O)c2ccc(C)cc2",
+                        "smiles_ocsr": "CC(OC)C(c1ccc(F)cc1)CN(S(=O)(=O)c2ccc(C)cc2)[H]",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(C)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccc(F)cc1",
+                        "molecular_formula": "C18H22FNO3S",
+                        "molecular_weight": 351.44
+                    },
+                    {
+                        "smiles": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "text": "4",
+                        "smiles_llm": "c1ccccc1CCc2ccccc2",
+                        "smiles_ocsr": "CC(c1ccc(F)cc1)C(N(S(=O)(=O)c2ccc(C)cc2)[H])C(C(N(S(=O)(=O)c3ccc(C)cc3)[H])C(c4ccc(F)cc4)C)c5ccc(F)cc5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)NC(C(C)c2ccc(F)cc2)C(c2ccc(F)cc2)C(NS(=O)(=O)c2ccc(C)cc2)C(C)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C39H39F3N2O4S2",
+                        "molecular_weight": 720.88
+                    },
+                    {
+                        "smiles": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "text": "5",
+                        "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)N",
+                        "smiles_ocsr": "C1=CC(=CC=C1N)S(=O)(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Nc1ccc(S(N)(=O)=O)cc1",
+                        "molecular_formula": "C6H8N2O2S",
+                        "molecular_weight": 172.21
+                    },
+                    {
+                        "smiles": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "text": "6",
+                        "smiles_llm": "COC(Cc1ccccc1)OC",
+                        "smiles_ocsr": "Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(OC)(c1ccccc1)C(CNS(=O)(=O)c1ccc(C)cc1)c1ccccc1",
+                        "molecular_formula": "C24H27NO4S",
+                        "molecular_weight": 425.55
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(Me)ppy]2(dtbbpy)PF6",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 3.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(COD)2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "[Ni]",
+                        "resolved_smiles": "C1/C=C\\CC/C=C\\C1.C1/C=C\\CC/C=C\\C1.[Ni]",
+                        "resolved_name": "bis(1,5-cyclooctadiene)nickel(0)",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "NH4Br",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[NH4+].[Br-]",
+                        "resolved_smiles": "[NH4+].[Br-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile:benzene",
+                        "quantity": 0.04,
+                        "unit": "M",
+                        "smiles": "CC#N.c1ccccc1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Kessil lamp; 25% intensity, 1 lamp",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38c"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "38d"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "acetal",
+                        "text": "2.4"
+                    },
+                    {
+                        "role": "light_intensity",
+                        "text": "/1",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "[ni]",
+                        "text": "NiBr 2 •glyme"
+                    }
+                ],
+                "additional_info": [
+                    "NH4Br was used instead of LiBr (footnote a).",
+                    "Three fans were used to cool the reaction (footnote b).",
+                    "Column header: '3 (rsm)' indicates the reported 3-value used rsm in parentheses"
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer"
+            },
+            "Acetal equiv": {
+                "type": "literal",
+                "data_type": "float"
+            },
+            "[Ni]": {
+                "type": "literal",
+                "data_type": "string"
+            },
+            "Light intensity /no. of lamps": {
+                "type": "literal",
+                "data_type": "string"
+            },
+            "Temp (°C)": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Yield (%) 3 (rsm)": {
+                "type": "numerical",
+                "data_type": "string"
+            },
+            "Yield (%) 4": {
+                "type": "numerical",
+                "data_type": "integer"
+            },
+            "Yield (%) 5": {
+                "type": "numerical",
+                "data_type": "integer"
+            },
+            "Yield (%) 6": {
+                "type": "numerical",
+                "data_type": "integer"
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 74,
+            "valid_molecules": 74,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

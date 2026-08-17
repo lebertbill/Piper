@@ -1,0 +1,1297 @@
+[
+    {
+        "document": "ja4c02474",
+        "table_name": "Table 1",
+        "table_caption": "Reaction Optimization",
+        "image_path": "extracted_data/ja4c02474/GPT_5_MINI/processed/visualheist_page_02_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "3a",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "NEt3·3HF",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "CCN(CC)CC",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (reaction concentration)",
+                        "quantity": 0.2,
+                        "unit": "M",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "84%",
+                        "quantity": 84.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "with NEt 3 · 3HF (2 equiv), 3a (1 mol%) in CH 2 Cl 2 (0.2 M) for 16 h",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    }
+                ],
+                "additional_info": [
+                    "Yield determined by quantitative 19F NMR."
+                ],
+                "yield": "84%"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "3a",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 10.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "KF",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (reaction concentration)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "20%",
+                        "quantity": 20.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "with KF (2 equiv), HFIP (10 equiv), 3a (1 mol%) in CH 2 Cl 2 (0.05 M) for 16 h",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    }
+                ],
+                "additional_info": [
+                    "Yield determined by quantitative 19F NMR."
+                ],
+                "yield": "20%"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "3a",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 10.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "CsF",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (reaction concentration)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "59%",
+                        "quantity": 59.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "with CsF (2 equiv), HFIP (10 equiv), 3a (1 mol%) in CH 2 Cl 2 (0.05 M) for 16 h",
+                        "resolved_name": "Ir[dFFppy]2-(4,4'-dCF3bpy)PF6",
+                        "resolved_smiles": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_llm": "FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=CC=NC(C2=NC=CC(C(F)(F)F)=C2)=C1.F[P-](F)(F)(F)(F)F.[Ir+]"
+                    }
+                ],
+                "additional_info": [
+                    "Yield determined by quantitative 19F NMR."
+                ],
+                "yield": "59%"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY (radiochemical yield, radioHPLC)",
+                        "quantity": 92.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "92 ± 4 n =3",
+                        "resolved_name": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "none"
+                    }
+                ],
+                "additional_info": [
+                    "RCY = 92 ± 4 (n = 3); radiochemical yield determined by radioHPLC."
+                ]
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "0 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no photocatalyst"
+                    }
+                ],
+                "additional_info": [
+                    "No photocatalyst used (deviates from standard conditions). RCY: 0 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "0 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no irradiation"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "µmol"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": null,
+                        "unit": null
+                    }
+                ],
+                "additional_info": [
+                    "No irradiation (blue LEDs omitted). RCY: 0 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 11.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "11 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no HFIP"
+                    }
+                ],
+                "additional_info": [
+                    "HFIP omitted (deviation: no HFIP). RCY: 11 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Tetrahydrofuran (THF)",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C1CCOC1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 51.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "51 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "in THF"
+                    }
+                ],
+                "additional_info": [
+                    "Solvent changed from CH2Cl2 to THF. RCY: 51 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "µmol",
+                        "smiles": "C1=CC2=CN(c3ccccc3)C(=O)C2=C1",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 90.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "90 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "with 4CzIPN"
+                    }
+                ],
+                "additional_info": [
+                    "Photocatalyst replaced with 4CzIPN. RCY: 90 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 71.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "71 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "2 min reaction time"
+                    }
+                ],
+                "additional_info": [
+                    "Reduced reaction time to 2 min. RCY: 71 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.005,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.005,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 66.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "66 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "0.005 mmol substrate loading"
+                    }
+                ],
+                "additional_info": [
+                    "Substrate loading reduced to 0.005 mmol. RCY: 66 (n = 1)."
+                ]
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "1",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(ON1C(C)(C)CCCC1(C)C)c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C23H31NO",
+                        "molecular_weight": 337.51
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "[18F]2",
+                        "smiles_ocsr": "CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC([18F])c1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H13F",
+                        "molecular_weight": 199.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "[18F]KF (10-50 MBq)"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dFCF3ppy)2(bpy)]PF6",
+                        "quantity": 0.5,
+                        "unit": "μmol",
+                        "smiles": "Ir(Cyclometalated)2(bpy)PF6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HFIP",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(C(F)(F)F)(C(F)(F)F)O",
+                        "resolved_name": "hexafluoroisopropanol",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane",
+                        "quantity": 0.3,
+                        "unit": "mL",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 20.0,
+                        "unit": "min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "ambient temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "RCY",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "rcy_percent",
+                        "text": "82 n =1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no N 2 degassing"
+                    }
+                ],
+                "additional_info": [
+                    "No N2 degassing (ambient atmosphere). RCY: 82 (n = 1)."
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Deviation from Standard Conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield a (%)": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": true
+            },
+            "RCY (%)": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 24,
+            "valid_molecules": 24,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

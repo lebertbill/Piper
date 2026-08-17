@@ -1,0 +1,157 @@
+Label Resolver Diagnostic Log — 2026-06-12 13:48:56
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['2', '3', '4', '5', '6'] → image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Catalyst Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3', '4', '5', '6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_sulfonylation_of_anilines_mediated_by_visible_light/GPT_5_MINI/processed/Direct_sulfonylation_of_anilines_mediated_by_visible_light_artifacts/image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='9-mesityl-10-methylacridinium tetrafluoroborate'
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='2,4,6-triphenylpyrylium tetrafluoroborate'
+  [Tier 0 NameMap] '4' → name '[Ir(ppy)2(dtbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '5' → name '[Ir(dF(CF3)ppy)2(dtbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '6' → opsin_lookup via name='3,6-dimethoxy-9-mesityl-10-(3,5-dimethoxyphenyl)acridinium tetrafluoroborate'
+  [Tier 0 NameMap] resolved=['2', '3', '6']  remaining=['4', '5']
+  [OCSR] image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png: 14 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['5']  smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3n(*)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['6']  smiles=*C1=CC(*)=CC([n+]2=C3C=C(*)C=C(*)C3=C(*)C3=C2C=C(*  wildcard=True
+  [OCSR]   pair [10,11]: texts=[]  smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(  wildcard=False
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '5']
+  [Tier 3] '4': bbox=10 atoms=43 smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(C=CC=C3)C3 wildcard=False
+  [Tier 3] '4': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3] '5': bbox=1 atoms=65 smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9)C=71(C=CC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '5']
+    [Tier 4 LLM] '4' → r_value='Ir(ppy)3'
+    [Tier 4 LLM] '5' → r_value='[Ir(dtbbpy)(ppy-F2)2]PF6'
+    [Tier 4] R-group candidates: ['4', '5']
+    [Tier 4] bbox missing for group ['4', '5'] — using full image
+    [Tier 4] '4' 🔄 corrected: c1ccc(cc1)-c2ccccn2.c1ccc(cc1)-c2ccccn2.c1ccc(cc1)
+    [Tier 4] '5' RDKit render failed: CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=C2)C(C)(
+  [Tier 4 R-group Sub] resolved=['4']  remaining=['5']
+    [Tier 5 PubChem] '5' → name_map name: '[Ir(dF(CF3)ppy)2(dtbpy)]PF6'
+    [Tier 5 PubChem] '5' → no hit (tried ['[Ir(dF(CF3)ppy)2(dtbpy)]PF6', '1 MeCN/H 2 O        | 59            |', '[Ir(dF(CF3)ppy)2(dtbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['5']
+    [Tier 6] '5' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dF(CF3)ppy)2(dtbpy)]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['5']
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '2' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '3' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '4' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '6' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [SafetyNet] column 'Catalyst' has abbreviation/label mapping → '5' is a label
+  [InlineResolver] Column 'Catalyst' labels ['sodium methanesulfinate'] from image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Catalyst Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['sodium methanesulfinate']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_sulfonylation_of_anilines_mediated_by_visible_light/GPT_5_MINI/processed/Direct_sulfonylation_of_anilines_mediated_by_visible_light_artifacts/image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['sodium methanesulfinate']
+  [OCSR] image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png: 14 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['5']  smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3n(*)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['6']  smiles=*C1=CC(*)=CC([n+]2=C3C=C(*)C=C(*)C3=C(*)C3=C2C=C(*  wildcard=True
+  [OCSR]   pair [10,11]: texts=[]  smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(  wildcard=False
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['sodium methanesulfinate']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['sodium methanesulfinate']
+  [Tier 3] 'sodium methanesulfinate': bbox=5 atoms=4 smiles=*S(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['sodium methanesulfinate']
+    [Tier 4 LLM] 'sodium methanesulfinate' → r_value='MeSO2Na'
+    [Tier 4] R-group candidates: ['sodium methanesulfinate']
+    [Tier 4 graph] 'sodium methanesulfinate' r=MeSO2Na fallback (smi=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['sodium methanesulfinate']
+    [Tier 5 PubChem] 'sodium methanesulfinate' → hit via 'sodium methanesulfinate': CS(=O)[O-].[Na+]
+  [Tier 5 PubChem] resolved=['sodium methanesulfinate']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', 'aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_sulfonylation_of_anilines_mediated_by_visible_light/GPT_5_MINI/processed/Direct_sulfonylation_of_anilines_mediated_by_visible_light_artifacts/image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → opsin_lookup via name='N,N,4-trimethyl-2-(methylsulfonyl)aniline'
+  [Tier 0 NameMap] resolved=['1']  remaining=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+  [OCSR] image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png: 14 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['5']  smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3n(*)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['6']  smiles=*C1=CC(*)=CC([n+]2=C3C=C(*)C=C(*)C3=C(*)C3=C2C=C(*  wildcard=True
+  [OCSR]   pair [10,11]: texts=[]  smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(  wildcard=False
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+  [Tier 3] 'aniline (N,N-dimethyl-4-methylaniline)': bbox=0 atoms=10 smiles=*C1=CC=C(N(*)*)C=C1 wildcard=True
+  [Tier 3] 'sodium methanesulfinate': bbox=5 atoms=4 smiles=*S(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+    [Tier 4 LLM] 'aniline (N,N-dimethyl-4-methylaniline)' → r_value='N,N-dimethyl-4-methylaniline'
+    [Tier 4 LLM] 'sodium methanesulfinate' → r_value='sodium methanesulfinate'
+    [Tier 4] R-group candidates: ['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+    [Tier 4 graph] 'aniline (N,N-dimethyl-4-methylaniline)' r=N,N-dimethyl-4-methylaniline fallback (smi=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1)
+    [Tier 4 graph] 'sodium methanesulfinate' r=sodium methanesulfinate fallback (smi=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']
+    [Tier 5 PubChem] 'aniline (N,N-dimethyl-4-methylaniline)' → hit via 'aniline': C1=CC=C(C=C1)N
+    [Tier 5 PubChem] 'sodium methanesulfinate' → hit via 'sodium methanesulfinate': CS(=O)[O-].[Na+]
+  [Tier 5 PubChem] resolved=['aniline (N,N-dimethyl-4-methylaniline)', 'sodium methanesulfinate']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Catalyst Gallery). Please locate the specific section for Table 1 Catalyst Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '4', '5', '2', '6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_sulfonylation_of_anilines_mediated_by_visible_light/GPT_5_MINI/processed/Direct_sulfonylation_of_anilines_mediated_by_visible_light_artifacts/image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png
+  Exists   : True
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='2,4,6-triphenylpyrylium tetrafluoroborate'
+  [Tier 0 NameMap] '4' → name '[Ir(ppy)2(dtbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '5' → name '[Ir(dF(CF3)ppy)2(dtbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='9-mesityl-10-methylacridinium tetrafluoroborate'
+  [Tier 0 NameMap] '6' → opsin_lookup via name='3,6-dimethoxy-9-mesityl-10-(3,5-dimethoxyphenyl)acridinium tetrafluoroborate'
+  [Tier 0 NameMap] resolved=['3', '2', '6']  remaining=['4', '5']
+  [OCSR] image_000008_d02999385e09eb9fc1e1f31cf66b12d186172c55dfcb7b9bc2cbfcc271cc596a.png: 14 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['5']  smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3n(*)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['6']  smiles=*C1=CC(*)=CC([n+]2=C3C=C(*)C=C(*)C3=C(*)C3=C2C=C(*  wildcard=True
+  [OCSR]   pair [10,11]: texts=[]  smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(  wildcard=False
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC(S(*)(=O)=O)=C(N(*)*)C=C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '5']
+  [Tier 3] '4': bbox=10 atoms=43 smiles=C=CC=CC12=C34C5=C16C31=[C]2(C=CC=C1)[Ir]12([C]3=C(C=CC=C3)C3 wildcard=False
+  [Tier 3] '4': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3] '5': bbox=1 atoms=65 smiles=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9)C=71(C=CC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '5']
+    [Tier 4 LLM] '4' → r_value='fac-Ir(ppy)3'
+    [Tier 4 LLM] '5' → r_value='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+    [Tier 4] R-group candidates: ['4', '5']
+    [Tier 4 graph] '4' r=fac-Ir(ppy)3 fallback (smi=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9)C=71(C=CC(*)=C[N]12)[N]31C=C(*)C=CC18)C(F)=CC(F)=C6)[C]12=C367=[C]48=C14(C31=CC3=C(*)C=[N]159C=C=3(*)C=CC9)C61=C(C(F)=C2)C(F)(=C8)C=C47(F)F1)
+    [Tier 4 graph] '5' r=[Ir(dF(CF3)ppy)2(dtbbpy)]PF6 fallback (smi=*CC=C[NH][Ir]12345([C]6=C78(=[C]19=C(C(F)=CC(F)=C9)C=71(C=CC(*)=C[N]12)[N]31C=C(*)C=CC18)C(F)=CC(F)=C6)[C]12=C367=[C]48=C14(C31=CC3=C(*)C=[N]159C=C=3(*)C=CC9)C61=C(C(F)=C2)C(F)(=C8)C=C47(F)F1)
+    [Tier 4] '4' RDKit render failed: C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2
+    [Tier 4] '5' RDKit render failed: CC(C)(C)C1=CC=NC(=C1)C2=C(C=CC(=N2)C(C)(
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4', '5']
+    [Tier 5 PubChem] '4' → name_map name: '[Ir(ppy)2(dtbpy)]PF6'
+    [Tier 5 PubChem] '4' → no hit (tried ['[Ir(ppy)2(dtbpy)]PF6', '[Ir(ppy)2(dtbpy))PF6'])
+    [Tier 5 PubChem] '5' → name_map name: '[Ir(dF(CF3)ppy)2(dtbpy)]PF6'
+    [Tier 5 PubChem] '5' → no hit (tried ['[Ir(dF(CF3)ppy)2(dtbpy)]PF6', '1 MeCN/H 2 O        | 59            |', '[Ir(dF(CF3)ppy)2(dtbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4', '5']
+    [Tier 6] '4' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(ppy)2(dtbpy)]PF6' — name only, no SMILES
+    [Tier 6] '5' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dF(CF3)ppy)2(dtbpy)]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['4', '5']

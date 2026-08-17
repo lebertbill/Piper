@@ -1,0 +1,35 @@
+Label Resolver Diagnostic Log — 2026-06-16 12:34:12
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['5a', '5aa', '4a']
+  Image    : extracted_data/iOrthoi_CH_arylation_of_arenes_at_room_temperature_using_visible_light_ruthenium_CH_activation/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '4a' → pubchem_lookup via name='4-bromoanisole'
+  [Tier 0 NameMap] resolved=['4a']  remaining=['5a', '5aa']
+  [OCSR] visualheist_page_02_table_1.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=c1ccc(-c2ccccn2)cc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['4a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['5a']  smiles=*c1ccccc1-c1ccccn1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Saa']  smiles=*c1cccc(*)c1-c1ccccn1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['5a', '5aa']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['5a', '5aa']
+  [Tier 3] '5a': bbox=4 atoms=13 smiles=*c1ccccc1-c1ccccn1 wildcard=True
+  [Tier 3] '5aa': bbox=6 atoms=14 smiles=*c1cccc(*)c1-c1ccccn1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['5a', '5aa']
+    [Tier 4 LLM] '5a' → r_value='Ar = 4-methoxyphenyl'
+    [Tier 4 LLM] '5aa' → r_value='Ar = 4-methoxyphenyl'
+    [Tier 4] R-group candidates: ['5a', '5aa']
+    [Tier 4 graph] '5a' r=Ar = 4-methoxyphenyl fallback (smi=*c1ccccc1-c1ccccn1)
+    [Tier 4] '5a' ✅ match: COc1ccc(cc1)-c1ccccc1-c1ccccn1
+    [Tier 4 graph] '5aa' r=Ar = 4-methoxyphenyl fallback (smi=*c1cccc(*)c1-c1ccccn1)
+    [Tier 4] '5aa' ✅ match: COc1ccc(cc1)c1cccc(c1-c1ccccn1)c1ccc(OC)cc1
+  [Tier 4 R-group Sub] resolved=['5a', '5aa']  remaining=[]

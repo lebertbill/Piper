@@ -1,0 +1,155 @@
+Label Resolver Diagnostic Log — 2026-06-12 11:34:29
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3', '4+', '5', '6', '7', '8', '9', '10', '11', '12'] → image_000008_c580fc169662546d5f3c7319d1c49ac89642eb5b297ba30017be053869d7df8b.png
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '4+', '5', '6', '7', '8', '9', '10', '11', '12']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing_/GPT_5_MINI/processed/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing__artifacts/image_000008_c580fc169662546d5f3c7319d1c49ac89642eb5b297ba30017be053869d7df8b.png
+  Exists   : True
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='titanocene dichloride'
+  [Tier 0 NameMap] '4+' → name 'N,N'-dipropyl-1,13-dimethoxyquinacridinium tetrafluoroborate' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '5' → opsin_lookup via name='titanocene bis(triflate)'
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='Hantzsch's ester'
+  [Tier 0 NameMap] '7' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '8' → opsin_lookup via name='3-chloro-1,2,5,6-tetrakis(carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] '9' → pubchem_lookup via name='2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile'
+  [Tier 0 NameMap] '10' → opsin_lookup via name='pentakis(carbazol-9-yl)benzonitrile'
+  [Tier 0 NameMap] '11' → pubchem_lookup via name='Nile Blue'
+  [Tier 0 NameMap] '12' → pubchem_lookup via name='Methylene Blue'
+  [Tier 0 NameMap] resolved=['3', '5', '6', '7', '8', '9', '10', '11', '12']  remaining=['4+']
+  [OCSR] image_000008_c580fc169662546d5f3c7319d1c49ac89642eb5b297ba30017be053869d7df8b.png: 23 bboxes, 11 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=C(N2C3=CC=CC=C3C3=CC=CC=C32)C(*)=C(N2C(=CC=C)C  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=*C1=CC2OC3=CC(=*)C4C=CC=CC4=C3N=C2C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['13']  smiles=O=Cc1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [7,8]: texts=['8', '3CzCIIPN']  smiles=*C1=C(N2C3=CC=CC=C3C3=CC=CC=C32)C(*)=C(N23C=CC=CC=  wildcard=True
+  [OCSR]   pair [9,10]: texts=[]  smiles=*.*N1C2=CC=CC(OC)=C2C2C3=C(C=CC=C3[O-])N(*)C3=C2C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['12', 'Methylene Blue']  smiles=*C1=CC=C2N=C3C=CC(=*)C=C3SC2=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['3DPAFIPN']  smiles=*C1=C(N(C2=CC=CC=C2)C2=CC=CC=C2)C(*)=C(N(C2=CC=CC=  wildcard=True
+  [OCSR]   pair [15,16]: texts=['5']  smiles=[*][Ti]([*])([c]1cccc1)[c]1cccc1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['24, 8986, d, > 20:1']  smiles=OC(c1ccc(Cl)cc1)C(O)c1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [19,20]: texts=['6']  smiles=*C(=O)C1=C(C)NC(C)=C(C(*)=O)C1  wildcard=True
+  [OCSR]   pair [21,22]: texts=['10', 'SCzBn']  smiles=*C1=C2(N345C6=CC=CC=C678C3C3C769=C7=C38(C64)C95=CC  wildcard=True
+  [OCSR] → 12 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4+']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4+']
+  [Tier 3] '4+': bbox=9 atoms=27 smiles=*.*N1C2=CC=CC(OC)=C2C2C3=C(C=CC=C3O)N(*)C3=C2C1=CC=C3 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4+']
+    [Tier 4 LLM] '4+' → r_value='nPr'
+    [Tier 4] R-group candidates: ['4+']
+    [Tier 4 graph] '4+' r=nPr fallback (smi=*.*N1C2=CC=CC(OC)=C2C2C3=C(C=CC=C3[O-])N(*)C3=C2C1=CC=C3)
+    [Tier 4] '4+' 🔄 corrected: CCCN1C2=CC=CC(OC)=C2[C+]2C3=C(OC)C=CC=C3N(CCC)C3=C
+  [Tier 4 R-group Sub] resolved=['4+']  remaining=[]
+  [SafetyNet LLM] '7' is_label=True reason=The value '7' is explicitly listed in the known compound labels for this paper, following a consistent numerical shorthand pattern (3, 4+, 5, 6, 7, 8, etc.). Furthermore, a separate numeric quantity (5.0) has already been recorded, suggesting '7' identifies the chemical species rather than a measurement.
+  [SafetyNet LLM] '8' is_label=True reason=The value '8' is explicitly listed in the known compound labels for this paper, and a separate numeric quantity (5.0) has already been recorded, suggesting '8' refers to the identity of the photocatalyst.
+  [SafetyNet LLM] '9' is_label=True reason=The value '9' is explicitly listed in the provided known compound labels for this paper, following a consistent numerical shorthand pattern (e.g., '3', '4+', '5', '6'). Since a separate numeric quantity (5.0) is already recorded, '9' functions as the identifier for the photocatalyst compound.
+  [SafetyNet LLM] '10' is_label=True reason=The value '10' is explicitly listed in the provided known compound labels for this paper, following a sequential numbering pattern (3-15) typical for chemical shorthand notation.
+  [SafetyNet LLM] '11' is_label=True reason=The value '11' is explicitly listed in the provided known compound labels for this paper, and there is already a separate numeric quantity (5.0) recorded for this condition, suggesting '11' refers to the chemical identity.
+  [SafetyNet LLM] '12' is_label=True reason=The value '12' is explicitly listed in the provided set of known compound labels for this paper, and there is already a separate numeric quantity (5.0) recorded for this condition, suggesting '12' refers to the identity of the catalyst.
+  [SafetyNet LLM] '7' is_label=True reason=The value '7' is explicitly listed in the known compound labels for this paper, following a consistent numerical shorthand pattern (3, 4+, 5, 6, 7, 8, etc.). Furthermore, a separate numeric quantity (5.0) has already been recorded, suggesting '7' identifies the chemical species rather than a measurement.
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['13', '14', '15'] → image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['13', '14', '15']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing_/GPT_5_MINI/processed/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing__artifacts/image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png
+  Exists   : True
+  [Tier 0 NameMap] '13' → name '(R,R)-SalenTiCl2' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '14' → name '(R,R)-(tBu)SalenTiCl2' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '15' → llm_name_to_smiles via name='(R,R)-Duthaler-Hafner titanium complex'
+  [Tier 0 NameMap] resolved=['15']  remaining=['13', '14']
+  [OCSR] image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['43']  smiles=[Cl][Ti]123<-[N](=C\c4ccccc4[O]1)/[C@@H]1CCCC[C@H]  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=O=Cc1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['14']  smiles=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6  wildcard=True
+  [OCSR]   pair [6,7]: texts=['(RRI-2a']  smiles=O[C@H](c1ccc(Cl)cc1)[C@H](O)c1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['15']  smiles=*C1(*)OC2C(O1)C(*)(*)[O][Ti]([Cl])([c]1cccc1)[O]C2  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['13', '14']
+  [Tier 2 Symbol Correction] resolved=['13']  remaining=['14']
+  [Tier 3] '14': bbox=4 atoms=34 smiles=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6(C8=C(*)C= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['14']
+    [Tier 4 LLM] '14' → r_value='R = tBu'
+    [Tier 4] R-group candidates: ['14']
+    [Tier 4 graph] '14' r=R = tBu fallback (smi=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6(C8=C(*)C=C7*)C9=[N]3[CH]3(CCCCC3[N]4=CC2=C1)[N]5=C%10)
+    [Tier 4] '14' RDKit render failed: CC(C)(C)C1=CC(C(C)(C)C)=C2[O][Ti]345([Cl
+  [Tier 4 R-group Sub] resolved=[]  remaining=['14']
+    [Tier 5 PubChem] '14' → name_map name: '(R,R)-(tBu)SalenTiCl2'
+    [Tier 5 PubChem] '14' → no hit (tried ['(R,R)-(tBu)SalenTiCl2', 'R,R'])
+  [Tier 5 PubChem] resolved=[]  remaining=['14']
+    [Tier 6] '14' PubChem/OPSIN/LLM all failed for authoritative name '(R,R)-(tBu)SalenTiCl2' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['14']
+  [InlineResolver] Column 'Deviation from standard conditions' labels ['6'] from image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing_/GPT_5_MINI/processed/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing__artifacts/image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png
+  Exists   : True
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='Hantzsch's ester'
+  [Tier 0 NameMap] resolved=['6']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['8', '3', '5', '7', '12', '9', '11', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing_/GPT_5_MINI/processed/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing__artifacts/image_000008_c580fc169662546d5f3c7319d1c49ac89642eb5b297ba30017be053869d7df8b.png
+  Exists   : True
+  [Tier 0 NameMap] '8' → opsin_lookup via name='3-chloro-1,2,5,6-tetrakis(carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='titanocene dichloride'
+  [Tier 0 NameMap] '5' → opsin_lookup via name='titanocene bis(triflate)'
+  [Tier 0 NameMap] '7' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '12' → pubchem_lookup via name='Methylene Blue'
+  [Tier 0 NameMap] '9' → pubchem_lookup via name='2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile'
+  [Tier 0 NameMap] '11' → pubchem_lookup via name='Nile Blue'
+  [Tier 0 NameMap] '10' → opsin_lookup via name='pentakis(carbazol-9-yl)benzonitrile'
+  [Tier 0 NameMap] resolved=['8', '3', '5', '7', '12', '9', '11', '10']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['15', '14', '3', '25', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing_/GPT_5_MINI/processed/Diastereoselective_and_enantioselective_photoredox_pinacol_coupling_promoted_by_titanium_complexes_with_a_red-absorbing__artifacts/image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png
+  Exists   : True
+  [Tier 0 NameMap] '15' → llm_name_to_smiles via name='(R,R)-Duthaler-Hafner titanium complex'
+  [Tier 0 NameMap] '14' → name '(R,R)-(tBu)SalenTiCl2' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='titanocene dichloride'
+  [Tier 0 NameMap] '10' → opsin_lookup via name='pentakis(carbazol-9-yl)benzonitrile'
+  [Tier 0 NameMap] resolved=['15', '3', '10']  remaining=['14', '25']
+  [OCSR] image_000010_bc387d4eedf22ce271dd4f88cf1613908992ab9308484a4f1709b6de73d53f27.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['43']  smiles=[Cl][Ti]123<-[N](=C\c4ccccc4[O]1)/[C@@H]1CCCC[C@H]  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=O=Cc1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['14']  smiles=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6  wildcard=True
+  [OCSR]   pair [6,7]: texts=['(RRI-2a']  smiles=O[C@H](c1ccc(Cl)cc1)[C@H](O)c1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['15']  smiles=*C1(*)OC2C(O1)C(*)(*)[O][Ti]([Cl])([c]1cccc1)[O]C2  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['14', '25']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['14', '25']
+  [Tier 3] '14': bbox=4 atoms=34 smiles=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6(C8=C(*)C= wildcard=True
+  [Tier 3] '25': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['14', '25']
+    [Tier 4 LLM] '14' → r_value='tBu'
+    [Tier 4] R-group candidates: ['14']
+    [Tier 4 graph] '14' r=tBu fallback (smi=*C1=CC(*)=C2[O][Ti]345([Cl])([Cl])[O]C67=C89%10=C6(C8=C(*)C=C7*)C9=[N]3[CH]3(CCCCC3[N]4=CC2=C1)[N]5=C%10)
+    [Tier 4] '14' RDKit render failed: CC(C)(C)C1=CC(C(C)(C)C)=C2[O][Ti]345([Cl
+  [Tier 4 R-group Sub] resolved=[]  remaining=['14', '25']
+    [Tier 5 PubChem] '14' → name_map name: '(R,R)-(tBu)SalenTiCl2'
+    [Tier 5 PubChem] '14' → no hit (tried ['(R,R)-(tBu)SalenTiCl2', 'R,R'])
+    [Tier 5 PubChem] '25' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['14', '25']
+    [Tier 6] '14' PubChem/OPSIN/LLM all failed for authoritative name '(R,R)-(tBu)SalenTiCl2' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['14', '25']

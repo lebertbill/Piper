@@ -1,0 +1,263 @@
+Label Resolver Diagnostic Log — 2026-06-10 19:52:36
+================================================================================
+
+  [GlobalRegistry] labels=['4-CzIPN', '3'] → image_000003_27c2f648d12c249beee124fbc4c25ead02b8e6e4cd93c393c17458a0d43d4e03.png
+  [GlobalRegistry] labels=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7'] → image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4-CzIPN', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis/GPT_5_MINI/processed/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis_artifacts/image_000003_27c2f648d12c249beee124fbc4c25ead02b8e6e4cd93c393c17458a0d43d4e03.png
+  Exists   : True
+  [Tier 0 NameMap] '4-CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4-CzIPN']  remaining=['3']
+  [OCSR] image_000003_27c2f648d12c249beee124fbc4c25ead02b8e6e4cd93c393c17458a0d43d4e03.png: 21 bboxes, 10 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', '8']  smiles=*C1=C(*)C(*)=C(*)C(*)=C1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['!', '3']  smiles=*C1=C(*)C(*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [5,6]: texts=[]  smiles=*CC(*)=C=C(*)C(*)O  wildcard=True
+  [OCSR]   pair [7,8]: texts=['1', '2', 'T']  smiles=c1ccccc1  wildcard=False
+  [OCSR]   pair [9,10]: texts=['9']  smiles=*C1=CC=CC=C1C1=NC(*)CO1  wildcard=True
+  [OCSR]   pair [11,12]: texts=[]  smiles=*C1COC(C2=NC=CC=C2)=N1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['3']  smiles=*C(C1=NC(*)C(*)O1)=C1NC(*)C(*)O1  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3']  smiles=*C1COC(C(*)(*)C2=NC(*)CO2)=N1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['6', 'It', '0', '6', '3']  smiles=*C(C1=NC(*)CO1)=C1NC(*)CO1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3']  smiles=*C(*)C(*)*  wildcard=True
+  [OCSR] → 10 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3']
+  [Tier 3] '3': bbox=5 atoms=10 smiles=*CC(*)=C=C(*)C(*)O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3']
+    [Tier 4 LLM] '3' → r_value='R = Bn'
+    [Tier 4] R-group candidates: ['3']
+    [Tier 4 graph] '3' r=R = Bn fallback (smi=*CC(*)=C=C(*)C(*)O)
+    [Tier 4] '3' 🔄 corrected: CC(C)C[C@H]=C=C([Si](C(C)C)(C(C)C)C(C)C)[C@@H](O)C
+  [Tier 4 R-group Sub] resolved=['3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis/GPT_5_MINI/processed/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis_artifacts/image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [OCSR] image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png: 69 bboxes, 33 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C[CH](*)=N=C(*)C(O)C1=CC=C(*)C=C1.I  wildcard=True
+  [OCSR]   pair [2,3]: texts=['19']  smiles=*CC(*)=C=C(*)C(O)C1=CC2=C(*C3=C2C=CC=C3)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['35']  smiles=*C[CH](*)=C=C(*)C(O)C1CC*CC1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Irom L-Phenylalanine', '40,(S,0)-LI: 6280, 1.99 dr', '[41,(R,S)-LI; 7080, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)N  wildcard=True
+  [OCSR]   pair [8,9]: texts=['3']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['780 _']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [12,13]: texts=['14']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CS1  wildcard=True
+  [OCSR]   pair [16,17]: texts=[]  smiles=*C#CC=C  wildcard=True
+  [OCSR]   pair [18,19]: texts=['Irom D-Phenylalaning', '42, (S,R)-LI: 7080, 1,99 dr', '[43,(R,S)-L1: 6480, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [20,21]: texts=['20']  smiles=*CC(*)=C=C(*)C(O)C1=CN(*)N=C1  wildcard=True
+  [OCSR]   pair [22,23]: texts=['26']  smiles=*CCC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [24,25]: texts=['31']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [26,27]: texts=[]  smiles=*CC(*)=C=C(*)C(O)C1=C(*)C=CC=C1  wildcard=True
+  [OCSR]   pair [28,29]: texts=['15']  smiles=*C[CH](*)=C=C(*)C(O)C1=CSC=C1  wildcard=True
+  [OCSR]   pair [30,31]: texts=['36']  smiles=*C[CH](*)=C=C(*)C(O)C1CCCC1  wildcard=True
+  [OCSR]   pair [32,33]: texts=[]  smiles=*C[CH](*)=C=C(*)C(O)C1=CN(*)N=C1  wildcard=True
+  [OCSR]   pair [34,35]: texts=['2']  smiles=*C1=C(*)C(*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [36,37]: texts=['R = Me: from L-Alanine', '44, (S,RI-L1: 6082, 1,99 dr', '[45,(R,S)-Li: 6790, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [38,39]: texts=['21']  smiles=*C[CH](*)=C=C(*)C(O)C1=CN=C(*)S1  wildcard=True
+  [OCSR]   pair [40,41]: texts=['11']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [42,43]: texts=['5']  smiles=*CC(*)=C=C(*)C(O)C1=CC(*)=CC=C1  wildcard=True
+  [OCSR]   pair [44,45]: texts=['32']  smiles=*C[CH](*)=C=C(*)C(O)C1CCCCCC1  wildcard=True
+  [OCSR]   pair [46,47]: texts=['16']  smiles=*CC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [48,49]: texts=['8490, 8.| dr; 8890 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CO1  wildcard=True
+  [OCSR]   pair [50,51]: texts=['37']  smiles=*C[CH](*)=C=C(*)C(O)C1CCC1  wildcard=True
+  [OCSR]   pair [52,53]: texts=['27']  smiles=*CC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [54,55]: texts=['6690, 20.1 dr, 9790 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1CCC1  wildcard=True
+  [OCSR]   pair [56,57]: texts=['8796, 13.1 dr; 9386 @8']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CO1  wildcard=True
+  [OCSR]   pair [58,59]: texts=['88Ro, >20-1 dr; 9488 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1*CCC1  wildcard=True
+  [OCSR]   pair [58,60]: texts=['Hrom _pioine', '48, (S,A-LI: 4580. 1,99 dr', '[49, (R,S)-Li: 5282. 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C1*CCC1  wildcard=True
+  [OCSR]   pair [61,62]: texts=['33']  smiles=*.*C[CH](*)=N=C(*)C(O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [64,65]: texts=['OH', 'TIPS', 'iPr']  smiles=*C[CH](*)=N=C(*)C(O)C1=CN=C(*)N=C1  wildcard=True
+  [OCSR]   pair [66,67]: texts=[]  smiles=*C[CH](*)=C=C(*)C(O)C1=CN=C(*)N=C1  wildcard=True
+  [OCSR] → 33 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 3] '(S,R)-L1': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L2': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L3': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L4': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L5': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L6': bbox_idx=None out of range (n=69)
+  [Tier 3] 'L7': bbox_idx=None out of range (n=69)
+  [Tier 3 BBox Match] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+    [Tier 4 LLM] '(S,R)-L1' → r_value='R = Bn'
+    [Tier 4 LLM] '(S,R)-L1' → r_value='R = Me'
+    [Tier 4 LLM] '(S,R)-L1' → r_value='R = i-Bu'
+    [Tier 4] R-group candidates: ['(S,R)-L1']
+    [Tier 4 graph] '(S,R)-L1' r=R = i-Bu fallback (smi=*C[CH](*)=C=C(*)C(O)C(*)*)
+    [Tier 4] '(S,R)-L1' RDKit render failed: CC(C)C[C@H](NC(=O)OC(C)(C)C)[C@@H](O)C([
+  [Tier 4 R-group Sub] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+    [Tier 5 PubChem] '(S,R)-L1' → no hit (tried ['(S,R)-L1'])
+    [Tier 5 PubChem] 'L2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L6' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L7' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+    [Tier 6→llm_name_to_smiles] '(S,R)-L1' name='(S,R)-L1' → CC(C)(C)c1cc(cc(c1O)[C@H]2N[C@@H]3c4ccccc4C[C@H]3N
+  [Tier 6 LLM Vision] resolved=['(S,R)-L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [InlineResolver] Column 'Variation from 'standard conditions'' labels ['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1'] from image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis/GPT_5_MINI/processed/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis_artifacts/image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1']
+  [OCSR] image_000004_156e6443a2224511f701c543b0a27fd349693189cc9aef296b50973e79167866.png: 69 bboxes, 33 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C[CH](*)=N=C(*)C(O)C1=CC=C(*)C=C1.I  wildcard=True
+  [OCSR]   pair [2,3]: texts=['19']  smiles=*CC(*)=C=C(*)C(O)C1=CC2=C(*C3=C2C=CC=C3)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['35']  smiles=*C[CH](*)=C=C(*)C(O)C1CC*CC1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Irom L-Phenylalanine', '40,(S,0)-LI: 6280, 1.99 dr', '[41,(R,S)-LI; 7080, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)N  wildcard=True
+  [OCSR]   pair [8,9]: texts=['3']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['780 _']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [12,13]: texts=['14']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CS1  wildcard=True
+  [OCSR]   pair [16,17]: texts=[]  smiles=*C#CC=C  wildcard=True
+  [OCSR]   pair [18,19]: texts=['Irom D-Phenylalaning', '42, (S,R)-LI: 7080, 1,99 dr', '[43,(R,S)-L1: 6480, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [20,21]: texts=['20']  smiles=*CC(*)=C=C(*)C(O)C1=CN(*)N=C1  wildcard=True
+  [OCSR]   pair [22,23]: texts=['26']  smiles=*CCC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [24,25]: texts=['31']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [26,27]: texts=[]  smiles=*CC(*)=C=C(*)C(O)C1=C(*)C=CC=C1  wildcard=True
+  [OCSR]   pair [28,29]: texts=['15']  smiles=*C[CH](*)=C=C(*)C(O)C1=CSC=C1  wildcard=True
+  [OCSR]   pair [30,31]: texts=['36']  smiles=*C[CH](*)=C=C(*)C(O)C1CCCC1  wildcard=True
+  [OCSR]   pair [32,33]: texts=[]  smiles=*C[CH](*)=C=C(*)C(O)C1=CN(*)N=C1  wildcard=True
+  [OCSR]   pair [34,35]: texts=['2']  smiles=*C1=C(*)C(*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [36,37]: texts=['R = Me: from L-Alanine', '44, (S,RI-L1: 6082, 1,99 dr', '[45,(R,S)-Li: 6790, 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C(*)*  wildcard=True
+  [OCSR]   pair [38,39]: texts=['21']  smiles=*C[CH](*)=C=C(*)C(O)C1=CN=C(*)S1  wildcard=True
+  [OCSR]   pair [40,41]: texts=['11']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [42,43]: texts=['5']  smiles=*CC(*)=C=C(*)C(O)C1=CC(*)=CC=C1  wildcard=True
+  [OCSR]   pair [44,45]: texts=['32']  smiles=*C[CH](*)=C=C(*)C(O)C1CCCCCC1  wildcard=True
+  [OCSR]   pair [46,47]: texts=['16']  smiles=*CC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [48,49]: texts=['8490, 8.| dr; 8890 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CO1  wildcard=True
+  [OCSR]   pair [50,51]: texts=['37']  smiles=*C[CH](*)=C=C(*)C(O)C1CCC1  wildcard=True
+  [OCSR]   pair [52,53]: texts=['27']  smiles=*CC(O)C(*)=C=[CH](*)C*  wildcard=True
+  [OCSR]   pair [54,55]: texts=['6690, 20.1 dr, 9790 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1CCC1  wildcard=True
+  [OCSR]   pair [56,57]: texts=['8796, 13.1 dr; 9386 @8']  smiles=*C[CH](*)=C=C(*)C(O)C1=CC=CO1  wildcard=True
+  [OCSR]   pair [58,59]: texts=['88Ro, >20-1 dr; 9488 ee']  smiles=*C[CH](*)=C=C(*)C(O)C1*CCC1  wildcard=True
+  [OCSR]   pair [58,60]: texts=['Hrom _pioine', '48, (S,A-LI: 4580. 1,99 dr', '[49, (R,S)-Li: 5282. 99.1 dr]']  smiles=*C[CH](*)=C=C(*)C(O)C1*CCC1  wildcard=True
+  [OCSR]   pair [61,62]: texts=['33']  smiles=*.*C[CH](*)=N=C(*)C(O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [64,65]: texts=['OH', 'TIPS', 'iPr']  smiles=*C[CH](*)=N=C(*)C(O)C1=CN=C(*)N=C1  wildcard=True
+  [OCSR]   pair [66,67]: texts=[]  smiles=*C[CH](*)=C=C(*)C(O)C1=CN=C(*)N=C1  wildcard=True
+  [OCSR] → 33 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1']
+  [Tier 3] 'Equiv. of reactants 1 and 2': bbox_idx=None out of range (n=69)
+  [Tier 3] 'Air (added via syringe)': bbox_idx=None out of range (n=69)
+  [Tier 3] 'Equiv. of reactant 1': bbox_idx=None out of range (n=69)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)', 'Equiv. of reactant 1']
+    [Tier 4 LLM] 'Equiv. of reactant 1' → r_value='1.5 equiv'
+    [Tier 4 LLM] 'Equiv. of reactants 1 and 2' → r_value='1.5 equiv'
+    [Tier 4] R-group candidates: ['Equiv. of reactant 1', 'Equiv. of reactants 1 and 2']
+    [Tier 4 graph] 'Equiv. of reactant 1' r=1.5 equiv fallback (smi=*C#CC=C)
+    [Tier 4] 'Equiv. of reactant 1' ✅ match: CC(C)[Si](C#CC=C)(C(C)C)C(C)C
+    [Tier 4 graph] 'Equiv. of reactants 1 and 2' r=1.5 equiv fallback (smi=*C1=C(*)C(*)C(*)=C(*)N1)
+  [Tier 4 R-group Sub] resolved=['Equiv. of reactant 1']  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)']
+    [Tier 5 PubChem] 'Equiv. of reactants 1 and 2' → no hit (tried ['Equiv. of reactants 1 and 2'])
+    [Tier 5 PubChem] 'Air (added via syringe)' → no hit (tried ['Air (added via syringe)', 'Air'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Equiv. of reactants 1 and 2', 'Air (added via syringe)']
+  [Tier 6 LLM Vision] resolved=['Equiv. of reactants 1 and 2', 'Air (added via syringe)']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '2', 'homopropargylic alcohol (by-product)', '3 (allenol)', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis/GPT_5_MINI/processed/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis_artifacts/image_000003_27c2f648d12c249beee124fbc4c25ead02b8e6e4cd93c393c17458a0d43d4e03.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '2', 'homopropargylic alcohol (by-product)', '3 (allenol)', '1']
+  [OCSR] image_000003_27c2f648d12c249beee124fbc4c25ead02b8e6e4cd93c393c17458a0d43d4e03.png: 21 bboxes, 10 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', '8']  smiles=*C1=C(*)C(*)=C(*)C(*)=C1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['!', '3']  smiles=*C1=C(*)C(*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [5,6]: texts=[]  smiles=*CC(*)=C=C(*)C(*)O  wildcard=True
+  [OCSR]   pair [7,8]: texts=['1', '2', 'T']  smiles=c1ccccc1  wildcard=False
+  [OCSR]   pair [9,10]: texts=['9']  smiles=*C1=CC=CC=C1C1=NC(*)CO1  wildcard=True
+  [OCSR]   pair [11,12]: texts=[]  smiles=*C1COC(C2=NC=CC=C2)=N1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['3']  smiles=*C(C1=NC(*)C(*)O1)=C1NC(*)C(*)O1  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3']  smiles=*C1COC(C(*)(*)C2=NC(*)CO2)=N1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['6', 'It', '0', '6', '3']  smiles=*C(C1=NC(*)CO1)=C1NC(*)CO1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3']  smiles=*C(*)C(*)*  wildcard=True
+  [OCSR] → 10 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['2', '1']  remaining=['3', 'homopropargylic alcohol (by-product)', '3 (allenol)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', 'homopropargylic alcohol (by-product)', '3 (allenol)']
+  [Tier 3] '3': bbox=5 atoms=10 smiles=*CC(*)=C=C(*)C(*)O wildcard=True
+  [Tier 3] 'homopropargylic alcohol (by-product)': bbox_idx=None out of range (n=21)
+  [Tier 3] '3 (allenol)': bbox=5 atoms=10 smiles=*CC(*)=C=C(*)C(*)O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', 'homopropargylic alcohol (by-product)', '3 (allenol)']
+    [Tier 4 LLM] '3' → r_value='Ph, TIPS, i-Pr'
+    [Tier 4 LLM] '3 (allenol)' → r_value='Ph, TIPS, i-Pr'
+    [Tier 4] R-group candidates: ['3', '3 (allenol)']
+    [Tier 4 graph] '3' r=Ph, TIPS, i-Pr fallback (smi=*CC(*)=C=C(*)C(*)O)
+    [Tier 4 graph] '3 (allenol)' r=Ph, TIPS, i-Pr fallback (smi=*CC(*)=C=C(*)C(*)O)
+    [Tier 4] '3' 🔄 corrected: CC(C)C[C@H]=C=C([Si](C(C)C)(C(C)C)C(C)C)[C@@H](O)c
+    [Tier 4] '3 (allenol)' 🔄 corrected: CC(C)C[C@H]=C=C([Si](C(C)C)(C(C)C)C(C)C)[C@@H](O)c
+  [Tier 4 R-group Sub] resolved=['3', '3 (allenol)']  remaining=['homopropargylic alcohol (by-product)']
+    [Tier 5 PubChem] 'homopropargylic alcohol (by-product)' → hit via 'homopropargylic alcohol': C#CCCO
+  [Tier 5 PubChem] resolved=['homopropargylic alcohol (by-product)']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '6', '18', '1', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis/GPT_5_MINI/processed/Asymmetric_1,4-functionalization_of_1,3-enynes_via_dual_photoredox_and_chromium_catalysis_artifacts/image_000001_0823e189e8003475d56f8dcde83d8a29ba79f00c996b3ecd76689a63239fe655.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '6', '18', '1', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+  [OCSR] image_000001_0823e189e8003475d56f8dcde83d8a29ba79f00c996b3ecd76689a63239fe655.png: 18 bboxes, 0 coref pairs
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '6', '18', '1', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '6', '18', '1', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+  [Tier 3] '3': bbox=1 atoms=6 smiles=C=C(C)C#CI wildcard=False
+  [Tier 3] '6': bbox=6 atoms=9 smiles=*C([2H])C([2H])=*=C([2H])[4H] wildcard=True
+  [Tier 3] '18': bbox=17 atoms=9 smiles=*C([2H])=C=C(C)C(*)[2H] wildcard=True
+  [Tier 3] '1': bbox=0 atoms=7 smiles=C/C=C(\C)C#CI wildcard=False
+  [Tier 3] '10': bbox=10 atoms=1 smiles=[Cu] wildcard=False
+  [Tier 3] '10': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3] '8': bbox=8 atoms=2 smiles=*B wildcard=True
+  [Tier 3] '11': bbox=11 atoms=8 smiles=*C.CC.CC.CC wildcard=True
+  [Tier 3] '19': bbox_idx=None out of range (n=18)
+  [Tier 3] '12': bbox=12 atoms=8 smiles=*C(*)=CC(C)CC wildcard=True
+  [Tier 3] '15': bbox=15 atoms=10 smiles=*C[CH](*)=C=C(Cl)C(O)O wildcard=True
+  [Tier 3] '14': bbox=14 atoms=7 smiles=*C=C=C(O)C* wildcard=True
+  [Tier 3] '13': bbox=13 atoms=10 smiles=*CC(C)=C=C(I)C(*)O wildcard=True
+  [Tier 3] '4': bbox=3 atoms=6 smiles=*C[CH](O)=C=O wildcard=True
+  [Tier 3] '5': bbox=4 atoms=8 smiles=*CC(B)(C)C#CB wildcard=True
+  [Tier 3] '7': bbox=7 atoms=2 smiles=*O wildcard=True
+  [Tier 3] '16': bbox=16 atoms=10 smiles=*CC(C)(C#CB)C(*)O wildcard=True
+  [Tier 3] '2': bbox=2 atoms=5 smiles=*C#CC=C wildcard=True
+  [Tier 3] '17': bbox_idx=None out of range (n=18)
+  [Tier 3] '9': bbox=9 atoms=2 smiles=*[2H] wildcard=True
+  [Tier 3] '20': bbox_idx=None out of range (n=18)
+  [Tier 3 BBox Match] resolved=['3', '1']  remaining=['6', '18', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['6', '18', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+    [Tier 5 PubChem] '6' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '18' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '10' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '8' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '11' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '19' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '12' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '15' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '14' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '13' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '7' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '16' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '17' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '9' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '20' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['6', '18', '10', '8', '11', '19', '12', '15', '14', '13', '4', '5', '7', '16', '2', '17', '9', '20']
+    [Tier 6→llm_name_to_smiles] '2' name='1,3-enyne' → C=CC#C
+    [Tier 6→llm_name_to_smiles] '18' name='1                                           | - 14:1                        |' → CCCCCCCC/C=C\CCCCC(=O)O
+    [Tier 6→llm_name_to_smiles] '20' name='1 to 12:1' → CCCCCCCCCCCC=O
+  [Tier 6 LLM Vision] resolved=['2', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']

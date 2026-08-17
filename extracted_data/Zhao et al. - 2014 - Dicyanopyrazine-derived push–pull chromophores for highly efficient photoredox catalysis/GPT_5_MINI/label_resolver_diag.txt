@@ -1,0 +1,108 @@
+Label Resolver Diagnostic Log — 2026-05-13 15:25:16
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'DAMN'] → image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 6' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 7' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 2
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'DAMN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/default_run__/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  Exists   : True
+  [Tier 0 NameMap] 'A' → opsin_lookup via name='5,6-bis(4-(dimethylamino)phenyl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'B' → opsin_lookup via name='5,6-bis(4-((4-(dimethylamino)phenyl)ethynyl)phenyl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'C' → pubchem_lookup via name='5,6-diphenylpyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'D' → opsin_lookup via name='5,6-bis(4-fluorophenyl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'E' → opsin_lookup via name='5,6-bis(4-methoxyphenyl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'F' → pubchem_lookup via name='5,6-di(furan-2-yl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'G' → opsin_lookup via name='5,6-di(thiophen-2-yl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'H' → pubchem_lookup via name='5,6-bis(5-methoxythiophen-2-yl)pyrazine-2,3-dicarbonitrile'
+  [Tier 0 NameMap] 'DAMN' → llm_name_to_smiles via name='diaminomaleodinitrile'
+  [Tier 0 NameMap] resolved=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'DAMN']  remaining=[]
+  [InlineResolver] Column 'DPZ catalyst (mol%)' labels ['CH3NO2 (nitromethane)'] from image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 2
+────────────────────────────────────────────────────────────
+  Labels   : ['CH3NO2 (nitromethane)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/default_run__/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['CH3NO2 (nitromethane)']
+  [OCSR] image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png: 15 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*.*.*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['H:8J7 rcld']  smiles=*C1=CC=C(C2=C(C3=CC=C(*)S3)N=C(*)C(*)=N2)S1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['C Reh', '0 Ref', 'ER- Ovo']  smiles=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['F,X-0', '0.Xes']  smiles=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)S2)S1.N.N  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['CH3NO2 (nitromethane)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['CH3NO2 (nitromethane)']
+  [Tier 3] 'CH3NO2 (nitromethane)': bbox_idx=None out of range (n=15)
+  [Tier 3 BBox Match] resolved=[]  remaining=['CH3NO2 (nitromethane)']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['CH3NO2 (nitromethane)']
+    [Tier 5 PubChem] 'CH3NO2 (nitromethane)' → hit via 'CH3NO2': C[N+](=O)[O-]
+  [Tier 5 PubChem] resolved=['CH3NO2 (nitromethane)']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', 'nitromethane', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/default_run__/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000006_3632b5b9b097ab1d4973d80152e67adc36c35b5ee9572225bea0b2637c04d5be.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', 'nitromethane', '3a']
+  [OCSR] image_000006_3632b5b9b097ab1d4973d80152e67adc36c35b5ee9572225bea0b2637c04d5be.png: 4 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*N1CCC2=CC=CC=C2C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Jn']  smiles=*C1C2=CC=CC=C2CCN1*  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', 'nitromethane', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', 'nitromethane', '3a']
+  [Tier 3] '1a': bbox=0 atoms=11 smiles=*N1CCC2=CC=CC=C2C1 wildcard=True
+  [Tier 3] 'nitromethane': bbox_idx=None out of range (n=4)
+  [Tier 3] '3a': bbox=2 atoms=12 smiles=*C1C2=CC=CC=C2CCN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', 'nitromethane', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '3a' → r_value='R1 = CH2NO2, R2 = Ph'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*N1CCC2=CC=CC=C2C1)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)N2CCC3=CC=CC=C3C2
+    [Tier 4 graph] '3a' r=R1 = CH2NO2, R2 = Ph fallback (smi=*C1C2=CC=CC=C2CCN1*)
+    [Tier 4] '3a' RDKit render failed: [N+](=O)[O-]CC1C2=CC=CC=C2CCN1C1=CC=CC=C
+  [Tier 4 R-group Sub] resolved=['1a']  remaining=['3a', 'nitromethane']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'nitromethane' → hit via 'nitromethane': C[N+](=O)[O-]
+  [Tier 5 PubChem] resolved=['nitromethane']  remaining=['3a']
+    [Tier 6→opsin_lookup] '3a' name='1-(nitromethyl)-2-phenyl-1,2,3,4-tetrahydroisoquinoline' → [N+](=O)([O-])CC1N(CCC2=CC=CC=C12)C1=CC=CC=C1
+  [Tier 6 LLM Vision] resolved=['3a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 2
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '0']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/default_run__/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '0']
+  [OCSR] image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png: 15 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*.*.*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['H:8J7 rcld']  smiles=*C1=CC=C(C2=C(C3=CC=C(*)S3)N=C(*)C(*)=N2)S1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['C Reh', '0 Ref', 'ER- Ovo']  smiles=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['F,X-0', '0.Xes']  smiles=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)S2)S1.N.N  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '0']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '0']
+  [Tier 3] '2': bbox=2 atoms=6 smiles=*C(=O)C(*)=O wildcard=True
+  [Tier 3] '0': bbox=0 atoms=59 smiles=*.*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C)C)C=C2)N=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2', '0']
+    [Tier 4 LLM] '2' → r_value='R = Ph, 4-FPh, 4-MeOPh, furan-2-yl, thiophen-2-yl, 5-MeO-thiophen-2-yl'
+    [Tier 4] R-group candidates: ['2']
+    [Tier 4 graph] '2' r=R = Ph, 4-FPh, 4-MeOPh, furan-2-yl, thiophen-2-yl, 5-MeO-thiophen-2-yl fallback (smi=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['2', '0']
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '0' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2', '0']
+  [Tier 6 LLM Vision] resolved=['2', '0']

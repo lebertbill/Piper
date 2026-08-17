@@ -1,0 +1,2043 @@
+[
+    {
+        "document": "Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions a",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "66 (62)",
+                        "quantity": 66.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "none"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "Isolated yield 62% (value in parentheses); yield determined by 1H NMR using 1,3,5-trimethoxybenzene as internal standard",
+                    "Reaction quenched with 2 N HCl after irradiation"
+                ],
+                "yield": "66 (62)"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "w/o Ir-1",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "Photocatalyst Ir-1 omitted (w/o Ir-1)"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "w/o T1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "T1 omitted (w/o T1)"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "w/o Cs 2 CO 3"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3 (3.0 equiv)",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "Cs2CO3 base omitted (w/o Cs2CO3)"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "w/o light"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "30 W blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "No light irradiation (w/o light); blue LEDs omitted"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "nitrogen",
+                        "resolved_smiles": "N#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "[N]=[N]"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "N 2 instead of CO 2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "CO2 replaced with N2 (N2 instead of CO2)"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T2 (p‑tert‑butylthiophenolate, potassium salt)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "[K+].[S-]c1ccc(C(C)(C))cc1",
+                        "resolved_name": "potassium 4-tert-butylbenzenethiolate",
+                        "resolved_smiles": "C(C)(C)(C)C1=CC=C(C=C1)[S-].[K+]",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(*)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "62",
+                        "quantity": 62.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "T2 instead of T1",
+                        "resolved_name": "potassium 4-tert-butylbenzenethiolate",
+                        "resolved_smiles": "C(C)(C)(C)C1=CC=C(C=C1)[S-].[K+]",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(*)C=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "T2 used instead of T1"
+                ],
+                "yield": "62"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "additive",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "86 (83)",
+                        "quantity": 86.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PhMe 2 SiH as an additive"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "Isolated yield 83% (value in parentheses)",
+                    "PhMe2SiH used as an additive (1.0 equiv.)",
+                    "Reaction quenched with 2 N HCl after irradiation"
+                ],
+                "yield": "86 (83)"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-2 (Ir(ppy)2(dtbbpy)PF6)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)2(dtbbpy)PF6",
+                        "resolved_name": "Ir(ppy)2(dtbbpy)PF6",
+                        "resolved_smiles": "<mismatch>",
+                        "smiles_source": "ocsr_graph",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*CC=C[N]1CC2=CC(*)=CC=[N]2[Ir]1234([C]1=C(C=CC=C1)C1=CC=CC=[N]12)[C]1=C(=[C]32=CC=CC=C2C2=[N]4C=CC=C2)C=CC=C1CC=CC=C.I"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "60",
+                        "quantity": 60.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "Ir-2 instead of Ir-1",
+                        "resolved_name": "Ir(ppy)2(dtbbpy)PF6",
+                        "resolved_smiles": "<mismatch>",
+                        "smiles_source": "ocsr_graph",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*CC=C[N]1CC2=CC(*)=CC=[N]2[Ir]1234([C]1=C(C=CC=C1)C1=CC=CC=[N]12)[C]1=C(=[C]32=CC=CC=C2C2=[N]4C=CC=C2)C=CC=C1CC=CC=C.I"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "Ir-2 used instead of Ir-1; PhMe2SiH used (1.0 equiv.) per footnote c"
+                ],
+                "yield": "60"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN (2,4,5,6-tetra(carbazol-9-yl)isophthalonitrile)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "4CzIPN"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "4CzIPN instead of Ir-1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "4CzIPN used instead of Ir-1; PhMe2SiH used (1.0 equiv.) per footnote c"
+                ],
+                "yield": "n.d."
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylformamide",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "55",
+                        "quantity": 55.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "DMF instead of DMSO"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "DMF used instead of DMSO; PhMe2SiH used (1.0 equiv.) per footnote c"
+                ],
+                "yield": "55"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tBuSH (tert‑butylthiol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)S",
+                        "resolved_name": "tBuSH",
+                        "resolved_smiles": "CC(C)(C)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC(C)(C)S"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "74",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "t BuSH instead of T1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    }
+                ],
+                "additional_info": [
+                    "tBuSH used instead of T1; PhMe2SiH used (1.0 equiv.) per footnote c"
+                ],
+                "yield": "74"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "K2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhMe2SiH (dimethylphenylsilane)",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "C[Si](C)(c1ccccc1)H",
+                        "resolved_smiles": "C[SiH](C)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "68",
+                        "quantity": 68.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "K 2 CO 3 instead of Cs 2 CO 3"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "then 2 N HCl",
+                        "quantity": 2.0,
+                        "unit": "N",
+                        "resolved_name": "Hydrochloric acid",
+                        "resolved_smiles": "Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "Cl"
+                    }
+                ],
+                "additional_info": [
+                    "K2CO3 used instead of Cs2CO3; PhMe2SiH used (1.0 equiv.) per footnote c"
+                ],
+                "yield": "68"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "text": "1a",
+                        "smiles_llm": "COc1ccc(CC(C)(C)C=C)cc1",
+                        "smiles_ocsr": "COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC(Cc1ccc(OC)cc1)(C(=O)OC(C)(C)C)C(=O)OC(C)(C)C",
+                        "molecular_formula": "C22H32O5",
+                        "molecular_weight": 376.49
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(C)C(=O)O)cc1",
+                        "smiles_ocsr": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)C(CC(=O)O)CC(C)(C)C2",
+                        "molecular_formula": "C15H20O3",
+                        "molecular_weight": 248.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir-1 (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_ocsr_raw": "c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc3-c2c1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "T1 (p‑tert‑butylthiophenol)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1ccc(S)cc1",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "smiles": "Cs2CO3",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO (dimethyl sulfoxide)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PMHS (poly(methylhydrosiloxane))",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O[Si](C)(C)O",
+                        "resolved_name": "poly(methylhydrosiloxane)",
+                        "resolved_smiles": "C[SiH](O[Si](C)(C)C)O[Si](C)(C)C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 30.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2",
+                        "quantity": 1.0,
+                        "unit": "atm",
+                        "smiles": "O=C=O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PMHS instead of PhMe 2 SiH"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "T1 (20 mol%)",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-tert-butylthiophenol",
+                        "resolved_smiles": "CC(C)(C)C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC=C(S)C=C1"
+                    }
+                ],
+                "additional_info": [
+                    "PMHS used instead of PhMe2SiH (entry substitutes additive); PhMe2SiH was standard additive in c-marked entries"
+                ],
+                "yield": "82"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "Variations": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": true,
+                "label_map": "Catalysts and additives defined in the scheme and gallery below the table",
+                "label_map_source_id": "Table 1"
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 28,
+            "valid_molecules": 28,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

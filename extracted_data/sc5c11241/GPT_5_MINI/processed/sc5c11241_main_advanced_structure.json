@@ -1,0 +1,521 @@
+{
+    "article_summary": "The article describes the optimization of a photocatalytic C-C bond formation reaction between CH-acidic substrates (like methyl cyanoacetate) and 1,1-diphenylethylene using the organophotocatalyst 4CzIPN. The study utilizes a 3D-printed photoreactor and Design of Experiments (DoE) to improve yields from 43% to 91%, while introducing a modified energy economy factor to assess sustainability and demonstrating scalability via continuous flow synthesis.",
+    "compound_name_map": {
+        "4CzIPN": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+        "1": "carbazole",
+        "2": "tetrafluoroisophthalonitrile",
+        "3": "dimethyl malonate",
+        "4": "1,1-diphenylethylene",
+        "5": "dimethyl 2-(2,2-diphenylethyl)malonate",
+        "6a": "dibenzyl malonate",
+        "6b": "acetylacetone",
+        "6c": "ethyl acetoacetate",
+        "6d": "methyl cyanoacetate",
+        "6e": "ethyl cyanoacetate",
+        "7a": "dibenzyl 2-(2,2-diphenylethyl)malonate",
+        "8b": "3,3-diphenylheptane-2,6-dione",
+        "8c": "ethyl 5-oxo-4,4-diphenylhexanoate",
+        "7d": "methyl 2-cyano-4,4-diphenylbutanoate",
+        "CPME": "cyclopentyl methyl ether",
+        "DABCO": "1,4-diazabicyclo[2.2.2]octane",
+        "DBU": "1,8-diazabicyclo[5.4.0]undec-7-ene",
+        "DIPEA": "N,N-diisopropylethylamine",
+        "TEA": "triethylamine",
+        "DoE": "performed through a 2 4 full factorial design of experiments",
+        "B": "A) Structure of 4CzIPN,",
+        "TLC": "Thin-layer chromatography",
+        "Merck": "was performed using silica gel 60 F254",
+        "NMR": "Nuclear magnetic resonance",
+        "ANOVA": "lculate the regression model and perform analysis of variance",
+        "c": "b Determined by HPLC",
+        "A": "Therefore, the most favorable conditions were",
+        "C": "Molar ratio (-)\n\nB by C",
+        "PDF": "dies for design of the experiments and further results of DoE",
+        "11": "cite-as)\n-"
+    },
+    "compound_description_map": {
+        "4CzIPN": "redox organo-photocatalyst consisting of four carbazolyl groups as electron donors and a dicyanobenzene central unit as an electron acceptor",
+        "6d": "CH-acidic substrate used to produce intermediates for substituted beta-amino acids"
+    },
+    "data_items": [
+        {
+            "id": "Figure 1",
+            "type": "Figure",
+            "purpose": "Structure of 4CzIPN and the model C-C bond forming reaction",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000011_3204b13812998a773993a92009d16f02d4ba4ebadcb783c0ae91342e3459c4e0.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "4CzIPN"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "4CzIPN"
+            ],
+            "reactant_labels": [
+                "6d",
+                "4"
+            ],
+            "product_labels": [
+                "7d"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Scheme 1",
+            "type": "Scheme",
+            "purpose": "Mechanochemical synthesis of 4CzIPN catalyst",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000012_7dd65c7774cc71d196b674ea0c914b33b31776ee9a86517136c5976ca9068df5.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "1",
+                "2",
+                "4CzIPN"
+            ],
+            "reactant_labels": [
+                "1",
+                "2"
+            ],
+            "product_labels": [
+                "4CzIPN"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Scheme 2",
+            "type": "Scheme",
+            "purpose": "Model reaction between dimethyl malonate and 1,1-diphenylethylene",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000013_d6630b9202081a96a48d79cb93291d8d8a92150faa59692393a2ec520ea51e84.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "3",
+                "4",
+                "5"
+            ],
+            "reactant_labels": [
+                "3",
+                "4"
+            ],
+            "product_labels": [
+                "5"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Table 1",
+            "type": "Table",
+            "purpose": "Investigation of reaction atmosphere effects on yield",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000013_d6630b9202081a96a48d79cb93291d8d8a92150faa59692393a2ec520ea51e84.png",
+            "expected_row_count": 3,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "The 'reaction conditions' column maps to the atmosphere/deoxygenation method used during the reaction shown in Scheme 2.",
+            "defined_labels": [],
+            "reactant_labels": [
+                "3",
+                "4"
+            ],
+            "product_labels": [
+                "5"
+            ],
+            "columns": {
+                "entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "reaction conditions": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "yield [%]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Scheme 4",
+            "type": "Scheme",
+            "purpose": "Substrate scope for CH-acidic alkylation and De Mayo side reactions",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000015_df168019cb58df336625eed1424f85d3bda781c01640494be0487835e6ddae1c.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "6a",
+                "6b",
+                "6c",
+                "6d",
+                "6e",
+                "7a",
+                "7b",
+                "7c",
+                "7d",
+                "7e",
+                "8b",
+                "8c"
+            ],
+            "reactant_labels": [
+                "6a-e",
+                "4"
+            ],
+            "product_labels": [
+                "7a-e",
+                "8b,c"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Table 2",
+            "type": "Table",
+            "purpose": "Substrate scope results for various CH-acidic substrates",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000015_df168019cb58df336625eed1424f85d3bda781c01640494be0487835e6ddae1c.png",
+            "expected_row_count": 5,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [
+                "6a",
+                "6b",
+                "6c",
+                "6d",
+                "6e"
+            ],
+            "product_labels": [
+                "7a",
+                "8b",
+                "8c",
+                "7d",
+                "7e"
+            ],
+            "columns": {
+                "entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "substrate": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map_source_id": "Scheme 4"
+                },
+                "R 1": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "R 2": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "product": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "yield [%]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Table 3",
+            "type": "Table",
+            "purpose": "Initial screening of solvents and bases for reaction optimization",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000016_aa3294ea44202d9d0531f9a1607d7eef52ff37bcbb0c07184e1f864a2b2e0703.png",
+            "expected_row_count": 22,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {
+                "entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "solvents": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true
+                },
+                "bases": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true
+                },
+                "yield [%]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Table 5",
+            "type": "Table",
+            "purpose": "Experimental design matrix (DoE) for reaction optimization",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000016_aa3294ea44202d9d0531f9a1607d7eef52ff37bcbb0c07184e1f864a2b2e0703.png",
+            "expected_row_count": 19,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {
+                "entry": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true
+                },
+                "temperature [ \u00b0 C]": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "base [mol %]": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "catalyst [mol %]": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "molar ratio [ - ]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": false
+                },
+                "yield [%]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": false
+                }
+            }
+        },
+        {
+            "id": "Table 9",
+            "type": "Table",
+            "purpose": "Gradient method optimization steps for temperature and molar ratio",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "sc5c11241_artifacts/image_000021_7ad9390a72517d0a24baf06f843c9b2b9ba578ac333d1006f1c659f33c01ee26.png",
+            "expected_row_count": 5,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {
+                "steps": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "temperature [ \u00b0 C]": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "molar ratio [ - ]": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": false
+                }
+            }
+        },
+        {
+            "id": "7a",
+            "type": "Product Registry",
+            "purpose": "Characterization data for dibenzyl 2-(2,2-diphenylethyl)malonate",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": null,
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "8b",
+            "type": "Product Registry",
+            "purpose": "Characterization data for 3,3-diphenylheptane-2,6-dione",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": null,
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "8c",
+            "type": "Product Registry",
+            "purpose": "Characterization data for ethyl 5-oxo-4,4-diphenylhexanoate",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": null,
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "7d",
+            "type": "Product Registry",
+            "purpose": "Characterization data for methyl 2-cyano-4,4-diphenylbutanoate",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": null,
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        }
+    ]
+}

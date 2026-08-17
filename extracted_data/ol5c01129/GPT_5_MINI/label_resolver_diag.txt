@@ -1,0 +1,32 @@
+Label Resolver Diagnostic Log — 2026-08-15 10:22:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a']
+  Image    : extracted_data/ol5c01129/GPT_5_MINI/processed/visualheist_page_01_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3a']
+  [OCSR] visualheist_page_01_table_2.png: 10 bboxes, 3 coref pairs
+  [OCSR]   pair [1,2]: texts=['1a,2 0 equiv']  smiles=*S(*)=O  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=COc1ccc(C(=O)NO)cc1  wildcard=False
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*S(=O)(=O)NC(=O)C1=CC=C(OC)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3a']
+  [Tier 3] '1a': bbox=1 atoms=4 smiles=*S(*)=O wildcard=True
+  [Tier 3] '3a': bbox=7 atoms=15 smiles=*S(=O)(=O)NC(=O)C1=CC=C(OC)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '3a']
+    [Tier 4 LLM] '1a' → r_value='R1 = p-Tol'
+    [Tier 4 LLM] '3a' → r_value='R1 = p-Tol'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=R1 = p-Tol fallback (smi=*S(*)=O)
+    [Tier 4] '1a' ✅ match: Cc1ccc(S(=O)[O-])cc1.[Na+]
+    [Tier 4 graph] '3a' r=R1 = p-Tol fallback (smi=*S(=O)(=O)NC(=O)C1=CC=C(OC)C=C1)
+    [Tier 4] '3a' ✅ match: CC1=CC=C(C=C1)S(=O)(=O)NC(=O)C1=CC=C(OC)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=[]

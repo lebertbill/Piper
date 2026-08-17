@@ -1,0 +1,126 @@
+Label Resolver Diagnostic Log — 2026-06-17 15:15:03
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Co(TPP)', 'Co-I', 'Co-II', 'Ir[dF(CF3)ppy]2(dtbbpy)PF6', '4CzIPN', 'Eosin Y', 'PC-I'] → image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['Co(TPP)', 'Co-I', 'Co-II', 'Ir[dF(CF3)ppy]2(dtbbpy)PF6', '4CzIPN', 'Eosin Y', 'PC-I']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides/GPT_5_MINI/processed/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides_artifacts/image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png
+  Exists   : True
+  [Tier 0 NameMap] 'Co(TPP)' → pubchem_lookup via name='5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)'
+  [Tier 0 NameMap] 'Ir[dF(CF3)ppy]2(dtbbpy)PF6' → llm_name_to_smiles via name='[4,4'-bis(1,1-dimethylethyl)-2,2'-bipyridine-N1,N2]bis[3,5-difluoro-2-[5-(trifluoromethyl)-2-pyridinyl-N]phenyl-C]iridium(III) hexafluorophosphate'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['Co(TPP)', 'Ir[dF(CF3)ppy]2(dtbbpy)PF6', '4CzIPN']  remaining=['Co-I', 'Co-II', 'Eosin Y', 'PC-I']
+  [OCSR] image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png: 33 bboxes, 16 coref pairs
+  [OCSR]   pair [0,1]: texts=['3af 75%9']  smiles=*CC(CC1=CC=C(*)C=C1)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['3aj 85%']  smiles=*CC(CCCCl)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Ia']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['8399', 'Jap']  smiles=*CC(OCCCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3ak 7920']  smiles=*CC(COCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['70%8', '(0.9144 g, 739"1', '3ag']  smiles=*CC(CCOC(*)=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['2']  smiles=*/C([7*])=C(\[2*])[3*]  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3aq 88%" €']  smiles=*C1=CC=C(C2C3CCC(C3)C2*)C=C1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['3ah 4890']  smiles=*CC(CCC(=O)OCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3al 7390']  smiles=*CC(C[Si](*)(*)*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [21,22]: texts=['3ad 76%']  smiles=*CC(C1=CC=C(*)C=C1)C1CCCCC1  wildcard=True
+  [OCSR]   pair [23,24]: texts=['Jae 86%']  smiles=*CC(CCC1=CC=CC=C1)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [25,26]: texts=['n = 1 Jam 66%"', 'n = 7 3an 65962']  smiles=*CC(CCCO)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [27,28]: texts=['3ar 85%']  smiles=*CC1(C2=CC=C(*)C=C2)CNC1  wildcard=True
+  [OCSR]   pair [29,30]: texts=['3ai 829 0']  smiles=*CC(C*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [31,32]: texts=['3']  smiles=*C1=CC=C(C([2*])([3*])C(*)(*)[7*])C=C1  wildcard=True
+  [OCSR] → 16 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Co-I', 'Co-II', 'Eosin Y', 'PC-I']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Co-I', 'Co-II', 'Eosin Y', 'PC-I']
+  [Tier 3] 'Co-I': bbox_idx=None out of range (n=33)
+  [Tier 3] 'Co-II': bbox_idx=None out of range (n=33)
+  [Tier 3] 'Eosin Y': bbox_idx=None out of range (n=33)
+  [Tier 3] 'PC-I': bbox_idx=None out of range (n=33)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Co-I', 'Co-II', 'Eosin Y', 'PC-I']
+    [Tier 4 LLM] assignment failed: Invalid \escape: line 5 column 39 (char 88)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Co-I', 'Co-II', 'Eosin Y', 'PC-I']
+    [Tier 5 PubChem] 'Co-I' → hit via 'Co-I': C1=CC(=C[N+](=C1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)([O-])OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)O)O)O)O)C(=O)N
+    [Tier 5 PubChem] 'Co-II' → no hit (tried ['Co-II'])
+    [Tier 5 PubChem] 'Eosin Y' → hit via 'Eosin Y': C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]
+    [Tier 5 PubChem] 'PC-I' → no hit (tried ['PC-I'])
+  [Tier 5 PubChem] resolved=['Co-I', 'Eosin Y']  remaining=['Co-II', 'PC-I']
+    [NameResolve Organomet] pubchem_lookup: score=1  C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=C
+    [NameResolve Organomet] llm_name_to_smiles: score=1  C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=C
+    [Tier 6→pubchem_lookup] 'Co-II' name='Co(TPP)' → C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C
+    [Tier 6→pubchem_lookup] 'PC-I' name='4CzIPN' → C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6
+  [Tier 6 LLM Vision] resolved=['Co-II', 'PC-I']
+  [InlineResolver] Column 'Modified conditions' labels ['Hantzsch ester', 'Hantzsch ester (1.5 equiv.)'] from image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['Hantzsch ester', 'Hantzsch ester (1.5 equiv.)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides/GPT_5_MINI/processed/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides_artifacts/image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png
+  Exists   : True
+  [Tier 0 NameMap] 'Hantzsch ester' → pubchem_lookup via name='diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate'
+  [Tier 0 NameMap] resolved=['Hantzsch ester']  remaining=['Hantzsch ester (1.5 equiv.)']
+  [OCSR] image_000006_27660cb8d4c95a2980c560dc3eef5344b484eadacc8b2c65b9cc36b52c08742d.png: 33 bboxes, 16 coref pairs
+  [OCSR]   pair [0,1]: texts=['3af 75%9']  smiles=*CC(CC1=CC=C(*)C=C1)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['3aj 85%']  smiles=*CC(CCCCl)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Ia']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['8399', 'Jap']  smiles=*CC(OCCCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3ak 7920']  smiles=*CC(COCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['70%8', '(0.9144 g, 739"1', '3ag']  smiles=*CC(CCOC(*)=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['2']  smiles=*/C([7*])=C(\[2*])[3*]  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3aq 88%" €']  smiles=*C1=CC=C(C2C3CCC(C3)C2*)C=C1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['3ah 4890']  smiles=*CC(CCC(=O)OCC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3al 7390']  smiles=*CC(C[Si](*)(*)*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [21,22]: texts=['3ad 76%']  smiles=*CC(C1=CC=C(*)C=C1)C1CCCCC1  wildcard=True
+  [OCSR]   pair [23,24]: texts=['Jae 86%']  smiles=*CC(CCC1=CC=CC=C1)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [25,26]: texts=['n = 1 Jam 66%"', 'n = 7 3an 65962']  smiles=*CC(CCCO)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [27,28]: texts=['3ar 85%']  smiles=*CC1(C2=CC=C(*)C=C2)CNC1  wildcard=True
+  [OCSR]   pair [29,30]: texts=['3ai 829 0']  smiles=*CC(C*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [31,32]: texts=['3']  smiles=*C1=CC=C(C([2*])([3*])C(*)(*)[7*])C=C1  wildcard=True
+  [OCSR] → 16 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Hantzsch ester (1.5 equiv.)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Hantzsch ester (1.5 equiv.)']
+  [Tier 3] 'Hantzsch ester (1.5 equiv.)': bbox_idx=None out of range (n=33)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Hantzsch ester (1.5 equiv.)']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Hantzsch ester (1.5 equiv.)']
+    [Tier 5 PubChem] 'Hantzsch ester (1.5 equiv.)' → hit via 'Hantzsch ester': CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C
+  [Tier 5 PubChem] resolved=['Hantzsch ester (1.5 equiv.)']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa']
+  Image    : extracted_data/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3aa']
+  [OCSR] visualheist_page_03_table_1.png: 17 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Ca-I']  smiles=*C1=CC(*)=C2[O][Co]34[O]C5=C(C=C(*)C=C5*)C=[N]3C3C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4CzIPN']  smiles=N#Cc1c(-n2c3ccccc3c3ccccc32)c(C#N)c(-n2c3ccccc3c3c  wildcard=False
+  [OCSR]   pair [8,9]: texts=['2a']  smiles=C=CCC  wildcard=False
+  [OCSR]   pair [11,12]: texts=['Co-I']  smiles=*C1=CC(*)=C2[O][Co]34[O]C5=C(C=C(*)C=C5*)C=[N]3C3=  wildcard=True
+  [OCSR]   pair [13,14]: texts=['Pc-|']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=C2C=CC=C3)C(*)  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3aa']  smiles=*CC(CC)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3aa']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3aa']
+  [Tier 3] '1a': bbox=0 atoms=8 smiles=*C1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3] '3aa': bbox=15 atoms=12 smiles=*CC(CC)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '3aa']
+    [Tier 4 LLM] '1a' → r_value='* = CO2Me'
+    [Tier 4 LLM] '3aa' → r_value='* = CO2Me'
+    [Tier 4] R-group candidates: ['1a', '3aa']
+    [Tier 4 graph] '1a' r=* = CO2Me fallback (smi=*C1=CC=C(Br)C=C1)
+    [Tier 4] '1a' ✅ match: COC(=O)C1=CC=C(Br)C=C1
+    [Tier 4 graph] '3aa' r=* = CO2Me fallback (smi=*CC(CC)C1=CC=C(*)C=C1)
+    [Tier 4] '3aa' RDKit render failed: MeOC(=O)CC(CC)C1=CC=C(C(=O)OMe)C=C1
+  [Tier 4 R-group Sub] resolved=['1a']  remaining=['3aa']
+    [Tier 5 PubChem] '3aa' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3aa']
+    [Tier 6→opsin_lookup] '3aa' name='methyl 4-(octan-2-yl)benzoate' → CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1
+  [Tier 6 LLM Vision] resolved=['3aa']

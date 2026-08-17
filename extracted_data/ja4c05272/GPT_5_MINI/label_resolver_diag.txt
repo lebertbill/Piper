@@ -1,0 +1,79 @@
+Label Resolver Diagnostic Log — 2026-08-14 14:35:34
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['NBAP'] → image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['NBAP']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ja4c05272/GPT_5_MINI/processed/ja4c05272_artifacts/image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png
+  Exists   : True
+  [Tier 0 NameMap] 'NBAP' → opsin_lookup via name='4,5,9,10-tetraethyl-1,2-dihydrobenz[de]imidazo[1,2,3-ij]-1,8-naphthyridinium chloride'
+  [Tier 0 NameMap] resolved=['NBAP']  remaining=[]
+  [InlineResolver] Column 'photocatalyst' labels ['[Ru]', '[Ir]', '4CzIPN', 'i-Pr2NEt', 'N- BAP'] from image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['[Ru]', '[Ir]', '4CzIPN', 'i-Pr2NEt', 'N- BAP']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ja4c05272/GPT_5_MINI/processed/ja4c05272_artifacts/image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → llm_name_to_smiles via name='es of 1,2,3,5-Tetrakis(carbazol-9-yl)-4,6-dicyanoben-
+
+- zene'
+  [Tier 0 NameMap] resolved=['4CzIPN']  remaining=['[Ru]', '[Ir]', 'i-Pr2NEt', 'N- BAP']
+  [OCSR] image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(=O)C1=CC=CC=N1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a (89%)']  smiles=*c1ccccn1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[Ru]', '[Ir]', 'i-Pr2NEt', 'N- BAP']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[Ru]', '[Ir]', 'i-Pr2NEt', 'N- BAP']
+  [Tier 3] '[Ru]': bbox_idx=None out of range (n=5)
+  [Tier 3] '[Ir]': bbox_idx=None out of range (n=5)
+  [Tier 3] 'i-Pr2NEt': bbox_idx=None out of range (n=5)
+  [Tier 3] 'N- BAP': bbox=2 atoms=19 smiles=*C1=C(*)n2c3n(CC2)C(*)=C(*)C2=C3C1=CC=C2 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['[Ru]', '[Ir]', 'i-Pr2NEt', 'N- BAP']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['[Ru]', '[Ir]', 'i-Pr2NEt', 'N- BAP']
+    [Tier 5 PubChem] '[Ru]' → no hit (tried ['[Ru]'])
+    [Tier 5 PubChem] '[Ir]' → no hit (tried ['[Ir]', '[Ir)', '[IrPF6'])
+    [Tier 5 PubChem] 'i-Pr2NEt' → hit via 'i-Pr2NEt': CCN(C(C)C)C(C)C
+    [Tier 5 PubChem] 'N- BAP' → no hit (tried ['N- BAP'])
+  [Tier 5 PubChem] resolved=['i-Pr2NEt']  remaining=['[Ru]', '[Ir]', 'N- BAP']
+    [Tier 6→llm_name_to_smiles] 'N- BAP' name='N-BAP' → C1=CC=C(C=C1)CN(CC2=CC=CC=C2)C3=C4C=NC=NC4=NC=N3
+  [Tier 6 LLM Vision] resolved=['[Ru]', '[Ir]', 'N- BAP']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a']
+  Image    : extracted_data/ja4c05272/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='methyl picolinate'
+  [Tier 0 NameMap] resolved=['1a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ja4c05272/GPT_5_MINI/processed/ja4c05272_artifacts/image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4']
+  [OCSR] image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(=O)C1=CC=CC=N1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a (89%)']  smiles=*c1ccccn1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4']
+  [Tier 3] '4': bbox_idx=None out of range (n=5)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4']
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4']
+  [Tier 6 LLM Vision] resolved=['4']

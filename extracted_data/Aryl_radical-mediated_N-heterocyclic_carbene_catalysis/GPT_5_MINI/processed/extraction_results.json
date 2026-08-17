@@ -1,0 +1,468 @@
+[
+    {
+        "document": "Aryl_radical-mediated_N-heterocyclic_carbene_catalysis",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions.",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Aryl_radical-mediated_N-heterocyclic_carbene_catalysis/GPT_5_MINI/processed/Aryl_radical-mediated_N-heterocyclic_carbene_catalysis_artifacts/image_000003_851d75b9856322c676687a62faebd41971d0f99bc44df5dbef385aeba785ef0d.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=O",
+                        "text": "1a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=Cc1ccccc1",
+                        "molecular_formula": "C7H6O",
+                        "molecular_weight": 106.12
+                    },
+                    {
+                        "smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)I",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)I",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Ic1ccccc1OCC=Cc1ccccc1",
+                        "molecular_formula": "C15H13IO",
+                        "molecular_weight": 336.17
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "text": "3aa",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)C(c1ccccc1)C1COc2ccccc21",
+                        "molecular_formula": "C22H18O2",
+                        "molecular_weight": 314.38
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "N1",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CSC2=C1C(C)C(CCCCC)N2",
+                        "resolved_name": "N-2,6-diisopropylphenyl-substituted seven-membered ring fused thiazolium salt",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.22,
+                        "unit": "mmol",
+                        "smiles": "[Cs+].[Cs+].O=C([O-])O-",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethyl sulfoxide",
+                        "quantity": 0.4,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 60.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Entry uses electrophile 2a (X = I); isolated yield reported for this entry."
+                    },
+                    {
+                        "role": "2",
+                        "text": "2a (X = I)",
+                        "resolved_name": "2-(cinnamyloxy)iodobenzene",
+                        "resolved_smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)I",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "39",
+                        "quantity": 39.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Row-specific electrophile: 2 = 2a (X = I)."
+                ],
+                "yield": "39"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=O",
+                        "text": "1a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=Cc1ccccc1",
+                        "molecular_formula": "C7H6O",
+                        "molecular_weight": 106.12
+                    },
+                    {
+                        "smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Br",
+                        "text": "2b",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Br",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccccc1OCC=Cc1ccccc1",
+                        "molecular_formula": "C15H13BrO",
+                        "molecular_weight": 289.17
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "text": "3aa",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)C(c1ccccc1)C1COc2ccccc21",
+                        "molecular_formula": "C22H18O2",
+                        "molecular_weight": 314.38
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "N1",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CSC2=C1C(C)C(CCCCC)N2",
+                        "resolved_name": "N-2,6-diisopropylphenyl-substituted seven-membered ring fused thiazolium salt",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.22,
+                        "unit": "mmol",
+                        "smiles": "[Cs+].[Cs+].O=C([O-])O-",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethyl sulfoxide",
+                        "quantity": 0.4,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 60.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Entry uses electrophile 2b (X = Br); yield determined by 1H NMR."
+                    },
+                    {
+                        "role": "2",
+                        "text": "2b (X = Br)",
+                        "resolved_name": "2-(cinnamyloxy)bromobenzene",
+                        "resolved_smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Br",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Row-specific electrophile: 2 = 2b (X = Br)."
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=O",
+                        "text": "1a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=Cc1ccccc1",
+                        "molecular_formula": "C7H6O",
+                        "molecular_weight": 106.12
+                    },
+                    {
+                        "smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Cl",
+                        "text": "2c",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Cl",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Clc1ccccc1OCC=Cc1ccccc1",
+                        "molecular_formula": "C15H13ClO",
+                        "molecular_weight": 244.72
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "text": "3aa",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)C(c1ccccc1)C1COc2ccccc21",
+                        "molecular_formula": "C22H18O2",
+                        "molecular_weight": 314.38
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "N1",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CSC2=C1C(C)C(CCCCC)N2",
+                        "resolved_name": "N-2,6-diisopropylphenyl-substituted seven-membered ring fused thiazolium salt",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.22,
+                        "unit": "mmol",
+                        "smiles": "[Cs+].[Cs+].O=C([O-])O-",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethyl sulfoxide",
+                        "quantity": 0.4,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 60.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Entry uses electrophile 2c (X = Cl); yield determined by 1H NMR."
+                    },
+                    {
+                        "role": "2",
+                        "text": "2c (X = Cl)",
+                        "resolved_name": "2-(cinnamyloxy)chlorobenzene",
+                        "resolved_smiles": "C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)Cl",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Row-specific electrophile: 2 = 2c (X = Cl)."
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=O",
+                        "text": "1a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=Cc1ccccc1",
+                        "molecular_formula": "C7H6O",
+                        "molecular_weight": 106.12
+                    },
+                    {
+                        "smiles": "F[B-](F)(F)F.C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)[N+]#N",
+                        "text": "2d",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "F[B-](F)(F)F.C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)[N+]#N",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1OCC=Cc1ccccc1",
+                        "molecular_formula": "C15H13BF4N2O",
+                        "molecular_weight": 324.09
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "text": "3aa",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C(=O)C(C2=CC=CC=C2)C3COC4=C3C=CC=C4",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)C(c1ccccc1)C1COc2ccccc21",
+                        "molecular_formula": "C22H18O2",
+                        "molecular_weight": 314.38
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "N1",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CSC2=C1C(C)C(CCCCC)N2",
+                        "resolved_name": "N-2,6-diisopropylphenyl-substituted seven-membered ring fused thiazolium salt",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.22,
+                        "unit": "mmol",
+                        "smiles": "[Cs+].[Cs+].O=C([O-])O-",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethyl sulfoxide",
+                        "quantity": 0.4,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 60.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Entry uses electrophile 2d (X = N2BF4); yield determined by 1H NMR."
+                    },
+                    {
+                        "role": "2",
+                        "text": "2d (X = N2BF4)",
+                        "resolved_name": "2-(cinnamyloxy)benzenediazonium tetrafluoroborate",
+                        "resolved_smiles": "F[B-](F)(F)F.C(C=CC1=CC=CC=C1)OC1=C(C=CC=C1)[N+]#N",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Row-specific electrophile: 2 = 2d (X = N2BF4)."
+                ],
+                "yield": "0"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "Change from standard conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Substrate variants defined in the reaction scheme above the table",
+                "label_map_source_id": "Table 1"
+            },
+            "Yield (%) of 3aa": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 12,
+            "valid_molecules": 12,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

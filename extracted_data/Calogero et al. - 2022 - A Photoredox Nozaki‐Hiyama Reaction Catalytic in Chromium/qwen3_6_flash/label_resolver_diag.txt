@@ -1,0 +1,98 @@
+Label Resolver Diagnostic Log — 2026-05-23 12:41:32
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000008_98d0b407f4ec85c19cb24ba27159a2fbb206f8a185f576aa0d49c885a2292add.png → visualheist_page_02_figure_1.png
+  [GlobalRegistry] labels=['PC1', 'PC2', 'PC3', 'PC4', 'HE', 'L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7'] → visualheist_page_02_figure_1.png
+  [GlobalRegistry] VisualHeist override: image_000010_cc3e88a19df29355f711c9f8312053f10000c7eedd00a268f397686111e9ec78.png → visualheist_page_02_figure_1.png
+  [GlobalRegistry] labels=['PC1', 'PC2', 'PC3', 'PC4', 'HE', 'L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7'] → visualheist_page_02_figure_1.png
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['PC1', 'PC2', 'PC3', 'PC4', 'HE', 'L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Calogero et al. - 2022 - A Photoredox Nozaki‐Hiyama Reaction Catalytic in Chromium/qwen3_6_flash/processed/visualheist_page_02_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] 'PC1' → pubchem_lookup via name='5CzBn'
+  [Tier 0 NameMap] 'PC2' → pubchem_lookup via name='3DPAFIPN'
+  [Tier 0 NameMap Organomet] 'PC3' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC3' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap Organomet] 'PC4' pubchem_lookup: score=1  C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=C
+  [Tier 0 NameMap Organomet] 'PC4' llm_name_to_smiles: score=37  [Ir](c1ccccc1-c2ccccn2)(c3ccccc3-c4ccccn4)c5ccccc5-c6ccccn6
+  [Tier 0 NameMap] 'PC4' → best=llm_name_to_smiles (score=37) via name='fac-Ir(ppy)3'
+  [Tier 0 NameMap] 'HE' → opsin_lookup via name='Dimethyl 1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate'
+  [Tier 0 NameMap] resolved=['PC1', 'PC2', 'PC3', 'PC4', 'HE']  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [OCSR] visualheist_page_02_figure_1.png: 12 bboxes, 0 coref pairs
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 3] 'L1': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L2': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L3': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L4': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L5': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L6': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L7': bbox_idx=None out of range (n=12)
+  [Tier 3 BBox Match] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+    [Tier 5 PubChem] 'L1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L6' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L7' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 6 LLM Vision] resolved=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['PC1', 'PC2', 'PC3', 'PC4', 'HE', 'L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Calogero et al. - 2022 - A Photoredox Nozaki‐Hiyama Reaction Catalytic in Chromium/qwen3_6_flash/processed/visualheist_page_02_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] 'PC1' → pubchem_lookup via name='5CzBn'
+  [Tier 0 NameMap] 'PC2' → pubchem_lookup via name='3DPAFIPN'
+  [Tier 0 NameMap Organomet] 'PC3' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC3' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap Organomet] 'PC4' pubchem_lookup: score=1  C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=C
+  [Tier 0 NameMap Organomet] 'PC4' llm_name_to_smiles: score=37  [Ir](c1ccccc1-c2ccccn2)(c3ccccc3-c4ccccn4)c5ccccc5-c6ccccn6
+  [Tier 0 NameMap] 'PC4' → best=llm_name_to_smiles (score=37) via name='fac-Ir(ppy)3'
+  [Tier 0 NameMap] 'HE' → opsin_lookup via name='Dimethyl 1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate'
+  [Tier 0 NameMap] resolved=['PC1', 'PC2', 'PC3', 'PC4', 'HE']  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [OCSR] visualheist_page_02_figure_1.png: 12 bboxes, 0 coref pairs
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 3] 'L1': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L2': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L3': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L4': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L5': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L6': bbox_idx=None out of range (n=12)
+  [Tier 3] 'L7': bbox_idx=None out of range (n=12)
+  [Tier 3 BBox Match] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+    [Tier 5 PubChem] 'L1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L6' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'L7' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+  [Tier 6 LLM Vision] resolved=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['PC3', 'PC2']
+  Image    : extracted_data/Calogero et al. - 2022 - A Photoredox Nozaki‐Hiyama Reaction Catalytic in Chromium/qwen3_6_flash/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'PC3' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC3' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC2' → pubchem_lookup via name='3DPAFIPN'
+  [Tier 0 NameMap] resolved=['PC3', 'PC2']  remaining=[]

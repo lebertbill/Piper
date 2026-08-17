@@ -1,0 +1,1355 @@
+[
+    {
+        "document": "Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for",
+        "table_name": "Table 1",
+        "table_caption": "Condition optimization a .",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/gemini_3_1_flash_lite/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "80 (75)",
+                        "quantity": 80.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "isolated yield 75%"
+                    }
+                ],
+                "yield": "80 (75)"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(CF3)(ppy)]2(dtbbpy)PF6",
+                        "resolved_name": "Ir[(dF(CF3)ppy)]2(dtbbpy)PF6",
+                        "resolved_smiles": "CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+].FC(F)(F)C3=CC(=C(F)C=N3)C4=C(F)C=C(F)C=C4.FC(F)(F)C5=CC(=C(F)C=N5)C6=C(F)C=C(F)C=C6.F[P-](F)(F)(F)(F)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "32",
+                        "quantity": 32.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "32"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "15",
+                        "quantity": 15.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "15"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4DPAIPN",
+                        "resolved_name": "2,4,5,6-tetrakis(diphenylamino)isophthalonitrile",
+                        "resolved_smiles": "C1=CC=C(C=C1)N(C2=CC=CC=C2)C3=C(C(=C(C(=C3C#N)N(C4=CC=CC=C4)C5=CC=CC=C5)N(C6=CC=CC=C6)C7=CC=CC=C7)N(C8=CC=CC=C8)C9=CC=CC=C9)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "78",
+                        "quantity": 78.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "78"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PhSH",
+                        "resolved_smiles": "C1=CC=C(C=C1)S",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "45",
+                        "quantity": 45.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "45"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(PhS)2",
+                        "resolved_smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "38",
+                        "quantity": 38.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "38"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "DABCO",
+                        "resolved_smiles": "C1CN2CCN1CC2",
+                        "resolved_name": "1,4-diazabicyclo[2.2.2]octane",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "8",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "8"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2Na",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[Na+]",
+                        "resolved_smiles": "C(=O)[O-].[Na+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "Trace"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2NH4",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[NH4+]",
+                        "resolved_name": "HCO2",
+                        "resolved_smiles": "[K]",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "Trace"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "12",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "12"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMA",
+                        "resolved_smiles": "CN1CCN(CC1)C2=CC3=C(C=C2)N=C(N3)C4=CC5=C(C=C4)N=C(N5)C6=CC(=C(C=C6)OC)OC",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "10",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "10"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "36",
+                        "quantity": 36.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "atmosphere",
+                        "text": "nitrogen"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "b: reaction without light"
+                    }
+                ],
+                "yield": "36"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "ND"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "c: reaction without formate"
+                    }
+                ],
+                "yield": "ND"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhSNa",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CSc1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)[S-].[Na+]",
+                        "resolved_name": "sodium thiophenolate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "ND"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "d: reaction without light"
+                    }
+                ],
+                "yield": "ND"
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_ocsr": "ClCC1=CC=C(C=C1)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "ClCc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C13H11Cl",
+                        "molecular_weight": 202.68
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(O)Cc1ccc(-c2ccccc2)cc1",
+                        "molecular_formula": "C14H12O2",
+                        "molecular_weight": 212.25
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dtbbpy)(ppy)2PF6",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc[n]c(c1)-c1cc(cc[n]1)C(C)(C)C.c1ccc(cc1)-c1cccc[n]1.c1ccc(cc1)-c1cccc[n]1.F[P-](F)(F)(F)(F)F.[Ir+]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HCO2K",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "smiles": "C(=O)([O-])[K+]",
+                        "resolved_smiles": "C(=O)[O-].[K+]",
+                        "resolved_name": "potassium formate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "resolved_name": "dimethyl sulfoxide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "RT"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "42",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "42"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Photocatalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in Table 1 photocatalyst gallery",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "HAT reagent": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in Table 1 HAT reagent gallery",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "Variation from standard conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 30,
+            "valid_molecules": 30,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

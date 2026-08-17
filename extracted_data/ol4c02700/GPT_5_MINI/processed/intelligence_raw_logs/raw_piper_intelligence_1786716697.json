@@ -1,0 +1,973 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O][Na])cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "smiles_ocsr": "Cc1ccc(S(=O)(=O)[O][Na])cc1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 82,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard; isolated yield of major diastereomer shown in parentheses (63%).",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "MeCN (Acetonitrile)",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 45,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMF (Dimethylformamide)",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 68,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMC (Dimethyl carbonate)",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 32,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 0.2,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 54,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "3DPAFIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "trace"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = -"
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir(ppy)3",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 42,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 56,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 2,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 80,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1"
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Air"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 56,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = 4:1",
+        "Reaction performed under air (no N2) per footnote."
+      ]
+    },
+    {
+      "reaction_id": "11",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = -",
+        "Reaction performed in the dark (no blue LED) per footnote; light condition removed."
+      ]
+    },
+    {
+      "reaction_id": "12",
+      "reactants": [
+        {
+          "label": "1h",
+          "smiles": "C#Cc1ccc(Cl)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccc(Cl)cc1",
+          "smiles_ocsr": "C#Cc1ccc(Cl)cc1",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "[Na+].[O-]S(=O)(=O)c1ccc(C)cc1"
+        },
+        {
+          "label": "3a",
+          "smiles": "O=C(O)CCN(C(=O)OC(C)(C)C)",
+          "quantity": 0.2,
+          "unit": "mmol",
+          "smiles_llm": "O=C(O)CCN(C(=O)OC(C)(C)C)"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "solvent",
+          "text": "DMSO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 40 W",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 14,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4h",
+          "smiles": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3",
+          "smiles_llm": "CC1=CC=C(C=C1)S(=O)(=O)C(C2=CC=C(Cl)C=C2)C3CCCN(C(=O)OC(C)(C)C)3"
+        }
+      ],
+      "additional_info": [
+        "Yields and selectivity were determined by NMR with 1,3,5-trimethoxybenzene as an internal standard.",
+        "d.r. = -",
+        "No catalyst used (per footnote); photocatalyst entry removed."
+      ]
+    }
+  ]
+}

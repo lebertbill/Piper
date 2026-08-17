@@ -1,0 +1,377 @@
+{
+    "article_summary": "This article describes the integration of nitrilase (NIT) enzymes with photoredox catalysis to convert organonitriles into fluorinated, trifluoromethylated, and pentafluoroethylated products. The process involves a one-pot chemoenzymatic cascade where nitriles are first hydrolyzed to carboxylic acids by bacterial nitrilases (as cell-free lysates), followed by a photoredox-catalyzed decarboxylative functionalization using reagents like Selectfluor, Togni's reagent, or a hypervalent iodine pentafluoroethylating agent.",
+    "compound_name_map": {
+        "1": "Selectfluor",
+        "2": "Togni's reagent",
+        "3": "hypervalent iodine pentafluoroethylating reagent",
+        "PC1": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+        "PC2": "[Ir(dF(F)ppy)2(dF(CF3)ppy)]PF6",
+        "PC3": "9-mesityl-10-methylacridinium tetrafluoroborate",
+        "PC4": "[Ir(dFppy)2(bpy)]PF6",
+        "PC5": "[Ru(bpz)3](PF6)2",
+        "PC6": "[Ru(bpy)3]Cl2",
+        "BTMG": "2-tert-butyl-1,1,3,3-tetramethylguanidine",
+        "bathophenanthroline": "4,7-diphenyl-1,10-phenanthroline",
+        "explosive": "ncerns due to the toxic, corrosive and in some cases unstable",
+        "NIT": "olyzing nitriles under mild conditions using robust nitrilase",
+        "RrNIT": "Rhodococcus rhodochrous J1",
+        "ReNIT": "Rhodococcus erythropolis AJ270",
+        "AfNIT": "Acidovorax facilis",
+        "BjNIT": "and Bradyrhizobium japonicum",
+        "NIT014": "A fifth NIT",
+        "NaH2PO4": "nolic substrates, we observed that use of an alternative base",
+        "SET": "tain substrates, this may accelerate single electron transfer"
+    },
+    "compound_description_map": {
+        "PC1": "Ir(III) photocatalyst with electron-withdrawing ligands",
+        "PC2": "more oxidizing Ir(III) photocatalyst with strongly electron-withdrawing ligands",
+        "RrNIT": "Nitrilase from Rhodococcus rhodochrous J1",
+        "ReNIT": "Nitrilase from Rhodococcus erythropolis AJ270",
+        "AfNIT": "Nitrilase from Acidovorax facilis",
+        "BjNIT": "Nitrilase from Bradyrhizobium japonicum",
+        "NIT014": "Nitrilase from Prozomix"
+    },
+    "data_items": [
+        {
+            "id": "Figure 1",
+            "type": "Figure",
+            "purpose": "Overview of fluorinated pharmaceuticals and previous chemoenzymatic work vs current study",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000001_f3e64a02463c92b59896af9f0b0949417e4abd4354d55bfc2184bf029f962f15.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "Fluticasone",
+                "Odanacatib",
+                "Lansoprazole",
+                "Upadacitinib",
+                "Lascufloxacin",
+                "Elexacaftor",
+                "Fulvestrant"
+            ],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "Figure 2",
+            "type": "Gallery",
+            "purpose": "Substrate scope for nitrilase screening and heatmap of conversions",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000003_c3c0cbe4df932639c9d85c03cf657330deee9711b70f86bfe31365ba25a827e8.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "4a",
+                "5a",
+                "6a",
+                "7a",
+                "8a",
+                "9a",
+                "10a",
+                "11a",
+                "12a",
+                "13a"
+            ],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "Figure 3a",
+            "type": "Table",
+            "purpose": "Optimization of decarboxylative fluorination conditions",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png",
+            "expected_row_count": 14,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "Time, Base/Additive, and Photocatalyst columns map to parameters above/below the arrow.",
+            "defined_labels": [],
+            "reactant_labels": [
+                "4b"
+            ],
+            "product_labels": [
+                "4c"
+            ],
+            "columns": {
+                "Entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": true
+                },
+                "Time (h)": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "Base/Additive": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "Photocatalyst": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": true,
+                    "label_map": "Defined in Figure 3b photocatalyst gallery",
+                    "label_map_source_id": "Figure 3b"
+                },
+                "Yield (%)": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Figure 3b",
+            "type": "Gallery",
+            "purpose": "Structures of photocatalysts PC1-PC6",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "PC1",
+                "PC2",
+                "PC3",
+                "PC4",
+                "PC5",
+                "PC6"
+            ],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "Figure 3c",
+            "type": "Table",
+            "purpose": "Integrated fluorination reaction scope",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png",
+            "expected_row_count": 4,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "1"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "4c",
+                "5c",
+                "6c",
+                "7c"
+            ],
+            "reactant_labels": [
+                "4a",
+                "5a",
+                "6a",
+                "7a"
+            ],
+            "product_labels": [
+                "4c",
+                "5c",
+                "6c",
+                "7c"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Figure 4a",
+            "type": "Table",
+            "purpose": "Optimization of decarboxylative trifluoromethylation conditions",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000009_53554607b0374e4a33c4221e753630c2ff5a87a4878eba56416c5fa1e7c27da0.png",
+            "expected_row_count": 17,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "Time, Photocatalyst, 2 (eq.), Conc., and Solvent columns map to parameters above/below the arrow.",
+            "defined_labels": [],
+            "reactant_labels": [
+                "8b"
+            ],
+            "product_labels": [
+                "8d"
+            ],
+            "columns": {
+                "Entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": true
+                },
+                "Time (h)": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "Photocatalyst": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": true,
+                    "label_map": "Defined in Figure 3b photocatalyst gallery",
+                    "label_map_source_id": "Figure 3b"
+                },
+                "2 (eq.)": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": false
+                },
+                "Conc. (mM)": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                },
+                "Solvent": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true
+                },
+                "Yield (%)": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Figure 4b",
+            "type": "Table",
+            "purpose": "Integrated trifluoromethylation reaction scope",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000009_53554607b0374e4a33c4221e753630c2ff5a87a4878eba56416c5fa1e7c27da0.png",
+            "expected_row_count": 6,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "2"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "8d",
+                "9d",
+                "10d",
+                "11d",
+                "12d",
+                "13d"
+            ],
+            "reactant_labels": [
+                "8a",
+                "9a",
+                "10a",
+                "11a",
+                "12a",
+                "13a"
+            ],
+            "product_labels": [
+                "8d",
+                "9d",
+                "10d",
+                "11d",
+                "12d",
+                "13d"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Figure 5",
+            "type": "Table",
+            "purpose": "Substrate scope for the integrated pentafluoroethylation reaction",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000011_8b1befcee094a718e66443b434c88513b600d5029a2c1fcc8b35dc8b24196982.png",
+            "expected_row_count": 4,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "8e",
+                "9e",
+                "10e",
+                "11e"
+            ],
+            "reactant_labels": [
+                "8a",
+                "9a",
+                "10a",
+                "11a"
+            ],
+            "product_labels": [
+                "8e",
+                "9e",
+                "10e",
+                "11e"
+            ],
+            "columns": {}
+        }
+    ]
+}

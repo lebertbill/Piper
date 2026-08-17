@@ -1,0 +1,156 @@
+Label Resolver Diagnostic Log — 2026-06-11 11:17:09
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1b', '1c', '1d', '1e', '1f', '1g', '1h', '1i', '1j', '1k'] → image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['1b', '1c', '1d', '1e', '1f', '1g', '1h', '1i', '1j', '1k']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  Exists   : True
+  [Tier 0 NameMap] '1b' → pubchem_lookup via name='3,3'-bis(2,4,6-triisopropylphenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1c' → opsin_lookup via name='3,3'-bis(triphenylsilyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1d' → opsin_lookup via name='3,3'-bis(3,5-dichlorophenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1e' → opsin_lookup via name='3,3'-bis(9-phenanthryl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1f' → opsin_lookup via name='3,3'-diphenyl-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1g' → opsin_lookup via name='3,3'-bis(4-methoxyphenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1h' → opsin_lookup via name='3,3'-bis(4-(trifluoromethyl)phenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1i' → opsin_lookup via name='3,3'-bis(3,5-bis(trifluoromethyl)phenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1j' → opsin_lookup via name='3,3'-bis(biphenyl-4-yl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] '1k' → opsin_lookup via name='3,3'-bis(2-naphthyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] resolved=['1b', '1c', '1d', '1e', '1f', '1g', '1h', '1i', '1j', '1k']  remaining=[]
+  [InlineResolver] Column '2' labels ['4 Å molecular sieves'] from image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['4 Å molecular sieves']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4 Å molecular sieves']
+  [OCSR] image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png: 12 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a : R-Me']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [0,2]: texts=['LDAAEFDE', '2c; R-I-ac']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['3a']  smiles=*C(=C)N1CCOCC1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4a']  smiles=*N=CC1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['5']  smiles=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)N  wildcard=True
+  [OCSR]   pair [9,10]: texts=["1b, Ar-2.4.6-'Pra-Cch", 'Ar-SiPha', 'Id, Ar-3,5-Clz-CeHa', '1e , Ar=9-phenanthryl', '1fAr-Pn', 'dc,']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [9,11]: texts=['1g, Ar-p-MeO-CgHa', 'Ih, Ar-p-CFa-CcHa', 'i', 'Ar-3,5-(CFalz-CoH3', '1j, Ar-bipheny', 'Ik Ar=p-naphihyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 3] '4 Å molecular sieves': bbox_idx=None out of range (n=12)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4 Å molecular sieves']
+    [Tier 5 PubChem] '4 Å molecular sieves' → no hit (tried ['4 Å molecular sieves'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 6 LLM Vision] resolved=['4 Å molecular sieves']
+  [InlineResolver] Column 'PA' labels ['4 Å molecular sieves'] from image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['4 Å molecular sieves']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4 Å molecular sieves']
+  [OCSR] image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png: 12 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a : R-Me']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [0,2]: texts=['LDAAEFDE', '2c; R-I-ac']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['3a']  smiles=*C(=C)N1CCOCC1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4a']  smiles=*N=CC1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['5']  smiles=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)N  wildcard=True
+  [OCSR]   pair [9,10]: texts=["1b, Ar-2.4.6-'Pra-Cch", 'Ar-SiPha', 'Id, Ar-3,5-Clz-CeHa', '1e , Ar=9-phenanthryl', '1fAr-Pn', 'dc,']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [9,11]: texts=['1g, Ar-p-MeO-CgHa', 'Ih, Ar-p-CFa-CcHa', 'i', 'Ar-3,5-(CFalz-CoH3', '1j, Ar-bipheny', 'Ik Ar=p-naphihyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 3] '4 Å molecular sieves': bbox_idx=None out of range (n=12)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4 Å molecular sieves']
+    [Tier 5 PubChem] '4 Å molecular sieves' → no hit (tried ['4 Å molecular sieves'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 6 LLM Vision] resolved=['4 Å molecular sieves']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '5', '2a', '4a', '2c', '2b']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  Exists   : True
+  [Tier 0 NameMap] '3a' → pubchem_lookup via name='4-(1-phenylvinyl)morpholine'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='methyl phenyldiazoacetate'
+  [Tier 0 NameMap] '2c' → opsin_lookup via name='adamantan-1-yl phenyldiazoacetate'
+  [Tier 0 NameMap] '2b' → opsin_lookup via name='tert-butyl phenyldiazoacetate'
+  [Tier 0 NameMap] resolved=['3a', '2a', '2c', '2b']  remaining=['5', '4a']
+  [OCSR] image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png: 12 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a : R-Me']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [0,2]: texts=['LDAAEFDE', '2c; R-I-ac']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['3a']  smiles=*C(=C)N1CCOCC1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4a']  smiles=*N=CC1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['5']  smiles=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)N  wildcard=True
+  [OCSR]   pair [9,10]: texts=["1b, Ar-2.4.6-'Pra-Cch", 'Ar-SiPha', 'Id, Ar-3,5-Clz-CeHa', '1e , Ar=9-phenanthryl', '1fAr-Pn', 'dc,']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [9,11]: texts=['1g, Ar-p-MeO-CgHa', 'Ih, Ar-p-CFa-CcHa', 'i', 'Ar-3,5-(CFalz-CoH3', '1j, Ar-bipheny', 'Ik Ar=p-naphihyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['5', '4a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['5', '4a']
+  [Tier 3] '5': bbox=7 atoms=16 smiles=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)[NH] wildcard=True
+  [Tier 3] '4a': bbox=5 atoms=10 smiles=*N=CC1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['5', '4a']
+    [Tier 4 LLM] '4a' → r_value='Ph'
+    [Tier 4 LLM] '5' → r_value='R, Ph, Ph'
+    [Tier 4] R-group candidates: ['4a', '5']
+    [Tier 4 graph] '4a' r=Ph fallback (smi=*N=CC1=CC=C(Br)C=C1)
+    [Tier 4] '4a' ✅ match: C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br
+    [Tier 4 graph] '5' r=R, Ph, Ph fallback (smi=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)N)
+    [Tier 4] '5' RDKit render failed: C1=CC=C(C=C1)C(=O)CC(C1=CC=C(Br)C=C1)C(C
+  [Tier 4 R-group Sub] resolved=['4a']  remaining=['5']
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['5']
+  [Tier 6 LLM Vision] resolved=['5']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['80', '53', '61', '65', '68', '49', '1g']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png
+  Exists   : True
+  [Tier 0 NameMap] '1g' → opsin_lookup via name='3,3'-bis(4-methoxyphenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate'
+  [Tier 0 NameMap] resolved=['1g']  remaining=['80', '53', '61', '65', '68', '49']
+  [OCSR] image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png: 12 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a : R-Me']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [0,2]: texts=['LDAAEFDE', '2c; R-I-ac']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['3a']  smiles=*C(=C)N1CCOCC1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4a']  smiles=*N=CC1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['5']  smiles=*C(=O)CC(C1=CC=C(Br)C=C1)C(*)(*)N  wildcard=True
+  [OCSR]   pair [9,10]: texts=["1b, Ar-2.4.6-'Pra-Cch", 'Ar-SiPha', 'Id, Ar-3,5-Clz-CeHa', '1e , Ar=9-phenanthryl', '1fAr-Pn', 'dc,']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [9,11]: texts=['1g, Ar-p-MeO-CgHa', 'Ih, Ar-p-CFa-CcHa', 'i', 'Ar-3,5-(CFalz-CoH3', '1j, Ar-bipheny', 'Ik Ar=p-naphihyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['80', '53', '61', '65', '68', '49']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['80', '53', '61', '65', '68', '49']
+  [Tier 3 BBox Match] resolved=[]  remaining=['80', '53', '61', '65', '68', '49']
+    [Tier 4 LLM] '80' → r_value='Ar = 9-phenanthryl'
+    [Tier 4 LLM] '53' → r_value='Ar = 3,5-Cl2-C6H3'
+    [Tier 4 LLM] '61' → r_value='Ar = p-MeO-C6H4'
+    [Tier 4 LLM] '65' → r_value='Ar = p-CF3-C6H4'
+    [Tier 4 LLM] '68' → r_value='Ar = Ph'
+    [Tier 4 LLM] '49' → r_value='Ar = 3,5-(CF3)2-C6H3'
+    [Tier 4] R-group candidates: ['80', '53', '61', '65', '68', '49']
+    [Tier 4 graph] '80' r=Ar = 9-phenanthryl fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] '53' r=Ar = 3,5-Cl2-C6H3 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] '61' r=Ar = p-MeO-C6H4 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] '65' r=Ar = p-CF3-C6H4 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] '68' r=Ar = Ph fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] '49' r=Ar = 3,5-(CF3)2-C6H3 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4] '80' 🔄 corrected: OP1(=O)Oc2c(-c3cc4ccccc4c4ccccc34)cc3ccccc3c2-c2c(
+    [Tier 4] '53' ✅ match: Clc1cc(Cl)cc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4cc(C
+    [Tier 4] '61' ✅ match: COc1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccc(OC)cc
+    [Tier 4] '65' ✅ match: FC(F)(F)c1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccc
+    [Tier 4] '68' ✅ match: c1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccccc4)cc4c
+    [Tier 4] '49' ✅ match: FC(F)(F)c1cc(C(F)(F)F)cc(-c2cc3ccccc3c3c2OP(=O)(O)
+  [Tier 4 R-group Sub] resolved=['80', '53', '61', '65', '68', '49']  remaining=[]

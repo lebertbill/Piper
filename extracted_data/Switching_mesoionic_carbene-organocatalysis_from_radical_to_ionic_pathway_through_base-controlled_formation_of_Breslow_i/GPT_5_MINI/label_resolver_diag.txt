@@ -1,0 +1,51 @@
+Label Resolver Diagnostic Log — 2026-06-18 11:58:02
+================================================================================
+
+  [GlobalRegistry] labels=['A', 'B', 'C', 'D', 'E'] → image_000003_0acd8c273dd8ae50b11f36855c3252055e66519e2b590f691b38922da8045284.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C', 'D', 'E']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Switching_mesoionic_carbene-organocatalysis_from_radical_to_ionic_pathway_through_base-controlled_formation_of_Breslow_i/GPT_5_MINI/processed/Switching_mesoionic_carbene-organocatalysis_from_radical_to_ionic_pathway_through_base-controlled_formation_of_Breslow_i_artifacts/image_000003_0acd8c273dd8ae50b11f36855c3252055e66519e2b590f691b38922da8045284.png
+  Exists   : True
+  [Tier 0 NameMap] 'A' → opsin_lookup via name='1,3-bis(2,6-diisopropylphenyl)-1,2,3-triazol-5-ylidene'
+  [Tier 0 NameMap] 'B' → opsin_lookup via name='1,3-bis(2,6-diisopropylphenyl)-4-(methoxycarbonyl)-1,2,3-triazol-5-ylidene'
+  [Tier 0 NameMap] 'C' → pubchem_lookup via name='1,3-dimesitylimidazol-2-ylidene'
+  [Tier 0 NameMap] 'D' → opsin_lookup via name='2-mesityl-2,5,6,7-tetrahydro-3H-pyrrolo[2,1-c][1,2,4]triazol-3-ylidene'
+  [Tier 0 NameMap] 'E' → llm_name_to_smiles via name='3-(2,6-diisopropylphenyl)-5,6,7,8,9,10-hexahydrocycloocta[d]thiazol-2-ylidene'
+  [Tier 0 NameMap] resolved=['A', 'B', 'C', 'D', 'E']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a', '3aa', '1a', '4aa', '2a (nBuBr substituted per footnote d)']
+  Image    : extracted_data/Switching_mesoionic_carbene-organocatalysis_from_radical_to_ionic_pathway_through_base-controlled_formation_of_Breslow_i/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2a', '3aa', '1a', '4aa', '2a (nBuBr substituted per footnote d)']
+  [OCSR] visualheist_page_02_table_1.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(=O)c1cccs1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['R-Dop Ri-h', 'R=', 'Ri', 'COCNE', 'Dop;']  smiles=*.*n1n[n+](*)cc1[1*]  wildcard=True
+  [OCSR]   pair [4,5]: texts=['27']  smiles=CCCCI  wildcard=False
+  [OCSR]   pair [6,7]: texts=['c']  smiles=*N1C=C[N+](*)=C1.[Cl-]  wildcard=True
+  [OCSR]   pair [8,9]: texts=['Jan']  smiles=CCCCC(=O)c1cccs1  wildcard=False
+  [OCSR]   pair [10,11]: texts=[]  smiles=*.*[N+]1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*.*[n+]1csc2c1CCCCC2  wildcard=True
+  [OCSR]   pair [14,15]: texts=['477']  smiles=CCCCC(O)(C(=O)c1cccs1)c1cccs1  wildcard=False
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', '3aa', '1a', '4aa', '2a (nBuBr substituted per footnote d)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', '3aa', '1a', '4aa', '2a (nBuBr substituted per footnote d)']
+  [Tier 3] '1a': bbox=0 atoms=8 smiles=C=C(S)c1cc*o1 wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=5 smiles=CCCCI wildcard=False
+  [Tier 3] '3aa': bbox=8 atoms=11 smiles=CCCCC(=S)c1ccco1 wildcard=False
+  [Tier 3] '4aa': bbox=14 atoms=18 smiles=CCCCC(O)(C(=O)c1cccs1)c1cccs1 wildcard=False
+  [Tier 3] '2a (nBuBr substituted per footnote d)': bbox=4 atoms=5 smiles=CCCCBr wildcard=False
+  [Tier 3 BBox Match] resolved=['2a', '3aa', '4aa', '2a (nBuBr substituted per footnote d)']  remaining=['1a']
+    [Tier 4 LLM] '1a' → r_value='H'
+    [Tier 4] R-group candidates: ['1a']
+    [Tier 4 graph] '1a' r=H fallback (smi=*C(=O)c1cccs1)
+    [Tier 4] '1a' ✅ match: O=Cc1cccs1
+  [Tier 4 R-group Sub] resolved=['1a']  remaining=[]

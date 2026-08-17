@@ -1,0 +1,1112 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl",
+          "smiles_ocsr": "C#Cc1ccccc1Cl",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "2a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "smiles_ocsr": "C#Cc1ccccc1Cl",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (GC, isolated in parentheses)",
+          "value": 87,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Isolated yield: 84%",
+        "E/Z = 92/8"
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir[dF(CF3)ppy]2(dtbbpy)PF6 (instead of 4CzIPN)",
+          "smiles": "Ir[dF(CF3)ppy]2(dtbbpy)PF6",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a",
+          "value": 37,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Photocatalyst changed to Ir[dF(CF3)ppy]2(dtbbpy)PF6 (entry-specific variation)",
+        "E/Z = 17/83"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir(ppy)3 (instead of 4CzIPN)",
+          "smiles": "Ir(ppy)3",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a",
+          "value": 8,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Photocatalyst changed to Ir(ppy)3 (entry-specific variation)",
+        "E/Z = 63:37"
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no 4CzIPN)",
+          "value": 23,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "No 4CzIPN (photocatalyst omitted in this entry)",
+        "E/Z = 97/3"
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no pyrene & 4CzIPN)",
+          "value": 8,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "No pyrene and no 4CzIPN (both additives omitted in this entry)",
+        "E/Z not reported"
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no Ni catalyst)",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Ni catalyst omitted in this entry"
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no ligand)",
+          "value": 64,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Ligand omitted in this entry",
+        "E/Z = 87/13"
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "pyrene",
+          "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+          "quantity": 0.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no light)",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Light omitted in this entry (no irradiation)"
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DMAc/CH3CN (3:1 v/v)",
+          "smiles": "CC(=O)N(C)C.CC#N",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a (no pyrene)",
+          "value": 79,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "Pyrene omitted in this entry",
+        "E/Z = 16/84"
+      ]
+    },
+    {
+      "reaction_id": "10b",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C#Cc1ccccc1Cl",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#Cc1ccccc1Cl"
+        },
+        {
+          "label": "2a",
+          "smiles": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2"
+        },
+        {
+          "label": "3a",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "[K+].CC(C)(C)B(F)(F)F"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Ni(phen)Cl2",
+          "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "tert-Bu trifluoroborate (3a)",
+          "smiles": "[K+].CC(C)(C)B(F)(F)F",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "DME (1,2-dimethoxyethane) — entry-specific (footnote b)",
+          "smiles": "COCCO",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED, 90 W",
+          "quantity": 467,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 18,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 35,
+          "unit": "°C"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 4a/5a",
+          "value": 75,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "4a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        },
+        {
+          "label": "5a",
+          "smiles": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+          "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2"
+        }
+      ],
+      "additional_info": [
+        "No pyrene (entry-specific omission)",
+        "Isolated yield: 71% (given in parentheses)",
+        "Footnote b: With DME as solvent"
+      ]
+    }
+  ]
+}

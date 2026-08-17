@@ -1,0 +1,50 @@
+Label Resolver Diagnostic Log — 2026-08-14 14:06:52
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3a', '3b', '4'] → image_000010_e453c127a9b13034403da84492d352a557dba6f23489c87cd61d6c846e1a29dd.png
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '3b', '4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ja4c02474/GPT_5_MINI/processed/ja4c02474_artifacts/image_000010_e453c127a9b13034403da84492d352a557dba6f23489c87cd61d6c846e1a29dd.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] '3a' llm_name_to_smiles: score=1  FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC1=C(C2=NC=CC=C2)C=C(F)C=C1.FC(F)(F)C1=C
+  [Tier 0 NameMap] '3a' → best=llm_name_to_smiles (score=1) via name='Ir[dFFppy]2-(4,4'-dCF3bpy)PF6'
+  [Tier 0 NameMap Organomet] '3b' llm_name_to_smiles: score=41  FC1=CC(C2=NC=CC=C2)=C(F)C=C1[Ir+]12(N3=CC=CC=C3C3=CC=CC=N13)(C1=C(F)C=
+  [Tier 0 NameMap] '3b' → best=llm_name_to_smiles (score=41) via name='[Ir{dFCF3ppy}2(bpy)]PF6'
+  [Tier 0 NameMap] '4' → pubchem_lookup via name='4CzIPN'
+  [Tier 0 NameMap] resolved=['3a', '3b', '4']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['[18F]2', '1']
+  Image    : extracted_data/ja4c02474/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → name 'REFERENCES
+
+-' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['[18F]2', '1']
+  [OCSR] visualheist_page_02_table_1.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [1,2]: texts=[]  smiles=*C1=CC=C(C(*)ON2C(C)(C)CCCC2(C)C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4CzIPN']  smiles=*C1=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C(N2C3=C(C=  wildcard=True
+  [OCSR]   pair [6,7]: texts=['(18FJ2']  smiles=*C1=CC=C(C(*)[18F])C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[18F]2', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[18F]2', '1']
+  [Tier 3] '[18F]2': bbox=6 atoms=10 smiles=*C1=CC=C(C(*)[18F])C=C1 wildcard=True
+  [Tier 3] '1': bbox=1 atoms=20 smiles=*C1=CC=C(C(*)ON2C(C)(C)CCCC2(C)C)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['[18F]2', '1']
+    [Tier 4 LLM] '1' → r_value='* = Ph, * = Me'
+    [Tier 4 LLM] '[18F]2' → r_value='* = Ph, * = Me'
+    [Tier 4] R-group candidates: ['1', '[18F]2']
+    [Tier 4 graph] '1' r=* = Ph, * = Me fallback (smi=*C1=CC=C(C(*)ON2C(C)(C)CCCC2(C)C)C=C1)
+    [Tier 4] '1' ✅ match: CC1(C)CCCC(C)(C)N1OC(C)C1=CC=C(C2=CC=CC=C2)C=C1
+    [Tier 4 graph] '[18F]2' r=* = Ph, * = Me fallback (smi=*C1=CC=C(C(*)[18F])C=C1)
+    [Tier 4] '[18F]2' ✅ match: CC([18F])C1=CC=C(C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['1', '[18F]2']  remaining=[]

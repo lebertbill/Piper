@@ -1,0 +1,215 @@
+Label Resolver Diagnostic Log — 2026-05-21 21:01:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['PC1', 'PC2', 'PC3', 'PC4', 'PC5', 'PC6'] → image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  [GlobalRegistry] Skipping 'Figure 3c' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4a' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4b' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 3b
+────────────────────────────────────────────────────────────
+  Labels   : ['PC1', 'PC2', 'PC3', 'PC4', 'PC5', 'PC6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'PC1' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC1' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC2' → name '[Ir(dF(F)ppy)2(dF(CF3)ppy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC3' → pubchem_lookup via name='9-mesityl-10-methylacridinium tetrafluoroborate'
+  [Tier 0 NameMap Organomet] 'PC4' llm_name_to_smiles: score=1  F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.C1=CC=NC
+  [Tier 0 NameMap] 'PC4' → best=llm_name_to_smiles (score=1) via name='[Ir(dFppy)2(bpy)]PF6'
+  [Tier 0 NameMap] 'PC5' → name '[Ru(bpz)3](PF6)2' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'PC6' llm_name_to_smiles: score=1  [Cl-].[Cl-].c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn
+  [Tier 0 NameMap] 'PC6' → best=llm_name_to_smiles (score=1) via name='[Ru(bpy)3]Cl2'
+  [Tier 0 NameMap] resolved=['PC1', 'PC3', 'PC4', 'PC6']  remaining=['PC2', 'PC5']
+  [OCSR] image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png: 30 bboxes, 13 coref pairs
+  [OCSR]   pair [2,3]: texts=['PC1']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*COC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['PC2']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['PC3']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR]   pair [12,13]: texts=['PC4']  smiles=Fc1cc(F)c2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(F)cc(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['4a-7a']  smiles=N#C[C@@H]1CCCCC1  wildcard=False
+  [OCSR]   pair [16,17]: texts=['4c (79%)', 'ReNIT , PC2']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['PC5']  smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]  wildcard=True
+  [OCSR]   pair [21,22]: texts=['Sc (39%)', 'ReNIT , PC2']  smiles=O=c1ccc2cc(OCF)ccc2o1  wildcard=False
+  [OCSR]   pair [24,25]: texts=['PC6']  smiles=C=CC=[N]12C3=C4567C=CC=C[N]48C49(=[N](C=CC=C4)[Ru+  wildcard=False
+  [OCSR]   pair [26,27]: texts=['4c-7c']  smiles=F[C@H]1[CH][CH]C[CH]C1  wildcard=False
+  [OCSR]   pair [28,29]: texts=[]  smiles=FN12CCN(CCl)(CC1)CC2  wildcard=False
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['PC2']  remaining=['PC5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PC5']
+  [Tier 3] 'PC5': bbox=19 atoms=39 smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC5']
+    [Tier 4 LLM] 'PC5' → r_value='2PF6-'
+    [Tier 4] R-group candidates: ['PC5']
+    [Tier 4 graph] 'PC5' r=2PF6- fallback (smi=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1cncc[n]->31)<-[n]1ccncc1-c1cncc[n]->41)
+    [Tier 4] 'PC5' 🔄 corrected: F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.c1cnc[n]1-c1
+  [Tier 4 R-group Sub] resolved=['PC5']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 3a
+────────────────────────────────────────────────────────────
+  Labels   : ['4b', '4c']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4b', '4c']
+  [OCSR] image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png: 30 bboxes, 13 coref pairs
+  [OCSR]   pair [2,3]: texts=['PC1']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*COC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['PC2']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['PC3']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR]   pair [12,13]: texts=['PC4']  smiles=Fc1cc(F)c2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(F)cc(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['4a-7a']  smiles=N#C[C@@H]1CCCCC1  wildcard=False
+  [OCSR]   pair [16,17]: texts=['4c (79%)', 'ReNIT , PC2']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['PC5']  smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]  wildcard=True
+  [OCSR]   pair [21,22]: texts=['Sc (39%)', 'ReNIT , PC2']  smiles=O=c1ccc2cc(OCF)ccc2o1  wildcard=False
+  [OCSR]   pair [24,25]: texts=['PC6']  smiles=C=CC=[N]12C3=C4567C=CC=C[N]48C49(=[N](C=CC=C4)[Ru+  wildcard=False
+  [OCSR]   pair [26,27]: texts=['4c-7c']  smiles=F[C@H]1[CH][CH]C[CH]C1  wildcard=False
+  [OCSR]   pair [28,29]: texts=[]  smiles=FN12CCN(CCl)(CC1)CC2  wildcard=False
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4b', '4c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4b', '4c']
+  [Tier 3] '4b': bbox=4 atoms=10 smiles=*COC1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '4c': bbox=8 atoms=10 smiles=*C1=CC=C(OCF)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4b', '4c']
+    [Tier 4 LLM] '4b' → r_value='* = Ph, * = CO2H'
+    [Tier 4 LLM] '4c' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['4b', '4c']
+    [Tier 4 graph] '4b' r=* = Ph, * = CO2H fallback (smi=*COC1=CC=C(*)C=C1)
+    [Tier 4] '4b' ✅ match: OC(=O)COC1=CC=C(C2=CC=CC=C2)C=C1
+    [Tier 4 graph] '4c' r=* = Ph fallback (smi=*C1=CC=C(OCF)C=C1)
+    [Tier 4] '4c' ✅ match: C1=CC=C(C=C1)C2=CC=C(OCF)C=C2
+  [Tier 4 R-group Sub] resolved=['4b', '4c']  remaining=[]
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3a' — not referenced by this table's columns
+  [GlobalRegistry] labels=['PC1', 'PC2', 'PC3', 'PC4', 'PC5', 'PC6'] → image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  [GlobalRegistry] Skipping 'Figure 3c' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4b' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 3b
+────────────────────────────────────────────────────────────
+  Labels   : ['PC1', 'PC2', 'PC3', 'PC4', 'PC5', 'PC6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'PC1' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC1' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC2' → name '[Ir(dF(F)ppy)2(dF(CF3)ppy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC3' → pubchem_lookup via name='9-mesityl-10-methylacridinium tetrafluoroborate'
+  [Tier 0 NameMap Organomet] 'PC4' llm_name_to_smiles: score=1  F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.C1=CC=NC
+  [Tier 0 NameMap] 'PC4' → best=llm_name_to_smiles (score=1) via name='[Ir(dFppy)2(bpy)]PF6'
+  [Tier 0 NameMap] 'PC5' → name '[Ru(bpz)3](PF6)2' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'PC6' llm_name_to_smiles: score=1  [Cl-].[Cl-].c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn
+  [Tier 0 NameMap] 'PC6' → best=llm_name_to_smiles (score=1) via name='[Ru(bpy)3]Cl2'
+  [Tier 0 NameMap] resolved=['PC1', 'PC3', 'PC4', 'PC6']  remaining=['PC2', 'PC5']
+  [OCSR] image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png: 30 bboxes, 13 coref pairs
+  [OCSR]   pair [2,3]: texts=['PC1']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*COC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['PC2']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['PC3']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR]   pair [12,13]: texts=['PC4']  smiles=Fc1cc(F)c2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(F)cc(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['4a-7a']  smiles=N#C[C@@H]1CCCCC1  wildcard=False
+  [OCSR]   pair [16,17]: texts=['4c (79%)', 'ReNIT , PC2']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['PC5']  smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]  wildcard=True
+  [OCSR]   pair [21,22]: texts=['Sc (39%)', 'ReNIT , PC2']  smiles=O=c1ccc2cc(OCF)ccc2o1  wildcard=False
+  [OCSR]   pair [24,25]: texts=['PC6']  smiles=C=CC=[N]12C3=C4567C=CC=C[N]48C49(=[N](C=CC=C4)[Ru+  wildcard=False
+  [OCSR]   pair [26,27]: texts=['4c-7c']  smiles=F[C@H]1[CH][CH]C[CH]C1  wildcard=False
+  [OCSR]   pair [28,29]: texts=[]  smiles=FN12CCN(CCl)(CC1)CC2  wildcard=False
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['PC2']  remaining=['PC5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PC5']
+  [Tier 3] 'PC5': bbox=19 atoms=39 smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC5']
+    [Tier 4 LLM] 'PC5' → r_value='2PF6-'
+    [Tier 4] R-group candidates: ['PC5']
+    [Tier 4 graph] 'PC5' r=2PF6- fallback (smi=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1cncc[n]->31)<-[n]1ccncc1-c1cncc[n]->41)
+    [Tier 4] 'PC5' 🔄 corrected: F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.c1cnc[n]1-c1
+  [Tier 4 R-group Sub] resolved=['PC5']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['2'] from image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 3b
+────────────────────────────────────────────────────────────
+  Labels   : ['2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='Togni's reagent'
+  [Tier 0 NameMap] resolved=['2']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 4a
+────────────────────────────────────────────────────────────
+  Labels   : ['8d', '8b']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000009_53554607b0374e4a33c4221e753630c2ff5a87a4878eba56416c5fa1e7c27da0.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['8d', '8b']
+  [OCSR] image_000009_53554607b0374e4a33c4221e753630c2ff5a87a4878eba56416c5fa1e7c27da0.png: 16 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['8b']  smiles=*CCCOC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8d']  smiles=*CCCOC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['8a-13a']  smiles=N#CC1CCCCC1  wildcard=False
+  [OCSR]   pair [9,10]: texts=['13d (48%)', 'AfNIT', 'PC?']  smiles=*CCCOC1=CC2=CC=CN=C2C=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['2']  smiles=*I1OC(C)(C)C2=C1C=CC=C2  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8d', '8b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['8d', '8b']
+  [Tier 3] '8b': bbox=0 atoms=12 smiles=*CCCOC1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '8d': bbox=2 atoms=12 smiles=*CCCOC1=CC=C(*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['8b', '8d']
+    [Tier 4 LLM] '8b' → r_value='* = CO2H, * = Ph'
+    [Tier 4 LLM] '8d' → r_value='* = CF3, * = Ph'
+    [Tier 4] R-group candidates: ['8b', '8d']
+    [Tier 4 graph] '8b' r=* = CO2H, * = Ph fallback (smi=*CCCOC1=CC=C(*)C=C1)
+    [Tier 4 graph] '8d' r=* = CF3, * = Ph fallback (smi=*CCCOC1=CC=C(*)C=C1)
+    [Tier 4] '8b' correction contradicts r_value 'CO2H, Ph' — keeping original
+    [Tier 4] '8b' 🔄 corrected: OC(=O)CCCOC1=CC=C(C2=CC=CC=C2)C=C1
+    [Tier 4] '8d' ✅ match: FC(F)(F)CCCOC1=CC=C(C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['8b', '8d']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 3 (Parent figure for Figure 3b). Please locate the specific section for Figure 3b.
+────────────────────────────────────────────────────────────
+  Labels   : ['PC6', 'PC5', 'PC2', 'PC4', 'PC1', 'PC3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angiolini_ChemCatChem_10.1002_cctc.202500240/gemini_3_1_flash_lite/processed/Angiolini_ChemCatChem_10.1002_cctc.202500240_artifacts/image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'PC6' llm_name_to_smiles: score=1  [Cl-].[Cl-].c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn
+  [Tier 0 NameMap] 'PC6' → best=llm_name_to_smiles (score=1) via name='[Ru(bpy)3]Cl2'
+  [Tier 0 NameMap] 'PC5' → name '[Ru(bpz)3](PF6)2' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC2' → name '[Ir(dF(F)ppy)2(dF(CF3)ppy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'PC4' llm_name_to_smiles: score=1  F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.F[C]1=C(F)C=CC(=C1)C1=CC=CC=N1.C1=CC=NC
+  [Tier 0 NameMap] 'PC4' → best=llm_name_to_smiles (score=1) via name='[Ir(dFppy)2(bpy)]PF6'
+  [Tier 0 NameMap Organomet] 'PC1' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'PC1' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC3' → pubchem_lookup via name='9-mesityl-10-methylacridinium tetrafluoroborate'
+  [Tier 0 NameMap] resolved=['PC6', 'PC4', 'PC1', 'PC3']  remaining=['PC5', 'PC2']
+  [OCSR] image_000007_f9a3c93bd022e7e2113699f2c069839715ad93f27b32fee7a7e1ca6e0735b11e.png: 30 bboxes, 13 coref pairs
+  [OCSR]   pair [2,3]: texts=['PC1']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*COC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['PC2']  smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['PC3']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR]   pair [12,13]: texts=['PC4']  smiles=Fc1cc(F)c2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(F)cc(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['4a-7a']  smiles=N#C[C@@H]1CCCCC1  wildcard=False
+  [OCSR]   pair [16,17]: texts=['4c (79%)', 'ReNIT , PC2']  smiles=*C1=CC=C(OCF)C=C1  wildcard=True
+  [OCSR]   pair [19,20]: texts=['PC5']  smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]  wildcard=True
+  [OCSR]   pair [21,22]: texts=['Sc (39%)', 'ReNIT , PC2']  smiles=O=c1ccc2cc(OCF)ccc2o1  wildcard=False
+  [OCSR]   pair [24,25]: texts=['PC6']  smiles=C=CC=[N]12C3=C4567C=CC=C[N]48C49(=[N](C=CC=C4)[Ru+  wildcard=False
+  [OCSR]   pair [26,27]: texts=['4c-7c']  smiles=F[C@H]1[CH][CH]C[CH]C1  wildcard=False
+  [OCSR]   pair [28,29]: texts=[]  smiles=FN12CCN(CCl)(CC1)CC2  wildcard=False
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['PC2']  remaining=['PC5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PC5']
+  [Tier 3] 'PC5': bbox=19 atoms=39 smiles=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC5']
+    [Tier 4 LLM] 'PC5' → r_value='2PF6-'
+    [Tier 4] R-group candidates: ['PC5']
+    [Tier 4 graph] 'PC5' r=2PF6- fallback (smi=*.[F-].c1c[n]2->[Ru+2]34(<-[n]5ccncc5-c2cn1)(<-[n]1ccncc1-c1cncc[n]->31)<-[n]1ccncc1-c1cncc[n]->41)
+    [Tier 4] 'PC5' 🔄 corrected: F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.c1cnc[n]1-c1
+  [Tier 4 R-group Sub] resolved=['PC5']  remaining=[]

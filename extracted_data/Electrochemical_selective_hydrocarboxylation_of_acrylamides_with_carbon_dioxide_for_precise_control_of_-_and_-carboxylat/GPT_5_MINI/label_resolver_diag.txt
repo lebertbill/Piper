@@ -1,0 +1,33 @@
+Label Resolver Diagnostic Log — 2026-06-16 09:57:09
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Electrochemical_selective_hydrocarboxylation_of_acrylamides_with_carbon_dioxide_for_precise_control_of_-_and_-carboxylat/GPT_5_MINI/processed/Electrochemical_selective_hydrocarboxylation_of_acrylamides_with_carbon_dioxide_for_precise_control_of_-_and_-carboxylat_artifacts/image_000001_52dd0f823f92dc745941c62340cc31455f7c14eb8c541fc89b3c986ea32ce5ff.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='N-methyl-N-phenylmethacrylamide'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['3a', '2a']
+  [OCSR] image_000001_52dd0f823f92dc745941c62340cc31455f7c14eb8c541fc89b3c986ea32ce5ff.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Latm']  smiles=C=CC(=O)Nc1ccccc1.CC.CC.CC.CC.CC.CC.CC  wildcard=False
+  [OCSR]   pair [2,3]: texts=['22']  smiles=*CC(*)C(=O)N(*)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*N(C(=O)C(*)(*)*)C1=CC=CC=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '2a']
+  [Tier 3] '3a': bbox=4 atoms=14 smiles=*N(C(=O)C(*)(*)*)C1=CC=CC=C1 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=14 smiles=*CC(*)C(=O)N(*)C1=CC=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '2a']
+    [Tier 4 LLM] '2a' → r_value='COOH, Me, Me'
+    [Tier 4 LLM] '3a' → r_value='Me, Me, Me, COOH'
+    [Tier 4] R-group candidates: ['2a', '3a']
+    [Tier 4 graph] '2a' r=COOH, Me, Me fallback (smi=*CC(*)C(=O)N(*)C1=CC=CC=C1)
+    [Tier 4] '2a' ✅ match: OC(=O)CC(C)C(=O)N(C)C1=CC=CC=C1
+    [Tier 4 graph] '3a' r=Me, Me, Me, COOH fallback (smi=*N(C(=O)C(*)(*)*)C1=CC=CC=C1)
+    [Tier 4] '3a' ✅ match: CN(C(=O)C(C)(C)C(=O)O)C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['2a', '3a']  remaining=[]

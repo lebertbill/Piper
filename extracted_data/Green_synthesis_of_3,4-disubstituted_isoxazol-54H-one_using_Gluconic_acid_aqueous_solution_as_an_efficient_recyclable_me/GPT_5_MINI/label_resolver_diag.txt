@@ -1,0 +1,34 @@
+Label Resolver Diagnostic Log — 2026-06-16 12:04:31
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '3', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Green_synthesis_of_3,4-disubstituted_isoxazol-54H-one_using_Gluconic_acid_aqueous_solution_as_an_efficient_recyclable_me/GPT_5_MINI/processed/Green_synthesis_of_3,4-disubstituted_isoxazol-54H-one_using_Gluconic_acid_aqueous_solution_as_an_efficient_recyclable_me_artifacts/image_000005_948b4b47c37685f4de8deadfa57fafc380ca09e459ff107bcd442dd0a67d1175.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4', '3', '1']
+  [OCSR] image_000005_948b4b47c37685f4de8deadfa57fafc380ca09e459ff107bcd442dd0a67d1175.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(=O)c1ccccc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=CCOC(=O)CC(C)=O  wildcard=False
+  [OCSR]   pair [4,5]: texts=[]  smiles=CC1=NOC(=O)/C1=C\c1ccccc1  wildcard=False
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '3', '1']
+  [Tier 2 Symbol Correction] resolved=['4']  remaining=['3', '1']
+  [Tier 3] '1': bbox=0 atoms=9 smiles=CC(=O)c1c*ccc1 wildcard=True
+  [Tier 3] '3': bbox_idx=None out of range (n=6)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '3']
+    [Tier 4 LLM] '1' → r_value='H'
+    [Tier 4] R-group candidates: ['1']
+    [Tier 4 graph] '1' r=H fallback (smi=*C(=O)c1ccccc1)
+    [Tier 4] '1' ✅ match: O=Cc1ccccc1
+  [Tier 4 R-group Sub] resolved=['1']  remaining=['3']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3']
+    [Tier 6→pubchem_lookup] '3' name='Hydroxylamine hydrochloride' → NO.Cl
+  [Tier 6 LLM Vision] resolved=['3']

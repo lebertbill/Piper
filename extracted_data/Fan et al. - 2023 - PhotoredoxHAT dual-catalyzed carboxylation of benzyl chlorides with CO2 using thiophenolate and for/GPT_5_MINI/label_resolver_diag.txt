@@ -1,0 +1,97 @@
+Label Resolver Diagnostic Log — 2026-05-10 02:55:41
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['HAT1', 'HAT2', 'HAT3'] → image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png
+  [GlobalRegistry] labels=['Ir(dtbbpy)(ppy)2PF6', '4CzIPN', '4DPAIPN', 'HAT1', 'HAT2', 'HAT3'] → image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['HAT1', 'HAT2', 'HAT3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/default_run/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['HAT1', 'HAT2', 'HAT3']
+  [OCSR] image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CCl)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['HAT1', 'HAT2', 'HAT3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['HAT1', 'HAT2', 'HAT3']
+  [Tier 3] 'HAT1': bbox_idx=None out of range (n=6)
+  [Tier 3] 'HAT2': bbox_idx=None out of range (n=6)
+  [Tier 3] 'HAT3': bbox=3 atoms=4 smiles=*CC* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['HAT1', 'HAT2', 'HAT3']
+    [Tier 4 LLM] 'HAT1' → r_value='PhSNa'
+    [Tier 4 LLM] 'HAT2' → r_value='(PhS)2'
+    [Tier 4 LLM] 'HAT3' → r_value='NaO3S(CH2)2SH'
+    [Tier 4] R-group candidates: ['HAT1', 'HAT2', 'HAT3']
+    [Tier 4 graph] 'HAT1' r=PhSNa fallback (smi=*C1=CC=C(CCl)C=C1)
+    [Tier 4 graph] 'HAT2' r=(PhS)2 fallback (smi=*C1=CC=C(CCl)C=C1)
+    [Tier 4 graph] 'HAT3' r=NaO3S(CH2)2SH fallback (smi=*C1=CC=C(CCl)C=C1)
+    [Tier 4] 'HAT1' 🔄 corrected: ClCc1ccc(cc1)c2ccccc2
+    [Tier 4] 'HAT2' ✅ match: ClCC1=CC=C(C=C1)C1=CC=C(SSC2=CC=C(C=C2)C2=CC=C(CCl
+    [Tier 4] 'HAT3' RDKit render failed: HSCCS(=O)(=O)O[Na].ClCC1=CC=C(C=C1)C1=CC
+  [Tier 4 R-group Sub] resolved=['HAT1', 'HAT2']  remaining=['HAT3']
+    [Tier 5 PubChem] 'HAT3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['HAT3']
+    [Tier 6→pubchem_lookup] 'HAT3' name='Sodium 2-mercaptoethanesulfonate' → C(CS(=O)(=O)[O-])S.[Na+]
+  [Tier 6 LLM Vision] resolved=['HAT3']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['Ir(dtbbpy)(ppy)2PF6', '4CzIPN', '4DPAIPN', 'HAT1', 'HAT2', 'HAT3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/default_run/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png
+  Exists   : True
+  [Tier 0 NameMap] 'Ir(dtbbpy)(ppy)2PF6' → name '[Ir(dtbbpy)(ppy)2]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] '4DPAIPN' → pubchem_lookup via name='2,4,5,6-tetrakis(diphenylamino)isophthalonitrile'
+  [Tier 0 NameMap] resolved=['4CzIPN', '4DPAIPN']  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+  [OCSR] image_000009_9944be6bc95e9ad50f191fd815b5b2827e7ae6355e3159c2343204dfce9ea936.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+  [Tier 3] 'Ir(dtbbpy)(ppy)2PF6': bbox=0 atoms=40 smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC=CC=C2C2 wildcard=True
+  [Tier 3] 'HAT1': bbox=1 atoms=54 smiles=*C1=CC=[C]2C(=C1)C1C=C(*)C=C[N]1[Ir]21345([C]2=C(C(F)=CC(F)= wildcard=True
+  [Tier 3] 'HAT2': bbox=2 atoms=60 smiles=*C1=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C(N2C3=C(C=CC=C3)C3=C wildcard=True
+  [Tier 3] 'HAT3': bbox=3 atoms=12 smiles=*C1=C(*)C(*)=C(C)C(*)=C1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+    [Tier 5 PubChem] 'Ir(dtbbpy)(ppy)2PF6' → name_map name: '[Ir(dtbbpy)(ppy)2]PF6'
+    [Tier 5 PubChem] 'Ir(dtbbpy)(ppy)2PF6' → no hit (tried ['[Ir(dtbbpy)(ppy)2]PF6', '[Ir(dtbbpy)(ppy)2)PF6'])
+    [Tier 5 PubChem] 'HAT1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'HAT2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'HAT3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+    [Tier 6] 'Ir(dtbbpy)(ppy)2PF6' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dtbbpy)(ppy)2]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['Ir(dtbbpy)(ppy)2PF6', 'HAT1', 'HAT2', 'HAT3']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for/default_run/processed/Fan et al. - 2023 - PhotoredoxHAT dual-catalyzed carboxylation of benzyl chlorides with CO2 using thiophenolate and for_artifacts/image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a']
+  [OCSR] image_000008_5a835055cba3689bf5516eb9ce6df9f69c8fd4ce2d329f5da45b7a41347708c6.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CCl)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=9 smiles=*C1=CC=C(CCl)C=C1 wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=9 smiles=*CC1=CC=C(*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '2a' → r_value='* = Ph, * = CO2H'
+    [Tier 4] R-group candidates: ['1a', '2a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*C1=CC=C(CCl)C=C1)
+    [Tier 4] '1a' ✅ match: ClCC1=CC=C(C=C1)C1=CC=CC=C1
+    [Tier 4 graph] '2a' r=* = Ph, * = CO2H fallback (smi=*CC1=CC=C(*)C=C1)
+    [Tier 4] '2a' ✅ match: OC(=O)CC1=CC=C(C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=[]

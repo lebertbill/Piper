@@ -1,0 +1,159 @@
+Label Resolver Diagnostic Log — 2026-06-10 14:31:39
+================================================================================
+
+  [GlobalRegistry] labels=['1a', '1b', '1c', '1d', 'L1', 'L2', 'L3', 'L4'] → image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png
+  [GlobalRegistry] Skipping 'Fig. 6' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 7' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 8' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '1b', '1c', '1d', 'L1', 'L2', 'L3', 'L4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions/GPT_5_MINI/processed/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions_artifacts/image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='4,6-bis((R)-4-phenyl-4,5-dihydrooxazol-2-yl)dibenzo[b,d]furan'
+  [Tier 0 NameMap] resolved=['L1']  remaining=['1a', '1b', '1c', '1d', 'L2', 'L3', 'L4']
+  [OCSR] image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png: 18 bboxes, 9 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1', 'Ph) L2 (R = Bn)', '(R =']  smiles=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](C)CO4)cccc23)=  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia-d']  smiles=*C(=O)/C=C/C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['1a']  smiles=CN1CCOC1=O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*CN(*)C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L3']  smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=N  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1b']  smiles=CC.Cc1nccn1C  wildcard=False
+  [OCSR]   pair [12,13]: texts=['Ic']  smiles=CC.Cc1cc(C)n(C)n1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['3a-d']  smiles=*C(=O)CC(C)CN(*)C  wildcard=True
+  [OCSR]   pair [16,17]: texts=['Id']  smiles=*C(C)=O.CC  wildcard=True
+  [OCSR] → 9 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['1a', '1b']  remaining=['1c', '1d', 'L2', 'L3', 'L4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1c', '1d', 'L2', 'L3', 'L4']
+  [Tier 3] '1c': bbox=12 atoms=10 smiles=CC.Cc1*c(C)n(C)n1 wildcard=True
+  [Tier 3] '1d': symbol/coord count mismatch (9 vs 6), using original
+  [Tier 3] '1d': bbox=16 atoms=6 smiles=*C(C)=O.CC wildcard=True
+  [Tier 3] 'L2': bbox=0 atoms=25 smiles=*C1COC(C2=CC=CC3=C2OC2=C3C=CC=C2C2=NC(C)CO2)=N1 wildcard=True
+  [Tier 3] 'L3': symbol/coord count mismatch (15 vs 33), using original
+  [Tier 3] 'L3': bbox=8 atoms=33 smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N wildcard=True
+  [Tier 3] 'L4': symbol/coord count mismatch (19 vs 33), using original
+  [Tier 3] 'L4': bbox=8 atoms=33 smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1c', '1d', 'L2', 'L3', 'L4']
+    [Tier 4 LLM] '1c' → r_value='Z = 3,5-dimethyl-1H-pyrazol-1-yl'
+    [Tier 4 LLM] '1d' → r_value='Z = benzoyl'
+    [Tier 4 LLM] 'L2' → r_value='R = Bn'
+    [Tier 4 LLM] 'L3' → r_value='* = Ph'
+    [Tier 4 LLM] 'L4' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1c', '1d', 'L2', 'L3', 'L4']
+    [Tier 4 graph] '1c' r=Z = 3,5-dimethyl-1H-pyrazol-1-yl fallback (smi=*C(=O)/C=C/C)
+    [Tier 4 graph] '1d' r=Z = benzoyl fallback (smi=*C(=O)/C=C/C)
+    [Tier 4] '1c' ✅ match: Cc1cc(C)n(n1)C(=O)/C=C/C
+    [Tier 4] '1d' ✅ match: C1=CC=C(C=C1)C(=O)C(=O)/C=C/C
+    [Tier 4 graph] 'L2' r=R = Bn fallback (smi=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](C)CO4)cccc23)=N1)
+    [Tier 4] 'L2' 🔄 corrected: c1ccc(C[C@H]2COC(c3cccc4c3oc3c(C5=N[C@H](Cc6ccccc6
+    [Tier 4 graph] 'L3' r=* = Ph fallback (smi=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N2)=N1)
+    [Tier 4 graph] 'L4' r=* = Ph fallback (smi=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N2)=N1)
+    [Tier 4] 'L3' 🔄 corrected: CC(C)(C1=N[C@@H](C2=CC=CC=C2)CO1)C3=N[C@@H](C4=CC=
+    [Tier 4] 'L4' 🔄 corrected: c1cc(cc(c1)C2=N[C@@H](CO2)c3ccccc3)C4=N[C@@H](CO4)
+  [Tier 4 R-group Sub] resolved=['1c', '1d', 'L2', 'L3', 'L4']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['None'] from image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['None']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions/GPT_5_MINI/processed/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions_artifacts/image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['None']
+  [OCSR] image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png: 18 bboxes, 9 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1', 'Ph) L2 (R = Bn)', '(R =']  smiles=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](C)CO4)cccc23)=  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia-d']  smiles=*C(=O)/C=C/C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['1a']  smiles=CN1CCOC1=O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*CN(*)C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L3']  smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=N  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1b']  smiles=CC.Cc1nccn1C  wildcard=False
+  [OCSR]   pair [12,13]: texts=['Ic']  smiles=CC.Cc1cc(C)n(C)n1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['3a-d']  smiles=*C(=O)CC(C)CN(*)C  wildcard=True
+  [OCSR]   pair [16,17]: texts=['Id']  smiles=*C(C)=O.CC  wildcard=True
+  [OCSR] → 9 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['None']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['None']
+  [Tier 3 BBox Match] resolved=[]  remaining=['None']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['None']
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+  [Tier 5 PubChem] resolved=[]  remaining=['None']
+  [Tier 6 LLM Vision] resolved=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a', '2a']
+  Image    : extracted_data/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3a', '2a']
+  [OCSR] visualheist_page_03_table_1.png: 18 bboxes, 9 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1 (R = Ph), L2 (R = Bn)']  smiles=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](*)CO4)cccc23)=  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia-d']  smiles=*C(=O)/C=C/C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Ia']  smiles=CC.CN1CCOC1=O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*CN(*)C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L3']  smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC2(=N1)=N1=C(OC  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1b']  smiles=CCC.Cc1nccn1C  wildcard=False
+  [OCSR]   pair [12,13]: texts=['1c']  smiles=CC.Cc1cc(C)n(C)n1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['3a-d']  smiles=*C(=O)CC(C)CN(*)C  wildcard=True
+  [OCSR]   pair [16,17]: texts=['Id']  smiles=*C(C)=O.CC  wildcard=True
+  [OCSR] → 9 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3a', '2a']
+  [Tier 3] '1a': bbox=4 atoms=9 smiles=CC.CN1CCOC1=O wildcard=False
+  [Tier 3] '3a': bbox=14 atoms=10 smiles=*C(=O)CC(C)CN(*)C wildcard=True
+  [Tier 3] '2a': bbox=6 atoms=5 smiles=*CN(*)C wildcard=True
+  [Tier 3 BBox Match] resolved=['1a']  remaining=['3a', '2a']
+    [Tier 4 LLM] '2a' → r_value='N-methyl-N-((trimethylsilyl)methyl)aniline'
+    [Tier 4 LLM] '3a' → r_value='Z = 2-oxooxazolidin-3-yl'
+    [Tier 4] R-group candidates: ['2a', '3a']
+    [Tier 4 graph] '2a' r=N-methyl-N-((trimethylsilyl)methyl)aniline fallback (smi=*CN(*)C)
+    [Tier 4] '2a' ✅ match: C[Si](C)(C)CN(C)c1ccccc1
+    [Tier 4 graph] '3a' r=Z = 2-oxooxazolidin-3-yl fallback (smi=*C(=O)CC(C)CN(*)C)
+    [Tier 4] '3a' 🔄 corrected: O=C1OCCN1C(=O)C[C@@H](C)CN(C)c2ccccc2
+  [Tier 4 R-group Sub] resolved=['2a', '3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['L3', '1d', '1b', 'L1', '1c', 'L2', '1a', 'L4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions/GPT_5_MINI/processed/A_chiral_nickel_DBFOX_complex_as_a_bifunctional_catalyst_for_visible-light-promoted_asymmetric_photoredox_reactions_artifacts/image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='4,6-bis((R)-4-phenyl-4,5-dihydrooxazol-2-yl)dibenzo[b,d]furan'
+  [Tier 0 NameMap] resolved=['L1']  remaining=['L3', '1d', '1b', '1c', 'L2', '1a', 'L4']
+  [OCSR] image_000008_828c5ddc7585d4305a8087da1717b65b9a0880daa76c1ed1961d4c637d947e0e.png: 18 bboxes, 9 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1', 'Ph) L2 (R = Bn)', '(R =']  smiles=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](C)CO4)cccc23)=  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia-d']  smiles=*C(=O)/C=C/C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['1a']  smiles=CN1CCOC1=O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*CN(*)C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L3']  smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=N  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1b']  smiles=CC.Cc1nccn1C  wildcard=False
+  [OCSR]   pair [12,13]: texts=['Ic']  smiles=CC.Cc1cc(C)n(C)n1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['3a-d']  smiles=*C(=O)CC(C)CN(*)C  wildcard=True
+  [OCSR]   pair [16,17]: texts=['Id']  smiles=*C(C)=O.CC  wildcard=True
+  [OCSR] → 9 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['1b', '1a']  remaining=['L3', '1d', '1c', 'L2', 'L4']
+  [Tier 2 Symbol Correction] resolved=['1c']  remaining=['L3', '1d', 'L2', 'L4']
+  [Tier 3] 'L3': symbol/coord count mismatch (17 vs 33), using original
+  [Tier 3] 'L3': bbox=8 atoms=33 smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N wildcard=True
+  [Tier 3] '1d': symbol/coord count mismatch (4 vs 6), using original
+  [Tier 3] '1d': bbox=16 atoms=6 smiles=*C(C)=O.CC wildcard=True
+  [Tier 3] 'L2': bbox=0 atoms=25 smiles=*C1COC(C2=CC=CC3=C2OC2=C3C=CC=C2C2=NC(C)CO2)=N1 wildcard=True
+  [Tier 3] 'L4': symbol/coord count mismatch (18 vs 33), using original
+  [Tier 3] 'L4': bbox=8 atoms=33 smiles=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['L3', '1d', 'L2', 'L4']
+    [Tier 4 LLM] 'L2' → r_value='R = Bn'
+    [Tier 4 LLM] '1d' → r_value='Z = PhCO'
+    [Tier 4 LLM] 'L3' → r_value='R = Ph'
+    [Tier 4 LLM] 'L4' → r_value='R = Ph'
+    [Tier 4] R-group candidates: ['L2', '1d', 'L3', 'L4']
+    [Tier 4 graph] 'L2' r=R = Bn fallback (smi=*[C@@H]1COC(c2cccc3c2oc2c(C4=N[C@H](C)CO4)cccc23)=N1)
+    [Tier 4] 'L2' 🔄 corrected: c1ccc(C[C@H]2COC(c3cccc4c3oc3c(C5=N[C@H](Cc6ccccc6
+    [Tier 4 graph] '1d' r=Z = PhCO fallback (smi=*C(=O)/C=C/C)
+    [Tier 4] '1d' 🔄 corrected: CC=CC(=O)C(=O)C1=CC=CC=C1
+    [Tier 4 graph] 'L3' r=R = Ph fallback (smi=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N2)=N1)
+    [Tier 4 graph] 'L4' r=R = Ph fallback (smi=*C1COC(C(C)(C)C2=NC(*)CO2)=N1.*C1COC(C2=CC=CC(C3=NC(*)CO3)=N2)=N1)
+    [Tier 4] 'L3' 🔄 corrected: CC(C)(C1=N[C@@H](C2=CC=CC=C2)CO1)C3=N[C@@H](C4=CC=
+    [Tier 4] 'L4' 🔄 corrected: c1cc(cc(c1)C2=N[C@@H](CO2)c3ccccc3)C4=N[C@@H](CO4)
+  [Tier 4 R-group Sub] resolved=['L2', '1d', 'L3', 'L4']  remaining=[]

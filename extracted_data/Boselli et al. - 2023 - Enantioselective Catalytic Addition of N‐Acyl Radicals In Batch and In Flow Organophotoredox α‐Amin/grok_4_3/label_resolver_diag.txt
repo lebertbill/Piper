@@ -1,0 +1,131 @@
+Label Resolver Diagnostic Log — 2026-05-24 18:10:21
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000008_d5d5119379e56008ed716e40b345835e4fc7f7b013fe4d4bc28601a2e3f466a0.png → visualheist_page_02_figure_1.png
+  [GlobalRegistry] labels=['14'] → visualheist_page_02_figure_1.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['14']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin/grok_4_3/processed/visualheist_page_02_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['14']
+  [OCSR] visualheist_page_02_figure_1.png: 13 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['14']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['14']
+  [Tier 3] '14': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['14']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['14']
+    [Tier 5 PubChem] '14' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['14']
+  [Tier 6 LLM Vision] resolved=['14']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '14', '10']
+  Image    : extracted_data/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin/grok_4_3/processed/visualheist_page_03_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='dihydrocinnamic aldehyde'
+  [Tier 0 NameMap] resolved=['10']  remaining=['4', '14']
+  [OCSR] visualheist_page_03_table_2.png: 7 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['10']  smiles=*CCC=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=*C1=CC(*)=C(S(=O)(=O)ON(C)C(C)=O)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['14']  smiles=*C[C+](C(*)=O)N(C)C(C)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '14']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '14']
+  [Tier 3] '4': bbox=2 atoms=17 smiles=*C1=CC(*)=C(S(=O)(=O)ON(C)C(C)=O)C=C1 wildcard=True
+  [Tier 3] '14': bbox=5 atoms=11 smiles=*CC(C(*)=O)N(C)C(C)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '14']
+    [Tier 4 LLM] '4' → r_value='* = NO2'
+    [Tier 4 LLM] '14' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['4', '14']
+    [Tier 4 graph] '4' r=* = NO2 fallback (smi=*C1=CC(*)=C(S(=O)(=O)ON(C)C(C)=O)C=C1)
+    [Tier 4] '4' ✅ match: [O-][N+](=O)C1=CC([N+](=O)[O-])=C(S(=O)(=O)ON(C)C(
+    [Tier 4 graph] '14' r=* = Ph fallback (smi=*C[C+](C(*)=O)N(C)C(C)=O)
+    [Tier 4] '14' ✅ match: c1ccc(cc1)CC(C=O)N(C)C(C)=O
+  [Tier 4 R-group Sub] resolved=['4', '14']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '15', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin/grok_4_3/processed/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin_artifacts/image_000010_8ace583c846fcba2055fccd84900149965a0806c301128bb5995ca0d608e9445.png
+  Exists   : True
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='dihydrocinnamic aldehyde'
+  [Tier 0 NameMap] resolved=['10']  remaining=['1', '15']
+  [OCSR] image_000010_8ace583c846fcba2055fccd84900149965a0806c301128bb5995ca0d608e9445.png: 14 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['A)']  smiles=*CCC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2 eq']  smiles=*CCC(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['1 eq']  smiles=*C1=CC=C(S(=O)(=O)ON(C)C(C)=O)C(*)=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['1eq']  smiles=*C1=CC=C(ON(C)C(C)=O)C(*)=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['15']  smiles=*CC(CO)N(C)C(C)=O  wildcard=True
+  [OCSR]   pair [12,13]: texts=['15']  smiles=*CC(CO)N(C)C(C)=O  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '15']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '15']
+  [Tier 3] '1': bbox=6 atoms=14 smiles=*C1=CC=C(ON(C)C(C)=O)C(*)=C1 wildcard=True
+  [Tier 3] '15': bbox=10 atoms=10 smiles=*CC(CO)N(C)C(C)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '15']
+    [Tier 4 LLM] '1' → r_value='2,4-dinitrophenyl'
+    [Tier 4 LLM] '15' → r_value='benzyl'
+    [Tier 4] R-group candidates: ['1', '15']
+    [Tier 4 graph] '1' r=2,4-dinitrophenyl fallback (smi=*C1=CC=C(ON(C)C(C)=O)C(*)=C1)
+    [Tier 4] '1' ✅ match: CC(=O)N(C)OC1=CC=C([N+](=O)[O-])C=C1[N+](=O)[O-]
+    [Tier 4 graph] '15' r=benzyl fallback (smi=*CC(CO)N(C)C(C)=O)
+    [Tier 4] '15' 🔄 corrected: CC(=O)N(C)C(CO)Cc1ccccc1
+  [Tier 4 R-group Sub] resolved=['1', '15']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['14', '1', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin/grok_4_3/processed/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin_artifacts/image_000016_2dfcfe799550d465a23fe6e5dd34f8b766fb035d007162af1e371dcf7737c603.png
+  Exists   : True
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='dihydrocinnamic aldehyde'
+  [Tier 0 NameMap] resolved=['10']  remaining=['14', '1']
+  [OCSR] image_000016_2dfcfe799550d465a23fe6e5dd34f8b766fb035d007162af1e371dcf7737c603.png: 7 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1,Teq']  smiles=*C1=CC=C(ON(C)C(C)=O)C(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['10 ,2eq']  smiles=*C(=O)CCc1ccccc1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['14']  smiles=*C(=O)C(Cc1ccccc1)N(C)C(C)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['14', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['14', '1']
+  [Tier 3] '14': bbox=5 atoms=16 smiles=*C(=O)C(Cc1ccccc1)N(C)C(C)=O wildcard=True
+  [Tier 3] '1': bbox=0 atoms=14 smiles=*C1=CC=C(ON(C)C(C)=O)C(*)=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['14', '1']
+    [Tier 4 LLM] '1' → r_value='* = NO2'
+    [Tier 4 LLM] '14' → r_value='* = H'
+    [Tier 4] R-group candidates: ['1', '14']
+    [Tier 4 graph] '1' r=* = NO2 fallback (smi=*C1=CC=C(ON(C)C(C)=O)C(*)=C1)
+    [Tier 4] '1' ✅ match: [O-][N+](=O)C1=CC=C(ON(C)C(C)=O)C([N+](=O)[O-])=C1
+    [Tier 4 graph] '14' r=* = H fallback (smi=*C(=O)C(Cc1ccccc1)N(C)C(C)=O)
+    [Tier 4] '14' ✅ match: O=CC(Cc1ccccc1)N(C)C(C)=O
+  [Tier 4 R-group Sub] resolved=['1', '14']  remaining=[]

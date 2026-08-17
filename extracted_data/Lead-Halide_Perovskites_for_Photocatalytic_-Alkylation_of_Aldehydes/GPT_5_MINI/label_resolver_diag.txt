@@ -1,0 +1,106 @@
+Label Resolver Diagnostic Log — 2026-06-16 13:48:21
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [InlineResolver] Column 'Cocatalyst' labels ['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', '6', 'Cy2NH·HCl'] from image_000009_8e6cefa253901dfee62fed91d2b4afcaaf0f95abd5724b05a6bd1c3812e9d54d.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', '6', 'Cy2NH·HCl']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Lead-Halide_Perovskites_for_Photocatalytic_-Alkylation_of_Aldehydes/GPT_5_MINI/processed/Lead-Halide_Perovskites_for_Photocatalytic_-Alkylation_of_Aldehydes_artifacts/image_000009_8e6cefa253901dfee62fed91d2b4afcaaf0f95abd5724b05a6bd1c3812e9d54d.png
+  Exists   : True
+  [Tier 0 NameMap] '6' → opsin_lookup via name='(5S)-(-)-2,2,3-trimethyl-5-benzyl-4-imidazolidinone'
+  [Tier 0 NameMap] resolved=['6']  remaining=['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']
+  [OCSR] image_000009_8e6cefa253901dfee62fed91d2b4afcaaf0f95abd5724b05a6bd1c3812e9d54d.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=O=C(CBr)c1ccccc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['5a']  smiles=*C(=O)C(*)CC(=O)c1ccccc1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4a']  smiles=O=C(CCC(=O)c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['3a']  smiles=*CC(=O)c1ccccc1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']
+  [Tier 3] 'n-C18H37NH2·HCl': bbox_idx=None out of range (n=10)
+  [Tier 3] 'n-C18H37NH2': bbox_idx=None out of range (n=10)
+  [Tier 3] '(n-C18H37)2NH·HCl': bbox_idx=None out of range (n=10)
+  [Tier 3] '(ClCH2CH2)2NH·HCl': bbox_idx=None out of range (n=10)
+  [Tier 3] 'Cy2NH·HCl': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']
+    [Tier 4 LLM] 'n-C18H37NH2·HCl' → r_value='base = n-C18H37NH2·HCl'
+    [Tier 4 LLM] 'n-C18H37NH2' → r_value='base = n-C18H37NH2'
+    [Tier 4 LLM] '(n-C18H37)2NH·HCl' → r_value='base = (n-C18H37)2NH·HCl'
+    [Tier 4 LLM] '(ClCH2CH2)2NH·HCl' → r_value='base = (ClCH2CH2)2NH·HCl'
+    [Tier 4 LLM] 'Cy2NH·HCl' → r_value='base = Cy2NH·HCl'
+    [Tier 4] R-group candidates: ['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']
+    [Tier 4 graph] 'n-C18H37NH2·HCl' r=base = n-C18H37NH2·HCl fallback (smi=*CC(*)=O)
+    [Tier 4 graph] 'n-C18H37NH2' r=base = n-C18H37NH2 fallback (smi=*CC(*)=O)
+    [Tier 4 graph] '(n-C18H37)2NH·HCl' r=base = (n-C18H37)2NH·HCl fallback (smi=*CC(*)=O)
+    [Tier 4 graph] '(ClCH2CH2)2NH·HCl' r=base = (ClCH2CH2)2NH·HCl fallback (smi=*CC(*)=O)
+    [Tier 4 graph] 'Cy2NH·HCl' r=base = Cy2NH·HCl fallback (smi=*CC(*)=O)
+    [Tier 4] 'n-C18H37NH2·HCl' 🔄 corrected: CCCCCCCCCCCCCCCCCC[NH3+].[Cl-]
+    [Tier 4] 'n-C18H37NH2' 🔄 corrected: CCCCCCCCCCCCCCCCCCN
+    [Tier 4] '(n-C18H37)2NH·HCl' 🔄 corrected: CCCCCCCCCCCCCCCCCC[NH2+]CCCCCCCCCCCCCCCCCC.[Cl-]
+    [Tier 4] '(ClCH2CH2)2NH·HCl' 🔄 corrected: ClCC[NH2+]CCCl.[Cl-]
+    [Tier 4] 'Cy2NH·HCl' 🔄 corrected: C1CCC(CC1)[NH2+]C2CCCCC2.[Cl-]
+  [Tier 4 R-group Sub] resolved=['n-C18H37NH2·HCl', 'n-C18H37NH2', '(n-C18H37)2NH·HCl', '(ClCH2CH2)2NH·HCl', 'Cy2NH·HCl']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['5a', '2a', '3a']
+  Image    : extracted_data/Lead-Halide_Perovskites_for_Photocatalytic_-Alkylation_of_Aldehydes/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='octanal'
+  [Tier 0 NameMap] '3a' → pubchem_lookup via name='acetophenone'
+  [Tier 0 NameMap] resolved=['2a', '3a']  remaining=['5a']
+  [OCSR] visualheist_page_02_table_2.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=O=C(CBr)c1ccccc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['5a']  smiles=*C(=O)C(*)CC(=O)c1ccccc1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4a']  smiles=O=C(CCC(=O)c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['3a']  smiles=*CC(=O)c1ccccc1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['5a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['5a']
+  [Tier 3] '5a': bbox=4 atoms=14 smiles=*C(=O)C(*)CC(=O)c1ccccc1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['5a']
+    [Tier 4 LLM] '5a' → r_value='R1 = Hex, R2 = H'
+    [Tier 4] R-group candidates: ['5a']
+    [Tier 4 graph] '5a' r=R1 = Hex, R2 = H fallback (smi=*C(=O)C(*)CC(=O)c1ccccc1)
+    [Tier 4] '5a' ✅ match: CCCCCC(C=O)CC(=O)c1ccccc1
+  [Tier 4 R-group Sub] resolved=['5a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['99', '77', '90', '5', '82', '0', '92', 'CsPbBr3', '97']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Lead-Halide_Perovskites_for_Photocatalytic_-Alkylation_of_Aldehydes/GPT_5_MINI/processed/Lead-Halide_Perovskites_for_Photocatalytic_-Alkylation_of_Aldehydes_artifacts/image_000009_8e6cefa253901dfee62fed91d2b4afcaaf0f95abd5724b05a6bd1c3812e9d54d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['99', '77', '90', '5', '82', '0', '92', 'CsPbBr3', '97']
+  [OCSR] image_000009_8e6cefa253901dfee62fed91d2b4afcaaf0f95abd5724b05a6bd1c3812e9d54d.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=O=C(CBr)c1ccccc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['5a']  smiles=*C(=O)C(*)CC(=O)c1ccccc1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4a']  smiles=O=C(CCC(=O)c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['3a']  smiles=*CC(=O)c1ccccc1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['99', '77', '90', '5', '82', '0', '92', 'CsPbBr3', '97']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['99', '77', '90', '5', '82', '0', '92', 'CsPbBr3', '97']
+  [Tier 3] 'CsPbBr3': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['CsPbBr3', '99', '77', '90', '5', '82', '0', '92', '97']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['CsPbBr3', '99', '77', '90', '5', '82', '0', '92', '97']
+    [Tier 5 PubChem] 'CsPbBr3' → no hit (tried ['1.0 mg', 'CsPbBr3'])
+    [Tier 5 PubChem] '99' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '77' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '90' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '82' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '0' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '92' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '97' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['CsPbBr3', '99', '77', '90', '5', '82', '0', '92', '97']
+    [Tier 6→llm_name_to_smiles] 'CsPbBr3' name='Cesium Lead Bromide Perovskite' → [Cs+].[Pb+2].[Br-].[Br-].[Br-]
+  [Tier 6 LLM Vision] resolved=['CsPbBr3', '99', '77', '90', '5', '82', '0', '92', '97']

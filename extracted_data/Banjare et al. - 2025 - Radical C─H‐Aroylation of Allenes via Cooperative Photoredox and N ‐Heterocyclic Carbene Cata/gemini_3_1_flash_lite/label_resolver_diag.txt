@@ -1,0 +1,102 @@
+Label Resolver Diagnostic Log — 2026-05-21 21:43:29
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000009_db1adb3e168fc5256f7b5494168216cdf1f0f99d0155cf644ef78d46ebf0562e.png → visualheist_page_03_table_1.png
+  [GlobalRegistry] labels=['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', '2b', '2c', '2d', '2e', '2f'] → visualheist_page_03_table_1.png
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', '2b', '2c', '2d', '2e', '2f']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Banjare et al. - 2025 - Radical C─H‐Aroylation of Allenes via Cooperative Photoredox and N ‐Heterocyclic Carbene Cata/gemini_3_1_flash_lite/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] 'NHC-1' → llm_name_to_smiles via name='3-mesityl-5,6,7,8-tetrahydro-4H-cyclohepta[d][1,2,4]triazol-3-ium tetrafluoroborate'
+  [Tier 0 NameMap] 'NHC-5' → name '3-mesityl-5,6,7,8-tetrahydro-4H-cyclohepta[d][1,2,4]triazol-3-ium chloride' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=['NHC-1']  remaining=['NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', '2b', '2c', '2d', '2e', '2f']
+  [OCSR] visualheist_page_03_table_1.png: 26 bboxes, 13 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(=C=C)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['NHC-1']  smiles=*.*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2b']  smiles=O=C(Cl)c1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2c']  smiles=O=C(Br)c1ccccc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['NHC-2']  smiles=*.*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=O=C(F)c1ccccc1  wildcard=False
+  [OCSR]   pair [12,13]: texts=['2d']  smiles=O=C(OC(=O)c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['NHC-3']  smiles=*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [16,17]: texts=['20']  smiles=O=C(c1ccccc1)n1ccnc1  wildcard=False
+  [OCSR]   pair [18,19]: texts=['NHC-4']  smiles=*n1=CSC2=C1CCCCC2  wildcard=True
+  [OCSR]   pair [20,21]: texts=['3']  smiles=*C(=C=C(*)C1=CC=C(*)C=C1)C(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [22,23]: texts=['2f']  smiles=O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O  wildcard=False
+  [OCSR]   pair [24,25]: texts=['NHC-5']  smiles=*N1=CN2CCCC2=N1.[Cl-]  wildcard=True
+  [OCSR] → 13 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['2b', '2c', '2d', '2f']  remaining=['NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', '2e']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', '2e']
+  [Tier 3] 'NHC-2': bbox=8 atoms=10 smiles=*.*[N+]1=CN2CCCC2=N1 wildcard=True
+  [Tier 3] 'NHC-3': symbol/coord count mismatch (10 vs 9), using original
+  [Tier 3] 'NHC-3': bbox=14 atoms=9 smiles=*N1=CN2CCCC2=N1 wildcard=True
+  [Tier 3] 'NHC-4': symbol/coord count mismatch (12 vs 11), using original
+  [Tier 3] 'NHC-4': bbox=18 atoms=11 smiles=*n1=CSC2=C1CCCCC2 wildcard=True
+  [Tier 3] 'NHC-5': bbox=24 atoms=10 smiles=*[N+]1=CN2CCCC2=N1.[Cl-] wildcard=True
+  [Tier 3] '2e': bbox=16 atoms=13 smiles=O=C(c1ccccc1)n1ccnc1 wildcard=False
+  [Tier 3 BBox Match] resolved=['2e']  remaining=['NHC-2', 'NHC-3', 'NHC-4', 'NHC-5']
+    [Tier 4 LLM] 'NHC-2' → r_value='N-Ph'
+    [Tier 4 LLM] 'NHC-3' → r_value='N-C6F5'
+    [Tier 4 LLM] 'NHC-4' → r_value='N-dipp'
+    [Tier 4 LLM] 'NHC-5' → r_value='N-Mes'
+    [Tier 4] R-group candidates: ['NHC-2', 'NHC-3', 'NHC-4', 'NHC-5']
+    [Tier 4 graph] 'NHC-2' r=N-Ph fallback (smi=*.*N1=CN2CCCC2=N1)
+    [Tier 4] 'NHC-2' RDKit render failed: [F-][B+](F)(F)F.c1ccc(cc1)[n+]1cn2CCCC2=
+    [Tier 4 graph] 'NHC-3' r=N-C6F5 fallback (smi=*N1=CN2CCCC2=N1)
+    [Tier 4] 'NHC-3' 🔄 corrected: F[B-](F)(F)F.Fc1c(F)c(F)c([n+]2cn3CCCC3=N2)c(F)c1F
+    [Tier 4 graph] 'NHC-4' r=N-dipp fallback (smi=*n1=CSC2=C1CCCCC2)
+    [Tier 4] 'NHC-4' 🔄 corrected: CC(C)C1=CC=CC(C(C)C)=C1[N+]1=CSC2=C1CCCCCCC2.[Cl-]
+    [Tier 4 graph] 'NHC-5' r=N-Mes fallback (smi=*N1=CN2CCCC2=N1.[Cl-])
+    [Tier 4] 'NHC-5' ✅ match: CC1=CC(C)=CC(C)=C1[N+]1=CN2CCCC2=N1.[Cl-]
+  [Tier 4 R-group Sub] resolved=['NHC-3', 'NHC-4', 'NHC-5']  remaining=['NHC-2']
+    [Tier 5 PubChem] 'NHC-2' → no hit (tried ['NHC-2', 'NHC-1', '2b', '2c'])
+  [Tier 5 PubChem] resolved=[]  remaining=['NHC-2']
+    [Tier 6→llm_name_to_smiles] 'NHC-2' name='NHC-2' → CC(C)N1C=CN(C(C)C)C1=[C]
+  [Tier 6 LLM Vision] resolved=['NHC-2']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3', '2e']
+  Image    : extracted_data/Banjare et al. - 2025 - Radical C─H‐Aroylation of Allenes via Cooperative Photoredox and N ‐Heterocyclic Carbene Cata/gemini_3_1_flash_lite/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → name 'nching pathway, as the allenes quench
+
+- Disubstituted allene' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3', '2e']
+  [OCSR] visualheist_page_03_table_1.png: 26 bboxes, 13 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(=C=C)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['NHC-1']  smiles=*.*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2b']  smiles=O=C(Cl)c1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2c']  smiles=O=C(Br)c1ccccc1  wildcard=False
+  [OCSR]   pair [8,9]: texts=['NHC-2']  smiles=*.*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=O=C(F)c1ccccc1  wildcard=False
+  [OCSR]   pair [12,13]: texts=['2d']  smiles=O=C(OC(=O)c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['NHC-3']  smiles=*N1=CN2CCCC2=N1  wildcard=True
+  [OCSR]   pair [16,17]: texts=['20']  smiles=O=C(c1ccccc1)n1ccnc1  wildcard=False
+  [OCSR]   pair [18,19]: texts=['NHC-4']  smiles=*n1=CSC2=C1CCCCC2  wildcard=True
+  [OCSR]   pair [20,21]: texts=['3']  smiles=*C(=C=C(*)C1=CC=C(*)C=C1)C(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [22,23]: texts=['2f']  smiles=O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O  wildcard=False
+  [OCSR]   pair [24,25]: texts=['NHC-5']  smiles=*N1=CN2CCCC2=N1.[Cl-]  wildcard=True
+  [OCSR] → 13 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3', '2e']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3', '2e']
+  [Tier 3] '1a': bbox=0 atoms=11 smiles=*C(=C=C)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '3': bbox=20 atoms=20 smiles=*C(=C=C(*)C1=CC=C(*)C=C1)C(=O)C1=CC=CC=C1 wildcard=True
+  [Tier 3] '2e': bbox=16 atoms=13 smiles=O=C(c1ccccc1)n1ccnc1 wildcard=False
+  [Tier 3 BBox Match] resolved=['2e']  remaining=['1a', '3']
+    [Tier 4 LLM] '1a' → r_value='R1 = Me, R2 = OMe'
+    [Tier 4 LLM] '3' → r_value='R1 = Me, R2 = OMe, R3 = H'
+    [Tier 4] R-group candidates: ['1a', '3']
+    [Tier 4 graph] '1a' r=R1 = Me, R2 = OMe fallback (smi=*C(=C=C)C1=CC=C(*)C=C1)
+    [Tier 4] '1a' ✅ match: CC(=C=C)C1=CC=C(OC)C=C1
+    [Tier 4 graph] '3' r=R1 = Me, R2 = OMe, R3 = H fallback (smi=*C(=C=C(*)C1=CC=C(*)C=C1)C(=O)C1=CC=CC=C1)
+    [Tier 4] '3' 🔄 corrected: COc1ccc(cc1)C(C)=C=CC(=O)c2ccccc2
+  [Tier 4 R-group Sub] resolved=['1a', '3']  remaining=[]

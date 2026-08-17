@@ -1,0 +1,30 @@
+Label Resolver Diagnostic Log — 2026-08-15 19:11:52
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1b', '1c', '1a', '2a']
+  Image    : extracted_data/d1ra07314a/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1b' → pubchem_lookup via name='2,3-dichloronaphthoquinone'
+  [Tier 0 NameMap] '1c' → opsin_lookup via name='2-bromo-3-methoxynaphthoquinone'
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='2,3-dibromonaphthoquinone'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='3-phenylbenzofuran'
+  [Tier 0 NameMap] resolved=['1b', '1c', '1a', '2a']  remaining=['3a']
+  [OCSR] visualheist_page_02_table_1.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['#*=Y = Br', 'Ad *-Y-0', 'Ic X =CC, * = Br']  smiles=*C1=C(*)C(=O)c2ccccc2C1=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=c1ccc(-c2coc3ccccc23)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['Ja']  smiles=O=C1c2ccccc2C(=O)c2c1c1c(c3ccccc23)-c2ccccc2C1  wildcard=False
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=4 atoms=27 smiles=O=C1c2ccccc2C(=O)c2c1c1c(c3ccccc23)-c2ccccc2C1 wildcard=False
+  [Tier 3 BBox Match] resolved=['3a']  remaining=[]

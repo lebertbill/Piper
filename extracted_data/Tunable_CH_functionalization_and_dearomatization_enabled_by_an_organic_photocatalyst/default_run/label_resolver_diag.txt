@@ -1,0 +1,73 @@
+Label Resolver Diagnostic Log — 2026-06-18 15:29:46
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] labels=['HEH', '4a', '4b', '4c'] → image_000007_99f6df6211e0142853030e68a8b1a0035577507e2cf8aeceaf2d8361048ec7ad.png
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 6' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['HEH', '4a', '4b', '4c']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Tunable_CH_functionalization_and_dearomatization_enabled_by_an_organic_photocatalyst/default_run/processed/Tunable_CH_functionalization_and_dearomatization_enabled_by_an_organic_photocatalyst_artifacts/image_000007_99f6df6211e0142853030e68a8b1a0035577507e2cf8aeceaf2d8361048ec7ad.png
+  Exists   : True
+  [Tier 0 NameMap] 'HEH' → pubchem_lookup via name='Hantzsch ester'
+  [Tier 0 NameMap] resolved=['HEH']  remaining=['4a', '4b', '4c']
+  [OCSR] image_000007_99f6df6211e0142853030e68a8b1a0035577507e2cf8aeceaf2d8361048ec7ad.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ja']  smiles=*C(=O)CCC(=O)N1C=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=*C(=O)CCC(=O)N1CN(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*C1=CN(C(=O)CCC(*)O)C2=CC=CC=C12  wildcard=True
+  [OCSR]   pair [6,7]: texts=['30']  smiles=*C(O)C1(*)[CH]2(*)C34=CC=CC=C35N36C[CH]4(*)C234(*)  wildcard=True
+  [OCSR]   pair [9,10]: texts=['HEH']  smiles=*C1=C(C)NC(C)=C(*)C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['4c']  smiles=*C1=CN(C(=O)CCC)C2=CC=CC=C12  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '4b', '4c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '4b', '4c']
+  [Tier 3] '4a': bbox=2 atoms=17 smiles=*C(=O)CCC(=O)N1CN(*)C2=CC=CC=C21 wildcard=True
+  [Tier 3] '4b': bbox=4 atoms=17 smiles=*C1=CN(C(=O)CCC(*)O)C2=CC=CC=C12 wildcard=True
+  [Tier 3] '4c': bbox=11 atoms=15 smiles=*C1=CN(C(=O)CCC)C2=CC=CC=C12 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '4b', '4c']
+    [Tier 4 LLM] '4a' → r_value='reduction of indoles'
+    [Tier 4 LLM] '4b' → r_value='reduction of ketones'
+    [Tier 4 LLM] '4c' → r_value='pinacol coupling of ketones'
+    [Tier 4] R-group candidates: ['4a', '4b', '4c']
+    [Tier 4 graph] '4a' r=reduction of indoles fallback (smi=*C(=O)CCC(=O)N1C=C(*)C2=CC=CC=C21)
+    [Tier 4] '4a' 🔄 corrected: COC(=O)C1CN(C(=O)CCC(=O)C2=CC=CC=C2)C2=CC=CC=C12
+    [Tier 4 graph] '4b' r=reduction of ketones fallback (smi=*C1=CN(C(=O)CCC(*)O)C2=CC=CC=C12)
+    [Tier 4] '4b' ✅ match: COC(=O)C1=CN(C(=O)CCC(O)C2=CC=CC=C2)C2=CC=CC=C12
+    [Tier 4 graph] '4c' r=pinacol coupling of ketones fallback (smi=*C1=CN(C(=O)CCC)C2=CC=CC=C12)
+    [Tier 4] '4c' 🔄 corrected: COC(=O)C1=CN(C(=O)CCC2(C)C(O)C(O)C2(C)CC(=O)N3C=C(
+  [Tier 4 R-group Sub] resolved=['4a', '4b', '4c']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a']
+  Image    : extracted_data/Tunable_CH_functionalization_and_dearomatization_enabled_by_an_organic_photocatalyst/default_run/processed/visualheist_page_04_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '1a']
+  [OCSR] visualheist_page_04_table_1.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(=O)CCC(=O)N1C=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4a']  smiles=*C(=O)CCC(=O)N1OC(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4b']  smiles=*C1=CN(C(=O)CCC(*)O)C2=CC=CC=C12  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3a']  smiles=*C(O)C1(*)N2(*)C34(*)C(O)CCC5(=O)N3C36=CC=CC=C327=  wildcard=True
+  [OCSR]   pair [9,10]: texts=['HEH']  smiles=*C1=C(C)NC(C)=C(*)C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['4c']  smiles=*C1=CN(C(=O)CCC)C2=CC=CC=C12  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a']
+  [Tier 3] '1a': bbox=0 atoms=17 smiles=*C(=O)CCC(=O)N1C=C(*)C2=CC=CC=C21 wildcard=True
+  [Tier 3] '3a': bbox=6 atoms=28 smiles=*C(O)C1(*)N2(*)C34(*)C(O)CCC5(=O)N3C36=CC=CC=C327=CC=CC=C7N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph, * = CO2Me'
+    [Tier 4 LLM] '3a' → r_value='* = Ph, * = CO2Me'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=* = Ph, * = CO2Me fallback (smi=*C(=O)CCC(=O)N1C=C(*)C2=CC=CC=C21)
+    [Tier 4] '1a' ✅ match: COC(=O)C1=CN(C(=O)CCC(=O)C2=CC=CC=C2)C2=CC=CC=C12
+    [Tier 4 graph] '3a' r=* = Ph, * = CO2Me fallback (smi=*C(O)C1(*)N2(*)C34(*)C(O)CCC5(=O)N3C36=CC=CC=C327=CC=CC=C7N1564)
+    [Tier 4] '3a' 🔄 corrected: COC(=O)[C@@H]1c2ccccc2N2C(=O)CC[C@](O)(Ph)[C@H]12
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=[]

@@ -1,0 +1,212 @@
+Label Resolver Diagnostic Log — 2026-05-09 23:45:56
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['5CzBN', 'dtbbpy'] → image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['5CzBN', 'dtbbpy']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png
+  Exists   : True
+  [Tier 0 NameMap] '5CzBN' → pubchem_lookup via name='penta-carbazolylbenzonitrile'
+  [Tier 0 NameMap] 'dtbbpy' → pubchem_lookup via name='4,4'-di-tert-butyl-2,2'-bipyridine'
+  [Tier 0 NameMap] resolved=['5CzBN', 'dtbbpy']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['3DPAFIPN', 'phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '4CzIPN', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c'] from image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['3DPAFIPN', 'phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '4CzIPN', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png
+  Exists   : True
+  [Tier 0 NameMap] '3DPAFIPN' → pubchem_lookup via name='2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['3DPAFIPN', '4CzIPN']  remaining=['phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+  [OCSR] image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png: 31 bboxes, 12 coref pairs
+  [OCSR]   pair [0,1]: texts=['4a 45%']  smiles=*C1=CC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4g 50%']  smiles=*C1=[C]([Ir])C=CC=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['(2 equivalent)']  smiles=*C1C(*)C2C3(*)*C2(*)(*)C3C1*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['4b 54%']  smiles=*C1=CC(*)=CC(I)=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['4h 62%']  smiles=O=C(CBr)c1ccc(I)cc1  wildcard=False
+  [OCSR]   pair [13,14]: texts=['4c 62%']  smiles=*C1=CC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [16,17]: texts=['4i 68%']  smiles=*c1cccc2ccccc12  wildcard=True
+  [OCSR]   pair [18,19]: texts=['4d 44%']  smiles=CC(=O)c1ccc(I)cc1  wildcard=False
+  [OCSR]   pair [20,21]: texts=['4j 68% (22%)a']  smiles=*C1=CC2=C(C=CC=C2)C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [24,25]: texts=['4e 60%']  smiles=*C1=C2CC3=C(C=CC=C3)C2=CC=C1  wildcard=True
+  [OCSR]   pair [26,27]: texts=['4f 52%']  smiles=COC(=O)c1cccc(I)c1  wildcard=False
+  [OCSR]   pair [28,29]: texts=['SCzBN']  smiles=*C1=C(N2C3C45=C6CC=C637C43C4=CC=CC23=C457)C(N2C3=C  wildcard=True
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+  [Tier 3] 'phthalimide': bbox_idx=None out of range (n=31)
+  [Tier 3] '[Ir(dtbbpy)(ppy) 2 ]PF 6': bbox_idx=None out of range (n=31)
+  [Tier 3] '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c': bbox_idx=None out of range (n=31)
+  [Tier 3] '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c': bbox_idx=None out of range (n=31)
+  [Tier 3 BBox Match] resolved=[]  remaining=['phthalimide', '[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+    [Tier 4 LLM] 'phthalimide' → r_value='additive = phthalimide'
+    [Tier 4] R-group candidates: ['phthalimide']
+    [Tier 4 graph] 'phthalimide' r=additive = phthalimide fallback (smi=*C1C(*)C2C3(*)*C2(*)(*)C3C1*)
+    [Tier 4] 'phthalimide' 🔄 corrected: CC(=O)O[C@H]1C[C@@](OC(C)=O)(C(=O)O)C[C@@H](OC(C)=
+  [Tier 4 R-group Sub] resolved=['phthalimide']  remaining=['[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+    [Tier 5 PubChem] '[Ir(dtbbpy)(ppy) 2 ]PF 6' → no hit (tried ['[Ir(dtbbpy)(ppy) 2 ]PF 6', '[Ir(dtbbpy)(ppy) 2 )PF 6', '[Ir(dtbbpy)(ppy) 2 ]PF 6PF6'])
+    [Tier 5 PubChem] '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c' → no hit (tried ['(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir(dF(CF 3 )ppy) 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 cPF6'])
+    [Tier 5 PubChem] '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c' → no hit (tried ['(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c', '(Ir(dF(CF 3 )ppy) 2 (dtbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 cPF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+    [NameResolve Organomet] llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+    [Tier 6→llm_name_to_smiles] '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c' name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' → CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]3
+    [Tier 6→llm_name_to_smiles] '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c' name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' → CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]3
+  [Tier 6 LLM Vision] resolved=['[Ir(dtbbpy)(ppy) 2 ]PF 6', '(Ir[dF(CF 3 )ppy] 2 (dtbbpy))PF 6 c', '(Ir[dF(CF 3 )ppy] 2 (dtbpy))PF 6 c']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4-iodo-1-(trifluoromethyl)benzene', '2', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000004_bc605dcb1a4a1c1213cee8942b55dc9dc13ed12fac75a209687ae007aa229232.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → llm_name_to_smiles via name='trifluoromethylphenyl quinate'
+  [Tier 0 NameMap] resolved=['2']  remaining=['4-iodo-1-(trifluoromethyl)benzene', '1']
+  [OCSR] image_000004_bc605dcb1a4a1c1213cee8942b55dc9dc13ed12fac75a209687ae007aa229232.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1']  smiles=*C1(O)CC(O)C(O)C(O)C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC=C(OC(=O)C2(O)CC(O)C(O)C(O)C2)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4-iodo-1-(trifluoromethyl)benzene', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4-iodo-1-(trifluoromethyl)benzene', '1']
+  [Tier 3] '4-iodo-1-(trifluoromethyl)benzene': bbox=2 atoms=8 smiles=*C1=CC=C(I)C=C1 wildcard=True
+  [Tier 3] '1': bbox=0 atoms=11 smiles=*C1(O)CC(O)C(O)C(O)C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4-iodo-1-(trifluoromethyl)benzene', '1']
+    [Tier 4 LLM] '1' → r_value='* = C(=O)OH'
+    [Tier 4 LLM] '4-iodo-1-(trifluoromethyl)benzene' → r_value='* = I'
+    [Tier 4] R-group candidates: ['1', '4-iodo-1-(trifluoromethyl)benzene']
+    [Tier 4] bbox missing for group ['1'] — using full image
+    [Tier 4] '1' 🔄 corrected: OC(=O)[C@@]1(O)C[C@@H](O)[C@@H](O)[C@H](O)C1
+    [Tier 4 graph] '4-iodo-1-(trifluoromethyl)benzene' r=* = I fallback (smi=*C1=CC=C(OC(=O)C2(O)CC(O)C(O)C(O)C2)C=C1)
+  [Tier 4 R-group Sub] resolved=['1']  remaining=['4-iodo-1-(trifluoromethyl)benzene']
+    [Tier 5 PubChem] '4-iodo-1-(trifluoromethyl)benzene' → hit via '4-iodo-1-(trifluoromethyl)benzene': C1=CC(=CC=C1C(F)(F)F)I
+  [Tier 5 PubChem] resolved=['4-iodo-1-(trifluoromethyl)benzene']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['5CzBN', 'dtbbpy'] → image_000005_548e7305d72bec9b15aec4001c05304280df2f033128a9742768edfd2ceeba17.png
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2 Gallery' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['5CzBN', 'dtbbpy']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000005_548e7305d72bec9b15aec4001c05304280df2f033128a9742768edfd2ceeba17.png
+  Exists   : True
+  [Tier 0 NameMap] '5CzBN' → pubchem_lookup via name='penta-carbazolylbenzonitrile'
+  [Tier 0 NameMap] 'dtbbpy' → pubchem_lookup via name='4,4'-di-tert-butyl-2,2'-bipyridine'
+  [Tier 0 NameMap] resolved=['5CzBN', 'dtbbpy']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['Ar-I', '1', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000005_548e7305d72bec9b15aec4001c05304280df2f033128a9742768edfd2ceeba17.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → llm_name_to_smiles via name='trifluoromethylphenyl quinate'
+  [Tier 0 NameMap] resolved=['2']  remaining=['Ar-I', '1']
+  [OCSR] image_000005_548e7305d72bec9b15aec4001c05304280df2f033128a9742768edfd2ceeba17.png: 7 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1(O)CC(O)C(O)C(O)C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2']  smiles=*C1=CC=C(OC(=O)C2(O)CC(O)C(O)C(O)C2)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ar-I', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ar-I', '1']
+  [Tier 3] 'Ar-I': bbox=2 atoms=8 smiles=CC1=*C=C(I)C=C1 wildcard=True
+  [Tier 3] '1': bbox=0 atoms=11 smiles=*C1(O)CC(O)C(O)C(O)C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ar-I', '1']
+    [Tier 4 LLM] '1' → r_value='* = CO2H'
+    [Tier 4 LLM] 'Ar-I' → r_value='* = CF3'
+    [Tier 4] R-group candidates: ['1', 'Ar-I']
+    [Tier 4 graph] '1' r=* = CO2H fallback (smi=*C1(O)CC(O)C(O)C(O)C1)
+    [Tier 4] '1' 🔄 corrected: OC(=O)[C@@]1(O)C[C@@H](O)[C@@H](O)[C@H](O)C1
+    [Tier 4 graph] 'Ar-I' r=* = CF3 fallback (smi=*C1=CC=C(OC(=O)C2(O)CC(O)C(O)C(O)C2)C=C1)
+    [Tier 4] 'Ar-I' correction contradicts r_value 'CF3' — keeping original
+    [Tier 4] 'Ar-I' 🔄 corrected: FC(F)(F)C1=CC=C(OC(=O)C2(O)CC(O)C(O)C(O)C2)C=C1
+  [Tier 4 R-group Sub] resolved=['1', 'Ar-I']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2 Gallery' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '4a', 'p-CF3-iodobenzene']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000006_369c61c16a04a737a022c776f3f53296d06c4ba1b00d860d51679d953a755738.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '4a', 'p-CF3-iodobenzene']
+  [OCSR] image_000006_369c61c16a04a737a022c776f3f53296d06c4ba1b00d860d51679d953a755738.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['3']  smiles=*C1CC(*)(*)CC(*)C1*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['4a']  smiles=*C1=CC=C(OC(=O)C2(*)CC(*)C(*)C(*)C2)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '4a', 'p-CF3-iodobenzene']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '4a', 'p-CF3-iodobenzene']
+  [Tier 3] '3': bbox=0 atoms=11 smiles=*C1CC(*)(*)CC(*)C1* wildcard=True
+  [Tier 3] '4a': bbox=3 atoms=20 smiles=*C1=CC=C(OC(=O)C2(*)CC(*)C(*)C(*)C2)C=C1 wildcard=True
+  [Tier 3] 'p-CF3-iodobenzene': bbox=2 atoms=8 smiles=*C1=CC=C(I)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '4a', 'p-CF3-iodobenzene']
+    [Tier 4 LLM] '3' → r_value='R1 = CO2H, R2 = OAc, R3 = OAc, R4 = OAc, R5 = OAc'
+    [Tier 4 LLM] '4a' → r_value='Ar = 4-CF3-C6H4, R1 = OAc, R2 = OAc, R3 = OAc, R4 = OAc'
+    [Tier 4] R-group candidates: ['3', '4a']
+    [Tier 4] bbox missing for group ['3', '4a'] — using full image
+    [Tier 4] '3' 🔄 corrected: CC(=O)O[C@@H]1C[C@](C(=O)O)(OC(=O)C)C[C@H](OC(=O)C
+    [Tier 4] '4a' correction contradicts r_value '4-CF3-C6H4' — keeping original
+    [Tier 4] '4a' 🔄 corrected: CC(=O)O[C@H]1C[C@@](C(=O)Oc2ccc(C(F)(F)F)cc2)(OC(=
+  [Tier 4 R-group Sub] resolved=['3', '4a']  remaining=['p-CF3-iodobenzene']
+    [Tier 5 PubChem] 'p-CF3-iodobenzene' → no hit (tried ['p-CF3-iodobenzene'])
+  [Tier 5 PubChem] resolved=[]  remaining=['p-CF3-iodobenzene']
+    [Tier 6→pubchem_lookup] 'p-CF3-iodobenzene' name='1-iodo-4-(trifluoromethyl)benzene' → C1=CC(=CC=C1C(F)(F)F)I
+  [Tier 6 LLM Vision] resolved=['p-CF3-iodobenzene']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3', 'NiCl2', '4', '5', 'NiX2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid/default_run/processed/Bárbara et al. - 2025 - Protecting group-free photocatalyzed O-arylation of quinic acid_artifacts/image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → llm_name_to_smiles via name='trifluoromethylphenyl quinate'
+  [Tier 0 NameMap] resolved=['2']  remaining=['3', 'NiCl2', '4', '5', 'NiX2']
+  [OCSR] image_000007_19d7f8d4c71f61227658f7c950c92d223fbddee33097c58c49da63a49cac0af6.png: 31 bboxes, 12 coref pairs
+  [OCSR]   pair [0,1]: texts=['4a 45%']  smiles=*C1=CC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4g 50%']  smiles=*C1=[C]([Ir])C=CC=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['(2 equivalent)']  smiles=*C1C(*)C2C3(*)*C2(*)(*)C3C1*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['4b 54%']  smiles=*C1=CC(*)=CC(I)=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['4h 62%']  smiles=O=C(CBr)c1ccc(I)cc1  wildcard=False
+  [OCSR]   pair [13,14]: texts=['4c 62%']  smiles=*C1=CC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [16,17]: texts=['4i 68%']  smiles=*c1cccc2ccccc12  wildcard=True
+  [OCSR]   pair [18,19]: texts=['4d 44%']  smiles=CC(=O)c1ccc(I)cc1  wildcard=False
+  [OCSR]   pair [20,21]: texts=['4j 68% (22%)a']  smiles=*C1=CC2=C(C=CC=C2)C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [24,25]: texts=['4e 60%']  smiles=*C1=C2CC3=C(C=CC=C3)C2=CC=C1  wildcard=True
+  [OCSR]   pair [26,27]: texts=['4f 52%']  smiles=COC(=O)c1cccc(I)c1  wildcard=False
+  [OCSR]   pair [28,29]: texts=['SCzBN']  smiles=*C1=C(N2C3C45=C6CC=C637C43C4=CC=CC23=C457)C(N2C3=C  wildcard=True
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', 'NiCl2', '4', '5', 'NiX2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', 'NiCl2', '4', '5', 'NiX2']
+  [Tier 3] '3': bbox=5 atoms=14 smiles=*C1C(*)C2C3(*)*C2(*)(*)C3C1* wildcard=True
+  [Tier 3] 'NiCl2': bbox=30 atoms=17 smiles=*C1=CC2=[N](C=C1)[Ni]([Cl])([Cl])[N]1=C2C=C(*)C=C1 wildcard=True
+  [Tier 3] '4': bbox=0 atoms=8 smiles=*C1=CC=C(C)C=C1 wildcard=True
+  [Tier 3] '5': bbox=23 atoms=19 smiles=*C1C=C(*)(C(=O)OC2=CC=CC=C2)C=[CH](*)C1* wildcard=True
+  [Tier 3] 'NiX2': bbox_idx=None out of range (n=31)
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', 'NiCl2', '4', '5', 'NiX2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3', 'NiCl2', '4', '5', 'NiX2']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'NiCl2' → hit via 'NiCl2': Cl[Ni]Cl
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'NiX2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=['NiCl2']  remaining=['3', '4', '5', 'NiX2']
+    [Tier 6→llm_name_to_smiles] '3' name='Quinic acid derivative' → C1[C@H]([C@@H]([C@H](C[C@]1(C(=O)O)O)O)O)O
+    [Tier 6→llm_name_to_smiles] 'NiX2' name='[NiCl2(dtbbpy)]' → CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)C.[Cl-
+  [Tier 6 LLM Vision] resolved=['3', '4', '5', 'NiX2']

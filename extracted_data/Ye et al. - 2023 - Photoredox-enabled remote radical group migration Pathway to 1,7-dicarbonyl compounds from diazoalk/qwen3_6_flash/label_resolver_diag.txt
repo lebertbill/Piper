@@ -1,0 +1,31 @@
+Label Resolver Diagnostic Log — 2026-05-23 19:38:05
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Ye et al. - 2023 - Photoredox-enabled remote radical group migration Pathway to 1,7-dicarbonyl compounds from diazoalk/qwen3_6_flash/processed/Ye et al. - 2023 - Photoredox-enabled remote radical group migration Pathway to 1,7-dicarbonyl compounds from diazoalk_artifacts/image_000005_780a4e7fe59c0efd403e10c6442e69c88854995c2e54b67af717c3fecb14cd47.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='ethyl 2-diazoacetate'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['2a']
+  [OCSR] image_000005_780a4e7fe59c0efd403e10c6442e69c88854995c2e54b67af717c3fecb14cd47.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(*)=*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(O)(CCC=C)C1=NC2=C(C=CC=C2)S1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3']  smiles=CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1  wildcard=False
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a']
+  [Tier 3] '2a': bbox=2 atoms=16 smiles=*C(O)(CCC=C)C1=NC2=C(C=CC=C2)S1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a']
+    [Tier 4 LLM] '2a' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['2a']
+    [Tier 4 graph] '2a' r=* = Ph fallback (smi=*C(O)(CCC=C)C1=NC2=C(C=CC=C2)S1)
+    [Tier 4] '2a' ✅ match: OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C
+  [Tier 4 R-group Sub] resolved=['2a']  remaining=[]

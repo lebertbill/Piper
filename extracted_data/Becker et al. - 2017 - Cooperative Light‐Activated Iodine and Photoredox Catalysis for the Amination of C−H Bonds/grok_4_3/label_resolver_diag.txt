@@ -1,0 +1,56 @@
+Label Resolver Diagnostic Log — 2026-05-24 17:52:03
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000006_256a592fac8bcdb3b4c4088b5373e452df0478a1ecede77108be353c4bea87b6.png → visualheist_page_01_figure_1.png
+  [GlobalRegistry] labels=['1a', '2a'] → visualheist_page_01_figure_1.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Becker et al. - 2017 - Cooperative Light‐Activated Iodine and Photoredox Catalysis for the Amination of C−H Bonds/grok_4_3/processed/visualheist_page_01_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a']
+  [OCSR] visualheist_page_01_figure_1.png: 5 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=10 smiles=*NCC(C)(C)CC(*)C wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=9 smiles=*C1CC(C)(C)CN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1a', '2a']
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1a', '2a']
+  [Tier 6 LLM Vision] resolved=['1a', '2a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : extracted_data/Becker et al. - 2017 - Cooperative Light‐Activated Iodine and Photoredox Catalysis for the Amination of C−H Bonds/grok_4_3/processed/visualheist_page_02_table_3.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a']
+  [OCSR] visualheist_page_02_table_3.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*CCC(*)(*)C*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['TPT']  smiles=*C1=CC(*)oC(*)=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Eosin Y']  smiles=O=C1OC2(c3ccccc31)c1cc(Br)c(O)c(Br)c1Oc1c2cc(Br)c(  wildcard=False
+  [OCSR]   pair [7,8]: texts=['2a']  smiles=*C1CC(*)(*)CN1*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=8 smiles=*CCC(*)(*)C* wildcard=True
+  [Tier 3] '2a': bbox=7 atoms=9 smiles=*C1CC(*)(*)CN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a']
+    [Tier 4 LLM] '1a' → r_value='TsNHC(Me)2CH2CH2Ph'
+    [Tier 4 LLM] '2a' → r_value='1-tosyl-4,4-dimethyl-2-phenylpyrrolidine'
+    [Tier 4] R-group candidates: ['1a', '2a']
+    [Tier 4 graph] '1a' r=TsNHC(Me)2CH2CH2Ph fallback (smi=*CCC(*)(*)C*)
+    [Tier 4] '1a' 🔄 corrected: CC1=CC=C(C=C1)S(=O)(=O)NCC(C)(C)CCC2=CC=CC=C2
+    [Tier 4 graph] '2a' r=1-tosyl-4,4-dimethyl-2-phenylpyrrolidine fallback (smi=*C1CC(*)(*)CN1*)
+    [Tier 4] '2a' ✅ match: CC1=CC=C(S(=O)(=O)N2C(C3=CC=CC=C3)CC(C)(C)C2)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=[]

@@ -1,0 +1,53 @@
+Label Resolver Diagnostic Log — 2026-08-14 12:00:16
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '7'] → image_000010_b1913faec2874ee4be3721de8595a909847e957eba36af1c21063c7a88aefeb8.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/au4c00902/GPT_5_MINI/processed/au4c00902_artifacts/image_000010_b1913faec2874ee4be3721de8595a909847e957eba36af1c21063c7a88aefeb8.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='2-fluoro-3-phenylpropanoic acid'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['7']
+  [OCSR] image_000010_b1913faec2874ee4be3721de8595a909847e957eba36af1c21063c7a88aefeb8.png: 7 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['(1.3 equiv )', 'Ma,']  smiles=*C(F)C(=O)O  wildcard=True
+  [OCSR]   pair [3,4]: texts=['7 , 88%0, dr 50.50']  smiles=*CC(F)CC(*)C(*)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['7']
+  [Tier 3] '7': bbox=3 atoms=10 smiles=*CC(F)CC(*)C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['7']
+    [Tier 4 LLM] '7' → r_value='PhH2C-C(F)-CH2-C(Me)-C(=O)OBn'
+    [Tier 4] R-group candidates: ['7']
+    [Tier 4 graph] '7' r=PhH2C-C(F)-CH2-C(Me)-C(=O)OBn fallback (smi=*CC(F)CC(*)C(*)=O)
+    [Tier 4] '7' ✅ match: c1ccc(cc1)CC(F)CC(C)C(=O)OCc2ccccc2
+  [Tier 4 R-group Sub] resolved=['7']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/au4c00902/GPT_5_MINI/processed/au4c00902_artifacts/image_000010_b1913faec2874ee4be3721de8595a909847e957eba36af1c21063c7a88aefeb8.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='2-fluoro-3-phenylpropanoic acid'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['7']
+  [OCSR] image_000010_b1913faec2874ee4be3721de8595a909847e957eba36af1c21063c7a88aefeb8.png: 7 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['(1.3 equiv )', 'Ma,']  smiles=*C(F)C(=O)O  wildcard=True
+  [OCSR]   pair [3,4]: texts=['7 , 88%0, dr 50.50']  smiles=*CC(F)CC(*)C(*)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['7']
+  [Tier 3] '7': bbox=3 atoms=10 smiles=*CC(F)CC(*)C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['7']
+    [Tier 4 LLM] '7' → r_value='PhH2C-CH(F)-CH2-C(Me)-C(=O)OBn'
+    [Tier 4] R-group candidates: ['7']
+    [Tier 4 graph] '7' r=PhH2C-CH(F)-CH2-C(Me)-C(=O)OBn fallback (smi=*CC(F)CC(*)C(*)=O)
+    [Tier 4] '7' ✅ match: c1ccc(cc1)CC(F)CC(C)C(=O)OCc2ccccc2
+  [Tier 4 R-group Sub] resolved=['7']  remaining=[]

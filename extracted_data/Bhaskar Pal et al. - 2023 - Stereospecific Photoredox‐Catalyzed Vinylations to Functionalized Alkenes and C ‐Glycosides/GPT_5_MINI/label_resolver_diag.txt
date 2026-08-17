@@ -1,0 +1,87 @@
+Label Resolver Diagnostic Log — 2026-05-03 10:38:26
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2a', '4a', '3a'] → image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png
+  [GlobalRegistry] labels=['4CzIPN', '5CzIBN', '4CzPN'] → image_000006_891d1c04cfdfc00359d44969640f56fc1ca0a1e9a3a1d4a4f97b1ad9b86f586c.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '4a', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides/gpt_5_mini/processed/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides_artifacts/image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [OCSR] image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ja']  smiles=*C1=C(C)NC(C)=C(*)C1C1CCCCC1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['24 Ye0', '4a Y= (CFJlz']  smiles=*C=CI1OC(=*)C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [4,5]: texts=['32']  smiles=*C=CC1CCCCC1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+  [Tier 3] '1a': bbox=0 atoms=16 smiles=*C1=C(C)NC(C)=C(*)C1C1CCCCC1 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=13 smiles=*C=CI1OC(=O)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] '4a': bbox=2 atoms=13 smiles=*C=CI1OC(=*)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] '3a': bbox=4 atoms=9 smiles=*C=CC1CCCCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '4a', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = CO2Et'
+    [Tier 4 LLM] '2a' → r_value='Y = O'
+    [Tier 4 LLM] '4a' → r_value='Y = (CF3)2'
+    [Tier 4 LLM] '3a' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1a', '2a', '4a', '3a']
+    [Tier 4 graph] '1a' r=* = CO2Et fallback (smi=*C1=C(C)NC(C)=C(*)C1C1CCCCC1)
+    [Tier 4] '1a' ✅ match: CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1C1CCCCC1
+    [Tier 4 graph] '2a' r=Y = O fallback (smi=*C=CI1OC(=*)C2=C1C=CC=C2)
+    [Tier 4 graph] '4a' r=Y = (CF3)2 fallback (smi=*C=CI1OC(=*)C2=C1C=CC=C2)
+    [Tier 4] '2a' ✅ match: C1=CC=C(C=C1)C=CI1OC(=O)C2=C1C=CC=C2
+    [Tier 4] '4a' 🔄 corrected: FC(F)(F)C(C(F)(F)F)=C1OC2=CC=CC=C2I1/C=C/C3=CC=CC=
+    [Tier 4 graph] '3a' r=* = Ph fallback (smi=*C=CC1CCCCC1)
+    [Tier 4] '3a' ✅ match: C1=CC=C(C=C1)C=CC2CCCCC2
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '4a', '3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '5CzIBN', '4CzPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides/gpt_5_mini/processed/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides_artifacts/image_000006_891d1c04cfdfc00359d44969640f56fc1ca0a1e9a3a1d4a4f97b1ad9b86f586c.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '5CzIBN' → opsin_lookup via name='pentakis(carbazol-9-yl)benzonitrile'
+  [Tier 0 NameMap] '4CzPN' → opsin_lookup via name='1,2,4,5-tetrakis(carbazol-9-yl)-3,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN', '5CzIBN', '4CzPN']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '5', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides/gpt_5_mini/processed/Bhaskar Pal et al. - 2023 - Stereospecific Photoredox‐Catalyzed Vinylations to Functionalized Alkenes and C ‐Glycosides_artifacts/image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4', '5', '3']
+  [OCSR] image_000004_5e4533dd7bfc893408211e39254f698b0bd0f073a9fcc5b9f07329ecb24acf3a.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ja']  smiles=*C1=C(C)NC(C)=C(*)C1C1CCCCC1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['24 Ye0', '4a Y= (CFJlz']  smiles=*C=CI1OC(=*)C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [4,5]: texts=['32']  smiles=*C=CC1CCCCC1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '5', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '5', '3']
+  [Tier 3] '4': bbox=2 atoms=13 smiles=*C=CI1OC(=*)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] '5': bbox=6 atoms=12 smiles=*C1=C(*)C(*)=C(*)C(*)=C1* wildcard=True
+  [Tier 3] '3': bbox=4 atoms=9 smiles=*C=CC1CCCCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '5', '3']
+    [Tier 4 LLM] '4' → r_value='Y = (CF3)2'
+    [Tier 4 LLM] '5' → r_value='Y = (CF3)2'
+    [Tier 4 LLM] '3' → r_value='Ph'
+    [Tier 4] R-group candidates: ['4', '5', '3']
+    [Tier 4 graph] '4' r=Y = (CF3)2 fallback (smi=*C=CI1OC(=*)C2=C1C=CC=C2)
+    [Tier 4 graph] '5' r=Y = (CF3)2 fallback (smi=*C=CI1OC(=*)C2=C1C=CC=C2)
+    [Tier 4] '4' 🔄 corrected: FC(F)(F)C(C(F)(F)F)=C1OC2(I/C=C/C3=CC=CC=C3)C=CC=C
+    [Tier 4] '5' 🔄 corrected: FC(F)(F)C(C(F)(F)F)=C1OI(C=Cc2ccccc2)c3ccccc13
+    [Tier 4 graph] '3' r=Ph fallback (smi=*C=CC1CCCCC1)
+  [Tier 4 R-group Sub] resolved=['4', '5']  remaining=['3']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3']
+  [Tier 6 LLM Vision] resolved=['3']

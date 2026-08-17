@@ -1,0 +1,64 @@
+Label Resolver Diagnostic Log — 2026-08-14 19:31:38
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', '3DPAFIPN', '[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6'] → image_000013_3795236eba9141fbcf9b52eb877cf22b6ef41091567726387400105724cf37c6.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Catalyst Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '3DPAFIPN', '[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ol4c02700/GPT_5_MINI/processed/ol4c02700_artifacts/image_000013_3795236eba9141fbcf9b52eb877cf22b6ef41091567726387400105724cf37c6.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '3DPAFIPN' → pubchem_lookup via name='2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] resolved=['4CzIPN', '3DPAFIPN']  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+  [OCSR] image_000013_3795236eba9141fbcf9b52eb877cf22b6ef41091567726387400105724cf37c6.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+  [Tier 3] '[Ir(dtbbpy)(ppy)2]PF6': bbox=2 atoms=39 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC=CC=C2C2=[ wildcard=True
+  [Tier 3] '(Ir[dF(CF3)ppy]2(dtbpy))PF6': bbox=3 atoms=46 smiles=*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+    [Tier 5 PubChem] '[Ir(dtbbpy)(ppy)2]PF6' → no hit (tried ['[Ir(dtbbpy)(ppy)2]PF6', '[Ir(dtbbpy)(ppy)2)PF6'])
+    [Tier 5 PubChem] '(Ir[dF(CF3)ppy]2(dtbpy))PF6' → no hit (tried ['(Ir[dF(CF3)ppy]2(dtbpy))PF6', '(Ir(dF(CF3)ppy)2(dtbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+    [NameResolve Organomet] llm_name_to_smiles: score=1  CC(C)(C)c1ccc(-c2ccc(C(C)(C)C)cn2)nc1.FC(F)(F)c1cc(F)c(cc1F)-c1ccccn1.
+    [Tier 6→llm_name_to_smiles] '(Ir[dF(CF3)ppy]2(dtbpy))PF6' name='(Ir[dF(CF3)ppy]2(dtbpy))PF6' → CC(C)(C)c1ccc(-c2ccc(C(C)(C)C)cn2)nc1.FC(F)(F)c1cc
+  [Tier 6 LLM Vision] resolved=['[Ir(dtbbpy)(ppy)2]PF6', '(Ir[dF(CF3)ppy]2(dtbpy))PF6']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4h', '3a', '2a']
+  Image    : extracted_data/ol4c02700/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4h', '3a', '2a']
+  [OCSR] visualheist_page_02_table_2.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['1h']  smiles=C#Cc1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C)C=C1.[Na]  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4h']  smiles=**C(CC1CCCN1*)C1=CC=C(Cl)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4h', '3a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4h', '3a', '2a']
+  [Tier 3] '4h': bbox=6 atoms=17 smiles=**C(CC1CCCN1*)C1=CC=C(Cl)C=C1 wildcard=True
+  [Tier 3] '3a': bbox=4 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=9 smiles=*C1=CC=C(C)C=C1.C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4h', '3a', '2a']
+    [Tier 4 LLM] '2a' → r_value='SO2Na'
+    [Tier 4 LLM] '3a' → r_value='N-Boc, 2-CO2H'
+    [Tier 4 LLM] '4h' → r_value='SO2-p-Tol, N-Boc'
+    [Tier 4] R-group candidates: ['2a', '3a', '4h']
+    [Tier 4] bbox missing for group ['2a'] — using full image
+    [Tier 4] '2a' ✅ match: [Na+].[O-]S(=O)C1=CC=C(C)C=C1
+    [Tier 4 graph] '3a' r=N-Boc, 2-CO2H fallback (smi=*C1CCCN1*)
+    [Tier 4] '3a' ✅ match: OC(=O)C1CCCN1C(=O)OC(C)(C)C
+    [Tier 4 graph] '4h' r=SO2-p-Tol, N-Boc fallback (smi=**C(CC1CCCN1*)C1=CC=C(Cl)C=C1)
+    [Tier 4] '4h' ✅ match: CC1=CC=C(C=C1)S(=O)(=O)C(CC2CCCN2C(=O)OC(C)(C)C)C3
+  [Tier 4 R-group Sub] resolved=['2a', '3a', '4h']  remaining=[]

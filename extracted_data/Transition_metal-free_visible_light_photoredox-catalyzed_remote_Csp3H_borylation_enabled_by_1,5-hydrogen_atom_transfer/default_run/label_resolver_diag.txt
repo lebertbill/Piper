@@ -1,0 +1,58 @@
+Label Resolver Diagnostic Log — 2026-06-18 14:38:07
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [InlineResolver] Column 'PC (mol%)' labels ['B2cat2'] from image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['B2cat2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer/default_run/processed/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer_artifacts/image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png
+  Exists   : True
+  [Tier 0 NameMap] 'B2cat2' → pubchem_lookup via name='bis(catecholato)diboron'
+  [Tier 0 NameMap] resolved=['B2cat2']  remaining=[]
+  [InlineResolver] Column 'Additive' labels ['B2cat2', 'none', 'None'] from image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['B2cat2', 'none', 'None']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer/default_run/processed/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer_artifacts/image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png
+  Exists   : True
+  [Tier 0 NameMap] 'B2cat2' → pubchem_lookup via name='bis(catecholato)diboron'
+  [Tier 0 NameMap] resolved=['B2cat2']  remaining=['none', 'None']
+  [OCSR] image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png: 7 bboxes, 0 coref pairs
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['none', 'None']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['none', 'None']
+  [Tier 3] 'none': bbox_idx=None out of range (n=7)
+  [Tier 3] 'None': bbox_idx=None out of range (n=7)
+  [Tier 3 BBox Match] resolved=[]  remaining=['none', 'None']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['none', 'None']
+    [Tier 5 PubChem] 'none' → no hit (tried ['none'])
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+  [Tier 5 PubChem] resolved=[]  remaining=['none', 'None']
+  [Tier 6 LLM Vision] resolved=['none', 'None']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer/default_run/processed/Transition_metal-free_visible_light_photoredox-catalyzed_remote_Csp3H_borylation_enabled_by_1,5-hydrogen_atom_transfer_artifacts/image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '1a']
+  [OCSR] image_000006_36bd675a1125b3ea54310c9469fdccac25c5480fcce5dc2c4a97651983d0462b.png: 7 bboxes, 0 coref pairs
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a']
+  [Tier 3] '3a': bbox=5 atoms=9 smiles=*NC(=O)CCC(*)B wildcard=True
+  [Tier 3] '1a': bbox=1 atoms=10 smiles=*C(*)CCC(=O)N(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '1a']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3a', '1a']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3a', '1a']
+  [Tier 6 LLM Vision] resolved=['3a', '1a']

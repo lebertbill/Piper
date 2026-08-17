@@ -1,0 +1,52 @@
+Label Resolver Diagnostic Log — 2026-06-17 09:45:21
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '2a', 'H2', '1a']
+  Image    : extracted_data/NN_atropisomer_synthesis_iviai_electrolyte-_and_base-free_electrochemical_cobalt-catalysed_CH_annulation/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '2a', 'H2', '1a']
+  [OCSR] visualheist_page_02_table_1.png: 32 bboxes, 16 coref pairs
+  [OCSR]   pair [2,3]: texts=[]  smiles=N/A  wildcard=
+  [OCSR]   pair [4,5]: texts=['Salox-6 ,', '<190 ,', '(12%, 859 ee)b']  smiles=*C1=CC=CC(C2=NC(*)CO2)=C1O  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Salox-1', '<190 ,', '18%0, 609 ee)b']  smiles=*C1COC(C2=C(O)C=CC=C2)=N1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['Ia']  smiles=*c1ccccc1C(=O)Nn1ccc2cccnc21  wildcard=True
+  [OCSR]   pair [10,11]: texts=['Salox-2, <1% ,', '(189 , 98%5 ee)b']  smiles=*C1N=C(C2=C(O)C=CC=C2)OC1*  wildcard=True
+  [OCSR]   pair [12,13]: texts=['Salox-7 <190 ,', '(309 , 94%5 ee)b']  smiles=*C1COC(C2=C(O)C3=C(C=CC=C3)C=C2)=N1  wildcard=True
+  [OCSR]   pair [14,15]: texts=['2a']  smiles=*C#C*  wildcard=True
+  [OCSR]   pair [16,17]: texts=['Salox 3, <19 ,', '10% , 96% ee)b']  smiles=*C1COC(C2=C(O)C=CC=C2)=N1  wildcard=True
+  [OCSR]   pair [18,19]: texts=['Salox-8 , trece ,', '(58% , 969 ee)b']  smiles=*C1=CC=CC(C2=NC(*)CO2)=C1O  wildcard=True
+  [OCSR]   pair [20,21]: texts=['Salox 4', '(3390 , 8896 ee)', '41%,']  smiles=*C1=CC(C2=NC(*)CO2)=C(O)C=C1  wildcard=True
+  [OCSR]   pair [22,23]: texts=['Salox-9']  smiles=*C1=CC=CC(C2=NC(*)CO2)=C1O  wildcard=True
+  [OCSR]   pair [24,25]: texts=['3']  smiles=*C1=C(*)N(N2C=CC3=C2N=CC=C3)C(=O)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [26,27]: texts=['Salox-10', '4896 , 98%', '(4790 , 9696']  smiles=*C1=CC(C2=NC(*)CO2)=C(O)C(*)=C1  wildcard=True
+  [OCSR]   pair [28,29]: texts=['Salox-5 <1% ,', '(1696 , 94% ee)"']  smiles=*C1=CC(O)=C(C2=NC(*)CO2)C=C1  wildcard=True
+  [OCSR]   pair [28,30]: texts=['Salx-5 <19 ,', '(1690 , 9496 ee)"']  smiles=*C1=CC(O)=C(C2=NC(*)CO2)C=C1  wildcard=True
+  [OCSR]   pair [28,31]: texts=['489 , 98%0 ee', '(479 , 96% ee)b']  smiles=*C1=CC(O)=C(C2=NC(*)CO2)C=C1  wildcard=True
+  [OCSR] → 17 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '2a', 'H2', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '2a', 'H2', '1a']
+  [Tier 3] '3': bbox=24 atoms=22 smiles=*C1=C(*)N(N2C=CC3=C2N=CC=C3)C(=O)C2=CC=CC=C21 wildcard=True
+  [Tier 3] '2a': bbox=14 atoms=4 smiles=*C#C* wildcard=True
+  [Tier 3] 'H2': symbol/coord count mismatch (2 vs 1), using original
+  [Tier 3] 'H2': bbox=0 atoms=1 smiles=[I] wildcard=False
+  [Tier 3] '1a': bbox=8 atoms=19 smiles=*c1ccccc1C(=O)Nn1ccc2cccnc21 wildcard=True
+  [Tier 3 BBox Match] resolved=['H2']  remaining=['3', '2a', '1a']
+    [Tier 4 LLM] '1a' → r_value='H'
+    [Tier 4 LLM] '2a' → r_value='Ph'
+    [Tier 4 LLM] '3' → r_value='Ph'
+    [Tier 4] R-group candidates: ['1a', '2a', '3']
+    [Tier 4 graph] '1a' r=H fallback (smi=*c1ccccc1C(=O)Nn1ccc2cccnc21)
+    [Tier 4] '1a' ✅ match: c1ccccc1C(=O)Nn1ccc2cccnc21
+    [Tier 4 graph] '2a' r=Ph fallback (smi=*C#C*)
+    [Tier 4] '2a' ✅ match: c1ccc(cc1)C#Cc2ccccc2
+    [Tier 4 graph] '3' r=Ph fallback (smi=*C1=C(*)N(N2C=CC3=C2N=CC=C3)C(=O)C2=CC=CC=C21)
+    [Tier 4] '3' ✅ match: C1=CC=C(C=C1)C1=C(C2=CC=CC=C2)N(N2C=CC3=C2N=CC=C3)
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3']  remaining=[]

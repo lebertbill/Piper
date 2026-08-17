@@ -1,0 +1,105 @@
+Label Resolver Diagnostic Log — 2026-06-18 10:08:52
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2a', '3a', '4a'] → image_000007_7279f95941e7088ead418aa56e63676f6524c9a3b3d54ca58c79039630c51bfe.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3a', '4a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Selective_single_CF_bond_arylation_of_trifluoromethylalkene_derivatives/GPT_5_MINI/processed/Selective_single_CF_bond_arylation_of_trifluoromethylalkene_derivatives_artifacts/image_000007_7279f95941e7088ead418aa56e63676f6524c9a3b3d54ca58c79039630c51bfe.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1-methoxy-4-(3,3,3-trifluoroprop-1-en-2-yl)benzene'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['2a', '3a', '4a']
+  [OCSR] image_000007_7279f95941e7088ead418aa56e63676f6524c9a3b3d54ca58c79039630c51bfe.png: 11 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['3a']  smiles=*C1=CC=C(C(C[N+]2(*)CCCCC2)=C(F)F)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C(=C)C(F)(F)F  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*C(CN1CCCCC1)=C(F)F  wildcard=True
+  [OCSR]   pair [7,8]: texts=['4a']  smiles=*C1=CC=C(C(=C)C(*)(F)F)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*.*.*C(CN1(*)CCCCC1)=C(F)F  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', '3a', '4a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', '3a', '4a']
+  [Tier 3] '2a': bbox=5 atoms=12 smiles=*C(CN1CCCCC1)=C(F)F wildcard=True
+  [Tier 3] '3a': bbox=9 atoms=15 smiles=*.*.*C(C[N+]1(*)CCCCC1)=C(F)F wildcard=True
+  [Tier 3] '4a': bbox=7 atoms=13 smiles=*C1=CC=C(C(=C)C(*)(F)F)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a', '3a', '4a']
+    [Tier 4 LLM] '2a' → r_value='Ar = PMP'
+    [Tier 4 LLM] '3a' → r_value='Ar = PMP'
+    [Tier 4 LLM] '4a' → r_value='Ar = PMP'
+    [Tier 4] R-group candidates: ['2a', '3a', '4a']
+    [Tier 4 graph] '2a' r=Ar = PMP fallback (smi=*C(CN1CCCCC1)=C(F)F)
+    [Tier 4] '2a' ✅ match: COc1ccc(cc1)C(CN1CCCCC1)=C(F)F
+    [Tier 4 graph] '3a' r=Ar = PMP fallback (smi=*.*.*C(CN1(*)CCCCC1)=C(F)F)
+    [Tier 4] '3a' ✅ match: COc1ccc(cc1)C(C[N+]1(C)CCCCC1)=C(F)F.S(=O)(=O)([O-
+    [Tier 4 graph] '4a' r=Ar = PMP fallback (smi=*C1=CC=C(C(=C)C(*)(F)F)C=C1)
+    [Tier 4] '4a' 🔄 corrected: COC1=CC=C(C=C1)C(=C)C(F)(F)C2=CC=CC=C2
+  [Tier 4 R-group Sub] resolved=['2a', '3a', '4a']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3', 'C-Phos', 'X-Phos'] from visualheist_page_02_table_2.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3', 'C-Phos', 'X-Phos']
+  Image    : extracted_data/Selective_single_CF_bond_arylation_of_trifluoromethylalkene_derivatives/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] 'C-Phos' → opsin_lookup via name='2-dicyclohexylphosphino-2',6'-bis(dimethylamino)biphenyl'
+  [Tier 0 NameMap] 'X-Phos' → pubchem_lookup via name='2-dicyclohexylphosphino-2',4',6'-triisopropylbiphenyl'
+  [Tier 0 NameMap] resolved=['C-Phos', 'X-Phos']  remaining=['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']
+  [OCSR] visualheist_page_02_table_2.png: 11 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['3a']  smiles=*C1=CC=C(C(C[N+]2(*)CCCCC2)=C(F)F)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C(=C)C(F)(F)F  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*C(CN1CCCCC1)=C(F)F  wildcard=True
+  [OCSR]   pair [7,8]: texts=['4a']  smiles=*C1=CC=C(C(=C)C(*)(F)F)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*C(C[N+]1CCCCC1)=C(F)F.OS(=O)(=O)C(F)(F)F  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']
+  [Tier 3] 'P(4-CF 3 C 6 H 4 ) 3': bbox_idx=None out of range (n=11)
+  [Tier 3] 'P(4-CF 3 C 6 H 5 ) 3': bbox_idx=None out of range (n=11)
+  [Tier 3 BBox Match] resolved=[]  remaining=['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']
+    [Tier 4 LLM] 'P(4-CF 3 C 6 H 4 ) 3' → r_value='Ar = 4-CF3C6H4'
+    [Tier 4 LLM] 'P(4-CF 3 C 6 H 5 ) 3' → r_value='Ar = 4-CF3C6H4'
+    [Tier 4] R-group candidates: ['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']
+    [Tier 4 graph] 'P(4-CF 3 C 6 H 4 ) 3' r=Ar = 4-CF3C6H4 fallback (smi=*C(=C)C(F)(F)F)
+    [Tier 4 graph] 'P(4-CF 3 C 6 H 5 ) 3' r=Ar = 4-CF3C6H4 fallback (smi=*C(=C)C(F)(F)F)
+    [Tier 4] 'P(4-CF 3 C 6 H 4 ) 3' 🔄 corrected: P(c1ccc(C(F)(F)F)cc1)(c1ccc(C(F)(F)F)cc1)c1ccc(C(F
+    [Tier 4] 'P(4-CF 3 C 6 H 5 ) 3' 🔄 corrected: P(c1ccc(cc1)C(F)(F)F)(c2ccc(cc2)C(F)(F)F)c3ccc(cc3
+  [Tier 4 R-group Sub] resolved=['P(4-CF 3 C 6 H 4 ) 3', 'P(4-CF 3 C 6 H 5 ) 3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['PhB(OH)2', '4a', '3a']
+  Image    : extracted_data/Selective_single_CF_bond_arylation_of_trifluoromethylalkene_derivatives/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['PhB(OH)2', '4a', '3a']
+  [OCSR] visualheist_page_02_table_2.png: 11 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['3a']  smiles=*C1=CC=C(C(C[N+]2(*)CCCCC2)=C(F)F)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C(=C)C(F)(F)F  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*C(CN1CCCCC1)=C(F)F  wildcard=True
+  [OCSR]   pair [7,8]: texts=['4a']  smiles=*C1=CC=C(C(=C)C(*)(F)F)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*C(C[N+]1CCCCC1)=C(F)F.OS(=O)(=O)C(F)(F)F  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['PhB(OH)2', '4a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PhB(OH)2', '4a', '3a']
+  [Tier 3] 'PhB(OH)2': bbox_idx=None out of range (n=11)
+  [Tier 3] '4a': bbox=7 atoms=13 smiles=*C1=CC=C(C(=C)C(*)(F)F)C=C1 wildcard=True
+  [Tier 3] '3a': bbox=9 atoms=13 smiles=*.*C(*[N+]1CCCCC1)=C(F)F wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PhB(OH)2', '4a', '3a']
+    [Tier 4 LLM] '3a' → r_value='Ar = PMP'
+    [Tier 4 LLM] '4a' → r_value='Ar = PMP'
+    [Tier 4] R-group candidates: ['3a', '4a']
+    [Tier 4] bbox missing for group ['3a'] — using full image
+    [Tier 4] '3a' ✅ match: COc1ccc(cc1)C(C[N+]1(C)CCCCC1)=C(F)F
+    [Tier 4 graph] '4a' r=Ar = PMP fallback (smi=*C1=CC=C(C(=C)C(*)(F)F)C=C1)
+    [Tier 4] '4a' ✅ match: COC1=CC=C(C(=C)C(C2=CC=CC=C2)(F)F)C=C1
+  [Tier 4 R-group Sub] resolved=['3a', '4a']  remaining=['PhB(OH)2']
+    [Tier 5 PubChem] 'PhB(OH)2' → hit via 'PhB(OH)2': B(C1=CC=CC=C1)(O)O
+  [Tier 5 PubChem] resolved=['PhB(OH)2']  remaining=[]

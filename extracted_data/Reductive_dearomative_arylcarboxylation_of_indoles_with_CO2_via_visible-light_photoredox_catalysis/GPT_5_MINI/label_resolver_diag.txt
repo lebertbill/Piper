@@ -1,0 +1,65 @@
+Label Resolver Diagnostic Log — 2026-06-17 18:55:51
+================================================================================
+
+  [GlobalRegistry] labels=['1', '2'] → image_000004_4eeccad6ba0820f258e837212e4c06a153de5806b654818ce97516a0ba618bff.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Reductive_dearomative_arylcarboxylation_of_indoles_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Reductive_dearomative_arylcarboxylation_of_indoles_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000004_4eeccad6ba0820f258e837212e4c06a153de5806b654818ce97516a0ba618bff.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2']
+  [OCSR] image_000004_4eeccad6ba0820f258e837212e4c06a153de5806b654818ce97516a0ba618bff.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', '(ArBr)']  smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2']
+  [Tier 3] '1': bbox=0 atoms=19 smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1 wildcard=True
+  [Tier 3] '2': bbox=2 atoms=19 smiles=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2']
+    [Tier 4 LLM] '1' → r_value='COOEt'
+    [Tier 4 LLM] '2' → r_value='R1 = COOEt, R2 = COOH'
+    [Tier 4] R-group candidates: ['1', '2']
+    [Tier 4 graph] '1' r=COOEt fallback (smi=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1)
+    [Tier 4] '1' ✅ match: CCOC(=O)C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1
+    [Tier 4 graph] '2' r=R1 = COOEt, R2 = COOH fallback (smi=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12*)
+    [Tier 4] '2' ✅ match: OC(=O)C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12C(=O)OCC
+  [Tier 4 R-group Sub] resolved=['1', '2']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', "1'", "1''", '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Reductive_dearomative_arylcarboxylation_of_indoles_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Reductive_dearomative_arylcarboxylation_of_indoles_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000004_4eeccad6ba0820f258e837212e4c06a153de5806b654818ce97516a0ba618bff.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', "1'", "1''", '1']
+  [OCSR] image_000004_4eeccad6ba0820f258e837212e4c06a153de5806b654818ce97516a0ba618bff.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', '(ArBr)']  smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', "1'", "1''", '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', "1'", "1''", '1']
+  [Tier 3] '1': bbox=0 atoms=19 smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1 wildcard=True
+  [Tier 3] '2': bbox=2 atoms=19 smiles=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12* wildcard=True
+  [Tier 3] '1'': bbox=0 atoms=19 smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(I)C=CC=C1 wildcard=True
+  [Tier 3] '1''': bbox=0 atoms=19 smiles=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Cl)C=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', "1'", "1''"]
+    [Tier 4 LLM] '1' → r_value='ArBr'
+    [Tier 4 LLM] '1'' → r_value='ArI'
+    [Tier 4 LLM] '1''' → r_value='ArCl'
+    [Tier 4 LLM] '2' → r_value='Product'
+    [Tier 4] R-group candidates: ['1', "1'", "1''", '2']
+    [Tier 4 graph] '1' r=ArBr fallback (smi=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1)
+    [Tier 4 graph] '1'' r=ArI fallback (smi=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1)
+    [Tier 4 graph] '1''' r=ArCl fallback (smi=*C1=CC2=CC=CC=C2N1C(=O)C1=C(Br)C=CC=C1)
+    [Tier 4] '1' ✅ match: CCOC(=O)C1=CC2=CC=CC=C2N1C(=O)C1=CC=CC=C1Br
+    [Tier 4] '1'' ✅ match: CCOC(=O)C1=CC2=CC=CC=C2N1C(=O)C1=CC=CC=C1I
+    [Tier 4] '1''' 🔄 corrected: CCOC(=O)C1=CC2=CC=CC=C2N1C(=O)C1=CC=CC=C1Br
+    [Tier 4 graph] '2' r=Product fallback (smi=*C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12*)
+    [Tier 4] '2' ✅ match: OC(=O)C1C2=CC=CC=C2N2C(=O)C3=C(C=CC=C3)C12C(=O)OCC
+  [Tier 4 R-group Sub] resolved=['1', "1'", "1''", '2']  remaining=[]

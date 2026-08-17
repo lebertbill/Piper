@@ -1,0 +1,46 @@
+Label Resolver Diagnostic Log — 2026-05-24 18:49:33
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 7' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa', '2a', "3aa'"]
+  Image    : extracted_data/Brambilla et al. - 2023 - Synthesis of Indole‐Fused 1,4‐Diazepinones via Photoredox‐Catalyzed Cascade Cyclization Reaction/grok_4_3/processed/visualheist_page_03_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3aa', '2a', "3aa'"]
+  [OCSR] visualheist_page_03_table_2.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(=C)C(=O)N(*)C1=C(N2C=C(*)C3=C2C=CC=C3)C=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=C(C=CC=C3)C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3aa']  smiles=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=CC=CC=C3C(*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3aa', '2a', "3aa'"]
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3aa', '2a', "3aa'"]
+  [Tier 3] '1a': bbox=0 atoms=23 smiles=*C(=C)C(=O)N(*)C1=C(N2C=C(*)C3=C2C=CC=C3)C=CC=C1 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=8 smiles=*C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '3aa': bbox=4 atoms=26 smiles=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=C(C=CC=C3)C(*)=C21 wildcard=True
+  [Tier 3] '3aa'': bbox=6 atoms=26 smiles=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=CC=CC=C3C(*)=C21 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3aa', "3aa'"]
+    [Tier 4 LLM] '1a' → r_value='N-substituent = Bn, C-substituent = Me, Alkene-substituent = Me'
+    [Tier 4 LLM] '2a' → r_value='para-substituents = COCl and Me'
+    [Tier 4 LLM] '3aa' → r_value='N-substituent = Bn, C-substituent = Me, Sidechain = CH2CO-p-Tol'
+    [Tier 4 LLM] '3aa'' → r_value='N-substituent = Bn, C-substituent = Me, Sidechain = CH2CO-p-Tol'
+    [Tier 4] R-group candidates: ['1a', '2a', '3aa', "3aa'"]
+    [Tier 4 graph] '1a' r=N-substituent = Bn, C-substituent = Me, Alkene-substituent = Me fallback (smi=*C(=C)C(=O)N(*)C1=C(N2C=C(*)C3=C2C=CC=C3)C=CC=C1)
+    [Tier 4] '1a' ✅ match: CC(=C)C(=O)N(Cc1ccccc1)c2ccccc2n3cc(C)c4ccccc34
+    [Tier 4 graph] '2a' r=para-substituents = COCl and Me fallback (smi=*C1=CC=C(*)C=C1)
+    [Tier 4] '2a' ✅ match: CC1=CC=C(C(=O)Cl)C=C1
+    [Tier 4 graph] '3aa' r=N-substituent = Bn, C-substituent = Me, Sidechain = CH2CO-p-Tol fallback (smi=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=C(C=CC=C3)C(*)=C21)
+    [Tier 4] '3aa' 🔄 corrected: CC1=C(C2=CC=CC=C2N1C3=CC=CC=C3N(CC4=CC=CC=C4)C(=O)
+    [Tier 4 graph] '3aa'' r=N-substituent = Bn, C-substituent = Me, Sidechain = CH2CO-p-Tol fallback (smi=*C(=O)CC1(*)C(=O)N(*)C2=C(C=CC=C2)N2C3=CC=CC=C3C(*)=C21)
+    [Tier 4] '3aa'' 🔄 corrected: CC1=C(C2=C(N1C3=CC=CC=C3)C(C)(CC(=O)C4=CC=C(C)C=C4
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3aa', "3aa'"]  remaining=[]

@@ -1,0 +1,108 @@
+Label Resolver Diagnostic Log — 2026-06-17 11:03:17
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['L1', 'L2', 'L3', 'L4'] → image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['L1', 'L2', 'L3', 'L4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub/GPT_5_MINI/processed/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub_artifacts/image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → opsin_lookup via name='9-(diphenylphosphanyl)-3-bromo-9H-carbazole'
+  [Tier 0 NameMap] 'L2' → opsin_lookup via name='9-(diphenylphosphanyl)-9H-carbazole'
+  [Tier 0 NameMap] 'L3' → pubchem_lookup via name='tris(2,6-dimethoxyphenyl)phosphane'
+  [Tier 0 NameMap] 'L4' → pubchem_lookup via name='4,6-bis(diphenylphosphanyl)-10H-phenoxazine'
+  [Tier 0 NameMap] resolved=['L1', 'L2', 'L3', 'L4']  remaining=[]
+  [InlineResolver] Column 'L' labels ['PCy 3'] from image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['PCy 3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub/GPT_5_MINI/processed/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub_artifacts/image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['PCy 3']
+  [OCSR] image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=Brc1ccc2c3ccccc3n(P(c3ccccc3)c3ccccc3)c2c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=[]  smiles=c1ccc(P(c2ccccc2)n2c3ccccc3c3ccccc32)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=[]  smiles=COC1=CC=CC(OC)=C1PC1=C(OC)(=C2(P(C3=C(OC)C=CC=C3OC  wildcard=False
+  [OCSR]   pair [6,7]: texts=[]  smiles=c1ccc(P(c2ccccc2)c2cccc3c2Oc2c(cccc2P(c2ccccc2)c2c  wildcard=False
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['PCy 3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PCy 3']
+  [Tier 3] 'PCy 3': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['PCy 3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['PCy 3']
+    [Tier 5 PubChem] 'PCy 3' → no hit (tried ['PCy 3'])
+  [Tier 5 PubChem] resolved=[]  remaining=['PCy 3']
+    [Tier 6→pubchem_lookup] 'PCy 3' name='Tricyclohexylphosphine' → C1CCC(CC1)P(C2CCCCC2)C3CCCCC3
+  [Tier 6 LLM Vision] resolved=['PCy 3']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '3a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub/GPT_5_MINI/processed/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub_artifacts/image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4a', '3a', '1a']
+  [OCSR] image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=Brc1ccc2c3ccccc3n(P(c3ccccc3)c3ccccc3)c2c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=[]  smiles=c1ccc(P(c2ccccc2)n2c3ccccc3c3ccccc32)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=[]  smiles=COC1=CC=CC(OC)=C1PC1=C(OC)(=C2(P(C3=C(OC)C=CC=C3OC  wildcard=False
+  [OCSR]   pair [6,7]: texts=[]  smiles=c1ccc(P(c2ccccc2)c2cccc3c2Oc2c(cccc2P(c2ccccc2)c2c  wildcard=False
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '3a', '1a']
+  [Tier 3] '4a': bbox_idx=None out of range (n=8)
+  [Tier 3] '3a': bbox_idx=None out of range (n=8)
+  [Tier 3] '1a': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '3a', '1a']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4a', '3a', '1a']
+    [Tier 5 PubChem] '4a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4a', '3a', '1a']
+  [Tier 6 LLM Vision] resolved=['4a', '3a', '1a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['PdCl2', '3a', '3', 'PCy3', 'L4', '4a', 'L1', 'L2', 'L3', 'H2', 'CO2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub/GPT_5_MINI/processed/Palladium-catalyzed_thiocarbonylation_of_alkenes_toward_branched_thioesters_using_COsub2sub_artifacts/image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png
+  Exists   : True
+  [Tier 0 NameMap] 'PCy3' → pubchem_lookup via name='tricyclohexylphosphine'
+  [Tier 0 NameMap] 'L4' → pubchem_lookup via name='4,6-bis(diphenylphosphanyl)-10H-phenoxazine'
+  [Tier 0 NameMap] 'L1' → opsin_lookup via name='9-(diphenylphosphanyl)-3-bromo-9H-carbazole'
+  [Tier 0 NameMap] 'L2' → opsin_lookup via name='9-(diphenylphosphanyl)-9H-carbazole'
+  [Tier 0 NameMap] 'L3' → pubchem_lookup via name='tris(2,6-dimethoxyphenyl)phosphane'
+  [Tier 0 NameMap] 'CO2' → llm_name_to_smiles via name='Using renewable and abundant carbon dioxide'
+  [Tier 0 NameMap] resolved=['PCy3', 'L4', 'L1', 'L2', 'L3', 'CO2']  remaining=['PdCl2', '3a', '3', '4a', 'H2']
+  [OCSR] image_000011_fd1c41c88c90908fc65e8dd97f28eca98475ed933898cc1d8c3a5787b1d0b63e.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=Brc1ccc2c3ccccc3n(P(c3ccccc3)c3ccccc3)c2c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=[]  smiles=c1ccc(P(c2ccccc2)n2c3ccccc3c3ccccc32)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=[]  smiles=COC1=CC=CC(OC)=C1PC1=C(OC)(=C2(P(C3=C(OC)C=CC=C3OC  wildcard=False
+  [OCSR]   pair [6,7]: texts=[]  smiles=c1ccc(P(c2ccccc2)c2cccc3c2Oc2c(cccc2P(c2ccccc2)c2c  wildcard=False
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['PdCl2', '3a', '3', '4a', 'H2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PdCl2', '3a', '3', '4a', 'H2']
+  [Tier 3] 'PdCl2': bbox_idx=None out of range (n=8)
+  [Tier 3] '3a': bbox_idx=None out of range (n=8)
+  [Tier 3] '3': bbox_idx=None out of range (n=8)
+  [Tier 3] '4a': bbox_idx=None out of range (n=8)
+  [Tier 3] 'H2': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['PdCl2', '3a', '3', '4a', 'H2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['PdCl2', '3a', '3', '4a', 'H2']
+    [Tier 5 PubChem] 'PdCl2' → hit via 'PCy3': C1CCC(CC1)P(C2CCCCC2)C3CCCCC3
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'H2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=['PdCl2']  remaining=['3a', '3', '4a', 'H2']
+    [Tier 6→pubchem_lookup] 'H2' name='Hydrogen' → [HH]
+  [Tier 6 LLM Vision] resolved=['3a', '3', '4a', 'H2']

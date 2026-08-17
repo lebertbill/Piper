@@ -1,0 +1,731 @@
+[
+    {
+        "document": "Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont",
+        "table_name": "Table 1. Optimization of the photocatalytic hydroxydifluoromethylation of 4-methylstyrene ( 2a ).",
+        "table_caption": "",
+        "image_path": "extracted_data/Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont/GPT_5_MINI/processed/visualheist_page_02_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C=Cc1ccc(C)cc1",
+                        "text": "CF2H reagent 1b",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "fac-[Ir(ppy)3]",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir](c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)",
+                        "resolved_name": "tris(2-phenylpyridine)iridium(III)",
+                        "resolved_smiles": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1b",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "difluoromethyl phenyl sulfone",
+                        "resolved_smiles": "C1=CC=C(C=C1)S(=O)(=O)C(F)F",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)S(=O)(=O)C(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "FC(F)S(=O)(=O)C1=CC=CC=N1",
+                        "text": "CF2H reagent 1c",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "FC(F)S(=O)(=O)C1=CC=CC=N1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(c1ccccn1)C(F)F",
+                        "molecular_formula": "C6H5F2NO2S",
+                        "molecular_weight": 193.17
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "fac-[Ir(ppy)3]",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir](c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)",
+                        "resolved_name": "tris(2-phenylpyridine)iridium(III)",
+                        "resolved_smiles": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1c",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "2-(difluoromethylsulfonyl)pyridine",
+                        "resolved_smiles": "C1=CC=NC(=C1)S(=O)(=O)C(F)F",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=NC(=C1)S(=O)(=O)C(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 29.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N=S(=O)(c2ccccc2)C(F)F)cc1",
+                        "molecular_formula": "C14H13F2NO3S2",
+                        "molecular_weight": 345.39
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "fac-[Ir(ppy)3]",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir](c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)",
+                        "resolved_name": "tris(2-phenylpyridine)iridium(III)",
+                        "resolved_smiles": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "S-(difluoromethyl)-S-phenyl-N-tosylsulfoximine",
+                        "resolved_smiles": "FC(S(=O)(=NS(=O)(=O)C1=CC=C(C)C=C1)C1=CC=CC=C1)F",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 88.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N=S(=O)(c2ccccc2)C(F)F)cc1",
+                        "molecular_formula": "C14H13F2NO3S2",
+                        "molecular_weight": 345.39
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy)3]2+",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ru](n1ccccc1n2ccccc2)(n1ccccc1n2ccccc2)(n1ccccc1n2ccccc2)",
+                        "resolved_name": "tris(2,2'-bipyridine)ruthenium(II)",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.[Ru+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "S-(difluoromethyl)-S-phenyl-N-tosylsulfoximine",
+                        "resolved_smiles": "FC(S(=O)(=NS(=O)(=O)C1=CC=C(C)C=C1)C1=CC=CC=C1)F",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N=S(=O)(c2ccccc2)C(F)F)cc1",
+                        "molecular_formula": "C14H13F2NO3S2",
+                        "molecular_weight": 345.39
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(ppy)2(dtbbpy)]+",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir](c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)(c1ccc(cc1)N(C)C)",
+                        "resolved_name": "bis(2-phenylpyridine)(4,4'-di-tert-butyl-2,2'-bipyridine)iridium(III)",
+                        "resolved_smiles": "CC(C)(C)c1cc(cc(n1)-c2cc(cc(n2)C(C)(C)C)C(C)(C)C)C(C)(C)C.[Ir+3].c1ccc(cc1)-c2ccccn2.c1ccc(cc1)-c2ccccn2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "S-(difluoromethyl)-S-phenyl-N-tosylsulfoximine",
+                        "resolved_smiles": "FC(S(=O)(=NS(=O)(=O)C1=CC=C(C)C=C1)C1=CC=CC=C1)F",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N=S(=O)(c2ccccc2)C(F)F)cc1",
+                        "molecular_formula": "C14H13F2NO3S2",
+                        "molecular_weight": 345.39
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "fac-[Ir(ppy)3]",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir](c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)(c1ccccc1n2ccccc2)",
+                        "resolved_name": "tris(2-phenylpyridine)iridium(III)",
+                        "resolved_smiles": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "S-(difluoromethyl)-S-phenyl-N-tosylsulfoximine",
+                        "resolved_smiles": "FC(S(=O)(=NS(=O)(=O)C1=CC=C(C)C=C1)C1=CC=CC=C1)F",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Reaction performed in the dark (no light); therefore the light irradiation condition was omitted for this entry."
+                ]
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1,
+                        "unit": "equiv",
+                        "smiles_llm": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C1=CC=CC=C1)C(F)F",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(S(=O)(=O)N=S(=O)(c2ccccc2)C(F)F)cc1",
+                        "molecular_formula": "C14H13F2NO3S2",
+                        "molecular_weight": 345.39
+                    },
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C=C",
+                        "text": "4-methylstyrene (2a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C=C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H10",
+                        "molecular_weight": 118.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "O[C@H](C(F)(F))c1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C(O[2H])CC(F)F)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[2H]OC(CC(F)F)c1ccc(C)cc1",
+                        "molecular_formula": "C10H12F2O",
+                        "molecular_weight": 187.21
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "CF2H reagent 1a",
+                        "quantity": 1.0,
+                        "unit": "equiv",
+                        "smiles": "O=S(=O)c1ccc(C(F)(F))cc1",
+                        "resolved_name": "S-(difluoromethyl)-S-phenyl-N-tosylsulfoximine",
+                        "resolved_smiles": "FC(S(=O)(=NS(=O)(=O)C1=CC=C(C)C=C1)C1=CC=CC=C1)F",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Deuterated acetone / D2O",
+                        "smiles": "CC(=O)C.O",
+                        "resolved_smiles": "C1C=CC2=CC=CC=C21",
+                        "resolved_name": "indene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "No photocatalyst was used for this entry; the photocatalyst condition has been omitted."
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 1. Optimization of the photocatalytic hydroxydifluoromethylation of 4-methylstyrene ( 2a ).",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Photocatalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": true,
+                "label_map": "Structures drawn in Table 1 image",
+                "label_map_source_id": "Table 1"
+            },
+            "CF2H reagent 1": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Structures drawn in Table 1 image",
+                "label_map_source_id": "Table 1"
+            },
+            "Yield of 3a [%]": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 21,
+            "valid_molecules": 21,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

@@ -1,0 +1,135 @@
+Label Resolver Diagnostic Log — 2026-06-18 12:19:17
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [InlineResolver] Column 'Substrate' labels ['8b', '8a', 'tricyclopentane (TCP)', 'Triethylborane (BEt3)', '7a'] from image_000008_ddc1bcf5556f2bf9a045e8777f03d57212f34ea24ba7d645e4e790c95bc3ba65.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['8b', '8a', 'tricyclopentane (TCP)', 'Triethylborane (BEt3)', '7a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_and_applications_of_highly_functionalized_1-halo-3-substituted_bicyclo1.1.1pentanes/GPT_5_MINI/processed/Synthesis_and_applications_of_highly_functionalized_1-halo-3-substituted_bicyclo1.1.1pentanes_artifacts/image_000008_ddc1bcf5556f2bf9a045e8777f03d57212f34ea24ba7d645e4e790c95bc3ba65.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['8b', '8a', 'tricyclopentane (TCP)', 'Triethylborane (BEt3)', '7a']
+  [OCSR] image_000008_ddc1bcf5556f2bf9a045e8777f03d57212f34ea24ba7d645e4e790c95bc3ba65.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['7a (X =h)', '82 (X = Br)']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8b']  smiles=*C(C)(C)Br  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Sa (X =l)', '6a (X = Br)']  smiles=*C(=O)CC12CC(*)(C1)C2  wildcard=True
+  [OCSR]   pair [7,8]: texts=['66']  smiles=*C(C)(C)C12CC(Br)(C1)C2  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8b', '8a', 'tricyclopentane (TCP)', 'Triethylborane (BEt3)', '7a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['8b', '8a', 'tricyclopentane (TCP)', 'Triethylborane (BEt3)', '7a']
+  [Tier 3] '8b': bbox=2 atoms=5 smiles=*C(C)(C)Br wildcard=True
+  [Tier 3] '8a': bbox=0 atoms=5 smiles=*C(=O)CBr wildcard=True
+  [Tier 3] 'tricyclopentane (TCP)': bbox=4 atoms=5 smiles=C1C23CC12C3 wildcard=False
+  [Tier 3] 'Triethylborane (BEt3)': bbox_idx=None out of range (n=10)
+  [Tier 3] '7a': bbox=0 atoms=5 smiles=*C(=O)CI wildcard=True
+  [Tier 3 BBox Match] resolved=['tricyclopentane (TCP)']  remaining=['8b', '8a', 'Triethylborane (BEt3)', '7a']
+    [Tier 4 LLM] '8b' → r_value='NO2'
+    [Tier 4 LLM] '8a' → r_value='X = Br'
+    [Tier 4 LLM] '7a' → r_value='X = I'
+    [Tier 4] R-group candidates: ['8b', '8a', '7a']
+    [Tier 4 graph] '8b' r=NO2 fallback (smi=*C(C)(C)Br)
+    [Tier 4] '8b' RDKit render failed: [N+](=O)[O-]C(C)(C)Br
+    [Tier 4 graph] '8a' r=X = Br fallback (smi=*CC(*)=O)
+    [Tier 4 graph] '7a' r=X = I fallback (smi=*CC(*)=O)
+    [Tier 4] '8a' 🔄 corrected: CCOC(=O)CBr
+    [Tier 4] '7a' 🔄 corrected: CCOC(=O)CI
+  [Tier 4 R-group Sub] resolved=['8a', '7a']  remaining=['8b', 'Triethylborane (BEt3)']
+    [Tier 5 PubChem] '8b' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'Triethylborane (BEt3)' → hit via 'Triethylborane': B(CC)(CC)CC
+  [Tier 5 PubChem] resolved=['Triethylborane (BEt3)']  remaining=['8b']
+    [Tier 6→pubchem_lookup] '8b' name='2-bromo-2-nitropropane' → CC(C)([N+](=O)[O-])Br
+  [Tier 6 LLM Vision] resolved=['8b']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['8a', '8b', '6b', '5a', '7a', 'staffane', '6a']
+  Image    : extracted_data/Synthesis_and_applications_of_highly_functionalized_1-halo-3-substituted_bicyclo1.1.1pentanes/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['8a', '8b', '6b', '5a', '7a', 'staffane', '6a']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['7a (X =h)', '8a (X = Br)']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8b']  smiles=*C(C)(C)Br  wildcard=True
+  [OCSR]   pair [5,6]: texts=['5a (X =!)', '6a (X = Br)']  smiles=*C(=O)CC12CC(*)(C1)C2  wildcard=True
+  [OCSR]   pair [7,8]: texts=['6b']  smiles=*C(C)(C)C12CC(Br)(C1)C2  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8a', '8b', '6b', '5a', '7a', 'staffane', '6a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['8a', '8b', '6b', '5a', '7a', 'staffane', '6a']
+  [Tier 3] '7a': bbox=0 atoms=5 smiles=*C(=O)CI wildcard=True
+  [Tier 3] '8a': bbox=0 atoms=5 smiles=*C(=O)CBr wildcard=True
+  [Tier 3] '8b': bbox=2 atoms=5 smiles=*C(C)(C)Br wildcard=True
+  [Tier 3] '5a': bbox=5 atoms=10 smiles=*C(=O)CC12CC(I)(C1)C2 wildcard=True
+  [Tier 3] '6a': bbox=5 atoms=10 smiles=*C(=O)CC12CC(Br)(C1)C2 wildcard=True
+  [Tier 3] '6b': bbox=7 atoms=10 smiles=*C(C)(C)C12CC(Br)(C1)C2 wildcard=True
+  [Tier 3] 'staffane': bbox=9 atoms=12 smiles=*C12CC(C34CC(*)(C3)C4)(C1)C2 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['7a', '8a', '8b', '5a', '6a', '6b', 'staffane']
+    [Tier 4 LLM] '7a' → r_value='X = I'
+    [Tier 4 LLM] '8a' → r_value='X = Br'
+    [Tier 4 LLM] '8b' → r_value='X = NO2'
+    [Tier 4 LLM] '5a' → r_value='X = I'
+    [Tier 4 LLM] '6a' → r_value='X = Br'
+    [Tier 4 LLM] '6b' → r_value='R = NO2'
+    [Tier 4] R-group candidates: ['7a', '8a', '8b', '5a', '6a', '6b']
+    [Tier 4 graph] '7a' r=X = I fallback (smi=*CC(*)=O)
+    [Tier 4 graph] '8a' r=X = Br fallback (smi=*CC(*)=O)
+    [Tier 4] '7a' ✅ match: CCOC(=O)CI
+    [Tier 4] '8a' ✅ match: CCOC(=O)CBr
+    [Tier 4 graph] '8b' r=X = NO2 fallback (smi=*C(C)(C)Br)
+    [Tier 4] '8b' RDKit render failed: [N+](=O)[O-]C(C)(C)Br
+    [Tier 4 graph] '5a' r=X = I fallback (smi=*C(=O)CC12CC(*)(C1)C2)
+    [Tier 4 graph] '6a' r=X = Br fallback (smi=*C(=O)CC12CC(*)(C1)C2)
+    [Tier 4] '5a' ✅ match: CCOC(=O)CC12CC(I)(C1)C2
+    [Tier 4] '6a' ✅ match: CCOC(=O)CC12CC(Br)(C1)C2
+    [Tier 4 graph] '6b' r=R = NO2 fallback (smi=*C(C)(C)C12CC(Br)(C1)C2)
+    [Tier 4] '6b' RDKit render failed: [N+](=O)[O-]C(C)(C)C12CC(Br)(C1)C2
+  [Tier 4 R-group Sub] resolved=['7a', '8a', '5a', '6a']  remaining=['8b', '6b', 'staffane']
+    [Tier 5 PubChem] '8b' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '6b' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'staffane' → no hit (tried ['staffane'])
+  [Tier 5 PubChem] resolved=[]  remaining=['8b', '6b', 'staffane']
+    [Tier 6→pubchem_lookup] '8b' name='2-bromo-2-nitropropane' → CC(C)([N+](=O)[O-])Br
+    [Tier 6→llm_name_to_smiles] '6b' name='1-(2-bromo-2-propyl)-3-nitrotricyclo[1.1.1.01,3]pentane derivative' → CC(C)(Br)C12CC(C1)(C2)[N+](=O)[O-]
+  [Tier 6 LLM Vision] resolved=['8b', '6b', 'staffane']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['8a', '8b', '20', '16', '7a', '15']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_and_applications_of_highly_functionalized_1-halo-3-substituted_bicyclo1.1.1pentanes/GPT_5_MINI/processed/Synthesis_and_applications_of_highly_functionalized_1-halo-3-substituted_bicyclo1.1.1pentanes_artifacts/image_000008_ddc1bcf5556f2bf9a045e8777f03d57212f34ea24ba7d645e4e790c95bc3ba65.png
+  Exists   : True
+  [Tier 0 NameMap] '16' → pubchem_lookup via name='fentanyl'
+  [Tier 0 NameMap] resolved=['16']  remaining=['8a', '8b', '20', '7a', '15']
+  [OCSR] image_000008_ddc1bcf5556f2bf9a045e8777f03d57212f34ea24ba7d645e4e790c95bc3ba65.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['7a (X =h)', '82 (X = Br)']  smiles=*CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8b']  smiles=*C(C)(C)Br  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Sa (X =l)', '6a (X = Br)']  smiles=*C(=O)CC12CC(*)(C1)C2  wildcard=True
+  [OCSR]   pair [7,8]: texts=['66']  smiles=*C(C)(C)C12CC(Br)(C1)C2  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8a', '8b', '20', '7a', '15']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['8a', '8b', '20', '7a', '15']
+  [Tier 3] '8a': bbox=0 atoms=5 smiles=*C(=O)CBr wildcard=True
+  [Tier 3] '8b': bbox=2 atoms=5 smiles=*C(C)(C)Br wildcard=True
+  [Tier 3] '20': bbox_idx=None out of range (n=10)
+  [Tier 3] '7a': bbox=0 atoms=5 smiles=*C(=O)CI wildcard=True
+  [Tier 3] '15': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['8a', '8b', '20', '7a', '15']
+    [Tier 4 LLM] '7a' → r_value='X = I'
+    [Tier 4 LLM] '8a' → r_value='X = Br'
+    [Tier 4] R-group candidates: ['7a', '8a']
+    [Tier 4 graph] '7a' r=X = I fallback (smi=*CC(*)=O)
+    [Tier 4 graph] '8a' r=X = Br fallback (smi=*CC(*)=O)
+    [Tier 4] Verification failed for '7a': Expecting property name enclosed in double quotes: line 1 column 16 (char 15)
+    [Tier 4] Verification failed for '8a': Extra data: line 2 column 1 (char 170)
+  [Tier 4 R-group Sub] resolved=['7a', '8a']  remaining=['8b', '20', '15']
+    [Tier 5 PubChem] '8b' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '20' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '15' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['8b', '20', '15']
+    [Tier 6→pubchem_lookup] '8b' name='2-bromo-2-nitropropane' → CC(C)([N+](=O)[O-])Br
+  [Tier 6 LLM Vision] resolved=['8b', '20', '15']

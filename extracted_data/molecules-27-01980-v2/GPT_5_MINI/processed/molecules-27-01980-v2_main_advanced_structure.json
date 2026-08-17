@@ -1,0 +1,320 @@
+{
+    "article_summary": "The article describes a dual catalytic system combining palladium catalysis and 4CzIPN photoredox catalysis for the ortho-selective decarboxylative acylation of O-methyl ketoximes with alpha-keto acids. The reaction uses visible light and air as the oxidant, providing a variety of non-symmetric benzophenone derivatives in moderate to good yields via a free radical pathway.",
+    "compound_name_map": {
+        "4CzIPN": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile",
+        "fac-Ir(ppy)3": "fac-tris(2-phenylpyridine)iridium(III)",
+        "TEMPO": "2,2,6,6-tetramethylpiperidine N-oxide",
+        "DMPO": "5,5-dimethyl-1-pyrroline-N-oxide",
+        "KIE": "Then, a kinetic isotope effect",
+        "IV": "The superoxide radical anion oxidized II to Pd",
+        "SET": "s generated from molecular oxygen by single electron transfer",
+        "21KJA150002": "l Science Foundation of Jiangsu Higher Education Institutions",
+        "SDGC2121": "l adsorption material technology for environmental protection"
+    },
+    "compound_description_map": {
+        "4CzIPN": "photocatalyst that promotes the generation of benzoyl radicals",
+        "Ketoprofen": "drug with anti-inflammatory and analgesic effects",
+        "Bromfenac": "antibacterial drug",
+        "Mebendazole": "hedgehog inhibitor",
+        "Fenofibrate": "anti-hypercholesterolemia drug"
+    },
+    "data_items": [
+        {
+            "id": "Scheme 1",
+            "type": "Scheme",
+            "purpose": "Drugs containing benzophenone structure",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000001_06f0a9f7e710b042cd3cba105f82fa0eb78b43878b73fa76ddc3eeb856da4aab.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "Bromfenac",
+                "Mebendazole",
+                "Ketoprofen",
+                "Fenofibrate"
+            ],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": []
+        },
+        {
+            "id": "Figure 1",
+            "type": "Figure",
+            "purpose": "Comparison of decarboxylative cross-coupling reactions in literature vs this work",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000008_a9343219aea8137e169e77b40db868874547466ed329f75a35f7c4adb6710b2b.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": []
+        },
+        {
+            "id": "Table 1",
+            "type": "Table",
+            "purpose": "Optimization of the reaction conditions",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000009_60ab990233c6403d6f120ebb3531200a5e52d4f9710f032e783642dba5ad49b0.png",
+            "expected_row_count": 14,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "[Pd] maps to column 2, [Photocatalyst] maps to column 3, [Solvent] maps to column 4",
+            "defined_labels": [],
+            "reactant_labels": [
+                "1a",
+                "2a"
+            ],
+            "product_labels": [
+                "3a"
+            ],
+            "columns": {
+                "Entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "[Pd]": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "[Photocatalyst]": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "[Solvent]": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "Yield (%)": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Scheme 2",
+            "type": "Table",
+            "purpose": "Substrate scope of benzoylformic acid",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000010_ad2ae55c2e30b331100ea644dd610ab55c9c1d252277b9a26baae5fdae2b3aaf.png",
+            "expected_row_count": 11,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "3a",
+                "3b",
+                "3c",
+                "3d",
+                "3e",
+                "3f",
+                "3g",
+                "3h",
+                "3i",
+                "3j",
+                "3k"
+            ],
+            "reactant_labels": [
+                "1a",
+                "2"
+            ],
+            "product_labels": [
+                "3"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Scheme 3",
+            "type": "Table",
+            "purpose": "Substrate scope of acetophenone oxime ether",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000011_c423f257c31d40778eaed5c25579478227f01d3726808c3ee57909bbdb820292.png",
+            "expected_row_count": 24,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "4a",
+                "4b",
+                "4c",
+                "4d",
+                "4e",
+                "4f",
+                "4g",
+                "4h",
+                "4i",
+                "4j",
+                "4k",
+                "4l",
+                "4m",
+                "4n",
+                "4o",
+                "4o'",
+                "4p",
+                "4q",
+                "4r",
+                "4s",
+                "4t",
+                "4u",
+                "4v",
+                "4w",
+                "4w'"
+            ],
+            "reactant_labels": [
+                "1",
+                "2a"
+            ],
+            "product_labels": [
+                "4"
+            ],
+            "columns": {}
+        },
+        {
+            "id": "Scheme 4",
+            "type": "Scheme",
+            "purpose": "Gram-scale reaction and further transformation of products",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000012_d814fb6ebb90c69d7db8775450e951697dab6feefb31b281adf405ad1813340a.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "reactant_labels": [
+                "1a",
+                "2a",
+                "3a",
+                "4s",
+                "5"
+            ],
+            "product_labels": [
+                "3a",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ]
+        },
+        {
+            "id": "Scheme 5",
+            "type": "Scheme",
+            "purpose": "Preliminary mechanistic study including radical capture and KIE experiments",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000013_b2babf0cdb0fb410eff98d924217bfee159ea2fd822711b2d05e31d91850fc77.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "10",
+                "1b",
+                "1b'",
+                "4a",
+                "4a'"
+            ],
+            "reactant_labels": [
+                "1a",
+                "2a",
+                "1b",
+                "1b'"
+            ],
+            "product_labels": [
+                "10",
+                "4a",
+                "4a'"
+            ]
+        },
+        {
+            "id": "Scheme 6",
+            "type": "Scheme",
+            "purpose": "Plausible reaction mechanism",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "molecules-27-01980-v2_artifacts/image_000014_ac84d660ecc2ceffffbb15c3394c4103f36721688c173c6084dc691a421aa175.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": []
+        }
+    ]
+}

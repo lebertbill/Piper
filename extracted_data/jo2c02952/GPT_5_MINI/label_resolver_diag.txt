@@ -1,0 +1,60 @@
+Label Resolver Diagnostic Log — 2026-08-15 20:05:01
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['11', '12', '13'] → image_000016_c9f742d95fc9f9149462eab24ad5d15a6f3200e40e9888f42f74e742e816c626.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['11', '12', '13']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/jo2c02952/GPT_5_MINI/processed/jo2c02952_artifacts/image_000016_c9f742d95fc9f9149462eab24ad5d15a6f3200e40e9888f42f74e742e816c626.png
+  Exists   : True
+  [Tier 0 NameMap] '12' → name 'Synlett 2022 , 33' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['11', '12', '13']
+  [OCSR] image_000016_c9f742d95fc9f9149462eab24ad5d15a6f3200e40e9888f42f74e742e816c626.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['11']  smiles=*C1=C(*)C(*)=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['12']  smiles=*CC1=C(*)C(*)=C(*)C(*)=C1N1C2=C(C=CC=C2)C2=C1C=CC=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['13', '3DPAZFBN']  smiles=*C1=C(*)C(N(C2=CC=CC=C2)C2=CC=CC=C2)=C(F)C(*)=C1F  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['11', '12', '13']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['11', '12', '13']
+  [Tier 3] '11': bbox=0 atoms=24 smiles=*C1=C(*)C(*)=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C1* wildcard=True
+  [Tier 3] '12': bbox=2 atoms=25 smiles=*CC1=C(*)C(*)=C(*)C(*)=C1N1C2=C(C=CC=C2)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] '13': bbox=4 atoms=24 smiles=*C1=C(*)C(N(C2=CC=CC=C2)C2=CC=CC=C2)=C(F)C(*)=C1F wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['11', '12', '13']
+    [Tier 4 LLM] '11' → r_value='substituents = 2,4,5,6-tetrakis(carbazol-9-yl)isophthalonitrile (4CzIPN)'
+    [Tier 4 LLM] '12' → r_value='substituents = 2,4,5-tris(carbazol-9-yl)-6-benzylbenzonitrile (4CzBnBN)'
+    [Tier 4 LLM] '13' → r_value='substituents = 2,4,6-tris(diphenylamino)-3,5-difluorobenzonitrile (3DPA2FBN)'
+    [Tier 4] R-group candidates: ['11', '12', '13']
+    [Tier 4 graph] '11' r=substituents = 2,4,5,6-tetrakis(carbazol-9-yl)isophthalonitrile (4CzIPN) fallback (smi=*C1=C(*)C(*)=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C1*)
+    [Tier 4] '11' ✅ match: N#CC1=C(N2C3=CC=CC=C3C3=C2C=CC=C3)C(C#N)=C(N2C3=CC
+    [Tier 4 graph] '12' r=substituents = 2,4,5-tris(carbazol-9-yl)-6-benzylbenzonitrile (4CzBnBN) fallback (smi=*CC1=C(*)C(*)=C(*)C(*)=C1N1C2=C(C=CC=C2)C2=C1C=CC=C2)
+    [Tier 4] '12' 🔄 corrected: C1=CC=C(C=C1)CC2=C(C(=C(C(=C2N3C4=CC=CC=C4C5=CC=CC
+    [Tier 4 graph] '13' r=substituents = 2,4,6-tris(diphenylamino)-3,5-difluorobenzonitrile (3DPA2FBN) fallback (smi=*C1=C(*)C(N(C2=CC=CC=C2)C2=CC=CC=C2)=C(F)C(*)=C1F)
+    [Tier 4] '13' 🔄 corrected: N#CC1=C(N(C2=CC=CC=C2)C2=CC=CC=C2)C(F)=C(N(C3=CC=C
+  [Tier 4 R-group Sub] resolved=['11', '12', '13']  remaining=[]
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '11' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The presence of other labels like '4CzIPN' and '3DPA2FBN' suggests a numbered list of catalysts, where '11' refers to the eleventh compound in the series.
+  [SafetyNet LLM] '12' is_label=True reason=In chemistry literature, numeric strings like '12' are standard shorthand labels for specific chemical structures defined in the paper, whereas numeric quantities like mol% would typically be accompanied by units or appear in a separate 'amount' field.
+  [SafetyNet LLM] '13' is_label=True reason=In chemistry literature, integers are standard shorthand labels for specific compounds or catalysts described in the paper. The value '13' follows the convention of using bolded or numbered identifiers for chemical structures, rather than representing a numeric quantity like mol% or equivalents.
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '10']
+  Image    : extracted_data/jo2c02952/GPT_5_MINI/processed/visualheist_page_04_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '4a' → llm_name_to_smiles via name='l 4-benzyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate'
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='Phenylacetic acid'
+  [Tier 0 NameMap] resolved=['4a', '10']  remaining=[]

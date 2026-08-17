@@ -1,0 +1,110 @@
+Label Resolver Diagnostic Log — 2026-06-17 18:32:27
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '1b', '1c', '1d', '1e', '1f'] → image_000005_9ca50b33e80f3f11b9be737d7f26f757b8dd149da5e11967f168ee175a1d655d.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '1b', '1c', '1d', '1e', '1f']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Ptscpiiscp_coordination_complexes_as_visible_light_photocatalysts_for_the_oxidation_of_sulfides_using_batch_and_flow_pro/GPT_5_MINI/processed/Ptscpiiscp_coordination_complexes_as_visible_light_photocatalysts_for_the_oxidation_of_sulfides_using_batch_and_flow_pro_artifacts/image_000005_9ca50b33e80f3f11b9be737d7f26f757b8dd149da5e11967f168ee175a1d655d.png
+  Exists   : True
+  [Tier 0 NameMap] '1c' → llm_name_to_smiles via name='chloro(8-hydroxyquinolinato)(dimethyl sulfoxide)platinum(II) derivative'
+  [Tier 0 NameMap] resolved=['1c']  remaining=['1a', '1b', '1d', '1e', '1f']
+  [OCSR] image_000005_9ca50b33e80f3f11b9be737d7f26f757b8dd149da5e11967f168ee175a1d655d.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a']  smiles=CSc1ccc(C)cc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['34']  smiles=Cc1ccc([SH](C)O)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['1a (Y= 0 X-H)', 'Ib (Ye $ Xleh)', "Ic (Ye0 X'eCi)"]  smiles=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Id (XI= CL,X= Cl)', 'Ie (XlCl,Xe !)', "10 (X' = Br, X?= Br)"]  smiles=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl]  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '1b', '1d', '1e', '1f']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '1b', '1d', '1e', '1f']
+  [Tier 3] '1a': bbox=4 atoms=15 smiles=*C1=C2C=CC=[N]3C2=C(C=C1)[O][Pt]3([*])[Cl] wildcard=True
+  [Tier 3] '1b': bbox=4 atoms=15 smiles=*C1=C2C=CC=[N]3C2=C(C=C1)[S][Pt]3([*])[Cl] wildcard=True
+  [Tier 3] '1d': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Cl)C=C2Cl)C=CC=[N]31 wildcard=True
+  [Tier 3] '1e': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Cl)C=C2I)C=CC=[N]31 wildcard=True
+  [Tier 3] '1f': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Br)C=C2Br)C=CC=[N]31 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '1b', '1d', '1e', '1f']
+    [Tier 4 LLM] '1a' → r_value='Y = O, X1 = H'
+    [Tier 4 LLM] '1b' → r_value='Y = S, X1 = H'
+    [Tier 4 LLM] '1d' → r_value='X1 = Cl, X2 = Cl'
+    [Tier 4 LLM] '1e' → r_value='X1 = Cl, X2 = I'
+    [Tier 4 LLM] '1f' → r_value='X1 = Br, X2 = Br'
+    [Tier 4] R-group candidates: ['1a', '1b', '1d', '1e', '1f']
+    [Tier 4 graph] '1a' r=Y = O, X1 = H fallback (smi=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1)
+    [Tier 4 graph] '1b' r=Y = S, X1 = H fallback (smi=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1)
+    [Tier 4] '1a' 🔄 corrected: CS(=O)(C)[Pt]1(Cl)Oc2cccc3cccnc231
+    [Tier 4] '1b' 🔄 corrected: CS(=O)(C)[Pt]1(Cl)(S2=C3C=CC=NC3=CC=C2)N1
+    [Tier 4 graph] '1d' r=X1 = Cl, X2 = Cl fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4 graph] '1e' r=X1 = Cl, X2 = I fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4 graph] '1f' r=X1 = Br, X2 = Br fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4] '1d' 🔄 corrected: CS(C)(=O)[Pt]1(Cl)Oc2c(Cl)cc(Cl)c3cccn1c23
+    [Tier 4] '1e' 🔄 corrected: ClC1=CC(I)=C(O[Pt]2(Cl)(S(=O)(C)C)[N]3=CC=CC2=C13)
+    [Tier 4] '1f' ✅ match: BrC1=CC(Br)=C2C=CC=[N]3C2=C1[O][Pt]3(S(=O)(C)C)[Cl
+  [Tier 4 R-group Sub] resolved=['1a', '1b', '1d', '1e', '1f']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a']
+  Image    : extracted_data/Ptscpiiscp_coordination_complexes_as_visible_light_photocatalysts_for_the_oxidation_of_sulfides_using_batch_and_flow_pro/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '2a']
+  [OCSR] visualheist_page_02_table_1.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a']  smiles=CSc1ccc(C)cc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['34']  smiles=Cc1ccc([S](C)O)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['Ia (Y= O,XI-H)', "Ib (Ye 5 X'-H)", 'Ic (Y= 0,Xl-Ci)']  smiles=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['1d', 'Cl,X2= Cl)', '1e (XleCl,xe |)', "If (X'= BrX2= Br)", "(X'="]  smiles=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl]  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['2a']  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=2 atoms=10 smiles=Cc1ccc([S](C)O)cc1 wildcard=False
+  [Tier 3 BBox Match] resolved=['3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '1c', '1f', '1a', '1d', '1e', '1b']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Ptscpiiscp_coordination_complexes_as_visible_light_photocatalysts_for_the_oxidation_of_sulfides_using_batch_and_flow_pro/GPT_5_MINI/processed/Ptscpiiscp_coordination_complexes_as_visible_light_photocatalysts_for_the_oxidation_of_sulfides_using_batch_and_flow_pro_artifacts/image_000005_9ca50b33e80f3f11b9be737d7f26f757b8dd149da5e11967f168ee175a1d655d.png
+  Exists   : True
+  [Tier 0 NameMap] '1c' → llm_name_to_smiles via name='chloro(8-hydroxyquinolinato)(dimethyl sulfoxide)platinum(II) derivative'
+  [Tier 0 NameMap] resolved=['1c']  remaining=['3', '1f', '1a', '1d', '1e', '1b']
+  [OCSR] image_000005_9ca50b33e80f3f11b9be737d7f26f757b8dd149da5e11967f168ee175a1d655d.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a']  smiles=CSc1ccc(C)cc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['34']  smiles=Cc1ccc([SH](C)O)cc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['1a (Y= 0 X-H)', 'Ib (Ye $ Xleh)', "Ic (Ye0 X'eCi)"]  smiles=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Id (XI= CL,X= Cl)', 'Ie (XlCl,Xe !)', "10 (X' = Br, X?= Br)"]  smiles=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl]  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '1f', '1a', '1d', '1e', '1b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '1f', '1a', '1d', '1e', '1b']
+  [Tier 3] '3': bbox=2 atoms=10 smiles=Cc1ccc([SH](C)O)cc1 wildcard=False
+  [Tier 3] '1a': bbox=4 atoms=15 smiles=*C1=C2C=CC=[N]3C2=C(C=C1)[O][Pt]3([*])[Cl] wildcard=True
+  [Tier 3] '1b': bbox=4 atoms=15 smiles=*C1=C2C=CC=[N]3C2=C(C=C1)[S][Pt]3([*])[Cl] wildcard=True
+  [Tier 3] '1d': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Cl)C=C2Cl)C=CC=[N]31 wildcard=True
+  [Tier 3] '1e': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Cl)C=C2I)C=CC=[N]31 wildcard=True
+  [Tier 3] '1f': bbox=6 atoms=16 smiles=[*][Pt]1([Cl])[O]C2=C3C(=C(Br)C=C2Br)C=CC=[N]31 wildcard=True
+  [Tier 3 BBox Match] resolved=['3']  remaining=['1a', '1b', '1d', '1e', '1f']
+    [Tier 4 LLM] '1a' → r_value='Y = O, X1 = H'
+    [Tier 4 LLM] '1b' → r_value='Y = S, X1 = H'
+    [Tier 4 LLM] '1d' → r_value='X1 = Cl, X2 = Cl'
+    [Tier 4 LLM] '1e' → r_value='X1 = Cl, X2 = I'
+    [Tier 4 LLM] '1f' → r_value='X1 = Br, X2 = Br'
+    [Tier 4] R-group candidates: ['1a', '1b', '1d', '1e', '1f']
+    [Tier 4 graph] '1a' r=Y = O, X1 = H fallback (smi=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1)
+    [Tier 4 graph] '1b' r=Y = S, X1 = H fallback (smi=*C1=C2C=CC=[N]3C2=C([*][Pt]3([*])[Cl])C=C1)
+    [Tier 4] '1a' 🔄 corrected: CS(=O)(C)[Pt]1(Cl)Oc2cccc3cccnc231
+    [Tier 4] '1b' 🔄 corrected: CS(=O)(C)[Pt]1(Cl)(S2=C3C=CC=NC3=CC=C2)N1
+    [Tier 4 graph] '1d' r=X1 = Cl, X2 = Cl fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4 graph] '1e' r=X1 = Cl, X2 = I fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4 graph] '1f' r=X1 = Br, X2 = Br fallback (smi=*C1=CC(*)=C2C=CC=[N]3C2=C1[O][Pt]3([*])[Cl])
+    [Tier 4] '1d' 🔄 corrected: CS(C)(=O)[Pt]1(Cl)Oc2c(Cl)cc(Cl)c3cccn1c23
+    [Tier 4] '1e' 🔄 corrected: ClC1=CC(I)=C(O[Pt]2(Cl)(S(=O)(C)C)[N]3=CC=CC2=C13)
+    [Tier 4] '1f' ✅ match: BrC1=CC(Br)=C2C=CC=[N]3C2=C1[O][Pt]3(S(=O)(C)C)[Cl
+  [Tier 4 R-group Sub] resolved=['1a', '1b', '1d', '1e', '1f']  remaining=[]

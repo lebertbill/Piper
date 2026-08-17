@@ -1,0 +1,122 @@
+Label Resolver Diagnostic Log — 2026-06-17 16:01:41
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Ir-1', 'Ir-2', 'Q-1', 'Q-2', '4CzIPN'] → image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 6' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Ir-1', 'Ir-2', 'Q-1', 'Q-2', '4CzIPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids/GPT_5_MINI/processed/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids_artifacts/image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'Ir-1' llm_name_to_smiles: score=13  CC(C)(C)C1=CC=NC(=C1)C2=CC(=CC=N2)C(C)(C)C.C1=CC=C(C(=C1)C2=CC=CC=N2)[
+  [Tier 0 NameMap] 'Ir-1' → best=llm_name_to_smiles (score=13) via name='Ir(ppy)2(dtbbpy)(PF6)'
+  [Tier 0 NameMap Organomet] 'Ir-2' llm_name_to_smiles: score=21  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+].FC1=C(C=C(F)C(=C1)C2
+  [Tier 0 NameMap] 'Ir-2' → best=llm_name_to_smiles (score=21) via name='Ir(dF(CF3)ppy)2(dtbbpy)(PF6)'
+  [Tier 0 NameMap] 'Q-1' → pubchem_lookup via name='quinuclidine'
+  [Tier 0 NameMap] 'Q-2' → pubchem_lookup via name='quinuclidin-3-yl acetate'
+  [Tier 0 NameMap] '4CzIPN' → opsin_lookup via name='1,2,3,5-tetrakis(carbazole-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['Ir-1', 'Ir-2', 'Q-1', 'Q-2', '4CzIPN']  remaining=[]
+  [InlineResolver] Column 'Deviation from standard conditions' labels ['LiCl (4 equiv.)', '1a'] from image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['LiCl (4 equiv.)', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids/GPT_5_MINI/processed/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids_artifacts/image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='N,N-dimethylaniline'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['LiCl (4 equiv.)']
+  [OCSR] image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png: 7 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['a']  smiles=*N(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4aa']  smiles=*C1=CC=C(C(*)CCN(*)*)C=C1.*C1=CC=C(CCCN(*)*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['LiCl (4 equiv.)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['LiCl (4 equiv.)']
+  [Tier 3] 'LiCl (4 equiv.)': bbox=4 atoms=1 smiles=* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['LiCl (4 equiv.)']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['LiCl (4 equiv.)']
+    [Tier 5 PubChem] 'LiCl (4 equiv.)' → hit via 'LiCl': [Li+].[Cl-]
+  [Tier 5 PubChem] resolved=['LiCl (4 equiv.)']  remaining=[]
+    [NameResolve Organomet] pubchem_lookup: score=1  C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C
+    [NameResolve Organomet] llm_name_to_smiles: score=37  C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C
+    [NameResolve Organomet] pubchem_lookup: score=1  C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=C
+    [NameResolve Organomet] llm_name_to_smiles: score=49  c1ccc(nc1)-c2cccc[n+]2[Ru-2]34([n+]5ccccc5-c6cccc[n+]63)([n+]7ccccc7-c
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4aa', '3aa', '2a', '1a']
+  Image    : extracted_data/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='methyl 4-vinylbenzoate'
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='N,N-dimethylaniline'
+  [Tier 0 NameMap] resolved=['2a', '1a']  remaining=['4aa', '3aa']
+  [OCSR] visualheist_page_02_table_2.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*N(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ir-1 R-R-H', "Ir-2 R'-CF3, R2-F"]  smiles=*C1=CC2=C3C=C(*)C=C[N]3[Ir]3456([C]7=C(C([2*])=CC(  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Ic 3']  smiles=C1=CC=[C]([Ir]234([N]5=CC=CC=C5)([NH]C=CC=CC5(=[N]  wildcard=False
+  [OCSR]   pair [8,9]: texts=['Ru-1']  smiles=[I-].c1ccc(-c2cccc[n]2->[Ru]23(<-[n]4ccccc4-c4cccc  wildcard=False
+  [OCSR]   pair [10,11]: texts=['3 aa']  smiles=*C1=CC=C(C(*)CCN(*)*)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['0-1 R-H', '0- 2 R-OAc']  smiles=*C1=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C(N2C3=C(C=  wildcard=True
+  [OCSR]   pair [14,15]: texts=['4aa']  smiles=*C1=CC=C(CCCN(*)*)C=C1  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4aa', '3aa']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4aa', '3aa']
+  [Tier 3] '3aa': bbox=10 atoms=14 smiles=*C1=CC=C(C(*)CCN(*)*)C=C1 wildcard=True
+  [Tier 3] '4aa': bbox=14 atoms=13 smiles=*C1=CC=C(CCCN(*)*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3aa', '4aa']
+    [Tier 4 LLM] '4aa' → r_value='4aa'
+    [Tier 4] R-group candidates: ['4aa']
+    [Tier 4 graph] '4aa' r=4aa fallback (smi=*C1=CC=C(CCCN(*)*)C=C1)
+    [Tier 4] '4aa' ✅ match: COC(=O)C1=CC=C(CCCN(C)C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['4aa']  remaining=['3aa']
+    [Tier 5 PubChem] '3aa' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3aa']
+    [Tier 6→opsin_lookup] '3aa' name='methyl 4-(4-(2-(dimethylamino)-2-phenylethyl)phenyl)butanoate' → CN(C(CC1=CC=C(C=C1)CCCC(=O)OC)C1=CC=CC=C1)C
+  [Tier 6 LLM Vision] resolved=['3aa']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '20', '4', '7', '2', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids/GPT_5_MINI/processed/Photoredox-catalyzed_dicarbofunctionalization_of_styrenes_with_amines_and_COsub2sub_a_convenient_access_to_-amino_acids_artifacts/image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '20', '4', '7', '2', '1']
+  [OCSR] image_000005_c7fa548dad0cd0096b8663aa0c92f5daa328b3de94b267c5c5a2a28cb4986ddb.png: 7 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['a']  smiles=*N(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['4aa']  smiles=*C1=CC=C(C(*)CCN(*)*)C=C1.*C1=CC=C(CCCN(*)*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '20', '4', '7', '2', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '20', '4', '7', '2', '1']
+  [Tier 3] '1': bbox=0 atoms=4 smiles=*N(*)* wildcard=True
+  [Tier 3] '2': bbox=2 atoms=9 smiles=*C1=CC=C(C=C)C=C1 wildcard=True
+  [Tier 3] '20': bbox=4 atoms=1 smiles=* wildcard=True
+  [Tier 3] '3': bbox=5 atoms=27 smiles=*C(CCN(*)*)C1=*C=C(C)C=C1.*N(*)CCCC1=C*=C(C)C=C1 wildcard=True
+  [Tier 3] '4': bbox=5 atoms=27 smiles=*C(CCN(*)*)C1=*C=C(C)C=C1.*N(*)CCCC1=C*=C(C)C=C1 wildcard=True
+  [Tier 3] '7': bbox_idx=None out of range (n=7)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', '20', '3', '4', '7']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2', '20', '3', '4', '7']
+    [Tier 5 PubChem] '1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '20' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '7' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2', '20', '3', '4', '7']
+    [Tier 6→pubchem_lookup] '1' name='N,N-dimethylaniline' → CN(C)C1=CC=CC=C1
+    [Tier 6→pubchem_lookup] '2' name='methyl 4-vinylbenzoate' → COC(=O)C1=CC=C(C=C1)C=C
+    [Tier 6→pubchem_lookup] '20' name='CO2' → C(=O)=O
+    [Tier 6→opsin_lookup] '3' name='methyl 4-(dimethylamino)-2-(4-(methoxycarbonyl)phenyl)butanoate' → CN(CCC(C(=O)OC)C1=CC=C(C=C1)C(=O)OC)C
+    [Tier 6→pubchem_lookup] '4' name='methyl 4-(2-(dimethylamino)ethyl)benzoate' → CN(C)CCC1=CC=C(C=C1)C(=O)OC
+    [Tier 6→llm_name_to_smiles] '7' name='PF&amp;' → F[P-](F)(F)(F)(F)F
+  [Tier 6 LLM Vision] resolved=['1', '2', '20', '3', '4', '7']

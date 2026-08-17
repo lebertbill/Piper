@@ -1,0 +1,64 @@
+Label Resolver Diagnostic Log — 2026-06-16 16:30:58
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['10', '11', '12'] → image_000008_64ebfa705bae30b38ab69da5eb9542c0a75882e86f30c8bfbce4225c91368148.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 6' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['10', '11', '12']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives/GPT_5_MINI/processed/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives_artifacts/image_000008_64ebfa705bae30b38ab69da5eb9542c0a75882e86f30c8bfbce4225c91368148.png
+  Exists   : True
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='SIPr'
+  [Tier 0 NameMap] '11' → pubchem_lookup via name='terpyridine'
+  [Tier 0 NameMap] '12' → llm_name_to_smiles via name='Benz-ICy·HCl'
+  [Tier 0 NameMap] resolved=['10', '11', '12']  remaining=[]
+  [InlineResolver] Column 'Ligand (mol%)' labels ['8'] from image_000008_64ebfa705bae30b38ab69da5eb9542c0a75882e86f30c8bfbce4225c91368148.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['8']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives/GPT_5_MINI/processed/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives_artifacts/image_000008_64ebfa705bae30b38ab69da5eb9542c0a75882e86f30c8bfbce4225c91368148.png
+  Exists   : True
+  [Tier 0 NameMap] '8' → pubchem_lookup via name='cyclohexylamine'
+  [Tier 0 NameMap] resolved=['8']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['7']
+  Image    : extracted_data/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['7']
+  [OCSR] visualheist_page_02_table_1.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [1,2]: texts=['7']  smiles=*N(*)C(=O)C1CCCCC1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['8']  smiles=NC1CCCCC1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['9']  smiles=O=C(NC1CCCCC1)C1CCCCC1  wildcard=False
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['7']
+  [Tier 3] '7': bbox=1 atoms=11 smiles=*N(*)C(=O)C1CCCCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['7']
+    [Tier 4 LLM] '7' → r_value='N-substituents = Bn, Boc'
+    [Tier 4] R-group candidates: ['7']
+    [Tier 4 graph] '7' r=N-substituents = Bn, Boc fallback (smi=*N(*)C(=O)C1CCCCC1)
+    [Tier 4] '7' ✅ match: CC(C)(C)OC(=O)N(Cc1ccccc1)C(=O)C1CCCCC1
+  [Tier 4 R-group Sub] resolved=['7']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Ligand Gallery). Please locate the specific section for Table 1 Ligand Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['11', '10', '12']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives/GPT_5_MINI/processed/Nickel-catalyzed_transamidation_of_aliphatic_amide_derivatives_artifacts/image_000006_74012be7fca2fbe04c8ad96ddce8534fff93761ca4708406c05311306abff0f5.png
+  Exists   : True
+  [Tier 0 NameMap] '11' → pubchem_lookup via name='terpyridine'
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='SIPr'
+  [Tier 0 NameMap] '12' → llm_name_to_smiles via name='Benz-ICy·HCl'
+  [Tier 0 NameMap] resolved=['11', '10', '12']  remaining=[]

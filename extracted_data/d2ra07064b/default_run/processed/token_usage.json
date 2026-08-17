@@ -1,0 +1,594 @@
+{
+  "total_calls": 51,
+  "total_input_tokens": 145809,
+  "total_output_tokens": 51857,
+  "total_input_cost_usd": 0.058951,
+  "total_output_cost_usd": 0.113574,
+  "total_cost_usd": 0.17252,
+  "per_agent": {
+    "ReactionTableDetectorAgent": {
+      "calls": 26,
+      "input_tokens": 20947,
+      "output_tokens": 11464,
+      "cost_usd": 0.028162
+    },
+    "ClassifierAgent": {
+      "calls": 1,
+      "input_tokens": 4494,
+      "output_tokens": 299,
+      "cost_usd": 0.001721
+    },
+    "AdvancedStructureAgent": {
+      "calls": 2,
+      "input_tokens": 34538,
+      "output_tokens": 4843,
+      "cost_usd": 0.031798
+    },
+    "StructureParserAgent": {
+      "calls": 1,
+      "input_tokens": 11056,
+      "output_tokens": 1999,
+      "cost_usd": 0.011525
+    },
+    "TableTextExtractorAgent": {
+      "calls": 2,
+      "input_tokens": 19846,
+      "output_tokens": 1019,
+      "cost_usd": 0.012979
+    },
+    "LabelResolverAgent_Tier3": {
+      "calls": 5,
+      "input_tokens": 15843,
+      "output_tokens": 1397,
+      "cost_usd": 0.012111
+    },
+    "SMILESRepairAgent": {
+      "calls": 5,
+      "input_tokens": 3709,
+      "output_tokens": 9701,
+      "cost_usd": 0.020329
+    },
+    "PiperIntelligence_Plan": {
+      "calls": 2,
+      "input_tokens": 8583,
+      "output_tokens": 1057,
+      "cost_usd": 0.00426
+    },
+    "PiperIntelligence_Resolution": {
+      "calls": 2,
+      "input_tokens": 15697,
+      "output_tokens": 18290,
+      "cost_usd": 0.040504
+    },
+    "FixedConditionExtractorAgent": {
+      "calls": 1,
+      "input_tokens": 2374,
+      "output_tokens": 1186,
+      "cost_usd": 0.002965
+    },
+    "LabelResolverAgent": {
+      "calls": 2,
+      "input_tokens": 6937,
+      "output_tokens": 206,
+      "cost_usd": 0.004086
+    },
+    "BaseAgent": {
+      "calls": 2,
+      "input_tokens": 1785,
+      "output_tokens": 396,
+      "cost_usd": 0.00208
+    }
+  },
+  "calls": [
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 445,
+      "output_tokens": 230,
+      "input_cost_usd": 0.000111,
+      "output_cost_usd": 0.00046,
+      "total_cost_usd": 0.000571,
+      "timestamp": 1786802228.059005
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 945,
+      "output_tokens": 314,
+      "input_cost_usd": 0.000236,
+      "output_cost_usd": 0.000628,
+      "total_cost_usd": 0.000864,
+      "timestamp": 1786802237.902853
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1369,
+      "output_tokens": 455,
+      "input_cost_usd": 0.000342,
+      "output_cost_usd": 0.00091,
+      "total_cost_usd": 0.001252,
+      "timestamp": 1786802253.378227
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 600,
+      "output_tokens": 377,
+      "input_cost_usd": 0.00015,
+      "output_cost_usd": 0.000754,
+      "total_cost_usd": 0.000904,
+      "timestamp": 1786802257.916149
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 473,
+      "output_tokens": 540,
+      "input_cost_usd": 0.000118,
+      "output_cost_usd": 0.00108,
+      "total_cost_usd": 0.001198,
+      "timestamp": 1786802272.783731
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 463,
+      "output_tokens": 887,
+      "input_cost_usd": 0.000116,
+      "output_cost_usd": 0.001774,
+      "total_cost_usd": 0.00189,
+      "timestamp": 1786802287.930505
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 663,
+      "output_tokens": 468,
+      "input_cost_usd": 0.000166,
+      "output_cost_usd": 0.000936,
+      "total_cost_usd": 0.001102,
+      "timestamp": 1786802298.3377228
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 602,
+      "output_tokens": 298,
+      "input_cost_usd": 0.00015,
+      "output_cost_usd": 0.000596,
+      "total_cost_usd": 0.000746,
+      "timestamp": 1786802303.9814389
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1009,
+      "output_tokens": 525,
+      "input_cost_usd": 0.000252,
+      "output_cost_usd": 0.00105,
+      "total_cost_usd": 0.001302,
+      "timestamp": 1786802317.16064
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 703,
+      "output_tokens": 418,
+      "input_cost_usd": 0.000176,
+      "output_cost_usd": 0.000836,
+      "total_cost_usd": 0.001012,
+      "timestamp": 1786802331.891544
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1041,
+      "output_tokens": 360,
+      "input_cost_usd": 0.00026,
+      "output_cost_usd": 0.00072,
+      "total_cost_usd": 0.00098,
+      "timestamp": 1786802340.114638
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1293,
+      "output_tokens": 389,
+      "input_cost_usd": 0.000323,
+      "output_cost_usd": 0.000778,
+      "total_cost_usd": 0.001101,
+      "timestamp": 1786802348.097013
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 644,
+      "output_tokens": 360,
+      "input_cost_usd": 0.000161,
+      "output_cost_usd": 0.00072,
+      "total_cost_usd": 0.000881,
+      "timestamp": 1786802355.055189
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 492,
+      "output_tokens": 623,
+      "input_cost_usd": 0.000123,
+      "output_cost_usd": 0.001246,
+      "total_cost_usd": 0.001369,
+      "timestamp": 1786802366.6727161
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 489,
+      "output_tokens": 298,
+      "input_cost_usd": 0.000122,
+      "output_cost_usd": 0.000596,
+      "total_cost_usd": 0.000718,
+      "timestamp": 1786802372.5682821
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 647,
+      "output_tokens": 436,
+      "input_cost_usd": 0.000162,
+      "output_cost_usd": 0.000872,
+      "total_cost_usd": 0.001034,
+      "timestamp": 1786802380.863233
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1302,
+      "output_tokens": 416,
+      "input_cost_usd": 0.000325,
+      "output_cost_usd": 0.000832,
+      "total_cost_usd": 0.001157,
+      "timestamp": 1786802389.0066922
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 520,
+      "output_tokens": 562,
+      "input_cost_usd": 0.00013,
+      "output_cost_usd": 0.001124,
+      "total_cost_usd": 0.001254,
+      "timestamp": 1786802399.996869
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1397,
+      "output_tokens": 456,
+      "input_cost_usd": 0.000349,
+      "output_cost_usd": 0.000912,
+      "total_cost_usd": 0.001261,
+      "timestamp": 1786802411.365966
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 710,
+      "output_tokens": 535,
+      "input_cost_usd": 0.000178,
+      "output_cost_usd": 0.00107,
+      "total_cost_usd": 0.001247,
+      "timestamp": 1786802421.3583941
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1052,
+      "output_tokens": 439,
+      "input_cost_usd": 0.000263,
+      "output_cost_usd": 0.000878,
+      "total_cost_usd": 0.001141,
+      "timestamp": 1786802430.026438
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 967,
+      "output_tokens": 389,
+      "input_cost_usd": 0.000242,
+      "output_cost_usd": 0.000778,
+      "total_cost_usd": 0.00102,
+      "timestamp": 1786802440.492179
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 1048,
+      "output_tokens": 622,
+      "input_cost_usd": 0.000262,
+      "output_cost_usd": 0.001244,
+      "total_cost_usd": 0.001506,
+      "timestamp": 1786802454.79818
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 746,
+      "output_tokens": 412,
+      "input_cost_usd": 0.000187,
+      "output_cost_usd": 0.000824,
+      "total_cost_usd": 0.00101,
+      "timestamp": 1786802463.655256
+    },
+    {
+      "agent": "ClassifierAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 4494,
+      "output_tokens": 299,
+      "input_cost_usd": 0.001123,
+      "output_cost_usd": 0.000598,
+      "total_cost_usd": 0.001721,
+      "timestamp": 1786802471.7128
+    },
+    {
+      "agent": "AdvancedStructureAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 20274,
+      "output_tokens": 4474,
+      "input_cost_usd": 0.010137,
+      "output_cost_usd": 0.013422,
+      "total_cost_usd": 0.023559,
+      "timestamp": 1786802514.200295
+    },
+    {
+      "agent": "AdvancedStructureAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 14264,
+      "output_tokens": 369,
+      "input_cost_usd": 0.007132,
+      "output_cost_usd": 0.001107,
+      "total_cost_usd": 0.008239,
+      "timestamp": 1786802519.7200158
+    },
+    {
+      "agent": "StructureParserAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 11056,
+      "output_tokens": 1999,
+      "input_cost_usd": 0.005528,
+      "output_cost_usd": 0.005997,
+      "total_cost_usd": 0.011525,
+      "timestamp": 1786802535.545693
+    },
+    {
+      "agent": "TableTextExtractorAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 9923,
+      "output_tokens": 486,
+      "input_cost_usd": 0.004961,
+      "output_cost_usd": 0.001458,
+      "total_cost_usd": 0.006419,
+      "timestamp": 1786802540.748304
+    },
+    {
+      "agent": "LabelResolverAgent_Tier3",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3054,
+      "output_tokens": 282,
+      "input_cost_usd": 0.001527,
+      "output_cost_usd": 0.000846,
+      "total_cost_usd": 0.002373,
+      "timestamp": 1786802593.836321
+    },
+    {
+      "agent": "SMILESRepairAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 731,
+      "output_tokens": 1721,
+      "input_cost_usd": 0.000183,
+      "output_cost_usd": 0.003442,
+      "total_cost_usd": 0.003625,
+      "timestamp": 1786802612.3205152
+    },
+    {
+      "agent": "SMILESRepairAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 754,
+      "output_tokens": 943,
+      "input_cost_usd": 0.000189,
+      "output_cost_usd": 0.001886,
+      "total_cost_usd": 0.002074,
+      "timestamp": 1786802623.391356
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 662,
+      "output_tokens": 366,
+      "input_cost_usd": 0.000166,
+      "output_cost_usd": 0.000732,
+      "total_cost_usd": 0.000898,
+      "timestamp": 1786802632.683496
+    },
+    {
+      "agent": "PiperIntelligence_Plan",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 4296,
+      "output_tokens": 509,
+      "input_cost_usd": 0.001074,
+      "output_cost_usd": 0.001018,
+      "total_cost_usd": 0.002092,
+      "timestamp": 1786802641.980185
+    },
+    {
+      "agent": "PiperIntelligence_Resolution",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 7812,
+      "output_tokens": 8781,
+      "input_cost_usd": 0.001953,
+      "output_cost_usd": 0.017562,
+      "total_cost_usd": 0.019515,
+      "timestamp": 1786802780.2298229
+    },
+    {
+      "agent": "FixedConditionExtractorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 2374,
+      "output_tokens": 1186,
+      "input_cost_usd": 0.000593,
+      "output_cost_usd": 0.002372,
+      "total_cost_usd": 0.002965,
+      "timestamp": 1786802798.3451352
+    },
+    {
+      "agent": "LabelResolverAgent_Tier3",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3057,
+      "output_tokens": 65,
+      "input_cost_usd": 0.001528,
+      "output_cost_usd": 0.000195,
+      "total_cost_usd": 0.001723,
+      "timestamp": 1786802823.718252
+    },
+    {
+      "agent": "LabelResolverAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3474,
+      "output_tokens": 96,
+      "input_cost_usd": 0.001737,
+      "output_cost_usd": 0.000288,
+      "total_cost_usd": 0.002025,
+      "timestamp": 1786802828.825063
+    },
+    {
+      "agent": "BaseAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 864,
+      "output_tokens": 145,
+      "input_cost_usd": 0.000432,
+      "output_cost_usd": 0.000435,
+      "total_cost_usd": 0.000867,
+      "timestamp": 1786802834.2859972
+    },
+    {
+      "agent": "LabelResolverAgent_Tier3",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3341,
+      "output_tokens": 386,
+      "input_cost_usd": 0.00167,
+      "output_cost_usd": 0.001158,
+      "total_cost_usd": 0.002828,
+      "timestamp": 1786802875.86258
+    },
+    {
+      "agent": "SMILESRepairAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 731,
+      "output_tokens": 2261,
+      "input_cost_usd": 0.000183,
+      "output_cost_usd": 0.004522,
+      "total_cost_usd": 0.004705,
+      "timestamp": 1786802904.266358
+    },
+    {
+      "agent": "SMILESRepairAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 762,
+      "output_tokens": 2477,
+      "input_cost_usd": 0.00019,
+      "output_cost_usd": 0.004954,
+      "total_cost_usd": 0.005144,
+      "timestamp": 1786802929.7970262
+    },
+    {
+      "agent": "TableTextExtractorAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 9923,
+      "output_tokens": 533,
+      "input_cost_usd": 0.004961,
+      "output_cost_usd": 0.001599,
+      "total_cost_usd": 0.00656,
+      "timestamp": 1786802936.793928
+    },
+    {
+      "agent": "ReactionTableDetectorAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 665,
+      "output_tokens": 289,
+      "input_cost_usd": 0.000166,
+      "output_cost_usd": 0.000578,
+      "total_cost_usd": 0.000744,
+      "timestamp": 1786802942.8584929
+    },
+    {
+      "agent": "PiperIntelligence_Plan",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 4287,
+      "output_tokens": 548,
+      "input_cost_usd": 0.001072,
+      "output_cost_usd": 0.001096,
+      "total_cost_usd": 0.002168,
+      "timestamp": 1786802956.127576
+    },
+    {
+      "agent": "PiperIntelligence_Resolution",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 7885,
+      "output_tokens": 9509,
+      "input_cost_usd": 0.001971,
+      "output_cost_usd": 0.019018,
+      "total_cost_usd": 0.020989,
+      "timestamp": 1786803027.830585
+    },
+    {
+      "agent": "BaseAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 921,
+      "output_tokens": 251,
+      "input_cost_usd": 0.000461,
+      "output_cost_usd": 0.000753,
+      "total_cost_usd": 0.001213,
+      "timestamp": 1786803032.246523
+    },
+    {
+      "agent": "LabelResolverAgent_Tier3",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3342,
+      "output_tokens": 387,
+      "input_cost_usd": 0.001671,
+      "output_cost_usd": 0.001161,
+      "total_cost_usd": 0.002832,
+      "timestamp": 1786803088.186944
+    },
+    {
+      "agent": "LabelResolverAgent_Tier3",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3049,
+      "output_tokens": 277,
+      "input_cost_usd": 0.001525,
+      "output_cost_usd": 0.000831,
+      "total_cost_usd": 0.002355,
+      "timestamp": 1786803140.580106
+    },
+    {
+      "agent": "SMILESRepairAgent",
+      "model": "openai/gpt-5-mini",
+      "input_tokens": 731,
+      "output_tokens": 2299,
+      "input_cost_usd": 0.000183,
+      "output_cost_usd": 0.004598,
+      "total_cost_usd": 0.004781,
+      "timestamp": 1786803164.352254
+    },
+    {
+      "agent": "LabelResolverAgent",
+      "model": "google/gemini-3-flash-preview",
+      "input_tokens": 3463,
+      "output_tokens": 110,
+      "input_cost_usd": 0.001731,
+      "output_cost_usd": 0.00033,
+      "total_cost_usd": 0.002061,
+      "timestamp": 1786803167.810244
+    }
+  ]
+}

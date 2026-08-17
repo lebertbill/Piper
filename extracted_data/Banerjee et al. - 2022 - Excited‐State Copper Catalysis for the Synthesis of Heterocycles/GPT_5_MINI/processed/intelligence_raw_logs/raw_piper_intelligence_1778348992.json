@@ -1,0 +1,890 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir(ppy)3",
+          "smiles": "[Ir](c1ccccc1)(c1ccccc1)(c1ccccc1)",
+          "quantity": 1.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "None"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "trace"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard.",
+        "Catalyst loading: 1.00 mol% (footnote c)."
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ru(bpy)3(PF6)2",
+          "smiles": "[Ru](n1ccccc1)(n1ccccc1)(n1ccccc1)",
+          "quantity": 1.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "None"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 6,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard.",
+        "Catalyst loading: 1.00 mol% (footnote c)."
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "CuBr",
+          "smiles": "[Cu]Br",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 28,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "CuI",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 25,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)Cl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 38,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)Br",
+          "smiles": "[Cu]Br",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 46,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 70,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "Xantphos",
+          "smiles": "P(c1ccccc1)(c1ccccc1)O"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 37,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "DPPF",
+          "smiles": "[Fe](c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 6,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "DPPE",
+          "smiles": "P(c1ccccc1)(c1ccccc1)CCP(c1ccccc1)(c1ccccc1)"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 6,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard."
+      ]
+    },
+    {
+      "reaction_id": "11",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "< 2"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard.",
+        "Reaction performed without light (footnote d) — light condition removed for this entry."
+      ]
+    },
+    {
+      "reaction_id": "12",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "C=CCCCn1ccc2ccccc21",
+          "quantity": 1.0,
+          "unit": "equiv",
+          "smiles_llm": "C=CCCCn1ccc2ccccc21",
+          "smiles_ocsr": "C=CCCCn1ccc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(Cl)c1ccc(C(F)(F)F)cc1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "O=C(Cl)c1ccc(C(F)(F)F)cc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Cu(IPr)I",
+          "smiles": "[Cu]I",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "rac-BINAP",
+          "smiles": "P(c1ccccc1)(c1ccccc1)",
+          "quantity": 10.0,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "100 W blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 33,
+          "unit": "°C"
+        },
+        {
+          "role": "yield",
+          "text": "< 2"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21",
+          "smiles_llm": "O=C(c1ccc(C(F)(F)F)cc1)n1ccc2ccccc21"
+        }
+      ],
+      "additional_info": [
+        "Yield determined by 19F NMR using trifluoromethylbenzene as the internal standard.",
+        "Reaction performed under air atmosphere (footnote e)."
+      ]
+    }
+  ]
+}

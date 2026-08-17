@@ -1,0 +1,173 @@
+Label Resolver Diagnostic Log — 2026-06-16 16:06:59
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3', '4', '5', '6', '7', '8', 'X-ray of 3'] → image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '4', '5', '6', '7', '8', 'X-ray of 3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes/GPT_5_MINI/processed/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes_artifacts/image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png
+  Exists   : True
+  [Tier 0 NameMap] '3' → llm_name_to_smiles via name='B(OH)2(CsCO3)
+
+with PhB(OH)2 to a ff ord 2a (Scheme 2, eqn'
+  [Tier 0 NameMap] '4' → name 'ation, 7 while the desired 2a was not observed (Scheme 2, eqn' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '5' → name 'ed byproduct (Scheme 2, eqn' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='nic acid under the reaction conditions shown in Scheme 2, eqn'
+  [Tier 0 NameMap] resolved=['3', '6']  remaining=['4', '5', '7', '8', 'X-ray of 3']
+  [OCSR] image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=CC=C1C(*)=C1(*)=C(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C#CC(*)C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['6']  smiles=*C#CCC1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3, 629']  smiles=[*][Ni]1[o]c(C)cc(C)[o]1  wildcard=True
+  [OCSR]   pair [8,9]: texts=[]  smiles=*C1C2=CC3=C(C=CC=C3)N=C2C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [10,11]: texts=['8 , 28%']  smiles=*NC1=C(*)C(*)=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [12,13]: texts=['of 3', 'X-ray']  smiles=CCCC1C2C13C21C32C13C21C32C13C21C32C13C21C32C13C21C  wildcard=False
+  [OCSR]   pair [14,15]: texts=['(5)']  smiles=*C1=CC2=CC=CC=C2C(N)=C1*  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '5', '7', '8', 'X-ray of 3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '5', '7', '8', 'X-ray of 3']
+  [Tier 3] '4': bbox=0 atoms=14 smiles=*C1=CC=CC=C1C(*)=C1(*)=C(C)=C1 wildcard=True
+  [Tier 3] '5': bbox=8 atoms=18 smiles=*C1C2=CC3=C(C=CC=C3)N=C2C2=C1C=CC=C2 wildcard=True
+  [Tier 3] '7': bbox=14 atoms=13 smiles=*C1=CC2=CC=CC=C2C(N)=C1* wildcard=True
+  [Tier 3] '8': bbox=10 atoms=15 smiles=*NC1=C(*)C(*)=C(*)C2=CC=CC=C21 wildcard=True
+  [Tier 3] 'X-ray of 3': symbol/coord count mismatch (179 vs 159), using original
+  [Tier 3] 'X-ray of 3': bbox=12 atoms=159 smiles=CCCC1C2C13C21C32C13C21C32C13C21C32C13C21C32C13C21C32C13C214C wildcard=False
+  [Tier 3 BBox Match] resolved=['X-ray of 3']  remaining=['4', '5', '7', '8']
+    [Tier 4 LLM] '4' → r_value='1-(2-cyanophenyl)-1-(tert-butyldimethylsilyloxy)-3-phenylpropa-1,2-diene'
+    [Tier 4 LLM] '5' → r_value='9-(tert-butyldimethylsilyloxy)-9H-indeno[2,1-b]quinoline'
+    [Tier 4 LLM] '7' → r_value='2,3-diphenylnaphthalen-1-amine'
+    [Tier 4 LLM] '8' → r_value='4-(tert-butyldimethylsilyloxy)-N,2,3-triphenylnaphthalen-1-amine'
+    [Tier 4] R-group candidates: ['4', '5', '7', '8']
+    [Tier 4 graph] '4' r=1-(2-cyanophenyl)-1-(tert-butyldimethylsilyloxy)-3-phenylpropa-1,2-diene fallback (smi=*C1=CC=CC=C1C(*)=C1(*)=C(*)=C1)
+    [Tier 4] '4' ✅ match: CC(C)(C)[Si](C)(C)OC(=C=Cc1ccccc1)c1ccccc1C#N
+    [Tier 4 graph] '5' r=9-(tert-butyldimethylsilyloxy)-9H-indeno[2,1-b]quinoline fallback (smi=*C1C2=CC3=C(C=CC=C3)N=C2C2=C1C=CC=C2)
+    [Tier 4] '5' ✅ match: CC(C)(C)[Si](C)(C)OC1C2=CC3=C(C=CC=C3)N=C2C2=C1C=C
+    [Tier 4 graph] '7' r=2,3-diphenylnaphthalen-1-amine fallback (smi=*C1=CC2=CC=CC=C2C(N)=C1*)
+    [Tier 4] '7' ✅ match: NC1=C(C2=CC=CC=C2)C(C3=CC=CC=C3)=CC4=CC=CC=C14
+    [Tier 4 graph] '8' r=4-(tert-butyldimethylsilyloxy)-N,2,3-triphenylnaphthalen-1-amine fallback (smi=*NC1=C(*)C(*)=C(*)C2=CC=CC=C21)
+    [Tier 4] '8' ✅ match: CC(C)(C)[Si](C)(C)OC1=C(C2=CC=CC=C2)C(C2=CC=CC=C2)
+  [Tier 4 R-group Sub] resolved=['4', '5', '7', '8']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b'] from image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes/GPT_5_MINI/processed/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes_artifacts/image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b']
+  [OCSR] image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=CC=C1C(*)=C1(*)=C(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C#CC(*)C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['6']  smiles=*C#CCC1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3, 629']  smiles=[*][Ni]1[o]c(C)cc(C)[o]1  wildcard=True
+  [OCSR]   pair [8,9]: texts=[]  smiles=*C1C2=CC3=C(C=CC=C3)N=C2C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [10,11]: texts=['8 , 28%']  smiles=*NC1=C(*)C(*)=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [12,13]: texts=['of 3', 'X-ray']  smiles=CCCC1C2C13C21C32C13C21C32C13C21C32C13C21C32C13C21C  wildcard=False
+  [OCSR]   pair [14,15]: texts=['(5)']  smiles=*C1=CC2=CC=CC=C2C(N)=C1*  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b']
+  [Tier 3] 'P( p -CF 3 C 6 H 4 ) 3': bbox_idx=None out of range (n=16)
+  [Tier 3] 'PPh 3': bbox_idx=None out of range (n=16)
+  [Tier 3] 'P( p -MeC 6 H 4 ) 3': bbox_idx=None out of range (n=16)
+  [Tier 3] 'PPh 2 Me': bbox_idx=None out of range (n=16)
+  [Tier 3] 'P( p -CF 3 C 6 H 4 ) 3 b': bbox_idx=None out of range (n=16)
+  [Tier 3] 'PCy 3': bbox_idx=None out of range (n=16)
+  [Tier 3] 'PPh 3 b': bbox_idx=None out of range (n=16)
+  [Tier 3 BBox Match] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PCy 3', 'PPh 3 b']
+    [Tier 4 LLM] 'P( p -CF 3 C 6 H 4 ) 3' → r_value='L = P(p-CF3C6H4)3'
+    [Tier 4 LLM] 'PPh 3' → r_value='L = PPh3'
+    [Tier 4 LLM] 'P( p -MeC 6 H 4 ) 3' → r_value='L = P(p-MeC6H4)3'
+    [Tier 4 LLM] 'PPh 2 Me' → r_value='L = PPh2Me'
+    [Tier 4 LLM] 'PCy 3' → r_value='L = PCy3'
+    [Tier 4] R-group candidates: ['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'PCy 3']
+    [Tier 4 graph] 'P( p -CF 3 C 6 H 4 ) 3' r=L = P(p-CF3C6H4)3 fallback (smi=[*][Ni]1[o]c(C)cc(C)[o]1)
+    [Tier 4 graph] 'PPh 3' r=L = PPh3 fallback (smi=[*][Ni]1[o]c(C)cc(C)[o]1)
+    [Tier 4 graph] 'P( p -MeC 6 H 4 ) 3' r=L = P(p-MeC6H4)3 fallback (smi=[*][Ni]1[o]c(C)cc(C)[o]1)
+    [Tier 4 graph] 'PPh 2 Me' r=L = PPh2Me fallback (smi=[*][Ni]1[o]c(C)cc(C)[o]1)
+    [Tier 4 graph] 'PCy 3' r=L = PCy3 fallback (smi=[*][Ni]1[o]c(C)cc(C)[o]1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'PCy 3', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PPh 3 b']
+    [Tier 5 PubChem] 'P( p -CF 3 C 6 H 4 ) 3' → no hit (tried ['P( p -CF 3 C 6 H 4 ) 3'])
+    [Tier 5 PubChem] 'PPh 3' → no hit (tried ['PPh 3'])
+    [Tier 5 PubChem] 'P( p -MeC 6 H 4 ) 3' → no hit (tried ['P( p -MeC 6 H 4 ) 3'])
+    [Tier 5 PubChem] 'PPh 2 Me' → no hit (tried ['PPh 2 Me'])
+    [Tier 5 PubChem] 'PCy 3' → no hit (tried ['PCy 3'])
+    [Tier 5 PubChem] 'P( p -CF 3 C 6 H 4 ) 3 b' → no hit (tried ['P( p -CF 3 C 6 H 4 ) 3 b'])
+    [Tier 5 PubChem] 'PPh 3 b' → no hit (tried ['PPh 3 b'])
+  [Tier 5 PubChem] resolved=[]  remaining=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'PCy 3', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PPh 3 b']
+    [Tier 6→pubchem_lookup] 'P( p -CF 3 C 6 H 4 ) 3' name='tris(4-(trifluoromethyl)phenyl)phosphine' → C1=CC(=CC=C1C(F)(F)F)P(C2=CC=C(C=C2)C(F)(F)F)C3=CC
+    [Tier 6→pubchem_lookup] 'PPh 3' name='triphenylphosphine' → C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3
+    [Tier 6→pubchem_lookup] 'P( p -MeC 6 H 4 ) 3' name='tri-p-tolylphosphine' → CC1=CC=C(C=C1)P(C2=CC=C(C=C2)C)C3=CC=C(C=C3)C
+    [Tier 6→pubchem_lookup] 'PPh 2 Me' name='methyldiphenylphosphine' → CP(C1=CC=CC=C1)C2=CC=CC=C2
+    [Tier 6→pubchem_lookup] 'PCy 3' name='tricyclohexylphosphine' → C1CCC(CC1)P(C2CCCCC2)C3CCCCC3
+    [Tier 6→pubchem_lookup] 'P( p -CF 3 C 6 H 4 ) 3 b' name='tris(4-(trifluoromethyl)phenyl)phosphine' → C1=CC(=CC=C1C(F)(F)F)P(C2=CC=C(C=C2)C(F)(F)F)C3=CC
+    [Tier 6→pubchem_lookup] 'PPh 3 b' name='triphenylphosphine' → C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3
+  [Tier 6 LLM Vision] resolved=['P( p -CF 3 C 6 H 4 ) 3', 'PPh 3', 'P( p -MeC 6 H 4 ) 3', 'PPh 2 Me', 'PCy 3', 'P( p -CF 3 C 6 H 4 ) 3 b', 'PPh 3 b']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a', 'PhB(OH)2', '1a']
+  Image    : extracted_data/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2a', 'PhB(OH)2', '1a']
+  [OCSR] visualheist_page_02_table_1.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C#CC(*)C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*C1=C(N)C2=CC=CC=C2C(*)=C1C1=CC=CC=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', 'PhB(OH)2', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', 'PhB(OH)2', '1a']
+  [Tier 3] '2a': bbox=3 atoms=19 smiles=*C1=C(N)C2=CC=CC=C2C(*)=C1C1=CC=CC=C1 wildcard=True
+  [Tier 3] 'PhB(OH)2': bbox=2 atoms=7 smiles=*C1=CC=CC=C1 wildcard=True
+  [Tier 3] '1a': bbox=0 atoms=12 smiles=*C#CC(*)C1=CC=CC=C1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a', 'PhB(OH)2', '1a']
+    [Tier 4 LLM] '1a' → r_value='CN, OTBS, Ph'
+    [Tier 4 LLM] '2a' → r_value='NH2, OTBS, Ph'
+    [Tier 4] R-group candidates: ['1a', '2a']
+    [Tier 4 graph] '1a' r=CN, OTBS, Ph fallback (smi=*C#CC(*)C1=CC=CC=C1*)
+    [Tier 4] '1a' ✅ match: CC(C)(C)[Si](C)(C)OC(C#Cc1ccccc1)c1ccccc1C#N
+    [Tier 4 graph] '2a' r=NH2, OTBS, Ph fallback (smi=*C1=C(N)C2=CC=CC=C2C(*)=C1C1=CC=CC=C1)
+    [Tier 4] '2a' ✅ match: CC(C)(C)[Si](C)(C)OC1=C(C2=CC=CC=C2)C(C3=CC=CC=C3)
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=['PhB(OH)2']
+    [Tier 5 PubChem] 'PhB(OH)2' → hit via 'PhB(OH)2': B(C1=CC=CC=C1)(O)O
+  [Tier 5 PubChem] resolved=['PhB(OH)2']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 2
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '6', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes/GPT_5_MINI/processed/Nickel-catalyzed_cyclization_of_alkyne-nitriles_with_organoboronic_acids_involving_anti-carbometalation_of_alkynes_artifacts/image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → name 'substituent such as syn -B are quite rare 5 (Scheme 1, eqn' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='nic acid under the reaction conditions shown in Scheme 2, eqn'
+  [Tier 0 NameMap] '3' → llm_name_to_smiles via name='B(OH)2(CsCO3)
+
+with PhB(OH)2 to a ff ord 2a (Scheme 2, eqn'
+  [Tier 0 NameMap] resolved=['6', '3']  remaining=['2']
+  [OCSR] image_000008_89872f3e5f8db358723ccea659b0e41ae596768da856f626db94905bfd0977eb.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=CC=C1C(*)=C1(*)=C(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C#CC(*)C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['6']  smiles=*C#CCC1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3, 629']  smiles=[*][Ni]1[o]c(C)cc(C)[o]1  wildcard=True
+  [OCSR]   pair [8,9]: texts=[]  smiles=*C1C2=CC3=C(C=CC=C3)N=C2C2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [10,11]: texts=['8 , 28%']  smiles=*NC1=C(*)C(*)=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [12,13]: texts=['of 3', 'X-ray']  smiles=CCCC1C2C13C21C32C13C21C32C13C21C32C13C21C32C13C21C  wildcard=False
+  [OCSR]   pair [14,15]: texts=['(5)']  smiles=*C1=CC2=CC=CC=C2C(N)=C1*  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2']
+  [Tier 3] '2': bbox_idx=None out of range (n=16)
+  [Tier 3 BBox Match] resolved=[]  remaining=['2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['2']
+    [Tier 5 PubChem] '2' → name_map name: 'substituent such as syn -B are quite rare 5 (Scheme 1, eqn'
+    [Tier 5 PubChem] '2' → no hit (tried ['substituent such as syn -B are quite rare 5 (Scheme 1, eqn'])
+  [Tier 5 PubChem] resolved=[]  remaining=['2']
+    [Tier 6] '2' PubChem/OPSIN/LLM all failed for authoritative name 'substituent such as syn -B are quite rare 5 (Scheme 1, eqn' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['2']

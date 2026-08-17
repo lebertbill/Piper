@@ -1,0 +1,64 @@
+Label Resolver Diagnostic Log — 2026-08-15 17:17:04
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', '3DPAFIPN', 'L1', 'L2', 'L3'] → image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '3DPAFIPN', 'L1', 'L2', 'L3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01126/GPT_5_MINI/processed/catalysts-13-01126_artifacts/image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '3DPAFIPN' → pubchem_lookup via name='2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile'
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='2,2'-bibenzothiazole'
+  [Tier 0 NameMap] 'L2' → pubchem_lookup via name='2,2'-bipyridine'
+  [Tier 0 NameMap] 'L3' → pubchem_lookup via name='N,N,N',N'-tetramethylethylenediamine'
+  [Tier 0 NameMap] resolved=['4CzIPN', '3DPAFIPN', 'L1', 'L2', 'L3']  remaining=[]
+  [InlineResolver] Column 'Deviation from Stand. Cond.' labels ['2a'] from image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01126/GPT_5_MINI/processed/catalysts-13-01126_artifacts/image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='bromonitromethane'
+  [Tier 0 NameMap] resolved=['2a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a', '4a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01126/GPT_5_MINI/processed/catalysts-13-01126_artifacts/image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='4-phenylbut-1-ene'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='bromonitromethane'
+  [Tier 0 NameMap] resolved=['1a', '2a']  remaining=['3a', '4a']
+  [OCSR] image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png: 16 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*CCC=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4CzIPN']  smiles=*C1=C(N2C3=CC=CC=C3C3=CC=CC=C32)C(N2C3=C(C=CC=C3)C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3a']  smiles=*CCC(Br)CC*  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L1']  smiles=c1ccc2sc(-c3nc4ccccc4s3)nc2c1  wildcard=False
+  [OCSR]   pair [10,11]: texts=['L3']  smiles=*CC*  wildcard=True
+  [OCSR]   pair [12,13]: texts=['L2']  smiles=c1ccc(-c2ccccn2)nc1  wildcard=False
+  [OCSR]   pair [14,15]: texts=['4a']  smiles=*CCC(Br)CBr  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '4a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '4a']
+  [Tier 3] '3a': bbox=6 atoms=8 smiles=*CCC(Br)CC* wildcard=True
+  [Tier 3] '4a': bbox=14 atoms=7 smiles=*CCC(Br)CBr wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '4a']
+    [Tier 4 LLM] '3a' → r_value='* = Ph, * = NO2'
+    [Tier 4 LLM] '4a' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['3a', '4a']
+    [Tier 4 graph] '3a' r=* = Ph, * = NO2 fallback (smi=*CCC(Br)CC*)
+    [Tier 4] '3a' ✅ match: c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]
+    [Tier 4 graph] '4a' r=* = Ph fallback (smi=*CCC(Br)CBr)
+    [Tier 4] '4a' ✅ match: c1ccc(cc1)CCC(Br)CBr
+  [Tier 4 R-group Sub] resolved=['3a', '4a']  remaining=[]

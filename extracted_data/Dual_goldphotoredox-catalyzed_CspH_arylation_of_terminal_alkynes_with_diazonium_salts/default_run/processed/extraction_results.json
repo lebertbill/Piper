@@ -1,0 +1,1674 @@
+[
+    {
+        "document": "Dual_goldphotoredox-catalyzed_CspH_arylation_of_terminal_alkynes_with_diazonium_salts",
+        "table_name": "Table 1",
+        "table_caption": "Reaction optimization a",
+        "image_path": "extracted_data/Dual_goldphotoredox-catalyzed_CspH_arylation_of_terminal_alkynes_with_diazonium_salts/default_run/processed/visualheist_page_02_table_2.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccc(C)cc1",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Ph3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccccc1)(c2ccccc2)c3ccccc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "methanol",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Methanol (degassed) concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CO"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "Ph 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "46",
+                        "quantity": 46.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Entry 1 performed in degassed methanol (1.0 mL) per footnote c (overrides general DMF solvent)."
+                ],
+                "yield": "46"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Ph3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccccc1)(c2ccccc2)c3ccccc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "Ph 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "78",
+                        "quantity": 78.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "78"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "83",
+                        "quantity": 83.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "83"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Cy3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(C1CCCCC1)(C2CCCCC2)C3CCCCC3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "Cy 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "72",
+                        "quantity": 72.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "72"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "XPhosAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccccc1)(c2ccccc2)c3ccccc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "-"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "(PhO)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(OC1=CC=CC=C1)(OC2=CC=CC=C2)OC3=CC=CC=C3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "-"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(PhO) 3 PAuCl"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "IPrAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]C1=NC(c2ccccc2)=C(N(C)C)C1",
+                        "resolved_smiles": "CC(C)C1=C(C(=CC=C1)C(C)C)N2[CH-]N(C=C2)C3=C(C=CC=C3C(C)C)C(C)C.Cl[Au]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "-"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 1.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "83 (80)",
+                        "quantity": 83.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote d: photocatalyst loading 0.5 mol% and reaction time 1 h (overrides general conditions).",
+                    "Isolated yield in parentheses: 80% (see footnote b: NMR yields using CH2Br2; isolated yield shown in parentheses)."
+                ],
+                "yield": "83 (80)"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 5.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 1.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "80",
+                        "quantity": 80.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote e: photocatalyst loading 0.5 mol%, irradiation with 5 W blue LEDs, 1 h (overrides defaults)."
+                ],
+                "yield": "80"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "sunlight"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 8.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "71",
+                        "quantity": 71.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote f: photocatalyst loading 0.5 mol% and reaction run under sunlight for 8 h."
+                ],
+                "yield": "71"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 1.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "60",
+                        "quantity": 60.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote g: photocatalyst loading 0.5 mol% and reaction run in air for 1 h (overrides general degassed/argon atmosphere)."
+                ],
+                "yield": "60"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy) 3 ](PF 6 ) 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 1.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote h: photocatalyst 2.5 mol% (as in general) but reaction run in air for 1 h."
+                ],
+                "yield": "82"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(ppy) 2 (dtbbpy)]PF 6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph2IBF4",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles": "c1ccccc1I(c2ccccc2).[BF4-]"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    }
+                ],
+                "additional_info": [
+                    "Per footnote i: additive Ph2IBF4 (0.40 mmol) and photocatalyst [Ir(ppy)2(dtbbpy)]PF6 at 5 mol%."
+                ],
+                "yield": "Trace"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "Eosin Y",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "-"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C=C1)C#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccc(C)cc1",
+                        "smiles_ocsr": "CC1=CC=C(C=C1)C#C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccc(C)cc1",
+                        "molecular_formula": "C9H8",
+                        "molecular_weight": 116.16
+                    },
+                    {
+                        "smiles": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_llm": "c1ccccc1[N+]=N.[BF4-]",
+                        "smiles_ocsr": "[B-](F)(F)(F)F.C1=CC=C(C=C1)[N+]#N",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "F[B-](F)(F)F.N#[N+]c1ccccc1",
+                        "molecular_formula": "C6H5BF4N2",
+                        "molecular_weight": 191.92
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "text": "3aa",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C#Cc2ccccc2)cc1",
+                        "molecular_formula": "C15H12",
+                        "molecular_weight": 192.26
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "((p-MeO)C6H4)3PAuCl",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "Cl[Au]P(c1ccc(OC)cc1)(c2ccc(OC)cc2)c3ccc(OC)cc3"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "Fluorescein",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C(=O)OC23C4=C(C=C(C=C4)O)OC5=C3C=CC(=C5)O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "degassed DMF",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF concentration",
+                        "quantity": 0.1,
+                        "unit": "M",
+                        "smiles": "CN(C)C=O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "23 W CFL"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "-"
+                    },
+                    {
+                        "role": "substituent",
+                        "text": "(( p- MeO)C 6 H 4 ) 3 PAuCl"
+                    }
+                ],
+                "additional_info": []
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Au(I) complex": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Photocatalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 45,
+            "valid_molecules": 45,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

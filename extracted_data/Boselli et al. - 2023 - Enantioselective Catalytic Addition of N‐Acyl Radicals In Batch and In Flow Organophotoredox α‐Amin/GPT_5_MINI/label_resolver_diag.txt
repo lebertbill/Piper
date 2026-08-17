@@ -1,0 +1,56 @@
+Label Resolver Diagnostic Log — 2026-05-05 07:56:04
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000008_d5d5119379e56008ed716e40b345835e4fc7f7b013fe4d4bc28601a2e3f466a0.png → visualheist_page_02_figure_1.png
+  [GlobalRegistry] labels=['10', '4', '14'] → visualheist_page_02_figure_1.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['10', '4', '14']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Boselli et al. - 2023 - Enantioselective Catalytic Addition of N‐Acyl Radicals In Batch and In Flow Organophotoredox α‐Amin/gpt5mini/processed/visualheist_page_02_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] '10' → pubchem_lookup via name='dihydrocinnamic aldehyde'
+  [Tier 0 NameMap] resolved=['10']  remaining=['4', '14']
+  [OCSR] visualheist_page_02_figure_1.png: 13 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '14']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '14']
+  [Tier 3] '4': bbox=10 atoms=9 smiles=*[C@@H](CO)N(C)C(C)=O wildcard=True
+  [Tier 3] '14': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '14']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4', '14']
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '14' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4', '14']
+  [Tier 6 LLM Vision] resolved=['4', '14']
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [SafetyNet LLM] '4' is_label=True reason=The value '4' follows the established pattern of using numeric labels (e.g., '1', '10', '11') for chemical compounds in this paper, and it is distinct from the existing numeric quantity '0.3'.
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns

@@ -1,0 +1,27 @@
+Label Resolver Diagnostic Log — 2026-08-15 21:56:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 7' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/fchem-10-1087834/GPT_5_MINI/processed/fchem-10-1087834_artifacts/image_000004_aa1976d0299a813c84ccd488a4934c740f419779e5f2ff4e8d256c4fd67fc07a.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='Results and discussion
+
+Wechose 2-phenyl-2 H -indazole'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['3a']
+  [OCSR] image_000004_aa1976d0299a813c84ccd488a4934c740f419779e5f2ff4e8d256c4fd67fc07a.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*c1c2ccccc2nn1-c1ccccc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=CCCCCCNC(=O)C(=O)O  wildcard=False
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=C*NC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=['3a']  remaining=[]

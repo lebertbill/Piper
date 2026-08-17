@@ -1,0 +1,49 @@
+Label Resolver Diagnostic Log — 2026-05-24 10:52:56
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000001_9e86f07f2ed8d6612dfef32307f4740b75cc8b7c844a983a0b7ec83172a4918a.png → visualheist_page_03_table_1.png
+  [GlobalRegistry] labels=['1'] → visualheist_page_03_table_1.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zheng et al. - 2018 - Catalytic C−H Trifluoromethoxylation of Arenes and Heteroarenes/qwen3_6_flash/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → opsin_lookup via name='1-(trifluoromethoxy)-2-(3,5-bis(trifluoromethyl)phenyl)-4,6-bis(trifluoromethyl)-1H-benzo[d]imidazole'
+  [Tier 0 NameMap] resolved=['1']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a', "3a'", '1']
+  Image    : extracted_data/Zheng et al. - 2018 - Catalytic C−H Trifluoromethoxylation of Arenes and Heteroarenes/qwen3_6_flash/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '3a' → pubchem_lookup via name='trifluoromethoxybenzene'
+  [Tier 0 NameMap] '1' → opsin_lookup via name='1-(trifluoromethoxy)-2-(3,5-bis(trifluoromethyl)phenyl)-4,6-bis(trifluoromethyl)-1H-benzo[d]imidazole'
+  [Tier 0 NameMap] resolved=['3a', '1']  remaining=['2a', "3a'"]
+  [OCSR] visualheist_page_03_table_1.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['2a']  smiles=*c1ccccc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['OCFz-reagent (1)']  smiles=*C1=CC(*)=CC(C2=NC3=C(*)C=C(*)C=C3N2*)=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=[]  smiles=*N([1*])[2*]  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3a']  smiles=*C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['3a']  smiles=*N([1*])[2*]  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', "3a'"]
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', "3a'"]
+  [Tier 3] '2a': bbox=0 atoms=7 smiles=*c1ccccc1 wildcard=True
+  [Tier 3] '3a'': bbox=8 atoms=4 smiles=*N([1*])[2*] wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a', "3a'"]
+    [Tier 4 LLM] '2a' → r_value='H'
+    [Tier 4 LLM] '3a'' → r_value='R1 = R1, R2 = R2, * = Ph'
+    [Tier 4] R-group candidates: ['2a', "3a'"]
+    [Tier 4 graph] '2a' r=H fallback (smi=*c1ccccc1)
+    [Tier 4] '2a' ✅ match: c1ccccc1
+    [Tier 4 graph] '3a'' r=R1 = R1, R2 = R2, * = Ph fallback (smi=*N([1*])[2*])
+    [Tier 4] '3a'' RDKit render failed: c1ccc(cc1)N(R1)R2
+  [Tier 4 R-group Sub] resolved=['2a']  remaining=["3a'"]
+    [Tier 5 PubChem] '3a'' → hit via '3a'': CC[C@H]1[C@H](C2=C(N=C(S2)C3=CC=CC=C3)OC1=O)C4=CC=CC=C4
+  [Tier 5 PubChem] resolved=["3a'"]  remaining=[]

@@ -1,0 +1,1113 @@
+[
+    {
+        "document": "Ye et al. - 2023 - Photoredox-enabled remote radical group migration Pathway to 1,7-dicarbonyl compounds from diazoalk",
+        "table_name": "Table 1",
+        "table_caption": "Reaction optimization a .",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Ye et al. - 2023 - Photoredox-enabled remote radical group migration Pathway to 1,7-dicarbonyl compounds from diazoalk/qwen3_6_flash/processed/Ye et al. - 2023 - Photoredox-enabled remote radical group migration Pathway to 1,7-dicarbonyl compounds from diazoalk_artifacts/image_000005_780a4e7fe59c0efd403e10c6442e69c88854995c2e54b67af717c3fecb14cd47.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "46",
+                        "quantity": 46.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "none"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "46"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DBU",
+                        "resolved_smiles": "C1CCC2=NCCCN2CC1",
+                        "resolved_name": "1,8-diazabicyclo[5.4.0]undec-7-ene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "39",
+                        "quantity": 39.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "DBU instead of DIPEA"
+                    }
+                ],
+                "yield": "39"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DABCO",
+                        "resolved_smiles": "C1CN2CCN1CC2",
+                        "resolved_name": "1,4-diazabicyclo[2.2.2]octane",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "50",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "DABCO instead of DIPEA"
+                    }
+                ],
+                "yield": "50"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "2,6-lutidine",
+                        "resolved_smiles": "CC1=NC(=CC=C1)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "42",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "2,6-lutidine instead of DIPEA"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "2,6-lutidine instead of DIPEA"
+                    }
+                ],
+                "yield": "42"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Et3N",
+                        "resolved_smiles": "CCN(CC)CC",
+                        "resolved_name": "triethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "57",
+                        "quantity": 57.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "Et3N instead of DIPEA"
+                    }
+                ],
+                "yield": "57"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "EtOH",
+                        "resolved_smiles": "CCO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "42",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "EtOH instead of MeOH"
+                    }
+                ],
+                "yield": "42"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCE",
+                        "resolved_smiles": "C(CCl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "17",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "DCE instead of MeOH"
+                    }
+                ],
+                "yield": "17"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "THF",
+                        "resolved_smiles": "C1CCOC1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "trace"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "THF instead of MeOH"
+                    }
+                ],
+                "yield": "trace"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 36.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "72",
+                        "quantity": 72.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "1a : 2a = 3:1, 36 h"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "1a : 2a = 3:1, 36 h"
+                    }
+                ],
+                "yield": "72"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "44",
+                        "quantity": 44.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "quantity": null,
+                        "unit": null,
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "without base"
+                    }
+                ],
+                "yield": "44"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.r."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "In dark"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "In dark"
+                    }
+                ],
+                "yield": "n.r."
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)C=[N+]=[N-]",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)C(=N)N",
+                        "smiles_ocsr": "CCOC(=O)C=[N+]=[N-]",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C=[N+]=[N-]",
+                        "molecular_formula": "C4H6N2O2",
+                        "molecular_weight": 114.1
+                    },
+                    {
+                        "smiles": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "text": "2a",
+                        "smiles_llm": "C=CCC(O)(c1nc2ccccc2s1)c3ccccc3",
+                        "smiles_ocsr": "OC(C1=NC2=CC=CC=C2S1)(C1=CC=CC=C1)CCC=C",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCC(O)(c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C18H17NOS",
+                        "molecular_weight": 295.41
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "text": "3",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CCC(CCC(=O)c1ccccc1)c1nc2ccccc2s1",
+                        "molecular_formula": "C22H23NO3S",
+                        "molecular_weight": 381.5
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "resolved_name": "N,N-diisopropylethylamine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeOH",
+                        "resolved_smiles": "CO",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.r."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "without Ru(bpy) 3 Cl 2 • 6H 2 O"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ru(bpy)3Cl2·6H2O",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "deviation",
+                        "text": "without Ru(bpy)3Cl2·6H2O"
+                    }
+                ],
+                "yield": "n.r."
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "deviation from standard conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "float",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 36,
+            "valid_molecules": 36,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

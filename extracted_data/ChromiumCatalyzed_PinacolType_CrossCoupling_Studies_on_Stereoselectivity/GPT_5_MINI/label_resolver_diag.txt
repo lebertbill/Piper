@@ -1,0 +1,195 @@
+Label Resolver Diagnostic Log — 2026-06-11 15:32:41
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Gallery 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Gallery 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['12', '3-phenylpropionaldehyde', '2-isopropylacrolein']
+  Image    : extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/visualheist_page_04_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '12' → opsin_lookup via name='Methyl-5-methylene-1-phenylheptane-3,4-diol'
+  [Tier 0 NameMap] resolved=['12']  remaining=['3-phenylpropionaldehyde', '2-isopropylacrolein']
+  [OCSR] visualheist_page_04_table_1.png: 4 bboxes, 1 coref pairs
+  [OCSR]   pair [2,3]: texts=['12']  smiles=*CCC(O)C(O)C(=C)C(C)C  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3-phenylpropionaldehyde', '2-isopropylacrolein']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3-phenylpropionaldehyde', '2-isopropylacrolein']
+  [Tier 3] '3-phenylpropionaldehyde': bbox=1 atoms=6 smiles=*CCC(*)=O wildcard=True
+  [Tier 3] '2-isopropylacrolein': bbox=0 atoms=8 smiles=*C(=O)C(=C)C(C)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3-phenylpropionaldehyde', '2-isopropylacrolein']
+    [Tier 4 LLM] '3-phenylpropionaldehyde' → r_value='* = Ph'
+    [Tier 4 LLM] '2-isopropylacrolein' → r_value='isopropyl'
+    [Tier 4] R-group candidates: ['3-phenylpropionaldehyde', '2-isopropylacrolein']
+    [Tier 4 graph] '3-phenylpropionaldehyde' r=* = Ph fallback (smi=*CCC(O)C(O)C(=C)C(C)C)
+    [Tier 4 graph] '2-isopropylacrolein' r=isopropyl fallback (smi=*CCC(O)C(O)C(=C)C(C)C)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3-phenylpropionaldehyde', '2-isopropylacrolein']
+    [Tier 5 PubChem] '3-phenylpropionaldehyde' → hit via '3-phenylpropionaldehyde': C1=CC=C(C=C1)CCC=O
+    [Tier 5 PubChem] '2-isopropylacrolein' → hit via '2-isopropylacrolein': CC(C)C(=C)C=O
+  [Tier 5 PubChem] resolved=['3-phenylpropionaldehyde', '2-isopropylacrolein']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['13', '14'] → image_000011_d101c0e7c6c9ad9b6890cbe9f25a4edac075f66ba9f5802c08c225e7d93a5ff4.png
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Gallery 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['13', '14']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000011_d101c0e7c6c9ad9b6890cbe9f25a4edac075f66ba9f5802c08c225e7d93a5ff4.png
+  Exists   : True
+  [Tier 0 NameMap] '13' → llm_name_to_smiles via name='CpCrCl2 · THF'
+  [Tier 0 NameMap] '14' → name 'dichloro-(eta5-1-(ethylenediphenylphosphane)cyclopentadienyl)chromium · toluene' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=['13']  remaining=['14']
+  [OCSR] image_000011_d101c0e7c6c9ad9b6890cbe9f25a4edac075f66ba9f5802c08c225e7d93a5ff4.png: 7 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['14']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['14']
+  [Tier 3] '14': bbox=1 atoms=9 smiles=*C1(O)CC1([1*])C([2*])O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['14']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['14']
+    [Tier 5 PubChem] '14' → name_map name: 'dichloro-(eta5-1-(ethylenediphenylphosphane)cyclopentadienyl)chromium · toluene'
+    [Tier 5 PubChem] '14' → no hit (tried ['dichloro-(eta5-1-(ethylenediphenylphosphane)cyclopentadienyl)chromium · toluene', 'd, J = 7.0 Hz, 1H; H2C = C H OH'])
+  [Tier 5 PubChem] resolved=[]  remaining=['14']
+    [Tier 6] '14' PubChem/OPSIN/LLM all failed for authoritative name 'dichloro-(eta5-1-(ethylenediphenylphosphane)cyclopentadienyl)chromium · toluene' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['14']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['ketone', 'aldehyde', '15', '12']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000010_68f4cc55ee23975cc40adae7c0bc52b107dc61ce0d71b199301f0b62b82a7c3f.png
+  Exists   : True
+  [Tier 0 NameMap] '15' → llm_name_to_smiles via name='Hydroxy-3-phenylpropyl)-2-isopropylcyclopropanol'
+  [Tier 0 NameMap] '12' → opsin_lookup via name='Methyl-5-methylene-1-phenylheptane-3,4-diol'
+  [Tier 0 NameMap] resolved=['15', '12']  remaining=['ketone', 'aldehyde']
+  [OCSR] image_000010_68f4cc55ee23975cc40adae7c0bc52b107dc61ce0d71b199301f0b62b82a7c3f.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [2,3]: texts=['12']  smiles=*CCC(O)C(O)C(=C)C(C)C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['15']  smiles=*CCC(O)C1(C(C)C)CC1(*)O  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['ketone', 'aldehyde']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['ketone', 'aldehyde']
+  [Tier 3] 'ketone': bbox_idx=None out of range (n=6)
+  [Tier 3] 'aldehyde': bbox=0 atoms=8 smiles=*C(=O)C(=C)C(C)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['ketone', 'aldehyde']
+    [Tier 4 LLM] 'ketone' → r_value='* = Ph'
+    [Tier 4 LLM] 'aldehyde' → r_value='* = Ph'
+    [Tier 4 LLM] 'ketone' → r_value='* = Ph'
+    [Tier 4 LLM] 'aldehyde' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['ketone', 'aldehyde']
+    [Tier 4 graph] 'ketone' r=* = Ph fallback (smi=*CCC(O)C1(C(C)C)CC1(*)O)
+    [Tier 4 graph] 'aldehyde' r=* = Ph fallback (smi=*CCC(O)C1(C(C)C)CC1(*)O)
+    [Tier 4] 'ketone' 🔄 corrected: CC(C)C1(CC1O)C(O)CCc2ccccc2
+    [Tier 4] 'aldehyde' 🔄 corrected: CC(C)C1(CC1(O)[H])C(O)CCc2ccccc2
+  [Tier 4 R-group Sub] resolved=['ketone', 'aldehyde']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Gallery 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['16', '17', '18', '19'] → image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 2
+────────────────────────────────────────────────────────────
+  Labels   : ['16', '17', '18', '19']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png
+  Exists   : True
+  [Tier 0 NameMap] '17' → pubchem_lookup via name='(R,R)-N,N'-bis(3,5-di-tert-butylsalicylidene)-1,2-cyclohexanediamine'
+  [Tier 0 NameMap] resolved=['17']  remaining=['16', '18', '19']
+  [OCSR] image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['16']  smiles=Oc1ccccc1/C=N/CC/N=C/c1ccccc1O  wildcard=False
+  [OCSR]   pair [2,3]: texts=['(RR)-17']  smiles=*C1=CC(*)=C(O)C(C=NC2CCCCC2N=CC2=CC(*)=CC(*)=C2O)=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['(1R,2S)-18']  smiles=Oc1ccccc1C=N[C@@H]1c2ccccc2C[C@@H]1O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['(IR,25)-19']  smiles=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['16']  remaining=['18', '19']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['18', '19']
+  [Tier 3] '18': bbox=4 atoms=19 smiles=Oc1ccccc1C=N[C@@H]1c2ccccc2C[C@@H]1O wildcard=False
+  [Tier 3] '19': bbox=6 atoms=21 smiles=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=['18']  remaining=['19']
+    [Tier 4 LLM] '19' → r_value='R = tBu'
+    [Tier 4] R-group candidates: ['19']
+    [Tier 4 graph] '19' r=R = tBu fallback (smi=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1)
+    [Tier 4] '19' 🔄 corrected: CC(C)(C)C1=CC(=C(O)C(=C1)C(C)(C)C)/C=N/[C@H]2C3=CC
+  [Tier 4 R-group Sub] resolved=['19']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['(1 R ,2 S )- 19', '(1 R ,2 S )- 18', '( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)'] from image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 2
+────────────────────────────────────────────────────────────
+  Labels   : ['(1 R ,2 S )- 19', '(1 R ,2 S )- 18', '( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['(1 R ,2 S )- 19', '(1 R ,2 S )- 18', '( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)']
+  [OCSR] image_000012_71ab81f7c5e391df74dc7635cac7801321b7fe997f460c1203759fc7f89db503.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['16']  smiles=Oc1ccccc1/C=N/CC/N=C/c1ccccc1O  wildcard=False
+  [OCSR]   pair [2,3]: texts=['(RR)-17']  smiles=*C1=CC(*)=C(O)C(C=NC2CCCCC2N=CC2=CC(*)=CC(*)=C2O)=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['(1R,2S)-18']  smiles=Oc1ccccc1C=N[C@@H]1c2ccccc2C[C@@H]1O  wildcard=False
+  [OCSR]   pair [6,7]: texts=['(IR,25)-19']  smiles=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['(1 R ,2 S )- 19', '(1 R ,2 S )- 18', '( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['(1 R ,2 S )- 19', '(1 R ,2 S )- 18', '( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)']
+  [Tier 3] '(   )-sparteine': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Schiff-base chromium complex (ligand (R,R)-17)': bbox=2 atoms=28 smiles=*C1=CC(*)=C(O)C(C=NC2CCCCC2N=CC2=CC(*)=CC(*)=C2O)=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['( \x00 )-sparteine', 'Schiff-base chromium complex (ligand (R,R)-17)', '(1 R ,2 S )- 19', '(1 R ,2 S )- 18']
+    [Tier 4 LLM] 'Schiff-base chromium complex (ligand (R,R)-17)' → r_value='R = tBu'
+    [Tier 4 LLM] '(1 R ,2 S )- 18' → r_value='R = H'
+    [Tier 4 LLM] '(1 R ,2 S )- 19' → r_value='R = tBu'
+    [Tier 4] R-group candidates: ['Schiff-base chromium complex (ligand (R,R)-17)', '(1 R ,2 S )- 18', '(1 R ,2 S )- 19']
+    [Tier 4 graph] 'Schiff-base chromium complex (ligand (R,R)-17)' r=R = tBu fallback (smi=*C1=CC(*)=C(O)C(C=NC2CCCCC2N=CC2=CC(*)=CC(*)=C2O)=C1)
+    [Tier 4 graph] '(1 R ,2 S )- 18' r=R = H fallback (smi=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1)
+    [Tier 4 graph] '(1 R ,2 S )- 19' r=R = tBu fallback (smi=*C1=CC(C=NC2C3=C(C=CC=C3)CC2O)=C(O)C(*)=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Schiff-base chromium complex (ligand (R,R)-17)', '(1 R ,2 S )- 18', '(1 R ,2 S )- 19', '( \x00 )-sparteine']
+    [Tier 5 PubChem] 'Schiff-base chromium complex (ligand (R,R)-17)' → no hit (tried ['Schiff-base chromium complex (ligand (R,R)-17)'])
+    [Tier 5 PubChem] '(1 R ,2 S )- 18' → no hit (tried ['(1 R ,2 S )- 18'])
+    [Tier 5 PubChem] '(1 R ,2 S )- 19' → no hit (tried ['(1 R ,2 S )- 19'])
+    [Tier 5 PubChem] '(   )-sparteine' → no hit (tried ['( \x00 )-sparteine'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Schiff-base chromium complex (ligand (R,R)-17)', '(1 R ,2 S )- 18', '(1 R ,2 S )- 19', '( \x00 )-sparteine']
+    [Tier 6→pubchem_lookup] '(   )-sparteine' name='(-)-sparteine' → C1CCN2C[C@@H]3C[C@H]([C@H]2C1)CN4[C@H]3CCCC4
+  [Tier 6 LLM Vision] resolved=['Schiff-base chromium complex (ligand (R,R)-17)', '(1 R ,2 S )- 18', '(1 R ,2 S )- 19', '( \x00 )-sparteine']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['CrCl3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000003_92a4472591f28417204301a77feee85638ad004fd1a9c2304a73c3a93dd0b300.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['CrCl3']
+  [OCSR] image_000003_92a4472591f28417204301a77feee85638ad004fd1a9c2304a73c3a93dd0b300.png: 7 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['CrCl3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['CrCl3']
+  [Tier 3] 'CrCl3': bbox_idx=None out of range (n=7)
+  [Tier 3 BBox Match] resolved=[]  remaining=['CrCl3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['CrCl3']
+    [Tier 5 PubChem] 'CrCl3' → hit via 'CrCl3': Cl[Cr](Cl)Cl
+  [Tier 5 PubChem] resolved=['CrCl3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 2
+────────────────────────────────────────────────────────────
+  Labels   : ['16', '17', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity/GPT_5_MINI/processed/ChromiumCatalyzed_PinacolType_CrossCoupling_Studies_on_Stereoselectivity_artifacts/image_000003_92a4472591f28417204301a77feee85638ad004fd1a9c2304a73c3a93dd0b300.png
+  Exists   : True
+  [Tier 0 NameMap] '17' → pubchem_lookup via name='(R,R)-N,N'-bis(3,5-di-tert-butylsalicylidene)-1,2-cyclohexanediamine'
+  [Tier 0 NameMap] '1' → opsin_lookup via name='Tetramethyl-3-methyleneheptane-4,5-diol'
+  [Tier 0 NameMap] resolved=['17', '1']  remaining=['16']
+  [OCSR] image_000003_92a4472591f28417204301a77feee85638ad004fd1a9c2304a73c3a93dd0b300.png: 7 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['16']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['16']
+  [Tier 3] '16': bbox_idx=None out of range (n=7)
+  [Tier 3 BBox Match] resolved=[]  remaining=['16']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['16']
+    [Tier 5 PubChem] '16' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['16']
+  [Tier 6 LLM Vision] resolved=['16']

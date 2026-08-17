@@ -1,0 +1,24 @@
+Label Resolver Diagnostic Log — 2026-05-22 15:48:39
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', "4,4'-dMeObpy"] → image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', "4,4'-dMeObpy"]
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224/qwen3_6_35b_a3b/processed/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224_artifacts/image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN']  remaining=["4,4'-dMeObpy"]
+  [OCSR] image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=C(*)C(C(=O)NC(*)*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3']  smiles=*C1=CC=C(C(=O)NC(*)*)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=["4,4'-dMeObpy"]

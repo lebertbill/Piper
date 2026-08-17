@@ -1,0 +1,63 @@
+Label Resolver Diagnostic Log — 2026-06-18 16:23:44
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2', '3', '5a'] → image_000006_5e202f4aa07838bee9b402ec0e50b4d961a45ef1ccd84e9274970e1d2b37b5ea.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2', '3', '5a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible-light-induced_radical_hydrodifluoromethylation_of_alkenes/default_run/processed/Visible-light-induced_radical_hydrodifluoromethylation_of_alkenes_artifacts/image_000006_5e202f4aa07838bee9b402ec0e50b4d961a45ef1ccd84e9274970e1d2b37b5ea.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → llm_name_to_smiles via name='[Ph3P+CF2H]Br-'
+  [Tier 0 NameMap] '3' → pubchem_lookup via name='Hantzsch ester'
+  [Tier 0 NameMap] resolved=['2', '3']  remaining=['1a', '5a']
+  [OCSR] image_000006_5e202f4aa07838bee9b402ec0e50b4d961a45ef1ccd84e9274970e1d2b37b5ea.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ta']  smiles=*CCC=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Hantzsch ester (3)']  smiles=*C1=C(*)NC(*)=C(*)C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['5a']  smiles=*CCC(*)C*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '5a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '5a']
+  [Tier 3] '1a': bbox=0 atoms=5 smiles=*CCC=C wildcard=True
+  [Tier 3] '5a': bbox=4 atoms=7 smiles=*CCC(*)C* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '5a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '5a' → r_value='* = Ph, * = H, * = CF2H'
+    [Tier 4] R-group candidates: ['1a', '5a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*CCC=C)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)CCC=C
+    [Tier 4 graph] '5a' r=* = Ph, * = H, * = CF2H fallback (smi=*CCC(*)C*)
+    [Tier 4] '5a' 🔄 corrected: c1ccc(cc1)CCCCCF(F)
+  [Tier 4 R-group Sub] resolved=['1a', '5a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['5a', '1a']
+  Image    : extracted_data/Visible-light-induced_radical_hydrodifluoromethylation_of_alkenes/default_run/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['5a', '1a']
+  [OCSR] visualheist_page_02_table_1.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*CCC=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*.*.[Br-]  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Hantzsch ester (3)']  smiles=*C1=C(*)NC(*)=C(*)C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*CCC(*)C*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['5a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['5a', '1a']
+  [Tier 3] '5a': bbox=6 atoms=7 smiles=*CCC(*)C* wildcard=True
+  [Tier 3] '1a': bbox=0 atoms=5 smiles=*CCC=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['5a', '1a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '5a' → r_value='* = Ph, * = H, * = CF2H'
+    [Tier 4] R-group candidates: ['1a', '5a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*CCC=C)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)CCC=C
+    [Tier 4 graph] '5a' r=* = Ph, * = H, * = CF2H fallback (smi=*CCC(*)C*)
+    [Tier 4] '5a' 🔄 corrected: c1ccc(cc1)CCCC(F)F
+  [Tier 4 R-group Sub] resolved=['1a', '5a']  remaining=[]

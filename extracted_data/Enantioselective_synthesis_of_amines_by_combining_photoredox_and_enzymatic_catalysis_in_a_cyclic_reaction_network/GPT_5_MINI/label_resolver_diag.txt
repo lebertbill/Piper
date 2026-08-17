@@ -1,0 +1,27 @@
+Label Resolver Diagnostic Log — 2026-06-16 11:56:09
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['(R)-2a']
+  Image    : extracted_data/Enantioselective_synthesis_of_amines_by_combining_photoredox_and_enzymatic_catalysis_in_a_cyclic_reaction_network/GPT_5_MINI/processed/visualheist_page_03_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['(R)-2a']
+  [OCSR] visualheist_page_03_table_2.png: 4 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=C1CCC(C2=NCCC2)CC1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['(R)-Za']  smiles=*[C@]1(C2CCCCC2)CCCN1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['(R)-2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['(R)-2a']
+  [Tier 3] '(R)-2a': bbox=2 atoms=12 smiles=*[C@]1(C2CCCCC2)CCCN1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['(R)-2a']
+    [Tier 4 LLM] '(R)-2a' → r_value='* = H'
+    [Tier 4] R-group candidates: ['(R)-2a']
+    [Tier 4 graph] '(R)-2a' r=* = H fallback (smi=*[C@]1(C2CCCCC2)CCCN1)
+    [Tier 4] '(R)-2a' ✅ match: [H][C@]1(C2CCCCC2)CCCN1
+  [Tier 4 R-group Sub] resolved=['(R)-2a']  remaining=[]

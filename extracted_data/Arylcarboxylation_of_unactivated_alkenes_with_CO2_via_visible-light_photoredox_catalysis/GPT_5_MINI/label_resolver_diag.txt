@@ -1,0 +1,94 @@
+Label Resolver Diagnostic Log — 2026-06-10 16:29:58
+================================================================================
+
+  [GlobalRegistry] labels=['T1', 'T2', 'Ir-1', 'Ir-2'] → image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['T1', 'T2', 'Ir-1', 'Ir-2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png
+  Exists   : True
+  [Tier 0 NameMap] 'T1' → pubchem_lookup via name='4-tert-butylthiophenol'
+  [Tier 0 NameMap] 'T2' → opsin_lookup via name='potassium 4-tert-butylbenzenethiolate'
+  [Tier 0 NameMap Organomet] 'Ir-1' pubchem_lookup: score=1  C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=C
+  [Tier 0 NameMap Organomet] 'Ir-1' llm_name_to_smiles: score=37  C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C
+  [Tier 0 NameMap] 'Ir-1' → best=llm_name_to_smiles (score=37) via name='fac-Ir(ppy)3'
+  [Tier 0 NameMap] 'Ir-2' → name 'Ir(ppy)2(dtbbpy)PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['T1', 'T2', 'Ir-1']  remaining=['Ir-2']
+  [OCSR] image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png: 12 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CC(*)(*)CC=C)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['T1']  smiles=*C1=CC=C(S)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['T2']  smiles=*C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['fac-Irlppy)a (Ir-1)']  smiles=c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc  wildcard=False
+  [OCSR]   pair [8,9]: texts=['Ir(ppy)2(dtbbpy)PF6 (Ir-2)']  smiles=*CC=C[N]1CC2=CC(*)=CC=[N]2[Ir]1234([C]1=C(C=CC=C1)  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=*C1(*)Cc2ccc(OC)cc2C(CC(=O)O)C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir-2']
+  [Tier 2 Symbol Correction] resolved=['Ir-2']  remaining=[]
+  [InlineResolver] Column 'Variations' labels ['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)'] from image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)']
+  [OCSR] image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png: 12 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CC(*)(*)CC=C)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['T1']  smiles=*C1=CC=C(S)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['T2']  smiles=*C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['fac-Irlppy)a (Ir-1)']  smiles=c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc  wildcard=False
+  [OCSR]   pair [8,9]: texts=['Ir(ppy)2(dtbbpy)PF6 (Ir-2)']  smiles=*CC=C[N]1CC2=CC(*)=CC=[N]2[Ir]1234([C]1=C(C=CC=C1)  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=*C1(*)Cc2ccc(OC)cc2C(CC(=O)O)C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)']
+  [Tier 3] 'then 2 N HCl': bbox_idx=None out of range (n=12)
+  [Tier 3] 'PMHS (poly(methylhydrosiloxane))': bbox_idx=None out of range (n=12)
+  [Tier 3] 'tBuSH (tert‑butylthiol)': bbox=2 atoms=8 smiles=*C1=CC=C(S)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))', 'tBuSH (tert‑butylthiol)']
+    [Tier 4 LLM] 'tBuSH (tert‑butylthiol)' → r_value='R = tBu'
+    [Tier 4] R-group candidates: ['tBuSH (tert‑butylthiol)']
+    [Tier 4 graph] 'tBuSH (tert‑butylthiol)' r=R = tBu fallback (smi=*C1=CC=C(S)C=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['tBuSH (tert‑butylthiol)', 'then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))']
+    [Tier 5 PubChem] 'tBuSH (tert‑butylthiol)' → hit via 'tBuSH': CC(C)(C)S
+    [Tier 5 PubChem] 'then 2 N HCl' → no hit (tried ['then 2 N HCl'])
+    [Tier 5 PubChem] 'PMHS (poly(methylhydrosiloxane))' → no hit (tried ['PMHS (poly(methylhydrosiloxane))'])
+  [Tier 5 PubChem] resolved=['tBuSH (tert‑butylthiol)']  remaining=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))']
+    [Tier 6→pubchem_lookup] 'then 2 N HCl' name='Hydrochloric acid' → Cl
+    [Tier 6→llm_name_to_smiles] 'PMHS (poly(methylhydrosiloxane))' name='poly(methylhydrosiloxane)' → C[SiH](O[Si](C)(C)C)O[Si](C)(C)C
+  [Tier 6 LLM Vision] resolved=['then 2 N HCl', 'PMHS (poly(methylhydrosiloxane))']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis/GPT_5_MINI/processed/Arylcarboxylation_of_unactivated_alkenes_with_CO2_via_visible-light_photoredox_catalysis_artifacts/image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a']
+  [OCSR] image_000003_6abf55221ffca9bad8051c0547de47b25635a04b011898302f1a15691d39231e.png: 12 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1=CC=C(CC(*)(*)CC=C)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['T1']  smiles=*C1=CC=C(S)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['T2']  smiles=*C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['fac-Irlppy)a (Ir-1)']  smiles=c1cc[c]2[Ir]3([c]4ccccc4-c4cccc[n]->34)<-[n]3ccccc  wildcard=False
+  [OCSR]   pair [8,9]: texts=['Ir(ppy)2(dtbbpy)PF6 (Ir-2)']  smiles=*CC=C[N]1CC2=CC(*)=CC=[N]2[Ir]1234([C]1=C(C=CC=C1)  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=*C1(*)Cc2ccc(OC)cc2C(CC(=O)O)C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=['2a']  remaining=['1a']
+  [Tier 3] '1a': bbox=0 atoms=14 smiles=*C1=CC=C(CC(*)(*)CC=C)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a']
+    [Tier 4 LLM] '1a' → r_value='R = CO2tBu'
+    [Tier 4] R-group candidates: ['1a']
+    [Tier 4 graph] '1a' r=R = CO2tBu fallback (smi=*C1=CC=C(CC(*)(*)CC=C)C=C1)
+    [Tier 4] '1a' RDKit render failed: MeOC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1a']
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1a']
+    [Tier 6→opsin_lookup] '1a' name='di-tert-butyl 2-(4-methoxybenzyl)-2-(prop-2-en-1-yl)malonate' → COC1=CC=C(CC(C(=O)OC(C)(C)C)(C(=O)OC(C)(C)C)CC=C)C
+  [Tier 6 LLM Vision] resolved=['1a']

@@ -1,0 +1,2395 @@
+[
+    {
+        "document": "fchem-10-1087834",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions a .",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/fchem-10-1087834/GPT_5_MINI/processed/fchem-10-1087834_artifacts/image_000004_aa1976d0299a813c84ccd488a4934c740f419779e5f2ff4e8d256c4fd67fc07a.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "1a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "56",
+                        "quantity": 56.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "56"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Rhodamine B",
+                        "resolved_smiles": "CCN(CC)C1=CC2=C(C=C1)C(=C3C=CC(=[N+](CC)CC)C=C3O2)C4=CC=CC=C4C(=O)O.[Cl-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Rhodamine 6G",
+                        "resolved_smiles": "CCNC1=CC2=C(C=C1C)C(=C3C=C(C(=[NH+]CC)C=C3O2)C)C4=CC=CC=C4C(=O)OCC.[Cl-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Fluorescein",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C(=O)OC23C4=C(C=C(C=C4)O)OC5=C3C=CC(=C5)O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Na 2 -Eosin Y"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Rose bengal",
+                        "resolved_smiles": "C1=C2C(=C3C=C(C(=O)C(=C3OC2=C(C(=C1I)[O-])I)I)I)C4=C(C(=C(C(=C4Cl)Cl)Cl)Cl)C(=O)[O-].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Na2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Na+].[Na+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Na 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "23",
+                        "quantity": 23.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "23"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "K 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "17",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "17"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "LiOH",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "[Li+].[OH-]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "7",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "7"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "KOH",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "[OH-].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "7",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "7"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "CsOH",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "[OH-].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "32",
+                        "quantity": 32.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "32"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Triethylamine (Et3N)",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "CCN(CC)CC",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Et 3 N"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "10",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "10"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "DIPEA",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "CCN(C(C)C)C(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "5"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "N,N,N',N'-Tetramethylethylenediamine (TMEDA)",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "CN(C)CCN(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "TMEDA"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "5"
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "1,4-Diazabicyclo[2.2.2]octane (DABCO)",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C1CN2CCN1CC2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "DABCO"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "6",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "6"
+            },
+            {
+                "entry_id": "16",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "22",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "22"
+            },
+            {
+                "entry_id": "17",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "18",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMF",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "3"
+            },
+            {
+                "entry_id": "19",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAC",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "13",
+                        "quantity": 13.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "13"
+            },
+            {
+                "entry_id": "20",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "NMP",
+                        "resolved_smiles": "CN1CCCC1=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "32",
+                        "quantity": 32.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "32"
+            },
+            {
+                "entry_id": "21",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "THF",
+                        "resolved_smiles": "C1CCOC1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "22",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMC"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "23",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "EG"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "24",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "H 2 O"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "25",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "74",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "See footnote b"
+                    }
+                ],
+                "yield": "74"
+            },
+            {
+                "entry_id": "26",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "91",
+                        "quantity": 91.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "See footnote c"
+                    }
+                ],
+                "yield": "91"
+            },
+            {
+                "entry_id": "27",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "N. R"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "See footnote d"
+                    }
+                ],
+                "yield": "N. R"
+            },
+            {
+                "entry_id": "28",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "equivalents",
+                        "text": "Cs 2 CO 3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "N. R"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "See footnote c"
+                    }
+                ],
+                "yield": "N. R"
+            },
+            {
+                "entry_id": "29",
+                "reactants": [
+                    {
+                        "smiles": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "text": "1a",
+                        "smiles_llm": "c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_ocsr": "c1ccc(cc1)-n2nc3ccccc3c2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccc(-n2cc3ccccc3n2)cc1",
+                        "molecular_formula": "C13H10N2",
+                        "molecular_weight": 194.24
+                    },
+                    {
+                        "smiles": "CCCCCCNC(=O)C(=O)O",
+                        "text": "2a",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "CCCCCCNC(=O)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCNC(=O)C(=O)O",
+                        "molecular_formula": "C8H15NO3",
+                        "molecular_weight": 173.21
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "text": "3a",
+                        "smiles_llm": "CCNC(=O)[CH]1=C2C=CC=CC2=NN1C1=CC=CC=C1",
+                        "smiles_ocsr": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCNC(=O)c1c2ccccc2nn1-c1ccccc1",
+                        "molecular_formula": "C16H15N3O",
+                        "molecular_weight": 265.32
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "O2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Purple LED"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "N. R"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "See footnote c"
+                    }
+                ],
+                "yield": "N. R"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Photocatalyst (5 mol%)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Base (2 equiv)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Solvent": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 87,
+            "valid_molecules": 87,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

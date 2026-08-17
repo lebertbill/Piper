@@ -1,0 +1,775 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "smiles_ocsr": "Cn1ccc2ccccc21",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 80,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethyl sulfoxide (DMSO)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 42,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Solvent replaced: DMSO instead of DMA"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir(ppy)3",
+          "smiles": "[Ir](c1ccccc1n1ccccc1)c1ccccc1n1ccccc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 78,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Photocatalyst replaced: Ir(ppy)3 instead of 4-CzIPN"
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 1,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 32,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "6a loading changed to 1.0 equiv instead of 10.0 equiv"
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "3a",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 80,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Substrate switched: 3a instead of 3d"
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 0,
+          "unit": "°C"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 50,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Temperature changed to 0 °C instead of room temperature"
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ru(bpy)3]Cl2",
+          "smiles": "[Ru](n1cccn1n1cccn1)n1cccn1.Cl.Cl",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Green LEDs",
+          "quantity": 167,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 78,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "Photocatalyst and light replaced: [Ru(bpy)3]Cl2 and Green LEDs (167 mW) instead of 4-CzIPN and Blue LEDs"
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "< 1"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "No light (light removed)"
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Blue LEDs",
+          "quantity": 573,
+          "unit": "mW"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "< 1"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "No photocatalyst (4-CzIPN removed)"
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "3d",
+          "smiles": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1",
+          "quantity": 1,
+          "unit": "equiv",
+          "smiles_llm": "Cc1cc(C)[n+](N2CCCC2=O)c(C)c1"
+        },
+        {
+          "label": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv",
+          "smiles_llm": "Cn1ccc2ccccc21"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4-CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(N(c2ccc3ccccc3n2)c2ccc3ccccc3n2)cc1",
+          "quantity": 1,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "6a",
+          "smiles": "Cn1ccc2ccccc21",
+          "quantity": 10,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylacetamide (DMA)",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 8,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "degassing",
+          "text": "reaction partners mixed in air, followed by irradiation under a nitrogen atmosphere"
+        },
+        {
+          "role": "yield",
+          "text": "< 1"
+        }
+      ],
+      "products": [
+        {
+          "label": "7a",
+          "smiles": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_llm": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_ocsr": "Cn1c(N2CCCC2=O)cc2ccccc21",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "No light (light removed); temperature changed to 60 °C"
+      ]
+    }
+  ]
+}

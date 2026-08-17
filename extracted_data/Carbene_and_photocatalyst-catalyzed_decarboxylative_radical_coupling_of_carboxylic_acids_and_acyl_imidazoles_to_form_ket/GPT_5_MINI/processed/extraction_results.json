@@ -1,0 +1,1672 @@
+[
+    {
+        "document": "Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions.",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket/GPT_5_MINI/processed/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket_artifacts/image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1a",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = A",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst A",
+                        "resolved_smiles": "CC(C)c1cc(C(C)C)cc(C(C)C)c1-n1cc[n+](c1)C1C=CC=CC1.[Cl-].[Pd+2].[Cl-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PC-1 , A , 1a",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "Trace"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1b",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = A",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst A",
+                        "resolved_smiles": "CC(C)c1cc(C(C)C)cc(C(C)C)c1-n1cc[n+](c1)C1C=CC=CC1.[Cl-].[Pd+2].[Cl-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "<5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PC-1 , A , 1b",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Reported as <5%."
+                    }
+                ],
+                "yield": "<5"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = A",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst A",
+                        "resolved_smiles": "CC(C)c1cc(C(C)C)cc(C(C)C)c1-n1cc[n+](c1)C1C=CC=CC1.[Cl-].[Pd+2].[Cl-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "22",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PC-1 , A , 1c",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "22"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "42",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 3, NHC = B",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "42"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = C",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst C",
+                        "resolved_smiles": "Clc1cc(Cl)c(-[n+]2cn3c(n2)CCC3)c(Cl)c1",
+                        "smiles_source": "ocsr_graph",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "14",
+                        "quantity": 14.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 3, NHC = C",
+                        "resolved_name": "NHC precatalyst C",
+                        "resolved_smiles": "Clc1cc(Cl)c(-[n+]2cn3c(n2)CCC3)c(Cl)c1",
+                        "smiles_source": "ocsr_graph",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "14"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = D",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst D",
+                        "resolved_smiles": "CC(C)c1cc(C(C)C)cc(C(C)C)c1-n1cc[n+](c1)C1C2CC3CC(C2)CC1C3.[Cl-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "<5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 3, NHC = D",
+                        "resolved_name": "NHC precatalyst D",
+                        "resolved_smiles": "CC(C)c1cc(C(C)C)cc(C(C)C)c1-n1cc[n+](c1)C1C2CC3CC(C2)CC1C3.[Cl-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Reported as <5%."
+                    }
+                ],
+                "yield": "<5"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-2",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dFppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "74",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "PC-2 , B , 1c",
+                        "resolved_name": "[Ir(dFppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "74"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82 (78) c",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 7, PC = PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Footnote (c): isolated yield = 78% (value in parentheses); main reported value (82%) is NMR yield."
+                    }
+                ],
+                "yield": "82 (78) c"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-4",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "76",
+                        "quantity": 76.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 7, PC = PC-4",
+                        "resolved_name": "[Ir(dtbbpy)(ppy)2]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "76"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-5",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "PC-5",
+                        "resolved_smiles": "CC(C=C)(C(/C=C/C(=C/Cl)/C=O)Cl)Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC(C=C)(C(/C=C/C(=C/Cl)/C=O)Cl)Cl",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "8",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 7, PC = PC-5",
+                        "resolved_name": "PC-5",
+                        "resolved_smiles": "CC(C=C)(C(/C=C/C(=C/Cl)/C=O)Cl)Cl",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC(C=C)(C(/C=C/C(=C/Cl)/C=O)Cl)Cl",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "8"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "78",
+                        "quantity": 78.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 7, PC = PC-6",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "78"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 8, without light irradiation"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "This entry is performed without light irradiation (Blue LED omitted)."
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "ligand",
+                        "text": "NHC = B",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC precatalyst B",
+                        "resolved_smiles": "CC(C)C1=CC(C(C)C)=CC(C(C)C)=C1N2C=CN(C3=C(C(C)C)C=C(C(C)C)C=C3C(C)C)C2=[Pd](Cl)(Cl)N4=CC=CC=C4",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 8, without PC"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC",
+                        "quantity": 1.0,
+                        "unit": "mol %"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Per table note: photocatalyst (PC) omitted for this entry (no PC present). Photocatalyst removed as a subtractive deviation."
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "O=C(Cl)c1ccc(F)cc1",
+                        "text": "1c",
+                        "smiles_ocsr": "O=C(Cl)c1ccc(F)cc1",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Cl)c1ccc(F)cc1",
+                        "molecular_formula": "C7H4ClFO",
+                        "molecular_weight": 158.56
+                    },
+                    {
+                        "smiles": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_ocsr": "CC(C1=CC=C(CC(C)C)C=C1)C(=O)O",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C13H18O2",
+                        "molecular_weight": 206.28
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "text": "3a",
+                        "smiles_ocsr": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1",
+                        "molecular_formula": "C19H21FO",
+                        "molecular_weight": 284.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED (PR160 series, λmax ≈ 427 nm)",
+                        "quantity": 427.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "30-40 °C",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "<5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "As entry 8, without NHC"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC",
+                        "quantity": 20.0,
+                        "unit": "mol %"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Per table note: NHC removed for this entry (no NHC present)."
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Reported as <5%."
+                    }
+                ],
+                "yield": "<5"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the structure gallery above the table",
+                "label_map_source_id": "Table 1"
+            },
+            "Yield [%]": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 42,
+            "valid_molecules": 42,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

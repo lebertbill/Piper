@@ -1,0 +1,182 @@
+Label Resolver Diagnostic Log — 2026-05-24 12:03:27
+================================================================================
+
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat/grok_4_3/processed/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat_artifacts/image_000005_1bcd51247f4fc97a974261ba52c93ffbc488ed780a1dd576ec1a16d10afff18f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3aa', '2a']
+  [OCSR] image_000005_1bcd51247f4fc97a974261ba52c93ffbc488ed780a1dd576ec1a16d10afff18f.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(C2CCCN2*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3aa', '2a']
+  [GlobalRegistry] labels=['Photocatalyst 1', 'Photocatalyst 2'] → image_000003_c6871e04752df498c2ece0035bf8f621a54c686f2ea82f87d594b57c3789f3dc.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Photocatalyst 1', 'Photocatalyst 2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat/grok_4_3/processed/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat_artifacts/image_000003_c6871e04752df498c2ece0035bf8f621a54c686f2ea82f87d594b57c3789f3dc.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'Photocatalyst 1' llm_name_to_smiles: score=55  CC(C)(C)C1=CC=NC(=C1)C2=C(C=C(C=N2)C(C)(C)C)[Ir+]34(C5=C(C=C(F)C=C5C(F
+  [Tier 0 NameMap] 'Photocatalyst 1' → best=llm_name_to_smiles (score=55) via name='[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3aa', '2a']
+  [Tier 0 NameMap Organomet] 'Photocatalyst 2' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] 'Photocatalyst 2' → best=pubchem_lookup (score=1) via name='[Ir(dtbbpy)(ppy)2][PF6]'
+  [Tier 0 NameMap] resolved=['Photocatalyst 1', 'Photocatalyst 2']  remaining=[]
+  [Tier 3] '1a': bbox=0 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=8 smiles=*C1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3] '3aa': bbox=4 atoms=13 smiles=*C1=CC=C(C2CCCN2*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3aa']
+    [Tier 4 LLM] '1a' → r_value='N-boc, 2-COOH'
+    [Tier 4 LLM] '2a' → r_value='4-COOMe'
+    [Tier 4 LLM] '3aa' → r_value='N-boc, 4-COOMe'
+    [Tier 4] R-group candidates: ['1a', '2a', '3aa']
+    [Tier 4 graph] '1a' r=N-boc, 2-COOH fallback (smi=*C1CCCN1*)
+    [Tier 4] '1a' ✅ match: CC(C)(C)OC(=O)N1CCCC1C(=O)O
+    [Tier 4 graph] '2a' r=4-COOMe fallback (smi=*C1=CC=C(Br)C=C1)
+    [Tier 4] '2a' ✅ match: COC(=O)C1=CC=C(Br)C=C1
+    [Tier 4 graph] '3aa' r=N-boc, 4-COOMe fallback (smi=*C1=CC=C(C2CCCN2*)C=C1)
+    [Tier 4] '3aa' ✅ match: COC(=O)C1=CC=C(C=C1)C2CCCN2C(=O)OC(C)(C)C
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3aa']  remaining=[]
+  [SafetyNet] '1' matched compound_name_map key 'Photocatalyst 1' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '1' matched compound_name_map key 'Photocatalyst 1' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [SafetyNet] '2' matched compound_name_map key 'Photocatalyst 2' → treat as label
+  [InlineResolver] '1' → composed key 'Photocatalyst 1' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '1' → composed key 'Photocatalyst 1' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+  [InlineResolver] '2' → composed key 'Photocatalyst 2' resolved from global registry
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat/grok_4_3/processed/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat_artifacts/image_000005_1bcd51247f4fc97a974261ba52c93ffbc488ed780a1dd576ec1a16d10afff18f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3aa', '2a']
+  [OCSR] image_000005_1bcd51247f4fc97a974261ba52c93ffbc488ed780a1dd576ec1a16d10afff18f.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(C2CCCN2*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3aa', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3aa', '2a']
+  [Tier 3] '1a': bbox=0 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=8 smiles=*C1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3] '3aa': bbox=4 atoms=13 smiles=*C1=CC=C(C2CCCN2*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3aa']
+    [Tier 4 LLM] '1a' → r_value='N-boc, 2-COOH'
+    [Tier 4 LLM] '2a' → r_value='4-COOMe'
+    [Tier 4 LLM] '3aa' → r_value='N-boc, 4-COOMe'
+    [Tier 4] R-group candidates: ['1a', '2a', '3aa']
+    [Tier 4 graph] '1a' r=N-boc, 2-COOH fallback (smi=*C1CCCN1*)
+    [Tier 4] '1a' ✅ match: CC(C)(C)OC(=O)N1CCCC1C(=O)O
+    [Tier 4 graph] '2a' r=4-COOMe fallback (smi=*C1=CC=C(Br)C=C1)
+    [Tier 4] '2a' ✅ match: COC(=O)C1=CC=C(Br)C=C1
+    [Tier 4 graph] '3aa' r=N-boc, 4-COOMe fallback (smi=*C1=CC=C(C2CCCN2*)C=C1)
+    [Tier 4] '3aa' ✅ match: COC(=O)C1=CC=C(C=C1)C2CCCN2C(=O)OC(C)(C)C
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3aa']  remaining=[]
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+    [NameResolve Organomet] pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat/grok_4_3/processed/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat_artifacts/image_000004_109addcbf9e58ec38d54e7de7568a8daf8cab9a82f25f0304951fa724d13dfc7.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3aa', '2a']
+  [OCSR] image_000004_109addcbf9e58ec38d54e7de7568a8daf8cab9a82f25f0304951fa724d13dfc7.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(C2CCCN2*)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3aa', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3aa', '2a']
+  [Tier 3] '1a': bbox=0 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=8 smiles=*C1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3] '3aa': bbox=4 atoms=13 smiles=*C1=CC=C(C2CCCN2*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3aa']
+    [Tier 4 LLM] '1a' → r_value='N-substituent = boc, C2-substituent = COOH'
+    [Tier 4 LLM] '2a' → r_value='para-substituent = COOMe'
+    [Tier 4 LLM] '3aa' → r_value='N-substituent = boc, para-substituent = COOMe'
+    [Tier 4] R-group candidates: ['1a', '2a', '3aa']
+    [Tier 4 graph] '1a' r=N-substituent = boc, C2-substituent = COOH fallback (smi=*C1CCCN1*)
+    [Tier 4] '1a' ✅ match: CC(C)(C)OC(=O)N1CCCC1C(=O)O
+    [Tier 4 graph] '2a' r=para-substituent = COOMe fallback (smi=*C1=CC=C(Br)C=C1)
+    [Tier 4] '2a' ✅ match: COC(=O)C1=CC=C(Br)C=C1
+    [Tier 4 graph] '3aa' r=N-substituent = boc, para-substituent = COOMe fallback (smi=*C1=CC=C(C2CCCN2*)C=C1)
+    [Tier 4] '3aa' ✅ match: COC(=O)C1=CC=C(C2CCCN2C(=O)OC(C)(C)C)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3aa']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat/grok_4_3/processed/Abdiaj - Improving the throughput of batch photochemical reactions using flow Dual photoredox and nickel cat_artifacts/image_000003_c6871e04752df498c2ece0035bf8f621a54c686f2ea82f87d594b57c3789f3dc.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → name 'and photocatalyst' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2']
+  [OCSR] image_000003_c6871e04752df498c2ece0035bf8f621a54c686f2ea82f87d594b57c3789f3dc.png: 3 bboxes, 1 coref pairs
+  [OCSR]   pair [0,1]: texts=['Photocatalyst 1']  smiles=*C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6=C34=C5C6C(C)(C)C  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2']
+  [Tier 3] '1': bbox=0 atoms=41 smiles=*C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6=C34=C5C6C(C)(C)C)([C]3=CC( wildcard=True
+  [Tier 3] '2': bbox=2 atoms=45 smiles=CC(C)(C)C1=CC=[N]23C(=C1)C21=CC(C(C)(C)C)=CC=[N]1[Ir]312([C] wildcard=False
+  [Tier 3] '2': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2']
+    [Tier 4 LLM] '1' → r_value='* = CF3'
+    [Tier 4 LLM] '2' → r_value='* = H'
+    [Tier 4] R-group candidates: ['1', '2']
+    [Tier 4 graph] '1' r=* = CF3 fallback (smi=*C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6=C34=C5C6C(C)(C)C)([C]3=CC(F)=CC(F)=C32)[C]2=CC(F)=CC(F)=C2C2=[N]1C=CC(*)=C2)
+    [Tier 4 graph] '2' r=* = H fallback (smi=*C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6=C34=C5C6C(C)(C)C)([C]3=CC(F)=CC(F)=C32)[C]2=CC(F)=CC(F)=C2C2=[N]1C=CC(*)=C2)
+    [Tier 4] '1' RDKit render failed: FC(F)(F)C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6
+    [Tier 4] '2' RDKit render failed: C1=CC2=[N](C=C1)[Ir]1([N]3C45=C6=C34=C5C
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2']
+    [Tier 5 PubChem] '1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → name_map name: 'and photocatalyst'
+    [Tier 5 PubChem] '2' → no hit (tried ['and photocatalyst', 'dtbbpy'])
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2']
+    [Tier 6] '2' PubChem/OPSIN/LLM all failed for authoritative name 'and photocatalyst' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['1', '2']

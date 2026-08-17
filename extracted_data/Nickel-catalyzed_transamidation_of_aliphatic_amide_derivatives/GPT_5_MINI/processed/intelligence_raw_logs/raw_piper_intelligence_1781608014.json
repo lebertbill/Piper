@@ -1,0 +1,416 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "7",
+          "smiles": "NC1CCCCC1",
+          "smiles_llm": "CNC(=O)C1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "NC1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(cod)2",
+          "smiles": "[Ni]",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "10",
+          "smiles": "CC(C)c1cccc(C(C)C)c1N2C=CN(C3=CC=CC=C3C(C)C)C2",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Toluene",
+          "smiles": "Cc1ccccc1",
+          "quantity": 1.0,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 9",
+          "value": 15,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "9",
+          "smiles": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_llm": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_ocsr": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "No NaOtBu (base omitted)"
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "7",
+          "smiles": "CNC(=O)C1CCCCC1",
+          "smiles_llm": "CNC(=O)C1CCCCC1"
+        },
+        {
+          "label": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "NC1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(cod)2",
+          "smiles": "[Ni]",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "11",
+          "smiles": "c1ccc(-c2cccc(-c3ccccn3)n2)nc1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Toluene",
+          "smiles": "Cc1ccccc1",
+          "quantity": 1.0,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 9",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "9",
+          "smiles": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_llm": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_ocsr": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": [
+        "No NaOtBu (base omitted)"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "7",
+          "smiles": "CNC(=O)C1CCCCC1",
+          "smiles_llm": "CNC(=O)C1CCCCC1"
+        },
+        {
+          "label": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "NC1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(cod)2",
+          "smiles": "[Ni]",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "12",
+          "smiles": "Cl.[n+]1cc[nH]c1C2CCCCC2",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "NaOtBu",
+          "smiles": "CC(C)(C)[O-].[Na+]",
+          "quantity": 22,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Toluene",
+          "smiles": "Cc1ccccc1",
+          "quantity": 1.0,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 9",
+          "value": 100,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "9",
+          "smiles": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_llm": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_ocsr": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "7",
+          "smiles": "CNC(=O)C1CCCCC1",
+          "smiles_llm": "CNC(=O)C1CCCCC1"
+        },
+        {
+          "label": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv",
+          "smiles_llm": "NC1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(cod)2",
+          "smiles": "[Ni]",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "12",
+          "smiles": "Cl.[n+]1cc[nH]c1C2CCCCC2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "NaOtBu",
+          "smiles": "CC(C)(C)[O-].[Na+]",
+          "quantity": 11,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Toluene",
+          "smiles": "Cc1ccccc1",
+          "quantity": 1.0,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 9",
+          "value": 100,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "9",
+          "smiles": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_llm": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_ocsr": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "7",
+          "smiles": "CNC(=O)C1CCCCC1",
+          "smiles_llm": "CNC(=O)C1CCCCC1"
+        },
+        {
+          "label": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 1.5,
+          "unit": "equiv",
+          "smiles_llm": "NC1CCCCC1",
+          "smiles_ocsr": "NC1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "Ni(cod)2",
+          "smiles": "[Ni]",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "12",
+          "smiles": "Cl.[n+]1cc[nH]c1C2CCCCC2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "NaOtBu",
+          "smiles": "CC(C)(C)[O-].[Na+]",
+          "quantity": 11,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "8",
+          "smiles": "NC1CCCCC1",
+          "quantity": 1.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Toluene",
+          "smiles": "Cc1ccccc1",
+          "quantity": 1.5,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "quantity": 60,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 18,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Yield of 9",
+          "value": 90,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "9",
+          "smiles": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_llm": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_ocsr": "O=C(NC1CCCCC1)C1CCCCC1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "additional_info": []
+    }
+  ]
+}

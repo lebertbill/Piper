@@ -1,0 +1,63 @@
+Label Resolver Diagnostic Log — 2026-05-21 20:27:54
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', "4,4'-dMeObpy"] → image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', "4,4'-dMeObpy"]
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224/gemini_3_1_flash_lite/processed/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224_artifacts/image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN']  remaining=["4,4'-dMeObpy"]
+  [OCSR] image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=C(*)C(C(=O)NC(*)*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3']  smiles=*C1=CC=C(C(=O)NC(*)*)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=["4,4'-dMeObpy"]
+  [Tier 2 Symbol Correction] resolved=[]  remaining=["4,4'-dMeObpy"]
+  [Tier 3] '4,4'-dMeObpy': bbox=8 atoms=14 smiles=*C1=CC=NC(C2=NC=CC(*)=C2)=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=["4,4'-dMeObpy"]
+    [Tier 4 LLM] '4,4'-dMeObpy' → r_value='4,4'-dimethoxy-2,2'-bipyridine'
+    [Tier 4] R-group candidates: ["4,4'-dMeObpy"]
+    [Tier 4] bbox missing for group ["4,4'-dMeObpy"] — using full image
+    [Tier 4] '4,4'-dMeObpy' ✅ match: COc1cc(ccn1)c2cc(OC)ccn2
+  [Tier 4 R-group Sub] resolved=["4,4'-dMeObpy"]  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224/gemini_3_1_flash_lite/processed/Alandini_Angewandte Chemie International Edition_10.1002_anie.202000224_artifacts/image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a', '3']
+  [OCSR] image_000009_1250a525c3ed2572b99570d6dea2b6b9c7eac818b139185c6795bf554b0aa4b5.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=C(*)C(C(=O)NC(*)*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3']  smiles=*C1=CC=C(C(=O)NC(*)*)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a', '3']
+  [Tier 3] '1a': bbox=0 atoms=16 smiles=*C1=C(C)NC(C)=C(*)C1C(=O)NC(C)C wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=8 smiles=*C1=CC=C(Br)C=C1 wildcard=True
+  [Tier 3] '3': bbox=6 atoms=13 smiles=*C(C)CC(=C)C1=NO=C(C)*=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3']
+    [Tier 4 LLM] '1a' → r_value='1,4-dihydropyridine-3,5-dicarboxylate derivative'
+    [Tier 4 LLM] '2a' → r_value='4-(trifluoromethyl)phenyl'
+    [Tier 4 LLM] '3' → r_value='N-(1-methoxy-1-oxopropan-2-yl)-4-(trifluoromethyl)benzamide'
+    [Tier 4] R-group candidates: ['1a', '2a', '3']
+    [Tier 4 graph] '1a' r=1,4-dihydropyridine-3,5-dicarboxylate derivative fallback (smi=*C1=C(*)C(C(=O)NC(*)*)C(*)=C(*)N1)
+    [Tier 4] '1a' 🔄 corrected: CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1C(=O)NC(C)C(=O)O
+    [Tier 4 graph] '2a' r=4-(trifluoromethyl)phenyl fallback (smi=*C1=CC=C(Br)C=C1)
+    [Tier 4] '2a' ✅ match: FC(F)(F)c1ccc(Br)cc1
+    [Tier 4 graph] '3' r=N-(1-methoxy-1-oxopropan-2-yl)-4-(trifluoromethyl)benzamide fallback (smi=*C1=CC=C(C(=O)NC(*)*)C=C1)
+    [Tier 4] '3' correction contradicts r_value 'N-(1-methoxy-1-oxopropan-2-yl)-4-(trifluoromethyl)benzamide' — keeping original
+    [Tier 4] '3' 🔄 corrected: CC1=CC=C(C(=O)NC(C)C(=O)OC)C=C1.FC(F)(F)C2=CC=C(C(
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3']  remaining=[]

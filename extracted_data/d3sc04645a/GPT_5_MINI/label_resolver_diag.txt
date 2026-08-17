@@ -1,0 +1,78 @@
+Label Resolver Diagnostic Log — 2026-08-15 19:45:24
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', 'Pyrene', 'NiCl2·Phen'] → image_000006_46092d09addd1481321c6b4ba48438b27e57354638f2183f8c4d9ffa01295567.png
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', 'Pyrene', 'NiCl2·Phen']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d3sc04645a/GPT_5_MINI/processed/d3sc04645a_artifacts/image_000006_46092d09addd1481321c6b4ba48438b27e57354638f2183f8c4d9ffa01295567.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN']  remaining=['Pyrene', 'NiCl2·Phen']
+  [OCSR] image_000006_46092d09addd1481321c6b4ba48438b27e57354638f2183f8c4d9ffa01295567.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['4a']  smiles=C#Cc1ccccc1Cl  wildcard=False
+  [OCSR]   pair [2,3]: texts=['24']  smiles=*C(*)C=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['34']  smiles=**  wildcard=True
+  [OCSR]   pair [6,7]: texts=['4a (JIE,#2F1,4-diene']  smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['51 (1Z 4211 4 dcno']  smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Pyrene', 'NiCl2·Phen']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Pyrene', 'NiCl2·Phen']
+  [Tier 3] 'Pyrene': bbox_idx=None out of range (n=10)
+  [Tier 3] 'NiCl2·Phen': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Pyrene', 'NiCl2·Phen']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Pyrene', 'NiCl2·Phen']
+    [Tier 5 PubChem] 'Pyrene' → hit via 'Pyrene': C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2
+    [Tier 5 PubChem] 'NiCl2·Phen' → no hit (tried ['NiCl2·Phen'])
+  [Tier 5 PubChem] resolved=['Pyrene']  remaining=['NiCl2·Phen']
+    [Tier 6→llm_name_to_smiles] 'NiCl2·Phen' name='Nickel(II) chloride phenanthroline complex' → C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]
+  [Tier 6 LLM Vision] resolved=['NiCl2·Phen']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '5a', '3a', '2a', '1a']
+  Image    : extracted_data/d3sc04645a/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4a', '5a', '3a', '2a', '1a']
+  [OCSR] visualheist_page_02_table_1.png: 13 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=C#Cc1ccccc1Cl  wildcard=False
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*C(*)C=C  wildcard=True
+  [OCSR]   pair [5,6]: texts=['34']  smiles=**  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4a (IE.42}-1 4-diene']  smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['5a (12,421-1,4-diene']  smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '5a', '3a', '2a', '1a']
+  [Tier 2 Symbol Correction] resolved=['1a']  remaining=['4a', '5a', '3a', '2a']
+  [Tier 3] '4a': bbox=8 atoms=20 smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1 wildcard=True
+  [Tier 3] '5a': bbox=10 atoms=20 smiles=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1 wildcard=True
+  [Tier 3] '3a': bbox=5 atoms=2 smiles=** wildcard=True
+  [Tier 3] '2a': bbox=3 atoms=5 smiles=*C(*)C=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '5a', '3a', '2a']
+    [Tier 4 LLM] '2a' → r_value='Ar = 2-Ph-C6H4'
+    [Tier 4 LLM] '3a' → r_value='tBu-BF3K'
+    [Tier 4 LLM] '4a' → r_value='(1E,4Z)-1,4-diene'
+    [Tier 4 LLM] '5a' → r_value='(1Z,4Z)-1,4-diene'
+    [Tier 4] R-group candidates: ['2a', '3a', '4a', '5a']
+    [Tier 4 graph] '2a' r=Ar = 2-Ph-C6H4 fallback (smi=*C(*)C=C)
+    [Tier 4] '2a' ✅ match: CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1
+    [Tier 4 graph] '3a' r=tBu-BF3K fallback (smi=**)
+    [Tier 4] '3a' ✅ match: CC(C)(C)[B-](F)(F)F.[K+]
+    [Tier 4 graph] '4a' r=(1E,4Z)-1,4-diene fallback (smi=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1)
+    [Tier 4 graph] '5a' r=(1Z,4Z)-1,4-diene fallback (smi=*C=C(CC=CC1=C(*)C=CC=C1)C1=C(Cl)C=CC=C1)
+    [Tier 4] '4a' RDKit render failed: CC(C)(C)/C=E/C(C/C=Z/C1=C(C2=CC=CC=C2)C=
+    [Tier 4] '5a' RDKit render failed: CC(C)(C)/C=Z/C(C/C=Z/C1=C(C2=CC=CC=C2)C=
+  [Tier 4 R-group Sub] resolved=['2a', '3a']  remaining=['4a', '5a']
+    [Tier 5 PubChem] '4a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4a', '5a']
+    [Tier 6→llm_name_to_smiles] '4a' name='(1E,4Z)-1,4-diene' → C=CC/C=C/C
+    [Tier 6→llm_name_to_smiles] '5a' name='(1Z,4Z)-1,4-diene' → C=CC=C
+  [Tier 6 LLM Vision] resolved=['4a', '5a']

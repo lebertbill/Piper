@@ -1,0 +1,148 @@
+Label Resolver Diagnostic Log — 2026-08-15 16:27:23
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Xantphos', 'HEH', '4CzIPN'] → image_000009_72f861f15455764568b0e7a9ea7abdc33dec66f7132bfd46c78667c5f1c3df0d.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Gallery 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Xantphos', 'HEH', '4CzIPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis/GPT_5_MINI/processed/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis_artifacts/image_000009_72f861f15455764568b0e7a9ea7abdc33dec66f7132bfd46c78667c5f1c3df0d.png
+  Exists   : True
+  [Tier 0 NameMap] 'Xantphos' → pubchem_lookup via name='4,5-bis(diphenylphosphino)-9,9-dimethylxanthene'
+  [Tier 0 NameMap] 'HEH' → llm_name_to_smiles via name='2,6-dimethyl(2H)pyridine diethyl dicarboxylate (Hantzsch ester)'
+  [Tier 0 NameMap] '4CzIPN' → opsin_lookup via name='2,4,5,6-tetra(carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] resolved=['Xantphos', 'HEH', '4CzIPN']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a-Z', '1a', '2a-E', '3a']
+  Image    : extracted_data/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2a-Z', '1a', '2a-E', '3a']
+  [OCSR] visualheist_page_02_table_1.png: 12 bboxes, 4 coref pairs
+  [OCSR]   pair [1,2]: texts=['1a']  smiles=*CC=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a-E']  smiles=*C=CC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['2a-2']  smiles=*C=CC  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=*CCC  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a-Z', '1a', '2a-E', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a-Z', '1a', '2a-E', '3a']
+  [Tier 3] '1a': bbox=1 atoms=4 smiles=*CC=C wildcard=True
+  [Tier 3] '2a-E': bbox=4 atoms=4 smiles=*C=CC wildcard=True
+  [Tier 3] '2a-Z': bbox=7 atoms=4 smiles=*C=CC wildcard=True
+  [Tier 3] '3a': bbox=10 atoms=4 smiles=*CCC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a-E', '2a-Z', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '2a-E' → r_value='* = Ph'
+    [Tier 4 LLM] '2a-Z' → r_value='* = Ph'
+    [Tier 4 LLM] '3a' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1a', '2a-E', '2a-Z', '3a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*CC=C)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)CC=C
+    [Tier 4 graph] '2a-E' r=* = Ph fallback (smi=*C=CC)
+    [Tier 4 graph] '2a-Z' r=* = Ph fallback (smi=*C=CC)
+    [Tier 4] '2a-E' 🔄 corrected: C/C=C\c1ccccc1
+    [Tier 4] '2a-Z' ✅ match: C/C=C\c1ccccc1
+    [Tier 4 graph] '3a' r=* = Ph fallback (smi=*CCC)
+    [Tier 4] '3a' ✅ match: c1ccc(cc1)CCC
+  [Tier 4 R-group Sub] resolved=['1a', '2a-E', '2a-Z', '3a']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9'] → image_000013_a3d48cd3e5c7dcccb353ff4bee19564e153c4f0fddfad6087a19462a8fa38d25.png
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['L1', 'L2', 'L3', 'L4', 'L5', 'L6', 'L7', 'L8', 'L9']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis/GPT_5_MINI/processed/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis_artifacts/image_000013_a3d48cd3e5c7dcccb353ff4bee19564e153c4f0fddfad6087a19462a8fa38d25.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='4,5-bis(diphenylphosphino)-9,9-dimethylxanthene'
+  [Tier 0 NameMap] 'L2' → pubchem_lookup via name='triphenylphosphine'
+  [Tier 0 NameMap] 'L7' → pubchem_lookup via name='1,4-bis(diphenylphosphino)butane'
+  [Tier 0 NameMap] resolved=['L1', 'L2', 'L7']  remaining=['L3', 'L4', 'L5', 'L6', 'L8', 'L9']
+  [OCSR] image_000013_a3d48cd3e5c7dcccb353ff4bee19564e153c4f0fddfad6087a19462a8fa38d25.png: 18 bboxes, 8 coref pairs
+  [OCSR]   pair [1,2]: texts=['L1']  smiles=*C1=CC=CC2=C1OC1=C(C=CC=C1*)C2(C)C  wildcard=True
+  [OCSR]   pair [3,4]: texts=['L6']  smiles=*C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [5,6]: texts=['L2']  smiles=*P(*)*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['L7']  smiles=*CCCC*  wildcard=True
+  [OCSR]   pair [9,10]: texts=['LJ']  smiles=*c1cccc1.*c1cccc1.C.C.C.C.C.C.C.C.C.C12C3456789%10  wildcard=True
+  [OCSR]   pair [11,12]: texts=['L8']  smiles=*C1=CC=CC=C1OC1=C(*)C=CC=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['L4']  smiles=CC(C)(C)P(c1ccccc1-c1ccccc1)C(C)(C)C  wildcard=False
+  [OCSR]   pair [16,17]: texts=['L5']  smiles=*C1=CC=C2C=CC=CC2=C1C1=C(*)C=CC2=C1C=CC=C2  wildcard=True
+  [OCSR] → 9 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['L4']  remaining=['L3', 'L5', 'L6', 'L8', 'L9']
+  [Tier 2 Symbol Correction] resolved=['L3']  remaining=['L5', 'L6', 'L8', 'L9']
+  [Tier 3] 'L5': bbox=16 atoms=22 smiles=*C1=CC=C2C=CC=CC2=C1C1=C(*)C=CC2=C1C=CC=C2 wildcard=True
+  [Tier 3] 'L6': bbox=3 atoms=8 smiles=*C1=CC=CC=C1* wildcard=True
+  [Tier 3] 'L8': bbox=11 atoms=15 smiles=*C1=CC=CC=C1OC1=C(*)C=CC=C1 wildcard=True
+  [Tier 3] 'L9': bbox=15 atoms=34 smiles=CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C(C)C)c1 wildcard=False
+  [Tier 3 BBox Match] resolved=['L9']  remaining=['L5', 'L6', 'L8']
+    [Tier 4 LLM] 'L5' → r_value='* = PPh2'
+    [Tier 4 LLM] 'L6' → r_value='* = PPh2'
+    [Tier 4 LLM] 'L8' → r_value='* = PPh2'
+    [Tier 4] R-group candidates: ['L5', 'L6', 'L8']
+    [Tier 4 graph] 'L5' r=* = PPh2 fallback (smi=*C1=CC=C2C=CC=CC2=C1C1=C(*)C=CC2=C1C=CC=C2)
+    [Tier 4] 'L5' ✅ match: P(C1=CC=CC=C1)(C1=CC=CC=C1)C1=CC=C2C=CC=CC2=C1C1=C
+    [Tier 4 graph] 'L6' r=* = PPh2 fallback (smi=*C1=CC=CC=C1*)
+    [Tier 4] 'L6' 🔄 corrected: c1ccc(cc1)P(c2ccccc2)c3ccccc3P(c4ccccc4)c5ccccc5
+    [Tier 4 graph] 'L8' r=* = PPh2 fallback (smi=*C1=CC=CC=C1OC1=C(*)C=CC=C1)
+    [Tier 4] 'L8' ✅ match: c1ccc(cc1)P(c2ccccc2)c3ccccc3Oc4ccccc4P(c5ccccc5)c
+  [Tier 4 R-group Sub] resolved=['L5', 'L6', 'L8']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['4b', '1b', '2b']
+  Image    : extracted_data/Angew Chem Int Ed - 2019 - Meng - Controllable Isomerization of Alkenes by Dual Visible‐Light‐Cobalt Catalysis/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4b', '1b', '2b']
+  [OCSR] visualheist_page_03_table_1.png: 29 bboxes, 14 coref pairs
+  [OCSR]   pair [1,2]: texts=['L1']  smiles=*C1=CC=CC2=C1OC1=C(C=CC=C1*)C2(C)C  wildcard=True
+  [OCSR]   pair [3,4]: texts=['L6']  smiles=*C1=CC=CC=C1*  wildcard=True
+  [OCSR]   pair [5,6]: texts=['1b']  smiles=*CCC=C  wildcard=True
+  [OCSR]   pair [7,8]: texts=['L2']  smiles=*P(*)*  wildcard=True
+  [OCSR]   pair [9,10]: texts=['L7']  smiles=*CCCC*  wildcard=True
+  [OCSR]   pair [11,12]: texts=['L3']  smiles=*c1cccc1.*c1cccc1.[cH3][Fe][CH3].[cH3][Fe][CH3].cc  wildcard=True
+  [OCSR]   pair [13,14]: texts=['L8']  smiles=*C1=CC=CC=C1OC1=C(*)C=CC=C1  wildcard=True
+  [OCSR]   pair [15,16]: texts=['L4']  smiles=CC(C)(C)P(c1ccccc1-c1ccccc1)C(C)(C)C  wildcard=False
+  [OCSR]   pair [17,18]: texts=['4b-E']  smiles=*CC=CC  wildcard=True
+  [OCSR]   pair [19,20]: texts=['2b-E']  smiles=*C=CCC  wildcard=True
+  [OCSR]   pair [21,22]: texts=['L9']  smiles=CC(C)c1cc(C(C)C)c(-c2ccccc2P(C2CCCCC2)C2CCCCC2)c(C  wildcard=False
+  [OCSR]   pair [23,24]: texts=['4b-2']  smiles=*CC=CC  wildcard=True
+  [OCSR]   pair [25,26]: texts=['2b-2']  smiles=*C=CCC  wildcard=True
+  [OCSR]   pair [27,28]: texts=['L5']  smiles=*C1=CC=C2C=CC=CC2=C1C1=C(*)C=CC2=C1C=CC=C2  wildcard=True
+  [OCSR] → 15 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4b', '1b', '2b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4b', '1b', '2b']
+  [Tier 3] '1b': bbox=5 atoms=5 smiles=*CCC=C wildcard=True
+  [Tier 3] '2b': bbox=19 atoms=5 smiles=*C=CCC wildcard=True
+  [Tier 3] '4b': bbox=25 atoms=5 smiles=*C=CCC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1b', '2b', '4b']
+    [Tier 4 LLM] '1b' → r_value='* = Ph'
+    [Tier 4 LLM] '2b' → r_value='* = Ph'
+    [Tier 4 LLM] '4b' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1b', '2b', '4b']
+    [Tier 4 graph] '1b' r=* = Ph fallback (smi=*CCC=C)
+    [Tier 4] '1b' ✅ match: C1=CC=C(C=C1)CCC=C
+    [Tier 4 graph] '2b' r=* = Ph fallback (smi=*C=CCC)
+    [Tier 4 graph] '4b' r=* = Ph fallback (smi=*CC=CC)
+  [Tier 4 R-group Sub] resolved=['1b']  remaining=['2b', '4b']
+    [Tier 5 PubChem] '2b' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4b' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2b', '4b']
+    [Tier 6→pubchem_lookup] '2b' name='4-phenyl-2-butene' → C/C=C/CC1=CC=CC=C1
+    [Tier 6→pubchem_lookup] '4b' name='1-phenyl-1-butene' → CCC=CC1=CC=CC=C1
+  [Tier 6 LLM Vision] resolved=['2b', '4b']

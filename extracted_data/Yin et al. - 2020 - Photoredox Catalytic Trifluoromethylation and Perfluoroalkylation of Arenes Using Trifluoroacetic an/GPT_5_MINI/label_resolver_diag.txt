@@ -1,0 +1,31 @@
+Label Resolver Diagnostic Log — 2026-05-01 08:26:39
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['BHT-CF3', 'TEMPO-CF3'] → image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 2
+────────────────────────────────────────────────────────────
+  Labels   : ['BHT-CF3', 'TEMPO-CF3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an/GPT5MINI3/processed/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an_artifacts/image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [OCSR] image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png: 6 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['1-mono']  smiles=*C1=CC(*)=C(*)C(*)=C1  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 3] 'BHT-CF3': bbox=1 atoms=13 smiles=**.*CC1=CC(*)=C(O)C(*)=C1 wildcard=True
+  [Tier 3] 'TEMPO-CF3': bbox=5 atoms=12 smiles=*ON1C(*)(*)CCCC1(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 LLM] 'BHT-CF3' → r_value='R1 = OH, R2 = t-Bu, R3 = CF3, R4 = t-Bu'
+    [Tier 4 LLM] 'TEMPO-CF3' → r_value='R = O-CF3'
+    [Tier 4] R-group candidates: ['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 graph] 'BHT-CF3' r=R1 = OH, R2 = t-Bu, R3 = CF3, R4 = t-Bu fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4 graph] 'TEMPO-CF3' r=R = O-CF3 fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4] 'BHT-CF3' 🔄 corrected: CC1=CC(C)=C(CF(F)F)C(C)=C1
+    [Tier 4] 'TEMPO-CF3' 🔄 corrected: CC1=CC(C)=CC(C)=C1C(F)(F)F
+  [Tier 4 R-group Sub] resolved=['BHT-CF3', 'TEMPO-CF3']  remaining=[]

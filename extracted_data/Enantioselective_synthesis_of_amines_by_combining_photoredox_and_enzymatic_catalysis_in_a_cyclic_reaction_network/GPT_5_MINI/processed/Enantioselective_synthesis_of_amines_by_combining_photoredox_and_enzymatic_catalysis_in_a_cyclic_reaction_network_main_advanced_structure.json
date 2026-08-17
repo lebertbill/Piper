@@ -1,0 +1,264 @@
+{
+    "article_summary": "The article describes a light-driven cyclic reaction network for the enantioselective synthesis of amines from cyclic imines. It combines a photoredox-catalyzed reduction step using a water-soluble iridium photosensitizer (Na3[Ir(sppy)3]) and ascorbic acid as a HAT donor with an enzymatic re-oxidation step using monoamine oxidase (MAO-N-9). This concurrent process leads to the accumulation of enantioenriched (R)-amines in aqueous solution.",
+    "compound_name_map": {
+        "1a": "2-cyclohexyl-1-pyrroline",
+        "2a": "2-cyclohexylpyrrolidine",
+        "1b": "2-butyl-1-pyrroline",
+        "1c": "2-benzyl-1-pyrroline",
+        "1d": "1-cyclohexyl-3,4-dihydroisoquinoline",
+        "1e": "1-methyl-3,4-dihydroisoquinoline",
+        "Na3[Ir(sppy)3]": "sodium tris(2-phenylpyridine-5-sulfonate)iridate(III)",
+        "fac-[Ir(ppy)3]": "fac-tris(2-phenylpyridine)iridium(III)",
+        "[Ru(bpy)3]Cl2": "tris(2,2'-bipyridine)ruthenium(II) chloride",
+        "AscH2": "ascorbic acid",
+        "MPAA-PEG": "4-mercaptophenylacetic acid derivative",
+        "MPA-PEG": "3-mercaptopropionic acid derivative",
+        "ESI": "Electronic supplementary information",
+        "MAO-N-9": "The enzyme monoamine oxidase",
+        "single": "er initial imine reduction by photoinduced",
+        "thermal": "ulting a -amino alkyl radicals must be intercepted rapidly by",
+        "HAT": "hydrogen atom transfer",
+        "3W": "product forming\n\n405 nm blue LED",
+        "pET-16b": "coli cells with an empty vector",
+        "empty": "coli",
+        "R": "enzyme catalysis a\n\nrac-2d",
+        "racemic": "The lightdriven reduction of aliphatic and aromatic imines to"
+    },
+    "compound_description_map": {
+        "Na3[Ir(sppy)3]": "water-soluble variant of the widely used [Ir(ppy)3] photosensitizer",
+        "MAO-N-9": "monoamine oxidase variant that selectively catalyzes the oxidation of (S)-enantiomers of cyclic amines",
+        "AscH2": "reductant and hydrogen atom transfer (HAT) donor",
+        "MPAA-PEG": "thiol donor used for polarity-matched HAT with alpha-amino alkyl radicals"
+    },
+    "data_items": [
+        {
+            "id": "Fig. 1",
+            "type": "Figure",
+            "purpose": "Conceptual overview of the cyclic deracemization network and energy profile",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "Enantioselective_synthesis_of_amines_by_combining_photoredox_and_enzymatic_catalysis_in_a_cyclic_reaction_network_artifacts/image_000005_9fd45a50fffc2ee6073de43c6b497aea6d0b28ef8d7e5f7eabf7dd3358757981.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "1a",
+                "2a"
+            ],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {}
+        },
+        {
+            "id": "Scheme 1",
+            "type": "Table",
+            "purpose": "Identification of a suitable photocatalyst for the reduction of 1a",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "Enantioselective_synthesis_of_amines_by_combining_photoredox_and_enzymatic_catalysis_in_a_cyclic_reaction_network_artifacts/image_000006_a705291cc6757a4f6541eed35196e8e48ad2926eec7d2e082bd5bcd7181ead24.png",
+            "expected_row_count": 3,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "Ir(ppy)3",
+                "Na3Ir(sppy)3"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "The 'photocat.' column in the table maps to the 'photocat.' parameter above the reaction arrow.",
+            "defined_labels": [
+                "Ir(ppy)3",
+                "Na3Ir(sppy)3"
+            ],
+            "reactant_labels": [
+                "1a"
+            ],
+            "product_labels": [
+                "rac-2a"
+            ],
+            "columns": {
+                "photocat.": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Eox* / V (vs. SCE)": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "yield (2a)": {
+                    "type": "numerical",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                }
+            }
+        },
+        {
+            "id": "Table 1",
+            "type": "Table",
+            "purpose": "Optimization of reaction conditions for the photoredox/enzyme catalysis cascade",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "Enantioselective_synthesis_of_amines_by_combining_photoredox_and_enzymatic_catalysis_in_a_cyclic_reaction_network_artifacts/image_000007_530817bada3caf32e69fab8c96ddd728b0ca3ffa6c8fe1cc98ee4409b7933ab3.png",
+            "expected_row_count": 5,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "The 'Biocatalyst' column maps to the 'biocatalyst' parameter above the arrow.",
+            "defined_labels": [],
+            "reactant_labels": [
+                "1a"
+            ],
+            "product_labels": [
+                "(R)-2a"
+            ],
+            "columns": {
+                "Entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Biocatalyst": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "t /h": {
+                    "type": "numerical",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Yield [e.e.] (%)": {
+                    "type": "numerical",
+                    "data_type": "string",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                }
+            }
+        },
+        {
+            "id": "Table 2",
+            "type": "Table",
+            "purpose": "Substrate scope of the combined photoredox/enzyme catalysis",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "Enantioselective_synthesis_of_amines_by_combining_photoredox_and_enzymatic_catalysis_in_a_cyclic_reaction_network_artifacts/image_000007_530817bada3caf32e69fab8c96ddd728b0ca3ffa6c8fe1cc98ee4409b7933ab3.png",
+            "expected_row_count": 8,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": [],
+            "columns": {
+                "Entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Substrate": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map": "Substrate labels defined in text and ESI",
+                    "label_map_ref": "Results and Discussion section",
+                    "label_map_source_id": null
+                },
+                "Photocat. & reducing agent": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Biocat.": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                },
+                "Product": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map": "Product labels correspond to substrates",
+                    "label_map_ref": "Table 2",
+                    "label_map_source_id": null
+                },
+                "Yield [e.e.] (%)": {
+                    "type": "numerical",
+                    "data_type": "string",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": false,
+                    "label_map": null,
+                    "label_map_ref": null,
+                    "label_map_source_id": null
+                }
+            }
+        }
+    ]
+}

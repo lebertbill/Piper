@@ -1,0 +1,115 @@
+Label Resolver Diagnostic Log — 2026-06-11 11:58:19
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [InlineResolver] Column 'Reagent' labels ['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3'] from visualheist_page_02_table_1.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+  Image    : extracted_data/Borate_esters_as_convenient_reagents_for_direct_amidation_of_carboxylic_acids_and_transamidation_of_primary_amides/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+  [OCSR] visualheist_page_02_table_1.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', 'equiv']  smiles=*CC(=O)O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1', 'equiv']  smiles=*CN  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+  [Tier 3] 'none': bbox_idx=None out of range (n=5)
+  [Tier 3] 'B(OCH 2 CF 3 ) 3': bbox_idx=None out of range (n=5)
+  [Tier 3] 'Methanol (MeOH)': bbox_idx=None out of range (n=5)
+  [Tier 3] '18 equiv B(OMe)3': bbox_idx=None out of range (n=5)
+  [Tier 3 BBox Match] resolved=[]  remaining=['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+    [Tier 4 LLM] 'none' → r_value='Ph'
+    [Tier 4 LLM] 'none' → r_value='Ph'
+    [Tier 4 LLM] 'B(OCH 2 CF 3 ) 3' → r_value='Ph'
+    [Tier 4 LLM] 'B(OCH 2 CF 3 ) 3' → r_value='Ph'
+    [Tier 4 LLM] 'Methanol (MeOH)' → r_value='Ph'
+    [Tier 4 LLM] 'Methanol (MeOH)' → r_value='Ph'
+    [Tier 4 LLM] '18 equiv B(OMe)3' → r_value='Ph'
+    [Tier 4 LLM] '18 equiv B(OMe)3' → r_value='Ph'
+    [Tier 4] R-group candidates: ['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']
+    [Tier 4 graph] 'none' r=Ph fallback (smi=*CN)
+    [Tier 4 graph] 'B(OCH 2 CF 3 ) 3' r=Ph fallback (smi=*CN)
+    [Tier 4 graph] 'Methanol (MeOH)' r=Ph fallback (smi=*CN)
+    [Tier 4 graph] '18 equiv B(OMe)3' r=Ph fallback (smi=*CN)
+    [Tier 4] 'none' ✅ match: c1ccc(cc1)CN
+    [Tier 4] 'B(OCH 2 CF 3 ) 3' ✅ match: c1ccc(cc1)CN
+    [Tier 4] 'Methanol (MeOH)' 🔄 corrected: CO
+    [Tier 4] '18 equiv B(OMe)3' 🔄 corrected: B(OC)(OC)OC
+  [Tier 4 R-group Sub] resolved=['none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)', '18 equiv B(OMe)3']  remaining=[]
+  [InlineResolver] Column 'Solvent' labels ['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)'] from visualheist_page_02_table_1.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)']
+  Image    : extracted_data/Borate_esters_as_convenient_reagents_for_direct_amidation_of_carboxylic_acids_and_transamidation_of_primary_amides/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)']
+  [OCSR] visualheist_page_02_table_1.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', 'equiv']  smiles=*CC(=O)O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1', 'equiv']  smiles=*CN  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)']
+  [Tier 3] 'methanol': bbox_idx=None out of range (n=5)
+  [Tier 3] '18 equiv B(OMe)3': bbox_idx=None out of range (n=5)
+  [Tier 3] 'none': bbox_idx=None out of range (n=5)
+  [Tier 3] 'B(OCH 2 CF 3 ) 3': bbox_idx=None out of range (n=5)
+  [Tier 3] 'Methanol (MeOH)': bbox_idx=None out of range (n=5)
+  [Tier 3 BBox Match] resolved=[]  remaining=['methanol', '18 equiv B(OMe)3', 'none', 'B(OCH 2 CF 3 ) 3', 'Methanol (MeOH)']
+    [Tier 4 LLM] 'none' → r_value='Ph'
+    [Tier 4 LLM] 'none' → r_value='Ph'
+    [Tier 4 LLM] 'methanol' → r_value='Ph'
+    [Tier 4 LLM] 'methanol' → r_value='Ph'
+    [Tier 4 LLM] 'Methanol (MeOH)' → r_value='Ph'
+    [Tier 4 LLM] 'Methanol (MeOH)' → r_value='Ph'
+    [Tier 4] R-group candidates: ['none', 'methanol', 'Methanol (MeOH)']
+    [Tier 4 graph] 'none' r=Ph fallback (smi=*CN)
+    [Tier 4 graph] 'methanol' r=Ph fallback (smi=*CN)
+    [Tier 4 graph] 'Methanol (MeOH)' r=Ph fallback (smi=*CN)
+    [Tier 4] 'none' ✅ match: c1ccc(cc1)CN
+    [Tier 4] 'methanol' 🔄 corrected: CO
+    [Tier 4] 'Methanol (MeOH)' 🔄 corrected: CO
+  [Tier 4 R-group Sub] resolved=['none', 'methanol', 'Methanol (MeOH)']  remaining=['18 equiv B(OMe)3', 'B(OCH 2 CF 3 ) 3']
+    [Tier 5 PubChem] '18 equiv B(OMe)3' → no hit (tried ['18 equiv B(OMe)3'])
+    [Tier 5 PubChem] 'B(OCH 2 CF 3 ) 3' → no hit (tried ['B(OCH 2 CF 3 ) 3'])
+  [Tier 5 PubChem] resolved=[]  remaining=['18 equiv B(OMe)3', 'B(OCH 2 CF 3 ) 3']
+    [Tier 6→pubchem_lookup] '18 equiv B(OMe)3' name='Trimethyl borate' → B(OC)(OC)OC
+    [Tier 6→pubchem_lookup] 'B(OCH 2 CF 3 ) 3' name='tris(2,2,2-trifluoroethyl) borate' → B(OCC(F)(F)F)(OCC(F)(F)F)OCC(F)(F)F
+  [Tier 6 LLM Vision] resolved=['18 equiv B(OMe)3', 'B(OCH 2 CF 3 ) 3']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['amide', 'H2N-Ph', 'Ph-COOH']
+  Image    : extracted_data/Borate_esters_as_convenient_reagents_for_direct_amidation_of_carboxylic_acids_and_transamidation_of_primary_amides/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['amide', 'H2N-Ph', 'Ph-COOH']
+  [OCSR] visualheist_page_02_table_1.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['1', 'equiv']  smiles=*CC(=O)O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1', 'equiv']  smiles=*CN  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['amide', 'H2N-Ph', 'Ph-COOH']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['amide', 'H2N-Ph', 'Ph-COOH']
+  [Tier 3] 'amide': bbox=4 atoms=7 smiles=*CNC(=O)C* wildcard=True
+  [Tier 3] 'H2N-Ph': bbox=2 atoms=3 smiles=*CN wildcard=True
+  [Tier 3] 'Ph-COOH': bbox=0 atoms=5 smiles=*CC(=O)O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['amide', 'H2N-Ph', 'Ph-COOH']
+    [Tier 4 LLM] 'Ph-COOH' → r_value='* = Ph'
+    [Tier 4 LLM] 'H2N-Ph' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['Ph-COOH', 'H2N-Ph']
+    [Tier 4 graph] 'Ph-COOH' r=* = Ph fallback (smi=*CC(=O)O)
+    [Tier 4] 'Ph-COOH' 🔄 corrected: c1ccc(cc1)CC(=O)O
+    [Tier 4 graph] 'H2N-Ph' r=* = Ph fallback (smi=*CN)
+    [Tier 4] 'H2N-Ph' ✅ match: c1ccc(cc1)CN
+  [Tier 4 R-group Sub] resolved=['Ph-COOH', 'H2N-Ph']  remaining=['amide']
+    [Tier 5 PubChem] 'amide' → no hit (tried ['amide'])
+  [Tier 5 PubChem] resolved=[]  remaining=['amide']
+    [Tier 6→pubchem_lookup] 'amide' name='N-benzyl-2-phenylacetamide' → C1=CC=C(C=C1)CC(=O)NCC2=CC=CC=C2
+  [Tier 6 LLM Vision] resolved=['amide']

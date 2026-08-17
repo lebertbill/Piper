@@ -1,0 +1,138 @@
+Label Resolver Diagnostic Log — 2026-06-18 16:13:01
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4a', '4b', '4c', 'DCA', '5a', '6'] → image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '4b', '4c', 'DCA', '5a', '6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient/default_run/processed/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient_artifacts/image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png
+  Exists   : True
+  [Tier 0 NameMap] 'DCA' → pubchem_lookup via name='9,10-dicyanoanthracene'
+  [Tier 0 NameMap] '5a' → opsin_lookup via name='ethyl 4-(N,N-dimethylamino)phenylacetate'
+  [Tier 0 NameMap] '6' → pubchem_lookup via name='bibenzyl'
+  [Tier 0 NameMap] resolved=['DCA', '5a', '6']  remaining=['4a', '4b', '4c']
+  [OCSR] image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png: 15 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*CC1=CC=C(*)C=C1.I  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4a R=H', '4b: R = IBu']  smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]-  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C=C(*)*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC  wildcard=True
+  [OCSR]   pair [10,11]: texts=['6']  smiles=*C1=CC=C(CCC2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['3a']  smiles=*C1=CC=C(CC(*)C(*)*)C=C1  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '4b', '4c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '4b', '4c']
+  [Tier 3] '4a': bbox=2 atoms=33 smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3 wildcard=True
+  [Tier 3] '4b': bbox=2 atoms=33 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([C]2=CC=CC=C2)[C]2 wildcard=True
+  [Tier 3] '4c': bbox=8 atoms=45 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '4b', '4c']
+    [Tier 4 LLM] '4a' → r_value='R = H'
+    [Tier 4 LLM] '4b' → r_value='R = tBu'
+    [Tier 4 LLM] '4c' → r_value='R = tBu, R' = CF3'
+    [Tier 4] R-group candidates: ['4a', '4b', '4c']
+    [Tier 4 graph] '4a' r=R = H fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4 graph] '4b' r=R = tBu fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4] '4a' 🔄 corrected: c1ccc(cc1)-c1cccc[n+]1-c1cccc[n+]1-c1cccc[n+]1.[Ir
+    [Tier 4] '4b' 🔄 corrected: CC(C)(C)c1cc[n]2->[Ir+]3([c]4ccccc4)([c]4ccccc4-c4
+    [Tier 4 graph] '4c' r=R = tBu, R' = CF3 fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)=C2C2=[N]1C=C(*)C=C2)[C]1=C(C(F)=CC(F)=C1)C1=CC=C(*)C=[N]13)
+    [Tier 4] '4c' 🔄 corrected: CC(C)(C)c1cc[n]2c(c1)-c1cc(C(C)(C)C)cc[n]1[Ir+]21(
+  [Tier 4 R-group Sub] resolved=['4a', '4b', '4c']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['[4b][BF4]', '[4c][BF4]', '[4a][BF4]', '[Ru(bpy)3][BF4]2'] from image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['[4b][BF4]', '[4c][BF4]', '[4a][BF4]', '[Ru(bpy)3][BF4]2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient/default_run/processed/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient_artifacts/image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['[4b][BF4]', '[4c][BF4]', '[4a][BF4]', '[Ru(bpy)3][BF4]2']
+  [OCSR] image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png: 15 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*CC1=CC=C(*)C=C1.I  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4a R=H', '4b: R = IBu']  smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]-  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C=C(*)*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC  wildcard=True
+  [OCSR]   pair [10,11]: texts=['6']  smiles=*C1=CC=C(CCC2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['3a']  smiles=*C1=CC=C(CC(*)C(*)*)C=C1  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[4b][BF4]', '[4c][BF4]', '[4a][BF4]', '[Ru(bpy)3][BF4]2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[4b][BF4]', '[4c][BF4]', '[4a][BF4]', '[Ru(bpy)3][BF4]2']
+  [Tier 3] '[4a][BF4]': bbox=2 atoms=33 smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3 wildcard=True
+  [Tier 3] '[4b][BF4]': bbox=2 atoms=33 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([C]2=CC=CC=C2)[C]2 wildcard=True
+  [Tier 3] '[4c][BF4]': bbox=8 atoms=45 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3] '[Ru(bpy)3][BF4]2': bbox_idx=None out of range (n=15)
+  [Tier 3 BBox Match] resolved=[]  remaining=['[4a][BF4]', '[4b][BF4]', '[4c][BF4]', '[Ru(bpy)3][BF4]2']
+    [Tier 4 LLM] '[4a][BF4]' → r_value='R = H'
+    [Tier 4 LLM] '[4b][BF4]' → r_value='R = tBu'
+    [Tier 4 LLM] '[4c][BF4]' → r_value='R = tBu, R' = CF3'
+    [Tier 4] R-group candidates: ['[4a][BF4]', '[4b][BF4]', '[4c][BF4]']
+    [Tier 4 graph] '[4a][BF4]' r=R = H fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4 graph] '[4b][BF4]' r=R = tBu fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4] '[4a][BF4]' 🔄 corrected: F[B-](F)(F)F.c1ccc(cc1)-c1cccc[n+]1-2.[Ir+3]34([n+
+    [Tier 4] '[4b][BF4]' 🔄 corrected: CC(C)(C)c1cc[n]2[Ir+]3([c]4ccccc4-c4cccc[n]34)([c]
+    [Tier 4 graph] '[4c][BF4]' r=R = tBu, R' = CF3 fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)=C2C2=[N]1C=C(*)C=C2)[C]1=C(C(F)=CC(F)=C1)C1=CC=C(*)C=[N]13)
+    [Tier 4] '[4c][BF4]' RDKit render failed: CC(C)(C)C1=CC=[N]2C(=C1)C1=[N](C=CC(C(C)
+  [Tier 4 R-group Sub] resolved=['[4a][BF4]', '[4b][BF4]']  remaining=['[4c][BF4]', '[Ru(bpy)3][BF4]2']
+    [Tier 5 PubChem] '[4c][BF4]' → no hit (tried ['[4c][BF4]'])
+    [Tier 5 PubChem] '[Ru(bpy)3][BF4]2' → no hit (tried ['[Ru(bpy)3][BF4]2'])
+  [Tier 5 PubChem] resolved=[]  remaining=['[4c][BF4]', '[Ru(bpy)3][BF4]2']
+    [Tier 6→pubchem_lookup] '[Ru(bpy)3][BF4]2' name="Tris(2,2'-bipyridine)ruthenium(II) tetrafluoroborate" → [B-](F)(F)(F)F.[B-](F)(F)(F)F.C1=CC=NC(=C1)C2=CC=C
+  [Tier 6 LLM Vision] resolved=['[4c][BF4]', '[Ru(bpy)3][BF4]2']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['5a', '3a', '2a', '1a']
+  Image    : extracted_data/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient/default_run/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '5a' → opsin_lookup via name='ethyl 4-(N,N-dimethylamino)phenylacetate'
+  [Tier 0 NameMap] '3a' → opsin_lookup via name='ethyl 2-cyano-4-(4-(N,N-dimethylamino)phenyl)-3-phenylbutanoate'
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='ethyl (E)-2-cyano-3-phenylpropenoate'
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='4-(N,N-dimethylamino)phenylacetic acid'
+  [Tier 0 NameMap] resolved=['5a', '3a', '2a', '1a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4b', '4a', '3', '4c']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient/default_run/processed/Visible_light-mediated_oxidative_decarboxylation_of_arylacetic_acids_into_benzyl_radicals_addition_to_electron-deficient_artifacts/image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4b', '4a', '3', '4c']
+  [OCSR] image_000001_764fb8fa9413ddabdf61a7a6d114ac31c2c8a3dc45b45d508bc0628a9ba9aa7f.png: 15 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*CC1=CC=C(*)C=C1.I  wildcard=True
+  [OCSR]   pair [2,3]: texts=['4a R=H', '4b: R = IBu']  smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]-  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C=C(*)*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*CC1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['4c']  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC  wildcard=True
+  [OCSR]   pair [10,11]: texts=['6']  smiles=*C1=CC=C(CCC2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['3a']  smiles=*C1=CC=C(CC(*)C(*)*)C=C1  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4b', '4a', '3', '4c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4b', '4a', '3', '4c']
+  [Tier 3] '4a': bbox=2 atoms=33 smiles=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3 wildcard=True
+  [Tier 3] '4b': bbox=2 atoms=33 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([C]2=CC=CC=C2)[C]2 wildcard=True
+  [Tier 3] '3': bbox=12 atoms=13 smiles=*C1=CC=C(CC(*)C(*)*)C=C1 wildcard=True
+  [Tier 3] '4c': bbox=8 atoms=45 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '4b', '3', '4c']
+    [Tier 4 LLM] '4a' → r_value='R = H'
+    [Tier 4 LLM] '4b' → r_value='R = tBu'
+    [Tier 4 LLM] '4c' → r_value='R = tBu, R' = CF3'
+    [Tier 4] R-group candidates: ['4a', '4b', '4c']
+    [Tier 4 graph] '4a' r=R = H fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4 graph] '4b' r=R = tBu fallback (smi=*c1cc[n]2->[Ir]3([c]4ccccc4)([c]4ccccc4-c4cccc[n]->34)<-[n]3ccc(*)cc3-c2c1)
+    [Tier 4] '4a' 🔄 corrected: c1ccc(cc1)-c1cccc[n+]1-c1cccc[n+]1-c1cccc[n+]1.[Ir
+    [Tier 4] '4b' 🔄 corrected: CC(C)(C)c1cc[n]2->[Ir+]3([c]4ccccc4)([c]4ccccc4-c4
+    [Tier 4 graph] '4c' r=R = tBu, R' = CF3 fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)=C2C2=[N]1C=C(*)C=C2)[C]1=C(C(F)=CC(F)=C1)C1=CC=C(*)C=[N]13)
+    [Tier 4] '4c' 🔄 corrected: CC(C)(C)c1cc[n]2c(c1)-c1cc(C(C)(C)C)cc[n]1[Ir+]21(
+  [Tier 4 R-group Sub] resolved=['4a', '4b', '4c']  remaining=['3']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3']
+    [Tier 6→opsin_lookup] '3' name='ethyl 2-cyano-4-(4-(dimethylamino)phenyl)-3-phenylbutanoate' → C(#N)C(C(=O)OCC)C(CC1=CC=C(C=C1)N(C)C)C1=CC=CC=C1
+  [Tier 6 LLM Vision] resolved=['3']

@@ -1,0 +1,248 @@
+Label Resolver Diagnostic Log — 2026-06-18 13:32:30
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4', '6', '8', '3', '9', '10'] → image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '6', '8', '3', '9', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  Exists   : True
+  [Tier 0 NameMap] '4' → llm_name_to_smiles via name='BASF Glissopal® 1000'
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='polyisobutylene iodide (PIB-I)'
+  [Tier 0 NameMap] '8' → name 'polyisobutylene-tagged ppy ligand' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '3' → name 'Ir(ppy)2(PIB-ppy)' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '9' → name 'Ir(ppy)2(PIB2-ppy)' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['4', '6']  remaining=['8', '3', '9', '10']
+  [OCSR] image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*CC(C)(C)CC(=C)C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8']  smiles=*Cc1ccnc(-c2ccccc2)c1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Reh;', '3', 'R = PIB 9']  smiles=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5']  smiles=*CC(C)(C)CC(C)CO  wildcard=True
+  [OCSR]   pair [8,9]: texts=['10']  smiles=*C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]2134([N]25=CC=  wildcard=True
+  [OCSR]   pair [11,12]: texts=['6']  smiles=*I  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8', '3', '9', '10']
+  [Tier 2 Symbol Correction] resolved=['10']  remaining=['8', '3', '9']
+  [Tier 3] '8': bbox=2 atoms=14 smiles=*CC1=CC=NC(C2=CC=CC=C2)=C1 wildcard=True
+  [Tier 3] '3': bbox=4 atoms=40 smiles=*C(*)C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]213([C]2=C(C=CC=C2)C wildcard=True
+  [Tier 3] '9': bbox=4 atoms=40 smiles=*C(*)C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]213([C]2=C(C=CC=C2)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['8', '3', '9']
+    [Tier 4 LLM] '3' → r_value='R = H'
+    [Tier 4 LLM] '9' → r_value='R = PIB'
+    [Tier 4] R-group candidates: ['3', '9']
+    [Tier 4] bbox missing for group ['3', '9'] — using full image
+    [Tier 4] '3' 🔄 corrected: CC1=CC=NC(=C1)C1=CC=CC=C1[Ir]12(C3=CC=CC=C3C3=CC=C
+    [Tier 4] '9' 🔄 corrected: CC(C)(C)CC(C)(C)[PIB].CC(C)(C)CC(C)(C)[PIB].CC(C1=
+  [Tier 4 R-group Sub] resolved=['3', '9']  remaining=['8']
+    [Tier 5 PubChem] '8' → name_map name: 'polyisobutylene-tagged ppy ligand'
+    [Tier 5 PubChem] '8' → no hit (tried ['polyisobutylene-tagged ppy ligand'])
+  [Tier 5 PubChem] resolved=[]  remaining=['8']
+    [Tier 6] '8' PubChem/OPSIN/LLM all failed for authoritative name 'polyisobutylene-tagged ppy ligand' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['8']
+  [InlineResolver] Column 'Catalyst' labels ['Hantzsch ester', 'one tenth of the catalyst'] from image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Hantzsch ester', 'one tenth of the catalyst']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Hantzsch ester', 'one tenth of the catalyst']
+  [OCSR] image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*CC(C)(C)CC(=C)C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8']  smiles=*Cc1ccnc(-c2ccccc2)c1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Reh;', '3', 'R = PIB 9']  smiles=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5']  smiles=*CC(C)(C)CC(C)CO  wildcard=True
+  [OCSR]   pair [8,9]: texts=['10']  smiles=*C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]2134([N]25=CC=  wildcard=True
+  [OCSR]   pair [11,12]: texts=['6']  smiles=*I  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Hantzsch ester', 'one tenth of the catalyst']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Hantzsch ester', 'one tenth of the catalyst']
+  [Tier 3] 'Hantzsch ester': bbox_idx=None out of range (n=13)
+  [Tier 3] 'one tenth of the catalyst': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Hantzsch ester', 'one tenth of the catalyst']
+    [Tier 4 LLM] 'Hantzsch ester' → r_value='R = H'
+    [Tier 4 LLM] 'one tenth of the catalyst' → r_value='R = PIB'
+    [Tier 4] R-group candidates: ['Hantzsch ester', 'one tenth of the catalyst']
+    [Tier 4 graph] 'Hantzsch ester' r=R = H fallback (smi=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c]3ccccc3-c2c1)[CH]1C=CC=CC1c1cccc[n]->41)
+    [Tier 4 graph] 'one tenth of the catalyst' r=R = PIB fallback (smi=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c]3ccccc3-c2c1)[CH]1C=CC=CC1c1cccc[n]->41)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Hantzsch ester', 'one tenth of the catalyst']
+    [Tier 5 PubChem] 'Hantzsch ester' → hit via 'Hantzsch ester': CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C
+    [Tier 5 PubChem] 'one tenth of the catalyst' → no hit (tried ['one tenth of the catalyst'])
+  [Tier 5 PubChem] resolved=['Hantzsch ester']  remaining=['one tenth of the catalyst']
+  [Tier 6 LLM Vision] resolved=['one tenth of the catalyst']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['13', '12']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000013_a775189936e0fe7edd76557e7b932405553b6f65b6ba31e2fa7f369dfdff0419.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['13', '12']
+  [OCSR] image_000013_a775189936e0fe7edd76557e7b932405553b6f65b6ba31e2fa7f369dfdff0419.png: 4 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=*[C@]1([C@H]2COC(C)(C)O2)O[C@@H]2OC(C)(C)O[C@@H]2[  wildcard=True
+  [OCSR]   pair [2,3]: texts=['13']  smiles=*C1[C@H]2OC(C)(C)O[C@H]2O[C@]1(*)[C@H]1COC(C)(C)O1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['13', '12']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['13', '12']
+  [Tier 3] '12': bbox=0 atoms=19 smiles=*[C@]1([C@H]2COC(C)(C)O2)O[C@@H]2OC(C)(C)O[C@@H]2[C@@H]1I wildcard=True
+  [Tier 3] '13': bbox=2 atoms=19 smiles=*C1[C@H]2OC(C)(C)O[C@H]2O[C@]1(*)[C@H]1COC(C)(C)O1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['12', '13']
+    [Tier 4 LLM] '12' → r_value='* = I'
+    [Tier 4 LLM] '13' → r_value='* = H'
+    [Tier 4] R-group candidates: ['12', '13']
+    [Tier 4] bbox missing for group ['12'] — using full image
+    [Tier 4] '12' RDKit render failed: I[C@H]1[C@H]2OC(C)(C)O[C@H]2O[C@]1(H)[C@
+    [Tier 4 graph] '13' r=* = H fallback (smi=*C1[C@H]2OC(C)(C)O[C@H]2O[C@]1(*)[C@H]1COC(C)(C)O1)
+    [Tier 4] '13' RDKit render failed: CC1(C)OC[C@@H]([C@@]2(H)O[C@H]3OC(C)(C)O
+  [Tier 4 R-group Sub] resolved=[]  remaining=['12', '13']
+    [Tier 5 PubChem] '12' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '13' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['12', '13']
+    [Tier 6→llm_name_to_smiles] '12' name='1,2:5,6-Di-O-isopropylidene-3-deoxy-3-iodo-alpha-D-glucofuranose' → CC1(C)O[C@@H]2[C@H](I)[C@@H]3OC(C)(C)O[C@H]3O[C@H]
+    [Tier 6→llm_name_to_smiles] '13' name='1,2:5,6-Di-O-isopropylidene-3-deoxy-alpha-D-glucofuranose' → CC1(C)O[C@@H]2[C@H](O1)[C@@H](OC21OC(C)(C)O[C@H]1)
+  [Tier 6 LLM Vision] resolved=['12', '13']
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4', '6', '8', '3', '9', '10'] → image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['15', '16', '17', '18'] → image_000016_991d41db7c7b4c5336b357513cfe092aed2f5a1ad15f91b85f14e282f417c374.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '6', '8', '3', '9', '10']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  Exists   : True
+  [Tier 0 NameMap] '4' → llm_name_to_smiles via name='BASF Glissopal® 1000'
+  [Tier 0 NameMap] '6' → llm_name_to_smiles via name='polyisobutylene iodide (PIB-I)'
+  [Tier 0 NameMap] '8' → name 'polyisobutylene-tagged ppy ligand' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '3' → name 'Ir(ppy)2(PIB-ppy)' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '9' → name 'Ir(ppy)2(PIB2-ppy)' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['4', '6']  remaining=['8', '3', '9', '10']
+  [OCSR] image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*CC(C)(C)CC(=C)C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8']  smiles=*Cc1ccnc(-c2ccccc2)c1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Reh;', '3', 'R = PIB 9']  smiles=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5']  smiles=*CC(C)(C)CC(C)CO  wildcard=True
+  [OCSR]   pair [8,9]: texts=['10']  smiles=*C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]2134([N]25=CC=  wildcard=True
+  [OCSR]   pair [11,12]: texts=['6']  smiles=*I  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['8', '3', '9', '10']
+  [Tier 2 Symbol Correction] resolved=['10']  remaining=['8', '3', '9']
+  [Tier 3] '8': bbox=2 atoms=14 smiles=*CC1=CC=NC(C2=CC=CC=C2)=C1 wildcard=True
+  [Tier 3] '3': bbox=4 atoms=40 smiles=*C(*)C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]213([C]2=C(C=CC=C2)C wildcard=True
+  [Tier 3] '9': bbox=4 atoms=40 smiles=*C(*)C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]213([C]2=C(C=CC=C2)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['8', '3', '9']
+    [Tier 4 LLM] '3' → r_value='R = H'
+    [Tier 4 LLM] '9' → r_value='R = PIB'
+    [Tier 4] R-group candidates: ['3', '9']
+    [Tier 4] bbox missing for group ['3', '9'] — using full image
+    [Tier 4] '3' 🔄 corrected: CC1=CC=NC(=C1)C1=CC=CC=C1[Ir]12(C3=CC=CC=C3C3=CC=C
+    [Tier 4] '9' 🔄 corrected: CC(C)(C)CC(C)(C)CC(C)CC(C)c1cc(c2ccccc2)[n-]c(c1)[
+  [Tier 4 R-group Sub] resolved=['3', '9']  remaining=['8']
+    [Tier 5 PubChem] '8' → name_map name: 'polyisobutylene-tagged ppy ligand'
+    [Tier 5 PubChem] '8' → no hit (tried ['polyisobutylene-tagged ppy ligand'])
+  [Tier 5 PubChem] resolved=[]  remaining=['8']
+    [Tier 6] '8' PubChem/OPSIN/LLM all failed for authoritative name 'polyisobutylene-tagged ppy ligand' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['8']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['15', '16', '17', '18']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000016_991d41db7c7b4c5336b357513cfe092aed2f5a1ad15f91b85f14e282f417c374.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['15', '16', '17', '18']
+  [OCSR] image_000016_991d41db7c7b4c5336b357513cfe092aed2f5a1ad15f91b85f14e282f417c374.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['16']  smiles=*CC=CC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['17']  smiles=*CC=CC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['18']  smiles=*CC(*)C*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['15', '16', '17', '18']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['15', '16', '17', '18']
+  [Tier 3] '15': bbox_idx=None out of range (n=6)
+  [Tier 3] '16': bbox=0 atoms=10 smiles=*CC=CC1=CC=CC=C1 wildcard=True
+  [Tier 3] '17': bbox=2 atoms=10 smiles=*CC=CC1=CC=CC=C1 wildcard=True
+  [Tier 3] '18': bbox=4 atoms=6 smiles=*CC(*)C* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['15', '16', '17', '18']
+    [Tier 4 LLM] '16' → r_value='* = OAc'
+    [Tier 4 LLM] '17' → r_value='* = OAc'
+    [Tier 4 LLM] '18' → r_value='* = Ph, H, OAc'
+    [Tier 4] R-group candidates: ['16', '17', '18']
+    [Tier 4 graph] '16' r=* = OAc fallback (smi=*CC=CC1=CC=CC=C1)
+    [Tier 4 graph] '17' r=* = OAc fallback (smi=*CC=CC1=CC=CC=C1)
+    [Tier 4] '16' 🔄 corrected: CC(=O)OC/C=C\c1ccccc1
+    [Tier 4] '17' 🔄 corrected: CC(=O)OC/C=C\c1ccccc1
+    [Tier 4 graph] '18' r=* = Ph, H, OAc fallback (smi=*CC(*)C*)
+    [Tier 4] '18' 🔄 corrected: CC(=O)OCC([CH]c1ccccc1)[H]
+  [Tier 4 R-group Sub] resolved=['16', '17', '18']  remaining=['15']
+    [Tier 5 PubChem] '15' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['15']
+  [Tier 6 LLM Vision] resolved=['15']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 3
+────────────────────────────────────────────────────────────
+  Labels   : ['16', '17']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000016_991d41db7c7b4c5336b357513cfe092aed2f5a1ad15f91b85f14e282f417c374.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['16', '17']
+  [OCSR] image_000016_991d41db7c7b4c5336b357513cfe092aed2f5a1ad15f91b85f14e282f417c374.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['16']  smiles=*CC=CC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['17']  smiles=*CC=CC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['18']  smiles=*CC(*)C*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['16', '17']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['16', '17']
+  [Tier 3] '16': bbox=0 atoms=10 smiles=*CC=CC1=CC=CC=C1 wildcard=True
+  [Tier 3] '17': bbox=2 atoms=10 smiles=*CC=CC1=CC=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['16', '17']
+    [Tier 4 LLM] '16' → r_value='* = OAc'
+    [Tier 4 LLM] '17' → r_value='* = OAc'
+    [Tier 4] R-group candidates: ['16', '17']
+    [Tier 4 graph] '16' r=* = OAc fallback (smi=*CC=CC1=CC=CC=C1)
+    [Tier 4 graph] '17' r=* = OAc fallback (smi=*CC=CC1=CC=CC=C1)
+    [Tier 4] '16' 🔄 corrected: CC(=O)OC/C=C\c1ccccc1
+    [Tier 4] '17' 🔄 corrected: CC(=O)OC/C=C\c1ccccc1
+  [Tier 4 R-group Sub] resolved=['16', '17']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata/GPT_5_MINI/processed/Synthesis_of_a_polyisobutylene-tagged_fac-Irppysub3sub_complex_and_its_application_as_recyclable_visible-light_photocata_artifacts/image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → name 'heterogeneous polypyridyl iridium complex' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '3' → name 'Ir(ppy)2(PIB-ppy)' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '3']
+  [OCSR] image_000010_38c9f16617a1c40e5d8338164ed69856a25527342f06d18d1f1c163bb3642de6.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*CC(C)(C)CC(=C)C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['8']  smiles=*Cc1ccnc(-c2ccccc2)c1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Reh;', '3', 'R = PIB 9']  smiles=*C(*)c1cc[n]2->[Ir]34([c]5ccccc5-c5cccc[n]->35)([c  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5']  smiles=*CC(C)(C)CC(C)CO  wildcard=True
+  [OCSR]   pair [8,9]: texts=['10']  smiles=*C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]2134([N]25=CC=  wildcard=True
+  [OCSR]   pair [11,12]: texts=['6']  smiles=*I  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '3']
+  [Tier 3] '2': bbox_idx=None out of range (n=13)
+  [Tier 3] '3': bbox=4 atoms=40 smiles=*C(*)C1=CC=[N]2C(=C1)C1=[C](C=CC=C1)[Ir]213([C]2=C(C=CC=C2)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2', '3']
+    [Tier 4 LLM] '3' → r_value='R = H'
+    [Tier 4] R-group candidates: ['3']
+    [Tier 4] bbox missing for group ['3'] — using full image
+    [Tier 4] '3' 🔄 corrected: CC1=CC(C2=CC=CC=C2)=NC=C1.C1(C2=CC=CC=N2)=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['3']  remaining=['2']
+    [Tier 5 PubChem] '2' → name_map name: 'heterogeneous polypyridyl iridium complex'
+    [Tier 5 PubChem] '2' → no hit (tried ['heterogeneous polypyridyl iridium complex', '3'])
+  [Tier 5 PubChem] resolved=[]  remaining=['2']
+    [Tier 6] '2' PubChem/OPSIN/LLM all failed for authoritative name 'heterogeneous polypyridyl iridium complex' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['2']

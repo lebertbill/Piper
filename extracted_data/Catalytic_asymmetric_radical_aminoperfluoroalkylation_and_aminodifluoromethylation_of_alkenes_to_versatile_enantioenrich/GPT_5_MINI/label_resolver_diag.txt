@@ -1,0 +1,154 @@
+Label Resolver Diagnostic Log — 2026-06-11 13:42:33
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A5', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9'] → image_000002_6f53e1b79b3c3350c411378fa9e8b0bd2b538bdb0a0aaa1512e04c6781faad5c.png
+  [GlobalRegistry] labels=['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A5', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9'] → image_000003_65602551c9a86a1d0a5edcde9d37f5c6d42efc1ae314a2d1a974ae06c0972d66.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A5', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich/GPT_5_MINI/processed/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich_artifacts/image_000002_6f53e1b79b3c3350c411378fa9e8b0bd2b538bdb0a0aaa1512e04c6781faad5c.png
+  Exists   : True
+  [Tier 0 NameMap] '(S)-A1' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Ph-phenyl group at the 3,3'-positions'
+  [Tier 0 NameMap] '(S)-A2' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Cl-C6H4 group'
+  [Tier 0 NameMap] '(S)-A3' → llm_name_to_smiles via name='chiral phosphoric acid with 1-Naphthyl group'
+  [Tier 0 NameMap] '(S)-A4' → llm_name_to_smiles via name='chiral phosphoric acid with 9-Phenanthryl group'
+  [Tier 0 NameMap] '(S)-A5' → name 'chiral phosphoric acid with 9-Anthryl group' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '(S)-A6' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Ph-C6H4 group'
+  [Tier 0 NameMap] '(S)-A7' → llm_name_to_smiles via name='chiral phosphoric acid with 1-Naphthyl group'
+  [Tier 0 NameMap] '(R)-A8' → llm_name_to_smiles via name='chiral phosphoric acid with 4-CF3-C6H4 group'
+  [Tier 0 NameMap] '(R)-A9' → llm_name_to_smiles via name='chiral phosphoric acid with 2-Naphthyl group'
+  [Tier 0 NameMap] resolved=['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9']  remaining=['(S)-A5']
+  [OCSR] image_000002_6f53e1b79b3c3350c411378fa9e8b0bd2b538bdb0a0aaa1512e04c6781faad5c.png: 21 bboxes, 14 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(C)=CC(C)(C)CNC(=O)NC1=CC(*)=CC(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,4]: texts=['(SHAI: Ar = 4-Ph-CsH;']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,5]: texts=['(SFA2: Ar = 4-CI-CsHa']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,6]: texts=['(SHA3: Ar = 1-Naphthy']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,7]: texts=['(SHA4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,8]: texts=['(SF-AS: Ar = 9-Anthryl']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,9]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,10]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,11]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [13,14]: texts=['(SFA6: Ar = 4-Ph-CsHa', '(SFA7: Ar = 1-Naphthyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3A']  smiles=*CC1(*)CC(C)(C)CN1C(=O)NC1=CC(*)=CC(*)=C1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['(RJA8:', 'Ar = 4-CF3"', 'HA', '(RJA9: Ar = 2-Naphthyl', 'C6']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3AA']  smiles=*C1=CC(*)=CC(NC(=O)N2CC(C)(C)CC2(*)C)=C1  wildcard=True
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['(S)-A5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['(S)-A5']
+  [Tier 3] '(S)-A5': bbox=2 atoms=23 smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['(S)-A5']
+    [Tier 4 LLM] '(S)-A5' → r_value='Ar = 9-Anthryl'
+    [Tier 4] R-group candidates: ['(S)-A5']
+    [Tier 4 graph] '(S)-A5' r=Ar = 9-Anthryl fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4] '(S)-A5' 🔄 corrected: O=P1(O)Oc2c(c3ccccc3cc3ccccc23)[C@@]2(CCc3ccc(c(O1
+  [Tier 4 R-group Sub] resolved=['(S)-A5']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A5', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich/GPT_5_MINI/processed/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich_artifacts/image_000003_65602551c9a86a1d0a5edcde9d37f5c6d42efc1ae314a2d1a974ae06c0972d66.png
+  Exists   : True
+  [Tier 0 NameMap] '(S)-A1' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Ph-phenyl group at the 3,3'-positions'
+  [Tier 0 NameMap] '(S)-A2' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Cl-C6H4 group'
+  [Tier 0 NameMap] '(S)-A3' → llm_name_to_smiles via name='chiral phosphoric acid with 1-Naphthyl group'
+  [Tier 0 NameMap] '(S)-A4' → llm_name_to_smiles via name='chiral phosphoric acid with 9-Phenanthryl group'
+  [Tier 0 NameMap] '(S)-A5' → name 'chiral phosphoric acid with 9-Anthryl group' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '(S)-A6' → llm_name_to_smiles via name='chiral phosphoric acid with 4-Ph-C6H4 group'
+  [Tier 0 NameMap] '(S)-A7' → llm_name_to_smiles via name='chiral phosphoric acid with 1-Naphthyl group'
+  [Tier 0 NameMap] '(R)-A8' → llm_name_to_smiles via name='chiral phosphoric acid with 4-CF3-C6H4 group'
+  [Tier 0 NameMap] '(R)-A9' → llm_name_to_smiles via name='chiral phosphoric acid with 2-Naphthyl group'
+  [Tier 0 NameMap] resolved=['(S)-A1', '(S)-A2', '(S)-A3', '(S)-A4', '(S)-A6', '(S)-A7', '(R)-A8', '(R)-A9']  remaining=['(S)-A5']
+  [OCSR] image_000003_65602551c9a86a1d0a5edcde9d37f5c6d42efc1ae314a2d1a974ae06c0972d66.png: 17 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['1']  smiles=*C.*C([2*])(CNC(=O)NC1=CC=CC=C1)CC(=C)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['35', '60%, 85% ee (96 h)t']  smiles=*C[C@@]1(c2ccccc2)CCCN1C(=O)Nc1cccc(Cl)c1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3']  smiles=*CC1(C2=CC=CC=C2)CC(*)(*)CN1C(=O)NC1=CC=CC=C1.[3*]  wildcard=True
+  [OCSR]   pair [11,12]: texts=['31, 85%, 96% ee (60 h)']  smiles=*CC1(C2=CC=CC=C2)CC(*)(*)CN1C(=O)NC1=CC(*)=CC=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=['30, 96%, 96% ee (96 h)']  smiles=*CC1(C2=C(C)C=CC=C2)CC(C)(C)CN1C(=O)NC1=CC(Br)=CC=  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['(S)-A5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['(S)-A5']
+  [Tier 3] '(S)-A5': bbox_idx=None out of range (n=17)
+  [Tier 3 BBox Match] resolved=[]  remaining=['(S)-A5']
+    [Tier 4 LLM] '(S)-A5' → r_value='Ar = 4-Ph-C6H4'
+    [Tier 4] R-group candidates: ['(S)-A5']
+    [Tier 4 graph] '(S)-A5' r=Ar = 4-Ph-C6H4 fallback (smi=*)
+    [Tier 4] '(S)-A5' 🔄 corrected: C(C(C(F)(F)F)(F)F)(C(F)(F)S(=O)(=O)Cl)(F)F
+  [Tier 4 R-group Sub] resolved=['(S)-A5']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['A2', 'A4', 'A1', 'A9', 'A8', 'A5', 'A6', 'A7', 'A3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich/GPT_5_MINI/processed/Catalytic_asymmetric_radical_aminoperfluoroalkylation_and_aminodifluoromethylation_of_alkenes_to_versatile_enantioenrich_artifacts/image_000002_6f53e1b79b3c3350c411378fa9e8b0bd2b538bdb0a0aaa1512e04c6781faad5c.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['A2', 'A4', 'A1', 'A9', 'A8', 'A5', 'A6', 'A7', 'A3']
+  [OCSR] image_000002_6f53e1b79b3c3350c411378fa9e8b0bd2b538bdb0a0aaa1512e04c6781faad5c.png: 21 bboxes, 14 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(C)=CC(C)(C)CNC(=O)NC1=CC(*)=CC(*)=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,4]: texts=['(SHAI: Ar = 4-Ph-CsH;']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,5]: texts=['(SFA2: Ar = 4-CI-CsHa']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,6]: texts=['(SHA3: Ar = 1-Naphthy']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,7]: texts=['(SHA4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,8]: texts=['(SF-AS: Ar = 9-Anthryl']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,9]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,10]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [2,11]: texts=['(SF-A4: Ar = 9-Phenant']  smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3  wildcard=True
+  [OCSR]   pair [13,14]: texts=['(SFA6: Ar = 4-Ph-CsHa', '(SFA7: Ar = 1-Naphthyl']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [15,16]: texts=['3A']  smiles=*CC1(*)CC(C)(C)CN1C(=O)NC1=CC(*)=CC(*)=C1  wildcard=True
+  [OCSR]   pair [17,18]: texts=['(RJA8:', 'Ar = 4-CF3"', 'HA', '(RJA9: Ar = 2-Naphthyl', 'C6']  smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2  wildcard=True
+  [OCSR]   pair [19,20]: texts=['3AA']  smiles=*C1=CC(*)=CC(NC(=O)N2CC(C)(C)CC2(*)C)=C1  wildcard=True
+  [OCSR] → 14 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['A2', 'A4', 'A1', 'A9', 'A8', 'A5', 'A6', 'A7', 'A3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['A2', 'A4', 'A1', 'A9', 'A8', 'A5', 'A6', 'A7', 'A3']
+  [Tier 3] 'A1': bbox=2 atoms=23 smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3 wildcard=True
+  [Tier 3] 'A2': bbox=2 atoms=23 smiles=*C1=C2OP(=O)(O)OC3=C(*)C=CC4=C3C(CC4)C2=C(C)C=C1 wildcard=True
+  [Tier 3] 'A3': bbox=2 atoms=23 smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3 wildcard=True
+  [Tier 3] 'A4': bbox=2 atoms=23 smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3 wildcard=True
+  [Tier 3] 'A5': bbox=2 atoms=23 smiles=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3 wildcard=True
+  [Tier 3] 'A6': bbox=13 atoms=27 smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2 wildcard=True
+  [Tier 3] 'A7': bbox=13 atoms=27 smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2 wildcard=True
+  [Tier 3] 'A8': bbox=17 atoms=27 smiles=*C1=CC2=CC=CC=C2C2=C1OP(=O)(O)OC1=C(*)C=C3C=CC=CC3=C12 wildcard=True
+  [Tier 3] 'A9': bbox=17 atoms=27 smiles=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']
+    [Tier 4 LLM] 'A1' → r_value='Ar = 4-Ph-C6H4'
+    [Tier 4 LLM] 'A2' → r_value='Ar = 4-Cl-C6H4'
+    [Tier 4 LLM] 'A3' → r_value='Ar = 1-Naphthyl'
+    [Tier 4 LLM] 'A4' → r_value='Ar = 9-Phenanthryl'
+    [Tier 4 LLM] 'A5' → r_value='Ar = 9-Anthryl'
+    [Tier 4 LLM] 'A6' → r_value='Ar = 4-Ph-C6H4'
+    [Tier 4 LLM] 'A7' → r_value='Ar = 1-Naphthyl'
+    [Tier 4 LLM] 'A8' → r_value='Ar = 4-CF3-C6H4'
+    [Tier 4 LLM] 'A9' → r_value='Ar = 2-Naphthyl'
+    [Tier 4] R-group candidates: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']
+    [Tier 4 graph] 'A1' r=Ar = 4-Ph-C6H4 fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4 graph] 'A2' r=Ar = 4-Cl-C6H4 fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4 graph] 'A3' r=Ar = 1-Naphthyl fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4 graph] 'A4' r=Ar = 9-Phenanthryl fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4 graph] 'A5' r=Ar = 9-Anthryl fallback (smi=*c1ccc(C)c2c1OP(=O)(O)Oc1c(*)ccc3c1[C@]2CC3)
+    [Tier 4] 'A1' 🔄 corrected: OP1(=O)Oc2c(-c3ccc(cc3)-c3ccccc3)ccc3c2[C@H]2c4c(c
+    [Tier 4] 'A2' 🔄 corrected: Clc1ccc(cc1)-c1ccc2c3c1OP(=O)(O)Oc1c(-c4ccc(Cl)cc4
+    [Tier 4] 'A3' 🔄 corrected: O=P1(O)Oc2c(-c3cccc4ccccc34)ccc3[C@H]4CCc5ccc(-c6c
+    [Tier 4] 'A4' 🔄 corrected: OP1(=O)Oc2c(-c3cccc4c3c3ccccc3c3ccccc34)ccc3c2[C@@
+    [Tier 4] 'A5' 🔄 corrected: O=P1(O)Oc2c(-c3c4ccccc4cc4ccccc34)ccc3c2[C@@]2(CCC
+    [Tier 4 graph] 'A6' r=Ar = 4-Ph-C6H4 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] 'A7' r=Ar = 1-Naphthyl fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] 'A8' r=Ar = 4-CF3-C6H4 fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4 graph] 'A9' r=Ar = 2-Naphthyl fallback (smi=*c1cc2ccccc2c2c1OP(=O)(O)Oc1c(*)cc3ccccc3c1-2)
+    [Tier 4] 'A6' 🔄 corrected: O=P1(O)Oc2c(-c3ccc(-c4ccccc4)cc3)cc3ccccc3c2-c2c(O
+    [Tier 4] 'A7' 🔄 corrected: O=P1(O)Oc2c(-c3cccc4ccccc34)cc3ccccc3c2-c2c(Oc3ccc
+    [Tier 4] 'A8' 🔄 corrected: OC1(=O)Oc2c(cc3ccccc3c2-c2c(OP(O)(=O)O1)cc1ccccc1c
+    [Tier 4] 'A9' 🔄 corrected: O=P1(O)Oc2c(-c3ccc4ccccc4c3)cc3ccccc3c2-c2c(Oc3ccc
+  [Tier 4 R-group Sub] resolved=['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'A9']  remaining=[]

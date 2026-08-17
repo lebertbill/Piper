@@ -1,0 +1,66 @@
+Label Resolver Diagnostic Log — 2026-06-11 15:59:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Mes-Acr1', 'Mes-Acr2', 'Mes-Acr3', 'Mes-Acr4', 'TPT', 'DCA', '4CzIPN'] → image_000005_9c873c519bf43577c7786e8cd5c209904d3d0a6c45bfe3efe83ba5cf72bac402.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Mes-Acr1', 'Mes-Acr2', 'Mes-Acr3', 'Mes-Acr4', 'TPT', 'DCA', '4CzIPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Combining_photoredox_catalysis_and_hydrogen_atom_transfer_for_dearomative_functionalization_of_electron_rich_heteroarene/GPT_5_MINI/processed/Combining_photoredox_catalysis_and_hydrogen_atom_transfer_for_dearomative_functionalization_of_electron_rich_heteroarene_artifacts/image_000005_9c873c519bf43577c7786e8cd5c209904d3d0a6c45bfe3efe83ba5cf72bac402.png
+  Exists   : True
+  [Tier 0 NameMap] 'Mes-Acr1' → opsin_lookup via name='10-mesityl-1,3,6,8-tetramethylacridin-10-ium tetrafluoroborate'
+  [Tier 0 NameMap] 'Mes-Acr2' → opsin_lookup via name='10-mesityl-1,3,6,8-tetraphenylacridin-10-ium tetrafluoroborate'
+  [Tier 0 NameMap] 'Mes-Acr3' → opsin_lookup via name='10-mesityl-2,7-dimethyl-1,3,6,8-tetraphenylacridin-10-ium tetrafluoroborate'
+  [Tier 0 NameMap] 'Mes-Acr4' → opsin_lookup via name='10-mesityl-2,7-di-tert-butyl-1,3,6,8-tetraphenylacridin-10-ium tetrafluoroborate'
+  [Tier 0 NameMap] 'TPT' → pubchem_lookup via name='2,4,6-triphenylpyrylium tetrafluoroborate'
+  [Tier 0 NameMap] 'DCA' → pubchem_lookup via name='9,10-dicyanoanthracene'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['Mes-Acr1', 'Mes-Acr2', 'Mes-Acr3', 'Mes-Acr4', 'TPT', 'DCA', '4CzIPN']  remaining=[]
+  [InlineResolver] Column 'Variation from the 'standard conditions a'' labels ['4-NO2-PhSH'] from image_000005_9c873c519bf43577c7786e8cd5c209904d3d0a6c45bfe3efe83ba5cf72bac402.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4-NO2-PhSH']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Combining_photoredox_catalysis_and_hydrogen_atom_transfer_for_dearomative_functionalization_of_electron_rich_heteroarene/GPT_5_MINI/processed/Combining_photoredox_catalysis_and_hydrogen_atom_transfer_for_dearomative_functionalization_of_electron_rich_heteroarene_artifacts/image_000005_9c873c519bf43577c7786e8cd5c209904d3d0a6c45bfe3efe83ba5cf72bac402.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4-NO2-PhSH']
+  [OCSR] image_000005_9c873c519bf43577c7786e8cd5c209904d3d0a6c45bfe3efe83ba5cf72bac402.png: 11 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['R']  smiles=*C1=CC(*)=C(C23=C4C5=C([2*])C([3*])=C[CH]46(C4=C([  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=COc1cccs1  wildcard=False
+  [OCSR]   pair [5,6]: texts=[]  smiles=c1cn[nH]c1  wildcard=False
+  [OCSR]   pair [9,10]: texts=[]  smiles=*C(=S)CC=CN1C=CC=N1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4-NO2-PhSH']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4-NO2-PhSH']
+  [Tier 3] '4-NO2-PhSH': bbox_idx=None out of range (n=11)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4-NO2-PhSH']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4-NO2-PhSH']
+    [Tier 5 PubChem] '4-NO2-PhSH' → no hit (tried ['4-NO2-PhSH'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4-NO2-PhSH']
+    [Tier 6→pubchem_lookup] '4-NO2-PhSH' name='4-nitrobenzenethiol' → C1=CC(=CC=C1[N+](=O)[O-])S
+  [Tier 6 LLM Vision] resolved=['4-NO2-PhSH']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3']
+  Image    : extracted_data/Combining_photoredox_catalysis_and_hydrogen_atom_transfer_for_dearomative_functionalization_of_electron_rich_heteroarene/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3']
+  [OCSR] visualheist_page_02_table_2.png: 12 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['41']  smiles=COc1cccs1  wildcard=False
+  [OCSR]   pair [3,4]: texts=['TPT']  smiles=*C1=Cc(*)oC(*)=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2']  smiles=c1cn[nH]c1  wildcard=False
+  [OCSR]   pair [7,8]: texts=['DCA']  smiles=*C1=C2C=CC=CC2=C(*)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [10,11]: texts=[]  smiles=COC(=S)C/C=C/n1cccn1  wildcard=False
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3']
+  [Tier 3] '3': bbox=10 atoms=12 smiles=COC(=S)C/C=C/n1cccn1 wildcard=False
+  [Tier 3 BBox Match] resolved=['3']  remaining=[]

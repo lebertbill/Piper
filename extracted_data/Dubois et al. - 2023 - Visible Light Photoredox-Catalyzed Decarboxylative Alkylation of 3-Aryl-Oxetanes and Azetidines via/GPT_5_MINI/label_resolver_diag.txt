@@ -1,0 +1,77 @@
+Label Resolver Diagnostic Log — 2026-05-10 02:05:49
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1', '2a', "2a'", '3', '4'] → image_000010_f300ea10c99bed4467d117c20445dc58a8dd02d54bd676e1df1650aa5131ff3a.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2a', "2a'", '3', '4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Dubois et al. - 2023 - Visible Light Photoredox-Catalyzed Decarboxylative Alkylation of 3-Aryl-Oxetanes and Azetidines via/default_run/processed/Dubois et al. - 2023 - Visible Light Photoredox-Catalyzed Decarboxylative Alkylation of 3-Aryl-Oxetanes and Azetidines via_artifacts/image_000010_f300ea10c99bed4467d117c20445dc58a8dd02d54bd676e1df1650aa5131ff3a.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → pubchem_lookup via name='3-(4-methoxyphenyl)oxetane-3-carboxylic acid'
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='ethyl 3-(3-(4-methoxyphenyl)oxetan-3-yl)propanoate'
+  [Tier 0 NameMap] resolved=['1', '2a']  remaining=["2a'", '3', '4']
+  [OCSR] image_000010_f300ea10c99bed4467d117c20445dc58a8dd02d54bd676e1df1650aa5131ff3a.png: 12 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1(*)COC1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*CCC  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*CCC(*)CC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3']  smiles=*C1=CC=C(C2(O)COC2)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=[]  smiles=*O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=["2a'", '3', '4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=["2a'", '3', '4']
+  [Tier 3] '2a'': bbox=5 atoms=7 smiles=*CCC(*)CC wildcard=True
+  [Tier 3] '3': bbox=7 atoms=12 smiles=*C1=CC=C(C2(O)COC2)C=C1 wildcard=True
+  [Tier 3] '4': bbox=9 atoms=2 smiles=*O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=["2a'", '3', '4']
+    [Tier 4 LLM] '2a'' → r_value='CH(CH2CH2CO2Et)CO2Et'
+    [Tier 4 LLM] '3' → r_value='3-(4-methoxyphenyl)oxetan-3-yl'
+    [Tier 4 LLM] '4' → r_value='H'
+    [Tier 4] R-group candidates: ["2a'", '3', '4']
+    [Tier 4 graph] '2a'' r=CH(CH2CH2CO2Et)CO2Et fallback (smi=*CCC(*)CC)
+    [Tier 4] '2a'' 🔄 corrected: CCOC(=O)CCC(C)C(=O)OCC
+    [Tier 4] bbox missing for group ['3'] — using full image
+    [Tier 4] '3' 🔄 corrected: COc1ccc(cc1)C1(COC1)[V]
+    [Tier 4 graph] '4' r=H fallback (smi=*O)
+    [Tier 4] '4' 🔄 corrected: [H]
+  [Tier 4 R-group Sub] resolved=["2a'", '3', '4']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '3', 'Ethyl acrylate', "2a'", '2a', '4']
+  Image    : extracted_data/Dubois et al. - 2023 - Visible Light Photoredox-Catalyzed Decarboxylative Alkylation of 3-Aryl-Oxetanes and Azetidines via/default_run/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → pubchem_lookup via name='3-(4-methoxyphenyl)oxetane-3-carboxylic acid'
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='ethyl 3-(3-(4-methoxyphenyl)oxetan-3-yl)propanoate'
+  [Tier 0 NameMap] resolved=['1', '2a']  remaining=['3', 'Ethyl acrylate', "2a'", '4']
+  [OCSR] visualheist_page_03_table_1.png: 14 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1(*)COC1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=CCC1C2C13C21C24C5CC52C341  wildcard=False
+  [OCSR]   pair [4,5]: texts=['(1,5 equiv)']  smiles=*C=C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*CCC(*)CC  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3']  smiles=*C1=CC=C(C2(O)COC2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=[]  smiles=*O  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=["2a'"]  remaining=['3', 'Ethyl acrylate', '4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', 'Ethyl acrylate', '4']
+  [Tier 3] '3': bbox=9 atoms=12 smiles=*C1=CC=C(C2(O)COC2)C=C1 wildcard=True
+  [Tier 3] 'Ethyl acrylate': bbox=4 atoms=3 smiles=*C=C wildcard=True
+  [Tier 3] '4': bbox=11 atoms=2 smiles=*O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', 'Ethyl acrylate', '4']
+    [Tier 4 LLM] '3' → r_value='PMP = 4-methoxyphenyl'
+    [Tier 4 LLM] '4' → r_value='H'
+    [Tier 4] R-group candidates: ['3', '4']
+    [Tier 4 graph] '3' r=PMP = 4-methoxyphenyl fallback (smi=*C1=CC=C(C2(O)COC2)C=C1)
+    [Tier 4 graph] '4' r=H fallback (smi=*C1=CC=C(C2(O)COC2)C=C1)
+    [Tier 4] '3' 🔄 corrected: COC1=CC=C(C=C1)C1(O)COC1
+    [Tier 4] '4' 🔄 corrected: COc1ccc(cc1)C1(O)COC1
+  [Tier 4 R-group Sub] resolved=['3', '4']  remaining=['Ethyl acrylate']
+    [Tier 5 PubChem] 'Ethyl acrylate' → hit via 'Ethyl acrylate': CCOC(=O)C=C
+  [Tier 5 PubChem] resolved=['Ethyl acrylate']  remaining=[]

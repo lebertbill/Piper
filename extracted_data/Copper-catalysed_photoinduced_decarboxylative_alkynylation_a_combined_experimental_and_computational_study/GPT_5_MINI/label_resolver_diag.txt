@@ -1,0 +1,117 @@
+Label Resolver Diagnostic Log — 2026-06-12 10:36:59
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1', '2', '3'] → image_000009_49e2c687ecb0067eff63bcc2afdf8c82da0c157fac70c159c5507a295d3f7bb1.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study/GPT_5_MINI/processed/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study_artifacts/image_000009_49e2c687ecb0067eff63bcc2afdf8c82da0c157fac70c159c5507a295d3f7bb1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2', '3']
+  [OCSR] image_000009_49e2c687ecb0067eff63bcc2afdf8c82da0c157fac70c159c5507a295d3f7bb1.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C1=CC=C(C#C)C=C1.[Tl]  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3']  smiles=*C1=CC=C(C#CC2CCCC(*)C2)C=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2', '3']
+  [Tier 3] '1': bbox=0 atoms=20 smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1 wildcard=False
+  [Tier 3] '2': bbox=2 atoms=10 smiles=*C1=CC=C(C#C)C=C1.C wildcard=True
+  [Tier 3] '3': bbox=4 atoms=16 smiles=*C1=CC=C(C#CC2CCCC(C)C2)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=['1']  remaining=['2', '3']
+    [Tier 4 LLM] '2' → r_value='Me'
+    [Tier 4 LLM] '3' → r_value='Me'
+    [Tier 4] R-group candidates: ['2', '3']
+    [Tier 4] bbox missing for group ['2', '3'] — using full image
+    [Tier 4] '2' ✅ match: CC1=CC=C(C#C)C=C1
+    [Tier 4] '3' ✅ match: C1CCC(CC1)C#CC2=CC=C(C)C=C2
+  [Tier 4 R-group Sub] resolved=['2', '3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2', '3']
+  Image    : extracted_data/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2', '3']
+  [OCSR] visualheist_page_03_table_1.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C1=CC=C(C#C)C=C1.[Tl]  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3']  smiles=*c1ccc(C#CC2CCCCC2)cc1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2', '3']
+  [Tier 3] '1': bbox=0 atoms=20 smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1 wildcard=False
+  [Tier 3] '2': bbox=2 atoms=10 smiles=*.*C1=CC=C(C#C)C=C1 wildcard=True
+  [Tier 3] '3': bbox=4 atoms=15 smiles=*C1=CC=C(C#CC2CCCCC2)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=['1']  remaining=['2', '3']
+    [Tier 4 LLM] '2' → r_value='* = Me'
+    [Tier 4 LLM] '3' → r_value='* = Me'
+    [Tier 4] R-group candidates: ['2', '3']
+    [Tier 4] bbox missing for group ['2', '3'] — using full image
+    [Tier 4] '2' ✅ match: CC1=CC=C(C#C)C=C1
+    [Tier 4] '3' ✅ match: CC1=CC=C(C#CC2CCCCC2)C=C1
+  [Tier 4 R-group Sub] resolved=['2', '3']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Cu-Ph', 'TIPS'] → image_000010_8228aec086d781e7f7d961e7c1d729534269ed4c3402837a9fff18de26bea625.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['Cu-Ph', 'TIPS']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study/GPT_5_MINI/processed/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study_artifacts/image_000010_8228aec086d781e7f7d961e7c1d729534269ed4c3402837a9fff18de26bea625.png
+  Exists   : True
+  [Tier 0 NameMap] 'TIPS' → opsin_lookup via name='triisopropylsilyl'
+  [Tier 0 NameMap] resolved=['TIPS']  remaining=['Cu-Ph']
+  [OCSR] image_000010_8228aec086d781e7f7d961e7c1d729534269ed4c3402837a9fff18de26bea625.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['(0.15 mmol)']  smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['(0.10 mmol)']  smiles=*C#C  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Cu-Ph']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Cu-Ph']
+  [Tier 3] 'Cu-Ph': bbox=4 atoms=4 smiles=*C#[C][Cu] wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Cu-Ph']
+    [Tier 4 LLM] 'Cu-Ph' → r_value='Cu-C#C-Ph'
+    [Tier 4] R-group candidates: ['Cu-Ph']
+    [Tier 4 graph] 'Cu-Ph' r=Cu-C#C-Ph fallback (smi=*C#C)
+    [Tier 4] 'Cu-Ph' RDKit render failed: PhC#C[Cu]C#C
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Cu-Ph']
+    [Tier 5 PubChem] 'Cu-Ph' → no hit (tried ['Cu-Ph'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Cu-Ph']
+    [Tier 6→pubchem_lookup] 'Cu-Ph' name='Copper(I) phenylacetylide' → [C-]#CC1=CC=CC=C1.[Cu+]
+  [Tier 6 LLM Vision] resolved=['Cu-Ph']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['alkyl-TIPS-alkyne', 'TIPS-alkyne', 'NHP ester']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study/GPT_5_MINI/processed/Copper-catalysed_photoinduced_decarboxylative_alkynylation_a_combined_experimental_and_computational_study_artifacts/image_000010_8228aec086d781e7f7d961e7c1d729534269ed4c3402837a9fff18de26bea625.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['alkyl-TIPS-alkyne', 'TIPS-alkyne', 'NHP ester']
+  [OCSR] image_000010_8228aec086d781e7f7d961e7c1d729534269ed4c3402837a9fff18de26bea625.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['(0.15 mmol)']  smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['(0.10 mmol)']  smiles=*C#C  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['alkyl-TIPS-alkyne', 'TIPS-alkyne', 'NHP ester']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['alkyl-TIPS-alkyne', 'TIPS-alkyne', 'NHP ester']
+  [Tier 3] 'NHP ester': bbox=0 atoms=20 smiles=O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1 wildcard=False
+  [Tier 3] 'TIPS-alkyne': bbox=2 atoms=3 smiles=*C#C wildcard=True
+  [Tier 3] 'alkyl-TIPS-alkyne': bbox=5 atoms=9 smiles=*C#CC1CCCCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=['NHP ester']  remaining=['TIPS-alkyne', 'alkyl-TIPS-alkyne']
+    [Tier 4 LLM] 'TIPS-alkyne' → r_value='* = TIPS'
+    [Tier 4 LLM] 'alkyl-TIPS-alkyne' → r_value='* = cyclohexyl'
+    [Tier 4] R-group candidates: ['TIPS-alkyne', 'alkyl-TIPS-alkyne']
+    [Tier 4 graph] 'TIPS-alkyne' r=* = TIPS fallback (smi=*C#C)
+    [Tier 4 graph] 'alkyl-TIPS-alkyne' r=* = cyclohexyl fallback (smi=*C#C)
+    [Tier 4] 'TIPS-alkyne' ✅ match: CC(C)[Si](C#C)(C(C)C)C(C)C
+    [Tier 4] 'alkyl-TIPS-alkyne' 🔄 corrected: CC(C)[Si](C(C)C)(C(C)C)C#CC1CCCCC1
+  [Tier 4 R-group Sub] resolved=['TIPS-alkyne', 'alkyl-TIPS-alkyne']  remaining=[]

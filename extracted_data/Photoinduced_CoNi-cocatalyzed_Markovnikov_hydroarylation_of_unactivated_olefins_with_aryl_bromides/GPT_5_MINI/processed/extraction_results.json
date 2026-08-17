@@ -1,0 +1,2130 @@
+[
+    {
+        "document": "Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions a",
+        "image_path": "extracted_data/Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides/GPT_5_MINI/processed/visualheist_page_03_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)c1ccc(Br)cc1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "None"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82%",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "82%"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co-I",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co](-I)",
+                        "resolved_name": "Co-I",
+                        "resolved_smiles": "C1=CC(=C[N+](=C1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)([O-])OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)O)O)O)O)C(=O)N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC(=C[N+](=C1)[C@H]2[C@@H]([C@@H]([C@H](O2)COP(=O)([O-])OP(=O)(O)OC[C@@H]3[C@H]([C@H]([C@@H](O3)N4C=NC5=C(N=CN=C54)N)O)O)O)O)C(=O)N"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "Co - I"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Co-I used instead of Co(TPP)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co-II",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co](-II)",
+                        "resolved_name": "Co(TPP)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Co-II used instead of Co(TPP)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(dFCF3ppy)(dtbbpy)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "Ir_complex_dF_CF3_ppy_dtbbpy",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "Ir(dFCF 3 ppy)(dtbpy)"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82%",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Ir(dFCF3ppy)(dtbbpy) used instead of 4CzIPN"
+                    }
+                ],
+                "yield": "82%"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Eosin Y",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C20H6Br4O5",
+                        "resolved_name": "Eosin Y",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Eosin Y used instead of 4CzIPN"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-I",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "PC-I_structure",
+                        "resolved_name": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "PC-I used instead of 4CzIPN"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylformamide (DMF)",
+                        "smiles": "C(=O)N(C)C",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "DMF"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "81%",
+                        "quantity": 81.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "DMF used instead of DMAc"
+                    }
+                ],
+                "yield": "81%"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "1,4-dioxane",
+                        "smiles": "O1CCOCC1",
+                        "resolved_smiles": "C1COCCO1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "1,4-Dioxane"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "74%",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "1,4-dioxane used instead of DMAc"
+                    }
+                ],
+                "yield": "74%"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Et3N (used as reductant)",
+                        "smiles": "CCN(CC)CC",
+                        "resolved_smiles": "CCN(CC)CC",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "Et 3 N as reductant"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester (1.5 equiv.)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "resolved_name": "Hantzsch ester",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Et3N used as reductant instead of Hantzsch ester"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "No light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue Leds (10 W)",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "No light (reaction run without LED irradiation)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "No 4CzIPN"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN (2 mol%)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "No 4CzIPN (photocatalyst omitted)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "No Co(TPP)"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "No Co(TPP) (cobalt co-catalyst omitted)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "CCOC(=O)C1=C(C)NC(C)=C(C(=O)OCC)C1",
+                        "resolved_name": "diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "No Ni(dtbbpy)Br 2"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "No Ni(dtbbpy)Br2 (nickel catalyst omitted)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(Br)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(Br)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(Br)cc1",
+                        "molecular_formula": "C8H7BrO2",
+                        "molecular_weight": 215.05
+                    },
+                    {
+                        "smiles": "C=CCC",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CCC",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCC",
+                        "molecular_formula": "C4H8",
+                        "molecular_weight": 56.11
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "text": "3aa",
+                        "smiles_llm": "COC(=O)c1ccc(CC(C)C)cc1",
+                        "smiles_ocsr": "CC(CCCCCC)C1=CC=C(C(=O)OC)C=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCCCCCC(C)c1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C16H24O2",
+                        "molecular_weight": 248.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "C1=CC(=C(C=C1)C#N)N2c3ccccc3c4ccccc4c2",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Co(TPP)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Co]",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(dtbbpy)Br2",
+                        "quantity": 2.5,
+                        "unit": "mol%",
+                        "smiles": "Br[Ni](Br)N1C=CC(=C1)C(C)(C)C"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-dimethylacetamide (DMAc)",
+                        "smiles": "CC(=O)N(C)C",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 15.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "r.t."
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "argon (Ar)"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "modi__ed_conditions",
+                        "text": "No Hantzsch ester"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Co(TPP) (1 mol%)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "5,10,15,20-tetraphenyl-21H,23H-porphine cobalt(II)",
+                        "resolved_smiles": "C1=CC=C(C=C1)C2=C3C=CC(=C(C4=NC(=C(C5=CC=C([N-]5)C(=C6C=CC2=N6)C7=CC=CC=C7)C8=CC=CC=C8)C=C4)C9=CC=CC=C9)[N-]3.[Co+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "Ni(dtbbpy)Br2 (2.5 mol%)",
+                        "quantity": 2.5,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Hantzsch ester (1.5 equiv.)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "resolved_name": "Hantzsch ester",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "No Hantzsch ester (stoichiometric reductant omitted)"
+                    }
+                ],
+                "yield": "0"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "Modified conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Catalyst and photocatalyst structures defined in the gallery below the table",
+                "label_map_ref": "Photoinduced_CoNi-cocatalyzed_Markovnikov_hydroarylation_of_unactivated_olefins_with_aryl_bromides_artifacts/image_000005_8cbe9aa90c36d0fc88d10e58b581be6dff0e6f480fa8f920ffb5a2c72d22f5b6.png",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "Yield of 3aa (%)": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 42,
+            "valid_molecules": 42,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

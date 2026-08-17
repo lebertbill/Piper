@@ -1,0 +1,82 @@
+Label Resolver Diagnostic Log — 2026-08-15 16:46:06
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3a', '1a', '4a', '5a', '5b'] → image_000008_50f0bd5afc1e048292c4475091ec6ccb8bd8228901494c0e36c516df2a395d48.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 7' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a', '4a', '5a', '5b']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angew Chem Int Ed - 2021 - Amos - Direct Photoexcitation of Ethynylbenziodoxolones  An Alternative to Photocatalysis for/GPT_5_MINI/processed/Angew Chem Int Ed - 2021 - Amos - Direct Photoexcitation of Ethynylbenziodoxolones  An Alternative to Photocatalysis for_artifacts/image_000008_50f0bd5afc1e048292c4475091ec6ccb8bd8228901494c0e36c516df2a395d48.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='Phenylethynylbenziodoxolone (PhEBX)'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['3a', '4a', '5a', '5b']
+  [OCSR] image_000008_50f0bd5afc1e048292c4475091ec6ccb8bd8228901494c0e36c516df2a395d48.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['3a']  smiles=*CCC(*)(*)OC(=O)C(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C#CI1OC(=O)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4a']  smiles=*C#CC(*)(*)CC*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*C(=O)COC(=O)C1=C(I)C=CC=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['5b']  smiles=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '4a', '5a', '5b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '4a', '5a', '5b']
+  [Tier 3] '3a': bbox=0 atoms=12 smiles=*CCC(*)(*)OC(=O)C(*)=O wildcard=True
+  [Tier 3] '4a': bbox=4 atoms=9 smiles=*C#CC(*)(*)CC* wildcard=True
+  [Tier 3] '5a': bbox=6 atoms=14 smiles=*C(=O)COC(=O)C1=C(I)C=CC=C1 wildcard=True
+  [Tier 3] '5b': bbox=8 atoms=16 smiles=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '4a', '5a', '5b']
+    [Tier 4 LLM] '3a' → r_value='* = Ph, * = Me, * = Me, * = OCs'
+    [Tier 4 LLM] '4a' → r_value='* = Ph, * = Me, * = Me, * = Ph'
+    [Tier 4 LLM] '5a' → r_value='* = Ph'
+    [Tier 4 LLM] '5b' → r_value='* = Ph, * = Me, * = Me, * = Ph'
+    [Tier 4] R-group candidates: ['3a', '4a', '5a', '5b']
+    [Tier 4 graph] '3a' r=* = Ph, * = Me, * = Me, * = OCs fallback (smi=*CCC(*)(*)OC(=O)C(*)=O)
+    [Tier 4] '3a' ✅ match: CC(C)(CCc1ccccc1)OC(=O)C(=O)O[Cs]
+    [Tier 4 graph] '4a' r=* = Ph, * = Me, * = Me, * = Ph fallback (smi=*C#CC(*)(*)CC*)
+    [Tier 4] '4a' ✅ match: c1ccc(cc1)C#CC(C)(C)CCc2ccccc2
+    [Tier 4 graph] '5a' r=* = Ph fallback (smi=*C(=O)COC(=O)C1=C(I)C=CC=C1)
+    [Tier 4] '5a' ✅ match: C1=CC=C(C=C1)C(=O)COC(=O)C2=C(I)C=CC=C2
+    [Tier 4 graph] '5b' r=* = Ph, * = Me, * = Me, * = Ph fallback (smi=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O)
+    [Tier 4] '5b' ✅ match: c1ccc(cc1)CCC(C)(C)OC(=O)C(=O)OCC(=O)c2ccccc2
+  [Tier 4 R-group Sub] resolved=['3a', '4a', '5a', '5b']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '3a', '5b', '1a', '5a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Angew Chem Int Ed - 2021 - Amos - Direct Photoexcitation of Ethynylbenziodoxolones  An Alternative to Photocatalysis for/GPT_5_MINI/processed/Angew Chem Int Ed - 2021 - Amos - Direct Photoexcitation of Ethynylbenziodoxolones  An Alternative to Photocatalysis for_artifacts/image_000008_50f0bd5afc1e048292c4475091ec6ccb8bd8228901494c0e36c516df2a395d48.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='Phenylethynylbenziodoxolone (PhEBX)'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['4a', '3a', '5b', '5a']
+  [OCSR] image_000008_50f0bd5afc1e048292c4475091ec6ccb8bd8228901494c0e36c516df2a395d48.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['3a']  smiles=*CCC(*)(*)OC(=O)C(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C#CI1OC(=O)C2=CC=CC=C21  wildcard=True
+  [OCSR]   pair [4,5]: texts=['4a']  smiles=*C#CC(*)(*)CC*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['5a']  smiles=*C(=O)COC(=O)C1=C(I)C=CC=C1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['5b']  smiles=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '3a', '5b', '5a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '3a', '5b', '5a']
+  [Tier 3] '3a': bbox=0 atoms=12 smiles=*CCC(*)(*)OC(=O)C(*)=O wildcard=True
+  [Tier 3] '4a': bbox=4 atoms=9 smiles=*C#CC(*)(*)CC* wildcard=True
+  [Tier 3] '5a': bbox=6 atoms=14 smiles=*C(=O)COC(=O)C1=C(I)C=CC=C1 wildcard=True
+  [Tier 3] '5b': bbox=8 atoms=16 smiles=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '4a', '5a', '5b']
+    [Tier 4 LLM] '3a' → r_value='* = Ph, * = Me, * = Me, * = OCs'
+    [Tier 4 LLM] '4a' → r_value='* = Ph, * = Me, * = Me, * = Ph'
+    [Tier 4 LLM] '5a' → r_value='* = Ph'
+    [Tier 4 LLM] '5b' → r_value='* = Ph, * = Me, * = Me, * = Ph'
+    [Tier 4] R-group candidates: ['3a', '4a', '5a', '5b']
+    [Tier 4 graph] '3a' r=* = Ph, * = Me, * = Me, * = OCs fallback (smi=*CCC(*)(*)OC(=O)C(*)=O)
+    [Tier 4] '3a' ✅ match: c1ccc(cc1)CCC(C)(C)OC(=O)C(=O)O[Cs]
+    [Tier 4 graph] '4a' r=* = Ph, * = Me, * = Me, * = Ph fallback (smi=*C#CC(*)(*)CC*)
+    [Tier 4] '4a' ✅ match: c1ccc(cc1)C#CC(C)(C)CCc2ccccc2
+    [Tier 4 graph] '5a' r=* = Ph fallback (smi=*C(=O)COC(=O)C1=C(I)C=CC=C1)
+    [Tier 4] '5a' ✅ match: C1=CC=C(C=C1)C(=O)COC(=O)C2=C(I)C=CC=C2
+    [Tier 4 graph] '5b' r=* = Ph, * = Me, * = Me, * = Ph fallback (smi=*CCC(*)(*)OC(=O)C(=O)OCC(*)=O)
+    [Tier 4] '5b' ✅ match: c1ccc(cc1)CCC(C)(C)OC(=O)C(=O)OCC(=O)c2ccccc2
+  [Tier 4 R-group Sub] resolved=['3a', '4a', '5a', '5b']  remaining=[]

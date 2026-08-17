@@ -1,0 +1,560 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "smiles_ocsr": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Cu-Ph",
+          "smiles": "[Cu]C#Cc1ccccc1",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "CuCl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Cu(acac)2",
+          "smiles": "[Cu](O=C(C(C)C)C(C)C)(O=C(C(C)C)C(C)C)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Triethylamine",
+          "smiles": "N(CC)(CC)CC",
+          "quantity": 2.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 95,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "CuCl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Cu(acac)2",
+          "smiles": "[Cu](O=C(C(C)C)C(C)C)(O=C(C(C)C)C(C)C)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Triethylamine",
+          "smiles": "N(CC)(CC)CC",
+          "quantity": 2.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": [
+        "Without copper-phenylacetylide"
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Cu-Ph",
+          "smiles": "[Cu]C#Cc1ccccc1",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Cu(acac)2",
+          "smiles": "[Cu](O=C(C(C)C)C(C)C)(O=C(C(C)C)C(C)C)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Triethylamine",
+          "smiles": "N(CC)(CC)CC",
+          "quantity": 2.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 10,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": [
+        "Without CuCl"
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Cu-Ph",
+          "smiles": "[Cu]C#Cc1ccccc1",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "CuCl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Triethylamine",
+          "smiles": "N(CC)(CC)CC",
+          "quantity": 2.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": [
+        "Without Cu(acac)2"
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Cu-Ph",
+          "smiles": "[Cu]C#Cc1ccccc1",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "CuCl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Cu(acac)2",
+          "smiles": "[Cu](O=C(C(C)C)C(C)C)(O=C(C(C)C)C(C)C)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": [
+        "Without Et3N"
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "NHP ester",
+          "smiles": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1"
+        },
+        {
+          "label": "TIPS-alkyne",
+          "smiles": "C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Cu-Ph",
+          "smiles": "[Cu]C#Cc1ccccc1",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "CuCl",
+          "smiles": "[Cu]Cl",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "Cu(acac)2",
+          "smiles": "[Cu](O=C(C(C)C)C(C)C)(O=C(C(C)C)C(C)C)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Triethylamine",
+          "smiles": "N(CC)(CC)CC",
+          "quantity": 2.5,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Tetrahydrofuran (THF)",
+          "smiles": "C1CCOC1",
+          "quantity": 0.05,
+          "unit": "M"
+        },
+        {
+          "role": "temperature",
+          "text": "",
+          "value": 25,
+          "unit": "°C"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 16,
+          "unit": "h"
+        },
+        {
+          "role": "degassing",
+          "text": "Argon (Ar)"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "alkyl-TIPS-alkyne",
+          "smiles": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C",
+          "smiles_llm": "C1CCCCC1C#C[Si](C(C)C)(C(C)C)C(C)C"
+        }
+      ],
+      "additional_info": [
+        "In darkness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+Label Resolver Diagnostic Log — 2026-06-16 15:22:29
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5'] → image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+  Exists   : True
+  [Tier 0 NameMap] 'NHC-1' → llm_name_to_smiles via name='N-Mesityl substituted triazolium salt'
+  [Tier 0 NameMap] 'NHC-2' → name 'N-Phenyl substituted triazolium salt' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'NHC-3' → llm_name_to_smiles via name='N-C6F5 substituted triazolium salt'
+  [Tier 0 NameMap] 'NHC-4' → llm_name_to_smiles via name='N-2,6-di-Et-C6H3 substituted triazolium salt'
+  [Tier 0 NameMap Organomet] 'PC-1' pubchem_lookup: score=1  C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C
+  [Tier 0 NameMap Organomet] 'PC-1' llm_name_to_smiles: score=37  C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C
+  [Tier 0 NameMap] 'PC-1' → best=llm_name_to_smiles (score=37) via name='Ir(ppy)3'
+  [Tier 0 NameMap] 'PC-2' → name '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC-3' → name '[Ir(ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'PC-4' llm_name_to_smiles: score=1  C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=C
+  [Tier 0 NameMap] 'PC-4' → best=llm_name_to_smiles (score=1) via name='Ru(bpy)3(BF4)2'
+  [Tier 0 NameMap] 'PC-5' → llm_name_to_smiles via name='[Acr-Mes]ClO4'
+  [Tier 0 NameMap] resolved=['NHC-1', 'NHC-3', 'NHC-4', 'PC-1', 'PC-4', 'PC-5']  remaining=['NHC-2', 'NHC-5', 'NHC-6', 'PC-2', 'PC-3']
+  [OCSR] image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Im, 0,2 mmol']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=O=C(F)c1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['65 2,0 equiv']  smiles=*C(=O)C1=N(C)C=CN1C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['(nd )']  smiles=*C(=O)ON1C(C)(C)CCCC1(C)C  wildcard=True
+  [OCSR]   pair [10,11]: texts=['17 (1996)']  smiles=*CC(*)=C=C(*)*  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['NHC-2', 'NHC-5', 'NHC-6', 'PC-2', 'PC-3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['NHC-2', 'NHC-5', 'NHC-6', 'PC-2', 'PC-3']
+  [Tier 3] 'NHC-2': bbox_idx=None out of range (n=13)
+  [Tier 3] 'NHC-5': bbox_idx=None out of range (n=13)
+  [Tier 3] 'NHC-6': bbox=6 atoms=10 smiles=*C(=O)C1=N(C)C=*N1C wildcard=True
+  [Tier 3] 'PC-2': bbox_idx=None out of range (n=13)
+  [Tier 3] 'PC-3': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['NHC-2', 'NHC-5', 'NHC-6', 'PC-2', 'PC-3']
+    [Tier 4 LLM] 'NHC-2' → r_value='NHC = N-heterocyclic carbene catalyst'
+    [Tier 4 LLM] 'PC-3' → r_value='PC = Photocatalyst'
+    [Tier 4] R-group candidates: ['NHC-2', 'PC-3']
+    [Tier 4 graph] 'NHC-2' r=NHC = N-heterocyclic carbene catalyst fallback (smi=*C(=O)C1=N(C)C=CN1C)
+    [Tier 4 graph] 'PC-3' r=PC = Photocatalyst fallback (smi=*C(=O)C1=N(C)C=CN1C)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['NHC-2', 'PC-3', 'NHC-5', 'NHC-6', 'PC-2']
+    [Tier 5 PubChem] 'NHC-2' → name_map name: 'N-Phenyl substituted triazolium salt'
+    [Tier 5 PubChem] 'NHC-2' → no hit (tried ['N-Phenyl substituted triazolium salt'])
+    [Tier 5 PubChem] 'PC-3' → name_map name: '[Ir(ppy)2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-3' → no hit (tried ['[Ir(ppy)2(dtbbpy)]PF6', '[Ir(ppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'NHC-5' → no hit (tried ['NHC-5'])
+    [Tier 5 PubChem] 'NHC-6' → no hit (tried ['Scheme 3', 'NHC-6'])
+    [Tier 5 PubChem] 'PC-2' → name_map name: '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-2' → no hit (tried ['[Ir[dF(CF3)ppy]2(dtbbpy)]PF6', '[Ir(dF(CF3)ppy)2(dtbbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['NHC-2', 'PC-3', 'NHC-5', 'NHC-6', 'PC-2']
+    [Tier 6] 'NHC-2' PubChem/OPSIN/LLM all failed for authoritative name 'N-Phenyl substituted triazolium salt' — name only, no SMILES
+    [Tier 6] 'PC-3' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(ppy)2(dtbbpy)]PF6' — name only, no SMILES
+    [Tier 6] 'PC-2' PubChem/OPSIN/LLM all failed for authoritative name '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['NHC-2', 'PC-3', 'NHC-5', 'NHC-6', 'PC-2']
+  [InlineResolver] Column 'NHCs (15 mol%)' labels ['benzoic anhydride', 'rac - NHC-1'] from image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['benzoic anhydride', 'rac - NHC-1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['benzoic anhydride', 'rac - NHC-1']
+  [OCSR] image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Im, 0,2 mmol']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=O=C(F)c1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['65 2,0 equiv']  smiles=*C(=O)C1=N(C)C=CN1C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['(nd )']  smiles=*C(=O)ON1C(C)(C)CCCC1(C)C  wildcard=True
+  [OCSR]   pair [10,11]: texts=['17 (1996)']  smiles=*CC(*)=C=C(*)*  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['benzoic anhydride', 'rac - NHC-1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['benzoic anhydride', 'rac - NHC-1']
+  [Tier 3] 'benzoic anhydride': bbox_idx=None out of range (n=13)
+  [Tier 3] 'rac - NHC-1': bbox=6 atoms=10 smiles=*C(=O)C1=N(C)C=CN1C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['benzoic anhydride', 'rac - NHC-1']
+    [Tier 4 LLM] 'benzoic anhydride' → r_value='Ph'
+    [Tier 4 LLM] 'rac - NHC-1' → r_value='Ph'
+    [Tier 4] R-group candidates: ['benzoic anhydride', 'rac - NHC-1']
+    [Tier 4 graph] 'benzoic anhydride' r=Ph fallback (smi=*C(=O)ON1C(C)(C)CCCC1(C)C)
+    [Tier 4 graph] 'rac - NHC-1' r=Ph fallback (smi=*C(=O)C1=N(C)C=CN1C)
+    [Tier 4] 'rac - NHC-1' ✅ match: C1=CC=C(C=C1)C(=O)C2=[N+](C)C=CN2C
+  [Tier 4 R-group Sub] resolved=['rac - NHC-1']  remaining=['benzoic anhydride']
+    [Tier 5 PubChem] 'benzoic anhydride' → hit via 'benzoic anhydride': C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2
+  [Tier 5 PubChem] resolved=['benzoic anhydride']  remaining=[]
+  [InlineResolver] Column 'PCs (1.5 mol%)' labels ['benzoic anhydride'] from image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['benzoic anhydride']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['benzoic anhydride']
+  [OCSR] image_000011_3f86393f873df478f755c67e6626387e5a62daa0186d0e713aaf9ecd1491645d.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Im, 0,2 mmol']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C#CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=O=C(F)c1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['65 2,0 equiv']  smiles=*C(=O)C1=N(C)C=CN1C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['(nd )']  smiles=*C(=O)ON1C(C)(C)CCCC1(C)C  wildcard=True
+  [OCSR]   pair [10,11]: texts=['17 (1996)']  smiles=*CC(*)=C=C(*)*  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['benzoic anhydride']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['benzoic anhydride']
+  [Tier 3] 'benzoic anhydride': bbox_idx=None out of range (n=13)
+  [Tier 3 BBox Match] resolved=[]  remaining=['benzoic anhydride']
+    [Tier 4 LLM] 'benzoic anhydride' → r_value='Ph'
+    [Tier 4] R-group candidates: ['benzoic anhydride']
+    [Tier 4 graph] 'benzoic anhydride' r=Ph fallback (smi=*C(=O)ON1C(C)(C)CCCC1(C)C)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['benzoic anhydride']
+    [Tier 5 PubChem] 'benzoic anhydride' → hit via 'benzoic anhydride': C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2
+  [Tier 5 PubChem] resolved=['benzoic anhydride']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+  [OCSR] image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png: 4 bboxes, 1 coref pairs
+  [OCSR]   pair [0,1]: texts=['PC-1: Ir(ppy)j', 'PC -4 Ru(bpy)_(BF4z']  smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+  [Tier 3] '3a': bbox_idx=None out of range (n=4)
+  [Tier 3] '4': bbox_idx=None out of range (n=4)
+  [Tier 3] '2a': bbox_idx=None out of range (n=4)
+  [Tier 3] '1a': bbox_idx=None out of range (n=4)
+  [Tier 3] 'benzoic anhydride': bbox_idx=None out of range (n=4)
+  [Tier 3] '5': bbox_idx=None out of range (n=4)
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3a', '4', '2a', '1a', 'benzoic anhydride', '5']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'benzoic anhydride' → hit via 'benzoic anhydride': C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=['benzoic anhydride']  remaining=['3a', '4', '2a', '1a', '5']
+  [Tier 6 LLM Vision] resolved=['3a', '4', '2a', '1a', '5']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['13', '19', '16', '12', '14', '15', '8', '20', '4', '7', '17', '11', '6', '18', '9', '1', '3', '10', '2', '5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['13', '19', '16', '12', '14', '15', '8', '20', '4', '7', '17', '11', '6', '18', '9', '1', '3', '10', '2', '5']
+  [OCSR] image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png: 4 bboxes, 1 coref pairs
+  [OCSR]   pair [0,1]: texts=['PC-1: Ir(ppy)j', 'PC -4 Ru(bpy)_(BF4z']  smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['13', '19', '16', '12', '14', '15', '8', '20', '4', '7', '17', '11', '6', '18', '9', '1', '3', '10', '2', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['13', '19', '16', '12', '14', '15', '8', '20', '4', '7', '17', '11', '6', '18', '9', '1', '3', '10', '2', '5']
+  [Tier 3] '1': bbox=0 atoms=17 smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12 wildcard=True
+  [Tier 3] '2': bbox=0 atoms=17 smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12 wildcard=True
+  [Tier 3] '3': bbox=0 atoms=17 smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12 wildcard=True
+  [Tier 3] '4': bbox=0 atoms=17 smiles=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12 wildcard=True
+  [Tier 3] '5': bbox=2 atoms=10 smiles=*C1=[N+](*)N=C2CCCN21 wildcard=True
+  [Tier 3] '6': bbox=3 atoms=22 smiles=*.*[N+]1=CN2C(=N1)COCC2CC1=CC=CC2=CC=CC=C21 wildcard=True
+  [Tier 3] '7': bbox_idx=None out of range (n=4)
+  [Tier 3] '8': bbox_idx=None out of range (n=4)
+  [Tier 3] '9': bbox_idx=None out of range (n=4)
+  [Tier 3] '10': bbox_idx=None out of range (n=4)
+  [Tier 3] '11': bbox_idx=None out of range (n=4)
+  [Tier 3] '12': bbox_idx=None out of range (n=4)
+  [Tier 3] '13': bbox_idx=None out of range (n=4)
+  [Tier 3] '14': bbox_idx=None out of range (n=4)
+  [Tier 3] '15': bbox_idx=None out of range (n=4)
+  [Tier 3] '16': bbox_idx=None out of range (n=4)
+  [Tier 3] '17': bbox_idx=None out of range (n=4)
+  [Tier 3] '18': bbox_idx=None out of range (n=4)
+  [Tier 3] '19': bbox_idx=None out of range (n=4)
+  [Tier 3] '20': bbox_idx=None out of range (n=4)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+    [Tier 4 LLM] '1' → r_value='Ar = Mes'
+    [Tier 4 LLM] '2' → r_value='Ar = Ph'
+    [Tier 4 LLM] '3' → r_value='Ar = C6F5'
+    [Tier 4 LLM] '4' → r_value='Ar = 2,6-di-Et-C6H3'
+    [Tier 4] R-group candidates: ['1', '2', '3', '4']
+    [Tier 4 graph] '1' r=Ar = Mes fallback (smi=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12)
+    [Tier 4 graph] '2' r=Ar = Ph fallback (smi=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12)
+    [Tier 4 graph] '3' r=Ar = C6F5 fallback (smi=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12)
+    [Tier 4 graph] '4' r=Ar = 2,6-di-Et-C6H3 fallback (smi=*N1=CN2C(=N1)COC1CC3=CC=CC=C3C12)
+    [Tier 4] '1' RDKit render failed: CC1=CC(C)=CC(C)=C1N1=CN2C(=N1)COC1CC3=CC
+    [Tier 4] '2' RDKit render failed: C1=CC=C(C=C1)N1=CN2C(=N1)COC1CC3=CC=CC=C
+    [Tier 4] '3' RDKit render failed: FC1=C(F)C(F)=C(F)C(F)=C1N1=CN2C(=N1)COC1
+    [Tier 4] '4' RDKit render failed: CCC1=C(N2=CN3C(=N2)COC2CC4=CC=CC=C4C23)C
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+    [Tier 5 PubChem] '1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '6' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '7' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '8' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '9' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '10' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '11' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '12' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '13' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '14' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '15' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '16' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '17' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '18' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '19' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '20' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+  [Tier 6 LLM Vision] resolved=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']

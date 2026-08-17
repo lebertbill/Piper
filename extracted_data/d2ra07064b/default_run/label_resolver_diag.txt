@@ -1,0 +1,123 @@
+Label Resolver Diagnostic Log — 2026-08-15 19:26:40
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['4CzIPN', '2CzPN', '4CzPN', 'Carbazole', 'Tetrahydrocarbazole', 'Tetrafluoroisophthalonitrile'] → image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 3
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '2CzPN', '4CzPN', 'Carbazole', 'Tetrahydrocarbazole', 'Tetrafluoroisophthalonitrile']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d2ra07064b/default_run/processed/d2ra07064b_artifacts/image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '2CzPN' → opsin_lookup via name='1,2-dicarbazolyl-4,5-dicyanobenzene'
+  [Tier 0 NameMap] '4CzPN' → opsin_lookup via name='1,2,4,5-tetrakis(carbazol-9-yl)-3,6-dicyanobenzene'
+  [Tier 0 NameMap] 'Tetrafluoroisophthalonitrile' → pubchem_lookup via name='2,4,5,6-tetrafluoroisophthalonitrile'
+  [Tier 0 NameMap] resolved=['4CzIPN', '2CzPN', '4CzPN', 'Tetrafluoroisophthalonitrile']  remaining=['Carbazole', 'Tetrahydrocarbazole']
+  [OCSR] image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png: 1 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Carbazole', 'Tetrahydrocarbazole']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Carbazole', 'Tetrahydrocarbazole']
+  [Tier 3] 'Carbazole': bbox=0 atoms=36 smiles=C#NC1=C(C#N)C=C(N2C3=CC=CC=C3C3=C2C=CC=C3)C(N2C3=CC=CC=C3C3= wildcard=False
+  [Tier 3] 'Tetrahydrocarbazole': bbox_idx=None out of range (n=1)
+  [Tier 3 BBox Match] resolved=['Carbazole']  remaining=['Tetrahydrocarbazole']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Tetrahydrocarbazole']
+    [Tier 5 PubChem] 'Tetrahydrocarbazole' → hit via 'Tetrahydrocarbazole': C1CCC2=C(C1)C3=CC=CC=C3N2
+  [Tier 5 PubChem] resolved=['Tetrahydrocarbazole']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['Tetra \ue104 uoroisophthalonitrile'] from image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 3
+────────────────────────────────────────────────────────────
+  Labels   : ['Tetra \ue104 uoroisophthalonitrile']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d2ra07064b/default_run/processed/d2ra07064b_artifacts/image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+  [OCSR] image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png: 1 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+  [Tier 3] 'Tetra  uoroisophthalonitrile': bbox_idx=None out of range (n=1)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+    [Tier 5 PubChem] 'Tetra  uoroisophthalonitrile' → no hit (tried ['Tetra \ue104 uoroisophthalonitrile'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Tetra \ue104 uoroisophthalonitrile']
+    [Tier 6→pubchem_lookup] 'Tetra  uoroisophthalonitrile' name='Tetrafluoroisophthalonitrile' → C(#N)C1=C(C(=C(C(=C1F)F)F)C#N)F
+  [Tier 6 LLM Vision] resolved=['Tetra \ue104 uoroisophthalonitrile']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['benzaldehyde', '4a', 'urea', 'ethyl acetoacetate']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d2ra07064b/default_run/processed/d2ra07064b_artifacts/image_000005_6b71c3105533481b8f7933318ef013e64b72209a7d3825787da401d708925541.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['benzaldehyde', '4a', 'urea', 'ethyl acetoacetate']
+  [OCSR] image_000005_6b71c3105533481b8f7933318ef013e64b72209a7d3825787da401d708925541.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['benzaldehyde', '4a', 'urea', 'ethyl acetoacetate']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['benzaldehyde', '4a', 'urea', 'ethyl acetoacetate']
+  [Tier 3] 'benzaldehyde': bbox=0 atoms=9 smiles=*C(=O)c1ccccc1 wildcard=True
+  [Tier 3] '4a': bbox=3 atoms=19 smiles=CCOC(=O)C1=C(C)NC(=O)NC1c1ccccc1 wildcard=False
+  [Tier 3] 'urea': bbox=1 atoms=4 smiles=NC(N)=O wildcard=False
+  [Tier 3] 'ethyl acetoacetate': bbox=2 atoms=7 smiles=*C(=O)CC(C)=O wildcard=True
+  [Tier 3 BBox Match] resolved=['4a', 'urea']  remaining=['benzaldehyde', 'ethyl acetoacetate']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['benzaldehyde', 'ethyl acetoacetate']
+    [Tier 5 PubChem] 'benzaldehyde' → hit via 'benzaldehyde': C1=CC=C(C=C1)C=O
+    [Tier 5 PubChem] 'ethyl acetoacetate' → hit via 'ethyl acetoacetate': CCOC(=O)CC(=O)C
+  [Tier 5 PubChem] resolved=['benzaldehyde', 'ethyl acetoacetate']  remaining=[]
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['Urea', 'Benzaldehyde', '4a', 'Ethyl acetoacetate']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d2ra07064b/default_run/processed/d2ra07064b_artifacts/image_000009_5c4be2d54801f286a65231519d53e6a0d6ad295da42980dc7062ec2265cccec2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Urea', 'Benzaldehyde', '4a', 'Ethyl acetoacetate']
+  [OCSR] image_000009_5c4be2d54801f286a65231519d53e6a0d6ad295da42980dc7062ec2265cccec2.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Urea', 'Benzaldehyde', '4a', 'Ethyl acetoacetate']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Urea', 'Benzaldehyde', '4a', 'Ethyl acetoacetate']
+  [Tier 3] 'Urea': bbox=1 atoms=4 smiles=NC(N)=O wildcard=False
+  [Tier 3] 'Benzaldehyde': bbox=0 atoms=9 smiles=*C(=O)c1ccccc1 wildcard=True
+  [Tier 3] '4a': bbox=3 atoms=19 smiles=CCOC(=O)C1=C(C)NC(=O)NC1c1ccccc1 wildcard=False
+  [Tier 3] 'Ethyl acetoacetate': bbox=2 atoms=7 smiles=*C(=O)CC(C)=O wildcard=True
+  [Tier 3 BBox Match] resolved=['Urea', '4a']  remaining=['Benzaldehyde', 'Ethyl acetoacetate']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Benzaldehyde', 'Ethyl acetoacetate']
+    [Tier 5 PubChem] 'Benzaldehyde' → hit via 'Benzaldehyde': C1=CC=C(C=C1)C=O
+    [Tier 5 PubChem] 'Ethyl acetoacetate' → hit via 'Ethyl acetoacetate': CCOC(=O)CC(=O)C
+  [Tier 5 PubChem] resolved=['Benzaldehyde', 'Ethyl acetoacetate']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 3
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/d2ra07064b/default_run/processed/d2ra07064b_artifacts/image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4', '2']
+  [OCSR] image_000007_d2a08142fd39e06036fd7cead2b60ba0a8e3af62b40cdea88ffe92239edc0a5f.png: 1 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '2']
+  [Tier 3] '4': bbox=0 atoms=36 smiles=C#NC1=C(C#N)C=C(N2C3=CC=CC=C3C3=C2C=CC=C3)C(N2C3=CC=CC=C3C3= wildcard=False
+  [Tier 3] '2': bbox_idx=None out of range (n=1)
+  [Tier 3 BBox Match] resolved=['4']  remaining=['2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['2']
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2']
+    [Tier 6→opsin_lookup] '2' name='2,3-bis(9H-carbazol-9-yl)terephthalonitrile' → C1=CC=CC=2C3=CC=CC=C3N(C12)C1=C(C#N)C=CC(=C1N1C2=C
+  [Tier 6 LLM Vision] resolved=['2']

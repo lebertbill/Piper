@@ -1,0 +1,85 @@
+Label Resolver Diagnostic Log — 2026-06-15 14:33:04
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2', '3a', '4', '5', '2a', '2b', '2c', '2d'] → image_000006_aba4e034991e758b59c5bdc05b764458f084d029d8f48c7cc35705220d1476ac.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2', '3a', '4', '5', '2a', '2b', '2c', '2d']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Electrochemical_deoxygenative_trifluoromethylallenylation_of_propargylic_alcohols_iviai_sodium-mediated_pre-association/default_run/processed/Electrochemical_deoxygenative_trifluoromethylallenylation_of_propargylic_alcohols_iviai_sodium-mediated_pre-association_artifacts/image_000006_aba4e034991e758b59c5bdc05b764458f084d029d8f48c7cc35705220d1476ac.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1-phenylprop-2-yn-1-ol'
+  [Tier 0 NameMap] '3a' → opsin_lookup via name='1-(3,3,3-trifluoroprop-1-en-1-ylidene)benzene'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='potassium trifluoromethanesulfinate'
+  [Tier 0 NameMap] '2b' → pubchem_lookup via name='sodium trifluoromethanesulfinate'
+  [Tier 0 NameMap] '2c' → pubchem_lookup via name='zinc(II) trifluoromethanesulfinate'
+  [Tier 0 NameMap] '2d' → pubchem_lookup via name='sodium trifluoroacetate'
+  [Tier 0 NameMap] resolved=['1a', '3a', '2a', '2b', '2c', '2d']  remaining=['2', '4', '5']
+  [OCSR] image_000006_aba4e034991e758b59c5bdc05b764458f084d029d8f48c7cc35705220d1476ac.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(O)C#C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*S(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2b']  smiles=*S(*)=O  wildcard=True
+  [OCSR]   pair [6,7]: texts=['2c']  smiles=*S(=O)[O][Zn]  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2d']  smiles=*C(*)(=O)=O  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=*C=C=C*  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C=CC(*)O  wildcard=True
+  [OCSR]   pair [14,15]: texts=['5']  smiles=*C=CC(*)=O  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '4', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '4', '5']
+  [Tier 3] '2': bbox=4 atoms=4 smiles=*[S](=O)[Na] wildcard=True
+  [Tier 3] '4': bbox=12 atoms=6 smiles=*C=CC(*)O wildcard=True
+  [Tier 3] '5': bbox=14 atoms=6 smiles=*C=CC(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2', '4', '5']
+    [Tier 4 LLM] '2' → r_value='MXO2CF3'
+    [Tier 4 LLM] '4' → r_value='CF3'
+    [Tier 4 LLM] '5' → r_value='CF3'
+    [Tier 4] R-group candidates: ['2', '4', '5']
+    [Tier 4 graph] '2' r=MXO2CF3 fallback (smi=*S(*)=O)
+    [Tier 4 graph] '4' r=CF3 fallback (smi=*C=CC(*)O)
+    [Tier 4] '4' ✅ match: FC(F)(F)C=CC(O)c1ccccc1
+    [Tier 4 graph] '5' r=CF3 fallback (smi=*C=CC(*)=O)
+    [Tier 4] '5' ✅ match: FC(F)(F)C=CC(=O)c1ccccc1
+  [Tier 4 R-group Sub] resolved=['4', '5']  remaining=['2']
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2']
+    [Tier 6→llm_name_to_smiles] '2' name='MXO2CF3' → CC1(C)C2=C(C3=C(C=C2)N(C4=CC=C(C=C4)C(F)(F)F)C5=C3
+  [Tier 6 LLM Vision] resolved=['2']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a', '4', '5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Electrochemical_deoxygenative_trifluoromethylallenylation_of_propargylic_alcohols_iviai_sodium-mediated_pre-association/default_run/processed/Electrochemical_deoxygenative_trifluoromethylallenylation_of_propargylic_alcohols_iviai_sodium-mediated_pre-association_artifacts/image_000006_aba4e034991e758b59c5bdc05b764458f084d029d8f48c7cc35705220d1476ac.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1-phenylprop-2-yn-1-ol'
+  [Tier 0 NameMap] '3a' → opsin_lookup via name='1-(3,3,3-trifluoroprop-1-en-1-ylidene)benzene'
+  [Tier 0 NameMap] resolved=['1a', '3a']  remaining=['4', '5']
+  [OCSR] image_000006_aba4e034991e758b59c5bdc05b764458f084d029d8f48c7cc35705220d1476ac.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C(O)C#C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*S(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2b']  smiles=*S(*)=O  wildcard=True
+  [OCSR]   pair [6,7]: texts=['2c']  smiles=*S(=O)[O][Zn]  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2d']  smiles=*C(*)(=O)=O  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=*C=C=C*  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C=CC(*)O  wildcard=True
+  [OCSR]   pair [14,15]: texts=['5']  smiles=*C=CC(*)=O  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '5']
+  [Tier 3] '4': bbox=12 atoms=6 smiles=*C=CC(*)O wildcard=True
+  [Tier 3] '5': bbox=14 atoms=6 smiles=*C=CC(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '5']
+    [Tier 4 LLM] '4' → r_value='Ph, CF3'
+    [Tier 4 LLM] '5' → r_value='Ph, CF3'
+    [Tier 4] R-group candidates: ['4', '5']
+    [Tier 4 graph] '4' r=Ph, CF3 fallback (smi=*C=CC(*)O)
+    [Tier 4] '4' ✅ match: FC(F)(F)C=CC(O)C1=CC=CC=C1
+    [Tier 4 graph] '5' r=Ph, CF3 fallback (smi=*C=CC(*)=O)
+    [Tier 4] '5' ✅ match: FC(F)(F)C=CC(=O)C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['4', '5']  remaining=[]

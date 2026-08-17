@@ -1,0 +1,107 @@
+Label Resolver Diagnostic Log — 2026-05-16 09:57:51
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [InlineResolver] Column 'Photocatalyst' labels ['Erythosin B', 'Fluorescein', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Rhodamine B', 'Methylene blue', 'Xanthene', 'Rose Bengal', 'Eosin-Y', 'Thioxanthone', 'Acridinium-based photocatalyst'] from image_000008_034832cdd98ff30a0d2aeedc07905ac25f9c10fd79cf4f0734306e995fd43a09.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Erythosin B', 'Fluorescein', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Rhodamine B', 'Methylene blue', 'Xanthene', 'Rose Bengal', 'Eosin-Y', 'Thioxanthone', 'Acridinium-based photocatalyst']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox/default_run_/processed/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox_artifacts/image_000008_034832cdd98ff30a0d2aeedc07905ac25f9c10fd79cf4f0734306e995fd43a09.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Erythosin B', 'Fluorescein', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Rhodamine B', 'Methylene blue', 'Xanthene', 'Rose Bengal', 'Eosin-Y', 'Thioxanthone', 'Acridinium-based photocatalyst']
+  [OCSR] image_000008_034832cdd98ff30a0d2aeedc07905ac25f9c10fd79cf4f0734306e995fd43a09.png: 66 bboxes, 0 coref pairs
+  [OCSR] → 62 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Erythosin B', 'Fluorescein', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Rhodamine B', 'Methylene blue', 'Xanthene', 'Rose Bengal', 'Eosin-Y', 'Thioxanthone', 'Acridinium-based photocatalyst']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Erythosin B', 'Fluorescein', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Rhodamine B', 'Methylene blue', 'Xanthene', 'Rose Bengal', 'Eosin-Y', 'Thioxanthone', 'Acridinium-based photocatalyst']
+  [Tier 3] 'Thioxanthone': symbol/coord count mismatch (14 vs 2), using original
+  [Tier 3] 'Thioxanthone': bbox=0 atoms=2 smiles=C=[IH] wildcard=False
+  [Tier 3] 'Eosin-Y': symbol/coord count mismatch (26 vs 2), using original
+  [Tier 3] 'Eosin-Y': bbox=4 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Methylene blue': symbol/coord count mismatch (20 vs 2), using original
+  [Tier 3] 'Methylene blue': bbox=5 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Rhodamine B': symbol/coord count mismatch (27 vs 2), using original
+  [Tier 3] 'Rhodamine B': bbox=6 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Fluorescein': symbol/coord count mismatch (23 vs 2), using original
+  [Tier 3] 'Fluorescein': bbox=7 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Erythosin B': symbol/coord count mismatch (27 vs 2), using original
+  [Tier 3] 'Erythosin B': bbox=8 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Xanthene': symbol/coord count mismatch (13 vs 2), using original
+  [Tier 3] 'Xanthene': bbox=9 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Phenanthrenequinone': symbol/coord count mismatch (16 vs 2), using original
+  [Tier 3] 'Phenanthrenequinone': bbox=10 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Acenaphthenequinone': symbol/coord count mismatch (14 vs 2), using original
+  [Tier 3] 'Acenaphthenequinone': bbox=11 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Acridinium-based photocatalyst': symbol/coord count mismatch (34 vs 2), using original
+  [Tier 3] 'Acridinium-based photocatalyst': bbox=12 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3] 'Rose Bengal': symbol/coord count mismatch (31 vs 2), using original
+  [Tier 3] 'Rose Bengal': bbox=14 atoms=2 smiles=[I+][I+] wildcard=False
+  [Tier 3 BBox Match] resolved=['Thioxanthone', 'Eosin-Y', 'Methylene blue', 'Rhodamine B', 'Fluorescein', 'Erythosin B', 'Xanthene', 'Phenanthrenequinone', 'Acenaphthenequinone', 'Acridinium-based photocatalyst', 'Rose Bengal']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['benzaldehyde', 'pyrrolidinone derivative', 'aniline', 'DEAD']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox/default_run_/processed/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox_artifacts/image_000008_034832cdd98ff30a0d2aeedc07905ac25f9c10fd79cf4f0734306e995fd43a09.png
+  Exists   : True
+  [Tier 0 NameMap] 'DEAD' → pubchem_lookup via name='diethyl acetylene dicarboxylate'
+  [Tier 0 NameMap] resolved=['DEAD']  remaining=['benzaldehyde', 'pyrrolidinone derivative', 'aniline']
+  [OCSR] image_000008_034832cdd98ff30a0d2aeedc07905ac25f9c10fd79cf4f0734306e995fd43a09.png: 66 bboxes, 0 coref pairs
+  [OCSR] → 62 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['benzaldehyde', 'pyrrolidinone derivative', 'aniline']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['benzaldehyde', 'pyrrolidinone derivative', 'aniline']
+  [Tier 3] 'benzaldehyde': bbox_idx=None out of range (n=66)
+  [Tier 3] 'pyrrolidinone derivative': bbox_idx=None out of range (n=66)
+  [Tier 3] 'aniline': bbox_idx=None out of range (n=66)
+  [Tier 3 BBox Match] resolved=[]  remaining=['benzaldehyde', 'pyrrolidinone derivative', 'aniline']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['benzaldehyde', 'pyrrolidinone derivative', 'aniline']
+    [Tier 5 PubChem] 'benzaldehyde' → hit via 'benzaldehyde': C1=CC=C(C=C1)C=O
+    [Tier 5 PubChem] 'pyrrolidinone derivative' → no hit (tried ['pyrrolidinone derivative'])
+    [Tier 5 PubChem] 'aniline' → hit via 'aniline': C1=CC=C(C=C1)N
+  [Tier 5 PubChem] resolved=['benzaldehyde', 'aniline']  remaining=['pyrrolidinone derivative']
+  [Tier 6 LLM Vision] resolved=['pyrrolidinone derivative']
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['benzaldehyde', '4a', 'aniline', 'DEAD']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox/default_run_/processed/Dutta et al. - 2021 - Visible light-promoted synthesis of pyrrolidinone derivatives via Rose Bengal as a photoredox_artifacts/image_000010_2f491ecd787555bb0b5a0e5d949ca563852fa6247f4b537b8dd43076d5cfb649.png
+  Exists   : True
+  [Tier 0 NameMap] '4a' → opsin_lookup via name='Ethyl 2,5-dihydro-4-hydroxy-5-oxo-1,2-diphenyl-1H-pyrrole-3-carboxylate'
+  [Tier 0 NameMap] 'DEAD' → pubchem_lookup via name='diethyl acetylene dicarboxylate'
+  [Tier 0 NameMap] resolved=['4a', 'DEAD']  remaining=['benzaldehyde', 'aniline']
+  [OCSR] image_000010_2f491ecd787555bb0b5a0e5d949ca563852fa6247f4b537b8dd43076d5cfb649.png: 5 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['42']  smiles=*C(=O)C1=C(O)C(=O)N(C2=CC=CC=C2)C1C1=CC=CC=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['benzaldehyde', 'aniline']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['benzaldehyde', 'aniline']
+  [Tier 3] 'benzaldehyde': bbox=2 atoms=7 smiles=CC1=*C=CC=C1 wildcard=True
+  [Tier 3] 'aniline': bbox=0 atoms=7 smiles=Nc1ccccc1 wildcard=False
+  [Tier 3 BBox Match] resolved=['aniline']  remaining=['benzaldehyde']
+    [Tier 4 LLM] 'benzaldehyde' → r_value='* = OEt'
+    [Tier 4] R-group candidates: ['benzaldehyde']
+    [Tier 4 graph] 'benzaldehyde' r=* = OEt fallback (smi=*C(=O)C1=C(O)C(=O)N(C2=CC=CC=C2)C1C1=CC=CC=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['benzaldehyde']
+    [Tier 5 PubChem] 'benzaldehyde' → hit via 'benzaldehyde': C1=CC=C(C=C1)C=O
+  [Tier 5 PubChem] resolved=['benzaldehyde']  remaining=[]
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns

@@ -1,0 +1,69 @@
+Label Resolver Diagnostic Log — 2026-08-15 16:18:09
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['2a', '1i', 'E-3i', 'Z-3i', '4CzIPN'] → image_000007_bd7fe10f25c49e4175a4889a10f7e68a4f175a4ded2c4ce494b03d8e52288ba6.png
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a', '1i', 'E-3i', 'Z-3i', '4CzIPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/1-s2.0-S2666554920300478-main/GPT_5_MINI/processed/1-s2.0-S2666554920300478-main_artifacts/image_000007_bd7fe10f25c49e4175a4889a10f7e68a4f175a4ded2c4ce494b03d8e52288ba6.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='E-beta-bromostyrene'
+  [Tier 0 NameMap] '1i' → pubchem_lookup via name='Boc-Abu-OH'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['2a', '1i', '4CzIPN']  remaining=['E-3i', 'Z-3i']
+  [OCSR] image_000007_bd7fe10f25c49e4175a4889a10f7e68a4f175a4ded2c4ce494b03d8e52288ba6.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C=CBr  wildcard=True
+  [OCSR]   pair [4,5]: texts=['E-3i']  smiles=*C=CC(*)*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['2-3i']  smiles=*C=CC(*)*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['E-3i', 'Z-3i']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['E-3i', 'Z-3i']
+  [Tier 3] 'E-3i': bbox=4 atoms=6 smiles=*C=CC(*)* wildcard=True
+  [Tier 3] 'Z-3i': bbox=6 atoms=6 smiles=*C=CC(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['E-3i', 'Z-3i']
+    [Tier 4 LLM] 'E-3i' → r_value='E-isomer'
+    [Tier 4 LLM] 'Z-3i' → r_value='Z-isomer'
+    [Tier 4] R-group candidates: ['E-3i', 'Z-3i']
+    [Tier 4 graph] 'E-3i' r=E-isomer fallback (smi=*C=CC(*)*)
+    [Tier 4 graph] 'Z-3i' r=Z-isomer fallback (smi=*C=CC(*)*)
+    [Tier 4] 'E-3i' 🔄 corrected: CC[C@H](NC(=O)OC(C)(C)C)/C=C/c1ccccc1
+    [Tier 4] 'Z-3i' ✅ match: CC[C@@H](NC(=O)OC(C)(C)C)/C=C\c1ccccc1
+  [Tier 4 R-group Sub] resolved=['E-3i', 'Z-3i']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Z-3i', '1i', '2a', 'E-3i']
+  Image    : extracted_data/1-s2.0-S2666554920300478-main/GPT_5_MINI/processed/visualheist_page_02_table_3.png
+  Exists   : True
+  [Tier 0 NameMap] '1i' → pubchem_lookup via name='Boc-Abu-OH'
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='E-beta-bromostyrene'
+  [Tier 0 NameMap] resolved=['1i', '2a']  remaining=['Z-3i', 'E-3i']
+  [OCSR] visualheist_page_02_table_3.png: 21 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['2']  smiles=*/C=C\C(C)(C)C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['1i']  smiles=*C(*)*  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=*C=CBr  wildcard=True
+  [OCSR]   pair [16,17]: texts=['E-3i']  smiles=*C=CC(*)*  wildcard=True
+  [OCSR]   pair [18,19]: texts=['2-3i']  smiles=*C=CC(*)*  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Z-3i', 'E-3i']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Z-3i', 'E-3i']
+  [Tier 3] 'Z-3i': bbox=18 atoms=6 smiles=*C=CC(*)* wildcard=True
+  [Tier 3] 'E-3i': bbox=16 atoms=6 smiles=*C=CC(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Z-3i', 'E-3i']
+    [Tier 4 LLM] 'E-3i' → r_value='Ar = Ph, R = CH(Et)NHBoc'
+    [Tier 4 LLM] 'Z-3i' → r_value='Ar = Ph, R = CH(Et)NHBoc'
+    [Tier 4] R-group candidates: ['E-3i', 'Z-3i']
+    [Tier 4 graph] 'E-3i' r=Ar = Ph, R = CH(Et)NHBoc fallback (smi=*C=CC(*)*)
+    [Tier 4 graph] 'Z-3i' r=Ar = Ph, R = CH(Et)NHBoc fallback (smi=*C=CC(*)*)
+    [Tier 4] 'E-3i' 🔄 corrected: CC[C@H](NC(=O)OC(C)(C)C)/C=C\c1ccccc1
+    [Tier 4] 'Z-3i' ✅ match: CC[C@@H](NC(=O)OC(C)(C)C)/C=C\c1ccccc1
+  [Tier 4 R-group Sub] resolved=['E-3i', 'Z-3i']  remaining=[]

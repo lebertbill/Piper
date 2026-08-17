@@ -1,0 +1,59 @@
+Label Resolver Diagnostic Log — 2026-08-14 15:37:07
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['A', 'B', 'C'] → image_000009_bc4b1528c606bb97ccdfa668924ae64b57db6d8dc42ec412f0fa5108e818f401.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/jo3c00895/GPT_5_MINI/processed/jo3c00895_artifacts/image_000009_bc4b1528c606bb97ccdfa668924ae64b57db6d8dc42ec412f0fa5108e818f401.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['A', 'B', 'C']
+  [OCSR] image_000009_bc4b1528c606bb97ccdfa668924ae64b57db6d8dc42ec412f0fa5108e818f401.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['A']  smiles=COc1cccc(Br)c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['B']  smiles=*C(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['C']  smiles=*C1=CC(OC)=CC=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['A']  remaining=['B', 'C']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['B', 'C']
+  [Tier 3] 'B': bbox=2 atoms=4 smiles=*C(*)=O wildcard=True
+  [Tier 3] 'C': bbox=4 atoms=9 smiles=*C1=CC(OC)=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['B', 'C']
+    [Tier 4 LLM] 'B' → r_value='H'
+    [Tier 4 LLM] 'C' → r_value='CO2H'
+    [Tier 4] R-group candidates: ['B', 'C']
+    [Tier 4] bbox missing for group ['B'] — using full image
+    [Tier 4] 'B' 🔄 corrected: [Na+].[O-]C=O
+    [Tier 4 graph] 'C' r=CO2H fallback (smi=*C1=CC(OC)=CC=C1)
+    [Tier 4] 'C' ✅ match: OC(=O)C1=CC(OC)=CC=C1
+  [Tier 4 R-group Sub] resolved=['B', 'C']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['B', 'A', 'C']
+  Image    : extracted_data/jo3c00895/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['B', 'A', 'C']
+  [OCSR] visualheist_page_02_table_2.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=COc1cccc(Br)c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['B']  smiles=*C(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['c']  smiles=*C1=CC(OC)=CC=C1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['B', 'A', 'C']
+  [Tier 2 Symbol Correction] resolved=['A']  remaining=['B', 'C']
+  [Tier 3] 'B': bbox=2 atoms=4 smiles=*C(*)=O wildcard=True
+  [Tier 3] 'C': bbox=4 atoms=9 smiles=*C1=CC(OC)=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['B', 'C']
+    [Tier 4 LLM] 'B' → r_value='sodium formate'
+    [Tier 4 LLM] 'C' → r_value='CO2H'
+    [Tier 4] R-group candidates: ['B', 'C']
+    [Tier 4 graph] 'B' r=sodium formate fallback (smi=*C(*)=O)
+    [Tier 4] 'B' ✅ match: [Na+].[O-]C=O
+    [Tier 4 graph] 'C' r=CO2H fallback (smi=*C1=CC(OC)=CC=C1)
+    [Tier 4] 'C' ✅ match: OC(=O)C1=CC(OC)=CC=C1
+  [Tier 4 R-group Sub] resolved=['B', 'C']  remaining=[]

@@ -1,0 +1,73 @@
+Label Resolver Diagnostic Log — 2026-05-22 07:25:15
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000003_70111509542de42f314f9d090426b011dd03f44cfc414bae0aa94d273756904e.png → visualheist_page_01_figure_1.png
+  [GlobalRegistry] labels=['3a', '3b', '3c', '3d', '4a', '4d', '5d'] → visualheist_page_01_figure_1.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Scheme 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '3b', '3c', '3d', '4a', '4d', '5d']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Boselli et al. - 2025 - Visible‐Light Photoredox Catalytic Direct N ‐(Het)Arylation of Lactams/gemini_3_1_flash_lite/processed/visualheist_page_01_figure_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '3b', '3c', '3d', '4a', '4d', '5d']
+  [OCSR] visualheist_page_01_figure_1.png: 15 bboxes, 1 coref pairs
+  [OCSR]   pair [0,1]: texts=['c']  smiles=*C(C([1*])[2*])C([3*])c1noc(=O)o1.I  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '3b', '3c', '3d', '4a', '4d', '5d']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '3b', '3c', '3d', '4a', '4d', '5d']
+  [Tier 3] '3a': bbox=3 atoms=15 smiles=*C(=O)NC1C(=O)N2C1SC(C)(C)C2* wildcard=True
+  [Tier 3] '3b': bbox=2 atoms=19 smiles=Nc1cccc2c1CN(C1CCC(=O)NC1=O)C2=O wildcard=False
+  [Tier 3] '3c': bbox=9 atoms=22 smiles=C[C@H](c1ccc(Br)cc1)N1CCC2(CCC(O)CC2)CC1=O wildcard=False
+  [Tier 3] '3d': bbox=10 atoms=37 smiles=*C(NC(=O)CN1CC2=C(C=CC=C2)CC2(CCCN2C(=O)C(N)CC2=CC=C(O)C=C2) wildcard=True
+  [Tier 3] '4a': bbox=4 atoms=7 smiles=*N1CCCC1=O wildcard=True
+  [Tier 3] '4d': bbox=6 atoms=6 smiles=O=C1CCCN1 wildcard=False
+  [Tier 3] '5d': bbox=12 atoms=7 smiles=*N1CCCC1=O wildcard=True
+  [Tier 3 BBox Match] resolved=['3b', '3c', '4d']  remaining=['3a', '3d', '4a', '5d']
+    [Tier 4 LLM] '3a' → r_value='R = H, R1 = H, R2 = H, R3 = H'
+    [Tier 4 LLM] '3d' → r_value='R = H, R1 = Me, R2 = Me, R3 = H'
+    [Tier 4 LLM] '4a' → r_value='R = H, R1 = H, R2 = H, R3 = H'
+    [Tier 4 LLM] '5d' → r_value='R = H, R1 = Me, R2 = Me, R3 = H'
+    [Tier 4] R-group candidates: ['3a', '3d', '4a', '5d']
+    [Tier 4 graph] '3a' r=R = H, R1 = H, R2 = H, R3 = H fallback (smi=*C(C([1*])[2*])C([3*])c1noc(=O)o1.I)
+    [Tier 4 graph] '3d' r=R = H, R1 = Me, R2 = Me, R3 = H fallback (smi=*C(C([1*])[2*])C([3*])c1noc(=O)o1.I)
+    [Tier 4 graph] '4a' r=R = H, R1 = H, R2 = H, R3 = H fallback (smi=*C(C([1*])[2*])C([3*])c1noc(=O)o1.I)
+    [Tier 4 graph] '5d' r=R = H, R1 = Me, R2 = Me, R3 = H fallback (smi=*C(C([1*])[2*])C([3*])c1noc(=O)o1.I)
+    [Tier 4] '3a' 🔄 corrected: CCCC1=NOC(=O)O1
+    [Tier 4] '3d' 🔄 corrected: CC(C)C(C)Cc1noc(=O)o1
+    [Tier 4] '4a' 🔄 corrected: CCCC1=NOC(=O)O1
+    [Tier 4] '5d' 🔄 corrected: CC(C)C(C)Cc1noc(=O)o1
+  [Tier 4 R-group Sub] resolved=['3a', '3d', '4a', '5d']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3d', '3a', '6a']
+  Image    : extracted_data/Boselli et al. - 2025 - Visible‐Light Photoredox Catalytic Direct N ‐(Het)Arylation of Lactams/gemini_3_1_flash_lite/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '6a' → pubchem_lookup via name='1-methylindole'
+  [Tier 0 NameMap] resolved=['6a']  remaining=['3d', '3a']
+  [OCSR] visualheist_page_03_table_1.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['1 equiv']  smiles=Cc1cc(C)[n+](N2CCCC2=O)c(C)c1  wildcard=False
+  [OCSR]   pair [2,3]: texts=[]  smiles=Cn1ccc2ccccc21  wildcard=False
+  [OCSR]   pair [4,5]: texts=['4-CzIPN']  smiles=*C1=C(*)C(*)=C(*)C(*)=C1*  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Cz']  smiles=CC.Cn1c2ccccc2c2ccccc21  wildcard=False
+  [OCSR]   pair [8,9]: texts=['7a']  smiles=Cn1c(N2CCCC2=O)cc2ccccc21  wildcard=False
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3d', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3d', '3a']
+  [Tier 3] '3d': bbox=0 atoms=15 smiles=Cc1cc(C)[n+](N2CCCC2=O)c(C)c1 wildcard=False
+  [Tier 3] '3a': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=['3d']  remaining=['3a']
+    [Tier 4 LLM] '3a' → r_value='counterion = BF4-'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4 graph] '3a' r=counterion = BF4- fallback (smi=*C1=C(*)C(*)=C(*)C(*)=C1*)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3a']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3a']
+    [Tier 6→opsin_lookup] '3a' name='1-(2,4,6-trimethylpyridin-1-ium-1-yl)pyrrolidin-2-one tetrafluoroborate' → F[B-](F)(F)F.CC1=[N+](C(=CC(=C1)C)C)N1C(CCC1)=O
+  [Tier 6 LLM Vision] resolved=['3a']

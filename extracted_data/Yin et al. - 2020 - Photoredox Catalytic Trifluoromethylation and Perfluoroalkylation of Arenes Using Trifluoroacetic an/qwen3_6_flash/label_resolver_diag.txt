@@ -1,0 +1,62 @@
+Label Resolver Diagnostic Log — 2026-05-24 09:14:25
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['BHT-CF3', 'TEMPO-CF3'] → image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 2
+────────────────────────────────────────────────────────────
+  Labels   : ['BHT-CF3', 'TEMPO-CF3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an/qwen3_6_flash/processed/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an_artifacts/image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [OCSR] image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png: 6 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['1-mono']  smiles=*C1=CC(*)=C(*)C(*)=C1  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 3] 'BHT-CF3': bbox=1 atoms=13 smiles=**.*CC1=CC(*)=C(O)C(*)=C1 wildcard=True
+  [Tier 3] 'TEMPO-CF3': bbox=5 atoms=12 smiles=*ON1C(*)(*)CCCC1(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 LLM] 'BHT-CF3' → r_value='C1=C(C(C)(C)C)C(O)=C(C(C)(C)C)C=C1CH2'
+    [Tier 4 LLM] 'TEMPO-CF3' → r_value='ON1C(C)(C)CCCC1(C)C'
+    [Tier 4] R-group candidates: ['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 graph] 'BHT-CF3' r=C1=C(C(C)(C)C)C(O)=C(C(C)(C)C)C=C1CH2 fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4 graph] 'TEMPO-CF3' r=ON1C(C)(C)CCCC1(C)C fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4] 'BHT-CF3' 🔄 corrected: CC1=CC(C)=C(C(F)(F)F)C(C)=C1CC2=CC(C(C)(C)C)=C(O)C
+    [Tier 4] 'TEMPO-CF3' 🔄 corrected: CC1(C)CCCC(C)(C)N1C2=C(C)C=C(C)C=C2C(F)(F)F
+  [Tier 4 R-group Sub] resolved=['BHT-CF3', 'TEMPO-CF3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 2
+────────────────────────────────────────────────────────────
+  Labels   : ['TFAA', '1-mono', '1,3,5-trimethylbenzene', '1-bis', 'TFA']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an/qwen3_6_flash/processed/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an_artifacts/image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  Exists   : True
+  [Tier 0 NameMap] 'TFAA' → opsin_lookup via name='Trifluoroacetic anhydride'
+  [Tier 0 NameMap] 'TFA' → opsin_lookup via name='Trifluoroacetic acid'
+  [Tier 0 NameMap] resolved=['TFAA', 'TFA']  remaining=['1-mono', '1,3,5-trimethylbenzene', '1-bis']
+  [OCSR] image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png: 6 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['1-mono']  smiles=*C1=CC(*)=C(*)C(*)=C1  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1-mono', '1,3,5-trimethylbenzene', '1-bis']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1-mono', '1,3,5-trimethylbenzene', '1-bis']
+  [Tier 3] '1-mono': bbox=3 atoms=10 smiles=*C1=CC(*)=C(*)C(*)=C1 wildcard=True
+  [Tier 3] '1,3,5-trimethylbenzene': bbox=0 atoms=9 smiles=*C1=CC(*)=CC(*)=C1 wildcard=True
+  [Tier 3] '1-bis': bbox_idx=None out of range (n=6)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1-mono', '1,3,5-trimethylbenzene', '1-bis']
+    [Tier 4 LLM] '1-mono' → r_value='mono-trifluoromethylation of 1,3,5-trimethylbenzene'
+    [Tier 4 LLM] '1-bis' → r_value='bis-trifluoromethylation of 1,3,5-trimethylbenzene'
+    [Tier 4] R-group candidates: ['1-mono', '1-bis']
+    [Tier 4 graph] '1-mono' r=mono-trifluoromethylation of 1,3,5-trimethylbenzene fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4 graph] '1-bis' r=bis-trifluoromethylation of 1,3,5-trimethylbenzene fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4] '1-mono' ✅ match: CC1=CC(C)=C(C(F)(F)F)C(C)=C1
+    [Tier 4] '1-bis' 🔄 corrected: CC1=C(C(F)(F)F)C(C)=C(C(F)(F)F)C=C1C
+  [Tier 4 R-group Sub] resolved=['1-mono', '1-bis']  remaining=['1,3,5-trimethylbenzene']
+    [Tier 5 PubChem] '1,3,5-trimethylbenzene' → no hit (tried ['1,3,5-trimethylbenzene'])
+  [Tier 5 PubChem] resolved=[]  remaining=['1,3,5-trimethylbenzene']
+    [Tier 6→opsin_lookup] '1,3,5-trimethylbenzene' name='1,3,5-trimethylbenzene' → CC1=CC(=CC(=C1)C)C
+  [Tier 6 LLM Vision] resolved=['1,3,5-trimethylbenzene']

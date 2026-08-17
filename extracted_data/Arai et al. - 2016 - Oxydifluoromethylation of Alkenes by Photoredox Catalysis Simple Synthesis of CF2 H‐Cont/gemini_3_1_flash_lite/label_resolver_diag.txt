@@ -1,0 +1,122 @@
+Label Resolver Diagnostic Log — 2026-05-21 21:20:30
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] VisualHeist override: image_000005_50ba6fc199e100b6f3c2ce7c56cbdccfdf533b7b21d83b4016c3c05220da1e2a.png → visualheist_page_02_table_1.png
+  [GlobalRegistry] labels=['1a', '1b', '1c', '[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+', 'fac-[Ir(ppy)3]'] → visualheist_page_02_table_1.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '1b', '1c', '[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+', 'fac-[Ir(ppy)3]']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont/gemini_3_1_flash_lite/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → opsin_lookup via name='N-tosyl-S-difluoromethyl-S-phenylsulfoximine'
+  [Tier 0 NameMap] '1b' → pubchem_lookup via name='difluoromethyl phenyl sulfone'
+  [Tier 0 NameMap] '1c' → pubchem_lookup via name='difluoromethyl 2-pyridyl sulfone'
+  [Tier 0 NameMap] 'fac-[Ir(ppy)3]' → pubchem_lookup via name='tris(2-phenylpyridine)iridium(III)'
+  [Tier 0 NameMap] resolved=['1a', '1b', '1c', 'fac-[Ir(ppy)3]']  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X= CH; Y =NTs', 'Ib: X= CH,Y=0', 'Ic: X-N,Y-0']  smiles=*S(=*)(=O)C1=CC=CC=*1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['[Ru(bpy)al2+']  smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4  wildcard=False
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*CC(*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+  [Tier 3] '[Ru(bpy)3]2+': bbox=4 atoms=40 smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4=CC=CC=[N] wildcard=False
+  [Tier 3] '[Ru(bpy)3]2+': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3] '[Ir(ppy)2(dtbbpy)]+': bbox=6 atoms=39 smiles=*C1=CC2=[N](C=C1)[Ir]13([C]4=CC=CC=C4C4=CC=CC=[N]41)([C]1=C( wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+    [Tier 4 LLM] '[Ru(bpy)3]2+' → r_value='Photocatalyst'
+    [Tier 4 LLM] '[Ir(ppy)2(dtbbpy)]+' → r_value='Photocatalyst'
+    [Tier 4] R-group candidates: ['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+    [Tier 4 graph] '[Ru(bpy)3]2+' r=Photocatalyst fallback (smi=*S(=*)(=O)C1=CC=CC=*1)
+    [Tier 4 graph] '[Ir(ppy)2(dtbbpy)]+' r=Photocatalyst fallback (smi=*S(=*)(=O)C1=CC=CC=*1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+    [Tier 5 PubChem] '[Ru(bpy)3]2+' → no hit (tried ['[Ru(bpy)3]2+'])
+    [Tier 5 PubChem] '[Ir(ppy)2(dtbbpy)]+' → no hit (tried ['[Ir(ppy)2(dtbbpy)]+', '[Ir(ppy)2(dtbbpy)]', '[Ir(ppy)2(dtbbpy))', '[Ir(ppy)2(dtbbpy)]PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+    [Tier 6→pubchem_lookup] '[Ru(bpy)3]2+' name="Tris(2,2'-bipyridine)ruthenium(II)" → C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.
+  [Tier 6 LLM Vision] resolved=['[Ru(bpy)3]2+', '[Ir(ppy)2(dtbbpy)]+']
+  [InlineResolver] VisualHeist override: image_000005_50ba6fc199e100b6f3c2ce7c56cbdccfdf533b7b21d83b4016c3c05220da1e2a.png → visualheist_page_02_table_1.png
+  [InlineResolver] Column 'Photocatalyst' labels ['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]'] from visualheist_page_02_table_1.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont/gemini_3_1_flash_lite/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X= CH; Y =NTs', 'Ib: X= CH,Y=0', 'Ic: X-N,Y-0']  smiles=*S(=*)(=O)C1=CC=CC=*1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['[Ru(bpy)al2+']  smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4  wildcard=False
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*CC(*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+  [Tier 3] '[Ru(bpy)3][PF6]2': bbox=4 atoms=40 smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4=CC=CC=[N] wildcard=False
+  [Tier 3] '[Ru(bpy)3][PF6]2': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3] '[Ir(ppy)2(dtbbpy)][PF6]': bbox=6 atoms=39 smiles=*C1=CC2=[N](C=C1)[Ir]13([C]4=CC=CC=C4C4=CC=CC=[N]41)([C]1=C( wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+    [Tier 4 LLM] '[Ru(bpy)3][PF6]2' → r_value='1a'
+    [Tier 4 LLM] '[Ir(ppy)2(dtbbpy)][PF6]' → r_value='1a'
+    [Tier 4] R-group candidates: ['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']
+    [Tier 4 graph] '[Ru(bpy)3][PF6]2' r=1a fallback (smi=*S(=*)(=O)C1=CC=CC=*1)
+    [Tier 4 graph] '[Ir(ppy)2(dtbbpy)][PF6]' r=1a fallback (smi=*S(=*)(=O)C1=CC=CC=*1)
+    [Tier 4] '[Ru(bpy)3][PF6]2' 🔄 corrected: CC1=CC=C(C=C1)S(=O)(=NS(=O)(=O)C2=CC=C(C)C=C2)C(F)
+    [Tier 4] '[Ir(ppy)2(dtbbpy)][PF6]' 🔄 corrected: CC1=CC=C(C=C1)S(=O)(=O)N=S(=O)(C(F)F)C2=CC=CC=C2
+  [Tier 4 R-group Sub] resolved=['[Ru(bpy)3][PF6]2', '[Ir(ppy)2(dtbbpy)][PF6]']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '1b', '3a', '1c']
+  Image    : extracted_data/Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont/gemini_3_1_flash_lite/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → opsin_lookup via name='N-tosyl-S-difluoromethyl-S-phenylsulfoximine'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='4-methylstyrene'
+  [Tier 0 NameMap] '1b' → pubchem_lookup via name='difluoromethyl phenyl sulfone'
+  [Tier 0 NameMap] '1c' → pubchem_lookup via name='difluoromethyl 2-pyridyl sulfone'
+  [Tier 0 NameMap] resolved=['1a', '2a', '1b', '1c']  remaining=['3a']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X= CH; Y =NTs', 'Ib: X= CH,Y=0', 'Ic: X-N,Y-0']  smiles=*S(=*)(=O)C1=CC=CC=*1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['[Ru(bpy)al2+']  smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4  wildcard=False
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*CC(*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=['3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '2']
+  Image    : extracted_data/Arai et al. - 2016 - Oxydifluoromethylation of Alkenes by Photoredox Catalysis Simple Synthesis of CF2 H‐Cont/gemini_3_1_flash_lite/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '2']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X= CH; Y =NTs', 'Ib: X= CH,Y=0', 'Ic: X-N,Y-0']  smiles=*S(=*)(=O)C1=CC=CC=*1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['[Ru(bpy)al2+']  smiles=CN12=C3=CCC=C14N3=C2C41=[N]([Ru]23([N]4=CC=CC=C4C4  wildcard=False
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*CC(*)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '2']
+  [Tier 3] '3': bbox=7 atoms=11 smiles=*CC(*)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '2': bbox=2 atoms=9 smiles=*C1=CC=C(C=C)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3', '2']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3', '2']
+    [NameResolve Organomet] llm_name_to_smiles: score=37  [Ir]123(C4=CC=CC=C4C5=[N]1C=CC=C5)(C6=CC=CC=C6C7=[N]2C=CC=C7)C8=CC=CC=
+    [Tier 6→llm_name_to_smiles] '3' name='fac-[Ir(ppy)3]' → [Ir]123(C4=CC=CC=C4C5=[N]1C=CC=C5)(C6=CC=CC=C6C7=[
+  [Tier 6 LLM Vision] resolved=['3', '2']

@@ -1,0 +1,102 @@
+Label Resolver Diagnostic Log — 2026-06-11 14:06:31
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['[Ru(bpy)3](PF6)2', 'JohnPhos', 'CyJohnPhos', 'DavePhos', 'PhDavePhos', 'CPhos'] → image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['[Ru(bpy)3](PF6)2', 'JohnPhos', 'CyJohnPhos', 'DavePhos', 'PhDavePhos', 'CPhos']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2/GPT_5_MINI/processed/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png
+  Exists   : True
+  [Tier 0 NameMap] '[Ru(bpy)3](PF6)2' → pubchem_lookup via name='tris(2,2'-bipyridine)ruthenium(II) hexafluorophosphate'
+  [Tier 0 NameMap] 'JohnPhos' → pubchem_lookup via name='(2-Biphenyl)di-tert-butylphosphine'
+  [Tier 0 NameMap] 'CyJohnPhos' → pubchem_lookup via name='(2-Biphenyl)dicyclohexylphosphine'
+  [Tier 0 NameMap] 'DavePhos' → pubchem_lookup via name='2-dicyclohexylphosphino-2'-(N,N-dimethylamino)biphenyl'
+  [Tier 0 NameMap] 'PhDavePhos' → pubchem_lookup via name='2-Diphenylphosphino-2'-(N,N-dimethylamino)biphenyl'
+  [Tier 0 NameMap] 'CPhos' → opsin_lookup via name='2-dicyclohexylphosphino-2',6'-bis(dimethylamino)biphenyl'
+  [Tier 0 NameMap] resolved=['[Ru(bpy)3](PF6)2', 'JohnPhos', 'CyJohnPhos', 'DavePhos', 'PhDavePhos', 'CPhos']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3'] from image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2/GPT_5_MINI/processed/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+  [OCSR] image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png: 2 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+  [Tier 3] 'DavePhos a': bbox=1 atoms=15 smiles=*C1=CC=CC=C1C1=C(*)C=CC=C1* wildcard=True
+  [Tier 3] 'P(4-CF 3 -C 6 H 4 ) 3': bbox_idx=None out of range (n=2)
+  [Tier 3 BBox Match] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+    [Tier 5 PubChem] 'DavePhos a' → no hit (tried ['DavePhos a'])
+    [Tier 5 PubChem] 'P(4-CF 3 -C 6 H 4 ) 3' → no hit (tried ['P(4-CF 3 -C 6 H 4 ) 3'])
+  [Tier 5 PubChem] resolved=[]  remaining=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+    [Tier 6→pubchem_lookup] 'DavePhos a' name='DavePhos' → CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4
+    [Tier 6→pubchem_lookup] 'P(4-CF 3 -C 6 H 4 ) 3' name='Tris(4-(trifluoromethyl)phenyl)phosphine' → C1=CC(=CC=C1C(F)(F)F)P(C2=CC=C(C=C2)C(F)(F)F)C3=CC
+  [Tier 6 LLM Vision] resolved=['DavePhos a', 'P(4-CF 3 -C 6 H 4 ) 3']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2/GPT_5_MINI/processed/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000005_48ec0c9529d925c94e533ff48c33ed5c0a389b5239d5d89ab70d8e8a80a8fa36.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '1a', '2a']
+  [OCSR] image_000005_48ec0c9529d925c94e533ff48c33ed5c0a389b5239d5d89ab70d8e8a80a8fa36.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(=O)C1=CC=C(C=C)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*CC(*)C1=CC=C(C(*)=O)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3a']  smiles=*CC(*)C1=CC=C(C(*)=O)C=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=11 smiles=*C(=O)C1=CC=C(C=C)C=C1 wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=13 smiles=*CC(*)C1=CC=C(C(*)=O)C=C1 wildcard=True
+  [Tier 3] '3a': bbox=6 atoms=13 smiles=*CC(*)C1=CC=C(C(*)=O)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = MeO'
+    [Tier 4 LLM] '2a' → r_value='* = MeO, * = COOH, * = H'
+    [Tier 4 LLM] '3a' → r_value='* = MeO, * = H, * = H'
+    [Tier 4] R-group candidates: ['1a', '2a', '3a']
+    [Tier 4 graph] '1a' r=* = MeO fallback (smi=*C(=O)C1=CC=C(C=C)C=C1)
+    [Tier 4] '1a' ✅ match: COC(=O)C1=CC=C(C=C)C=C1
+    [Tier 4 graph] '2a' r=* = MeO, * = COOH, * = H fallback (smi=*CC(*)C1=CC=C(C(*)=O)C=C1)
+    [Tier 4 graph] '3a' r=* = MeO, * = H, * = H fallback (smi=*CC(*)C1=CC=C(C(*)=O)C=C1)
+    [Tier 4] '2a' RDKit render failed: COCC(C(O)=O)C1=CC=C(C(H)=O)C=C1
+    [Tier 4] '3a' RDKit render failed: COCC(H)C1=CC=C(C(H)=O)C=C1
+  [Tier 4 R-group Sub] resolved=['1a']  remaining=['2a', '3a']
+    [Tier 5 PubChem] '2a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2a', '3a']
+    [Tier 6→pubchem_lookup] '2a' name='2-(4-(methoxycarbonyl)phenyl)propanoic acid' → CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O
+    [Tier 6→pubchem_lookup] '3a' name='methyl 4-ethylbenzoate' → CCC1=CC=C(C=C1)C(=O)OC
+  [Tier 6 LLM Vision] resolved=['2a', '3a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2/GPT_5_MINI/processed/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000004_55f4e8363f4ddb57550d83ba3f17ea084ab63e7a50f4b8c82081318899d0886a.png
+  Exists   : True
+  [Tier 0 NameMap] '4' → name 'OTf) complex' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['4']
+  [OCSR] image_000004_55f4e8363f4ddb57550d83ba3f17ea084ab63e7a50f4b8c82081318899d0886a.png: 2 bboxes, 0 coref pairs
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4']
+  [Tier 3] '4': bbox_idx=None out of range (n=2)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4']
+    [Tier 5 PubChem] '4' → name_map name: 'OTf) complex'
+    [Tier 5 PubChem] '4' → no hit (tried ['OTf) complex', 'see Supplementary Information, Section 6.10 for details'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4']
+    [Tier 6] '4' PubChem/OPSIN/LLM all failed for authoritative name 'OTf) complex' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['4']

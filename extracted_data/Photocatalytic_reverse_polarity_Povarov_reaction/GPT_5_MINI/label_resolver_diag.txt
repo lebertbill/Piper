@@ -1,0 +1,100 @@
+Label Resolver Diagnostic Log — 2026-06-17 14:28:55
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2a', '3a', '[Ir]', 'HE'] → image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3a', '[Ir]', 'HE']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photocatalytic_reverse_polarity_Povarov_reaction/GPT_5_MINI/processed/Photocatalytic_reverse_polarity_Povarov_reaction_artifacts/image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='4-fluoro-N-(4-methoxyphenyl)benzaldimine'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='phenyl vinyl sulfone'
+  [Tier 0 NameMap] '[Ir]' → name '(Ir[dF(CF3)ppy]2(dtbbpy))PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['1a', '2a']  remaining=['3a', '[Ir]', 'HE']
+  [OCSR] image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ja']  smiles=*C1=CC=C(N=C(*)C2=CC=C(F)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a (3 ca)']  smiles=*C=C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['32']  smiles=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '[Ir]', 'HE']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '[Ir]', 'HE']
+  [Tier 3] '3a': bbox=6 atoms=19 smiles=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2* wildcard=True
+  [Tier 3] '[Ir]': bbox=2 atoms=49 smiles=*.*.*.*.*C1=CC=C2C3=C(F)C=C(F)C=[C]3[Ir]34([C]5=C(C(C)=CC(F) wildcard=True
+  [Tier 3] 'HE': bbox=5 atoms=11 smiles=*C1=C(*)C(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '[Ir]', 'HE']
+    [Tier 4 LLM] '3a' → r_value='OMe, SO2Ph'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4 graph] '3a' r=OMe, SO2Ph fallback (smi=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2*)
+    [Tier 4] '3a' 🔄 corrected: COc1ccc2c(c1)[C@@H](S(=O)(=O)c1ccccc1)C[C@H](c1ccc
+  [Tier 4 R-group Sub] resolved=['3a']  remaining=['[Ir]', 'HE']
+    [Tier 5 PubChem] '[Ir]' → name_map name: '(Ir[dF(CF3)ppy]2(dtbbpy))PF6'
+    [Tier 5 PubChem] '[Ir]' → no hit (tried ['(Ir[dF(CF3)ppy]2(dtbbpy))PF6', '(Ir(dF(CF3)ppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'HE' → no hit (tried ['x mol%', 'HE'])
+  [Tier 5 PubChem] resolved=[]  remaining=['[Ir]', 'HE']
+    [Tier 6] '[Ir]' PubChem/OPSIN/LLM all failed for authoritative name '(Ir[dF(CF3)ppy]2(dtbbpy))PF6' — name only, no SMILES
+    [Tier 6→llm_name_to_smiles] 'HE' name='Hantzsch Ester scaffold' → CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C
+  [Tier 6 LLM Vision] resolved=['[Ir]', 'HE']
+  [InlineResolver] Column 'HE (x mol%)' labels ['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)'] from image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photocatalytic_reverse_polarity_Povarov_reaction/GPT_5_MINI/processed/Photocatalytic_reverse_polarity_Povarov_reaction_artifacts/image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)']
+  [OCSR] image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ja']  smiles=*C1=CC=C(N=C(*)C2=CC=C(F)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a (3 ca)']  smiles=*C=C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['32']  smiles=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)']
+  [Tier 3] 'HE4 (Hantzsch ester)': bbox=5 atoms=11 smiles=*C1=C(*)C(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3] 'HE6 (Hantzsch ester)': bbox=5 atoms=11 smiles=*C1=C(*)C(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3] 'HE1 (Hantzsch ester)': bbox=5 atoms=11 smiles=*C1=C(*)C(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)', 'HE1 (Hantzsch ester)']
+    [Tier 4 LLM] 'HE1 (Hantzsch ester)' → r_value='R = H, R' = Et'
+    [Tier 4 LLM] 'HE4 (Hantzsch ester)' → r_value='R = Cy, R' = Et'
+    [Tier 4 LLM] 'HE6 (Hantzsch ester)' → r_value='R = Bn, R' = tBu'
+    [Tier 4] R-group candidates: ['HE1 (Hantzsch ester)', 'HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)']
+    [Tier 4] bbox missing for group ['HE1 (Hantzsch ester)', 'HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)'] — using full image
+  [Tier 4 R-group Sub] resolved=[]  remaining=['HE1 (Hantzsch ester)', 'HE4 (Hantzsch ester)', 'HE6 (Hantzsch ester)']
+    [Tier 5 PubChem] 'HE1 (Hantzsch ester)' → no hit (tried ['HE1 (Hantzsch ester)', 'HE1'])
+    [Tier 5 PubChem] 'HE4 (Hantzsch ester)' → no hit (tried ['HE4 (Hantzsch ester)', 'HE4'])
+    [Tier 5 PubChem] 'HE6 (Hantzsch ester)' → hit via 'HE6': CC1=C(C2=CC3=NC(=CC4=C(C(=C([N-]4)C=C5C(=C(C(=N5)C=C1[N-]2)C)C)C)C(=O)O)C(=C3C)C(=O)O)C.[Fe+2]
+  [Tier 5 PubChem] resolved=['HE6 (Hantzsch ester)']  remaining=['HE1 (Hantzsch ester)', 'HE4 (Hantzsch ester)']
+    [Tier 6→pubchem_lookup] 'HE1 (Hantzsch ester)' name='Diethyl 2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate' → CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C
+    [Tier 6→pubchem_lookup] 'HE4 (Hantzsch ester)' name='Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate' → CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C
+  [Tier 6 LLM Vision] resolved=['HE1 (Hantzsch ester)', 'HE4 (Hantzsch ester)']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a', '1a']
+  Image    : extracted_data/Photocatalytic_reverse_polarity_Povarov_reaction/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='phenyl vinyl sulfone'
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='4-fluoro-N-(4-methoxyphenyl)benzaldimine'
+  [Tier 0 NameMap] resolved=['2a', '1a']  remaining=['3a']
+  [OCSR] visualheist_page_02_table_1.png: 8 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*.*C1=CC=C(N=C(*)C2=CC=C(F)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a (3 eq}']  smiles=*C=C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['3a']  smiles=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2*  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=6 atoms=19 smiles=*C1=CC2=C(C=C1)NC(C1=CC=C(F)C=C1)CC2* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a']
+    [Tier 4 LLM] '3a' → r_value='R = SO2Ph, R' = OMe'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4] bbox missing for group ['3a'] — using full image
+    [Tier 4] '3a' 🔄 corrected: COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2
+  [Tier 4 R-group Sub] resolved=['3a']  remaining=[]

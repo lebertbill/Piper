@@ -1,0 +1,1559 @@
+[
+    {
+        "document": "cs2c04736",
+        "table_name": "Table 1",
+        "table_caption": "Reaction Development",
+        "image_path": "extracted_data/cs2c04736/GPT_5_MINI/processed/visualheist_page_03_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dap)Cl2]",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 70.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu I (dap)2]Cl",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 72.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu I (dmp)2]Cl",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 60.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dmp)2Cl]Cl",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 58.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dap)Cl2]",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dap)Cl2]",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu I (dap)2]Cl",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": null
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": null
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 65.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": null
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "—"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.3,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": null
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "CCOC(=O)CC(=O)OCC",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_ocsr": "CCOC(=O)CC(=O)OCC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)CC(=O)OCC",
+                        "molecular_formula": "C7H12O4",
+                        "molecular_weight": 160.17
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": null
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 45.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Footnote c: 2a used at 0.1 mmol (1.0 equiv) for this entry (overrides Condition B default)"
+                ]
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dap)Cl2]",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 70.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "atmosphere",
+                        "text": "N2"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "1a",
+                        "quantity": 1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "CCOC(=O)C(C(=O)OCC)",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=CC1=CC=CC=C1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccc1",
+                        "molecular_formula": "C8H8",
+                        "molecular_weight": 104.15
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "text": "3",
+                        "smiles_llm": "CC(C(=O)c1ccccc1)C(=O)OCC",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CC(=O)c1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C15H18O5",
+                        "molecular_weight": 278.3
+                    },
+                    {
+                        "smiles": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "text": "4",
+                        "smiles_llm": "CC(Cc1ccccc1)Cc1ccccc1",
+                        "smiles_ocsr": "CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)C(CCc1ccccc1)(CCc1ccccc1)C(=O)OCC",
+                        "molecular_formula": "C23H28O4",
+                        "molecular_weight": 368.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Cu II (dap)Cl2]",
+                        "quantity": 1.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "air"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "MeCN",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED",
+                        "quantity": 455.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "rt"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3",
+                        "quantity": 70.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K3PO4",
+                        "resolved_smiles": "[O-]P(=O)([O-])[O-].[K+].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "4CzIPN",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "atmosphere",
+                        "text": "N2"
+                    }
+                ],
+                "additional_info": []
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Photocatalyst (1 mol %)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in text and Supporting Information",
+                "label_map_source_id": null
+            },
+            "Base (equiv)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Atmosphere": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield of 3 (%)": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Yield of 4 (%)": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 56,
+            "valid_molecules": 56,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

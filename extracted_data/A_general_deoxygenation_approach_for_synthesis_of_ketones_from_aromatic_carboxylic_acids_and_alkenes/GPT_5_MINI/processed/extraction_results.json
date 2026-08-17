@@ -1,0 +1,1090 @@
+[
+    {
+        "document": "A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes/GPT_5_MINI/processed/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes_artifacts/image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-I ([Ir(dF(CF3)ppy)2(dtbbpy)]PF6)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "72%",
+                        "quantity": 72.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "None"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "72%"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-I ([Ir(dF(CF3)ppy)2(dtbbpy)]PF6)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (no H2O)",
+                        "smiles": "ClCCl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "40%",
+                        "quantity": 40.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "No H2O (solvent = DCM only)."
+                ],
+                "yield": "40%"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-I ([Ir(dF(CF3)ppy)2(dtbbpy)]PF6)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No Ph 3 P"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "No Ph3P (triphenylphosphine omitted)."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-II (fac-Ir(ppy)3)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "1mol% cat- II instead of cat- I",
+                        "resolved_name": "fac-Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.[Ir]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "1 mol% cat-II used instead of cat-I."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-III (Ru(bpy)3(PF6)2)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ru]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "2mol% cat- III instead of cat- I",
+                        "resolved_name": "Ru(bpy)3(PF6)2",
+                        "resolved_smiles": "c1ccc(nc1)-c2cccc[n+]2[Ru-2]34([n+]5ccccc5-c6cccc[n+]63)([n+]7ccccc7-c8cccc[n+]84)[n+]9ccccc9-c%10cccc[n+]%10.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_llm": "c1ccc(nc1)-c2cccc[n+]2[Ru-2]34([n+]5ccccc5-c6cccc[n+]63)([n+]7ccccc7-c8cccc[n+]84)[n+]9ccccc9-c%10cccc[n+]%10.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "2 mol% cat-III used instead of cat-I."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-IV (eosin Y)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "O=C1OC2(c3ccccc31)c1cc(Br)c(O)c(Br)c1Oc1c2cc(Br)c(O)c1Br",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]",
+                        "resolved_name": "eosin Y",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "2mol% cat- IV instead of cat- I",
+                        "resolved_name": "eosin Y",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)Br)[O-])Br)Br)Br)C(=O)[O-].[Na+].[Na+]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "O=C1OC2(c3ccccc31)c1cc(Br)c(O)c(Br)c1Oc1c2cc(Br)c(O)c1Br"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "2 mol% cat-IV used instead of cat-I."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-V (Acr+-Mes)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "c1ccc2c(c1)[n+](c3ccccc3)c4ccccc24",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C1=C2C=CC=CC2=[N+](C2=CC=CC=C21)C1=CC=CC=C1",
+                        "resolved_name": "Acr+-Mes",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "2mol% cat- V instead of cat- I",
+                        "resolved_name": "Acr+-Mes",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C1=C2C=CC=CC2=[N+](C2=CC=CC=C21)C1=CC=CC=C1",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)=C1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "2 mol% cat-V used instead of cat-I."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (5 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No photocatalyst"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "No photocatalyst (photocatalyst omitted)."
+                ],
+                "yield": "nd"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)O)C=C1",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)O",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)O)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)O)cc1",
+                        "molecular_formula": "C8H8O2",
+                        "molecular_weight": 136.15
+                    },
+                    {
+                        "smiles": "C=Cc1ccccn1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_coref",
+                        "smiles_llm": "C=Cc1ccccn1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccccn1",
+                        "molecular_formula": "C7H7N",
+                        "molecular_weight": 105.14
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "text": "3a",
+                        "smiles_llm": "Cc1ccc(cc1)C(=O)CCC2=CC=CC=N2",
+                        "smiles_ocsr": "CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1ccc(C(=O)CCc2ccccn2)cc1",
+                        "molecular_formula": "C15H15NO",
+                        "molecular_weight": 225.29
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "cat-I ([Ir(dF(CF3)ppy)2(dtbbpy)]PF6)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2HPO4",
+                        "quantity": 20.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)O",
+                        "resolved_smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C",
+                        "resolved_name": "telmisartan",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "Ph3P (triphenylphosphine)",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles": "P(c1ccccc1)(c1ccccc1)c1ccccc1",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane/water (v/v = 4:1)",
+                        "smiles": "ClCCl.O"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "nd"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No light"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Ph3P (1.2 equiv.)",
+                        "quantity": 1.2,
+                        "unit": "equiv.",
+                        "resolved_smiles": "C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "No light (reaction conducted without irradiation)."
+                ],
+                "yield": "nd"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Variation of conditions": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 27,
+            "valid_molecules": 27,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

@@ -1,0 +1,125 @@
+Label Resolver Diagnostic Log — 2026-06-11 15:16:58
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['dtbbpy', "terpy'", 'Bn-Box', 'PyBox', 'bpp', 'BiOx', 'Bn-BiOx', 'i-Pr-BiOx'] → image_000008_365c84ce238056887e8959a9f9afd45044e6477c5058e4e69e43d561e6d96a96.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Eqn 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['dtbbpy', "terpy'", 'Bn-Box', 'PyBox', 'bpp', 'BiOx', 'Bn-BiOx', 'i-Pr-BiOx']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis/GPT_5_MINI/processed/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis_artifacts/image_000008_365c84ce238056887e8959a9f9afd45044e6477c5058e4e69e43d561e6d96a96.png
+  Exists   : True
+  [Tier 0 NameMap] 'dtbbpy' → pubchem_lookup via name='4,4'-di-tert-butyl-2,2'-bipyridine'
+  [Tier 0 NameMap] 'terpy'' → pubchem_lookup via name='4,4',4''-tri-tert-butyl-2,2':6',2''-terpyridine'
+  [Tier 0 NameMap] 'Bn-Box' → opsin_lookup via name='2,2'-(propane-2,2-diyl)bis(4-benzyl-4,5-dihydrooxazole)'
+  [Tier 0 NameMap] 'PyBox' → opsin_lookup via name='2,6-bis(oxazolin-2-yl)pyridine'
+  [Tier 0 NameMap] 'bpp' → pubchem_lookup via name='bis(pyrazolyl)pyridine'
+  [Tier 0 NameMap] 'BiOx' → llm_name_to_smiles via name='bis(oxazoline)'
+  [Tier 0 NameMap] 'Bn-BiOx' → llm_name_to_smiles via name='4,4'-dibenzyl-2,2'-bis(oxazoline)'
+  [Tier 0 NameMap] 'i-Pr-BiOx' → llm_name_to_smiles via name='4,4'-diisopropyl-2,2'-bis(oxazoline)'
+  [Tier 0 NameMap] resolved=['dtbbpy', "terpy'", 'Bn-Box', 'PyBox', 'bpp', 'BiOx', 'Bn-BiOx', 'i-Pr-BiOx']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['i -Pr-BiOx', 'terpy 0'] from image_000008_365c84ce238056887e8959a9f9afd45044e6477c5058e4e69e43d561e6d96a96.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['i -Pr-BiOx', 'terpy 0']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis/GPT_5_MINI/processed/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis_artifacts/image_000008_365c84ce238056887e8959a9f9afd45044e6477c5058e4e69e43d561e6d96a96.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+  [OCSR] image_000008_365c84ce238056887e8959a9f9afd45044e6477c5058e4e69e43d561e6d96a96.png: 34 bboxes, 16 coref pairs
+  [OCSR]   pair [1,2]: texts=['(1)-4', '7590 yield']  smiles=*C1=CC=C(C)C=C1.CCC  wildcard=True
+  [OCSR]   pair [3,4]: texts=['(21-7', '82% yleldc']  smiles=*C1=CC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['(1)-13']  smiles=*C1=NC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['(2)-1', '8490 yield']  smiles=*C1=CC=C(C)C=C1.CC  wildcard=True
+  [OCSR]   pair [9,10]: texts=['(#)-10', '74% yield']  smiles=CC.Cc1ccc(Cl)cc1  wildcard=False
+  [OCSR]   pair [12,13]: texts=['(4)-8']  smiles=*C1=CC=C(C)C=C1.CC  wildcard=True
+  [OCSR]   pair [14,15]: texts=['(1)-14']  smiles=*C1=NC=C(C)C=C1  wildcard=True
+  [OCSR]   pair [16,17]: texts=['(4-11']  smiles=Cc1ccc2[nH]ccc2c1  wildcard=False
+  [OCSR]   pair [18,19]: texts=['(1)-2']  smiles=*C1=CC(C)=CC=C1.CC  wildcard=True
+  [OCSR]   pair [20,21]: texts=['(4)-5']  smiles=Cc1ccc(F)cc1  wildcard=False
+  [OCSR]   pair [22,23]: texts=['(#)-12']  smiles=Cc1ccc2ncccc2c1  wildcard=False
+  [OCSR]   pair [24,25]: texts=['(4)-9']  smiles=CC.Cc1ccc2c(c1)OCO2  wildcard=False
+  [OCSR]   pair [26,27]: texts=['(4)-3']  smiles=*N1CCCC1C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [28,29]: texts=['(1)-6']  smiles=*C1=CC=C(C)C=C1.CC  wildcard=True
+  [OCSR]   pair [30,31]: texts=['(2)-15', '689 yieldg']  smiles=C1=CCCCC1.CC  wildcard=False
+  [OCSR]   pair [32,33]: texts=['(4)-3']  smiles=*C1=CC=CC=C1C.CC  wildcard=True
+  [OCSR] → 16 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+  [Tier 3] 'i -Pr-BiOx': bbox_idx=None out of range (n=34)
+  [Tier 3] 'terpy 0': bbox_idx=None out of range (n=34)
+  [Tier 3 BBox Match] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+    [Tier 4 LLM] 'i -Pr-BiOx' → r_value='BiOx = i-Pr-BiOx'
+    [Tier 4 LLM] 'terpy 0' → r_value='Ligand = terpy'
+    [Tier 4] R-group candidates: ['i -Pr-BiOx', 'terpy 0']
+    [Tier 4 graph] 'i -Pr-BiOx' r=BiOx = i-Pr-BiOx fallback (smi=*N1CCCC1C1=CC=CC=C1)
+    [Tier 4 graph] 'terpy 0' r=Ligand = terpy fallback (smi=*N1CCCC1C1=CC=CC=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+    [Tier 5 PubChem] 'i -Pr-BiOx' → no hit (tried ['i -Pr-BiOx'])
+    [Tier 5 PubChem] 'terpy 0' → no hit (tried ['terpy 0'])
+  [Tier 5 PubChem] resolved=[]  remaining=['i -Pr-BiOx', 'terpy 0']
+    [Tier 6→llm_name_to_smiles] 'i -Pr-BiOx' name='i-Pr-BiOx' → CC(C)C1N=C(C2=NC(C(C)C)CO2)CO1
+    [Tier 6→pubchem_lookup] 'terpy 0' name='terpy' → C1=CC=NC(=C1)C2=NC(=CC=C2)C3=CC=CC=N3
+  [Tier 6 LLM Vision] resolved=['i -Pr-BiOx', 'terpy 0']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['aryl iodide (Ar = p-tolyl)', '(±)-1', 'amine']
+  Image    : extracted_data/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['aryl iodide (Ar = p-tolyl)', '(±)-1', 'amine']
+  [OCSR] visualheist_page_03_table_1.png: 12 bboxes, 3 coref pairs
+  [OCSR]   pair [5,6]: texts=['bpp']  smiles=c1cc(-n2cccn2)nc(-n2cccn2)c1  wildcard=False
+  [OCSR]   pair [7,8]: texts=['R-h']  smiles=*[C@H]1COC(C2=N[C@@H](*)CO2)=N1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['(#)1']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['aryl iodide (Ar = p-tolyl)', '(±)-1', 'amine']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['aryl iodide (Ar = p-tolyl)', '(±)-1', 'amine']
+  [Tier 3] 'aryl iodide (Ar = p-tolyl)': bbox=3 atoms=8 smiles=*C1=CC=C(I)C=C1 wildcard=True
+  [Tier 3] '(±)-1': bbox=10 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3] 'amine': bbox=0 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['aryl iodide (Ar = p-tolyl)', '(±)-1', 'amine']
+    [Tier 4 LLM] 'aryl iodide (Ar = p-tolyl)' → r_value='Ar = p-tolyl'
+    [Tier 4 LLM] '(±)-1' → r_value='Ar = p-tolyl'
+    [Tier 4] R-group candidates: ['aryl iodide (Ar = p-tolyl)', '(±)-1']
+    [Tier 4 graph] 'aryl iodide (Ar = p-tolyl)' r=Ar = p-tolyl fallback (smi=*C1CCCN1*)
+    [Tier 4 graph] '(±)-1' r=Ar = p-tolyl fallback (smi=*C1CCCN1*)
+    [Tier 4] '(±)-1' ✅ match: CC1=CC=C(C2CCCN2C2=CC=CC=C2)C=C1
+  [Tier 4 R-group Sub] resolved=['(±)-1']  remaining=['aryl iodide (Ar = p-tolyl)', 'amine']
+    [Tier 5 PubChem] 'aryl iodide (Ar = p-tolyl)' → no hit (tried ['aryl iodide (Ar = p-tolyl)', 'aryl iodide'])
+    [Tier 5 PubChem] 'amine' → hit via 'amine': CN(C)C(=NC1CCCCC1)NC2CCCCC2.CN(C)C(=NC1CCCCC1)NC2CCCCC2
+  [Tier 5 PubChem] resolved=['amine']  remaining=['aryl iodide (Ar = p-tolyl)']
+    [Tier 6→pubchem_lookup] 'aryl iodide (Ar = p-tolyl)' name='1-iodo-4-methylbenzene' → CC1=CC=C(C=C1)I
+  [Tier 6 LLM Vision] resolved=['aryl iodide (Ar = p-tolyl)']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['0']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis/GPT_5_MINI/processed/CH_functionalization_of_amines_with_aryl_halides_by_nickel-photoredox_catalysis_artifacts/image_000007_44248128ee36805bef166c9e3777dafe0d06c76472f32c6fb6944b5893ca2826.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['0']
+  [OCSR] image_000007_44248128ee36805bef166c9e3777dafe0d06c76472f32c6fb6944b5893ca2826.png: 14 bboxes, 5 coref pairs
+  [OCSR]   pair [1,2]: texts=['dtbbpy']  smiles=*C1=CC(C2=NC=CC(*)=C2)=NC=C1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['PyBox']  smiles=c1cc(C2=NCCO2)nc(C2=NCCO2)c1  wildcard=False
+  [OCSR]   pair [7,8]: texts=['bpp']  smiles=c1cc(-n2cccn2)nc(-n2cccn2)c1  wildcard=False
+  [OCSR]   pair [9,10]: texts=['R-H', 'BiOx', 'Bn', 'Bn-BiOx', '1-Pr', 'i-Pr-BiOx']  smiles=*[C@H]1COC(C2=N[C@@H](*)CO2)=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['(4)-1']  smiles=*C1CCCN1*  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['0']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['0']
+  [Tier 3] '0': bbox=12 atoms=7 smiles=*C1CCCN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['0']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['0']
+    [Tier 5 PubChem] '0' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['0']
+    [Tier 6→llm_name_to_smiles] '0' name='BiOx' → [Bi+3].[O-2].[Cl-]
+  [Tier 6 LLM Vision] resolved=['0']

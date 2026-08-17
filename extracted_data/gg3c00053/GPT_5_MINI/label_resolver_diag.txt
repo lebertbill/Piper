@@ -1,0 +1,62 @@
+Label Resolver Diagnostic Log — 2026-08-14 12:10:02
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['L1', 'L2', 'L3', 'L4', '4CzIPN', 'Ir-I', 'Ir-II'] → image_000009_fcc8e661bf06e2de0dd9b9c0fbe1cd438d55820c88c8a7446e0aba485ed46d83.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['L1', 'L2', 'L3', 'L4', '4CzIPN', 'Ir-I', 'Ir-II']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/gg3c00053/GPT_5_MINI/processed/gg3c00053_artifacts/image_000009_fcc8e661bf06e2de0dd9b9c0fbe1cd438d55820c88c8a7446e0aba485ed46d83.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='4,4'-di-tert-butyl-2,2'-bipyridine'
+  [Tier 0 NameMap] 'L2' → pubchem_lookup via name='4,4'-dimethoxy-2,2'-bipyridine'
+  [Tier 0 NameMap] 'L3' → pubchem_lookup via name='2,2'-bipyridine'
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['L1', 'L2', 'L3', '4CzIPN']  remaining=['L4', 'Ir-I', 'Ir-II']
+  [OCSR] image_000009_fcc8e661bf06e2de0dd9b9c0fbe1cd438d55820c88c8a7446e0aba485ed46d83.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=["LI; R = 'Bu", 'L2; R = OMe', 'L3; R-h']  smiles=*c1ccnc(-c2cc(*)ccn2)c1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['12']  smiles=*CNC(=O)C(*)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['L4']  smiles=c1cnc2c(c1)ccc1cccnc12  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*C1=CC=C(Br)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['Ir-I,R = CFz Rq = F', 'Ir-I,ReR -h']  smiles=*.*C1=C[N]2=C(C=C1)C=C([1*])C=C([1*])C=[C]13=CC([1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['32']  smiles=*CNC(=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['L4']  remaining=['Ir-I', 'Ir-II']
+  [Tier 2 Symbol Correction] resolved=['Ir-I', 'Ir-II']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a']
+  Image    : extracted_data/gg3c00053/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3a']
+  [OCSR] visualheist_page_02_table_1.png: 15 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1; R =Bu', 'L2.R=0ve']  smiles=*c1ccnc(-c2cc(*)ccn2)c1  wildcard=True
+  [OCSR]   pair [0,2]: texts=['L3; R =H']  smiles=*c1ccnc(-c2cc(*)ccn2)c1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['10']  smiles=*CNC(=O)C(*)=O  wildcard=True
+  [OCSR]   pair [5,6]: texts=['L4']  smiles=c1cnc2c(c1)ccc1cccnc12  wildcard=False
+  [OCSR]   pair [7,8]: texts=['2a']  smiles=COC(=O)c1ccc(Br)cc1  wildcard=False
+  [OCSR]   pair [11,12]: texts=['3a']  smiles=*CNC(=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [11,13]: texts=['Ir+ R', 'R', 'CFa']  smiles=*CNC(=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [11,14]: texts=['Ir-4i 3 =R =F']  smiles=*CNC(=O)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3a']
+  [Tier 3] '1a': bbox=3 atoms=8 smiles=*CNC(=O)C(*)=O wildcard=True
+  [Tier 3] '3a': bbox=11 atoms=12 smiles=*CNC(=O)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '3a']
+    [Tier 4 LLM] '1a' → r_value='benzyl oxamate'
+    [Tier 4 LLM] '3a' → r_value='methyl 4-(benzylcarbamoyl)benzoate'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=benzyl oxamate fallback (smi=*CNC(=O)C(*)=O)
+    [Tier 4] '1a' ✅ match: c1ccc(cc1)CNC(=O)C(=O)O[Cs]
+    [Tier 4 graph] '3a' r=methyl 4-(benzylcarbamoyl)benzoate fallback (smi=*CNC(=O)C1=CC=C(*)C=C1)
+    [Tier 4] '3a' ✅ match: COC(=O)C1=CC=C(C=C1)C(=O)NCC2=CC=CC=C2
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=[]

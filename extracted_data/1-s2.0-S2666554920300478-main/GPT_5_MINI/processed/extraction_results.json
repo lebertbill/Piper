@@ -1,0 +1,857 @@
+[
+    {
+        "document": "1-s2.0-S2666554920300478-main",
+        "table_name": "Table 1",
+        "table_caption": "Exploration and optimization.",
+        "image_path": "extracted_data/1-s2.0-S2666554920300478-main/GPT_5_MINI/processed/visualheist_page_02_table_3.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "CC(C)C",
+                        "text": "2a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)C",
+                        "molecular_formula": "C4H10",
+                        "molecular_weight": 58.12
+                    },
+                    {
+                        "smiles": "C=CC=CBr",
+                        "text": "1i",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=CBr",
+                        "molecular_formula": "C4H5Br",
+                        "molecular_weight": 132.99
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "c1ccccc1",
+                        "molecular_formula": "C6H6",
+                        "molecular_weight": 78.11
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "4 h",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "85",
+                        "quantity": 85.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "z_/_e_c",
+                        "text": "< 1:99"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "none"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Z/E <1:99 (Z/E values determined by 1H NMR of the crude product; values in parentheses from quantitative analysis of isolated product where provided) (footnote c)."
+                    }
+                ],
+                "yield": "85"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "none (no N2 protection)"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "24 h",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "27",
+                        "quantity": 27.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "z_/_e_c",
+                        "text": "37:63"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "without N 2 protection"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Deviation from standard conditions: reaction run without N2 protection (no degassing)."
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Z/E = 37:63 (Z/E values determined by 1H NMR of the crude product) (footnote c)."
+                    }
+                ],
+                "yield": "27"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "24 h",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "dark"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Deviation from standard conditions: reaction run in the dark (no light irradiation)."
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "24 h",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "< 5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no 4CzIPN"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Deviation from standard conditions: no 4CzIPN (photocatalyst omitted)."
+                    }
+                ],
+                "yield": "< 5"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir [dF(CF3)ppy]2(dtbpy))PF6",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "4 h",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "9",
+                        "quantity": 9.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "using (Ir [dF(CF 3 )ppy] 2 (dtbpy))PF 6"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Deviation from standard conditions: photocatalyst replaced by (Ir [dF(CF3)ppy]2(dtbpy))PF6."
+                    }
+                ],
+                "yield": "9"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "6 d"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "81",
+                        "quantity": 81.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "z_/_e_c",
+                        "text": "81:19 (86:14)"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "none"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Z/E = 81:19 (parenthetical 86:14 values determined by quantitative analysis of the isolated product) (footnote c)."
+                    }
+                ],
+                "yield": "81"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 10.98,
+                        "unit": "g",
+                        "smiles_llm": "c1ccccc1C=CBr",
+                        "smiles_ocsr": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Br/C=C/c1ccccc1",
+                        "molecular_formula": "C8H7Br",
+                        "molecular_weight": 183.05
+                    },
+                    {
+                        "smiles": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "text": "1i",
+                        "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+                        "smiles_ocsr": "CC[C@@H](C(=O)O)NC(=O)OC(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](NC(=O)OC(C)(C)C)C(=O)O",
+                        "molecular_formula": "C9H17NO4",
+                        "molecular_weight": 203.24
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "E-3i",
+                        "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    },
+                    {
+                        "smiles": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "text": "Z-3i",
+                        "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+                        "smiles_ocsr": "CC[C@@H](NC(=O)OC(C)(C)C)/C=C\\c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC[C@H](/C=C\\c1ccccc1)NC(=O)OC(C)(C)C",
+                        "molecular_formula": "C16H23NO2",
+                        "molecular_weight": 261.37
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dimethylformamide (DMF)",
+                        "quantity": 1.5,
+                        "unit": "mL",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED"
+                    },
+                    {
+                        "role": "time",
+                        "text": "90 min"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "87",
+                        "quantity": 87.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "z_/_e_c",
+                        "text": "< 1:99"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "10.98 g of 2a d",
+                        "resolved_name": "E-beta-bromostyrene",
+                        "resolved_smiles": "Br\\C=C\\C1=CC=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_ocsr_raw": "*C=CBr"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Deviation from standard conditions: scale-up to 10.98 g of 2a; flow conditions used (see Supporting Information) (footnote d)."
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Z/E <1:99 (footnote c)."
+                    }
+                ],
+                "yield": "87"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Time": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Deviation from \"standard conditions\" a": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            },
+            "Yield (%) b": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Z / E c": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 28,
+            "valid_molecules": 28,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

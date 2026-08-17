@@ -1,0 +1,28 @@
+Label Resolver Diagnostic Log — 2026-06-17 10:05:32
+================================================================================
+
+  [GlobalRegistry] Skipping 'Chart 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 7' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 8' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Chart 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 10' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 11' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+  Image    : extracted_data/NonoxidovanadiumIV_Complex-Catalyzed_Synthesis_of_2-Amino-3-cyano-4iHi-pyrans4iHi-chromenes,_Biscoumarins,_and_Xanthenes/GPT_5_MINI/processed/visualheist_page_06_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+  [OCSR] visualheist_page_06_table_1.png: 0 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+  [Tier 3 BBox Match] resolved=[]  remaining=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']
+    [Tier 5 PubChem] 'malononitrile' → hit via 'malononitrile': C(C#N)C#N
+    [Tier 5 PubChem] 'benzaldehyde' → hit via 'benzaldehyde': C1=CC=C(C=C1)C=O
+    [Tier 5 PubChem] '1,3-cyclohexanedione' → hit via '1,3-cyclohexanedione': C1CC(=O)CC(=O)C1
+  [Tier 5 PubChem] resolved=['malononitrile', 'benzaldehyde', '1,3-cyclohexanedione']  remaining=[]

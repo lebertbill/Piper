@@ -1,0 +1,40 @@
+Label Resolver Diagnostic Log — 2026-06-18 13:59:45
+================================================================================
+
+  [GlobalRegistry] labels=['I', 'II'] → image_000002_79d90dcc8f77f4db95e5943bdebd4250157132ba8d6a45abd5e37c62a91e7779.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['I', 'II']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Tertiary_Alcohols_as_Radical_Precursors_for_the_Introduction_of_Tertiary_Substituents_into_Heteroarenes/default_run/processed/Tertiary_Alcohols_as_Radical_Precursors_for_the_Introduction_of_Tertiary_Substituents_into_Heteroarenes_artifacts/image_000002_79d90dcc8f77f4db95e5943bdebd4250157132ba8d6a45abd5e37c62a91e7779.png
+  Exists   : True
+  [Tier 0 NameMap] 'I' → name 'Ir[dF(CF3)ppy]2(dtbbpy)PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'II' → pubchem_lookup via name='4CzIPN'
+  [Tier 0 NameMap] resolved=['II']  remaining=['I']
+  [OCSR] image_000002_79d90dcc8f77f4db95e5943bdebd4250157132ba8d6a45abd5e37c62a91e7779.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=Cc1ccnc2ccccc12  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1']  smiles=*C1=CC2=[N](C=C1)[Ir]1345([C]6=C(C(F)=CC(F)=C6)C6=  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2']  smiles=CC(C)(C)OC(=O)C(=O)[O][Cs]  wildcard=False
+  [OCSR]   pair [6,7]: texts=[]  smiles=[C-]#[N+]c1c(-n2c3ccccc3c3ccccc32)c(C#N)c(-n2c3ccc  wildcard=False
+  [OCSR]   pair [8,9]: texts=['3']  smiles=Cc1cc(C(C)(C)C)nc2ccccc12  wildcard=False
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['I']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['I']
+  [Tier 3] 'I': bbox=2 atoms=64 smiles=*.*C1=CC2=[N](C=C1)[Ir]1345([C]6=C(C(F)=CC(F)=C6)C6=[N]1C=C( wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['I']
+    [Tier 4 LLM] 'I' → r_value='* = tBu'
+    [Tier 4] R-group candidates: ['I']
+    [Tier 4 graph] 'I' r=* = tBu fallback (smi=*C1=CC2=[N](C=C1)[Ir]1345([C]6=C(C(F)=CC(F)=C6)C6=[N]1C=C(C(F)(F)F)C=C6)([C]1=C(C(F)=CC(F)=C1)C167(=[N]3C=C(*)C=C1)=C1(=[C]4C=C(F)C=C1F)C1=[N]65C=C(*)C=C17)[N]1=C2C=C(*)C=C1.[Pt])
+    [Tier 4] 'I' RDKit render failed: CC(C)(C)C1=CC2=[N](C=C1)[Ir]1345([C]6=C(
+  [Tier 4 R-group Sub] resolved=[]  remaining=['I']
+    [Tier 5 PubChem] 'I' → name_map name: 'Ir[dF(CF3)ppy]2(dtbbpy)PF6'
+    [Tier 5 PubChem] 'I' → no hit (tried ['Ir[dF(CF3)ppy]2(dtbbpy)PF6', '1 mol %', 'Ir(dF(CF3)ppy)2(dtbbpy)PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['I']
+    [Tier 6] 'I' PubChem/OPSIN/LLM all failed for authoritative name 'Ir[dF(CF3)ppy]2(dtbbpy)PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['I']

@@ -1,0 +1,116 @@
+Label Resolver Diagnostic Log — 2026-05-24 09:23:35
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'DAMN'] → image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 7' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 2
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'DAMN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/qwen3_6_flash/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  Exists   : True
+  [Tier 0 NameMap] 'DAMN' → llm_name_to_smiles via name='diaminomaleodinitrile'
+  [Tier 0 NameMap] resolved=['DAMN']  remaining=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+  [OCSR] image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png: 15 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*.*.*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['H:8J7 rcld']  smiles=*C1=CC=C(C2=C(C3=CC=C(*)S3)N=C(*)C(*)=N2)S1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['C Reh', '0 Ref', 'ER- Ovo']  smiles=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['F,X-0', '0.Xes']  smiles=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)S2)S1.N.N  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+  [Tier 3] 'A': bbox=0 atoms=59 smiles=*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C)C)C=C2)N=C1*. wildcard=True
+  [Tier 3] 'B': bbox=0 atoms=59 smiles=*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C)C)C=C2)N=C1*. wildcard=True
+  [Tier 3] 'C': bbox=8 atoms=23 smiles=*C1=C(*)N=C(C2=CC=C(C)C=C2)C(C2=CC=C(C)C=C2)=N1.C wildcard=True
+  [Tier 3] 'D': bbox=8 atoms=23 smiles=*C1=C(*)N=C(C2=CC=C(F)C=C2)C(C2=CC=C(F)C=C2)=N1.C wildcard=True
+  [Tier 3] 'E': bbox=8 atoms=23 smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1.C wildcard=True
+  [Tier 3] 'F': bbox=10 atoms=18 smiles=*C1=C(*)N=O(C2=OC=CC2)C(C2=CC=CC2)=N1 wildcard=True
+  [Tier 3] 'G': bbox=10 atoms=18 smiles=*C1=C(*)N=S(C2=[SH]C=CC2)C(C2=CC=CC2)=N1 wildcard=True
+  [Tier 3] 'H': bbox=12 atoms=22 smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)S2)S1.C.C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+    [Tier 4 LLM] 'C' → r_value='R' = H'
+    [Tier 4 LLM] 'D' → r_value='R' = F'
+    [Tier 4 LLM] 'E' → r_value='R' = OMe'
+    [Tier 4 LLM] 'F' → r_value='X = O'
+    [Tier 4 LLM] 'G' → r_value='X = S'
+    [Tier 4 LLM] 'H' → r_value='R = 5-MeO-thiophen-2-yl'
+    [Tier 4] R-group candidates: ['C', 'D', 'E', 'F', 'G', 'H']
+    [Tier 4 graph] 'C' r=R' = H fallback (smi=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1)
+    [Tier 4 graph] 'D' r=R' = F fallback (smi=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1)
+    [Tier 4 graph] 'E' r=R' = OMe fallback (smi=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1)
+    [Tier 4] 'C' ✅ match: N#CC1=NC(C2=CC=CC=C2)=C(C2=CC=CC=C2)N=C1C#N
+    [Tier 4] 'D' ✅ match: N#CC1=NC(C2=CC=C(F)C=C2)=C(C2=CC=C(F)C=C2)N=C1C#N
+    [Tier 4] 'E' ✅ match: N#CC1=NC(C2=CC=C(OC)C=C2)=C(C2=CC=C(OC)C=C2)N=C1C#
+    [Tier 4 graph] 'F' r=X = O fallback (smi=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1)
+    [Tier 4 graph] 'G' r=X = S fallback (smi=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1)
+    [Tier 4] 'F' ✅ match: N#CC1=C(C#N)N=C(C2=CC=CO2)C(C2=CC=CO2)=N1
+    [Tier 4] 'G' ✅ match: N#CC1=C(C#N)N=C(C2=CC=CS2)C(C2=CC=CS2)=N1
+    [Tier 4 graph] 'H' r=R = 5-MeO-thiophen-2-yl fallback (smi=*C1=CC=C(C2=C(C3=CC=C(*)S3)N=C(*)C(*)=N2)S1)
+    [Tier 4] 'H' ✅ match: COC1=CC=C(C2=C(C3=CC=C(OC)S3)N=C(C#N)C(C#N)=N2)S1
+  [Tier 4 R-group Sub] resolved=['C', 'D', 'E', 'F', 'G', 'H']  remaining=['A', 'B']
+    [Tier 5 PubChem] 'A' → no hit (tried ['oc', 'A'])
+    [Tier 5 PubChem] 'B' → no hit (tried ['2.0', 'B'])
+  [Tier 5 PubChem] resolved=[]  remaining=['A', 'B']
+    [Tier 6→opsin_lookup] 'A' name='5,6-bis(4-(dimethylamino)phenyl)pyrazine-2,3-dicarbonitrile' → CN(C1=CC=C(C=C1)C=1N=C(C(=NC1C1=CC=C(C=C1)N(C)C)C#
+    [Tier 6→opsin_lookup] 'B' name='5,6-bis((4-(dimethylamino)phenyl)ethynyl)pyrazine-2,3-dicarbonitrile' → CN(C1=CC=C(C=C1)C#CC=1N=C(C(=NC1C#CC1=CC=C(C=C1)N(
+  [Tier 6 LLM Vision] resolved=['A', 'B']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/qwen3_6_flash/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000006_3632b5b9b097ab1d4973d80152e67adc36c35b5ee9572225bea0b2637c04d5be.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a', '3a']
+  [OCSR] image_000006_3632b5b9b097ab1d4973d80152e67adc36c35b5ee9572225bea0b2637c04d5be.png: 4 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*N1CCC2=CC=CC=C2C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Jn']  smiles=*C1C2=CC=CC=C2CCN1*  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a', '3a']
+  [Tier 3] '1a': bbox=0 atoms=11 smiles=*N1CCC2=CC=CC=C2C1 wildcard=True
+  [Tier 3] '2a': bbox_idx=None out of range (n=4)
+  [Tier 3] '3a': bbox=2 atoms=12 smiles=*C1C2=CC=CC=C2CCN1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3a']
+    [Tier 4 LLM] '1a' → r_value='* = Ph'
+    [Tier 4 LLM] '3a' → r_value='N-* = Ph, C-* = CH2NO2'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=* = Ph fallback (smi=*N1CCC2=CC=CC=C2C1)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)N2CCC3=CC=CC=C3C2
+    [Tier 4 graph] '3a' r=N-* = Ph, C-* = CH2NO2 fallback (smi=*C1C2=CC=CC=C2CCN1*)
+    [Tier 4] '3a' ✅ match: [O-][N+](=O)CC1C2=CC=CC=C2CCN1C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=['2a']
+    [Tier 5 PubChem] '2a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2a']
+    [Tier 6→opsin_lookup] '2a' name='nitromethane' → [N+](=O)([O-])C
+  [Tier 6 LLM Vision] resolved=['2a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Fig. 2
+────────────────────────────────────────────────────────────
+  Labels   : ['0', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis/qwen3_6_flash/processed/Zhao et al. - 2014 - Dicyanopyrazine-derived push–pull chromophores for highly efficient photoredox catalysis_artifacts/image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['0', '2']
+  [OCSR] image_000004_61e1ce1ca3bc17bc6e0a0b980d1ca07b975e8fca809d6ece902b6135baa12d8d.png: 15 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*.*.*C1=NC(C#CC2=CC=C(N(C)C)C=C2)=C(C#CC2=CC=C(N(C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['H:8J7 rcld']  smiles=*C1=CC=C(C2=C(C3=CC=C(*)S3)N=C(*)C(*)=N2)S1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['C Reh', '0 Ref', 'ER- Ovo']  smiles=*.*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)C=C2)C=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['F,X-0', '0.Xes']  smiles=*C1=C(*)N=C(C2=CC=C*2)C(C2=CC=C*2)=N1  wildcard=True
+  [OCSR]   pair [12,13]: texts=[]  smiles=*C1=CC=C(C2=NC(*)=C(*)N=C2C2=CC=C(*)S2)S1.N.N  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['0', '2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['0', '2']
+  [Tier 3] '0': bbox=2 atoms=6 smiles=*C(=O)C(*)=O wildcard=True
+  [Tier 3] '2': bbox=5 atoms=10 smiles=*C1=NC(*)=C(*)N=C1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['0', '2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['0', '2']
+    [Tier 5 PubChem] '0' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['0', '2']
+  [Tier 6 LLM Vision] resolved=['0', '2']

@@ -1,0 +1,2125 @@
+[
+    {
+        "document": "Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional_",
+        "table_name": "Table 1",
+        "table_caption": "Condition Optimizations a",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional_/default_run/processed/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional__artifacts/image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "COc1ccc(C2CC2)cc1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(C2CC2)cc1",
+                        "molecular_formula": "C10H12O",
+                        "molecular_weight": 148.21
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1 ([Ir(ppy)2(dtbbpy)]PF6)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.[Ir+3]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.[Ir+3]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-1 (2)",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.[Ir+3]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.[Ir+3]"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "41%",
+                        "quantity": 41.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "41%"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-2 ([Ir(dF(CF3)ppy)2(dtbbpy)]PF6)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-2 (2)",
+                        "resolved_name": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "73%",
+                        "quantity": 73.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "73%"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "94%",
+                        "quantity": 94.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "94%"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-4 (4-BrCzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "4-BrCzIPN",
+                        "resolved_smiles": "Brc1c(C#N)c(N2c3ccccc3-c3ccccc32)c(C#N)c(N2c3ccccc3-c3ccccc32)c1N2c3ccccc3-c3ccccc32",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-4 (2)",
+                        "resolved_name": "4-BrCzIPN",
+                        "resolved_smiles": "Brc1c(C#N)c(N2c3ccccc3-c3ccccc32)c(C#N)c(N2c3ccccc3-c3ccccc32)c1N2c3ccccc3-c3ccccc32",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "96%",
+                        "quantity": 96.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "96%"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-5 ([Acr-Mes]BF4)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "[Acr-Mes]BF4",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C2=C3C=CC=CC3=[N+](C4=CC=CC=C4)C5=CC=CC=C25.[B-](F)(F)(F)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-5 (2)",
+                        "resolved_name": "[Acr-Mes]BF4",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C2=C3C=CC=CC3=[N+](C4=CC=CC=C4)C5=CC=CC=C25.[B-](F)(F)(F)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "trace"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "trace"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (1)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "67%",
+                        "quantity": 67.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "67%"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-2 (Ar = C6F5)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-2",
+                        "resolved_smiles": "Fc1c(F)c(F)c(n2cnc3c4ccccc4CCO[n+]23)c(F)c1F.F[B-](F)(F)F",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-2",
+                        "resolved_name": "NHC-2",
+                        "resolved_smiles": "Fc1c(F)c(F)c(n2cnc3[C@H]4c5ccccc5C[C@H]4OC[n+]23)c(F)c1F.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "trace"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "trace"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-3",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-3",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4cc(Br)ccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "87%",
+                        "quantity": 87.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "87%"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-4",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-4",
+                        "resolved_smiles": "CC(C)C1=CC=C(C=C1)N2C=CN(C2)C3=CC=C(C=C3)C(C)C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "36%",
+                        "quantity": 36.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "36%"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-5",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": null,
+                        "resolved_smiles": "CC1=C(C)C=C(C)C=C1N1C=[N+]2C(=N1)COCC2C(C)C",
+                        "smiles_source": "ocsr_rgroup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "94%",
+                        "quantity": 94.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "94%"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-6",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-6",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H](Cc3ccccc3)CC[n+]12.[F-].[B](F)(F)F",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "85%",
+                        "quantity": 85.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "85%"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-7",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-7",
+                        "resolved_smiles": "CC(C)c1cccc(C(C)C)c1-n1c[n+]2c(s1)CCCCCCC2.[ClO4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "17%",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "17%"
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "PhCF 3"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "65%",
+                        "quantity": 65.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "65%"
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCE",
+                        "resolved_smiles": "C(CCl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2c3ccccc3CCO[n+]12.F[B-](F)(F)F",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "82%",
+                        "quantity": 82.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "82%"
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 3 CN"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "12%",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "12%"
+            },
+            {
+                "entry_id": "16",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "THF",
+                        "resolved_smiles": "C1CCOC1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "37%",
+                        "quantity": 37.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "37%"
+            },
+            {
+                "entry_id": "17",
+                "reactants": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "text": "1",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C2CC2)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3[N+]2=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)CO[C@H]2Cc4ccccc4[C@H]23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    },
+                    {
+                        "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "text": "2",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "smiles_source": "ocsr_graph_visual",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+                        "molecular_formula": "C14H9NO4S",
+                        "molecular_weight": 287.3
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "text": "3",
+                        "smiles_llm": "COc1ccc(CC(C(=O)C)N2C(=O)c3ccccc3S2(=O)=O)cc1",
+                        "smiles_ocsr": "CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C12",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Cc1cc(C)c(-n2c[n+]3c(n2)COC2Cc4ccccc4C23)c(C)c1",
+                        "molecular_formula": "C21H22N3O+",
+                        "molecular_weight": 332.43
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3 (4CzIPN)",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NHC-1 (Ar = Mes)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LEDs (40 W)"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 12.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 30.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "pc_molpercent",
+                        "text": "PC-3 (2)",
+                        "resolved_name": "2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)",
+                        "resolved_smiles": "N#Cc1c(n2c3ccccc3c4ccccc24)c(n5c6ccccc6c7ccccc57)c(n8c9ccccc9c%10ccccc8%10)c(C#N)c1n%11c%12ccccc%12c%13ccccc%11%13",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "nhcs_15molpercent",
+                        "text": "NHC-1",
+                        "resolved_name": "NHC-1",
+                        "resolved_smiles": "Cc1cc(C)cc(C)c1-n1cnc2[C@H]3c4ccccc4C[C@H]3OC[n+]12.[BF4-]",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "95%",
+                        "quantity": 95.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "Racemic NHC-1 was employed."
+                ],
+                "yield": "95%"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "PC (mol%)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the photocatalyst gallery inset of Table 1 image",
+                "label_map_source_id": "Table 1"
+            },
+            "NHCs (15mol%)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the NHC gallery inset of Table 1 image",
+                "label_map_source_id": "Table 1"
+            },
+            "Solvent (2mL)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yields": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 51,
+            "valid_molecules": 51,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

@@ -1,0 +1,442 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1",
+          "smiles_ocsr": "NCc1ccccc1",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "PCN-222",
+          "quantity": 5,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "air atmosphere"
+        },
+        {
+          "role": "light",
+          "text": "Xe lamp cutoff below 420 nm, 100 mW cm^-2",
+          "quantity": 420,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 1,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 100,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_ocsr": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis."
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "degassing",
+          "text": "air atmosphere"
+        },
+        {
+          "role": "light",
+          "text": "Xe lamp cutoff below 420 nm, 100 mW cm^-2",
+          "quantity": 420,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 2,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 1,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "No catalyst (control experiment)."
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "PCN-222",
+          "quantity": 5,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "air atmosphere"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 2,
+          "unit": "h"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "No light (dark reaction) — light omitted for this entry."
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "PCN-222",
+          "quantity": 5,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "N2 atmosphere"
+        },
+        {
+          "role": "light",
+          "text": "Xe lamp cutoff below 420 nm, 100 mW cm^-2",
+          "quantity": 420,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 1,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 44.4,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "Reaction performed under N2 atmosphere (footnote c)."
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "PCN-222",
+          "quantity": 5,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "O2 atmosphere (1 atm)"
+        },
+        {
+          "role": "light",
+          "text": "Xe lamp cutoff below 420 nm, 100 mW cm^-2",
+          "quantity": 420,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 0.75,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 100,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "Reaction performed under 1 atm O2 (footnote d)."
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "PCN-222",
+          "quantity": 5,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "air atmosphere"
+        },
+        {
+          "role": "light",
+          "text": "simulated solar illumination (AM 1.5G, 100 mW cm^-2)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 1.5,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 95.6,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "Illumination with simulated solar (AM 1.5G, 100 mW cm^-2) rather than the Xe lamp (footnote e)."
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "benzylamine",
+          "smiles": "NCc1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "NCc1ccccc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "TPPCOOMe",
+          "quantity": 3.6,
+          "unit": "mg"
+        },
+        {
+          "role": "degassing",
+          "text": "air atmosphere"
+        },
+        {
+          "role": "light",
+          "text": "Xe lamp cutoff below 420 nm, 100 mW cm^-2",
+          "quantity": 420,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 1,
+          "unit": "h"
+        },
+        {
+          "role": "yield",
+          "text": "Conversion",
+          "value": 26.7,
+          "unit": "%"
+        },
+        {
+          "role": "solvent",
+          "text": "Acetonitrile (CH3CN)",
+          "quantity": 3,
+          "unit": "mL"
+        },
+        {
+          "role": "scale",
+          "text": "",
+          "quantity": 0.1,
+          "unit": "mmol"
+        }
+      ],
+      "products": [
+        {
+          "label": "dibenzylimine",
+          "smiles": "C(=N\\Cc1ccccc1)/c1ccccc1",
+          "smiles_llm": "C(=N\\Cc1ccccc1)/c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        "Conversion determined by GC analysis.",
+        "TPPCOOMe used as photocatalyst (3.6 mg, equivalent porphyrin amount to 5 mg PCN-222) (footnote f)."
+      ]
+    }
+  ]
+}

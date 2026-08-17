@@ -1,0 +1,807 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "smiles_ocsr": "C=C1=C2=CC34=C5(C=C2)N26CC7=C8C9%10%11C(C#N)=C%12%13C9(=CC72N527C59=C%14%15=C=5%16(=C35%17=C23=C=%144%162(C=CC=C3)C5=CC=CC=%17672)(C=C1)C%15=CC=C9)N812C34=C56=C178=C19%14C%15%16=C3%17C13%18(=CC(=CC=471C547=C25=C=6=41C7=CC=C5)(=C%153)C=C8)C1=C234(=C%16%185=C(C2=CC=C5)(N%12%1093)N%13%17%11%144)C=CC=C1"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 38,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "MesAcr-ClO4",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 7,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "fac-Ir(ppy)3",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "trace"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ru(bpy)3Cl2",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "trace"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 46,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 5.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 58,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield."
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 6.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "BTAC",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.1,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 75,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield.",
+        "Solvent total volume 3.1 mL (iPrOAc 2.55 mL + H2O 0.55 mL)."
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 6.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "BTAC",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.1,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 82,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield.",
+        "Solvent total volume 3.1 mL (iPrOAc 2.55 mL + H2O 0.55 mL).",
+        "Addition of 100 μL AcOH."
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "BTAC",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.1,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 27,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield.",
+        "Solvent total volume 3.1 mL (iPrOAc 2.55 mL + H2O 0.55 mL).",
+        "Addition of 100 μL AcOH.",
+        "No Na2S2O4 (x = 0) — Na2S2O4 omitted for this entry."
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 6.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "BTAC",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate/water (85/15)",
+          "quantity": 3.1,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "N.P."
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield.",
+        "Solvent total volume 3.1 mL (iPrOAc 2.55 mL + H2O 0.55 mL).",
+        "Addition of 100 μL AcOH.",
+        "No photocatalyst for this entry (PC = /)."
+      ]
+    },
+    {
+      "reaction_id": "11",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]",
+          "quantity": 0.6,
+          "unit": "mmol",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)[O-])cc1.[Na+]"
+        },
+        {
+          "label": "2a",
+          "smiles": "COc1ccc(C(=O)NO)cc1",
+          "quantity": 0.3,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C(=O)NO)cc1",
+          "smiles_ocsr": "COc1ccc(C(=O)NO)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzBN",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "reagent",
+          "text": "Na2S2O4",
+          "quantity": 6.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "reagent",
+          "text": "BTAC",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "solvent",
+          "text": "Isopropyl acetate",
+          "quantity": 3.0,
+          "unit": "mL"
+        },
+        {
+          "role": "light",
+          "text": "Blue LED (10 W)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 20,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "trace"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1",
+          "smiles_llm": "Cc1ccc(S(=O)(=O)NC(=O)c2ccc(OC)cc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "HPLC yield.",
+        "Addition of 100 μL AcOH.",
+        "Only isopropyl acetate (iPrOAc) used as solvent for this entry."
+      ]
+    }
+  ]
+}

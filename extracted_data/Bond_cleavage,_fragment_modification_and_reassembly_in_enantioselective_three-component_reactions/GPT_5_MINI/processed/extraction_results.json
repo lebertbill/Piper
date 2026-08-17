@@ -1,0 +1,1747 @@
+[
+    {
+        "document": "Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions",
+        "table_name": "Table 2",
+        "table_caption": "Optimization for the enantioselective three-component reaction of 2 and 3a with 4a*.",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions/GPT_5_MINI/processed/Bond_cleavage,_fragment_modification_and_reassembly_in_enantioselective_three-component_reactions_artifacts/image_000004_b280e9018f6d62298235628c6170512f928607b6237e66dbd56c68a955d7b99a.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1b)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "1b , Ar=2.4.6- i Pr 3 -C 6 H 2 1c , Ar=SiPh 3 1d , Ar=3,5-Cl 2 -C 6 H 3 1e , Ar=9-phenanthryl 1f , Ar=Ph",
+                        "resolved_name": "3,3'-bis(2,4,6-triisopropylphenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate",
+                        "resolved_smiles": "CC(C)C1=CC(=C(C(=C1)C(C)C)C2=CC3=CC=CC=C3C4=C2OP(=O)(OC5=C4C6=CC=CC=C6C=C5C7=C(C=C(C=C7C(C)C)C(C)C)C(C)C)O)C(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "1g, Ar= p -MeO-C 6 H 4, Ar= p -CF 3 -C 6 H 4 1i, Ar=3,5-(CF 3 ) 2 -C 6 H 3 1j, Ar=biphenyl 1k, Ar= β - naphthyl",
+                        "quantity": 1.0,
+                        "unit": "h",
+                        "resolved_name": "3,3'-bis(4-methoxyphenyl)-1,1'-binaphthyl-2,2'-diyl hydrogen phosphate",
+                        "resolved_smiles": "P1(=O)(OC2=C(C3=CC=CC=C3C=C2C2=CC=C(C=C2)OC)C2=C(C(=CC3=CC=CC=C23)C2=CC=C(C=C2)OC)O1)O",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1b",
+                    "Dr: not reported for this entry (table shows —)",
+                    "Er: not reported for this entry (table shows —)"
+                ]
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1c)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "Dr ( syn : anti ) z"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "Er y"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1c",
+                    "Dr: not reported for this entry (table shows —)",
+                    "Er: not reported for this entry (table shows —)"
+                ]
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1d)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 41.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1d",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 53:47 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1e)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 58.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1e",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 80:20 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1f)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "4 95:5"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "53:47",
+                        "resolved_smiles": "Clc1cc(Cl)cc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4cc(Cl)cc(Cl)c4)cc4ccccc4c2-3)c1",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1f",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 68:32 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1g)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 53.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "4 95:5"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "80:20",
+                        "resolved_smiles": "OP1(=O)Oc2c(-c3cc4ccccc4c4ccccc34)cc3ccccc3c2-c2c(O1)c(-c1cc3ccccc3c3ccccc13)cc1ccccc21",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1g",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 61:39 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1h)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 38.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "4 95:5"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "68:32",
+                        "resolved_smiles": "c1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccccc4)cc4ccccc4c2-3)cc1",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1h",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 65:35 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 49.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "4 95:5"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "61:39",
+                        "resolved_smiles": "COc1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccc(OC)cc4)cc4ccccc4c2-3)cc1",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 67:33 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1j)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "4 95:5"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "65:35",
+                        "resolved_smiles": "FC(F)(F)c1ccc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4ccc(C(F)(F)F)cc4)cc4ccccc4c2-3)cc1",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1j",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 65:35 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "text": "2a",
+                        "smiles_ocsr": "COC(=O)C(=[N+]=[N-])C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C9H8N2O2",
+                        "molecular_weight": 176.18
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C19H20BrNO2",
+                        "molecular_weight": 374.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1k)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 50.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "0"
+                    },
+                    {
+                        "role": "table_2",
+                        "text": "49",
+                        "resolved_smiles": "FC(F)(F)c1cc(C(F)(F)F)cc(-c2cc3ccccc3c3c2OP(=O)(O)Oc2c(-c4cc(C(F)(F)F)cc(C(F)(F)F)c4)cc4ccccc4c2-3)c1",
+                        "mapping_source": "Table 2"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1k",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 67:33 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "text": "2b",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C12H14N2O2",
+                        "molecular_weight": 218.26
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)(C)OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C22H26BrNO2",
+                        "molecular_weight": 416.36
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1e)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 55.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1e",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 53:47 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "text": "2b",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C12H14N2O2",
+                        "molecular_weight": 218.26
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)(C)OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C22H26BrNO2",
+                        "molecular_weight": 416.36
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (CH2Cl2)",
+                        "smiles": "ClCH2Cl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 51.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 82:18 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "text": "2b",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C12H14N2O2",
+                        "molecular_weight": 218.26
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)(C)OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C22H26BrNO2",
+                        "molecular_weight": 416.36
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "chloroform",
+                        "resolved_smiles": "C(Cl)(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 62.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 90:10 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "text": "2b",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC(C)(C)C)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(=[N+]=[N-])c1ccccc1",
+                        "molecular_formula": "C12H14N2O2",
+                        "molecular_weight": 218.26
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)(C)OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)OC(=O)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C22H26BrNO2",
+                        "molecular_weight": 416.36
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "chloroform",
+                        "resolved_smiles": "C(Cl)(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "20 °C",
+                        "quantity": 20.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 48.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 92:8 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC12CC3CC(CC(C1)C3)C2)=[N+]=[N-]",
+                        "text": "2c",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC12CC3CC(CC(C1)C3)C2)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[N-]=[N+]=C(C(=O)OC12CC3CC(CC(C3)C1)C2)c1ccccc1",
+                        "molecular_formula": "C18H20N2O2",
+                        "molecular_weight": 296.37
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C12CC3CC(C1)CC(C3)C2OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(OC1C2CC3CC(C2)CC1C3)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C28H32BrNO2",
+                        "molecular_weight": 494.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "chloroform",
+                        "resolved_smiles": "C(Cl)(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 0.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 61.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 91:9 (major isomer value by chiral HPLC)"
+                ]
+            },
+            {
+                "entry_id": "16",
+                "reactants": [
+                    {
+                        "smiles": "C1(=CC=CC=C1)C(C(=O)OC12CC3CC(CC(C1)C3)C2)=[N+]=[N-]",
+                        "text": "2c",
+                        "smiles_ocsr": "C1(=CC=CC=C1)C(C(=O)OC12CC3CC(CC(C1)C3)C2)=[N+]=[N-]",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[N-]=[N+]=C(C(=O)OC12CC3CC(CC(C3)C1)C2)c1ccccc1",
+                        "molecular_formula": "C18H20N2O2",
+                        "molecular_weight": 296.37
+                    },
+                    {
+                        "smiles": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "text": "3a",
+                        "smiles_ocsr": "C=C(C1=CC=CC=C1)N2CCOCC2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=C(c1ccccc1)N1CCOCC1",
+                        "molecular_formula": "C12H15NO",
+                        "molecular_weight": 189.26
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "text": "4a",
+                        "smiles_ocsr": "C1=CC=C(C=C1)N=CC2=CC=C(C=C2)Br",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "Brc1ccc(C=Nc2ccccc2)cc1",
+                        "molecular_formula": "C13H10BrN",
+                        "molecular_weight": 260.13
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C12CC3CC(C1)CC(C3)C2OC(=O)C(NC1=CC=CC=C1)C(C2=CC=CC=C2Br)C3CC3",
+                        "text": "5",
+                        "smiles_ocsr": "ROC(=O)[C@@H](NP(C)=O)[C@H](C1=CC=C(Br)C=C1)CC(=O)C1=CC=CC=C1",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(OC1C2CC3CC(C2)CC1C3)C(Nc1ccccc1)C(c1ccccc1Br)C1CC1",
+                        "molecular_formula": "C28H32BrNO2",
+                        "molecular_weight": 494.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[PdCl(η3-C3H5)]2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Pd]"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "(R)-PA (1i)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "O=P(O)(O)Oc1ccc2c(c1)ccccc2O"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "smiles": "SiO2",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "chloroform",
+                        "resolved_smiles": "C(Cl)(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "10 °C",
+                        "quantity": 10.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "time",
+                        "text": "not specified"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 69.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "PA used: 1i",
+                    "Dr: >95:5 (determined by 1H NMR of the crude mixture)",
+                    "Er: 94:6 (major isomer value by chiral HPLC)"
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 2",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "2": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Diazo compound variants defined in scheme above table",
+                "label_map_source_id": "Table 2"
+            },
+            "Solvent": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "PA": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Phosphoric acid gallery in scheme above table",
+                "label_map_source_id": "Table 2"
+            },
+            "T (°C)": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Yield (%)": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Dr (syn:anti)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            },
+            "Er": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 64,
+            "valid_molecules": 64,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

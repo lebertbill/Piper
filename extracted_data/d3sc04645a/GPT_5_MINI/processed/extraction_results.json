@@ -1,0 +1,1743 @@
+[
+    {
+        "document": "d3sc04645a",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions a",
+        "image_path": "extracted_data/d3sc04645a/GPT_5_MINI/processed/visualheist_page_02_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "87% (84%)",
+                        "quantity": 87.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "92/8"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "None"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Isolated yield: 84%",
+                    "E/Z = 92/8"
+                ],
+                "yield": "87% (84%)"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir[dF(CF3)ppy]2(dtbbpy)PF6 (instead of 4CzIPN)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir[dF(CF3)ppy]2(dtbbpy)PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc(c2cc(cc(c2n1)C(C)(C)C)C)c3cc(c(nc3)c4cc(cc(c4[Ir]5(n6ccc(cc6c7cc(cc(n75)C(C)(C)C)C(C)(C)C)c8cc(c(nc8)c9cc(cc(c9)F)F)C(F)(F)F)C(F)(F)F)F)F)F.F[P-](F)(F)(F)(F)F",
+                        "resolved_name": "[4,4'-bis(1,1-dimethylethyl)-2,2'-bipyridine-N1,N1']bis[3,5-difluoro-2-[5-(trifluoromethyl)-2-pyridinyl-N]phenyl-C]iridium(III) hexafluorophosphate",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "37%",
+                        "quantity": 37.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "17/83"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6 , instead of 4CzIPN"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Photocatalyst changed to Ir[dF(CF3)ppy]2(dtbbpy)PF6 (entry-specific variation)",
+                    "E/Z = 17/83"
+                ],
+                "yield": "37%"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "Ir(ppy)3 (instead of 4CzIPN)",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "Ir(ppy)3",
+                        "resolved_smiles": "c1ccc(cc1)-c2ccccn2.[c]1ccc(cc1)-c2ccccn2.[c]1ccc(cc1)-c2ccccn2.[Ir]",
+                        "resolved_name": "tris(2-phenylpyridine)iridium(III)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "8%",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "63 : 37"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "Ir(ppy) 3 , instead of 4CzIPN"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Photocatalyst changed to Ir(ppy)3 (entry-specific variation)",
+                    "E/Z = 63:37"
+                ],
+                "yield": "8%"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "23%",
+                        "quantity": 23.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "97/3"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No 4CzIPN"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "No 4CzIPN (photocatalyst omitted in this entry)",
+                    "E/Z = 97/3"
+                ],
+                "yield": "23%"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "8%",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No pyrene & 4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "No pyrene and no 4CzIPN (both additives omitted in this entry)",
+                    "E/Z not reported"
+                ],
+                "yield": "8%"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No Ni catalyst"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Ni catalyst omitted in this entry"
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "NiCl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-]",
+                        "resolved_smiles": "Cl[Ni]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "64%",
+                        "quantity": 64.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "87/13"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No ligand"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Ligand omitted in this entry",
+                    "E/Z = 87/13"
+                ],
+                "yield": "64%"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "pyrene",
+                        "quantity": 0.5,
+                        "unit": "equiv",
+                        "smiles": "C1=CC2=CC3=CC4=CC=CC=C4C3=CC=C12",
+                        "resolved_smiles": "C1=CC2=C3C(=C1)C=CC4=CC=CC(=C43)C=C2",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No light"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Light omitted in this entry (no irradiation)"
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMAc/CH3CN (3:1 v/v)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "CC(=O)N(C)C.CC#N"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "79%",
+                        "quantity": 79.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "16/84"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No pyrene"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "Pyrene omitted in this entry",
+                    "E/Z = 16/84"
+                ],
+                "yield": "79%"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "C#Cc1ccccc1Cl",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "C#Cc1ccccc1Cl",
+                        "smiles_ocsr": "C#Cc1ccccc1Cl",
+                        "smiles_source": "ocsr_graph",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#Cc1ccccc1Cl",
+                        "molecular_formula": "C8H5Cl",
+                        "molecular_weight": 136.58
+                    },
+                    {
+                        "smiles": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "text": "2a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "C=CC(OC(=O)OC(C)(C)C)c1ccc(cc1)c2ccccc2",
+                        "smiles_ocsr": "CC(C)(C)OC(=O)OC(C=C)c1ccccc1-c1ccccc1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC(OC(=O)OC(C)(C)C)c1ccccc1-c1ccccc1",
+                        "molecular_formula": "C20H22O3",
+                        "molecular_weight": 310.39
+                    },
+                    {
+                        "smiles": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "text": "3a",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_llm": "[K+].CC(C)(C)B(F)(F)F",
+                        "smiles_ocsr": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)(C)[B-](F)(F)F.[K+]",
+                        "molecular_formula": "C4H9BF3K",
+                        "molecular_weight": 164.02
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "C=CC/C=C/C",
+                        "text": "4a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC/C=C/C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC/C=C/C",
+                        "molecular_formula": "C6H10",
+                        "molecular_weight": 82.15
+                    },
+                    {
+                        "smiles": "C=CC=C",
+                        "text": "5a",
+                        "smiles_llm": "CC(C)(C)C=C(C=CC1=CC=CC=C1Cl)C2=CC=CC=C2",
+                        "smiles_ocsr": "C=CC=C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CC=C",
+                        "molecular_formula": "C4H6",
+                        "molecular_weight": 54.09
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)cc(C2=NC3=CC=CC3N2C4=CC=CC5=CC=CC=C54)cc1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Ni(phen)Cl2",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "[Ni+2].[Cl-].[Cl-].c1ccncc1c2ccccc2",
+                        "resolved_smiles": "Cl[Ni]1(Cl)(N2=CC=CC3=C2C=CC4=C3C=CC=N41)",
+                        "resolved_name": "dichloro(1,10-phenanthroline)nickel(II)",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "smiles": "CC(C)(C)c1cc(nc1)c2cc(nc2)C(C)(C)C",
+                        "resolved_smiles": "CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C",
+                        "resolved_name": "4,4'-di-tert-butyl-2,2'-bipyridine",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "tert-Bu trifluoroborate (3a)",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles": "[K+].CC(C)(C)B(F)(F)F"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DME (1,2-dimethoxyethane) — entry-specific (footnote b)",
+                        "quantity": 0.05,
+                        "unit": "M",
+                        "smiles": "COCCO"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED, 90 W",
+                        "quantity": 467.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 18.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "",
+                        "quantity": 35.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "75% (71%)",
+                        "quantity": 75.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "e_/_z",
+                        "text": "6/94"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "No pyrene"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "NiCl2·Phen",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_name": "Nickel(II) chloride phenanthroline complex",
+                        "resolved_smiles": "C1=CC2=C(C3=C(C=CC=N3)C=C2)N=C1.[Cl-].[Cl-].[Ni+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    "No pyrene (entry-specific omission)",
+                    "Isolated yield: 71% (given in parentheses)",
+                    "Footnote b: With DME as solvent"
+                ],
+                "yield": "75% (71%)"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Variations from ' standard ' condition": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            },
+            "Yield of 4a / 5a": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": false
+            },
+            "E / Z": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 50,
+            "valid_molecules": 50,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

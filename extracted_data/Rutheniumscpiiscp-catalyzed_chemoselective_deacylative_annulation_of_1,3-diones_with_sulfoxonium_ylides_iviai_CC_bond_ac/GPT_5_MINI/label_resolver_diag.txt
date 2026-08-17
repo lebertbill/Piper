@@ -1,0 +1,147 @@
+Label Resolver Diagnostic Log — 2026-06-18 09:58:18
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3aa', '4a', '5a'] → image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3aa', '4a', '5a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac/GPT_5_MINI/processed/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac_artifacts/image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+  Exists   : True
+  [Tier 0 NameMap] '3aa' → pubchem_lookup via name='2-(2-methoxyphenyl)-5-phenylfuran'
+  [Tier 0 NameMap] resolved=['3aa']  remaining=['4a', '5a']
+  [OCSR] image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=*C(=O)CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)=C[SH](C)(C)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(*)O1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['Sa']  smiles=*C(=O)CC(C(*)=O)C(*)=O  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '5a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '5a']
+  [Tier 3] '4a': bbox=6 atoms=11 smiles=*C(=O)CC(C(*)=O)C(*)=O wildcard=True
+  [Tier 3] '5a': bbox=7 atoms=11 smiles=*C(=O)CC(C(*)=O)C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '5a']
+    [Tier 4 LLM] '4a' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] '5a' → r_value='R = 2-MeOC6H4'
+    [Tier 4] R-group candidates: ['4a', '5a']
+    [Tier 4 graph] '4a' r=R = 2-MeOC6H4 fallback (smi=*C(=O)CC(C(*)=O)C(*)=O)
+    [Tier 4 graph] '5a' r=R = 2-MeOC6H4 fallback (smi=*C(=O)CC(C(*)=O)C(*)=O)
+    [Tier 4] '4a' 🔄 corrected: COc1ccccc1C(=O)C(CC(=O)c1ccccc1)C(=O)c1ccccc1
+    [Tier 4] '5a' 🔄 corrected: COc1ccccc1C(=O)C(CC(=O)c1ccccc1)C(=O)c1ccccc1
+  [Tier 4 R-group Sub] resolved=['4a', '5a']  remaining=[]
+  [InlineResolver] Column 'Solvent' labels ['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)'] from image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac/GPT_5_MINI/processed/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac_artifacts/image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+  [OCSR] image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=*C(=O)CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)=C[SH](C)(C)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(*)O1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['Sa']  smiles=*C(=O)CC(C(*)=O)C(*)=O  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+  [Tier 3] 'toluene': bbox_idx=None out of range (n=9)
+  [Tier 3] 'N,N-Dimethylformamide (DMF)': bbox_idx=None out of range (n=9)
+  [Tier 3] 'Toluene': bbox_idx=None out of range (n=9)
+  [Tier 3] 'Isopropanol (i-PrOH)': bbox_idx=None out of range (n=9)
+  [Tier 3] '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)': bbox_idx=None out of range (n=9)
+  [Tier 3] 'Acetonitrile (CH3CN)': bbox_idx=None out of range (n=9)
+  [Tier 3] '1,2-Dichloroethane (DCE)': bbox_idx=None out of range (n=9)
+  [Tier 3 BBox Match] resolved=[]  remaining=['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+    [Tier 4 LLM] 'toluene' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] 'N,N-Dimethylformamide (DMF)' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] 'Toluene' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] 'Isopropanol (i-PrOH)' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] 'Acetonitrile (CH3CN)' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] '1,2-Dichloroethane (DCE)' → r_value='R = 2-MeOC6H4'
+    [Tier 4] R-group candidates: ['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']
+    [Tier 4 graph] 'toluene' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] 'N,N-Dimethylformamide (DMF)' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] 'Toluene' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] 'Isopropanol (i-PrOH)' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] 'Acetonitrile (CH3CN)' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4 graph] '1,2-Dichloroethane (DCE)' r=R = 2-MeOC6H4 fallback (smi=*C(=O)=C[SH](C)(C)=O)
+    [Tier 4] 'toluene' 🔄 corrected: COc1ccccc1C(=O)C=[S](C)(C)=O
+    [Tier 4] 'N,N-Dimethylformamide (DMF)' 🔄 corrected: COc1ccccc1C(=O)C=[S](C)(C)=O
+    [Tier 4] 'Toluene' 🔄 corrected: COc1ccccc1C(=O)C=[S](C)(C)=O
+    [Tier 4] 'Isopropanol (i-PrOH)' 🔄 corrected: CC(C)O
+    [Tier 4] '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)' 🔄 corrected: FC(F)(F)C(O)C(F)(F)F
+    [Tier 4] 'Acetonitrile (CH3CN)' 🔄 corrected: CC#N
+    [Tier 4] '1,2-Dichloroethane (DCE)' 🔄 corrected: ClCCCl
+  [Tier 4 R-group Sub] resolved=['toluene', 'N,N-Dimethylformamide (DMF)', 'Toluene', 'Isopropanol (i-PrOH)', '1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP)', 'Acetonitrile (CH3CN)', '1,2-Dichloroethane (DCE)']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4a', '2a', '3aa', '1a', '5a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac/GPT_5_MINI/processed/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac_artifacts/image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='2-(dimethylsulfuranylidene)-1-(2-methoxyphenyl)ethan-1-one'
+  [Tier 0 NameMap] '3aa' → pubchem_lookup via name='2-(2-methoxyphenyl)-5-phenylfuran'
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1,3-diphenylpropane-1,3-dione'
+  [Tier 0 NameMap] resolved=['2a', '3aa', '1a']  remaining=['4a', '5a']
+  [OCSR] image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=*C(=O)CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)=C[SH](C)(C)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(*)O1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['Sa']  smiles=*C(=O)CC(C(*)=O)C(*)=O  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4a', '5a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4a', '5a']
+  [Tier 3] '4a': bbox=6 atoms=11 smiles=*C(=O)CC(C(*)=O)C(*)=O wildcard=True
+  [Tier 3] '5a': bbox=7 atoms=11 smiles=*C(=O)CC(C(*)=O)C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4a', '5a']
+    [Tier 4 LLM] '4a' → r_value='R = 2-MeOC6H4'
+    [Tier 4 LLM] '5a' → r_value='R = 2-MeOC6H4'
+    [Tier 4] R-group candidates: ['4a', '5a']
+    [Tier 4 graph] '4a' r=R = 2-MeOC6H4 fallback (smi=*C(=O)CC(C(*)=O)C(*)=O)
+    [Tier 4 graph] '5a' r=R = 2-MeOC6H4 fallback (smi=*C(=O)CC(C(*)=O)C(*)=O)
+    [Tier 4] '4a' 🔄 corrected: COc1ccccc1C(=O)C(CC(=O)c1ccccc1)C(=O)c1ccccc1
+    [Tier 4] '5a' 🔄 corrected: COc1ccccc1C(=O)C(CC(=O)c1ccccc1)C(=O)c1ccccc1
+  [Tier 4 R-group Sub] resolved=['4a', '5a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['CH3', '2', '3', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac/GPT_5_MINI/processed/Rutheniumscpiiscp-catalyzed_chemoselective_deacylative_annulation_of_1,3-diones_with_sulfoxonium_ylides_iviai_CC_bond_ac_artifacts/image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['CH3', '2', '3', '1']
+  [OCSR] image_000006_86c2e3602561004854e27d0fb03ab88bff3f18fe9ad749d3ef14d0d3fa1459e3.png: 9 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['12']  smiles=*C(=O)CC(*)=O  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)=C[SH](C)(C)=O  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aa']  smiles=*C1=CC=C(*)O1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['Sa']  smiles=*C(=O)CC(C(*)=O)C(*)=O  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['CH3', '2', '3', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['CH3', '2', '3', '1']
+  [Tier 3] '1': bbox=0 atoms=7 smiles=*C(=O)CC(*)=O wildcard=True
+  [Tier 3] '2': bbox=2 atoms=8 smiles=*C(=O)=C[SH](C)(C)=O wildcard=True
+  [Tier 3] '3': bbox=4 atoms=7 smiles=*C1=CC=C(*)O1 wildcard=True
+  [Tier 3] 'CH3': bbox_idx=None out of range (n=9)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', '3', 'CH3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2', '3', 'CH3']
+    [Tier 5 PubChem] '1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'CH3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2', '3', 'CH3']
+    [Tier 6→pubchem_lookup] '1' name='1,3-diphenylpropane-1,3-dione' → C1=CC=C(C=C1)C(=O)CC(=O)C2=CC=CC=C2
+    [Tier 6→opsin_lookup] '2' name='1-(2-methoxyphenyl)-2-(dimethyl-lambda4-sulfanylidene)ethan-1-one' → COC1=C(C=CC=C1)C(C=S(C)C)=O
+    [Tier 6→pubchem_lookup] '3' name='2-(2-methoxyphenyl)-5-phenylfuran' → COC1=CC=CC=C1C2=CC=C(O2)C3=CC=CC=C3
+    [Tier 6→pubchem_lookup] 'CH3' name='methyl group' → CN
+  [Tier 6 LLM Vision] resolved=['1', '2', '3', 'CH3']

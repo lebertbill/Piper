@@ -1,0 +1,74 @@
+Label Resolver Diagnostic Log — 2026-06-17 13:48:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['HE', '[X]', 'NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C'] → image_000007_60d9d38168b4392481b68bbf422399a7fc2b203dbf076c5b603c60b06d4b6a67.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['HE', '[X]', 'NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photoactive_electron_donoracceptor_complex_platform_for_Ni-mediated_Cspsup3supCspsup2sup_bond_formation/GPT_5_MINI/processed/Photoactive_electron_donoracceptor_complex_platform_for_Ni-mediated_Cspsup3supCspsup2sup_bond_formation_artifacts/image_000007_60d9d38168b4392481b68bbf422399a7fc2b203dbf076c5b603c60b06d4b6a67.png
+  Exists   : True
+  [Tier 0 NameMap] 'HE' → pubchem_lookup via name='diethyl-1,4-dihydro-2,6-dimethyl-3,5-pyridinedicarboxylate'
+  [Tier 0 NameMap] resolved=['HE']  remaining=['[X]', 'NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C']
+  [OCSR] image_000007_60d9d38168b4392481b68bbf422399a7fc2b203dbf076c5b603c60b06d4b6a67.png: 11 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['HE']  smiles=*C1=C(*)NC(*)=C(*)C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['HE A']  smiles=*C1=C(*)NC(*)=C(*)C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['HE B']  smiles=*C1=C(*)C(*)C(*)=C(*)N1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['X]']  smiles=CC(=O)ON1C(=O)C2=CCC(C)C=C2C1=O  wildcard=False
+  [OCSR]   pair [8,9]: texts=['NiBr 2(dtbpy)']  smiles=*C=CC=NC(C1C=C(*)C=C[N+]23=C(C=C(*)C=C2)C12=CC(*)=  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['[X]', 'NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C']
+  [Tier 2 Symbol Correction] resolved=['[X]']  remaining=['NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C']
+  [Tier 3] 'NiBr2(dtbpy)': symbol/coord count mismatch (17 vs 36), using original
+  [Tier 3] 'NiBr2(dtbpy)': bbox=8 atoms=36 smiles=*C=CC=NC(C1C=C(*)C=C[N+]23=C(C=C(*)C=C2)C12=CC(*)=CC=[N]2[Ni wildcard=True
+  [Tier 3] 'HE A': bbox=2 atoms=10 smiles=*C1=C(*)NC(*)=C(*)C1 wildcard=True
+  [Tier 3] 'HE B': bbox=4 atoms=11 smiles=*C1=C(*)C(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3] 'HE C': bbox=10 atoms=12 smiles=*C1=C(*)C(*)(*)C(*)=C(*)N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['NiBr2(dtbpy)', 'HE A', 'HE B', 'HE C']
+    [Tier 4 LLM] 'HE A' → r_value='3,5-dicyano-2,6-dimethyl-1,4-dihydropyridine'
+    [Tier 4 LLM] 'HE B' → r_value='diethyl 2,4,6-trimethyl-1,4-dihydropyridine-3,5-dicarboxylate'
+    [Tier 4 LLM] 'HE C' → r_value='2,4,4,6-tetramethyl-1,4-dihydropyridine-3,5-dicarbonitrile'
+    [Tier 4 LLM] 'NiBr2(dtbpy)' → r_value='4,4'-di-tert-butyl-2,2'-bipyridine nickel(II) bromide'
+    [Tier 4] R-group candidates: ['HE A', 'HE B', 'HE C', 'NiBr2(dtbpy)']
+    [Tier 4 graph] 'HE A' r=3,5-dicyano-2,6-dimethyl-1,4-dihydropyridine fallback (smi=*C1=C(*)NC(*)=C(*)C1)
+    [Tier 4] 'HE A' ✅ match: CC1=C(C#N)CC(C#N)=C(C)N1
+    [Tier 4 graph] 'HE B' r=diethyl 2,4,6-trimethyl-1,4-dihydropyridine-3,5-dicarboxylate fallback (smi=*C1=C(*)C(*)C(*)=C(*)N1)
+    [Tier 4 graph] 'HE C' r=2,4,4,6-tetramethyl-1,4-dihydropyridine-3,5-dicarbonitrile fallback (smi=*C1=C(*)C(*)C(*)=C(*)N1)
+    [Tier 4] 'HE B' ✅ match: CCOC(=O)C1=C(C)NC(C)=C(C1C)C(=O)OCC
+    [Tier 4] 'HE C' 🔄 corrected: CCOC(=O)C1=C(C)NC(C)=C(C1C)C(=O)OCC
+    [Tier 4 graph] 'NiBr2(dtbpy)' r=4,4'-di-tert-butyl-2,2'-bipyridine nickel(II) bromide fallback (smi=*C=CC=NC(C1C=C(*)C=C[N+]23=C(C=C(*)C=C2)C12=CC(*)=CC=[N]2[Ni]3([Br])[Br])C12=C[N+]=1=CC(*)=C2)
+    [Tier 4] 'NiBr2(dtbpy)' RDKit render failed: CC(C)(C)C1=CC=NC(C2=C(C=C(C(C)(C)C)C=C2)
+  [Tier 4 R-group Sub] resolved=['HE A', 'HE B', 'HE C']  remaining=['NiBr2(dtbpy)']
+    [Tier 5 PubChem] 'NiBr2(dtbpy)' → hit via 'NiBr2': [Ni](Br)Br
+  [Tier 5 PubChem] resolved=['NiBr2(dtbpy)']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3', '1']
+  Image    : extracted_data/Photoactive_electron_donoracceptor_complex_platform_for_Ni-mediated_Cspsup3supCspsup2sup_bond_formation/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '3', '1']
+  [OCSR] visualheist_page_03_table_1.png: 12 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1 (1.0 equiv)']  smiles=*C1=CC=C(Br)C=N1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['HE']  smiles=*C1=C(*)NC(*)=C(*)C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3']  smiles=*C1=CC=C(C2CCCCC2)C=N1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '3', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '3', '1']
+  [Tier 3] '1': bbox=0 atoms=8 smiles=CC1=CC=*(Br)C=N1 wildcard=True
+  [Tier 3] '2': bbox=7 atoms=16 smiles=C=C(C)CC1O(=C)C2=NOC(C)C=O2O1=C wildcard=False
+  [Tier 3] '3': bbox=10 atoms=13 smiles=*C1=CC=C(C2CCCCC2)C=N1 wildcard=True
+  [Tier 3 BBox Match] resolved=['2']  remaining=['1', '3']
+    [Tier 4 LLM] '1' → r_value='CN'
+    [Tier 4 LLM] '3' → r_value='CN'
+    [Tier 4] R-group candidates: ['1', '3']
+    [Tier 4 graph] '1' r=CN fallback (smi=*C1=CC=C(Br)C=N1)
+    [Tier 4] '1' ✅ match: N#CC1=CC=C(Br)C=N1
+    [Tier 4 graph] '3' r=CN fallback (smi=*C1=CC=C(C2CCCCC2)C=N1)
+    [Tier 4] '3' ✅ match: N#CC1=CC=C(C2CCCCC2)C=N1
+  [Tier 4 R-group Sub] resolved=['1', '3']  remaining=[]

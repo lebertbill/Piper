@@ -1,0 +1,935 @@
+[
+    {
+        "document": "ao3c10008",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of the Reaction Conditions",
+        "image_path": "extracted_data/ao3c10008/GPT_5_MINI/processed/visualheist_page_02_table_2.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "air"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "K2S2O8",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "[O-]S(=O)(=O)OOS(=O)(=O)[O-].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "Cu(OAc)2",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC(=O)[O-].CC(=O)[O-].[Cu+2]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(OAc)2",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(C)(=O)[O-].C(C)(=O)[O-].C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) diacetate",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "MesI(OAc)2",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "C(C)(=O)[O-].C(C)(=O)[O-].C1(=C(C(=CC(=C1)C)C)[I+2])C",
+                        "resolved_name": "mesityl iodine(III) diacetate",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 2.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "60",
+                        "quantity": 60.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "60"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 2.5,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "75",
+                        "quantity": 75.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "75"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "90 (52)",
+                        "quantity": 90.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "oxidant",
+                        "text": "",
+                        "quantity": 3.0,
+                        "unit": "equiv"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Secondary value shown in table: 52 (reported in parentheses)"
+                    }
+                ],
+                "yield": "90 (52)"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "resolved_name": "ethyl 3-Hydroxy-2-pivalamidobenzoate",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "complex"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "complex"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "CCOC(=O)Nc1ccccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "C(C(C)(C)C)(=O)NC1=C(C(=O)OCC)C=CC=C1",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1ccccc1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO3",
+                        "molecular_weight": 249.31
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "text": "2a",
+                        "smiles_llm": "CCOC(=O)Nc1cc(O)ccc1C(=O)C(C)(C)C",
+                        "smiles_ocsr": "OC=1C(=C(C(=O)OCC)C=CC1)NC(C(C)(C)C)=O",
+                        "smiles_source": "opsin_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCOC(=O)c1cccc(O)c1NC(=O)C(C)(C)C",
+                        "molecular_formula": "C14H19NO4",
+                        "molecular_weight": 265.31
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RuCl2(p-cymene)]2",
+                        "quantity": 0.1,
+                        "unit": "equiv",
+                        "resolved_smiles": "CC1=CC=C(C=C1)C(C)C.CC1=CC=C(C=C1)C(C)C.Cl[Ru]Cl.Cl[Ru]Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 5.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "PhI(TFA)2",
+                        "quantity": 3.0,
+                        "unit": "equiv",
+                        "resolved_smiles": "FC(C(=O)[O-])(F)F.FC(C(=O)[O-])(F)F.C1(=CC=CC=C1)[I+2]",
+                        "resolved_name": "phenyl iodine(III) bis(trifluoroacetate)",
+                        "smiles_source": "opsin_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "hv",
+                        "quantity": 450.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "N2"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 6.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "0"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "TM catalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "oxidant (2 equiv)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            },
+            "remarks": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 22,
+            "valid_molecules": 22,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

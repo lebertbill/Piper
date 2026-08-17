@@ -1,0 +1,79 @@
+Label Resolver Diagnostic Log — 2026-06-16 15:54:48
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['L1', 'L2', 'L3', 'L4'] → image_000010_6776dac5a659842dc16bbea21afeaba5bb731c3f25fc70b192f80b8ec9c8fa14.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['L1', 'L2', 'L3', 'L4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_allylic_defluorinative_alkylation_of_trifluoromethyl_alkenes_with_reductive_decarboxylation_of_redox-ac/GPT_5_MINI/processed/Nickel-catalyzed_allylic_defluorinative_alkylation_of_trifluoromethyl_alkenes_with_reductive_decarboxylation_of_redox-ac_artifacts/image_000010_6776dac5a659842dc16bbea21afeaba5bb731c3f25fc70b192f80b8ec9c8fa14.png
+  Exists   : True
+  [Tier 0 NameMap] 'L1' → pubchem_lookup via name='2-(4,5-dihydro-1H-imidazol-2-yl)pyridine'
+  [Tier 0 NameMap] 'L2' → pubchem_lookup via name='4,4'-di-tert-butyl-2,2'-bipyridine'
+  [Tier 0 NameMap] 'L3' → pubchem_lookup via name='4,4',4''-tri-tert-butyl-2,2':6',2''-terpyridine'
+  [Tier 0 NameMap] 'L4' → pubchem_lookup via name='2,6-bis(4,5-dihydrooxazol-2-yl)pyridine'
+  [Tier 0 NameMap] resolved=['L1', 'L2', 'L3', 'L4']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['bis(pinacolato)diboron'] from image_000010_6776dac5a659842dc16bbea21afeaba5bb731c3f25fc70b192f80b8ec9c8fa14.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Ligand Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['bis(pinacolato)diboron']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Nickel-catalyzed_allylic_defluorinative_alkylation_of_trifluoromethyl_alkenes_with_reductive_decarboxylation_of_redox-ac/GPT_5_MINI/processed/Nickel-catalyzed_allylic_defluorinative_alkylation_of_trifluoromethyl_alkenes_with_reductive_decarboxylation_of_redox-ac_artifacts/image_000010_6776dac5a659842dc16bbea21afeaba5bb731c3f25fc70b192f80b8ec9c8fa14.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['bis(pinacolato)diboron']
+  [OCSR] image_000010_6776dac5a659842dc16bbea21afeaba5bb731c3f25fc70b192f80b8ec9c8fa14.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=['L1']  smiles=c1ccc(C2=NCCN2)nc1  wildcard=False
+  [OCSR]   pair [2,3]: texts=['L2']  smiles=*C1=CC=NC(C2=NC=CC(*)=C2)=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['L3']  smiles=*C1=CC=NC(C2=NC(C3=NC=CC(*)=C3)=CC(*)=C2)=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['L4']  smiles=c1cc(C2=NCCO2)nc(C2=NCCO2)c1  wildcard=False
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['bis(pinacolato)diboron']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['bis(pinacolato)diboron']
+  [Tier 3] 'bis(pinacolato)diboron': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['bis(pinacolato)diboron']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['bis(pinacolato)diboron']
+    [Tier 5 PubChem] 'bis(pinacolato)diboron' → hit via 'bis(pinacolato)diboron': B1(OC(C(O1)(C)C)(C)C)B2OC(C(O2)(C)C)(C)C
+  [Tier 5 PubChem] resolved=['bis(pinacolato)diboron']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3aa', '2a', '1a']
+  Image    : extracted_data/Nickel-catalyzed_allylic_defluorinative_alkylation_of_trifluoromethyl_alkenes_with_reductive_decarboxylation_of_redox-ac/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3aa', '2a', '1a']
+  [OCSR] visualheist_page_02_table_1.png: 14 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C(=C)C1=CC=C(*)C=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['L1']  smiles=c1ccc(C2=NCCN2)nc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['L2']  smiles=*C1=CC=NC(C2=NC=CC(*)=C2)=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=*C1CCCCC1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['L3']  smiles=*C1=CC=NC(C2=NC(C3=NC=CC(*)=C3)=CC(*)=C2)=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3aa']  smiles=*C1=CC=C(C(CC2CCCCC2)=C(F)F)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['L4']  smiles=c1cc(C2=NCCO2)nc(C2=NCCO2)c1  wildcard=False
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3aa', '2a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3aa', '2a', '1a']
+  [Tier 3] '1a': bbox=0 atoms=10 smiles=*C(=C)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '2a': bbox=6 atoms=7 smiles=*C1CCCCC1 wildcard=True
+  [Tier 3] '3aa': bbox=10 atoms=18 smiles=*C1=CC=C(C(CC2CCCCC2)=C(F)F)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3aa']
+    [Tier 4 LLM] '1a' → r_value='* = CF3, * = Ph'
+    [Tier 4 LLM] '2a' → r_value='* = COONPhth'
+    [Tier 4 LLM] '3aa' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1a', '2a', '3aa']
+    [Tier 4 graph] '1a' r=* = CF3, * = Ph fallback (smi=*C(=C)C1=CC=C(*)C=C1)
+    [Tier 4] '1a' ✅ match: FC(F)(F)C(=C)C1=CC=C(C2=CC=CC=C2)C=C1
+    [Tier 4 graph] '2a' r=* = COONPhth fallback (smi=*C1CCCCC1)
+    [Tier 4] '2a' ✅ match: O=C(ON1C(=O)c2ccccc2C1=O)C1CCCCC1
+    [Tier 4 graph] '3aa' r=* = Ph fallback (smi=*C1=CC=C(C(CC2CCCCC2)=C(F)F)C=C1)
+    [Tier 4] '3aa' ✅ match: FC(F)=C(CC1CCCCC1)C1=CC=C(C=C1)C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3aa']  remaining=[]

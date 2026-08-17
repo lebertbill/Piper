@@ -1,0 +1,151 @@
+Label Resolver Diagnostic Log — 2026-06-17 12:00:30
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3', '4', '5', '6'] → image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png
+  [GlobalRegistry] Skipping 'Figure 3D' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '4', '5', '6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph/GPT_5_MINI/processed/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph_artifacts/image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png
+  Exists   : True
+  [Tier 0 NameMap] '3' → name '[Ir(dF(Me)ppy)2dtbbpy]-PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] '4' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] '4' → best=pubchem_lookup (score=1) via name='[Ir(ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] '5' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] '6' llm_name_to_smiles: score=1  F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC
+  [Tier 0 NameMap] '6' → best=llm_name_to_smiles (score=1) via name='[Ir(dF(CF3)ppy)2(bpy(CF3)2)]PF6'
+  [Tier 0 NameMap] resolved=['4', '6']  remaining=['3', '5']
+  [OCSR] image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=C(S(N)(=O)=O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2']  smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '5']
+  [Tier 3] '3': bbox=3 atoms=58 smiles=*.*C1=CC=[N]2C(=C1)C1=CC(*)=CC=[N]1[Ir]21345([CH]=CC(F)=CC(F wildcard=True
+  [Tier 3] '5': bbox=3 atoms=58 smiles=*.*C1=CC=[N]2C(=C1)C1=CC(*)=CC=[N]1[Ir]21345([CH]=CC(F)=CC(F wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '5']
+    [Tier 4 LLM] '3' → r_value='R1 = t-Bu, R2 = Me, R3 = F'
+    [Tier 4 LLM] '5' → r_value='R1 = t-Bu, R2 = CF3, R3 = F'
+    [Tier 4] R-group candidates: ['3', '5']
+    [Tier 4 graph] '3' r=R1 = t-Bu, R2 = Me, R3 = F fallback (smi=*C1=CC=C(S(N)(=O)=O)C=C1)
+    [Tier 4 graph] '5' r=R1 = t-Bu, R2 = CF3, R3 = F fallback (smi=*C1=CC=C(S(N)(=O)=O)C=C1)
+    [Tier 4] '3' ✅ match: CC(C)(C)C1=CC=C(S(N)(=O)=O)C=C1
+    [Tier 4] '5' ✅ match: CC(C)(C)C1=CC=C(S(N)(=O)=O)C=C1
+  [Tier 4 R-group Sub] resolved=['3', '5']  remaining=[]
+  [InlineResolver] Column 'photocatalyst' labels ['5 (see structure 5)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)', 'TRIP-SH', '3 (see structure 3)', '6 (see structure 6)', '4 (see structure 4)'] from image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['5 (see structure 5)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)', 'TRIP-SH', '3 (see structure 3)', '6 (see structure 6)', '4 (see structure 4)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph/GPT_5_MINI/processed/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph_artifacts/image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png
+  Exists   : True
+  [Tier 0 NameMap] 'TRIP-SH' → pubchem_lookup via name='2,4,6-triisopropylbenzenethiol'
+  [Tier 0 NameMap] resolved=['TRIP-SH']  remaining=['5 (see structure 5)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)', '3 (see structure 3)', '6 (see structure 6)', '4 (see structure 4)']
+  [OCSR] image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=C(S(N)(=O)=O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2']  smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['5 (see structure 5)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)', '3 (see structure 3)', '6 (see structure 6)', '4 (see structure 4)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['5 (see structure 5)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)', '3 (see structure 3)', '6 (see structure 6)', '4 (see structure 4)']
+  [Tier 3] '3 (see structure 3)': bbox=3 atoms=58 smiles=*.*C1=CC=[N]2C(=C1)C1=CC(*)=CC=[N]1[Ir]21345([CH]=CC(F)=CC(F wildcard=True
+  [Tier 3] '4 (see structure 4)': bbox=3 atoms=58 smiles=*.*CC=C1(*)C234=C(*)C=215=[C]3[Ir]1236([CH]=CC(*)=CC(*)=C789 wildcard=True
+  [Tier 3] '5 (see structure 5)': bbox=3 atoms=58 smiles=*.*C1=CC=[N]2C(=C1)C1=CC(*)=CC=[N]1[Ir]21345([CH]=CC(F)=CC(F wildcard=True
+  [Tier 3] '6 (see structure 6)': bbox=3 atoms=58 smiles=*.*C1=CC=[N]2C(=C1)C1=CC(*)=CC=[N]1[Ir]21345([CH]=CC(F)=CC(F wildcard=True
+  [Tier 3] 'TRIP-SH (10 mol%)': bbox_idx=None out of range (n=6)
+  [Tier 3] 'photocatalyst (2 mol%)': bbox=3 atoms=58 smiles=*.[1*]C1=CC=[N]2C(=C1)C1=CC([1*])=CC=[N]1[Ir]21345([CH]=CC([ wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3 (see structure 3)', '4 (see structure 4)', '5 (see structure 5)', '6 (see structure 6)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)']
+    [Tier 4 LLM] '3 (see structure 3)' → r_value='R1 = t-Bu, R2 = Me, R3 = F'
+    [Tier 4 LLM] '4 (see structure 4)' → r_value='R1 = t-Bu, R2 = H, R3 = H'
+    [Tier 4 LLM] '5 (see structure 5)' → r_value='R1 = t-Bu, R2 = CF3, R3 = F'
+    [Tier 4 LLM] '6 (see structure 6)' → r_value='R1 = CF3, R2 = CF3, R3 = F'
+    [Tier 4] R-group candidates: ['3 (see structure 3)', '4 (see structure 4)', '5 (see structure 5)', '6 (see structure 6)']
+    [Tier 4 graph] '3 (see structure 3)' r=R1 = t-Bu, R2 = Me, R3 = F fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+    [Tier 4 graph] '4 (see structure 4)' r=R1 = t-Bu, R2 = H, R3 = H fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+    [Tier 4 graph] '5 (see structure 5)' r=R1 = t-Bu, R2 = CF3, R3 = F fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+    [Tier 4 graph] '6 (see structure 6)' r=R1 = CF3, R2 = CF3, R3 = F fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3 (see structure 3)', '4 (see structure 4)', '5 (see structure 5)', '6 (see structure 6)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)']
+    [Tier 5 PubChem] '3 (see structure 3)' → no hit (tried ['3 (see structure 3)', '3'])
+    [Tier 5 PubChem] '4 (see structure 4)' → no hit (tried ['4 (see structure 4)', '4'])
+    [Tier 5 PubChem] '5 (see structure 5)' → no hit (tried ['5 (see structure 5)', '5'])
+    [Tier 5 PubChem] '6 (see structure 6)' → no hit (tried ['6 (see structure 6)', '6'])
+    [Tier 5 PubChem] 'TRIP-SH (10 mol%)' → no hit (tried ['TRIP-SH (10 mol%)', 'TRIP-SH'])
+    [Tier 5 PubChem] 'photocatalyst (2 mol%)' → no hit (tried ['photocatalyst (2 mol%)', 'photocatalyst'])
+  [Tier 5 PubChem] resolved=[]  remaining=['3 (see structure 3)', '4 (see structure 4)', '5 (see structure 5)', '6 (see structure 6)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)']
+    [NameResolve Organomet] pubchem_lookup: score=1  CC1=CN=C(C=C1)C2=C(C=C(C=[C-]2)F)F.CC1=CN=C(C=C1)C2=C(C=C(C=[C-]2)F)F.
+    [Tier 6→pubchem_lookup] '3 (see structure 3)' name='[Ir(dF(Me)ppy)2(dtbbpy)]PF6' → CC1=CN=C(C=C1)C2=C(C=C(C=[C-]2)F)F.CC1=CN=C(C=C1)C
+    [NameResolve Organomet] pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+    [Tier 6→pubchem_lookup] '4 (see structure 4)' name='[Ir(ppy)2(dtbbpy)]PF6' → CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C
+    [NameResolve Organomet] llm_name_to_smiles: score=1  F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=C(C(F)(F)F)C=C2)C=C(C(F)(F)F)C=C1.[Ir+]
+    [Tier 6→llm_name_to_smiles] '6 (see structure 6)' name='[Ir(dF(CF3)ppy)2(dCF3bpy)]PF6' → F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=C(C(F)(F)F)C=C2)C=C
+    [Tier 6→pubchem_lookup] 'TRIP-SH (10 mol%)' name='2,4,6-triisopropylbenzenethiol' → CC(C)C1=CC(=C(C(=C1)C(C)C)S)C(C)C
+  [Tier 6 LLM Vision] resolved=['3 (see structure 3)', '4 (see structure 4)', '5 (see structure 5)', '6 (see structure 6)', 'TRIP-SH (10 mol%)', 'photocatalyst (2 mol%)']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '1-hexene', '1']
+  Image    : extracted_data/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '1-hexene', '1']
+  [OCSR] visualheist_page_03_table_1.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=C(S(N)(=O)=O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2']  smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '1-hexene', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '1-hexene', '1']
+  [Tier 3] '1': bbox=0 atoms=11 smiles=*C1=CC=C(S(N)(=O)=O)C=C1 wildcard=True
+  [Tier 3] '1-hexene': bbox=2 atoms=6 smiles=*CCCC=C wildcard=True
+  [Tier 3] '2': bbox=4 atoms=13 smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '1-hexene', '2']
+    [Tier 4 LLM] '1' → r_value='* = t-Bu'
+    [Tier 4 LLM] '2' → r_value='* (on ring) = t-Bu, * (on N) = H, * (on N) = n-Hex'
+    [Tier 4] R-group candidates: ['1', '2']
+    [Tier 4 graph] '1' r=* = t-Bu fallback (smi=*C1=CC=C(S(N)(=O)=O)C=C1)
+    [Tier 4] '1' ✅ match: CC(C)(C)C1=CC=C(S(N)(=O)=O)C=C1
+    [Tier 4 graph] '2' r=* (on ring) = t-Bu, * (on N) = H, * (on N) = n-Hex fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+    [Tier 4] '2' ✅ match: CC(C)(C)C1=CC=C(S(=O)(=O)NCCCCCC)C=C1
+  [Tier 4 R-group Sub] resolved=['1', '2']  remaining=['1-hexene']
+    [Tier 5 PubChem] '1-hexene' → hit via '1-hexene': CCCCC=C
+  [Tier 5 PubChem] resolved=['1-hexene']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '6', '4', '2', '5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph/GPT_5_MINI/processed/PhosphinePhotoredox_Catalyzed_Anti-Markovnikov_Hydroamination_of_Olefins_with_Primary_Sulfonamides_via_-Scission_from_Ph_artifacts/image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png
+  Exists   : True
+  [Tier 0 NameMap] '3' → name '[Ir(dF(Me)ppy)2dtbbpy]-PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] '6' llm_name_to_smiles: score=1  F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC
+  [Tier 0 NameMap] '6' → best=llm_name_to_smiles (score=1) via name='[Ir(dF(CF3)ppy)2(bpy(CF3)2)]PF6'
+  [Tier 0 NameMap Organomet] '4' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] '4' → best=pubchem_lookup (score=1) via name='[Ir(ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] '5' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['6', '4']  remaining=['3', '2', '5']
+  [OCSR] image_000002_14ba9c1fc38251fae1e41dde051c108d0c64cccaf780e4b879ce6297532be6cc.png: 6 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=C(S(N)(=O)=O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2']  smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '2', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '2', '5']
+  [Tier 3] '3': bbox=3 atoms=58 smiles=*.*CC=C1(*)C234=C(F)C=215=[C]3[Ir]1236([CH]=CC(F)=CC(F)=C789 wildcard=True
+  [Tier 3] '2': bbox=4 atoms=13 smiles=*C1=CC=C(S(=O)(=O)N(*)*)C=C1 wildcard=True
+  [Tier 3] '5': bbox=3 atoms=58 smiles=*.*CC=C1(*)C234=C(F)C=215=[C]3[Ir]1236([CH]=CC(F)=CC(F)=C789 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '2', '5']
+    [Tier 4 LLM] '2' → r_value='R1 = t-Bu, R2 = n-Hex, R3 = H'
+    [Tier 4 LLM] '3' → r_value='R1 = t-Bu, R2 = Me, R3 = F'
+    [Tier 4 LLM] '5' → r_value='R1 = t-Bu, R2 = CF3, R3 = F'
+    [Tier 4] R-group candidates: ['2', '3', '5']
+    [Tier 4 graph] '2' r=R1 = t-Bu, R2 = n-Hex, R3 = H fallback (smi=*C1=CC=C(S(=O)(=O)N(*)*)C=C1)
+    [Tier 4] '2' ✅ match: CC(C)(C)C1=CC=C(S(=O)(=O)NCCCCCC)C=C1
+    [Tier 4 graph] '3' r=R1 = t-Bu, R2 = Me, R3 = F fallback (smi=*C1=CC=C(S(N)(=O)=O)C=C1)
+    [Tier 4 graph] '5' r=R1 = t-Bu, R2 = CF3, R3 = F fallback (smi=*C1=CC=C(S(N)(=O)=O)C=C1)
+    [Tier 4] '3' ✅ match: CC(C)(C)C1=CC=C(S(N)(=O)=O)C=C1
+    [Tier 4] '5' ✅ match: CC(C)(C)C1=CC=C(S(N)(=O)=O)C=C1
+  [Tier 4 R-group Sub] resolved=['2', '3', '5']  remaining=[]

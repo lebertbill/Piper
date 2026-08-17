@@ -1,0 +1,75 @@
+Label Resolver Diagnostic Log — 2026-06-10 15:04:08
+================================================================================
+
+  [GlobalRegistry] labels=['I', 'II', 'III', 'IV', 'V'] → image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['I', 'II', 'III', 'IV', 'V']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes/GPT_5_MINI/processed/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes_artifacts/image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png
+  Exists   : True
+  [Tier 0 NameMap] 'I' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'II' pubchem_lookup: score=1  C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=CC=N2.C1=CC=C(C=C1)C2=CC=C
+  [Tier 0 NameMap Organomet] 'II' llm_name_to_smiles: score=37  C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C
+  [Tier 0 NameMap] 'II' → best=llm_name_to_smiles (score=37) via name='fac-Ir(ppy)3'
+  [Tier 0 NameMap Organomet] 'III' pubchem_lookup: score=1  C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=C
+  [Tier 0 NameMap Organomet] 'III' llm_name_to_smiles: score=49  c1ccc(nc1)-c2cccc[n+]2[Ru-2]34([n+]5ccccc5-c6cccc[n+]63)([n+]7ccccc7-c
+  [Tier 0 NameMap] 'III' → best=llm_name_to_smiles (score=49) via name='Ru(bpy)3(PF6)2'
+  [Tier 0 NameMap] 'IV' → pubchem_lookup via name='eosin Y'
+  [Tier 0 NameMap] 'V' → llm_name_to_smiles via name='Acr+-Mes'
+  [Tier 0 NameMap] resolved=['II', 'III', 'IV', 'V']  remaining=['I']
+  [OCSR] image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([CH3])([  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C1=CC=C(C(=O)O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=[]  smiles=c1cc[c]2[Ir]34([c]5ccccc5-c5cccc[n]->35)([c]3ccccc  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=C=Cc1ccccn1  wildcard=False
+  [OCSR]   pair [8,9]: texts=[]  smiles=c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c  wildcard=False
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=*C1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['IV']  smiles=O=C1OC2(c3ccccc31)c1cc(Br)c(O)c(Br)c1Oc1c2cc(Br)c(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['V']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['I']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['I']
+  [Tier 3] 'I': bbox=0 atoms=47 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([CH3])([N]2=C(C3=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['I']
+    [Tier 4 LLM] 'I' → r_value='R1 = CF3, R2 = tBu'
+    [Tier 4] R-group candidates: ['I']
+    [Tier 4 graph] 'I' r=R1 = CF3, R2 = tBu fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([CH3])([N]2=C(C3=C(F)C=C(F)C=C3)C=CC(*)=C2)[C]2=C(C(F)=CC(F)=C2)C2=CC=C(*)C=[N]21.P)
+    [Tier 4] 'I' 🔄 corrected: CC(C)(C)C1=CC=NC(=C1)C1=NC=CC(=C1)C(C)(C)C.FC(F)(F
+  [Tier 4 R-group Sub] resolved=['I']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes/GPT_5_MINI/processed/A_general_deoxygenation_approach_for_synthesis_of_ketones_from_aromatic_carboxylic_acids_and_alkenes_artifacts/image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '1a']
+  [OCSR] image_000002_c6223374d709c668682f9c63a85d9481e56f934923d8c4859eb927a77ffd5431.png: 16 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]21([CH3])([  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ia']  smiles=*C1=CC=C(C(=O)O)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=[]  smiles=c1cc[c]2[Ir]34([c]5ccccc5-c5cccc[n]->35)([c]3ccccc  wildcard=False
+  [OCSR]   pair [6,7]: texts=['2a']  smiles=C=Cc1ccccn1  wildcard=False
+  [OCSR]   pair [8,9]: texts=[]  smiles=c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c  wildcard=False
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=*C1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['IV']  smiles=O=C1OC2(c3ccccc31)c1cc(Br)c(O)c(Br)c1Oc1c2cc(Br)c(  wildcard=False
+  [OCSR]   pair [14,15]: texts=['V']  smiles=*C1=CC(*)=C(C2=C3C=CC=CC3=[N+](*)C3=CC=CC=C32)C(*)  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a']
+  [Tier 3] '3a': bbox=10 atoms=17 smiles=*C1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1 wildcard=True
+  [Tier 3] '1a': bbox=2 atoms=10 smiles=*C1=CC=C(C(=O)O)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '1a']
+    [Tier 4 LLM] '1a' → r_value='* = Me'
+    [Tier 4 LLM] '3a' → r_value='* = Me'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=* = Me fallback (smi=*C1=CC=C(C(=O)O)C=C1)
+    [Tier 4] '1a' ✅ match: CC1=CC=C(C(=O)O)C=C1
+    [Tier 4 graph] '3a' r=* = Me fallback (smi=*C1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1)
+    [Tier 4] '3a' ✅ match: CC1=CC=C(C(=O)CCC2=CC=CC=N2)C=C1
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=[]

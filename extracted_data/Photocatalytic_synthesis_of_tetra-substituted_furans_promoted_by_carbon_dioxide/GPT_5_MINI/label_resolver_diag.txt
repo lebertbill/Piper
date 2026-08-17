@@ -1,0 +1,35 @@
+Label Resolver Diagnostic Log — 2026-06-17 14:52:11
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1c', '1b', '1a']
+  Image    : extracted_data/Photocatalytic_synthesis_of_tetra-substituted_furans_promoted_by_carbon_dioxide/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1-phenyl-1,3-butanedione'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['1c', '1b']
+  [OCSR] visualheist_page_02_table_2.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['0.1 mmol', '13,']  smiles=*C(=O)CC(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1b']  smiles=*C(=O)C1=C(*)OC(C2=CC=CC=C2)=C1C(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['1c']  smiles=*C1=C(C(=O)C2=CC=CC=C2)C(C(=O)C2=CC=CC=C2)=C(*)O1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1c', '1b']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1c', '1b']
+  [Tier 3] '1b': bbox=2 atoms=23 smiles=*C(=O)C1=C(*)OC(C2=CC=CC=C2)=C1C(=O)C1=CC=CC=C1 wildcard=True
+  [Tier 3] '1c': bbox=4 atoms=23 smiles=*C1=C(C(=O)C2=CC=CC=C2)C(C(=O)C2=CC=CC=C2)=C(*)O1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1b', '1c']
+    [Tier 4 LLM] '1b' → r_value='* = Me'
+    [Tier 4 LLM] '1c' → r_value='* = Me'
+    [Tier 4] R-group candidates: ['1b', '1c']
+    [Tier 4 graph] '1b' r=* = Me fallback (smi=*C(=O)C1=C(*)OC(C2=CC=CC=C2)=C1C(=O)C1=CC=CC=C1)
+    [Tier 4] '1b' ✅ match: CC(=O)C1=C(C)OC(C2=CC=CC=C2)=C1C(=O)C1=CC=CC=C1
+    [Tier 4 graph] '1c' r=* = Me fallback (smi=*C1=C(C(=O)C2=CC=CC=C2)C(C(=O)C2=CC=CC=C2)=C(*)O1)
+    [Tier 4] '1c' ✅ match: CC1=C(C(=O)C2=CC=CC=C2)C(C(=O)C2=CC=CC=C2)=C(C)O1
+  [Tier 4 R-group Sub] resolved=['1b', '1c']  remaining=[]

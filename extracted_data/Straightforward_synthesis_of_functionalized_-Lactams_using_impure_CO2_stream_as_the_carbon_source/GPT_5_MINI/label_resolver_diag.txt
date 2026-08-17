@@ -1,0 +1,29 @@
+Label Resolver Diagnostic Log — 2026-06-18 10:44:57
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Straightforward_synthesis_of_functionalized_-Lactams_using_impure_CO2_stream_as_the_carbon_source/GPT_5_MINI/processed/Straightforward_synthesis_of_functionalized_-Lactams_using_impure_CO2_stream_as_the_carbon_source_artifacts/image_000005_d2a475241ed7a4d9263c19a49c1a97dc1125de7c872cdfd27c840cae8485d7e2.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='N-ethyl aniline'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['3a']
+  [OCSR] image_000005_d2a475241ed7a4d9263c19a49c1a97dc1125de7c872cdfd27c840cae8485d7e2.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.C.  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=C=C(c1ccccc1)c1ccccc1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C1(*)CC(C)N(C2=CC=CC=C2)C1=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=4 atoms=15 smiles=*C1(*)CC(C)N(C2=CC=CC=C2)C1=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a']
+    [Tier 4 LLM] '3a' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4 graph] '3a' r=* = Ph fallback (smi=*C1(*)CC(C)N(C2=CC=CC=C2)C1=O)
+    [Tier 4] '3a' ✅ match: CC1CC(C2=CC=CC=C2)(C3=CC=CC=C3)C(=O)N1C4=CC=CC=C4
+  [Tier 4 R-group Sub] resolved=['3a']  remaining=[]

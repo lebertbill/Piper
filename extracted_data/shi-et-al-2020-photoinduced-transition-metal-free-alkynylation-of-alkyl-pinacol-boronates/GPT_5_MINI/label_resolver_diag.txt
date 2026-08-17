@@ -1,0 +1,40 @@
+Label Resolver Diagnostic Log — 2026-08-15 22:07:10
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 6' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3aj', '2a', '1j']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/shi-et-al-2020-photoinduced-transition-metal-free-alkynylation-of-alkyl-pinacol-boronates/GPT_5_MINI/processed/shi-et-al-2020-photoinduced-transition-metal-free-alkynylation-of-alkyl-pinacol-boronates_artifacts/image_000010_dee5bb4b795dbacbc922a33e63022444ee29e85055fed352f5ad9ff8bbc1252e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3aj', '2a', '1j']
+  [OCSR] image_000010_dee5bb4b795dbacbc922a33e63022444ee29e85055fed352f5ad9ff8bbc1252e.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1j']  smiles=*C1CCCCC1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C#C*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3aj']  smiles=*C#CC1CCCCC1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3aj', '2a', '1j']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3aj', '2a', '1j']
+  [Tier 3] '3aj': bbox=4 atoms=9 smiles=CC#CC1C*CCC1 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=4 smiles=*C#C* wildcard=True
+  [Tier 3] '1j': bbox=0 atoms=7 smiles=CC1C*CCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3aj', '2a', '1j']
+    [Tier 4 LLM] '1j' → r_value='* = Bpin'
+    [Tier 4 LLM] '2a' → r_value='* = PhO2S, * = Ph'
+    [Tier 4 LLM] '3aj' → r_value='* = Ph'
+    [Tier 4] R-group candidates: ['1j', '2a', '3aj']
+    [Tier 4 graph] '1j' r=* = Bpin fallback (smi=*C1CCCCC1)
+    [Tier 4] '1j' ✅ match: CC1(C)OB(C2CCCCC2)OC1(C)C
+    [Tier 4 graph] '2a' r=* = PhO2S, * = Ph fallback (smi=*C#C*)
+    [Tier 4] '2a' ✅ match: c1ccc(cc1)S(=O)(=O)C#Cc2ccccc2
+    [Tier 4 graph] '3aj' r=* = Ph fallback (smi=*C#CC1CCCCC1)
+    [Tier 4] '3aj' ✅ match: c1ccc(cc1)C#CC2CCCCC2
+  [Tier 4 R-group Sub] resolved=['1j', '2a', '3aj']  remaining=[]

@@ -1,0 +1,95 @@
+Label Resolver Diagnostic Log — 2026-06-16 19:08:50
+================================================================================
+
+  [GlobalRegistry] labels=['1a', '2a', '3a', '4', '5', '6'] → image_000003_64c63d505ad11051e0ef8b46aa7b089dec13d56621c1fbcaa607bf854b264fdd.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 8' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3a', '4', '5', '6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NiPhotoredox-Catalyzed_Csp_sup3sup_Csp_sup3sup__Coupling_between_Aziridines_and_Acetals_as_Alcohol-Derived_Alkyl_Radical/GPT_5_MINI/processed/NiPhotoredox-Catalyzed_Csp_sup3sup_Csp_sup3sup__Coupling_between_Aziridines_and_Acetals_as_Alcohol-Derived_Alkyl_Radical_artifacts/image_000003_64c63d505ad11051e0ef8b46aa7b089dec13d56621c1fbcaa607bf854b264fdd.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a', '3a', '4', '5', '6']
+  [OCSR] image_000003_64c63d505ad11051e0ef8b46aa7b089dec13d56621c1fbcaa607bf854b264fdd.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1CN1*  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*OC(*)*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*CC(*)*  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a', '3a', '4', '5', '6']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a', '3a', '4', '5', '6']
+  [Tier 3] '1a': bbox=0 atoms=5 smiles=*C1CN1* wildcard=True
+  [Tier 3] '2a': bbox=3 atoms=5 smiles=*OC(*)* wildcard=True
+  [Tier 3] '3a': bbox=7 atoms=5 smiles=*CC(*)* wildcard=True
+  [Tier 3] '4': bbox=2 atoms=8 smiles=*CC(*)C(*)C* wildcard=True
+  [Tier 3] '5': bbox=5 atoms=1 smiles=* wildcard=True
+  [Tier 3] '6': bbox=6 atoms=8 smiles=*CC(*)C(*)(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a', '3a', '4', '5', '6']
+    [Tier 4 LLM] '1a' → r_value='Ar = p-F-Ph'
+    [Tier 4 LLM] '2a' → r_value='Me'
+    [Tier 4 LLM] '3a' → r_value='Ar = p-F-Ph, Me'
+    [Tier 4] R-group candidates: ['1a', '2a', '3a']
+    [Tier 4 graph] '1a' r=Ar = p-F-Ph fallback (smi=*C1CN1*)
+    [Tier 4] '1a' ✅ match: Cc1ccc(cc1)S(=O)(=O)N2CC2c3ccc(F)cc3
+    [Tier 4 graph] '2a' r=Me fallback (smi=*OC(*)*)
+    [Tier 4] '2a' 🔄 corrected: CON(C)C(=O)c1ccccc1
+    [Tier 4 graph] '3a' r=Ar = p-F-Ph, Me fallback (smi=*CC(*)*)
+    [Tier 4] '3a' 🔄 corrected: CC(C1=CC=C(F)C=C1)CNS(=O)(=O)C2=CC=C(C)C=C2
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3a']  remaining=['4', '5', '6']
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '6' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4', '5', '6']
+    [Tier 6→pubchem_lookup] '5' name='sulfonamide' → C1=CC(=CC=C1N)S(=O)(=O)N
+  [Tier 6 LLM Vision] resolved=['4', '5', '6']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '6', '4', '2a', '1a', '5']
+  Image    : extracted_data/NiPhotoredox-Catalyzed_Csp_sup3sup_Csp_sup3sup__Coupling_between_Aziridines_and_Acetals_as_Alcohol-Derived_Alkyl_Radical/GPT_5_MINI/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '6', '4', '2a', '1a', '5']
+  [OCSR] visualheist_page_02_table_1.png: 11 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=*CC(*)C(*)C*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*OC(*)*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['6']  smiles=*CC(*)C(*)(*)*  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*CC(*)*  wildcard=True
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '6', '4', '2a', '1a', '5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '6', '4', '2a', '1a', '5']
+  [Tier 3] '3': bbox=9 atoms=5 smiles=*CC(*)* wildcard=True
+  [Tier 3] '6': bbox=7 atoms=8 smiles=*CC(*)C(*)(*)* wildcard=True
+  [Tier 3] '4': bbox=2 atoms=8 smiles=*CC(*)C(*)C* wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=5 smiles=*OC(*)* wildcard=True
+  [Tier 3] '1a': bbox=0 atoms=5 smiles=*C1CN1* wildcard=True
+  [Tier 3] '5': bbox=6 atoms=1 smiles=* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '6', '4', '2a', '1a', '5']
+    [Tier 4 LLM] '1a' → r_value='Ar = p-F-Ph'
+    [Tier 4 LLM] '2a' → r_value='Ph-CH(OMe)-OMe'
+    [Tier 4 LLM] '4' → r_value='homocoupling'
+    [Tier 4 LLM] '5' → r_value='sulfonamide'
+    [Tier 4 LLM] '6' → r_value='2°-3° coupling'
+    [Tier 4] R-group candidates: ['1a', '2a', '4', '5', '6']
+    [Tier 4 graph] '1a' r=Ar = p-F-Ph fallback (smi=*C1CN1*)
+    [Tier 4] '1a' ✅ match: FC1=CC=C(C2CN2S(=O)(=O)C3=CC=C(C)C=C3)C=C1
+    [Tier 4 graph] '2a' r=Ph-CH(OMe)-OMe fallback (smi=*OC(*)*)
+    [Tier 4] '2a' 🔄 corrected: CO[CH](OC)c1ccccc1
+    [Tier 4 graph] '4' r=homocoupling fallback (smi=*CC(*)C(*)C*)
+    [Tier 4] '4' RDKit render failed: CC1=CC=C(C=C1)S(=O)(=O)NCC(C2=CC=CC=C2)C
+    [Tier 4 graph] '5' r=sulfonamide fallback (smi=*CC(*)*)
+    [Tier 4 graph] '6' r=2°-3° coupling fallback (smi=*CC(*)C(*)(*)*)
+    [Tier 4] '6' ✅ match: Cc1ccc(S(=O)(=O)NCC(c2ccccc2)C(c3ccccc3)(OC)OC)cc1
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '6']  remaining=['4', '5', '3']
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4', '5', '3']
+    [Tier 6→pubchem_lookup] '5' name='sulfonamide' → C1=CC(=CC=C1N)S(=O)(=O)N
+  [Tier 6 LLM Vision] resolved=['4', '5', '3']

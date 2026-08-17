@@ -1,0 +1,135 @@
+Label Resolver Diagnostic Log — 2026-08-15 16:57:28
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5'] → image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping '2a' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01007-v2/GPT_5_MINI/processed/catalysts-13-01007-v2_artifacts/image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  [OCSR] image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  [Tier 3] 'aldehyde-1': bbox_idx=None out of range (n=8)
+  [Tier 3] 'aldehyde-2': bbox_idx=None out of range (n=8)
+  [Tier 3] 'aldehyde-3': bbox_idx=None out of range (n=8)
+  [Tier 3] 'aldehyde-4': bbox_idx=None out of range (n=8)
+  [Tier 3] 'aldehyde-5': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+    [Tier 5 PubChem] 'aldehyde-1' → no hit (tried ['aldehyde-1'])
+    [Tier 5 PubChem] 'aldehyde-2' → no hit (tried ['aldehyde-2'])
+    [Tier 5 PubChem] 'aldehyde-3' → no hit (tried ['aldehyde-3'])
+    [Tier 5 PubChem] 'aldehyde-4' → no hit (tried ['aldehyde-4'])
+    [Tier 5 PubChem] 'aldehyde-5' → no hit (tried ['aldehyde-5'])
+  [Tier 5 PubChem] resolved=[]  remaining=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+    [Tier 6→pubchem_lookup] 'aldehyde-1' name='Decanal' → CCCCCCCCCC=O
+  [Tier 6 LLM Vision] resolved=['aldehyde-1', 'aldehyde-2', 'aldehyde-3', 'aldehyde-4', 'aldehyde-5']
+  [InlineResolver] Column 'PC' labels ['Decanal'] from image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['Decanal']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01007-v2/GPT_5_MINI/processed/catalysts-13-01007-v2_artifacts/image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Decanal']
+  [OCSR] image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Decanal']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Decanal']
+  [Tier 3] 'Decanal': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Decanal']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Decanal']
+    [Tier 5 PubChem] 'Decanal' → hit via 'Decanal': CCCCCCCCCC=O
+  [Tier 5 PubChem] resolved=['Decanal']  remaining=[]
+  [InlineResolver] Column 'Additive' labels ['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1'] from image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01007-v2/GPT_5_MINI/processed/catalysts-13-01007-v2_artifacts/image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+  [OCSR] image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+  [Tier 3] 'Aldehyde-3': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Aldehyde-2': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Decanal': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Aldehyde-4': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Aldehyde-5': bbox_idx=None out of range (n=8)
+  [Tier 3] 'Aldehyde-1': bbox_idx=None out of range (n=8)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Aldehyde-3', 'Aldehyde-2', 'Decanal', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+    [Tier 5 PubChem] 'Aldehyde-3' → no hit (tried ['Aldehyde-3'])
+    [Tier 5 PubChem] 'Aldehyde-2' → no hit (tried ['Aldehyde-2'])
+    [Tier 5 PubChem] 'Decanal' → hit via 'Decanal': CCCCCCCCCC=O
+    [Tier 5 PubChem] 'Aldehyde-4' → no hit (tried ['Aldehyde-4'])
+    [Tier 5 PubChem] 'Aldehyde-5' → no hit (tried ['Aldehyde-5'])
+    [Tier 5 PubChem] 'Aldehyde-1' → no hit (tried ['Aldehyde-1'])
+  [Tier 5 PubChem] resolved=['Decanal']  remaining=['Aldehyde-3', 'Aldehyde-2', 'Aldehyde-4', 'Aldehyde-5', 'Aldehyde-1']
+    [Tier 6→pubchem_lookup] 'Aldehyde-1' name='Decanal' → CCCCCCCCCC=O
+  [Tier 6 LLM Vision] resolved=['Aldehyde-1', 'Aldehyde-2', 'Aldehyde-3', 'Aldehyde-4', 'Aldehyde-5']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01007-v2/GPT_5_MINI/processed/catalysts-13-01007-v2_artifacts/image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='trimethylindolin-2-one'
+  [Tier 0 NameMap] resolved=['2a']  remaining=['3a', '1a']
+  [OCSR] image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a']
+  [Tier 3] '3a': bbox=4 atoms=16 smiles=*C*.[2*]N1C(=O)C(C)(C)c2ccccc21 wildcard=True
+  [Tier 3] '1a': bbox=1 atoms=16 smiles=*C*.[2*]N(C(=O)C(=C)C)c1ccccc1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '1a']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3a', '1a']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '1a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3a', '1a']
+    [Tier 6→pubchem_lookup] '1a' name='N-methyl-N-phenylmethacrylamide' → CC(=C)C(=O)N(C)C1=CC=CC=C1
+    [Tier 6→pubchem_lookup] '3a' name='1,3,3-trimethylindolin-2-one' → CC1(C2=CC=CC=C2N(C1=O)C)C
+  [Tier 6 LLM Vision] resolved=['1a', '3a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3', '5', '2', '4', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01007-v2/GPT_5_MINI/processed/catalysts-13-01007-v2_artifacts/image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3', '5', '2', '4', '1']
+  [OCSR] image_000007_25efc68b872a3573458e3beb314a85e57d37f3b55fe1b3b3f8a951d046f48366.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '5', '2', '4', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '5', '2', '4', '1']
+  [Tier 3] '1': bbox=2 atoms=19 smiles=*C*.C=CCCCn1cnc2ccccc2c1=O wildcard=True
+  [Tier 3] '2': bbox=5 atoms=19 smiles=*C*.CC1CCCn2c1nc1ccccc1c2=O wildcard=True
+  [Tier 3] '3': bbox=3 atoms=16 smiles=[1*]C.[2*]/C(=C\[3*])C(=O)N(C)c1ccccc1 wildcard=True
+  [Tier 3] '4': bbox=0 atoms=17 smiles=[1*]C[1*].[2*]C1(C[3*])C(=O)N(C)c2ccccc21 wildcard=True
+  [Tier 3] '5': bbox=7 atoms=16 smiles=[1*]C.[2*]C1C(=O)N(C)c2ccccc2C1[3*] wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', '3', '4', '5']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2', '3', '4', '5']
+    [Tier 5 PubChem] '1' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '5' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2', '3', '4', '5']
+  [Tier 6 LLM Vision] resolved=['1', '2', '3', '4', '5']

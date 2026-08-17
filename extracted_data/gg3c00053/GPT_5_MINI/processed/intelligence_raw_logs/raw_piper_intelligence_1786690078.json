@@ -1,0 +1,1218 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 75,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Isolated yield for entry 1: 71% (isolated)."
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "27% (Li oxamate), 33% (Na oxamate), 52% (K oxamate)"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Row reports three different counterions (Li, Na, K oxamates) giving 27%, 33%, and 52% respectively (NMR)."
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "L2 (bipyridine derivative; R = OMe)",
+          "smiles": "COc1cc(nc1)-c2cc(nc2)",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 62,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: NiBr2 with ligand L2 (R = OMe) instead of dtbbpy."
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "L3 (bipyridine derivative; R = H)",
+          "smiles": "c1ccncc1-c2ccncc2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 40,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: NiBr2 with ligand L3 (R = H) instead of dtbbpy."
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "L4 (naphthyridine-like ligand)",
+          "smiles": "c1cnc2c(c1)ccc1cccnc12",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 36,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: NiBr2 with ligand L4 instead of dtbbpy."
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir-I (alternate Ir photocatalyst)",
+          "smiles": "Ir-complex-I",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 46,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: photocatalyst replaced by Ir-I."
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ir-II (alternate Ir photocatalyst)",
+          "smiles": "Ir-complex-II",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 38,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: photocatalyst replaced by Ir-II."
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "N,N-Dimethylformamide (DMF)",
+          "smiles": "CNC(=O)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 67,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: solvent changed to DMF (0.1 M)."
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethyl sulfoxide (DMSO)",
+          "smiles": "CS(=O)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 47,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: solvent changed to DMSO (0.1 M)."
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: reaction performed in the absence of photocatalyst (photocatalyst omitted) — photocatalyst removed from conditions, yield = 0%."
+      ]
+    },
+    {
+      "reaction_id": "11",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2·dtbbpy",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "ligand",
+          "text": "dtbbpy (4,4'-di-tert-butyl-2,2'-bipyridine)",
+          "smiles": "CC(C)(C)c1cc(nc1)-c2cc(nc2)C(C)(C)C",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: reaction performed in the absence of light (light removed). Photocatalyst may be present but without irradiation; yield = 0%."
+      ]
+    },
+    {
+      "reaction_id": "12",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "metal_salt",
+          "text": "NiBr2",
+          "smiles": "[Ni]Br2",
+          "quantity": 10,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 12,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: reaction performed in the absence of ligand (ligand removed). Ni present as NiBr2 without dtbbpy; yield = 12%."
+      ]
+    },
+    {
+      "reaction_id": "13",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2",
+          "quantity": 0.15,
+          "unit": "mmol",
+          "smiles_llm": "O=C(C(=O)OCCc1ccccc1)Nc2ccccc2"
+        },
+        {
+          "label": "2a",
+          "smiles": "COC(=O)c1ccc(Br)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COC(=O)c1ccc(Br)cc1",
+          "smiles_ocsr": "COC(=O)c1ccc(Br)cc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(C#N)cc(c1)N2c3ccccc3c4ccccc4c2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylacetamide (DMA)",
+          "smiles": "CC(=O)N(C)C",
+          "quantity": 0.1,
+          "unit": "M"
+        },
+        {
+          "role": "light",
+          "text": "Kessil blue LED (Kessil light, 456 nm)",
+          "quantity": 456,
+          "unit": "nm"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "quantity": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "40-45 °C"
+        },
+        {
+          "role": "scale",
+          "text": "1a",
+          "quantity": 0.15,
+          "unit": "mmol"
+        },
+        {
+          "role": "scale",
+          "text": "2a",
+          "quantity": 0.1,
+          "unit": "mmol"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3a",
+          "smiles": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1",
+          "smiles_llm": "COC(=O)c1ccc(C(=O)Nc2ccccc2)cc1"
+        }
+      ],
+      "additional_info": [
+        "NMR yields using benzyl benzoate as an internal standard.",
+        "Deviation from optimized conditions: reaction performed in the absence of nickel (NiBr2/dtbbpy removed). Yield = 0%."
+      ]
+    }
+  ]
+}

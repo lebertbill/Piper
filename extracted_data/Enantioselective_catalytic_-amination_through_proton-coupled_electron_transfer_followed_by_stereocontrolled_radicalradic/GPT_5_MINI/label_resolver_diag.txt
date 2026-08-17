@@ -1,0 +1,217 @@
+Label Resolver Diagnostic Log — 2026-06-16 10:42:32
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['D-RhO', 'D-RhS', 'D-IrO', 'PC1', 'PC2', 'PC3', 'B1', 'B2', 'B3'] → image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 6' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['D-RhO', 'D-RhS', 'D-IrO', 'PC1', 'PC2', 'PC3', 'B1', 'B2', 'B3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] 'D-RhO' → name 'chiral-at-rhodium Lewis acid catalyst (X = O)' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'D-RhS' → name 'chiral-at-rhodium Lewis acid catalyst (X = S)' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'D-IrO' → name 'chiral-at-iridium Lewis acid catalyst (X = O)' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap Organomet] 'PC1' llm_name_to_smiles: score=1  F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC
+  [Tier 0 NameMap] 'PC1' → best=llm_name_to_smiles (score=1) via name='[Ir(dF(CF3)ppy)2(bpy)]PF6'
+  [Tier 0 NameMap] 'PC2' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'PC3' llm_name_to_smiles: score=1  c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F
+  [Tier 0 NameMap] 'PC3' → best=llm_name_to_smiles (score=1) via name='[Ru(bpy)3](PF6)2'
+  [Tier 0 NameMap] 'B1' → opsin_lookup via name='tetrabutylammonium 1,1'-binaphthyl-2,2'-diyl phosphate'
+  [Tier 0 NameMap] 'B2' → pubchem_lookup via name='tetrabutylammonium diphenyl phosphate'
+  [Tier 0 NameMap] 'B3' → pubchem_lookup via name='tetrabutylammonium dibutyl phosphate'
+  [Tier 0 NameMap] resolved=['PC1', 'PC3', 'B1', 'B2', 'B3']  remaining=['D-RhO', 'D-RhS', 'D-IrO', 'PC2']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['D-RhO', 'D-RhS', 'D-IrO', 'PC2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['D-RhO', 'D-RhS', 'D-IrO', 'PC2']
+  [Tier 3] 'D-RhO': bbox=4 atoms=46 smiles=*.*C=[N][Rh]123([C]4=CC=CC=C4C(O)=[N]1C1=C(O)C=CC(*)=C1)[C]1 wildcard=True
+  [Tier 3] 'D-RhS': bbox=4 atoms=46 smiles=*.*C=[N][Rh]123([C]4=CC=CC=C4C(S)=[N]1C1=C(S)C=CC(*)=C1)[C]1 wildcard=True
+  [Tier 3] 'D-IrO': bbox=4 atoms=46 smiles=*.*C=[N][Ir]123([C]4=CC=CC=C4C(O)=[N]1C1=C(O)C=CC(*)=C1)[C]1 wildcard=True
+  [Tier 3] 'PC2': bbox=7 atoms=49 smiles=**.*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['D-RhO', 'D-RhS', 'D-IrO', 'PC2']
+    [Tier 4 LLM] 'D-RhO' → r_value='M = Rh, X = O'
+    [Tier 4 LLM] 'D-RhS' → r_value='M = Rh, X = S'
+    [Tier 4 LLM] 'D-IrO' → r_value='M = Ir, X = O'
+    [Tier 4 LLM] 'PC2' → r_value='R1 = H, R2 = tBu'
+    [Tier 4] R-group candidates: ['D-RhO', 'D-RhS', 'D-IrO', 'PC2']
+    [Tier 4] bbox missing for group ['D-RhO', 'D-RhS', 'D-IrO', 'PC2'] — using full image
+    [Tier 4] 'D-RhO' 🔄 corrected: CC#N.CC#N.CC(C)(C)C1=CC=C2N=C(C3=CC=CC=C3[Rh]23([N
+    [Tier 4] 'D-RhS' 🔄 corrected: CC(C)(C)C1=CC2=C(S1)N([Rh]34([C]5=CC=CC=C5C6=N3C=C
+    [Tier 4] 'D-IrO' 🔄 corrected: CC(C)(C)C1=CC2=C(C=C1)N(C(=O)C1=CC=CC=C1)[Ir+]1(N2
+    [Tier 4] 'PC2' RDKit render failed: FC1=CC(F)=C2C(=C1)C1=[N](C=C(C(C)(C)C)C=
+  [Tier 4 R-group Sub] resolved=['D-RhO', 'D-RhS', 'D-IrO']  remaining=['PC2']
+    [Tier 5 PubChem] 'PC2' → name_map name: '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC2' → no hit (tried ['[Ir(dF(CF3)ppy)2(dtbbpy)]PF6', '[Ir(dF(CF3)ppy)2(dtbbpy))PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['PC2']
+    [Tier 6] 'PC2' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['PC2']
+  [InlineResolver] Column 'Catalyst' labels ['None', '4 Å molecular sieves'] from image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['None', '4 Å molecular sieves']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 3] 'None': bbox_idx=None out of range (n=17)
+  [Tier 3] '4 Å molecular sieves': bbox_idx=None out of range (n=17)
+  [Tier 3 BBox Match] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['None', '4 Å molecular sieves']
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+    [Tier 5 PubChem] '4 Å molecular sieves' → no hit (tried ['4 Å molecular sieves'])
+  [Tier 5 PubChem] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 6 LLM Vision] resolved=['None', '4 Å molecular sieves']
+  [InlineResolver] Column 'Base' labels ['None', '4 Å molecular sieves'] from image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['None', '4 Å molecular sieves']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 3] 'None': bbox_idx=None out of range (n=17)
+  [Tier 3] '4 Å molecular sieves': bbox_idx=None out of range (n=17)
+  [Tier 3 BBox Match] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['None', '4 Å molecular sieves']
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+    [Tier 5 PubChem] '4 Å molecular sieves' → no hit (tried ['4 Å molecular sieves'])
+  [Tier 5 PubChem] resolved=[]  remaining=['None', '4 Å molecular sieves']
+  [Tier 6 LLM Vision] resolved=['None', '4 Å molecular sieves']
+  [InlineResolver] Column 'PC' labels ['4 Å molecular sieves'] from image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['4 Å molecular sieves']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['4 Å molecular sieves']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 3] '4 Å molecular sieves': bbox_idx=None out of range (n=17)
+  [Tier 3 BBox Match] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['4 Å molecular sieves']
+    [Tier 5 PubChem] '4 Å molecular sieves' → no hit (tried ['4 Å molecular sieves'])
+  [Tier 5 PubChem] resolved=[]  remaining=['4 Å molecular sieves']
+  [Tier 6 LLM Vision] resolved=['4 Å molecular sieves']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3a', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '3a', '2a']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '3a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '3a', '2a']
+  [Tier 3] '1a': bbox=0 atoms=11 smiles=*C=CC(=O)C1=NC=CN1* wildcard=True
+  [Tier 3] '3a': bbox=15 atoms=17 smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC wildcard=True
+  [Tier 3] '2a': bbox=5 atoms=6 smiles=*NC(=O)OC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '3a', '2a']
+    [Tier 4 LLM] '1a' → r_value='Ph'
+    [Tier 4 LLM] '2a' → r_value='Ph'
+    [Tier 4 LLM] '3a' → r_value='Ph'
+    [Tier 4] R-group candidates: ['1a', '2a', '3a']
+    [Tier 4 graph] '1a' r=Ph fallback (smi=*C=CC(=O)C1=NC=CN1*)
+    [Tier 4] '1a' ✅ match: C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3
+    [Tier 4 graph] '2a' r=Ph fallback (smi=*NC(=O)OC)
+    [Tier 4] '2a' ✅ match: c1ccc(cc1)NC(=O)OC
+    [Tier 4 graph] '3a' r=Ph fallback (smi=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC)
+    [Tier 4] '3a' 🔄 corrected: c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C
+  [Tier 4 R-group Sub] resolved=['1a', '2a', '3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 (Parent figure for Table 1 Gallery). Please locate the specific section for Table 1 Gallery.
+────────────────────────────────────────────────────────────
+  Labels   : ['B3', 'PC3', 'B2', 'B1', 'PC1', 'PC2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png
+  Exists   : True
+  [Tier 0 NameMap] 'B3' → pubchem_lookup via name='tetrabutylammonium dibutyl phosphate'
+  [Tier 0 NameMap Organomet] 'PC3' llm_name_to_smiles: score=1  c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F
+  [Tier 0 NameMap] 'PC3' → best=llm_name_to_smiles (score=1) via name='[Ru(bpy)3](PF6)2'
+  [Tier 0 NameMap] 'B2' → pubchem_lookup via name='tetrabutylammonium diphenyl phosphate'
+  [Tier 0 NameMap] 'B1' → opsin_lookup via name='tetrabutylammonium 1,1'-binaphthyl-2,2'-diyl phosphate'
+  [Tier 0 NameMap Organomet] 'PC1' llm_name_to_smiles: score=1  F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC
+  [Tier 0 NameMap] 'PC1' → best=llm_name_to_smiles (score=1) via name='[Ir(dF(CF3)ppy)2(bpy)]PF6'
+  [Tier 0 NameMap] 'PC2' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['B3', 'PC3', 'B2', 'B1', 'PC1']  remaining=['PC2']
+  [OCSR] image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png: 17 bboxes, 8 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C=CC(=O)C1=NC=CN1*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['B1']  smiles=[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(O  wildcard=False
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*NC(=O)OC  wildcard=True
+  [OCSR]   pair [7,8]: texts=['PC1', '=', 'R2', '=', 'H)', 'PC2', '=', 'A,', 'tBu)', '(RI', 'CF3,', 'R? =', '(R1']  smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F  wildcard=True
+  [OCSR]   pair [9,10]: texts=['B2']  smiles=*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1  wildcard=True
+  [OCSR]   pair [11,12]: texts=['B3']  smiles=*OP(=O)([O-])O*  wildcard=True
+  [OCSR]   pair [13,14]: texts=['PC3']  smiles=[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-  wildcard=False
+  [OCSR]   pair [15,16]: texts=['(S)-3a']  smiles=*C(CC(=O)C1=NC=CN1*)N(*)C(=O)OC  wildcard=True
+  [OCSR] → 8 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['PC2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PC2']
+  [Tier 3] 'PC2': bbox=7 atoms=49 smiles=*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N] wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC2']
+    [Tier 4 LLM] 'PC2' → r_value='R1 = H, R2 = tBu'
+    [Tier 4] R-group candidates: ['PC2']
+    [Tier 4] bbox missing for group ['PC2'] — using full image
+    [Tier 4] 'PC2' 🔄 corrected: CC(C)(C)c1cc(C(C)(C)C)nc(-c2cc(C(C)(C)C)cc(C(C)(C)
+  [Tier 4 R-group Sub] resolved=['PC2']  remaining=[]

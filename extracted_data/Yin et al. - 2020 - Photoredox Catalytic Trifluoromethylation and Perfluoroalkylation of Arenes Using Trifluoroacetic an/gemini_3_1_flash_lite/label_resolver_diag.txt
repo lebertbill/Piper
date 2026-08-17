@@ -1,0 +1,59 @@
+Label Resolver Diagnostic Log — 2026-05-22 10:35:59
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['BHT-CF3', 'TEMPO-CF3'] → image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 2
+────────────────────────────────────────────────────────────
+  Labels   : ['BHT-CF3', 'TEMPO-CF3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an/gemini_3_1_flash_lite/processed/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an_artifacts/image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [OCSR] image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png: 6 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['1-mono']  smiles=*C1=CC(*)=C(*)C(*)=C1  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+  [Tier 3] 'BHT-CF3': bbox=1 atoms=13 smiles=**.*CC1=CC(*)=C(O)C(*)=C1 wildcard=True
+  [Tier 3] 'TEMPO-CF3': bbox=5 atoms=12 smiles=*ON1C(*)(*)CCCC1(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 LLM] 'BHT-CF3' → r_value='C1=C(C(C)(C)C)C(O)=C(C(C)(C)C)C=C1CH2'
+    [Tier 4 LLM] 'TEMPO-CF3' → r_value='ON1C(C)(C)CCCC1(C)C'
+    [Tier 4] R-group candidates: ['BHT-CF3', 'TEMPO-CF3']
+    [Tier 4 graph] 'BHT-CF3' r=C1=C(C(C)(C)C)C(O)=C(C(C)(C)C)C=C1CH2 fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4 graph] 'TEMPO-CF3' r=ON1C(C)(C)CCCC1(C)C fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4] 'BHT-CF3' 🔄 corrected: CC1=CC(C)=C(C(F)(F)F)C(C)=C1CC2=CC(C(C)(C)C)=C(O)C
+    [Tier 4] 'TEMPO-CF3' 🔄 corrected: CC1(C)CCCC(C)(C)N1C2=C(C)C=C(C)C=C2C(F)(F)F
+  [Tier 4 R-group Sub] resolved=['BHT-CF3', 'TEMPO-CF3']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 2
+────────────────────────────────────────────────────────────
+  Labels   : ['mesitylene', '1-bis', '1-mono', 'TFA']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an/gemini_3_1_flash_lite/processed/Yin et al. - 2020 - Photoredox Catalytic Trifluoromethylation and Perfluoroalkylation of Arenes Using Trifluoroacetic an_artifacts/image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png
+  Exists   : True
+  [Tier 0 NameMap] 'TFA' → pubchem_lookup via name='Trifluoroacetic acid'
+  [Tier 0 NameMap] resolved=['TFA']  remaining=['mesitylene', '1-bis', '1-mono']
+  [OCSR] image_000012_26ee68bbd7084c2c280584cd76df804aa4da68a7e2ea05f37ae49b766a09a24d.png: 6 bboxes, 1 coref pairs
+  [OCSR]   pair [3,4]: texts=['1-mono']  smiles=*C1=CC(*)=C(*)C(*)=C1  wildcard=True
+  [OCSR] → 1 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['mesitylene', '1-bis', '1-mono']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['mesitylene', '1-bis', '1-mono']
+  [Tier 3] 'mesitylene': bbox=0 atoms=9 smiles=*C1=CC(*)=CC(*)=C1 wildcard=True
+  [Tier 3] '1-mono': bbox=3 atoms=10 smiles=*C1=CC(*)=C(*)C(*)=C1 wildcard=True
+  [Tier 3] '1-bis': bbox_idx=None out of range (n=6)
+  [Tier 3 BBox Match] resolved=[]  remaining=['mesitylene', '1-mono', '1-bis']
+    [Tier 4 LLM] '1-mono' → r_value='R1 = Me, R2 = H, R3 = Me, R4 = CF3, R5 = Me'
+    [Tier 4 LLM] '1-bis' → r_value='R1 = Me, R2 = CF3, R3 = Me, R4 = CF3, R5 = Me'
+    [Tier 4] R-group candidates: ['1-mono', '1-bis']
+    [Tier 4 graph] '1-mono' r=R1 = Me, R2 = H, R3 = Me, R4 = CF3, R5 = Me fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4 graph] '1-bis' r=R1 = Me, R2 = CF3, R3 = Me, R4 = CF3, R5 = Me fallback (smi=*C1=CC(*)=C(*)C(*)=C1)
+    [Tier 4] '1-mono' ✅ match: CC1=CC(C)=C(C(F)(F)F)C(C)=C1
+    [Tier 4] '1-bis' 🔄 corrected: CC1=C(C(F)(F)F)C(C)=CC(C)=C1C(F)(F)F
+  [Tier 4 R-group Sub] resolved=['1-mono', '1-bis']  remaining=['mesitylene']
+    [Tier 5 PubChem] 'mesitylene' → hit via 'mesitylene': CC1=CC(=CC(=C1)C)C
+  [Tier 5 PubChem] resolved=['mesitylene']  remaining=[]

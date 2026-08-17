@@ -1,0 +1,73 @@
+Label Resolver Diagnostic Log — 2026-08-14 15:50:21
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1', '2a', '3a'] → image_000011_ca170bdbca3e82fbd7203298fe2b31765a2a3f14173f2a65cb93364209d9bc9e.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2a', '3a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent_before_manuscript_and_push/extracted_data/ol3c01795/GPT_5_MINI/processed/ol3c01795_artifacts/image_000011_ca170bdbca3e82fbd7203298fe2b31765a2a3f14173f2a65cb93364209d9bc9e.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → name 'REFERENCES
+
+-' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2a', '3a']
+  [OCSR] image_000011_ca170bdbca3e82fbd7203298fe2b31765a2a3f14173f2a65cb93364209d9bc9e.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(*)CC1=CNC2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)C(F)(F)Br  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C(=O)C(F)(F)C1=C(CC(*)*)C2=C(C=CC=C2)N1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2a', '3a']
+  [Tier 3] '1': bbox=0 atoms=13 smiles=*C(*)CC1=CNC2=C1C=CC=C2 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=7 smiles=*C(=O)C(F)(F)Br wildcard=True
+  [Tier 3] '3a': bbox=4 atoms=19 smiles=*C(=O)C(F)(F)C1=C(CC(*)*)C2=C(C=CC=C2)N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2a', '3a']
+    [Tier 4 LLM] '1' → r_value='* = NHAc, * = CO2Et'
+    [Tier 4 LLM] '2a' → r_value='* = OEt'
+    [Tier 4 LLM] '3a' → r_value='* = NHAc, * = CO2Et, * = OEt'
+    [Tier 4] R-group candidates: ['1', '2a', '3a']
+    [Tier 4 graph] '1' r=* = NHAc, * = CO2Et fallback (smi=*C(*)CC1=CNC2=C1C=CC=C2)
+    [Tier 4] '1' ✅ match: CCOC(=O)C(NC(C)=O)CC1=CNC2=C1C=CC=C2
+    [Tier 4 graph] '2a' r=* = OEt fallback (smi=*C(=O)C(F)(F)Br)
+    [Tier 4] '2a' ✅ match: CCOC(=O)C(F)(F)Br
+    [Tier 4] bbox missing for group ['3a'] — using full image
+    [Tier 4] '3a' ✅ match: CCOC(=O)C(NC(=O)C)CC1=C(C(F)(F)C(=O)OCC)NC2=C1C=CC
+  [Tier 4 R-group Sub] resolved=['1', '2a', '3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a', '1']
+  Image    : extracted_data/ol3c01795/GPT_5_MINI/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → name 'REFERENCES
+
+-' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '2a', '1']
+  [OCSR] visualheist_page_02_table_2.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(*)CC1=CNC2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a']  smiles=*C(=O)C(F)(F)Br  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C(=O)C(F)(F)C1=C(CC(*)*)C2=C(C=CC=C2)N1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '2a', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '2a', '1']
+  [Tier 3] '1': bbox=0 atoms=13 smiles=*C(*)CC1=CNC2=C1C=CC=C2 wildcard=True
+  [Tier 3] '2a': bbox=2 atoms=7 smiles=*C(=O)C(F)(F)Br wildcard=True
+  [Tier 3] '3a': bbox=4 atoms=19 smiles=*C(=O)C(F)(F)C1=C(CC(*)*)C2=C(C=CC=C2)N1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2a', '3a']
+    [Tier 4 LLM] '1' → r_value='* = NHAc, * = CO2Et'
+    [Tier 4 LLM] '2a' → r_value='* = OEt'
+    [Tier 4 LLM] '3a' → r_value='* = NHAc, * = CO2Et, * = OEt'
+    [Tier 4] R-group candidates: ['1', '2a', '3a']
+    [Tier 4 graph] '1' r=* = NHAc, * = CO2Et fallback (smi=*C(*)CC1=CNC2=C1C=CC=C2)
+    [Tier 4] '1' 🔄 corrected: CCOC(=O)[C@H](NC(C)=O)CC1=CNC2=C1C=CC=C2
+    [Tier 4 graph] '2a' r=* = OEt fallback (smi=*C(=O)C(F)(F)Br)
+    [Tier 4] '2a' ✅ match: CCOC(=O)C(F)(F)Br
+    [Tier 4] bbox missing for group ['3a'] — using full image
+    [Tier 4] '3a' ✅ match: CC(=O)NC(C(=O)OCC)CC1=C(C(F)(F)C(=O)OCC)NC2=C1C=CC
+  [Tier 4 R-group Sub] resolved=['1', '2a', '3a']  remaining=[]

@@ -1,0 +1,51 @@
+Label Resolver Diagnostic Log — 2026-06-17 13:28:56
+================================================================================
+
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [InlineResolver] Column 'Photocatalyst' labels ['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2'] from image_000003_86aaf69bd7fb79f191c9b1ccb0a8782eeb59df831842f71582b5b4250ddc2f85.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photo-induced_oxidant-free_oxidative_CHNH_cross-coupling_between_arenes_and_azoles/GPT_5_MINI/processed/Photo-induced_oxidant-free_oxidative_CHNH_cross-coupling_between_arenes_and_azoles_artifacts/image_000003_86aaf69bd7fb79f191c9b1ccb0a8782eeb59df831842f71582b5b4250ddc2f85.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+  [OCSR] image_000003_86aaf69bd7fb79f191c9b1ccb0a8782eeb59df831842f71582b5b4250ddc2f85.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+  [Tier 3] 'Acr+-Mes ClO4': bbox_idx=None out of range (n=4)
+  [Tier 3] 'Co(dmgH) 2 Cl 2': bbox_idx=None out of range (n=4)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+    [Tier 5 PubChem] 'Acr+-Mes ClO4' → no hit (tried ['Acr+-Mes ClO4'])
+    [Tier 5 PubChem] 'Co(dmgH) 2 Cl 2' → no hit (tried ['Co(dmgH) 2 Cl 2'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+    [Tier 6→pubchem_lookup] 'Acr+-Mes ClO4' name='9-mesityl-10-methylacridinium perchlorate' → CC1=CC(=C(C(=C1)C)C2=C3C=CC=CC3=[N+](C4=CC=CC=C42)
+    [Tier 6→llm_name_to_smiles] 'Co(dmgH) 2 Cl 2' name='Cobaloxime(II) chloride' → CC1=C(C(=N[Co](Cl)(N=C(C)C1=NO)N=C(C)C(=NO)C)C)O
+  [Tier 6 LLM Vision] resolved=['Acr+-Mes ClO4', 'Co(dmgH) 2 Cl 2']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['arene', 'amine', 'product', 'H2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Photo-induced_oxidant-free_oxidative_CHNH_cross-coupling_between_arenes_and_azoles/GPT_5_MINI/processed/Photo-induced_oxidant-free_oxidative_CHNH_cross-coupling_between_arenes_and_azoles_artifacts/image_000003_86aaf69bd7fb79f191c9b1ccb0a8782eeb59df831842f71582b5b4250ddc2f85.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['arene', 'amine', 'product', 'H2']
+  [OCSR] image_000003_86aaf69bd7fb79f191c9b1ccb0a8782eeb59df831842f71582b5b4250ddc2f85.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['arene', 'amine', 'product', 'H2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['arene', 'amine', 'product', 'H2']
+  [Tier 3] 'arene': bbox=0 atoms=8 smiles=Cc1ccc(C)cc1 wildcard=False
+  [Tier 3] 'amine': bbox=1 atoms=4 smiles=*N(C)C wildcard=True
+  [Tier 3] 'product': bbox=3 atoms=10 smiles=CNc1cc(C)ccc1C wildcard=False
+  [Tier 3] 'H2': bbox_idx=None out of range (n=4)
+  [Tier 3 BBox Match] resolved=['arene', 'product']  remaining=['amine', 'H2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['amine', 'H2']
+    [Tier 5 PubChem] 'amine' → hit via 'amine': CN(C)C(=NC1CCCCC1)NC2CCCCC2.CN(C)C(=NC1CCCCC1)NC2CCCCC2
+    [Tier 5 PubChem] 'H2' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=['amine']  remaining=['H2']
+    [Tier 6→pubchem_lookup] 'H2' name='Hydrogen' → [HH]
+  [Tier 6 LLM Vision] resolved=['H2']

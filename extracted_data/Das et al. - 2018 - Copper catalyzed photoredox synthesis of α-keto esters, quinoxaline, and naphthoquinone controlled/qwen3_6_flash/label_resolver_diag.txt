@@ -1,0 +1,28 @@
+Label Resolver Diagnostic Log — 2026-05-23 13:15:34
+================================================================================
+
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=4 atoms=6 smiles=*C(=O)C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a']
+    [Tier 4 LLM] '3a' → r_value='Ph, OMe'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4 graph] '3a' r=Ph, OMe fallback (smi=*C(=O)C(*)=O)
+    [Tier 4] '3a' ✅ match: c1ccccc1C(=O)C(=O)OC
+  [Tier 4 R-group Sub] resolved=['3a']  remaining=[]
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3a']
+  Image    : extracted_data/Das et al. - 2018 - Copper catalyzed photoredox synthesis of α-keto esters, quinoxaline, and naphthoquinone controlled/qwen3_6_flash/processed/visualheist_page_04_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='phenyl acetylene'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='methanol'
+  [Tier 0 NameMap] '3a' → pubchem_lookup via name='methyl 2-oxo-2-phenylacetate'
+  [Tier 0 NameMap] resolved=['1a', '2a', '3a']  remaining=[]

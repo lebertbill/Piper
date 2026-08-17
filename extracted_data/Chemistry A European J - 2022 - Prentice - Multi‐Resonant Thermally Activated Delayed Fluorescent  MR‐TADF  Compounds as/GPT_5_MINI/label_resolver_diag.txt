@@ -1,0 +1,69 @@
+Label Resolver Diagnostic Log — 2026-08-15 17:27:33
+================================================================================
+
+  [GlobalRegistry] labels=['4CzIPN', '3CzClIPN', 'DiKTa', 'Mes3DiKTa'] → image_000002_6aba4ef45082b65e73ba1eb8785cc474400992512a6ec97f3deb11cea82b95e4.png
+  [GlobalRegistry] Skipping 'Table 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 6' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 7' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN', '3CzClIPN', 'DiKTa', 'Mes3DiKTa']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Chemistry A European J - 2022 - Prentice - Multi‐Resonant Thermally Activated Delayed Fluorescent  MR‐TADF  Compounds as/GPT_5_MINI/processed/Chemistry A European J - 2022 - Prentice - Multi‐Resonant Thermally Activated Delayed Fluorescent  MR‐TADF  Compounds as_artifacts/image_000002_6aba4ef45082b65e73ba1eb8785cc474400992512a6ec97f3deb11cea82b95e4.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] '3CzClIPN' → opsin_lookup via name='2-chloro-1,3,5-tris(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] 'DiKTa' → name '5,9-dioxa-13b-boranaphtho[3,2,1-de]anthracene derivative (carbonyl-bridged)' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'Mes3DiKTa' → llm_name_to_smiles via name='2,7,11-trimesityl-5,9-dioxa-13b-boranaphtho[3,2,1-de]anthracene derivative'
+  [Tier 0 NameMap] resolved=['4CzIPN', '3CzClIPN', 'Mes3DiKTa']  remaining=['DiKTa']
+  [OCSR] image_000002_6aba4ef45082b65e73ba1eb8785cc474400992512a6ec97f3deb11cea82b95e4.png: 10 bboxes, 1 coref pairs
+  [OCSR]   pair [7,8]: texts=['DiKTa', 'Mes3_']  smiles=*C1=CC2=C(C=C1)N1C3=C(C=C(*)C=C3)C(=O)C3=C1C(=CC(*  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['DiKTa']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['DiKTa']
+  [Tier 3] 'DiKTa': bbox=5 atoms=23 smiles=O=c1c2ccccc2n2c3ccccc3c(=O)c3cccc1c32 wildcard=False
+  [Tier 3 BBox Match] resolved=['DiKTa']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 2
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '1a', '3a']
+  Image    : extracted_data/Chemistry A European J - 2022 - Prentice - Multi‐Resonant Thermally Activated Delayed Fluorescent  MR‐TADF  Compounds as/GPT_5_MINI/processed/visualheist_page_03_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='diethyl maleate'
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='N-Cbz protected proline'
+  [Tier 0 NameMap] resolved=['2', '1a']  remaining=['3a']
+  [OCSR] visualheist_page_03_table_2.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C1CCCN1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C=C*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*CC(*)C1*CCC1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a']
+  [Tier 3] '3a': bbox=4 atoms=9 smiles=*CC(*)C1*CCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a']
+    [Tier 4 LLM] '3a' → r_value='diethyl 2-(1-(benzyloxycarbonyl)pyrrolidin-2-yl)succinate'
+    [Tier 4] R-group candidates: ['3a']
+    [Tier 4 graph] '3a' r=diethyl 2-(1-(benzyloxycarbonyl)pyrrolidin-2-yl)succinate fallback (smi=*CC(*)C1*CCC1)
+    [Tier 4] '3a' ✅ match: CCOC(=O)CC(C(=O)OCC)C1CCCN1C(=O)OCC2=CC=CC=C2
+  [Tier 4 R-group Sub] resolved=['3a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Figure 1
+────────────────────────────────────────────────────────────
+  Labels   : ['0', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Chemistry A European J - 2022 - Prentice - Multi‐Resonant Thermally Activated Delayed Fluorescent  MR‐TADF  Compounds as/GPT_5_MINI/processed/Chemistry A European J - 2022 - Prentice - Multi‐Resonant Thermally Activated Delayed Fluorescent  MR‐TADF  Compounds as_artifacts/image_000002_6aba4ef45082b65e73ba1eb8785cc474400992512a6ec97f3deb11cea82b95e4.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → llm_name_to_smiles via name='Carboxylic acid'
+  [Tier 0 NameMap] resolved=['1']  remaining=['0']
+  [OCSR] image_000002_6aba4ef45082b65e73ba1eb8785cc474400992512a6ec97f3deb11cea82b95e4.png: 10 bboxes, 1 coref pairs
+  [OCSR]   pair [7,8]: texts=['DiKTa', 'Mes3_']  smiles=*C1=CC2=C(C=C1)N1C3=C(C=C(*)C=C3)C(=O)C3=C1C(=CC(*  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['0']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['0']
+  [Tier 3] '0': bbox=0 atoms=80 smiles=C1CCC1.CC.CC.CCC.CCC1CCC1CC.Cc1c(-n2c3ccccc3c3ccccc32)c(C#N) wildcard=False
+  [Tier 3 BBox Match] resolved=['0']  remaining=[]

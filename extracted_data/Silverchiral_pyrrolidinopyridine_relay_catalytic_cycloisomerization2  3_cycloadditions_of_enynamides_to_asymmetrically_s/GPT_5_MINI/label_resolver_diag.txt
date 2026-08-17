@@ -1,0 +1,166 @@
+Label Resolver Diagnostic Log — 2026-06-18 10:31:00
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'] → image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s/GPT_5_MINI/processed/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s_artifacts/image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+  [OCSR] image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png: 14 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['4']  smiles=*C1=CC2(C(=*)O1)C(*)C=C(*)C21C(=O)NN=C1C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C#CC(=C*)C(=O)N*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['8']  smiles=*C(=C)C1(*)C(=O)N(*)N=C1C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['8']  smiles=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N  wildcard=True
+  [OCSR]   pair [8,9]: texts=['{', 'II', '3', '<', '6', '5', '22', '6']  smiles=*C(*)(C)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1', '4', '1', '8', 'M', '3', '5', '1', 'H']  smiles=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['8']  smiles=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+  [Tier 3] 'C1': bbox=8 atoms=22 smiles=*C(C)(O)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C2': bbox=8 atoms=22 smiles=*C(C)(O)[C@H]1CCCN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C3': bbox=8 atoms=22 smiles=*C(*)(C)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C4': bbox=10 atoms=23 smiles=*C(C)(O)C1CC(O)CN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C5': bbox=10 atoms=23 smiles=*C(C)(O)[C@H]1C[C@H](O)CN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C6': bbox=10 atoms=23 smiles=*C(C)(O)[C@H]1C[C@H](O)CN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C7': bbox=10 atoms=23 smiles=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1 wildcard=True
+  [Tier 3] 'C8': bbox=6 atoms=35 smiles=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=C wildcard=True
+  [Tier 3] 'C9': bbox=12 atoms=37 smiles=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CC wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+    [Tier 4 LLM] 'C1' → r_value='R = H, Ar = Ph'
+    [Tier 4 LLM] 'C2' → r_value='R = H, Ar = 3,5-tBu2Ph'
+    [Tier 4 LLM] 'C3' → r_value='R = TMS, Ar = Ph'
+    [Tier 4 LLM] 'C4' → r_value='R = H, Ar = Ph'
+    [Tier 4 LLM] 'C5' → r_value='R = H, Ar = 3,5-tBu2Ph'
+    [Tier 4 LLM] 'C6' → r_value='R = H, Ar = 3,5-(CH3)2Ph'
+    [Tier 4 LLM] 'C7' → r_value='R = TBDPS, Ar = 3,5-tBu2Ph'
+    [Tier 4 LLM] 'C8' → r_value='R = TBDPS, Ar = 3-PhPh'
+    [Tier 4 LLM] 'C9' → r_value='R = TBDPS, Ar = 3,5-Ph2Ph'
+    [Tier 4] R-group candidates: ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9']
+    [Tier 4 graph] 'C1' r=R = H, Ar = Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4 graph] 'C2' r=R = H, Ar = 3,5-tBu2Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4 graph] 'C3' r=R = TMS, Ar = Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4] 'C1' 🔄 corrected: OC(C1=CC=C(C2=CC=CC=C2)C=C1)(C1=CC=C(C2=CC=CC=C2)C
+    [Tier 4] 'C2' 🔄 corrected: OC(C1=CC=C(C2=CC=CC=C2)C=C1)(C1=CC=C(C2=CC=CC=C2)C
+    [Tier 4] 'C3' 🔄 corrected: O[C@@](C1=CC=C(C2=CC=CC=C2)C=C1)(C1=CC=C(C2=CC=CC=
+    [Tier 4 graph] 'C4' r=R = H, Ar = Ph fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4 graph] 'C5' r=R = H, Ar = 3,5-tBu2Ph fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4 graph] 'C6' r=R = H, Ar = 3,5-(CH3)2Ph fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4 graph] 'C7' r=R = TBDPS, Ar = 3,5-tBu2Ph fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4 graph] 'C8' r=R = TBDPS, Ar = 3-PhPh fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4 graph] 'C9' r=R = TBDPS, Ar = 3,5-Ph2Ph fallback (smi=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1)
+    [Tier 4] 'C4' 🔄 corrected: O[C@@H]1CN(C(=O)c2cnccc2N3CCCC3)[C@H](C1)C(O)(c4cc
+    [Tier 4] 'C5' 🔄 corrected: CC(C)(C)c1cc(cc(c1)C(C)(C)C)C(O)(c2cc(cc(c2)C(C)(C
+    [Tier 4] 'C6' 🔄 corrected: CC1=CC(C)=CC(C(O)(C2=CC(C)=CC(C)=C2)[C@H]3C[C@@H](
+    [Tier 4] 'C7' 🔄 corrected: CC(C)(C)[Si](O[C@@H]1C[C@H](C(O)(C2=CC(C(C)(C)C)=C
+    [Tier 4] 'C8' 🔄 corrected: CC(C)(C)[Si](O[C@@H]1CN(C(=O)C2=CN=CC=C2N3CCCC3)[C
+    [Tier 4] 'C9' RDKit render failed: CC(C)(C)[Si](OC1CC(C(C2=CC(C3=CC=CC=C3)=
+  [Tier 4 R-group Sub] resolved=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8']  remaining=['C9']
+    [Tier 5 PubChem] 'C9' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['C9']
+  [Tier 6 LLM Vision] resolved=['C9']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s/GPT_5_MINI/processed/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s_artifacts/image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '2a', '1a']
+  [OCSR] image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png: 14 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['4']  smiles=*C1=CC2(C(=*)O1)C(*)C=C(*)C21C(=O)NN=C1C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C#CC(=C*)C(=O)N*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['8']  smiles=*C(=C)C1(*)C(=O)N(*)N=C1C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['8']  smiles=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N  wildcard=True
+  [OCSR]   pair [8,9]: texts=['{', 'II', '3', '<', '6', '5', '22', '6']  smiles=*C(*)(C)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1', '4', '1', '8', 'M', '3', '5', '1', 'H']  smiles=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['8']  smiles=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3a', '2a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '2a', '1a']
+  [Tier 3] '3a': bbox=0 atoms=19 smiles=*C1=CC2(C(=*)O1)C(*)C=C(*)C21C(=O)NN=C1C wildcard=True
+  [Tier 3] '2a': bbox=4 atoms=12 smiles=*C(=C)C1(*)C(=O)N(*)N=C1C wildcard=True
+  [Tier 3] '1a': bbox=2 atoms=10 smiles=*C#CC(=C*)C(=O)N* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '2a', '1a']
+    [Tier 4 LLM] '1a' → r_value='Ph, Ph, Ts'
+    [Tier 4 LLM] '2a' → r_value='MeO2C, BocO, Ph'
+    [Tier 4 LLM] '3a' → r_value='Ph, MeO2C, Ph, Ph, NTs'
+    [Tier 4] R-group candidates: ['1a', '2a', '3a']
+    [Tier 4 graph] '1a' r=Ph, Ph, Ts fallback (smi=*C#CC(=C*)C(=O)N*)
+    [Tier 4] '1a' ✅ match: c1ccc(cc1)C#CC(=Cc2ccccc2)C(=O)NS(=O)(=O)c3ccc(cc3
+    [Tier 4 graph] '2a' r=MeO2C, BocO, Ph fallback (smi=*C(=C)C1(*)C(=O)N(*)N=C1C)
+    [Tier 4] '2a' ✅ match: COC(=O)C(=C)C1(OC(=O)OC(C)(C)C)C(=O)N(c2ccccc2)N=C
+    [Tier 4 graph] '3a' r=Ph, MeO2C, Ph, Ph, NTs fallback (smi=*C1=CC2(C(=*)O1)C(*)C=C(*)C21C(=O)NN=C1C)
+    [Tier 4] '3a' RDKit render failed: CC1=NN(C2=CC=CC=C2)C(=O)C13C(C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=['3a']
+    [Tier 5 PubChem] '3a' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3a']
+  [Tier 6 LLM Vision] resolved=['3a']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['C3', '19', 'C2', 'C4', 'C9', 'C1', 'C7', 'PPh3', 'C8', 'C6', 'C5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s/GPT_5_MINI/processed/Silverchiral_pyrrolidinopyridine_relay_catalytic_cycloisomerization2  3_cycloadditions_of_enynamides_to_asymmetrically_s_artifacts/image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['C3', '19', 'C2', 'C4', 'C9', 'C1', 'C7', 'PPh3', 'C8', 'C6', 'C5']
+  [OCSR] image_000004_0af25ffc7c1bba2d31096e7f5af5b2a3652d157c338763c89e5b9c9f7d9f4bd9.png: 14 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['4']  smiles=*C1=CC2(C(=*)O1)C(*)C=C(*)C21C(=O)NN=C1C  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=*C#CC(=C*)C(=O)N*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['8']  smiles=*C(=C)C1(*)C(=O)N(*)N=C1C  wildcard=True
+  [OCSR]   pair [6,7]: texts=['8']  smiles=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N  wildcard=True
+  [OCSR]   pair [8,9]: texts=['{', 'II', '3', '<', '6', '5', '22', '6']  smiles=*C(*)(C)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1  wildcard=True
+  [OCSR]   pair [10,11]: texts=['1', '4', '1', '8', 'M', '3', '5', '1', 'H']  smiles=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1  wildcard=True
+  [OCSR]   pair [12,13]: texts=['8']  smiles=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['C3', '19', 'C2', 'C4', 'C9', 'C1', 'C7', 'PPh3', 'C8', 'C6', 'C5']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['C3', '19', 'C2', 'C4', 'C9', 'C1', 'C7', 'PPh3', 'C8', 'C6', 'C5']
+  [Tier 3] 'C1': bbox=8 atoms=22 smiles=*C(C)(O)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C2': bbox=8 atoms=22 smiles=*C(C)(O)[C@H]1CCCN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C3': bbox=8 atoms=22 smiles=*C(*)(C)C1CCCN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C4': bbox=10 atoms=23 smiles=*C(C)(O)C1CC(O)CN1C(=O)C1=C(N2CCCC2)C=CN=C1 wildcard=True
+  [Tier 3] 'C5': bbox=10 atoms=23 smiles=*C(C)(O)[C@H]1C[C@H](O)CN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C6': bbox=10 atoms=23 smiles=*C(C)(O)[C@H]1C[C@H](O)CN1C(=O)c1cnccc1N1CCCC1 wildcard=True
+  [Tier 3] 'C7': bbox=10 atoms=23 smiles=*C1CC(C(*)(C)O)N(C(=O)C2=C(N3CCCC3)C=CN=C2)C1 wildcard=True
+  [Tier 3] 'C8': bbox=6 atoms=35 smiles=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=C wildcard=True
+  [Tier 3] 'C9': bbox=12 atoms=37 smiles=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CC wildcard=True
+  [Tier 3] '19': bbox_idx=None out of range (n=14)
+  [Tier 3] 'PPh3': bbox_idx=None out of range (n=14)
+  [Tier 3 BBox Match] resolved=[]  remaining=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', '19', 'PPh3']
+    [Tier 4 LLM] 'C1' → r_value='R = H, Ar = Ph'
+    [Tier 4 LLM] 'C2' → r_value='R = H, Ar = 3,5-tBu2Ph'
+    [Tier 4 LLM] 'C3' → r_value='R = TMS, Ar = Ph'
+    [Tier 4 LLM] 'C4' → r_value='R = H, Ar = Ph'
+    [Tier 4 LLM] 'C5' → r_value='R = H, Ar = 3,5-tBu2Ph'
+    [Tier 4 LLM] 'C6' → r_value='R = H, Ar = 3,5-(CH3)2Ph'
+    [Tier 4 LLM] 'C7' → r_value='R = TBDPS, Ar = 3,5-tBu2Ph'
+    [Tier 4] R-group candidates: ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7']
+    [Tier 4 graph] 'C1' r=R = H, Ar = Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4 graph] 'C2' r=R = H, Ar = 3,5-tBu2Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4 graph] 'C3' r=R = TMS, Ar = Ph fallback (smi=*C1=CC=C(C(O)(C2=CC=C(*)C=C2)C2CC(*)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)C=C1)
+    [Tier 4] 'C1' 🔄 corrected: OC(C1=CC=C(C2=CC=CC=C2)C=C1)(C1=CC=C(C2=CC=CC=C2)C
+    [Tier 4] 'C2' 🔄 corrected: OC(C1=CC=C(C2=CC=CC=C2)C=C1)(C1=CC=C(C2=CC=CC=C2)C
+    [Tier 4] 'C3' 🔄 corrected: C[Si](C)(C)O[C@@H]1CN(C(=O)C2=CN=CC=C2N3CCCC3)[C@H
+    [Tier 4 graph] 'C4' r=R = H, Ar = Ph fallback (smi=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)=C1)
+    [Tier 4 graph] 'C5' r=R = H, Ar = 3,5-tBu2Ph fallback (smi=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)=C1)
+    [Tier 4 graph] 'C6' r=R = H, Ar = 3,5-(CH3)2Ph fallback (smi=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)=C1)
+    [Tier 4 graph] 'C7' r=R = TBDPS, Ar = 3,5-tBu2Ph fallback (smi=*C1=CC(*)=CC(C(O)(C2=CC(*)=CC(*)=C2)C2CC(O)CN2C(=O)C2=C(N3CCCC3)C=CN=C2)=C1)
+    [Tier 4] 'C4' 🔄 corrected: CC(C)(C)[Si](OC1CN(C(=O)C2=C(N3CCCC3)C=CN=C2)C(C1)
+    [Tier 4] 'C5' 🔄 corrected: O[C@](c1cc(-c2cc(C(C)(C)C)cc(C(C)(C)C)c2)cc(-c2cc(
+    [Tier 4] 'C6' 🔄 corrected: OC(C1=CC(C2=CC=CC=C2)=CC(C2=CC=CC=C2)=C1)(C1=CC(C2
+    [Tier 4] 'C7' 🔄 corrected: CC(C)(C)[Si](OC1CN(C(=O)C2=C(N3CCCC3)C=CN=C2)[C@H]
+  [Tier 4 R-group Sub] resolved=['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7']  remaining=['C8', 'C9', '19', 'PPh3']
+    [Tier 5 PubChem] 'C8' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'C9' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '19' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'PPh3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['C8', 'C9', '19', 'PPh3']
+    [Tier 6→pubchem_lookup] 'PPh3' name='Triphenylphosphine' → C1=CC=C(C=C1)P(C2=CC=CC=C2)C3=CC=CC=C3
+  [Tier 6 LLM Vision] resolved=['C8', 'C9', '19', 'PPh3']

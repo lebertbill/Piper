@@ -1,0 +1,103 @@
+Label Resolver Diagnostic Log — 2026-06-18 15:58:18
+================================================================================
+
+  [GlobalRegistry] labels=['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7'] → image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional_/default_run/processed/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional__artifacts/image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png
+  Exists   : True
+  [Tier 0 NameMap Organomet] 'PC-1' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] 'PC-1' → best=pubchem_lookup (score=1) via name='[Ir(ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC-2' → name '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC-3' → llm_name_to_smiles via name='2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile (4CzIPN)'
+  [Tier 0 NameMap] 'PC-4' → llm_name_to_smiles via name='4-BrCzIPN'
+  [Tier 0 NameMap] 'PC-5' → llm_name_to_smiles via name='[Acr-Mes]BF4'
+  [Tier 0 NameMap] resolved=['PC-1', 'PC-3', 'PC-4', 'PC-5']  remaining=['PC-2', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7']
+  [OCSR] image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png: 16 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['BF4']  smiles=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1-1']  smiles=*C1=CC=C(C2CC2)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O  wildcard=False
+  [OCSR]   pair [7,8]: texts=['BF']  smiles=*[N+]12=CN(C=N1)CCCCC2  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3']  smiles=*C(=O)C(CCN1C(=O)C2=C(C=CC=C2)S1(=O)=O)C1=CC=C(*)C  wildcard=True
+  [OCSR]   pair [11,12]: texts=['BF4']  smiles=*N1C=[N+]2C(=N1)C(C)OCC2C(C)C  wildcard=True
+  [OCSR]   pair [13,14]: texts=['BF4']  smiles=*C1CCC2=N[N+](*)=CN21  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['PC-2', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['PC-2', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7']
+  [Tier 3] 'PC-2': bbox_idx=None out of range (n=16)
+  [Tier 3] 'NHC-1': bbox=0 atoms=17 smiles=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12 wildcard=True
+  [Tier 3] 'NHC-2': bbox=0 atoms=17 smiles=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12 wildcard=True
+  [Tier 3] 'NHC-3': bbox=6 atoms=18 smiles=*n1c[n+]2c(n1)CO[C@@H]1Cc3ccc(Br)cc3[C@@H]12 wildcard=True
+  [Tier 3] 'NHC-4': bbox=7 atoms=11 smiles=*[N+]12=CN(C=N1)CCCCC2 wildcard=True
+  [Tier 3] 'NHC-5': bbox=11 atoms=14 smiles=*N1C=[N+]2C(=N1)C(C)OCC2C(C)C wildcard=True
+  [Tier 3] 'NHC-6': bbox=13 atoms=10 smiles=*C1CCC2=N[N+](*)=CN21 wildcard=True
+  [Tier 3] 'NHC-7': bbox=15 atoms=18 smiles=*C1=CC=CC(*)=C1N1=CSC2=C1CCCCC2 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC-2', 'NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6', 'NHC-7']
+    [Tier 4 LLM] 'NHC-1' → r_value='Ar = Mes'
+    [Tier 4 LLM] 'NHC-2' → r_value='Ar = C6F5'
+    [Tier 4 LLM] 'NHC-3' → r_value='Ar = Mes'
+    [Tier 4 LLM] 'NHC-4' → r_value='* = Mes'
+    [Tier 4 LLM] 'NHC-5' → r_value='* = Mes'
+    [Tier 4 LLM] 'NHC-6' → r_value='* = Mes'
+    [Tier 4] R-group candidates: ['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-5', 'NHC-6']
+    [Tier 4 graph] 'NHC-1' r=Ar = Mes fallback (smi=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12)
+    [Tier 4 graph] 'NHC-2' r=Ar = C6F5 fallback (smi=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12)
+    [Tier 4 graph] 'NHC-3' r=Ar = Mes fallback (smi=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12)
+    [Tier 4] 'NHC-1' RDKit render failed: CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3
+    [Tier 4] 'NHC-2' RDKit render failed: FC1=C(F)C(F)=C(N2C=[N+]3C(=N2)COC2CC45CC
+    [Tier 4] 'NHC-3' RDKit render failed: CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3
+    [Tier 4 graph] 'NHC-4' r=* = Mes fallback (smi=*C1CCC2=N[N+](*)=CN21)
+    [Tier 4 graph] 'NHC-6' r=* = Mes fallback (smi=*C1CCC2=N[N+](*)=CN21)
+    [Tier 4] 'NHC-4' RDKit render failed: CC1=CC(C)=CC(C)=C1C2=N[N+](C3=C(C)C=C(C)
+    [Tier 4] 'NHC-6' RDKit render failed: CC1=CC(C)=CC(C)=C1C2=N[N+](C3=C(C)C=C(C)
+    [Tier 4 graph] 'NHC-5' r=* = Mes fallback (smi=*N1C=[N+]2C(=N1)C(C)OCC2C(C)C)
+    [Tier 4] 'NHC-5' 🔄 corrected: CC1=C(C)C=C(C)C=C1N1C=[N+]2C(=N1)COCC2C(C)C
+  [Tier 4 R-group Sub] resolved=['NHC-5']  remaining=['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-6', 'PC-2', 'NHC-7']
+    [Tier 5 PubChem] 'NHC-1' → no hit (tried ['entry 17', 'NHC-1'])
+    [Tier 5 PubChem] 'NHC-2' → no hit (tried ['NHC-2'])
+    [Tier 5 PubChem] 'NHC-3' → no hit (tried ['NHC-3'])
+    [Tier 5 PubChem] 'NHC-4' → no hit (tried ['NHC-4'])
+    [Tier 5 PubChem] 'NHC-6' → no hit (tried ['NHC-6'])
+    [Tier 5 PubChem] 'PC-2' → name_map name: '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-2' → no hit (tried ['[Ir[dF(CF3)ppy]2(dtbbpy)]PF6', '2', '[Ir(dF(CF3)ppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'NHC-7' → no hit (tried ['NHC-7'])
+  [Tier 5 PubChem] resolved=[]  remaining=['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-6', 'PC-2', 'NHC-7']
+    [Tier 6→llm_name_to_smiles] 'NHC-4' name='NHC-4' → CC(C)C1=CC=C(C=C1)N2C=CN(C2)C3=CC=C(C=C3)C(C)C
+    [Tier 6] 'PC-2' PubChem/OPSIN/LLM all failed for authoritative name '[Ir[dF(CF3)ppy]2(dtbbpy)]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['NHC-1', 'NHC-2', 'NHC-3', 'NHC-4', 'NHC-6', 'PC-2', 'NHC-7']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional_/default_run/processed/Visible_light-mediated_organocatalyzed_1,3-aminoacylation_of_cyclopropane_employing_N-benzoyl_saccharin_as_bifunctional__artifacts/image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '3', '1']
+  [OCSR] image_000002_88693b0b21acf487be2f4b88206036b27317db8ae381f84de0d3711a9b95fabe.png: 16 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['BF4']  smiles=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1-1']  smiles=*C1=CC=C(C2CC2)C=C1  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O  wildcard=False
+  [OCSR]   pair [7,8]: texts=['BF']  smiles=*[N+]12=CN(C=N1)CCCCC2  wildcard=True
+  [OCSR]   pair [9,10]: texts=['3']  smiles=*C(=O)C(CCN1C(=O)C2=C(C=CC=C2)S1(=O)=O)C1=CC=C(*)C  wildcard=True
+  [OCSR]   pair [11,12]: texts=['BF4']  smiles=*N1C=[N+]2C(=N1)C(C)OCC2C(C)C  wildcard=True
+  [OCSR]   pair [13,14]: texts=['BF4']  smiles=*C1CCC2=N[N+](*)=CN21  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '3', '1']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '3', '1']
+  [Tier 3] '2': bbox=4 atoms=20 smiles=O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O wildcard=False
+  [Tier 3] '3': bbox=9 atoms=25 smiles=*C(=O)C(CCN1C(=O)C2=C(C=CC=C2)S1(=O)=O)C1=CC=C(*)C=C1 wildcard=True
+  [Tier 3] '1': bbox=2 atoms=10 smiles=*C1=CC=C(C2CC2)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=['2']  remaining=['3', '1']
+    [Tier 4 LLM] '1' → r_value='Ar = Mes'
+    [Tier 4 LLM] '3' → r_value='Ar = Mes'
+    [Tier 4] R-group candidates: ['1', '3']
+    [Tier 4 graph] '1' r=Ar = Mes fallback (smi=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12)
+    [Tier 4 graph] '3' r=Ar = Mes fallback (smi=*N1C=[N+]2C(=N1)COC1CC34CC3C3=C4(=C3)C12)
+    [Tier 4] '1' 🔄 corrected: CC1=CC(C)=CC(C)=C1N1N=C2CO[C@H]3CC4=CC=CC=C4[C@H]3
+    [Tier 4] '3' ✅ match: CC1=CC(C)=CC(C)=C1N1C=[N+]2C(=N1)COC1CC3=CC=CC=C3C
+  [Tier 4 R-group Sub] resolved=['1', '3']  remaining=[]

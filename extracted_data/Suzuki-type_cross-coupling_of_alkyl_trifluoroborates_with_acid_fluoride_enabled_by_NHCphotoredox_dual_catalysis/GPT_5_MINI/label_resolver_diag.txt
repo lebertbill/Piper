@@ -1,0 +1,162 @@
+Label Resolver Diagnostic Log — 2026-06-18 10:51:17
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['N1', 'N2', 'N3', 'N4', 'N5', 'N6', 'N7', 'PC1', 'PC2', 'PC3', 'PC4', 'PC5'] → image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png
+  [GlobalRegistry] labels=['N1', 'N2', 'N3', 'N4', 'N5', 'N6', 'N7', 'PC1', 'PC2', 'PC3', 'PC4', 'PC5'] → image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['N1', 'N2', 'N3', 'N4', 'N5', 'N6', 'N7', 'PC1', 'PC2', 'PC3', 'PC4', 'PC5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis/GPT_5_MINI/processed/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis_artifacts/image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png
+  Exists   : True
+  [Tier 0 NameMap] 'N1' → llm_name_to_smiles via name='2,4,6-trimethylphenyl triazolium salt'
+  [Tier 0 NameMap] 'N2' → name 'pentafluorophenyl triazolium salt' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'N4' → llm_name_to_smiles via name='2,6-diisopropylphenyl imidazolium salt'
+  [Tier 0 NameMap] 'N6' → llm_name_to_smiles via name='2,6-diisopropylphenyl thiazolium salt'
+  [Tier 0 NameMap Organomet] 'PC4' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] 'PC4' → best=pubchem_lookup (score=1) via name='[Ir(ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC5' → name 'Ir[dF(CF3)ppy]2(Phen)PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['N1', 'N4', 'N6', 'PC4']  remaining=['N2', 'N3', 'N5', 'N7', 'PC1', 'PC2', 'PC3', 'PC5']
+  [OCSR] image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png: 20 bboxes, 10 coref pairs
+  [OCSR]   pair [0,1]: texts=['PC1']  smiles=*C1=C(N2C3=CC=CC=C3C3=C2C=CC=C3)C(*)=C(N23C4=C5678  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Nt Ar = 2.4,6-Mej-CsHz', 'N2 Ar = CoFs']  smiles=*[n+]1cn2c(n1)CCC2.F[B-](F)(F)F  wildcard=True
+  [OCSR]   pair [4,5]: texts=['14']  smiles=*Cc1ccccc1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['NJ R =', 'Xi', 'N4R-2,6-iPiz CoHy X = Cl', 'Ke;']  smiles=*n1cc[n+](*)c1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['PC?Reh', 'Pc} R = CFa']  smiles=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=F[C](=[U])c1ccccc1  wildcard=False
+  [OCSR]   pair [12,13]: texts=['N5']  smiles=Cc1c(CCO)sc[n+]1C.[I-]  wildcard=False
+  [OCSR]   pair [14,15]: texts=['PCA RI=h R?=h', 'Pcs RI', 'RZ = F', '= CFr']  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC  wildcard=True
+  [OCSR]   pair [16,17]: texts=['N6 R =', '2,6-Prz-CsHa', 'N7 R = Chz-IBu']  smiles=*[n+]1csc2c1CCCCC2  wildcard=True
+  [OCSR]   pair [18,19]: texts=['34']  smiles=*CC(*)=O  wildcard=True
+  [OCSR] → 10 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['N5']  remaining=['N2', 'N3', 'N7', 'PC1', 'PC2', 'PC3', 'PC5']
+  [Tier 2 Symbol Correction] resolved=['PC1']  remaining=['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+  [Tier 3] 'N2': bbox=2 atoms=10 smiles=*.*[N+]1=CN2CCCC2=N1 wildcard=True
+  [Tier 3] 'N3': bbox=6 atoms=7 smiles=*N1C=C[N+](*)=C1 wildcard=True
+  [Tier 3] 'N7': bbox=16 atoms=11 smiles=*[n+]1csc2c1CCCCC2 wildcard=True
+  [Tier 3] 'PC2': bbox=8 atoms=40 smiles=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]-> wildcard=True
+  [Tier 3] 'PC3': bbox=8 atoms=40 smiles=*C1=CC=C2[C](=C1)[Ir]13([C]4=CC(*)=CC=C4C4=[N]1C=CC=C4)([C]1 wildcard=True
+  [Tier 3] 'PC5': bbox=14 atoms=45 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+    [Tier 4 LLM] 'N2' → r_value='Ar = C6F5'
+    [Tier 4 LLM] 'N3' → r_value='R = Me, X = I'
+    [Tier 4 LLM] 'N7' → r_value='R = -CH2-tBu'
+    [Tier 4 LLM] 'PC2' → r_value='R = H'
+    [Tier 4 LLM] 'PC3' → r_value='R = CF3'
+    [Tier 4 LLM] 'PC5' → r_value='R1 = CF3, R2 = F'
+    [Tier 4] R-group candidates: ['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+    [Tier 4 graph] 'N2' r=Ar = C6F5 fallback (smi=*[n+]1cn2c(n1)CCC2.F[B-](F)(F)F)
+    [Tier 4] 'N2' 🔄 corrected: Fc1c(F)c(F)c(c(F)c1F)[n+]1nnc2N(CCC2)C=1.F[B-](F)(
+    [Tier 4 graph] 'N3' r=R = Me, X = I fallback (smi=*n1cc[n+](*)c1)
+    [Tier 4] 'N3' ✅ match: Cn1cc[n+](C)c1.[I-]
+    [Tier 4 graph] 'N7' r=R = -CH2-tBu fallback (smi=*[n+]1csc2c1CCCCC2)
+    [Tier 4] 'N7' 🔄 corrected: CC(C)(C)C[n+]1csc2c1CCCCCC2
+    [Tier 4 graph] 'PC2' r=R = H fallback (smi=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]->31)[c]1cc(*)ccc1-c1cccc[n]->41)
+    [Tier 4 graph] 'PC3' r=R = CF3 fallback (smi=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]->31)[c]1cc(*)ccc1-c1cccc[n]->41)
+    [Tier 4] 'PC2' ✅ match: c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1ccccc1-c1ccc
+    [Tier 4] 'PC3' ✅ match: C(F)(F)(F)c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc
+    [Tier 4 graph] 'PC5' r=R1 = CF3, R2 = F fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([1*])C=C2)[C]1=C(C([2*])=CC([2*])=C1)C1=CC=C([1*])C=[N]13)
+    [Tier 4] 'PC5' RDKit render failed: CC(C)(C)C1=CC=NC2=C1C1=NC=CC(C(C)(C)C)=C
+  [Tier 4 R-group Sub] resolved=['N2', 'N3', 'N7', 'PC2', 'PC3']  remaining=['PC5']
+    [Tier 5 PubChem] 'PC5' → name_map name: 'Ir[dF(CF3)ppy]2(Phen)PF6'
+    [Tier 5 PubChem] 'PC5' → no hit (tried ['Ir[dF(CF3)ppy]2(Phen)PF6', 'Ir(dF(CF3)ppy)2(Phen)PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['PC5']
+    [Tier 6] 'PC5' PubChem/OPSIN/LLM all failed for authoritative name 'Ir[dF(CF3)ppy]2(Phen)PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['PC5']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['N1', 'N2', 'N3', 'N4', 'N5', 'N6', 'N7', 'PC1', 'PC2', 'PC3', 'PC4', 'PC5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis/GPT_5_MINI/processed/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis_artifacts/image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png
+  Exists   : True
+  [Tier 0 NameMap] 'N1' → llm_name_to_smiles via name='2,4,6-trimethylphenyl triazolium salt'
+  [Tier 0 NameMap] 'N2' → name 'pentafluorophenyl triazolium salt' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'N4' → llm_name_to_smiles via name='2,6-diisopropylphenyl imidazolium salt'
+  [Tier 0 NameMap] 'N6' → llm_name_to_smiles via name='2,6-diisopropylphenyl thiazolium salt'
+  [Tier 0 NameMap Organomet] 'PC4' pubchem_lookup: score=1  CC(C)(C)C1=CC(=NC=C1)C2=NC=CC(=C2)C(C)(C)C.C1=CC=C([C-]=C1)C2=CC=CC=N2
+  [Tier 0 NameMap] 'PC4' → best=pubchem_lookup (score=1) via name='[Ir(ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'PC5' → name 'Ir[dF(CF3)ppy]2(Phen)PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['N1', 'N4', 'N6', 'PC4']  remaining=['N2', 'N3', 'N5', 'N7', 'PC1', 'PC2', 'PC3', 'PC5']
+  [OCSR] image_000006_4d966b52b563d3d3e8de56b60ad94381580a62244b44ee41e97c05beb9a7a3fc.png: 20 bboxes, 10 coref pairs
+  [OCSR]   pair [0,1]: texts=['PC1']  smiles=*C1=C(N2C3=CC=CC=C3C3=C2C=CC=C3)C(*)=C(N23C4=C5678  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Nt Ar = 2.4,6-Mej-CsHz', 'N2 Ar = CoFs']  smiles=*[n+]1cn2c(n1)CCC2.F[B-](F)(F)F  wildcard=True
+  [OCSR]   pair [4,5]: texts=['14']  smiles=*Cc1ccccc1  wildcard=True
+  [OCSR]   pair [6,7]: texts=['NJ R =', 'Xi', 'N4R-2,6-iPiz CoHy X = Cl', 'Ke;']  smiles=*n1cc[n+](*)c1  wildcard=True
+  [OCSR]   pair [8,9]: texts=['PC?Reh', 'Pc} R = CFa']  smiles=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c  wildcard=True
+  [OCSR]   pair [10,11]: texts=['2a']  smiles=F[C](=[U])c1ccccc1  wildcard=False
+  [OCSR]   pair [12,13]: texts=['N5']  smiles=Cc1c(CCO)sc[n+]1C.[I-]  wildcard=False
+  [OCSR]   pair [14,15]: texts=['PCA RI=h R?=h', 'Pcs RI', 'RZ = F', '= CFr']  smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC  wildcard=True
+  [OCSR]   pair [16,17]: texts=['N6 R =', '2,6-Prz-CsHa', 'N7 R = Chz-IBu']  smiles=*[n+]1csc2c1CCCCC2  wildcard=True
+  [OCSR]   pair [18,19]: texts=['34']  smiles=*CC(*)=O  wildcard=True
+  [OCSR] → 10 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['N5']  remaining=['N2', 'N3', 'N7', 'PC1', 'PC2', 'PC3', 'PC5']
+  [Tier 2 Symbol Correction] resolved=['PC1']  remaining=['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+  [Tier 3] 'N2': bbox=2 atoms=10 smiles=*.*[N+]1=CN2CCCC2=N1 wildcard=True
+  [Tier 3] 'N3': bbox=6 atoms=7 smiles=*N1C=C[N+](*)=C1 wildcard=True
+  [Tier 3] 'N7': bbox=16 atoms=11 smiles=*[n+]1csc2c1CCCCC2 wildcard=True
+  [Tier 3] 'PC2': bbox=8 atoms=40 smiles=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]-> wildcard=True
+  [Tier 3] 'PC3': bbox=8 atoms=40 smiles=*C1=CC=C2[C](=C1)[Ir]13([C]4=CC(*)=CC=C4C4=[N]1C=CC=C4)([C]1 wildcard=True
+  [Tier 3] 'PC5': bbox=14 atoms=45 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+    [Tier 4 LLM] 'N2' → r_value='Ar = C6F5'
+    [Tier 4 LLM] 'N3' → r_value='R = Me, X = I'
+    [Tier 4 LLM] 'N7' → r_value='R = -CH2-tBu'
+    [Tier 4 LLM] 'PC2' → r_value='R = H'
+    [Tier 4 LLM] 'PC3' → r_value='R = CF3'
+    [Tier 4 LLM] 'PC5' → r_value='R1 = CF3, R2 = F'
+    [Tier 4] R-group candidates: ['N2', 'N3', 'N7', 'PC2', 'PC3', 'PC5']
+    [Tier 4 graph] 'N2' r=Ar = C6F5 fallback (smi=*[n+]1cn2c(n1)CCC2.F[B-](F)(F)F)
+    [Tier 4] 'N2' 🔄 corrected: Fc1c(F)c(F)c(c(F)c1F)[n+]1nnc2N(CCC2)C=1.F[B-](F)(
+    [Tier 4 graph] 'N3' r=R = Me, X = I fallback (smi=*n1cc[n+](*)c1)
+    [Tier 4] 'N3' ✅ match: Cn1cc[n+](C)c1.[I-]
+    [Tier 4 graph] 'N7' r=R = -CH2-tBu fallback (smi=*[n+]1csc2c1CCCCC2)
+    [Tier 4] 'N7' 🔄 corrected: CC(C)(C)C[n+]1csc2c1CCCCCC2
+    [Tier 4 graph] 'PC2' r=R = H fallback (smi=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]->31)[c]1cc(*)ccc1-c1cccc[n]->41)
+    [Tier 4 graph] 'PC3' r=R = CF3 fallback (smi=*c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(*)ccc1-c1cccc[n]->31)[c]1cc(*)ccc1-c1cccc[n]->41)
+    [Tier 4] 'PC2' ✅ match: c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1ccccc1-c1ccc
+    [Tier 4] 'PC3' ✅ match: FC(F)(F)c1ccc2-c3cccc[n]3->[Ir]34([c]2c1)([c]1cc(C
+    [Tier 4 graph] 'PC5' r=R1 = CF3, R2 = F fallback (smi=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([1*])C=C2)[C]1=C(C([2*])=CC([2*])=C1)C1=CC=C([1*])C=[N]13)
+    [Tier 4] 'PC5' RDKit render failed: CC(C)(C)C1=CC=NC2=C1C1=NC=CC(C(C)(C)C)=C
+  [Tier 4 R-group Sub] resolved=['N2', 'N3', 'N7', 'PC2', 'PC3']  remaining=['PC5']
+    [Tier 5 PubChem] 'PC5' → name_map name: 'Ir[dF(CF3)ppy]2(Phen)PF6'
+    [Tier 5 PubChem] 'PC5' → no hit (tried ['Ir[dF(CF3)ppy]2(Phen)PF6', 'Ir(dF(CF3)ppy)2(Phen)PF6'])
+  [Tier 5 PubChem] resolved=[]  remaining=['PC5']
+    [Tier 6] 'PC5' PubChem/OPSIN/LLM all failed for authoritative name 'Ir[dF(CF3)ppy]2(Phen)PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['PC5']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Gallery 1
+────────────────────────────────────────────────────────────
+  Labels   : ['N5', 'N2', 'N1', 'N4', 'N7', 'N6', 'N3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis/GPT_5_MINI/processed/Suzuki-type_cross-coupling_of_alkyl_trifluoroborates_with_acid_fluoride_enabled_by_NHCphotoredox_dual_catalysis_artifacts/image_000012_258cf29c7af25b8cbf09d06f0826f810f0710774c5030f186e8c4e757a04fa61.png
+  Exists   : True
+  [Tier 0 NameMap] 'N2' → name 'pentafluorophenyl triazolium salt' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'N1' → llm_name_to_smiles via name='2,4,6-trimethylphenyl triazolium salt'
+  [Tier 0 NameMap] 'N4' → llm_name_to_smiles via name='2,6-diisopropylphenyl imidazolium salt'
+  [Tier 0 NameMap] 'N6' → llm_name_to_smiles via name='2,6-diisopropylphenyl thiazolium salt'
+  [Tier 0 NameMap] resolved=['N1', 'N4', 'N6']  remaining=['N5', 'N2', 'N7', 'N3']
+  [OCSR] image_000012_258cf29c7af25b8cbf09d06f0826f810f0710774c5030f186e8c4e757a04fa61.png: 8 bboxes, 0 coref pairs
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['N5', 'N2', 'N7', 'N3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['N5', 'N2', 'N7', 'N3']
+  [Tier 3] 'N5': bbox=5 atoms=7 smiles=CN1*[N+](C)=CN1 wildcard=True
+  [Tier 3] 'N2': bbox=2 atoms=4 smiles=*C(C)=O wildcard=True
+  [Tier 3] 'N7': bbox=7 atoms=4 smiles=*=C(O)F wildcard=True
+  [Tier 3] 'N3': bbox=3 atoms=3 smiles=*C* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['N5', 'N2', 'N7', 'N3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['N5', 'N2', 'N7', 'N3']
+    [Tier 5 PubChem] 'N5' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'N2' → name_map name: 'pentafluorophenyl triazolium salt'
+    [Tier 5 PubChem] 'N2' → no hit (tried ['pentafluorophenyl triazolium salt'])
+    [Tier 5 PubChem] 'N7' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] 'N3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['N5', 'N2', 'N7', 'N3']
+    [Tier 6] 'N2' PubChem/OPSIN/LLM all failed for authoritative name 'pentafluorophenyl triazolium salt' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['N5', 'N2', 'N7', 'N3']

@@ -1,0 +1,47 @@
+Label Resolver Diagnostic Log — 2026-06-11 12:10:20
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Caffeine_as_a_naturally_green_and_biodegradable_catalyst_promoted_convenient_and_expedient_synthetic_route_for_the_synth/GPT_5_MINI/processed/Caffeine_as_a_naturally_green_and_biodegradable_catalyst_promoted_convenient_and_expedient_synthetic_route_for_the_synth_artifacts/image_000003_f37e36f05189c8477444bb407b33359555917b9b092d1062aaceb7305039e4ae.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+  [OCSR] image_000003_f37e36f05189c8477444bb407b33359555917b9b092d1062aaceb7305039e4ae.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*N  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2']  smiles=**OC(=O)C#CC(=O)O**  wildcard=True
+  [OCSR]   pair [4,5]: texts=['3']  smiles=*N  wildcard=True
+  [OCSR]   pair [6,7]: texts=[]  smiles=*C(*)=O  wildcard=True
+  [OCSR]   pair [8,9]: texts=['5a-t']  smiles=*NC1=C(*)C(*)(*)N(*)C1=O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+  [Tier 3] 'dimethyl acetylenedicarboxylate (DMAD)': bbox=2 atoms=12 smiles=[2*]OCC(=O)C#CO(=C)CO[2*] wildcard=True
+  [Tier 3] 'aniline': bbox=4 atoms=2 smiles=*N wildcard=True
+  [Tier 3] '5a-t': bbox=8 atoms=12 smiles=*C1=C(N[1*])C(=O)N(*)C1(*)* wildcard=True
+  [Tier 3] 'formaldehyde': bbox=6 atoms=4 smiles=*C(*)=O wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+    [Tier 4 LLM] 'dimethyl acetylenedicarboxylate (DMAD)' → r_value='R2 = Me'
+    [Tier 4 LLM] 'aniline' → r_value='Ar = Ph'
+    [Tier 4 LLM] '5a-t' → r_value='R1, R2, Ar = various'
+    [Tier 4 LLM] 'formaldehyde' → r_value='H, H'
+    [Tier 4] R-group candidates: ['dimethyl acetylenedicarboxylate (DMAD)', 'aniline', '5a-t', 'formaldehyde']
+    [Tier 4 graph] 'dimethyl acetylenedicarboxylate (DMAD)' r=R2 = Me fallback (smi=**OC(=O)C#CC(=O)O**)
+    [Tier 4] 'dimethyl acetylenedicarboxylate (DMAD)' ✅ match: COC(=O)C#CC(=O)OC
+    [Tier 4 graph] 'aniline' r=Ar = Ph fallback (smi=*N)
+    [Tier 4] 'aniline' ✅ match: c1ccc(N)cc1
+    [Tier 4] bbox missing for group ['5a-t'] — using full image
+    [Tier 4 graph] 'formaldehyde' r=H, H fallback (smi=*C(*)=O)
+  [Tier 4 R-group Sub] resolved=['dimethyl acetylenedicarboxylate (DMAD)', 'aniline']  remaining=['5a-t', 'formaldehyde']
+    [Tier 5 PubChem] '5a-t' → no hit (tried ['5a-t'])
+    [Tier 5 PubChem] 'formaldehyde' → hit via 'formaldehyde': C=O
+  [Tier 5 PubChem] resolved=['formaldehyde']  remaining=['5a-t']
+    [Tier 6→llm_name_to_smiles] '5a-t' name='4-amino-1-aryl-5-oxo-2,5-dihydro-1H-pyrrole-3-carboxylate derivative' → NC1=C(C(=O)N(C1=O)c2ccccc2)C(=O)O
+  [Tier 6 LLM Vision] resolved=['5a-t']

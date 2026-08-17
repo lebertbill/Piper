@@ -1,0 +1,49 @@
+Label Resolver Diagnostic Log — 2026-06-11 10:52:21
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [InlineResolver] Column 'Metal catalyst' labels ['2a'] from visualheist_page_02_table_3.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['2a']
+  Image    : extracted_data/Atom-economic_generation_of_gold_carbenes_gold-catalyzed_formal_32_cycloaddition_between_ynamides_and_isoxazoles/GPT_5_MINI/processed/visualheist_page_02_table_3.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2a']
+  [OCSR] visualheist_page_02_table_3.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C#CN(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a (3 equiv )']  smiles=Cc1cc(C)on1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C1=C(N(*)*)NC(C)=C1C(C)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['2a']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2a', '1a']
+  Image    : extracted_data/Atom-economic_generation_of_gold_carbenes_gold-catalyzed_formal_32_cycloaddition_between_ynamides_and_isoxazoles/GPT_5_MINI/processed/visualheist_page_02_table_3.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '2a', '1a']
+  [OCSR] visualheist_page_02_table_3.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=*C#CN(*)*  wildcard=True
+  [OCSR]   pair [2,3]: texts=['2a (3 equiv )']  smiles=Cc1cc(C)on1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['3a']  smiles=*C1=C(N(*)*)NC(C)=C1C(C)=O  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['2a']  remaining=['3a', '1a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3a', '1a']
+  [Tier 3] '3a': bbox=4 atoms=13 smiles=*C1=C(N(*)*)NC(C)=C1C(C)=O wildcard=True
+  [Tier 3] '1a': bbox=0 atoms=6 smiles=*C#CN(*)* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3a', '1a']
+    [Tier 4 LLM] '1a' → r_value='R1 = Ph, R2 = Ms, R3 = Ph'
+    [Tier 4 LLM] '3a' → r_value='R1 = Ph, R2 = Ms, R3 = Ph'
+    [Tier 4] R-group candidates: ['1a', '3a']
+    [Tier 4 graph] '1a' r=R1 = Ph, R2 = Ms, R3 = Ph fallback (smi=*C#CN(*)*)
+    [Tier 4] '1a' ✅ match: c1ccc(cc1)C#CN(c2ccccc2)S(=O)(=O)C
+    [Tier 4 graph] '3a' r=R1 = Ph, R2 = Ms, R3 = Ph fallback (smi=*C1=C(N(*)*)NC(C)=C1C(C)=O)
+    [Tier 4] '3a' 🔄 corrected: CC1=C(C(C)=O)C(C2=CC=CC=C2)=C(N(C3=CC=CC=C3)S(C)(=
+  [Tier 4 R-group Sub] resolved=['1a', '3a']  remaining=[]

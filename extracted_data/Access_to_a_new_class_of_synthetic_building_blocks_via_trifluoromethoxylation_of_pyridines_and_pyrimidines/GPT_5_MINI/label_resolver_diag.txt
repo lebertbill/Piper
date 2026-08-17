@@ -1,0 +1,61 @@
+Label Resolver Diagnostic Log — 2026-06-10 15:18:04
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['A', 'B', 'C', 'D'] → image_000006_024d12fc454f94b4e5d57dbcc112aa391c7db5fc9ea8042e1f9a857a4e2d2153.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Reagent Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C', 'D']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Access_to_a_new_class_of_synthetic_building_blocks_via_trifluoromethoxylation_of_pyridines_and_pyrimidines/GPT_5_MINI/processed/Access_to_a_new_class_of_synthetic_building_blocks_via_trifluoromethoxylation_of_pyridines_and_pyrimidines_artifacts/image_000006_024d12fc454f94b4e5d57dbcc112aa391c7db5fc9ea8042e1f9a857a4e2d2153.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['A', 'B', 'C', 'D']
+  [OCSR] image_000006_024d12fc454f94b4e5d57dbcc112aa391c7db5fc9ea8042e1f9a857a4e2d2153.png: 4 bboxes, 0 coref pairs
+  [OCSR] → 0 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['A', 'B', 'C', 'D']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['A', 'B', 'C', 'D']
+  [Tier 3] 'A': bbox=0 atoms=12 smiles=*I1OC(*)(*)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] 'B': bbox=1 atoms=11 smiles=*I1OC(=O)C2=C1C=CC=C2 wildcard=True
+  [Tier 3] 'C': bbox=2 atoms=14 smiles=*[S+]1C2=C*=CC=C2C2=C1C=CC=C2 wildcard=True
+  [Tier 3] 'D': bbox=3 atoms=11 smiles=*.*S(=*)(=O)C1=CC=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['A', 'B', 'C', 'D']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['A', 'B', 'C', 'D']
+    [Tier 5 PubChem] 'A' → no hit (tried ['A'])
+    [Tier 5 PubChem] 'B' → no hit (tried ['B'])
+    [Tier 5 PubChem] 'C' → no hit (tried ['F', 'C'])
+    [Tier 5 PubChem] 'D' → no hit (tried ['D'])
+  [Tier 5 PubChem] resolved=[]  remaining=['A', 'B', 'C', 'D']
+    [Tier 6→llm_name_to_smiles] 'A' name='Togni reagent I' → CC1(C2=CC=CC=C2I(O1)C(F)(F)F)C
+    [Tier 6→pubchem_lookup] 'B' name='Togni reagent II' → C1=CC=C2C(=C1)C(=O)OI2C(F)(F)F
+    [Tier 6→llm_name_to_smiles] 'D' name='Shibata-Johnson reagent' → C1=CC=C(C=C1)S(=O)(=O)N2C3=CC=CC=C3C4=C2C=CC=C4I
+  [Tier 6 LLM Vision] resolved=['A', 'B', 'C', 'D']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a']
+  Image    : extracted_data/Access_to_a_new_class_of_synthetic_building_blocks_via_trifluoromethoxylation_of_pyridines_and_pyrimidines/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1a', '2a']
+  [OCSR] visualheist_page_03_table_1.png: 8 bboxes, 2 coref pairs
+  [OCSR]   pair [1,2]: texts=['Ia']  smiles=*C(=O)N(O)C1=CC(Br)=C(*)N=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['2a']  smiles=*C(=O)NC1=CC(Br)=C(*)N=C1*  wildcard=True
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '2a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '2a']
+  [Tier 3] '1a': bbox=1 atoms=13 smiles=*C(=O)N(*)C1=CC(Br)=C(*)N=C1 wildcard=True
+  [Tier 3] '2a': bbox=5 atoms=13 smiles=*C(=O)NC1=CC(Br)=C(*)N=C1* wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '2a']
+    [Tier 4 LLM] '1a' → r_value='* = MeO'
+    [Tier 4 LLM] '2a' → r_value='* = MeO, * = OCF3'
+    [Tier 4] R-group candidates: ['1a', '2a']
+    [Tier 4 graph] '1a' r=* = MeO fallback (smi=*C(=O)N(O)C1=CC(Br)=C(*)N=C1)
+    [Tier 4] '1a' ✅ match: COC(=O)N(O)C1=CC(Br)=C(OC)N=C1
+    [Tier 4 graph] '2a' r=* = MeO, * = OCF3 fallback (smi=*C(=O)NC1=CC(Br)=C(*)N=C1*)
+    [Tier 4] '2a' ✅ match: COC(=O)NC1=CC(Br)=C(OC)N=C1OC(F)(F)F
+  [Tier 4 R-group Sub] resolved=['1a', '2a']  remaining=[]

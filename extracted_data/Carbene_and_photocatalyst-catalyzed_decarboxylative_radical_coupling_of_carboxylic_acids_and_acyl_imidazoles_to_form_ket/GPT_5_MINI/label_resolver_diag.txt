@@ -1,0 +1,99 @@
+Label Resolver Diagnostic Log — 2026-06-11 12:30:18
+================================================================================
+
+  [GlobalRegistry] labels=['A', 'B', 'C', 'D', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', '4CzIPN', 'PC-6'] → image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['A', 'B', 'C', 'D', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', '4CzIPN', 'PC-6']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket/GPT_5_MINI/processed/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket_artifacts/image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png
+  Exists   : True
+  [Tier 0 NameMap] 'A' → llm_name_to_smiles via name='NHC precatalyst A'
+  [Tier 0 NameMap] 'B' → llm_name_to_smiles via name='NHC precatalyst B'
+  [Tier 0 NameMap] 'C' → name 'NHC precatalyst C' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] 'D' → llm_name_to_smiles via name='NHC precatalyst D'
+  [Tier 0 NameMap] 'PC-1' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC-2' → name '[Ir(dFppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC-3' → name '[Ir(ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] 'PC-4' → name '[Ir(dtbbpy)(ppy)2]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] 'PC-6' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['A', 'B', 'D', '4CzIPN', 'PC-6']  remaining=['C', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+  [OCSR] image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X = 4-NOzPho', 'Ib: X=Cl', 'Ic: X = imidazole']  smiles=*C(=O)c1ccc(F)cc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=CC(C)c1cccc(C(C)C)c1-[n+]1csc2c1CCCCC2  wildcard=False
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C(C)C1=CC=C(CC(C)C)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=["B: R' = R2 = CH}", "C:R'=H,R2 = OMe", "D: R'", '=CI', '=R?']  smiles=[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2  wildcard=True
+  [OCSR]   pair [8,9]: texts=["PC-1: R' = CF3,", 'F,R? = CF3', "Pc-2: R' =F,R2 = F,", '=', 'CF3', "PC-3 R'=H,", 'F,R3', '=', 'CF3', "PC-4: R' = t-Bu; R2 = F,R3 = CF3", "PC-5: R'", '2', 't-Bu, R2 = R3 = H', 'R2 =', 'R3', 'R2 =']  smiles=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]21  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1  wildcard=False
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['C', 'PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+  [Tier 2 Symbol Correction] resolved=['C']  remaining=['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+  [Tier 3] 'PC-1': bbox=8 atoms=48 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3] 'PC-2': bbox=8 atoms=48 smiles=*C1=C[N]2=C(C=C1)C1=C(F)C=C(F)C=[C]1[Ir]213([C]2=C(C4=[N]1C= wildcard=True
+  [Tier 3] 'PC-3': bbox=8 atoms=48 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3] 'PC-4': bbox=8 atoms=48 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(F)=CC(F)= wildcard=True
+  [Tier 3] 'PC-5': bbox=8 atoms=48 smiles=*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=CC(*)=CC(*)= wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+    [Tier 4 LLM] 'PC-1' → r_value='R1 = CF3, R2 = F, R3 = CF3'
+    [Tier 4 LLM] 'PC-2' → r_value='R1 = F, R2 = F, R3 = CF3'
+    [Tier 4 LLM] 'PC-3' → r_value='R1 = H, R2 = F, R3 = CF3'
+    [Tier 4 LLM] 'PC-4' → r_value='R1 = t-Bu, R2 = F, R3 = CF3'
+    [Tier 4 LLM] 'PC-5' → r_value='R1 = t-Bu, R2 = R3 = H'
+    [Tier 4] R-group candidates: ['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+    [Tier 4 graph] 'PC-1' r=R1 = CF3, R2 = F, R3 = CF3 fallback (smi=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1)
+    [Tier 4 graph] 'PC-2' r=R1 = F, R2 = F, R3 = CF3 fallback (smi=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1)
+    [Tier 4 graph] 'PC-3' r=R1 = H, R2 = F, R3 = CF3 fallback (smi=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1)
+    [Tier 4 graph] 'PC-4' r=R1 = t-Bu, R2 = F, R3 = CF3 fallback (smi=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1)
+    [Tier 4 graph] 'PC-5' r=R1 = t-Bu, R2 = R3 = H fallback (smi=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]213([C]2=CC([2*])=CC([2*])=C2C2=[N]1C=C([3*])C=C2)[C]1=C(C2=[N]3C=C([3*])C=C2)C2([2*])=CC=2C([2*])=C1)
+    [Tier 4] 'PC-1' RDKit render failed: CC.FC(F)(F)C1=CC=[N]2C(=C1)C1=[N](C=CC(C
+    [Tier 4] 'PC-2' RDKit render failed: CC.FC1=CC=[N]2C(=C1)C1=[N](C=CC(F)=C1)[I
+    [Tier 4] 'PC-3' RDKit render failed: CC.C1=CC=[N]2C(=C1)C1=[N](C=CC=C1)[Ir]21
+    [Tier 4] 'PC-4' RDKit render failed: CC.CC(C)(C)C1=CC=[N]2C(=C1)C1=[N](C=CC(C
+    [Tier 4] 'PC-5' RDKit render failed: CC.CC(C)(C)C1=CC=[N]2C(=C1)C1=[N](C=CC(C
+  [Tier 4 R-group Sub] resolved=[]  remaining=['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5']
+    [Tier 5 PubChem] 'PC-1' → name_map name: '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-1' → no hit (tried ['[Ir(dF(CF3)ppy)2(dtbbpy)]PF6', '[Ir(dF(CF3)ppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'PC-2' → name_map name: '[Ir(dFppy)2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-2' → no hit (tried ['[Ir(dFppy)2(dtbbpy)]PF6', '[Ir(dFppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'PC-3' → name_map name: '[Ir(ppy)2(dtbbpy)]PF6'
+    [Tier 5 PubChem] 'PC-3' → no hit (tried ['[Ir(ppy)2(dtbbpy)]PF6', '1 mol %', '[Ir(ppy)2(dtbbpy))PF6'])
+    [Tier 5 PubChem] 'PC-4' → name_map name: '[Ir(dtbbpy)(ppy)2]PF6'
+    [Tier 5 PubChem] 'PC-4' → no hit (tried ['[Ir(dtbbpy)(ppy)2]PF6', '[Ir(dtbbpy)(ppy)2)PF6'])
+    [Tier 5 PubChem] 'PC-5' → hit via 'PC-5': CC(C=C)(C(/C=C/C(=C/Cl)/C=O)Cl)Cl
+  [Tier 5 PubChem] resolved=['PC-5']  remaining=['PC-1', 'PC-2', 'PC-3', 'PC-4']
+    [Tier 6] 'PC-1' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' — name only, no SMILES
+    [Tier 6] 'PC-2' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dFppy)2(dtbbpy)]PF6' — name only, no SMILES
+    [Tier 6] 'PC-3' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(ppy)2(dtbbpy)]PF6' — name only, no SMILES
+    [Tier 6] 'PC-4' PubChem/OPSIN/LLM all failed for authoritative name '[Ir(dtbbpy)(ppy)2]PF6' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['PC-1', 'PC-2', 'PC-3', 'PC-4']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '1b', '1c', '2a', '1a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket/GPT_5_MINI/processed/Carbene_and_photocatalyst-catalyzed_decarboxylative_radical_coupling_of_carboxylic_acids_and_acyl_imidazoles_to_form_ket_artifacts/image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['3a', '1b', '1c', '2a', '1a']
+  [OCSR] image_000003_28a6f7a6613936d4c81cb5b3c13241d5c9b440180925b22ac0540fc1fcc79430.png: 13 bboxes, 6 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia: X = 4-NOzPho', 'Ib: X=Cl', 'Ic: X = imidazole']  smiles=*C(=O)c1ccc(F)cc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=[]  smiles=CC(C)c1cccc(C(C)C)c1-[n+]1csc2c1CCCCC2  wildcard=False
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C(C)C1=CC=C(CC(C)C)C=C1  wildcard=True
+  [OCSR]   pair [6,7]: texts=["B: R' = R2 = CH}", "C:R'=H,R2 = OMe", "D: R'", '=CI', '=R?']  smiles=[1*]c1cc([2*])cc([1*])c1-[n+]1cn2c(n1)CCC2  wildcard=True
+  [OCSR]   pair [8,9]: texts=["PC-1: R' = CF3,", 'F,R? = CF3', "Pc-2: R' =F,R2 = F,", '=', 'CF3', "PC-3 R'=H,", 'F,R3', '=', 'CF3', "PC-4: R' = t-Bu; R2 = F,R3 = CF3", "PC-5: R'", '2', 't-Bu, R2 = R3 = H', 'R2 =', 'R3', 'R2 =']  smiles=CC.[1*]C1=CC=[N]2C(=C1)C1=[N](C=CC([1*])=C1)[Ir]21  wildcard=True
+  [OCSR]   pair [10,11]: texts=['3a']  smiles=CC(C)Cc1ccc([C@@H](C)C(=O)c2ccc(F)cc2)cc1  wildcard=False
+  [OCSR] → 6 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['3a']  remaining=['1b', '1c', '2a', '1a']
+  [Tier 2 Symbol Correction] resolved=['1b', '1c', '1a']  remaining=['2a']
+  [Tier 3] '2a': bbox=4 atoms=13 smiles=*C(C)C1=CC=C(CC(C)C)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a']
+    [Tier 4 LLM] '2a' → r_value='COOH'
+    [Tier 4] R-group candidates: ['2a']
+    [Tier 4 graph] '2a' r=COOH fallback (smi=*C(C)C1=CC=C(CC(C)C)C=C1)
+    [Tier 4] '2a' ✅ match: CC(C1=CC=C(CC(C)C)C=C1)C(=O)O
+  [Tier 4 R-group Sub] resolved=['2a']  remaining=[]

@@ -1,0 +1,2911 @@
+[
+    {
+        "document": "NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_",
+        "table_name": "Table 1",
+        "table_caption": "Conditions optimization a , b",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl_/GPT_5_MINI/processed/NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "(1.5 mol%)",
+                        "quantity": 1.5,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir+3]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Dichloromethane (DCM)",
+                        "quantity": 2.0,
+                        "unit": "mL",
+                        "smiles": "ClCCl",
+                        "resolved_smiles": "C(Cl)Cl",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "Entry"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "(15 mol%)",
+                        "quantity": 15.0,
+                        "unit": "mol%",
+                        "resolved_name": "Entry 15",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-1",
+                        "resolved_name": "Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir+3]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-2",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 45.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 14.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "1",
+                        "resolved_name": "Entry 1",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-2",
+                        "resolved_name": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 65.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "2",
+                        "resolved_name": "Entry 2",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-4",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "Ru(bpy)3(BF4)2",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[B-](F)(F)F.F[B-](F)(F)F.[Ru+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[B-](F)(F)F.F[B-](F)(F)F.[Ru+2]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 16.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 15.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "3",
+                        "resolved_name": "Entry 3",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-4",
+                        "resolved_name": "Ru(bpy)3(BF4)2",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[B-](F)(F)F.F[B-](F)(F)F.[Ru+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[B-](F)(F)F.F[B-](F)(F)F.[Ru+2]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-5",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Acr-Mes]ClO4",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C2=[N+](C3=CC=CC=C3C4=CC=CC=C24)C.O=Cl(=O)(=O)[O-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "yields reported as <5% for both products"
+                ]
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-5",
+                        "resolved_name": "[Acr-Mes]ClO4",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1C2=[N+](C3=CC=CC=C3C4=CC=CC=C24)C.O=Cl(=O)(=O)[O-]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 3 CN (2)"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 56.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "6",
+                        "resolved_name": "Entry 6",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CF 3 Ph (2)"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 36.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "7",
+                        "resolved_name": "Entry 7",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "CsOAc",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "THF (2)",
+                        "resolved_smiles": "C1CCOC1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 37.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 25.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "8",
+                        "resolved_name": "Entry 8",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": [
+                    "CsOAc (0.2 mmol) was used as a base (footnote c)"
+                ]
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "K2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[K+].[K+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 51.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 20.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "9 c",
+                        "resolved_name": "Entry 9",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": [
+                    "K2CO3 (0.2 mmol) was used as a base (footnote d)"
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 15.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 14.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "10 d",
+                        "resolved_name": "Entry 10",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-1",
+                        "resolved_name": "N-Mesityl substituted triazolium salt",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1N2C=N[N+](C)=C2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 20.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "11",
+                        "resolved_name": "Entry 11",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-2",
+                        "resolved_name": "Entry 2",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": [
+                    "yields reported as <5% for product 4"
+                ]
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 60.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "12",
+                        "resolved_name": "Entry 12",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-3",
+                        "resolved_name": "N-C6F5 substituted triazolium salt",
+                        "resolved_smiles": "C1=C[N+](C=N1)C2=C(F)C(F)=C(F)C(F)=C2F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 40.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 12.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "13",
+                        "resolved_name": "Entry 13",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-4",
+                        "resolved_name": "N-2,6-di-Et-C6H3 substituted triazolium salt",
+                        "resolved_smiles": "CCC1=C(C(=CC=C1)CC)N2C=N[N+](C=C2)C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 53.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "14",
+                        "resolved_name": "Entry 14",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-5",
+                        "resolved_name": "Product 5",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "16",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (2)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 29.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 9.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "15",
+                        "resolved_name": "Entry 15",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-6",
+                        "resolved_name": "Entry 6",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "17",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (1)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 80.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "16",
+                        "resolved_name": "Entry 16",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "18",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (4)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 75.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "17",
+                        "resolved_name": "Entry 17",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": [
+                    "0.2 mmol scale reaction was conducted (footnote e)"
+                ]
+            },
+            {
+                "entry_id": "19",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-3",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (8)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.2,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 75.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "18 e",
+                        "resolved_name": "Entry 18",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "NHC-1",
+                        "resolved_name": "N-Mesityl substituted triazolium salt",
+                        "resolved_smiles": "CC1=CC(C)=CC(C)=C1N2C=N[N+](C)=C2",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": [
+                    "racemic NHC-1 used; 0.2 mmol scale reaction was conducted (footnote e)"
+                ]
+            },
+            {
+                "entry_id": "20",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2",
+                        "text": "benzoic anhydride",
+                        "quantity": 0.4,
+                        "smiles_ocsr": "C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(OC(=O)c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C14H10O3",
+                        "molecular_weight": 226.23
+                    }
+                ],
+                "products": [],
+                "conditions": [
+                    {
+                        "role": "",
+                        "text": "19 e",
+                        "resolved_name": "Entry 19",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "rac - NHC-1",
+                        "resolved_name": null,
+                        "resolved_smiles": "C1=CC=C(C=C1)C(=O)C2=[N+](C)C=CN2C",
+                        "smiles_source": "ocsr_rgroup",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (8)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "<5",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "benzoic anhydride",
+                        "quantity": 0.4,
+                        "unit": "mmol",
+                        "resolved_name": "benzoic anhydride",
+                        "resolved_smiles": "C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C(C=C1)C(=O)OC(=O)C2=CC=CC=C2"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "<5"
+            },
+            {
+                "entry_id": "21",
+                "reactants": [
+                    {
+                        "smiles": "C=CC#C",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C#CC=C",
+                        "molecular_formula": "C4H4",
+                        "molecular_weight": 52.08
+                    },
+                    {
+                        "smiles": "O=C(Oc1ccccc1)c1ccccc1",
+                        "text": "2a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(Oc1ccccc1)c1ccccc1",
+                        "molecular_formula": "C13H10O2",
+                        "molecular_weight": 198.22
+                    },
+                    {
+                        "smiles": "O=S(=O)(O)c1ccccc1",
+                        "text": "3a",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=S(=O)(O)c1ccccc1",
+                        "molecular_formula": "C6H6O3S",
+                        "molecular_weight": 158.18
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "text": "4",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(C)=C=C(C)C(=O)c1ccccc1",
+                        "molecular_formula": "C13H14O",
+                        "molecular_weight": 186.25
+                    },
+                    {
+                        "smiles": "CC(C)C=C=C(C)C(=O)c1ccccc1",
+                        "text": "5",
+                        "smiles_source": "llm_vision",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CC(=C=CC(C)C)C(=O)c1ccccc1",
+                        "molecular_formula": "C14H16O",
+                        "molecular_weight": 200.28
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC-3",
+                        "resolved_name": "[Ir(ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC-1",
+                        "quantity": 1.5,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "Ir(ppy)3",
+                        "resolved_smiles": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_pubchem": "C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.C1=CC=C([C-]=C1)C2=CC=CC=N2.[Ir+3]",
+                        "smiles_llm": "C1=CC=C(C(=C1)C2=CC=CC=N2)[Ir](C3=CC=CC=N3)(C4=CC=CC=N4)(C5=CC=CC=C5)C6=CC=CC=C6"
+                    },
+                    {
+                        "role": "base",
+                        "text": "Cs2CO3",
+                        "quantity": 0.2,
+                        "unit": "mmol",
+                        "resolved_smiles": "C(=O)([O-])[O-].[Cs+].[Cs+]",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DCM (8)",
+                        "resolved_smiles": "ClCCl",
+                        "resolved_name": "Pleasingly, in dichloromethane",
+                        "smiles_source": "llm_name_to_smiles"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LED (10 W)",
+                        "quantity": 453.5,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 4.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "5",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "",
+                        "text": "20 f",
+                        "resolved_name": "Entry 20",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "nhcs",
+                        "text": "rac - NHC-1",
+                        "resolved_name": null,
+                        "resolved_smiles": "C1=CC=C(C=C1)C(=O)C2=[N+](C)C=CN2C",
+                        "smiles_source": "ocsr_rgroup",
+                        "mapping_source": "Table 1 Gallery"
+                    }
+                ],
+                "additional_info": []
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "NHCs (15 mol%)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the catalyst gallery below Table 1",
+                "label_map_ref": "NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "PCs (1.5 mol%)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the photocatalyst gallery below Table 1",
+                "label_map_ref": "NHC_and_visible_light-mediated_photoredox_co-catalyzed_1,4-sulfonylacylation_of_1,3-enynes_for_tetrasubstituted_allenyl__artifacts/image_000007_bd71bb713e04a98a2ec881f04ac3a5b759efb1794537f4452fb514d57f89d64f.png",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "Solvent (mL)": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "Yields 4": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": true
+            },
+            "Yields 5": {
+                "type": "numerical",
+                "data_type": "percentage",
+                "has_footnote_dependency": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 102,
+            "valid_molecules": 102,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

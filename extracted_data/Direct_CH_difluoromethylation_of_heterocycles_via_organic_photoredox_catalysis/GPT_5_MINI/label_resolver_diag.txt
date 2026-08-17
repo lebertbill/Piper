@@ -1,0 +1,73 @@
+Label Resolver Diagnostic Log — 2026-06-12 12:11:57
+================================================================================
+
+  [GlobalRegistry] labels=['Eosin Y', 'Rose bengal', 'DCA', 'MB', 'Acridinium salt', 'Eosin B'] → image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 5' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Eosin Y', 'Rose bengal', 'DCA', 'MB', 'Acridinium salt', 'Eosin B']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis/GPT_5_MINI/processed/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis_artifacts/image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png
+  Exists   : True
+  [Tier 0 NameMap] 'DCA' → pubchem_lookup via name='9,10-dicyanoanthracene'
+  [Tier 0 NameMap] 'MB' → pubchem_lookup via name='Methylene Blue'
+  [Tier 0 NameMap] resolved=['DCA', 'MB']  remaining=['Eosin Y', 'Rose bengal', 'Acridinium salt', 'Eosin B']
+  [OCSR] image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png: 11 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=Cn1c(=O)cnc2ccccc21  wildcard=False
+  [OCSR]   pair [3,4]: texts=['MB']  smiles=CN(C)c1ccc2nc3ccc(=[N+](C)C)cc-3sc2c1.[Cl-]  wildcard=False
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*C1=NC2=CC=CC=C2N(C)C1=O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Eosin Y', 'Rose bengal', 'Acridinium salt', 'Eosin B']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Eosin Y', 'Rose bengal', 'Acridinium salt', 'Eosin B']
+  [Tier 3] 'Eosin Y': bbox=2 atoms=29 smiles=*C1=C(Br)C=C2C(=C1Br)OC1=C(C=C(Br)C(*)=C1Br)C21OC(=O)C2=C1C= wildcard=True
+  [Tier 3] 'Rose bengal': bbox=5 atoms=31 smiles=*C1=C(I)C=C2C(=C1I)OC1=C(I)C(=O)C(I)=CC1=C2C1=C(*)C(Cl)=C(Cl wildcard=True
+  [Tier 3] 'Acridinium salt': bbox=6 atoms=23 smiles=Cc1cccc(C)c1-c1c2ccccc2[n+](C)c2ccccc12 wildcard=False
+  [Tier 3] 'Eosin B': bbox=7 atoms=27 smiles=*C1=CC2=C(C3=C(*)C=CC=C3)C3=CC(*)=C(*)C(Br)=C3OC2=C(Br)C1=O wildcard=True
+  [Tier 3 BBox Match] resolved=['Acridinium salt']  remaining=['Eosin Y', 'Rose bengal', 'Eosin B']
+    [Tier 4 LLM] 'Eosin Y' → r_value='* = CF2H'
+    [Tier 4 LLM] 'Rose bengal' → r_value='* = CF2H'
+    [Tier 4 LLM] 'Eosin B' → r_value='* = CF2H'
+    [Tier 4] R-group candidates: ['Eosin Y', 'Rose bengal', 'Eosin B']
+    [Tier 4 graph] 'Eosin Y' r=* = CF2H fallback (smi=*C1=NC2=CC=CC=C2N(C)C1=O)
+    [Tier 4 graph] 'Rose bengal' r=* = CF2H fallback (smi=*C1=NC2=CC=CC=C2N(C)C1=O)
+    [Tier 4 graph] 'Eosin B' r=* = CF2H fallback (smi=*C1=NC2=CC=CC=C2N(C)C1=O)
+    [Tier 4] 'Eosin Y' 🔄 corrected: CN1C(=O)C(C(F)F)=NC2=CC=CC=C12
+    [Tier 4] 'Rose bengal' 🔄 corrected: CN1C(=O)C(C(F)F)=NC2=CC=CC=C12
+    [Tier 4] 'Eosin B' ✅ match: FC(F)C1=NC2=CC=CC=C2N(C)C1=O
+  [Tier 4 R-group Sub] resolved=['Eosin Y', 'Rose bengal', 'Eosin B']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3a', '2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis/GPT_5_MINI/processed/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis_artifacts/image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png
+  Exists   : True
+  [Tier 0 NameMap] '3a' → opsin_lookup via name='1-methyl-3-(difluoromethyl)quinoxalin-2(1H)-one'
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='sodium difluoromethane sulfonate'
+  [Tier 0 NameMap] resolved=['3a', '2']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis/GPT_5_MINI/processed/Direct_CH_difluoromethylation_of_heterocycles_via_organic_photoredox_catalysis_artifacts/image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '3']
+  [OCSR] image_000002_128db996e9e8599b75a676e7ced52dba126885c9a927b2ff6dca7ae3f5326f3b.png: 11 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['1a']  smiles=Cn1c(=O)cnc2ccccc21  wildcard=False
+  [OCSR]   pair [3,4]: texts=['MB']  smiles=CN(C)c1ccc2nc3ccc(=[N+](C)C)cc-3sc2c1.[Cl-]  wildcard=False
+  [OCSR]   pair [9,10]: texts=['3a']  smiles=*C1=NC2=CC=CC=C2N(C)C1=O  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '3']
+  [Tier 3] '1': bbox=0 atoms=12 smiles=Cn1c(=O)cnc2ccccc21 wildcard=False
+  [Tier 3] '3': bbox=9 atoms=13 smiles=*C1=NC2=CC=CC=C2N(C)C1=O wildcard=True
+  [Tier 3 BBox Match] resolved=['1']  remaining=['3']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['3']
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['3']
+  [Tier 6 LLM Vision] resolved=['3']

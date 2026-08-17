@@ -1,0 +1,54 @@
+Label Resolver Diagnostic Log — 2026-05-23 17:47:56
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', 'PC-6', 'Az-1', 'Az-2', 'Az-3', 'Az-4', 'Az-5'] → image_000009_c48b1d95b425161be12077ef10d4f242cf1a15c20ee834216bc791814ac4428c.png
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['PC-1', 'PC-2', 'PC-3', 'PC-4', 'PC-5', 'PC-6', 'Az-1', 'Az-2', 'Az-3', 'Az-4', 'Az-5']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Goto and Ohmiya - 2025 - Distal C–H functionalization of alkoxyarenes through organic photoredox-catalyzed radical–radical co/qwen3_6_flash/processed/Goto and Ohmiya - 2025 - Distal C–H functionalization of alkoxyarenes through organic photoredox-catalyzed radical–radical co_artifacts/image_000009_c48b1d95b425161be12077ef10d4f242cf1a15c20ee834216bc791814ac4428c.png
+  Exists   : True
+  [Tier 0 NameMap] 'PC-1' → llm_name_to_smiles via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene derivative with trifluoromethyl groups'
+  [Tier 0 NameMap] 'PC-3' → pubchem_lookup via name='9-mesityl-10-phenylacridinium tetrafluoroborate'
+  [Tier 0 NameMap] 'PC-6' → pubchem_lookup via name='2,4,6-triphenylpyrylium tetrafluoroborate'
+  [Tier 0 NameMap] 'Az-1' → pubchem_lookup via name='imidazole'
+  [Tier 0 NameMap] 'Az-3' → pubchem_lookup via name='benzimidazole'
+  [Tier 0 NameMap] 'Az-4' → pubchem_lookup via name='1,2,4-triazole'
+  [Tier 0 NameMap] 'Az-5' → pubchem_lookup via name='pyrazole'
+  [Tier 0 NameMap] resolved=['PC-1', 'PC-3', 'PC-6', 'Az-1', 'Az-3', 'Az-4', 'Az-5']  remaining=['PC-2', 'PC-4', 'PC-5', 'Az-2']
+  [OCSR] image_000009_c48b1d95b425161be12077ef10d4f242cf1a15c20ee834216bc791814ac4428c.png: 18 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['PC-1']  smiles=*C1=CC2=C(C=C1)C1=C(C=C(*)C=C1)N2C1=C(C#N)C(N2C3C4  wildcard=True
+  [OCSR]   pair [2,3]: texts=['PC-4']  smiles=N#Cc1c2c(c(C#N)c3ccccc13)CCC=C2  wildcard=False
+  [OCSR]   pair [6,7]: texts=['PC-5']  smiles=c1ccc([PH]2(c3ccccc3)c3ccc4cccc5c4c3-c3c(ccc4cccc2  wildcard=False
+  [OCSR]   pair [8,9]: texts=['PC-2']  smiles=N#CC1=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(C#N)=C(N2C3C  wildcard=False
+  [OCSR]   pair [10,11]: texts=['AZ J']  smiles=c1ccc2[nH]cnc2c1  wildcard=False
+  [OCSR]   pair [13,14]: texts=['BF ,']  smiles=*C1=CC2=C(C=C1)C(C1=C(C)C=C(C)C=C1C)=C1C=CC(*)=CC1  wildcard=True
+  [OCSR]   pair [15,16]: texts=['PC- 6']  smiles=C1=CC=C(C2=CC(C3=CC=CC=C3)=OC(C3=CC=CC=C3)=C2)C=C1  wildcard=False
+  [OCSR] → 10 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=['PC-2', 'PC-4', 'PC-5']  remaining=['Az-2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Az-2']
+  [Tier 3] 'Az-2': bbox=5 atoms=6 smiles=*C1=[NH]C=CN1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['Az-2']
+    [Tier 4 LLM] 'Az-2' → r_value='2-methylimidazole'
+    [Tier 4] R-group candidates: ['Az-2']
+    [Tier 4 graph] 'Az-2' r=2-methylimidazole fallback (smi=*C1=CC2=C(C=C1)C1=C(C=C(*)C=C1)N2C1=C(C#N)C(N2C3C4C=C5C6(*)CC54(*)C326)=C(N2C3=C45(=C26=C4C=CC(*)C6)C24=C6=C57=C2(C(*)=C3)C47=C6*)C(N2C34=C5(=C=3267=C523C=C(=C2=CC(*)=C36)C(*)=C7)C=CC(*)=C4)=C1C#N)
+    [Tier 4] 'Az-2' RDKit render failed: CC1=NC=CN1C1=CC2=C(C=C1)C1=C(C=C(N3C=CN=
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Az-2']
+    [Tier 5 PubChem] 'Az-2' → hit via 'Az-2': C1CNCCN(C1)C(=O)C2=CC(=C(C=C2)Cl)C(=O)NCC34CC5CC(C3)CC(C5)C4
+  [Tier 5 PubChem] resolved=['Az-2']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '3aa', '2a']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Goto and Ohmiya - 2025 - Distal C–H functionalization of alkoxyarenes through organic photoredox-catalyzed radical–radical co/qwen3_6_flash/processed/Goto and Ohmiya - 2025 - Distal C–H functionalization of alkoxyarenes through organic photoredox-catalyzed radical–radical co_artifacts/image_000009_c48b1d95b425161be12077ef10d4f242cf1a15c20ee834216bc791814ac4428c.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='1,3-dimethoxy-2-methylbenzene'
+  [Tier 0 NameMap] '3aa' → pubchem_lookup via name='ethyl 3,5-dimethoxy-4-methylbenzoate'
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='1,3-dimethyl-2-(ethoxycarbonyl)imidazolium triflate'
+  [Tier 0 NameMap] resolved=['1a', '3aa', '2a']  remaining=[]

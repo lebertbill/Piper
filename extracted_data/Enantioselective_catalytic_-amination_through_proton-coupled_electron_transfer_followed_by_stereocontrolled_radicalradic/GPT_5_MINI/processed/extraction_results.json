@@ -1,0 +1,1584 @@
+[
+    {
+        "document": "Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of the reaction conditions a",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic/GPT_5_MINI/processed/Enantioselective_catalytic_-amination_through_proton-coupled_electron_transfer_followed_by_stereocontrolled_radicalradic_artifacts/image_000010_3e580e192b74f14d189fe907560cd6cdbfa6a473c8d3b0d5c9965617134a3a5e.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B1",
+                        "resolved_name": "tetrabutylammonium 1,1'-binaphthyl-2,2'-diyl phosphate",
+                        "resolved_smiles": "P1(=O)(OC2=C(C3=CC=CC=C3C=C2)C2=C(C=CC3=CC=CC=C23)O1)[O-].C(CCC)[N+](CCCC)(CCCC)CCCC",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(OP(=O)([O-])O)ccc12"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CHCl 3"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "43",
+                        "quantity": 43.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "96"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 96% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "43"
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B1",
+                        "resolved_name": "tetrabutylammonium 1,1'-binaphthyl-2,2'-diyl phosphate",
+                        "resolved_smiles": "P1(=O)(OC2=C(C3=CC=CC=C3C=C2)C2=C(C=CC3=CC=CC=C23)O1)[O-].C(CCC)[N+](CCCC)(CCCC)CCCC",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "[C-]c1cccc2c(-c3c(OP(=O)([O-])[O-])ccc4ccccc34)c(OP(=O)([O-])O)ccc12"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Quant."
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "96"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 96% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "Quant."
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Quant."
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "98"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 98% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "Quant."
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B3",
+                        "resolved_name": "tetrabutylammonium dibutyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.CCCCOP(=O)([O-])OCCCC",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*OP(=O)([O-])O*"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "24",
+                        "quantity": 24.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "74"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 74% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "24"
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC2",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc(C(C)(C)C)nc(-c2cc(C(C)(C)C)cc(C(C)(C)C)n2)c1.Fc1cc(F)c(F)c(F)c1-c1nc(C(C)(C)C)cc(C(C)(C)C)c1[Ir](c2cc(F)cc(F)c2)(n3c(C(C)(C)C)cc(C(C)(C)C)c3).F[P-](F)(F)(F)(F)F",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC2",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(dtbbpy)]PF6",
+                        "resolved_smiles": "CC(C)(C)c1cc(C(C)(C)C)nc(-c2cc(C(C)(C)C)cc(C(C)(C)C)n2)c1.Fc1cc(F)c(F)c(F)c1-c1nc(C(C)(C)C)cc(C(C)(C)C)c1[Ir](c2cc(F)cc(F)c2)(n3c(C(C)(C)C)cc(C(C)(C)C)c3).F[P-](F)(F)(F)(F)F",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "41",
+                        "quantity": 41.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "97"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 97% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "41"
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC3",
+                        "resolved_name": "[Ru(bpy)3](PF6)2",
+                        "resolved_smiles": "c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_ocsr_raw": "[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c1cccc[n]->31)<-[n]1ccccc1-c1cccc[n]->41"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC3",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ru]",
+                        "resolved_name": "[Ru(bpy)3](PF6)2",
+                        "resolved_smiles": "c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_ocsr_raw": "[CH3][Ti+2].c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c1cccc[n]->31)<-[n]1ccccc1-c1cccc[n]->41"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "34",
+                        "quantity": 34.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "98"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 98% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "34"
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "<10",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "n.d. d"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: not determined (n.d.)"
+                    }
+                ],
+                "yield": "<10"
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Trace"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "n.d. d"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "ee: not determined (n.d.)"
+                    }
+                ],
+                "yield": "Trace"
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0 e",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "n.a. f"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Cyclobutane side product formed (see footnote e)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "ee: not applicable (n.a.)"
+                    }
+                ],
+                "yield": "0 e"
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "base",
+                        "text": "None"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "8",
+                        "quantity": 8.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "93"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Base omitted for this entry (None)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 93% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "8"
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "PC1",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "PC1",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]",
+                        "resolved_name": "[Ir(dF(CF3)ppy)2(bpy)]PF6",
+                        "resolved_smiles": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_llm": "F[P-](F)(F)(F)(F)F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.FC1=C(C2=NC=CC=C2)C=C(C(F)(F)F)C=C1F.C1=CC=NC(=C1)C1=CC=CC=N1.[Ir+3]",
+                        "smiles_ocsr_raw": "*C1=CC=C2C3=[C](C=C(F)C=C3F)[Ir]34([C]5=CC(F)=CC(F)=C5C5=[N]3C=C(*)C=C5)([N]2=C1)[N]1=CC([1*])=C([2*])C=C1C1=[N]4C=C([1*])C([2*])=C1.[*][Ir+4]"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Dark"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "0",
+                        "quantity": 0.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "n.a. f"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Reaction conducted in the dark (no irradiation) — no product (ee not applicable)"
+                    }
+                ],
+                "yield": "0"
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "text": "1a",
+                        "quantity": 0.1,
+                        "unit": "mmol",
+                        "smiles_llm": "O=C(/C=C/c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "C1=CC=C(C=C1)C=CC(=O)C2=NC=CN2C3=CC=CC=C3",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=C(C=Cc1ccccc1)c1nccn1-c1ccccc1",
+                        "molecular_formula": "C18H14N2O",
+                        "molecular_weight": 274.32
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)NC(=O)OC",
+                        "text": "2a",
+                        "quantity": 0.12,
+                        "unit": "mmol",
+                        "smiles_llm": "NC(=O)OC",
+                        "smiles_ocsr": "c1ccc(cc1)NC(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)Nc1ccccc1",
+                        "molecular_formula": "C8H9NO2",
+                        "molecular_weight": 151.16
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "O=C(C[C@H](NC(=O)OC)c1ccccc1)N2C=CN=C2",
+                        "smiles_ocsr": "c1ccc(cc1)[C@H](CC(=O)c2nccn2c3ccccc3)N(c4ccccc4)C(=O)OC",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)N(c1ccccc1)[C@@H](CC(=O)c1nccn1-c1ccccc1)c1ccccc1",
+                        "molecular_formula": "C26H23N3O3",
+                        "molecular_weight": 425.49
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "catalyst",
+                        "text": "None"
+                    },
+                    {
+                        "role": "base",
+                        "text": "B2",
+                        "resolved_name": "tetrabutylammonium diphenyl phosphate",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.C1=CC=C(C=C1)OP(=O)([O-])OC2=CC=CC=C2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1 Gallery",
+                        "smiles_ocsr_raw": "*.CC=C1=CC=C(OP(=O)([O-])OC2=CC=CC=C2)C=C1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "CH 2 Cl 2"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs (24 + 36 W)"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "4 Å molecular sieves",
+                        "quantity": 10.0,
+                        "unit": "mg",
+                        "resolved_name": "4 Å molecular sieves",
+                        "resolved_smiles": "",
+                        "smiles_source": "llm_vision",
+                        "mapping_source": "Table 1 Gallery"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.1,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "22-",
+                        "quantity": 25.0,
+                        "unit": "°C"
+                    },
+                    {
+                        "role": "h_n",
+                        "text": "Light"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "39",
+                        "quantity": 39.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "selectivity_ee",
+                        "text": "98"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "role": "additional_info",
+                        "text": "Photocatalyst omitted for this entry (None)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "ee: 98% (determined by chiral HPLC)"
+                    }
+                ],
+                "yield": "39"
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Catalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the catalyst gallery below the table scheme",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "Base": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the base gallery below the table scheme",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "PC": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the photocatalyst gallery below the table scheme",
+                "label_map_source_id": "Table 1 Gallery"
+            },
+            "h n": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Solvent": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false
+            },
+            "Yield": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            },
+            "ee": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 36,
+            "valid_molecules": 36,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

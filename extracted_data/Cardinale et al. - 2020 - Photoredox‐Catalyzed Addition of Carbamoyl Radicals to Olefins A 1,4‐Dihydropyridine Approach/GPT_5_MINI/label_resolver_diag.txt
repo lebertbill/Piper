@@ -1,0 +1,70 @@
+Label Resolver Diagnostic Log — 2026-05-10 01:52:08
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['3DPA2FBN', '3DPAFIPN', 'Mes-Acr+'] → image_000004_33f7fcb90648ff1192d8abdf9c6934e3655ec2f8d664b4d734a8f271ec798d90.png
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['3DPA2FBN', '3DPAFIPN', 'Mes-Acr+']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Cardinale et al. - 2020 - Photoredox‐Catalyzed Addition of Carbamoyl Radicals to Olefins A 1,4‐Dihydropyridine Approach/default_run/processed/Cardinale et al. - 2020 - Photoredox‐Catalyzed Addition of Carbamoyl Radicals to Olefins A 1,4‐Dihydropyridine Approach_artifacts/image_000004_33f7fcb90648ff1192d8abdf9c6934e3655ec2f8d664b4d734a8f271ec798d90.png
+  Exists   : True
+  [Tier 0 NameMap] '3DPA2FBN' → opsin_lookup via name='2,4,6-tris(diphenylamino)-3,5-difluorobenzonitrile'
+  [Tier 0 NameMap] '3DPAFIPN' → pubchem_lookup via name='2,4,5,6-tetra(9H-carbazol-9-yl)isophthalonitrile'
+  [Tier 0 NameMap] 'Mes-Acr+' → pubchem_lookup via name='9-mesityl-10-methylacridinium'
+  [Tier 0 NameMap] resolved=['3DPA2FBN', '3DPAFIPN', 'Mes-Acr+']  remaining=[]
+  [InlineResolver] Column 'Deviations from standard conditions' labels ['1,4-dicyanobenzene'] from image_000004_33f7fcb90648ff1192d8abdf9c6934e3655ec2f8d664b4d734a8f271ec798d90.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1,4-dicyanobenzene']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Cardinale et al. - 2020 - Photoredox‐Catalyzed Addition of Carbamoyl Radicals to Olefins A 1,4‐Dihydropyridine Approach/default_run/processed/Cardinale et al. - 2020 - Photoredox‐Catalyzed Addition of Carbamoyl Radicals to Olefins A 1,4‐Dihydropyridine Approach_artifacts/image_000004_33f7fcb90648ff1192d8abdf9c6934e3655ec2f8d664b4d734a8f271ec798d90.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1,4-dicyanobenzene']
+  [OCSR] image_000004_33f7fcb90648ff1192d8abdf9c6934e3655ec2f8d664b4d734a8f271ec798d90.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=C(C)NC(C)=C(*)C1C(=O)N1CCOCC1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*C=C(*)*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3aa']  smiles=*C(*)C(*)C(=O)N1CCOCC1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1,4-dicyanobenzene']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1,4-dicyanobenzene']
+  [Tier 3] '1,4-dicyanobenzene': bbox_idx=None out of range (n=9)
+  [Tier 3 BBox Match] resolved=[]  remaining=['1,4-dicyanobenzene']
+    [Tier 4 LLM] '1,4-dicyanobenzene' → r_value='additive = 1,4-dicyanobenzene'
+    [Tier 4] R-group candidates: ['1,4-dicyanobenzene']
+    [Tier 4 graph] '1,4-dicyanobenzene' r=additive = 1,4-dicyanobenzene fallback (smi=*C=C(*)*)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1,4-dicyanobenzene']
+    [Tier 5 PubChem] '1,4-dicyanobenzene' → hit via '1,4-dicyanobenzene': C1=CC(=CC=C1C#N)C#N
+  [Tier 5 PubChem] resolved=['1,4-dicyanobenzene']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3aa']
+  Image    : extracted_data/Cardinale et al. - 2020 - Photoredox‐Catalyzed Addition of Carbamoyl Radicals to Olefins A 1,4‐Dihydropyridine Approach/default_run/processed/visualheist_page_02_table_2.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → opsin_lookup via name='diethyl 2,6-dimethyl-4-(morpholine-4-carbonyl)-1,4-dihydropyridine-3,5-dicarboxylate'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['2a', '3aa']
+  [OCSR] visualheist_page_02_table_2.png: 9 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ia']  smiles=*C1=C(C)NC(C)=C(*)C1C(=O)N1CCOCC1  wildcard=True
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*C=C(*)*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3aa']  smiles=*C(*)C(*)C(=O)N1CCOCC1  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', '3aa']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', '3aa']
+  [Tier 3] '2a': bbox=3 atoms=5 smiles=*C=C(*)* wildcard=True
+  [Tier 3] '3aa': bbox=7 atoms=13 smiles=*C(*)C(*)C(=O)N1CCOCC1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a', '3aa']
+    [Tier 4 LLM] '2a' → r_value='Ph-CH=C(CN)2'
+    [Tier 4 LLM] '3aa' → r_value='Ph-CH(CH(CN)2)-C(=O)N1CCOCC1'
+    [Tier 4] R-group candidates: ['2a', '3aa']
+    [Tier 4 graph] '2a' r=Ph-CH=C(CN)2 fallback (smi=*C=C(*)*)
+    [Tier 4] '2a' ✅ match: C1=CC=C(C=C1)C=C(C#N)C#N
+    [Tier 4 graph] '3aa' r=Ph-CH(CH(CN)2)-C(=O)N1CCOCC1 fallback (smi=*C(*)C(*)C(=O)N1CCOCC1)
+    [Tier 4] '3aa' 🔄 corrected: N#CC(C#N)C(C1=CC=CC=C1)C(=O)N2CCOCC2
+  [Tier 4 R-group Sub] resolved=['2a', '3aa']  remaining=[]

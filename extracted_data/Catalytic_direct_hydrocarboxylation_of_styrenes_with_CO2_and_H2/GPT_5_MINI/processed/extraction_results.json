@@ -1,0 +1,1902 @@
+[
+    {
+        "document": "Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of reaction conditions and control experiments",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2/GPT_5_MINI/processed/Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000005_48ec0c9529d925c94e533ff48c33ed5c0a389b5239d5d89ab70d8e8a80a8fa36.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "[Og]",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Og]",
+                        "molecular_formula": "Og",
+                        "molecular_weight": 294.0
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "[Ta]",
+                        "text": "2a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Ta]",
+                        "molecular_formula": "Ta",
+                        "molecular_weight": 180.95
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "P(4-CF 3 -C 6 H 4 ) 3",
+                        "resolved_name": "Tris(4-(trifluoromethyl)phenyl)phosphine",
+                        "resolved_smiles": "C1=CC(=CC=C1C(F)(F)F)P(C2=CC=C(C=C2)C(F)(F)F)C3=CC=C(C=C3)C(F)(F)F",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "C1=CC(=CC=C1C(F)(F)F)P(C2=CC=C(C=C2)C(F)(F)F)C3=CC=C(C=C3)C(F)(F)F"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "JohnPhos",
+                        "resolved_name": "(2-Biphenyl)di-tert-butylphosphine",
+                        "resolved_smiles": "CC(C)(C)P(C1=CC=CC=C1C2=CC=CC=C2)C(C)(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 7.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 6.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "CyJohnPhos",
+                        "resolved_name": "(2-Biphenyl)dicyclohexylphosphine",
+                        "resolved_smiles": "C1CCC(CC1)P(C2CCCCC2)C3=CC=CC=C3C4=CC=CC=C4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 16.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 61.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos",
+                        "resolved_name": "2-dicyclohexylphosphino-2'-(N,N-dimethylamino)biphenyl",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 35.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 48.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "PhDavePhos",
+                        "resolved_name": "2-Diphenylphosphino-2'-(N,N-dimethylamino)biphenyl",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3=CC=CC=C3)C4=CC=CC=C4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 3.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 30.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "CPhos",
+                        "resolved_name": "2-dicyclohexylphosphino-2',6'-bis(dimethylamino)biphenyl",
+                        "resolved_smiles": "C1(CCCCC1)P(C1=C(C=CC=C1)C1=C(C=CC=C1N(C)C)N(C)C)C1CCCCC1",
+                        "smiles_source": "opsin_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 38.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[RhCl(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos",
+                        "resolved_name": "2-dicyclohexylphosphino-2'-(N,N-dimethylamino)biphenyl",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[RhCl(C 2 H 4 ) 2 ] 2"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 4.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": ">95"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(cod) 2 ](OTf)",
+                        "quantity": 4.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "C1=CC=C(C=C1)[C@@H]2[C@H]([C@@]2(C(=O)NO)F)C3=CC=C(C=C3)C4=NC=C(C=N4)F",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos",
+                        "resolved_name": "2-dicyclohexylphosphino-2'-(N,N-dimethylamino)biphenyl",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(cod) 2 ](OTf)",
+                        "resolved_smiles": "C1=CC=C(C=C1)[C@@H]2[C@H]([C@@]2(C(=O)NO)F)C3=CC=C(C=C3)C4=NC=C(C=N4)F",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 18.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 80.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(DavePhos)]",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(OAc)(DavePhos)]"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 38.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 27.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 75.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 23.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "isolated yield of 2a: 70% (value in parentheses in table)"
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 10.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 9.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "LiOTf",
+                        "quantity": 100.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "[Li+].C(F)(F)(F)S(=O)(=O)[O-]",
+                        "resolved_name": "lithium trifluoromethanesulfonate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "dimethylacetamide with LiOTf",
+                        "quantity": 100.0,
+                        "unit": "mol%",
+                        "resolved_smiles": "[Li+].C(F)(F)(F)S(=O)(=O)[O-]",
+                        "resolved_name": "lithium trifluoromethanesulfonate",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 84.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 16.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [
+                    "isolated yield of 2a: 81% (value in parentheses in table)",
+                    "entry performed with LiOTf (100 mol%)"
+                ]
+            },
+            {
+                "entry_id": "13",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "text": "2a",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_ocsr": "CC(C1=CC=C(C=C1)C(=O)OC)C(=O)O",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COC(=O)c1ccc(C(C)C(=O)O)cc1",
+                        "molecular_formula": "C11H12O4",
+                        "molecular_weight": 208.21
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ru(bpy)3](PF6)2",
+                        "quantity": 2.0,
+                        "unit": "mol%",
+                        "resolved_name": "tris(2,2'-bipyridine)ruthenium(II) hexafluorophosphate",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.F[P-](F)(F)(F)(F)F.F[P-](F)(F)(F)(F)F.[Ru+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue LEDs",
+                        "quantity": 425.0,
+                        "unit": "nm"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "yield",
+                        "text": "n.d."
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "14",
+                "reactants": [
+                    {
+                        "smiles": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_ocsr": "COC(=O)C1=CC=C(C=C)C=C1",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=Cc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H10O2",
+                        "molecular_weight": 162.19
+                    }
+                ],
+                "products": [],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "13",
+                        "quantity": 13.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": [],
+                "yield": "13"
+            },
+            {
+                "entry_id": "15",
+                "reactants": [
+                    {
+                        "smiles": "[Og]",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Og]",
+                        "molecular_formula": "Og",
+                        "molecular_weight": 294.0
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "[Ta]",
+                        "text": "2a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Ta]",
+                        "molecular_formula": "Ta",
+                        "molecular_weight": 180.95
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "16",
+                "reactants": [
+                    {
+                        "smiles": "[Og]",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Og]",
+                        "molecular_formula": "Og",
+                        "molecular_weight": 294.0
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "[Ta]",
+                        "text": "2a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Ta]",
+                        "molecular_formula": "Ta",
+                        "molecular_weight": 180.95
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "17",
+                "reactants": [
+                    {
+                        "smiles": "[Og]",
+                        "text": "1a",
+                        "quantity": 0.05,
+                        "unit": "mmol",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(C=C)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Og]",
+                        "molecular_formula": "Og",
+                        "molecular_weight": 294.0
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "[Ta]",
+                        "text": "2a",
+                        "smiles_source": "ocsr_rxnscribe",
+                        "smiles_llm": "COc1ccc(CC(=O)O)cc1",
+                        "smiles_valid": true,
+                        "smiles_canonical": "[Ta]",
+                        "molecular_formula": "Ta",
+                        "molecular_weight": 180.95
+                    },
+                    {
+                        "smiles": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "text": "3a",
+                        "smiles_llm": "COc1ccc(CC)cc1",
+                        "smiles_ocsr": "CCC1=CC=C(C=C1)C(=O)OC",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "CCc1ccc(C(=O)OC)cc1",
+                        "molecular_formula": "C10H12O2",
+                        "molecular_weight": 164.2
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "metal_salt",
+                        "text": "[Rh(OAc)(C 2 H 4 ) 2 ] 2",
+                        "quantity": 4.0,
+                        "unit": "mol%"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "DavePhos a",
+                        "resolved_name": "DavePhos",
+                        "resolved_smiles": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Ligand Gallery",
+                        "smiles_pubchem": "CN(C)C1=CC=CC=C1C2=CC=CC=C2P(C3CCCCC3)C4CCCCC4"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Rh(C 2 H 4 )(DavePhos)](OTf) ( 4 )"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylacetamide",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "resolved_smiles": "CC(=O)N(C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "degassing",
+                        "text": "CO2/H2 (2:1 mix gas,, closed)",
+                        "quantity": 1.0,
+                        "unit": "atm"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.05,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 2a (%)",
+                        "quantity": 5.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "Yield of 3a (%)",
+                        "quantity": 74.0,
+                        "unit": "%"
+                    }
+                ],
+                "additional_info": []
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false,
+                "label_map": null,
+                "label_map_ref": null,
+                "label_map_source_id": null
+            },
+            "Rh catalyst": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in text and complex 4 synthesis section",
+                "label_map_ref": null,
+                "label_map_source_id": null
+            },
+            "Ligand": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the ligand gallery image below the table",
+                "label_map_ref": "Catalytic_direct_hydrocarboxylation_of_styrenes_with_CO2_and_H2_artifacts/image_000006_05c7ddce2995425b21f4e0c7fcd4e66a884667ec966bd18b384fa28b40535b4f.png",
+                "label_map_source_id": "Ligand Gallery"
+            },
+            "Yield of 2a (%)": {
+                "type": "numerical",
+                "data_type": "float",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": false,
+                "label_map": null,
+                "label_map_ref": null,
+                "label_map_source_id": null
+            },
+            "Yield of 3a (%)": {
+                "type": "numerical",
+                "data_type": "float",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false,
+                "label_map": null,
+                "label_map_ref": null,
+                "label_map_source_id": null
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 49,
+            "valid_molecules": 49,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

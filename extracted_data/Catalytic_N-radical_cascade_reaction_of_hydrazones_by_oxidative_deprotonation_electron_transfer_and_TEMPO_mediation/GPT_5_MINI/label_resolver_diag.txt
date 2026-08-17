@@ -1,0 +1,114 @@
+Label Resolver Diagnostic Log — 2026-06-11 14:45:19
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 3' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Ru(bpy)3Cl2·6H2O', 'Ir(ppy)2(dtbbpy)PF6', 'Eosin Y'] → image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+  [GlobalRegistry] Skipping 'Figure 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 5' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 7' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Figure 9' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Ru(bpy)3Cl2·6H2O', 'Ir(ppy)2(dtbbpy)PF6', 'Eosin Y']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation/GPT_5_MINI/processed/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation_artifacts/image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+  Exists   : True
+  [Tier 0 NameMap] 'Ru(bpy)3Cl2·6H2O' → pubchem_lookup via name='tris(2,2'-bipyridyl)ruthenium(II) chloride hexahydrate'
+  [Tier 0 NameMap] 'Ir(ppy)2(dtbbpy)PF6' → llm_name_to_smiles via name='[4,4'-bis(1,1-dimethylethyl)-2,2'-bipyridine-N1,N1']bis[2-(2-pyridinyl-N)phenyl-C]iridium(III) hexafluorophosphate'
+  [Tier 0 NameMap] 'Eosin Y' → pubchem_lookup via name='tetrabromofluorescein'
+  [Tier 0 NameMap] resolved=['Ru(bpy)3Cl2·6H2O', 'Ir(ppy)2(dtbbpy)PF6', 'Eosin Y']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O'] from image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation/GPT_5_MINI/processed/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation_artifacts/image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+  [OCSR] image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ru(bpy)3C', '6Hz0', 'Clz E']  smiles=CC.C[N]12=C(C=CC=C1)C1=[N](C=CC=C1)[Ru]213([N]2=CC  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1c']  smiles=*NN=C(*)CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Ir(ppy)z(dtbbpy)PFs']  smiles=*.*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Eosin Y']  smiles=*C1=C(C2=C3C=C(Br)C(=O)C(Br)=C3OC3=C2C=C(Br)C(O)=C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2c']  smiles=*C1=CC(*)=NN(*)C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+  [Tier 3] 'Ir(ppy) 2 (dtbbpy)PF 6': bbox=4 atoms=53 smiles=*.*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=C(C4=[N+ wildcard=True
+  [Tier 3] 'Ru(bpy) 3 Cl 2  6H 2 O': bbox=0 atoms=40 smiles=CC.C[N]12=C(C=CC=C1)C1=[N](C=CC=C1)[Ru]213([N]2=CC=CC=C2C2=[ wildcard=False
+  [Tier 3] 'Ru(bpy) 3 Cl 2  6H 2 O': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+    [Tier 4 LLM] 'Ir(ppy) 2 (dtbbpy)PF 6' → r_value='R = t-Bu'
+    [Tier 4] R-group candidates: ['Ir(ppy) 2 (dtbbpy)PF 6']
+    [Tier 4 graph] 'Ir(ppy) 2 (dtbbpy)PF 6' r=R = t-Bu fallback (smi=*.*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]2=C(C4=[N+]C=CC=C4)C=CC=C2)([C]2=CC=CC=C2C2=[N]1C=CC=C2)[C]1=C(C=CC=C1)C1=[N]3C=CC=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+    [Tier 5 PubChem] 'Ir(ppy) 2 (dtbbpy)PF 6' → no hit (tried ['Ir(ppy) 2 (dtbbpy)PF 6', 'Ir(ppy) 2 (dtbbpy)PF 6PF6'])
+    [Tier 5 PubChem] 'Ru(bpy) 3 Cl 2  6H 2 O' → no hit (tried ['Ru(bpy) 3 Cl 2 \x0f 6H 2 O'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+    [NameResolve Organomet] llm_name_to_smiles: score=49  c1ccc(nc1)-c2cccc[n+]2[Ru-2]([n+]3ccccc3-c4cccc[n+]4)([n+]5ccccc5-c6cc
+    [Tier 6→llm_name_to_smiles] 'Ru(bpy) 3 Cl 2  6H 2 O' name='Ru(bpy)3Cl2·6H2O' → c1ccc(nc1)-c2cccc[n+]2[Ru-2]([n+]3ccccc3-c4cccc[n+
+  [Tier 6 LLM Vision] resolved=['Ir(ppy) 2 (dtbbpy)PF 6', 'Ru(bpy) 3 Cl 2 \x0f 6H 2 O']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2c', '1c']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation/GPT_5_MINI/processed/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation_artifacts/image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2c', '1c']
+  [OCSR] image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ru(bpy)3C', '6Hz0', 'Clz E']  smiles=CC.C[N]12=C(C=CC=C1)C1=[N](C=CC=C1)[Ru]213([N]2=CC  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1c']  smiles=*NN=C(*)CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Ir(ppy)z(dtbbpy)PFs']  smiles=*.*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Eosin Y']  smiles=*C1=C(C2=C3C=C(Br)C(=O)C(Br)=C3OC3=C2C=C(Br)C(O)=C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2c']  smiles=*C1=CC(*)=NN(*)C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2c', '1c']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2c', '1c']
+  [Tier 3] '2c': bbox=8 atoms=9 smiles=*C1=CC(*)=NN(*)C1 wildcard=True
+  [Tier 3] '1c': bbox=2 atoms=9 smiles=*NN=C(*)CC(*)=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2c', '1c']
+    [Tier 4 LLM] '1c' → r_value='TsNN=C(Ph)CH2C(Ph)=CH2'
+    [Tier 4 LLM] '2c' → r_value='1-tosyl-3,5-diphenyl-1,2,3,4-tetrahydropyridazine'
+    [Tier 4] R-group candidates: ['1c', '2c']
+    [Tier 4 graph] '1c' r=TsNN=C(Ph)CH2C(Ph)=CH2 fallback (smi=*NN=C(*)CC(*)=C)
+    [Tier 4] '1c' ✅ match: CC1=CC=C(C=C1)S(=O)(=O)NN=C(C2=CC=CC=C2)CC(=C)C3=C
+    [Tier 4 graph] '2c' r=1-tosyl-3,5-diphenyl-1,2,3,4-tetrahydropyridazine fallback (smi=*C1=CC(*)=NN(*)C1)
+    [Tier 4] '2c' RDKit render failed: CC1=CC=C(C=C1)S(=O)(=O)N1C=C(C2=CC=CC=C2
+  [Tier 4 R-group Sub] resolved=['1c']  remaining=['2c']
+    [Tier 5 PubChem] '2c' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2c']
+    [Tier 6→opsin_lookup] '2c' name='1-tosyl-3,5-diphenyl-1,4-dihydropyridazine' → S(=O)(=O)(C1=CC=C(C)C=C1)N1N=C(CC(=C1)C1=CC=CC=C1)
+  [Tier 6 LLM Vision] resolved=['2c']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation/GPT_5_MINI/processed/Catalytic_N-radical_cascade_reaction_of_hydrazones_by_oxidative_deprotonation_electron_transfer_and_TEMPO_mediation_artifacts/image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2', '3']
+  [OCSR] image_000004_48db9065f802851548815307c7a6f81ec4cc25d93f4754bf9adbba0a23dd4dd0.png: 10 bboxes, 5 coref pairs
+  [OCSR]   pair [0,1]: texts=['Ru(bpy)3C', '6Hz0', 'Clz E']  smiles=CC.C[N]12=C(C=CC=C1)C1=[N](C=CC=C1)[Ru]213([N]2=CC  wildcard=False
+  [OCSR]   pair [2,3]: texts=['1c']  smiles=*NN=C(*)CC(*)=C  wildcard=True
+  [OCSR]   pair [4,5]: texts=['Ir(ppy)z(dtbbpy)PFs']  smiles=*.*.*C1=CC=[N]2C(=C1)C1=[N](C=CC(*)=C1)[Ir]213([C]  wildcard=True
+  [OCSR]   pair [6,7]: texts=['Eosin Y']  smiles=*C1=C(C2=C3C=C(Br)C(=O)C(Br)=C3OC3=C2C=C(Br)C(O)=C  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2c']  smiles=*C1=CC(*)=NN(*)C1  wildcard=True
+  [OCSR] → 5 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2', '3']
+  [Tier 3] '2': bbox_idx=None out of range (n=10)
+  [Tier 3] '3': bbox_idx=None out of range (n=10)
+  [Tier 3 BBox Match] resolved=[]  remaining=['2', '3']
+    [Tier 4 LLM] '2' → r_value='2c'
+    [Tier 4] R-group candidates: ['2']
+    [Tier 4 graph] '2' r=2c fallback (smi=*C1=CC(*)=NN(*)C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['2', '3']
+    [Tier 5 PubChem] '2' → skipped (paper-specific code, no name_map entry)
+    [Tier 5 PubChem] '3' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['2', '3']
+  [Tier 6 LLM Vision] resolved=['2', '3']

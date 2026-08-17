@@ -1,0 +1,89 @@
+Label Resolver Diagnostic Log — 2026-05-09 23:11:36
+================================================================================
+
+  [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['rac-BINAP', 'Xantphos', 'DPPF', 'DPPE'] → image_000014_2b5d26bd7b1b7435b7b550ae0391561224f97a5923a93495ee69691128e25ff7.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1E Table' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['rac-BINAP', 'Xantphos', 'DPPF', 'DPPE']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Banerjee et al. - 2022 - Excited‐State Copper Catalysis for the Synthesis of Heterocycles/default_run/processed/Banerjee et al. - 2022 - Excited‐State Copper Catalysis for the Synthesis of Heterocycles_artifacts/image_000014_2b5d26bd7b1b7435b7b550ae0391561224f97a5923a93495ee69691128e25ff7.png
+  Exists   : True
+  [Tier 0 NameMap] 'rac-BINAP' → pubchem_lookup via name='2,2'-bis(diphenylphosphino)-1,1'-binaphthyl'
+  [Tier 0 NameMap] 'Xantphos' → pubchem_lookup via name='4,5-bis(diphenylphosphino)-9,9-dimethylxanthene'
+  [Tier 0 NameMap] 'DPPF' → pubchem_lookup via name='1,1'-bis(diphenylphosphino)ferrocene'
+  [Tier 0 NameMap] 'DPPE' → pubchem_lookup via name='1,2-bis(diphenylphosphino)ethane'
+  [Tier 0 NameMap] resolved=['rac-BINAP', 'Xantphos', 'DPPF', 'DPPE']  remaining=[]
+  [InlineResolver] Column 'Ligand' labels ['None'] from image_000014_2b5d26bd7b1b7435b7b550ae0391561224f97a5923a93495ee69691128e25ff7.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1 Gallery
+────────────────────────────────────────────────────────────
+  Labels   : ['None']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Banerjee et al. - 2022 - Excited‐State Copper Catalysis for the Synthesis of Heterocycles/default_run/processed/Banerjee et al. - 2022 - Excited‐State Copper Catalysis for the Synthesis of Heterocycles_artifacts/image_000014_2b5d26bd7b1b7435b7b550ae0391561224f97a5923a93495ee69691128e25ff7.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['None']
+  [OCSR] image_000014_2b5d26bd7b1b7435b7b550ae0391561224f97a5923a93495ee69691128e25ff7.png: 51 bboxes, 25 coref pairs
+  [OCSR]   pair [0,1]: texts=['2']  smiles=*[C](Cl)=[U]  wildcard=True
+  [OCSR]   pair [2,3]: texts=['Ie']  smiles=C=CCCCn1ccc2cc(Cl)ccc21  wildcard=False
+  [OCSR]   pair [4,5]: texts=['2']  smiles=*C=O  wildcard=True
+  [OCSR]   pair [4,6]: texts=[]  smiles=*C=O  wildcard=True
+  [OCSR]   pair [8,9]: texts=['2c']  smiles=*C(=O)Cl  wildcard=True
+  [OCSR]   pair [10,11]: texts=['ViI']  smiles=*C(=O)CC1CCCN2C3=CC=CC=C3[CH]([Cu]([*])[Cl])C12.CC  wildcard=True
+  [OCSR]   pair [12,13]: texts=['VI']  smiles=**C1C2=CC=CC=C2N2CCCC(CC(*)=O)C12  wildcard=True
+  [OCSR]   pair [15,16]: texts=["3e'"]  smiles=*C(=O)CC1CCCn2c1cc1cc(Cl)ccc12  wildcard=True
+  [OCSR]   pair [17,18]: texts=['V"']  smiles=*[C](C(CCN1C=CC2=CC=CC=C21)[C](*)(CC(*)=O)[Cu]([*]  wildcard=True
+  [OCSR]   pair [19,20]: texts=['Ij, 1x-1z', 'da;']  smiles=C=CCn1ccc2ccccc21  wildcard=False
+  [OCSR]   pair [21,22]: texts=['1k']  smiles=N/A  wildcard=
+  [OCSR]   pair [23,24]: texts=['ViII']  smiles=N/A  wildcard=
+  [OCSR]   pair [25,26]: texts=['V']  smiles=*C(=O)CC1CCCN2c3ccccc3[CH]C12  wildcard=True
+  [OCSR]   pair [27,28]: texts=['Viii']  smiles=*C(=O)CC1CCCN2c3ccccc3C(Cl)C12  wildcard=True
+  [OCSR]   pair [29,30]: texts=['2f']  smiles=*C(=O)Cl  wildcard=True
+  [OCSR]   pair [31,32]: texts=['2a']  smiles=*C(=O)Cl  wildcard=True
+  [OCSR]   pair [33,34]: texts=['TS']  smiles=*C(=O)CC1Cn2c1cc1ccccc12  wildcard=True
+  [OCSR]   pair [35,36]: texts=['Iv']  smiles=*C(=O)CCCCCn1ccc2ccccc21  wildcard=True
+  [OCSR]   pair [37,38]: texts=["3k'"]  smiles=*C(=O)CC1(*)CCN2C3=CC=CC=C3C=C21  wildcard=True
+  [OCSR]   pair [39,40]: texts=['3']  smiles=*C(=O)CC1C[CH][C@H](C)n2c1cc1ccccc12  wildcard=True
+  [OCSR]   pair [41,42]: texts=["2'"]  smiles=*C=O  wildcard=True
+  [OCSR]   pair [43,44]: texts=["3a' , 3j, 3x-3z"]  smiles=*C(=O)CC1Cn2c1cc1ccccc12  wildcard=True
+  [OCSR]   pair [45,46]: texts=["3k'"]  smiles=*C(=O)CC1(*)CCN2C3=CC=CC=C3C=C21  wildcard=True
+  [OCSR]   pair [47,48]: texts=['1a']  smiles=C=CCCCn1ccc2ccccc21  wildcard=False
+  [OCSR]   pair [49,50]: texts=[]  smiles=*C(=O)ON1C(*)(*)CCCC1(*)*  wildcard=True
+  [OCSR] → 24 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['None']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['None']
+  [Tier 3 BBox Match] resolved=[]  remaining=['None']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['None']
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+  [Tier 5 PubChem] resolved=[]  remaining=['None']
+  [Tier 6 LLM Vision] resolved=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2a', '3a']
+  Image    : extracted_data/Banerjee et al. - 2022 - Excited‐State Copper Catalysis for the Synthesis of Heterocycles/default_run/processed/visualheist_page_02_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['2a', '3a']
+  [OCSR] visualheist_page_02_table_1.png: 10 bboxes, 3 coref pairs
+  [OCSR]   pair [1,2]: texts=['1a']  smiles=C=CCCCn1ccc2ccccc21  wildcard=False
+  [OCSR]   pair [3,4]: texts=['2a']  smiles=*C1=C(*)C=CC=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3a']  smiles=*C1=CC=CC=C1C(=O)CC1CCCN2C3=CC=CC=C3C=C12  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['2a', '3a']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['2a', '3a']
+  [Tier 3] '2a': bbox=3 atoms=8 smiles=*C1=C(*)C=CC=C1 wildcard=True
+  [Tier 3] '3a': bbox=7 atoms=23 smiles=*C1=CC=CC=C1C(=O)CC1CCCN2C3=CC=CC=C3C=C12 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['2a', '3a']
+    [Tier 4 LLM] '2a' → r_value='*1 = COCl, *2 = CF3'
+    [Tier 4 LLM] '3a' → r_value='* = CF3'
+    [Tier 4] R-group candidates: ['2a', '3a']
+    [Tier 4 graph] '2a' r=*1 = COCl, *2 = CF3 fallback (smi=*C1=C(*)C=CC=C1)
+    [Tier 4] '2a' ✅ match: ClC(=O)C1=C(C(F)(F)F)C=CC=C1
+    [Tier 4 graph] '3a' r=* = CF3 fallback (smi=*C1=CC=CC=C1C(=O)CC1CCCN2C3=CC=CC=C3C=C12)
+    [Tier 4] '3a' ✅ match: FC(F)(F)C1=CC=CC=C1C(=O)CC1CCCN2C3=CC=CC=C3C=C12
+  [Tier 4 R-group Sub] resolved=['2a', '3a']  remaining=[]

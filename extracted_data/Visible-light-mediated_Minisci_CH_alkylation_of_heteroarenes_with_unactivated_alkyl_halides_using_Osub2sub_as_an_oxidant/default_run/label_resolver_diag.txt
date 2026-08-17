@@ -1,0 +1,46 @@
+Label Resolver Diagnostic Log — 2026-06-18 18:37:24
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 3' — not referenced by this table's columns
+  [InlineResolver] Column 'Photocatalyst' labels ['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2'] from image_000006_e1c001fe534b1f3ae37b0228cda36d2e55c6c82b69c41eb403ee5140cb396043.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible-light-mediated_Minisci_CH_alkylation_of_heteroarenes_with_unactivated_alkyl_halides_using_Osub2sub_as_an_oxidant/default_run/processed/Visible-light-mediated_Minisci_CH_alkylation_of_heteroarenes_with_unactivated_alkyl_halides_using_Osub2sub_as_an_oxidant_artifacts/image_000006_e1c001fe534b1f3ae37b0228cda36d2e55c6c82b69c41eb403ee5140cb396043.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+  [OCSR] image_000006_e1c001fe534b1f3ae37b0228cda36d2e55c6c82b69c41eb403ee5140cb396043.png: 4 bboxes, 1 coref pairs
+  [OCSR]   pair [2,3]: texts=['3']  smiles=Cc1cc(C2CCCCC2)nc2ccccc12  wildcard=False
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+  [Tier 3] 'Eosin-Y': bbox_idx=None out of range (n=4)
+  [Tier 3] 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6': bbox_idx=None out of range (n=4)
+  [Tier 3] '[Ru(bpy) 3 ](PF 6 ) 2': bbox_idx=None out of range (n=4)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+    [Tier 5 PubChem] 'Eosin-Y' → no hit (tried ['Eosin-Y'])
+    [Tier 5 PubChem] 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6' → no hit (tried ['Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', 'Ir(dF(CF 3 )ppy) 2 (dtbbpy)PF 6', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6PF6'])
+    [Tier 5 PubChem] '[Ru(bpy) 3 ](PF 6 ) 2' → no hit (tried ['[Ru(bpy) 3 ](PF 6 ) 2'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+    [Tier 6→pubchem_lookup] 'Eosin-Y' name='Eosin Y' → C1=CC=C(C(=C1)C2=C3C=C(C(=O)C(=C3OC4=C(C(=C(C=C24)
+    [NameResolve Organomet] llm_name_to_smiles: score=1  c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.F[P-](F)(F
+    [Tier 6→llm_name_to_smiles] '[Ru(bpy) 3 ](PF 6 ) 2' name='[Ru(bpy)3](PF6)2' → c1ccc(nc1)-c2ccccn2.c1ccc(nc1)-c2ccccn2.c1ccc(nc1)
+  [Tier 6 LLM Vision] resolved=['Eosin-Y', 'Ir[dF(CF 3 )ppy] 2 (dtbbpy)PF 6', '[Ru(bpy) 3 ](PF 6 ) 2']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['2', '1']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Visible-light-mediated_Minisci_CH_alkylation_of_heteroarenes_with_unactivated_alkyl_halides_using_Osub2sub_as_an_oxidant/default_run/processed/Visible-light-mediated_Minisci_CH_alkylation_of_heteroarenes_with_unactivated_alkyl_halides_using_Osub2sub_as_an_oxidant_artifacts/image_000006_e1c001fe534b1f3ae37b0228cda36d2e55c6c82b69c41eb403ee5140cb396043.png
+  Exists   : True
+  [Tier 0 NameMap] '2' → pubchem_lookup via name='bromocyclohexane'
+  [Tier 0 NameMap] '1' → pubchem_lookup via name='lepidine'
+  [Tier 0 NameMap] resolved=['2', '1']  remaining=[]

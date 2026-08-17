@@ -1,0 +1,80 @@
+Label Resolver Diagnostic Log — 2026-05-29 10:22:58
+================================================================================
+
+  [GlobalRegistry] labels=['NTC1', 'Mes-Acr+', 'Ru(bpy)3 2+', '4-CzIPN'] → image_000007_549fd8c5f4e450257937855819e7c054e8bab3e66f5b133ca28c2f2c02ea53f6.png
+  [GlobalRegistry] Skipping 'Figure 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['NTC1', 'Mes-Acr+', 'Ru(bpy)3 2+', '4-CzIPN']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Duhail et al. - 2021 - Radical α-Trifluoromethoxylation of Ketones under Batch and Flow Conditions by Means of Organic Phot/qwen3_6_flash_2x/processed/Duhail et al. - 2021 - Radical α-Trifluoromethoxylation of Ketones under Batch and Flow Conditions by Means of Organic Phot_artifacts/image_000007_549fd8c5f4e450257937855819e7c054e8bab3e66f5b133ca28c2f2c02ea53f6.png
+  Exists   : True
+  [Tier 0 NameMap] 'NTC1' → opsin_lookup via name='naphthochromenone'
+  [Tier 0 NameMap] 'Mes-Acr+' → pubchem_lookup via name='9-mesityl-10-methylacridinium'
+  [Tier 0 NameMap] '4-CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['NTC1', 'Mes-Acr+', '4-CzIPN']  remaining=['Ru(bpy)3 2+']
+  [OCSR] image_000007_549fd8c5f4e450257937855819e7c054e8bab3e66f5b133ca28c2f2c02ea53f6.png: 15 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['PG = Ac', 'Ib, PG = Boc', '1a,']  smiles=*C(=C)c1ccc(F)cc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['NTC1', 'E', '=-1.27 V', 'E red = 1.28 V', '0X']  smiles=*C1=C2C(=O)OC3=C(C=CC=C3)C2=CC2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C1=CC=[N+](*)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3']  smiles=*CC(=O)C1=CC=C(F)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['2+', 'Ru(bpy);']  smiles=c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c  wildcard=False
+  [OCSR]   pair [11,12]: texts=['4-CzIPN', 'E', '3 -', '1.18', 'E ted = 1.43V', '0x']  smiles=*C1=C(*)C(*)=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=[]  smiles=*C1C(*)C12=CC=C(F)C=C2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ru(bpy)3 2+']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['Ru(bpy)3 2+']
+  [Tier 3] 'Ru(bpy)3 2+': bbox=9 atoms=37 smiles=c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c1cccc[n]-> wildcard=False
+  [Tier 3] 'Ru(bpy)3 2+': SMILES contains transition metal — always deferring to Tier 5/6 (MolScribe unreliable for organometallics)
+  [Tier 3 BBox Match] resolved=[]  remaining=['Ru(bpy)3 2+']
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ru(bpy)3 2+']
+    [Tier 5 PubChem] 'Ru(bpy)3 2+' → no hit (tried ['Ru(bpy)3 2+'])
+  [Tier 5 PubChem] resolved=[]  remaining=['Ru(bpy)3 2+']
+    [Tier 6→pubchem_lookup] 'Ru(bpy)3 2+' name="Tris(2,2'-bipyridine)ruthenium(II)" → C1=CC=NC(=C1)C2=CC=CC=N2.C1=CC=NC(=C1)C2=CC=CC=N2.
+  [Tier 6 LLM Vision] resolved=['Ru(bpy)3 2+']
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '1b', '4', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Duhail et al. - 2021 - Radical α-Trifluoromethoxylation of Ketones under Batch and Flow Conditions by Means of Organic Phot/qwen3_6_flash_2x/processed/Duhail et al. - 2021 - Radical α-Trifluoromethoxylation of Ketones under Batch and Flow Conditions by Means of Organic Phot_artifacts/image_000007_549fd8c5f4e450257937855819e7c054e8bab3e66f5b133ca28c2f2c02ea53f6.png
+  Exists   : True
+  [Tier 0 NameMap] '2a' → opsin_lookup via name='N-trifluoromethoxy-4-cyano-pyridinium bis(trifluoromethanesulfonyl)imide'
+  [Tier 0 NameMap] resolved=['2a']  remaining=['1a', '1b', '4', '3']
+  [OCSR] image_000007_549fd8c5f4e450257937855819e7c054e8bab3e66f5b133ca28c2f2c02ea53f6.png: 15 bboxes, 7 coref pairs
+  [OCSR]   pair [0,1]: texts=['PG = Ac', 'Ib, PG = Boc', '1a,']  smiles=*C(=C)c1ccc(F)cc1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['NTC1', 'E', '=-1.27 V', 'E red = 1.28 V', '0X']  smiles=*C1=C2C(=O)OC3=C(C=CC=C3)C2=CC2=C1C=CC=C2  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=*C1=CC=[N+](*)C=C1  wildcard=True
+  [OCSR]   pair [7,8]: texts=['3']  smiles=*CC(=O)C1=CC=C(F)C=C1  wildcard=True
+  [OCSR]   pair [9,10]: texts=['2+', 'Ru(bpy);']  smiles=c1cc[n]2->[Ru]34(<-[n]5ccccc5-c2c1)(<-[n]1ccccc1-c  wildcard=False
+  [OCSR]   pair [11,12]: texts=['4-CzIPN', 'E', '3 -', '1.18', 'E ted = 1.43V', '0x']  smiles=*C1=C(*)C(*)=C(N2C3=C(C=CC=C3)C3=C2C=CC=C3)C(*)=C1  wildcard=True
+  [OCSR]   pair [13,14]: texts=[]  smiles=*C1C(*)C12=CC=C(F)C=C2  wildcard=True
+  [OCSR] → 7 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1a', '1b', '4', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1a', '1b', '4', '3']
+  [Tier 3] '1a': bbox=0 atoms=10 smiles=*C(=C)C1=CC=C(F)C=C1 wildcard=True
+  [Tier 3] '1b': bbox=0 atoms=10 smiles=*C(=C)C1=CC=C(F)C=C1 wildcard=True
+  [Tier 3] '4': bbox=13 atoms=11 smiles=*C1C(O)C12=CC=C(F)C=C2 wildcard=True
+  [Tier 3] '3': bbox=7 atoms=11 smiles=*CC(=O)C1=CC=C(F)C=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1a', '1b', '4', '3']
+    [Tier 4 LLM] '1a' → r_value='PG = Ac'
+    [Tier 4 LLM] '1b' → r_value='PG = Boc'
+    [Tier 4 LLM] '3' → r_value='* = OCF3'
+    [Tier 4 LLM] '4' → r_value='* = OCF3'
+    [Tier 4] R-group candidates: ['1a', '1b', '3', '4']
+    [Tier 4 graph] '1a' r=PG = Ac fallback (smi=*C(=C)c1ccc(F)cc1)
+    [Tier 4 graph] '1b' r=PG = Boc fallback (smi=*C(=C)c1ccc(F)cc1)
+    [Tier 4] '1a' ✅ match: CC(=O)OC(=C)c1ccc(F)cc1
+    [Tier 4] '1b' ✅ match: CC(C)(C)OC(=O)OC(=C)c1ccc(F)cc1
+    [Tier 4 graph] '3' r=* = OCF3 fallback (smi=*CC(=O)C1=CC=C(F)C=C1)
+    [Tier 4] '3' ✅ match: FC(F)(F)OCC(=O)C1=CC=C(F)C=C1
+    [Tier 4 graph] '4' r=* = OCF3 fallback (smi=*C1C(*)C12=CC=C(F)C=C2)
+    [Tier 4] '4' RDKit render failed: FC(F)(F)OC1C(OC(F)(F)F)C12=CC=C(F)C=C2
+  [Tier 4 R-group Sub] resolved=['1a', '1b', '3']  remaining=['4']
+    [Tier 5 PubChem] '4' → skipped (paper-specific code, no name_map entry)
+  [Tier 5 PubChem] resolved=[]  remaining=['4']
+    [Tier 6→pubchem_lookup] '4' name='1-(5-fluoro-2-(trifluoromethoxy)phenyl)ethan-1-one' → CC(=O)C1=C(C=CC(=C1)F)OC(F)(F)F
+  [Tier 6 LLM Vision] resolved=['4']

@@ -1,0 +1,319 @@
+{
+    "article_summary": "The article describes the development of a novel diazabenzacenaphthenium photoredox catalyst, NBAP, capable of promoting the multielectron (four-electron) reduction of esters. Using ammonium oxalate as a 'traceless reductant' under visible-light irradiation, the system generates carbinol anion intermediates that can be protonated to form alcohols or undergo 1,2-addition to carbonyl compounds to yield unsymmetric 1,2-diols.",
+    "compound_name_map": {
+        "NBAP": "4,5,9,10-tetraethyl-1,2-dihydrobenz[de]imidazo[1,2,3-ij]-1,8-naphthyridinium chloride",
+        "1a": "methyl picolinate",
+        "2a": "pyridin-2-ylmethanol",
+        "1g": "methyl isonicotinate",
+        "1h": "methyl quinaldate",
+        "1m": "methyl 4-methoxybenzoate",
+        "1n": "5-(methoxycarbonyl)phthalide",
+        "3a": "cyclohexanecarboxaldehyde",
+        "5": "dihydroimidazoisoquinoline",
+        "6": "diazaphenalene",
+        "7": "diazabenzocyclopentalphenalenium",
+        "SET": "ormations involving a photocatalytic single-electron-transfer",
+        "DFT": "related compounds by applying the density functional theory",
+        "1q": "diethyl terephthalate",
+        "PDF": "tional methods, characterization data, and spectroscopic data",
+        "IMS": "ng Authors\n\nShintaro Okumura -Institute for Molecular Science",
+        "1": "REFERENCES",
+        "i": "sible Light-Activated Radical Coupling Reactions Triggered by",
+        "ii": "Ruthenium,",
+        "iii": "Iridium and",
+        "4CzIPN": "es of 1,2,3,5-Tetrakis(carbazol-9-yl)-4,6-dicyanoben-\n\n- zene"
+    },
+    "compound_description_map": {
+        "NBAP": "A novel diazabenzacenaphthenium photocatalyst with high photoredox abilities and visible-light absorption.",
+        "ammonium oxalate": "A 'traceless reductant' that gives CO2 as the sole byproduct through oxidation.",
+        "5": "Tricyclic dihydroimidazoisoquinoline related structure used for computational comparison.",
+        "6": "Tricyclic diazaphenalene related structure used for computational comparison.",
+        "7": "Pentacyclic diazabenzocyclopentalphenalenium related structure used for computational comparison."
+    },
+    "data_items": [
+        {
+            "id": "Scheme 1",
+            "type": "Scheme",
+            "purpose": "General concept of multielectron reduction of esters to carbinol anions and subsequent transformations.",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000007_21a91cd8713e5253be348bb742764d31eaa4f41eb72254981a6859edb7b7dfed.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [],
+            "product_labels": []
+        },
+        {
+            "id": "Scheme 2",
+            "type": "Scheme",
+            "purpose": "Model reaction for the photocatalytic reduction of methyl picolinate (1a).",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "NBAP"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [
+                "1a"
+            ],
+            "product_labels": [
+                "2a"
+            ]
+        },
+        {
+            "id": "Table 1",
+            "type": "Table",
+            "purpose": "Optimization of reaction conditions for the reduction of methyl picolinate.",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": true,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "scheme_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000009_48ea42fb78d334280ad9fe876cae03be01f7f52ef6fb1cf7da1ff289efae1a0f.png",
+            "expected_row_count": 9,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": true,
+            "arrow_mapping": "The 'photocatalyst' and 'electron source' columns map to the reagents listed above the arrow in Scheme 2.",
+            "defined_labels": [],
+            "reactant_labels": [
+                "1a"
+            ],
+            "product_labels": [
+                "2a"
+            ],
+            "columns": {
+                "entry": {
+                    "type": "literal",
+                    "data_type": "integer",
+                    "has_footnote_dependency": false
+                },
+                "photocatalyst": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map": "Defined in Scheme 2 and Figure 1 gallery",
+                    "label_map_source_id": "Scheme 2"
+                },
+                "electron source": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false
+                },
+                "yield (%) of 2a": {
+                    "type": "numerical",
+                    "data_type": "float",
+                    "has_footnote_dependency": true
+                }
+            }
+        },
+        {
+            "id": "Scheme 3",
+            "type": "Table",
+            "purpose": "Substrate scope for the multielectron reduction of various esters.",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000012_ee9102d05a706a3ff837ef3dac5a0098ddc8573a3d551febb4e246ecc74d54f3.png",
+            "expected_row_count": 21,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [
+                "1"
+            ],
+            "product_labels": [
+                "2"
+            ],
+            "columns": {
+                "Substrates": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map": "Labels 1a-1u correspond to drawn structures in the image",
+                    "label_map_source_id": "Scheme 3"
+                },
+                "Products": {
+                    "type": "numerical",
+                    "data_type": "percentage",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": true,
+                    "label_map": "Labels 2a-2u correspond to drawn structures in the image",
+                    "label_map_source_id": "Scheme 3"
+                }
+            }
+        },
+        {
+            "id": "Scheme 4",
+            "type": "Table",
+            "purpose": "Substrate scope for the 1,2-addition of esters to aldehydes or ketones (cross-pinacol coupling).",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": true,
+            "has_reaction_scheme_above": true,
+            "image_table_relationship": "both",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000013_ff6f5bac839fd7381ecaf0fd9003c9d08d0ab9f195d1ec691769cc58e88d0ce9.png",
+            "expected_row_count": 4,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": true,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [
+                "1",
+                "3"
+            ],
+            "product_labels": [
+                "4"
+            ],
+            "columns": {
+                "Substrates": {
+                    "type": "literal",
+                    "data_type": "string",
+                    "has_footnote_dependency": false,
+                    "value_is_abbreviation": true,
+                    "label_map": "Labels 1a, 1q, 3a-3d correspond to drawn structures",
+                    "label_map_source_id": "Scheme 4"
+                },
+                "Products": {
+                    "type": "numerical",
+                    "data_type": "percentage",
+                    "has_footnote_dependency": true,
+                    "value_is_abbreviation": true,
+                    "label_map": "Labels 4aa-4qd correspond to drawn structures",
+                    "label_map_source_id": "Scheme 4"
+                }
+            }
+        },
+        {
+            "id": "Scheme 5",
+            "type": "Scheme",
+            "purpose": "Synthesis of the NBAP photocatalyst.",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000014_deb205eb8a0eb97771fd62527695101c1639eed421606286051aed670a5a226d.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": false,
+            "structure_drawing_labels": [],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "NBAP"
+            ],
+            "reactant_labels": [],
+            "product_labels": [
+                "NBAP"
+            ]
+        },
+        {
+            "id": "Figure 2",
+            "type": "Gallery",
+            "purpose": "Calculated redox properties of NBAP and related structures for comparison.",
+            "contains_extractable_reaction_data": false,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000016_e10f1c99774f8dc64bf5f6d2c5fb092ad7bfcd8da0e1f6cefe4ebf0d01076cb0.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": false,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "NBAP",
+                "5",
+                "6",
+                "7"
+            ],
+            "has_reaction_parameters_above_the_arrow": false,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [
+                "5",
+                "6",
+                "7"
+            ],
+            "reactant_labels": [],
+            "product_labels": []
+        },
+        {
+            "id": "Figure 3",
+            "type": "Figure",
+            "purpose": "Mechanistic studies including deuteration experiments, fluorescence quenching, and proposed mechanism.",
+            "contains_extractable_reaction_data": true,
+            "is_optimization_table": false,
+            "is_scope_table": false,
+            "has_reaction_scheme_above": false,
+            "image_table_relationship": "text_only",
+            "reaction_scheme_ref": "ja4c05272_artifacts/image_000017_f88078cd1075a2d9dc488d01c03ec9419e930bfffba82910c888f52ed0ac51d5.png",
+            "expected_row_count": null,
+            "has_r_group_substitution": true,
+            "has_detailed_data_in_si": false,
+            "has_structure_drawings": true,
+            "structure_drawing_labels": [
+                "1q",
+                "2q-D",
+                "I",
+                "II",
+                "III",
+                "IV",
+                "V",
+                "VI"
+            ],
+            "has_reaction_parameters_above_the_arrow": true,
+            "reaction_parameter_above_arrow_mapping": false,
+            "arrow_mapping": null,
+            "defined_labels": [],
+            "reactant_labels": [
+                "1q",
+                "I"
+            ],
+            "product_labels": [
+                "2q-D",
+                "VI"
+            ]
+        }
+    ]
+}

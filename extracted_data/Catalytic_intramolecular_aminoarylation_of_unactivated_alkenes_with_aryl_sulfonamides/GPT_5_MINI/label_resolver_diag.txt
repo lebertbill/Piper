@@ -1,0 +1,110 @@
+Label Resolver Diagnostic Log — 2026-06-11 14:30:18
+================================================================================
+
+  [GlobalRegistry] Skipping 'Fig. 1' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 2' — not referenced by this table's columns
+  [GlobalRegistry] labels=['Ir-1', 'Ir-2', 'Ir-3'] → image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png
+  [GlobalRegistry] Skipping 'Fig. 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Fig. 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['Ir-1', 'Ir-2', 'Ir-3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides/GPT_5_MINI/processed/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides_artifacts/image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png
+  Exists   : True
+  [Tier 0 NameMap] 'Ir-1' → name '[Ir(dF(CF3)ppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap Organomet] 'Ir-2' llm_name_to_smiles: score=1  CC(C)(C)C1=CC=NC(=C1)C2=NC=CC(=C2)C(C)(C)C.FC1=CC(=C(C=C1)C2=NC=CC=C2)
+  [Tier 0 NameMap] 'Ir-2' → best=llm_name_to_smiles (score=1) via name='[Ir(dF(F)ppy)2(dtbbpy)]PF6'
+  [Tier 0 NameMap] 'Ir-3' → name '[Ir(dFppy)2(dtbbpy)]PF6' did not resolve via any source (organometallic)
+  [Tier 0 NameMap] resolved=['Ir-2']  remaining=['Ir-1', 'Ir-3']
+  [OCSR] image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Id']  smiles=CC(C)=CCCC(=O)NS(=O)(=O)c1c(F)cccc1F  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2d']  smiles=CC(C)(c1c(F)cccc1F)[C@@H]1CCC(=O)N1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['1-1] R e CF}', 'Ilr-2]  R = F', 'Dr-FR - A']  smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['Ir-1', 'Ir-3']
+  [Tier 2 Symbol Correction] resolved=['Ir-1', 'Ir-3']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst' labels ['None', 'Ir-1 (no light)'] from image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['None', 'Ir-1 (no light)']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides/GPT_5_MINI/processed/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides_artifacts/image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['None', 'Ir-1 (no light)']
+  [OCSR] image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Id']  smiles=CC(C)=CCCC(=O)NS(=O)(=O)c1c(F)cccc1F  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2d']  smiles=CC(C)(c1c(F)cccc1F)[C@@H]1CCC(=O)N1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['1-1] R e CF}', 'Ilr-2]  R = F', 'Dr-FR - A']  smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['None', 'Ir-1 (no light)']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['None', 'Ir-1 (no light)']
+  [Tier 3] 'None': bbox_idx=None out of range (n=6)
+  [Tier 3] 'Ir-1 (no light)': bbox=4 atoms=60 smiles=*C1=CN=C(C23=[C](C=C(F)C=C2F)[Ir+]245([C]6=C(C(F)=CC(F)=C6)C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['None', 'Ir-1 (no light)']
+    [Tier 4 LLM] 'Ir-1 (no light)' → r_value='R = CF3'
+    [Tier 4] R-group candidates: ['Ir-1 (no light)']
+    [Tier 4 graph] 'Ir-1 (no light)' r=R = CF3 fallback (smi=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(F)=CC(F)=C6)C6=[N]2C=C(*)C=C6)([C]2=C(C(F)=CC(F)=C2)C32=[N+]4C=C(*)C=C2)[N]2=C(C=CC(*)=C2)C2=[N]5C=C(*)C=C2)C=C1)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['Ir-1 (no light)', 'None']
+    [Tier 5 PubChem] 'Ir-1 (no light)' → hit via 'Ir-1': C1C[C@H](CN(C1)C(=O)/C=C/COCCOCCOCCOCCOCCOC2=CC=CC3=C2C(=O)N(C3=O)C4CCC(=O)NC4=O)N5C6=NC=NC(=C6C(=N5)C7=CC=C(C=C7)OC8=CC=CC=C8)N
+    [Tier 5 PubChem] 'None' → no hit (tried ['None'])
+  [Tier 5 PubChem] resolved=['Ir-1 (no light)']  remaining=['None']
+  [Tier 6 LLM Vision] resolved=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1d']
+  Image    : extracted_data/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides/GPT_5_MINI/processed/visualheist_page_04_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] resolved=[]  remaining=['1d']
+  [OCSR] visualheist_page_04_table_1.png: 5 bboxes, 2 coref pairs
+  [OCSR]   pair [0,1]: texts=['Id']  smiles=CC(C)=CCCC(=O)NS(=O)(=O)c1c(F)cccc1F  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2d']  smiles=CC(C)(c1c(F)cccc1F)[C@@H]1CCC(=O)N1  wildcard=False
+  [OCSR] → 2 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1d']
+  [Tier 2 Symbol Correction] resolved=['1d']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1', '2', '3']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides/GPT_5_MINI/processed/Catalytic_intramolecular_aminoarylation_of_unactivated_alkenes_with_aryl_sulfonamides_artifacts/image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png
+  Exists   : True
+  [Tier 0 NameMap] '1' → name 'could be the difunctionalization of an alkene to incorporate' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '2' → name 'the C -Nbond,' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] '3' → name 'the aryl -Csp 3 bond, or' did not resolve via PubChem/OPSIN/LLM
+  [Tier 0 NameMap] resolved=[]  remaining=['1', '2', '3']
+  [OCSR] image_000008_893845fe524f7db3e1a54a03d4da6af8983987147afb98d72bee8f074b5f7a61.png: 6 bboxes, 3 coref pairs
+  [OCSR]   pair [0,1]: texts=['Id']  smiles=CC(C)=CCCC(=O)NS(=O)(=O)c1c(F)cccc1F  wildcard=False
+  [OCSR]   pair [2,3]: texts=['2d']  smiles=CC(C)(c1c(F)cccc1F)[C@@H]1CCC(=O)N1  wildcard=False
+  [OCSR]   pair [4,5]: texts=['1-1] R e CF}', 'Ilr-2]  R = F', 'Dr-FR - A']  smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(  wildcard=True
+  [OCSR] → 3 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['1', '2', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['1', '2', '3']
+  [Tier 3] '1': bbox=4 atoms=60 smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[Ir+]245([C]6=C(C(F)=CC(F)=C wildcard=True
+  [Tier 3] '2': bbox=4 atoms=60 smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[Ir+]245([C]6=C(C(F)=CC(F)=C wildcard=True
+  [Tier 3] '3': bbox=4 atoms=60 smiles=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[Ir+]245([C]6=C(C(F)=CC(F)=C wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['1', '2', '3']
+    [Tier 4 LLM] '1' → r_value='R = CF3'
+    [Tier 4 LLM] '2' → r_value='R = F'
+    [Tier 4 LLM] '3' → r_value='R = H'
+    [Tier 4] R-group candidates: ['1', '2', '3']
+    [Tier 4 graph] '1' r=R = CF3 fallback (smi=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(F)=CC(F)=C6)C6=[N]2C=C(*)C=C6)([C]2=C(C(F)=CC(F)=C2)C32=[N+]4C=C(*)C=C2)[N]2=C(C=CC(*)=C2)C2=[N]5C=C(*)C=C2)C=C1)
+    [Tier 4 graph] '2' r=R = F fallback (smi=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(F)=CC(F)=C6)C6=[N]2C=C(*)C=C6)([C]2=C(C(F)=CC(F)=C2)C32=[N+]4C=C(*)C=C2)[N]2=C(C=CC(*)=C2)C2=[N]5C=C(*)C=C2)C=C1)
+    [Tier 4 graph] '3' r=R = H fallback (smi=*C1=C[N+]=C(C23=[C](C=C(F)C=C2F)[In+]245([C]6=C(C(F)=CC(F)=C6)C6=[N]2C=C(*)C=C6)([C]2=C(C(F)=CC(F)=C2)C32=[N+]4C=C(*)C=C2)[N]2=C(C=CC(*)=C2)C2=[N]5C=C(*)C=C2)C=C1)
+    [Tier 4] LLM fallback generation failed: Unterminated string starting at: line 5 column 17 (char 59)
+  [Tier 4 R-group Sub] resolved=[]  remaining=['1', '2', '3']
+    [Tier 5 PubChem] '1' → name_map name: 'could be the difunctionalization of an alkene to incorporate'
+    [Tier 5 PubChem] '1' → no hit (tried ['could be the difunctionalization of an alkene to incorporate', 'A'])
+    [Tier 5 PubChem] '2' → name_map name: 'the C -Nbond,'
+    [Tier 5 PubChem] '2' → no hit (tried ['the C -Nbond,', 'O n Bu'])
+    [Tier 5 PubChem] '3' → name_map name: 'the aryl -Csp 3 bond, or'
+    [Tier 5 PubChem] '3' → no hit (tried ['the aryl -Csp 3 bond, or', '0.05 M'])
+  [Tier 5 PubChem] resolved=[]  remaining=['1', '2', '3']
+    [Tier 6] '1' PubChem/OPSIN/LLM all failed for authoritative name 'could be the difunctionalization of an alkene to incorporate' — name only, no SMILES
+    [Tier 6] '2' PubChem/OPSIN/LLM all failed for authoritative name 'the C -Nbond,' — name only, no SMILES
+    [Tier 6] '3' PubChem/OPSIN/LLM all failed for authoritative name 'the aryl -Csp 3 bond, or' — name only, no SMILES
+  [Tier 6 LLM Vision] resolved=['1', '2', '3']

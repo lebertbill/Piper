@@ -1,0 +1,75 @@
+Label Resolver Diagnostic Log — 2026-08-15 17:45:00
+================================================================================
+
+  [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2a', '3', '4'] → image_000012_a97961f7ddb3d684543d1b73f36f3710cff17e5d1191c1bef71bc8bd895d44a8.png
+  [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
+  [GlobalRegistry] Skipping 'Table 4' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3', '4']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/cs2c04736/GPT_5_MINI/processed/cs2c04736_artifacts/image_000012_a97961f7ddb3d684543d1b73f36f3710cff17e5d1191c1bef71bc8bd895d44a8.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='diethyl malonate'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='styrene'
+  [Tier 0 NameMap] resolved=['1a', '2a']  remaining=['3', '4']
+  [OCSR] image_000012_a97961f7ddb3d684543d1b73f36f3710cff17e5d1191c1bef71bc8bd895d44a8.png: 8 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [2,3]: texts=['1a']  smiles=*C*  wildcard=True
+  [OCSR]   pair [4,5]: texts=['2a']  smiles=C=Cc1ccccc1  wildcard=False
+  [OCSR]   pair [6,7]: texts=['3']  smiles=*C(*)CC(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['3', '4']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['3', '4']
+  [Tier 3] '3': bbox=6 atoms=12 smiles=*C(*)CC(=O)C1=CC=CC=C1 wildcard=True
+  [Tier 3] '4': bbox=0 atoms=19 smiles=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['3', '4']
+    [Tier 4 LLM] '3' → r_value='EtO2C, CO2Et'
+    [Tier 4 LLM] '4' → r_value='EtO2C, CO2Et'
+    [Tier 4] R-group candidates: ['3', '4']
+    [Tier 4 graph] '3' r=EtO2C, CO2Et fallback (smi=*C(*)CC(=O)C1=CC=CC=C1)
+    [Tier 4] '3' ✅ match: CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1
+    [Tier 4 graph] '4' r=EtO2C, CO2Et fallback (smi=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1)
+    [Tier 4] '4' ✅ match: CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['3', '4']  remaining=[]
+  [InlineResolver] Column 'Photocatalyst (1 mol %)' labels ['4CzIPN'] from visualheist_page_03_table_1.png
+
+────────────────────────────────────────────────────────────
+  LabelResolver: None
+────────────────────────────────────────────────────────────
+  Labels   : ['4CzIPN']
+  Image    : extracted_data/cs2c04736/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '4CzIPN' → pubchem_lookup via name='1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene'
+  [Tier 0 NameMap] resolved=['4CzIPN']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4', '1a', '3']
+  Image    : extracted_data/cs2c04736/GPT_5_MINI/processed/visualheist_page_03_table_1.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → pubchem_lookup via name='diethyl malonate'
+  [Tier 0 NameMap] resolved=['1a']  remaining=['4', '3']
+  [OCSR] visualheist_page_03_table_1.png: 13 bboxes, 4 coref pairs
+  [OCSR]   pair [0,1]: texts=[]  smiles=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1  wildcard=True
+  [OCSR]   pair [5,6]: texts=['Ia']  smiles=*C*  wildcard=True
+  [OCSR]   pair [7,8]: texts=['2a']  smiles=C=Cc1ccccc1  wildcard=False
+  [OCSR]   pair [11,12]: texts=['3']  smiles=*C(*)CC(=O)C1=CC=CC=C1  wildcard=True
+  [OCSR] → 4 usable corefs for Tier 1 matching
+  [Tier 1 Direct] resolved=[]  remaining=['4', '3']
+  [Tier 2 Symbol Correction] resolved=[]  remaining=['4', '3']
+  [Tier 3] '4': bbox=0 atoms=19 smiles=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1 wildcard=True
+  [Tier 3] '3': bbox=11 atoms=12 smiles=*C(*)CC(=O)C1=CC=CC=C1 wildcard=True
+  [Tier 3 BBox Match] resolved=[]  remaining=['4', '3']
+    [Tier 4 LLM] '4' → r_value='* = CO2Et'
+    [Tier 4 LLM] '3' → r_value='* = CO2Et'
+    [Tier 4] R-group candidates: ['4', '3']
+    [Tier 4 graph] '4' r=* = CO2Et fallback (smi=*C(*)(CCC1=CC=CC=C1)CCC1=CC=CC=C1)
+    [Tier 4] '4' ✅ match: CCOC(=O)C(C(=O)OCC)(CCC1=CC=CC=C1)CCC1=CC=CC=C1
+    [Tier 4 graph] '3' r=* = CO2Et fallback (smi=*C(*)CC(=O)C1=CC=CC=C1)
+    [Tier 4] '3' ✅ match: CCOC(=O)C(C(=O)OCC)CC(=O)C1=CC=CC=C1
+  [Tier 4 R-group Sub] resolved=['4', '3']  remaining=[]

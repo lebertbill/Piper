@@ -1,0 +1,1850 @@
+[
+    {
+        "document": "catalysts-13-01126",
+        "table_name": "Table 1",
+        "table_caption": "Optimization studies.",
+        "image_path": "/Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/catalysts-13-01126/GPT_5_MINI/processed/catalysts-13-01126_artifacts/image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 70.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 20.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "70 (60) 3"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "20"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "None"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "Isolated yield of 3a: 60% (isolated yield given in parentheses in table)"
+                ]
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "Acetonitrile (MeCN)",
+                        "smiles": "CC#N",
+                        "resolved_smiles": "CC#N",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 56.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 19.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "56"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "19"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "MeCN as solv., 24 h"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis"
+                ]
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "N,N-Dimethylformamide (DMF)",
+                        "smiles": "CN(C)C=O",
+                        "resolved_smiles": "CN(C)C=O",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 64.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 21.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "64"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "21"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "DMF as solv., 24 h"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: 97% (determined by GC-MS)",
+                    "Yields determined by NMR analysis"
+                ]
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "3DPAFIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c1",
+                        "resolved_name": "2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile",
+                        "resolved_smiles": "C1=CC=C(C=C1)N(C2=CC=CC=C2)C3=C(C(=C(C(=C3C#N)N(C4=CC=CC=C4)C5=CC=CC=C5)F)N(C6=CC=CC=C6)C7=CC=CC=C7)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 24.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 32.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 25.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "32"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "25"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "3DPAFIPN as PC, 24 h",
+                        "resolved_name": "2,4,6-tris(diphenylamino)-5-fluoroisophthalonitrile",
+                        "resolved_smiles": "C1=CC=C(C=C1)N(C2=CC=CC=C2)C3=C(C(=C(C(=C3C#N)N(C4=CC=CC=C4)C5=CC=CC=C5)F)N(C6=CC=CC=C6)C7=CC=CC=C7)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: 91% (determined by GC-MS)",
+                    "Yields determined by NMR analysis"
+                ]
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.125,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 61.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 13.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "61"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "13"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "Conc. 0.125 M"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis"
+                ]
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED",
+                        "quantity": 60.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 68.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 14.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "68"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "14"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "60 W LED, 2 h"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis"
+                ]
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "2a",
+                        "quantity": 1.2,
+                        "unit": "equiv",
+                        "resolved_name": "bromonitromethane",
+                        "resolved_smiles": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 8.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 68.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 17.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "68"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "17"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "1.2 equiv. of 2a, 8 h"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "2a used at 1.2 equiv (row deviation)"
+                ]
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "L1",
+                        "quantity": 11.0,
+                        "unit": "mol%",
+                        "smiles": "c1ccc2sc(-c3nc4ccccc4s3)nc2c1",
+                        "resolved_name": "2,2'-bibenzothiazole",
+                        "resolved_smiles": "C1=CC=C2C(=C1)N=C(S2)C3=NC4=CC=CC=C4S3",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 71.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 18.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "71"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "18"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "L1 (11%)",
+                        "resolved_name": "2,2'-bibenzothiazole",
+                        "resolved_smiles": "C1=CC=C2C(=C1)N=C(S2)C3=NC4=CC=CC=C4S3",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "Ligand L1 used at 11 mol% (row deviation)"
+                ]
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "L2",
+                        "quantity": 11.0,
+                        "unit": "mol%",
+                        "smiles": "c1ccc(-c2ccccn2)nc1",
+                        "resolved_name": "2,2'-bipyridine",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 57.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 20.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "57"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "20"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "L2 (11%)",
+                        "resolved_name": "2,2'-bipyridine",
+                        "resolved_smiles": "C1=CC=NC(=C1)C2=CC=CC=N2",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: 85% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "Ligand L2 used at 11 mol% (row deviation)"
+                ]
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "MnBr2",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Mn+2].[Br-].[Br-]",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "L3",
+                        "quantity": 11.0,
+                        "unit": "mol%",
+                        "smiles": "CN(C)CCN(C)C",
+                        "resolved_name": "N,N,N',N'-tetramethylethylenediamine",
+                        "resolved_smiles": "CN(C)CCN(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 48.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 22.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "48"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "22"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "L3 (11%)",
+                        "resolved_name": "N,N,N',N'-tetramethylethylenediamine",
+                        "resolved_smiles": "CN(C)CCN(C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: 95% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "Ligand L3 used at 11 mol% (row deviation)"
+                ]
+            },
+            {
+                "entry_id": "11",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a",
+                        "quantity": 42.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a",
+                        "quantity": 13.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "42"
+                    },
+                    {
+                        "role": "y._of_4a,_percent_2",
+                        "text": "13"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "no MnBr2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: >99% (determined by GC-MS)",
+                    "Yields determined by NMR analysis",
+                    "MnBr2 omitted in this entry (row deviation: 'no MnBr2')"
+                ]
+            },
+            {
+                "entry_id": "12",
+                "reactants": [
+                    {
+                        "smiles": "C=CCCC1=CC=CC=C1",
+                        "text": "1a",
+                        "smiles_llm": "C=CCc1ccccc1",
+                        "smiles_ocsr": "C=CCCC1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CCCc1ccccc1",
+                        "molecular_formula": "C10H12",
+                        "molecular_weight": 132.21
+                    },
+                    {
+                        "smiles": "C([N+](=O)[O-])Br",
+                        "text": "2a",
+                        "smiles_llm": "BrCC[N+](=O)[O-]",
+                        "quantity": 1.5,
+                        "unit": "equiv",
+                        "smiles_ocsr": "C([N+](=O)[O-])Br",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CBr",
+                        "molecular_formula": "CH2BrNO2",
+                        "molecular_weight": 139.94
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "text": "3a",
+                        "smiles_llm": "c1ccccc1CC(Br)CC[N+](=O)[O-]",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CC[N+](=O)[O-]",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "O=[N+]([O-])CCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C11H14BrNO2",
+                        "molecular_weight": 272.14
+                    },
+                    {
+                        "smiles": "c1ccc(cc1)CCC(Br)CBr",
+                        "text": "4a",
+                        "smiles_llm": "c1ccccc1CC(Br)CBr",
+                        "smiles_ocsr": "c1ccc(cc1)CCC(Br)CBr",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "BrCC(Br)CCc1ccccc1",
+                        "molecular_formula": "C10H12Br2",
+                        "molecular_weight": 292.01
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "4CzIPN",
+                        "quantity": 0.5,
+                        "unit": "mol%",
+                        "smiles": "N#Cc1cc(C#N)c(N(c2ccccc2)c3ccccc3)c(N(c4ccccc4)c5ccccc5)c(N(c6ccccc6)c7ccccc7)c1",
+                        "resolved_name": "1,2,3,5-tetrakis(carbazol-9-yl)-4,6-dicyanobenzene",
+                        "resolved_smiles": "C1=CC=C2C(=C1)C3=CC=CC=C3N2C4=C(C(=C(C(=C4C#N)N5C6=CC=CC=C6C7=CC=CC=C75)N8C9=CC=CC=C9C1=CC=CC=C18)N1C2=CC=CC=C2C2=CC=CC=C21)C#N",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1"
+                    },
+                    {
+                        "role": "metal_salt",
+                        "text": "Imes·CuBr",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "[Cu+].[Br-]",
+                        "resolved_smiles": "CC1=CC(=C(C(=C1)C)N2C=C[N+](=[C-]2)C3=C(C=C(C=C3C)C)C)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "TBABr",
+                        "quantity": 0.2,
+                        "unit": "equiv",
+                        "smiles": "N(CCCC)(CCCC)(CCCC)(CCCC).[Br-]",
+                        "resolved_smiles": "CCCC[N+](CCCC)(CCCC)CCCC.[Br-]",
+                        "resolved_name": "tetrabutylammonium bromide",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 0.5,
+                        "unit": "M",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Blue LED",
+                        "quantity": 10.0,
+                        "unit": "W"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 5.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "temperature",
+                        "text": "room temperature"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "3a"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "4a"
+                    },
+                    {
+                        "role": "y._of_3a,_percent_2",
+                        "text": "n.d."
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "Imes·CuBr instead of MnBr2"
+                    },
+                    {
+                        "role": "catalyst",
+                        "text": "MnBr2 (10%)",
+                        "quantity": 10.0,
+                        "unit": "%",
+                        "resolved_smiles": "[Mn](Br)Br",
+                        "smiles_source": "pubchem_lookup"
+                    }
+                ],
+                "additional_info": [
+                    "Conversion of 1a: 1% (determined by GC-MS)",
+                    "Yields not determined (n.d.) as reported in table",
+                    "MnBr2 replaced by Imes·CuBr in this entry (row deviation)"
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false
+            },
+            "Deviation from Stand. Cond.": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Ligands and photocatalysts defined in the gallery inset of the table image.",
+                "label_map_ref": "catalysts-13-01126_artifacts/image_000008_0dc486ef4053fe494733117ecf4a73912fe06bc65da88bc510858c54bdca0113.png",
+                "label_map_source_id": "Table 1"
+            },
+            "Conv. of 1a,%": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Y. of 3a,%": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            },
+            "Y. of 4a,%": {
+                "type": "numerical",
+                "data_type": "integer",
+                "has_footnote_dependency": true
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 48,
+            "valid_molecules": 48,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

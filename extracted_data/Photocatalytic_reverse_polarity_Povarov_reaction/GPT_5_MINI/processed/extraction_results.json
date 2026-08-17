@@ -1,0 +1,1296 @@
+[
+    {
+        "document": "Photocatalytic_reverse_polarity_Povarov_reaction",
+        "table_name": "Table 1",
+        "table_caption": "Optimization of photocatalytic reverse polarity Povarov reaction",
+        "image_path": "extracted_data/Photocatalytic_reverse_polarity_Povarov_reaction/GPT_5_MINI/processed/visualheist_page_02_table_1.png",
+        "entries": [
+            {
+                "entry_id": "1",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE1 (Hantzsch ester)",
+                        "quantity": 120.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED bath"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 64.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 7:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "64"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "7 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE1 (120 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "2",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE1 (Hantzsch ester)",
+                        "quantity": 60.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED bath"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 84.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 7:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "84"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "7 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE1 (60 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "3",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 60.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED bath"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 100.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 10:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Isolated yield after silica gel column chromatography: 56%. (footnote d)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "100 (56) d"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "10 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (60 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "4",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE6 (Hantzsch ester)",
+                        "quantity": 60.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "HE6",
+                        "resolved_smiles": "CC1=C(C2=CC3=NC(=CC4=C(C(=C([N-]4)C=C5C(=C(C(=N5)C=C1[N-]2)C)C)C)C(=O)O)C(=C3C)C(=O)O)C.[Fe+2]",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CC1=C(C2=CC3=NC(=CC4=C(C(=C([N-]4)C=C5C(=C(C(=N5)C=C1[N-]2)C)C)C)C(=O)O)C(=C3C)C(=O)O)C.[Fe+2]"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED bath"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 99.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 11:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "99"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "11 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE6 (60 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "5",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "LED bath"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 54.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 8:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "54"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "8 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (10 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "6",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 1.25,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Photoreactor"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 95.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 10:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Isolated yield after silica gel column chromatography: 90%. (footnote d)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "95 (90) d"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "10 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (10 mol%)"
+                    }
+                ],
+                "additional_info": []
+            },
+            {
+                "entry_id": "7",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Photoreactor"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "yield",
+                        "text": "",
+                        "quantity": 93.0,
+                        "unit": "%"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "dr 10:1"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "19F NMR yield determined by direct conversion between 1a and 3a (major + minor diastereoisomer) including by-products. (footnote c)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Isolated yield after silica gel column chromatography: 88%. (footnote d)"
+                    },
+                    {
+                        "role": "3a_c",
+                        "text": "93 (88) d"
+                    },
+                    {
+                        "role": "selectivity_ratio",
+                        "text": "10 : 1"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (10 mol%)"
+                    },
+                    {
+                        "role": "phenyl_vinyl_sulfone",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "eq"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "2.0 equiv phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)"
+                    }
+                ]
+            },
+            {
+                "entry_id": "8",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Photoreactor"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "No Hantzsch ester (HE) present for this entry (HE column marked '-')."
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "phenyl_vinyl_sulfone",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "eq"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE",
+                        "quantity": null,
+                        "unit": "x mol%",
+                        "resolved_name": "Hantzsch Ester scaffold",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1)C(=O)OCC)C)C",
+                        "smiles_source": "llm_name_to_smiles",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "2.0 equiv phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)"
+                    }
+                ]
+            },
+            {
+                "entry_id": "9",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "light",
+                        "text": "Photoreactor"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Without the iridium photocatalyst for this entry (catalyst omitted). (footnote f)"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (10 mol%)"
+                    },
+                    {
+                        "role": "phenyl_vinyl_sulfone",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "eq"
+                    },
+                    {
+                        "role": "photocatalyst",
+                        "text": "[Ir]",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "resolved_name": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "resolved_smiles": "",
+                        "smiles_source": "name_map_only",
+                        "mapping_source": "Table 1"
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "2.0 equiv phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)"
+                    },
+                    {
+                        "text": "Iridium photocatalyst omitted for this entry (footnote f)."
+                    }
+                ]
+            },
+            {
+                "entry_id": "10",
+                "reactants": [
+                    {
+                        "smiles": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "text": "1a",
+                        "quantity": 0.25,
+                        "unit": "mmol",
+                        "smiles_ocsr": "COC1=CC=C(C=C1)N=CC2=CC=C(C=C2)F",
+                        "smiles_source": "llm_name_to_smiles",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc(N=Cc2ccc(F)cc2)cc1",
+                        "molecular_formula": "C14H12FNO",
+                        "molecular_weight": 229.25
+                    },
+                    {
+                        "smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "text": "2a",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles_ocsr": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "C=CS(=O)(=O)c1ccccc1",
+                        "molecular_formula": "C8H8O2S",
+                        "molecular_weight": 168.22
+                    }
+                ],
+                "products": [
+                    {
+                        "smiles": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "text": "3a",
+                        "smiles_ocsr": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "smiles_source": "ocsr_rgroup",
+                        "smiles_valid": true,
+                        "smiles_canonical": "COc1ccc2c(c1)NC(c1ccc(F)cc1)C(S(=O)(=O)c1ccccc1)C2",
+                        "molecular_formula": "C22H20FNO3S",
+                        "molecular_weight": 397.47
+                    }
+                ],
+                "conditions": [
+                    {
+                        "role": "photocatalyst",
+                        "text": "(Ir[dF(CF3)ppy]2(dtbbpy))PF6",
+                        "quantity": 1.0,
+                        "unit": "mol%",
+                        "smiles": "[Ir]"
+                    },
+                    {
+                        "role": "reagent",
+                        "text": "HE4 (Hantzsch ester)",
+                        "quantity": 10.0,
+                        "unit": "mol%",
+                        "smiles": "C1=C(C)N(C)C=C(C)C1",
+                        "resolved_name": "Diethyl 4-cyclohexyl-2,6-dimethyl-1,4-dihydropyridine-3,5-dicarboxylate",
+                        "resolved_smiles": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C",
+                        "smiles_source": "pubchem_lookup",
+                        "mapping_source": "Table 1",
+                        "smiles_pubchem": "CCOC(=O)C1=C(NC(=C(C1C2CCCCC2)C(=O)OCC)C)C"
+                    },
+                    {
+                        "role": "ligand",
+                        "text": "phenyl vinyl sulfone (2a)",
+                        "quantity": 0.5,
+                        "unit": "mmol",
+                        "smiles": "C=CCS(=O)(=O)c1ccccc1",
+                        "resolved_smiles": "C=CS(=O)(=O)C1=CC=CC=C1",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "solvent",
+                        "text": "DMSO",
+                        "quantity": 1.0,
+                        "unit": "mL",
+                        "smiles": "CS(=O)C",
+                        "resolved_smiles": "CS(=O)C",
+                        "smiles_source": "pubchem_lookup"
+                    },
+                    {
+                        "role": "time",
+                        "text": "",
+                        "quantity": 16.0,
+                        "unit": "h"
+                    },
+                    {
+                        "role": "scale",
+                        "text": "",
+                        "quantity": 0.25,
+                        "unit": "mmol"
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "Light source explicitly omitted for this entry (Light column marked '-')."
+                    },
+                    {
+                        "role": "additional_info",
+                        "text": "phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)",
+                        "quantity": 2.0,
+                        "unit": "equiv"
+                    },
+                    {
+                        "role": "deviation_from_standard",
+                        "text": "HE4 (10 mol%)"
+                    },
+                    {
+                        "role": "phenyl_vinyl_sulfone",
+                        "text": "",
+                        "quantity": 2.0,
+                        "unit": "eq"
+                    },
+                    {
+                        "role": "light",
+                        "text": "blue light source",
+                        "quantity": null,
+                        "unit": null
+                    }
+                ],
+                "additional_info": [
+                    {
+                        "text": "2.0 equiv phenyl vinyl sulfone used (instead of 5.0 equiv). (footnote e)"
+                    }
+                ]
+            }
+        ],
+        "reaction_scheme": "Table 1",
+        "abbreviations": {},
+        "reactants": [],
+        "products": [],
+        "conditions": {},
+        "columns_metadata": {
+            "Entry": {
+                "type": "literal",
+                "data_type": "integer",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            },
+            "HE (x mol%)": {
+                "type": "variation_from_standard",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": true,
+                "label_map": "Defined in the HE gallery inset within the table image.",
+                "label_map_ref": "Photocatalytic_reverse_polarity_Povarov_reaction_artifacts/image_000009_f2ae3e05095a528140ffdedea6fc12964139b5ea8369970d5c5c4a166b8b3681.png",
+                "label_map_source_id": "Table 1"
+            },
+            "Light source": {
+                "type": "literal",
+                "data_type": "string",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": false
+            },
+            "3a c": {
+                "type": "numerical",
+                "data_type": "float",
+                "has_footnote_dependency": true,
+                "value_is_abbreviation": false
+            },
+            "dr": {
+                "type": "numerical",
+                "data_type": "string",
+                "has_footnote_dependency": false,
+                "value_is_abbreviation": false
+            }
+        },
+        "validation_summary": {
+            "total_molecules": 30,
+            "valid_molecules": 30,
+            "invalid_molecules_count": 0,
+            "validation_rate": 100.0,
+            "rdkit_available": true
+        }
+    }
+]

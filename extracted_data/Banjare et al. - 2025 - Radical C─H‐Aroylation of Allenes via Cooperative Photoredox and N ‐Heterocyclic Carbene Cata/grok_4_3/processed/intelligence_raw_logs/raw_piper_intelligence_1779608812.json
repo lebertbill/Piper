@@ -1,0 +1,1335 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 69,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": []
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "no photocatalyst"
+        }
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "no N-heterocyclic carbene (NHC)"
+        }
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 40,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "[Ir[dF(CF3)ppy]2(dtbbpy)]PF6 catalyst instead of 4CzIPN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Ir(ppy)3]",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "[Ir(ppy)3] catalyst instead of 4CzIPN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "Ru(bpy)3(BF4)2",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "Ru(bpy)3(BF4)2 catalyst instead of 4CzIPN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "[Acr-Mes]ClO4",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "[Acr-Mes]ClO4 catalyst instead of 4CzIPN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "8",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "other solvents instead of CH3CN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "9",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 49,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "without CH2Cl2 only CH3CN"
+        }
+      ]
+    },
+    {
+      "reaction_id": "10",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH2Cl2"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 53,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "without CH3CN only CH2Cl2"
+        }
+      ]
+    },
+    {
+      "reaction_id": "11",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "other bases instead of Cs2CO3"
+        }
+      ]
+    },
+    {
+      "reaction_id": "12",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "other NHCs-2-4 instead of NHC-1"
+        }
+      ]
+    },
+    {
+      "reaction_id": "13",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2a",
+          "smiles": "O=C(F)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(F)c1ccccc1",
+          "smiles_ocsr": "O=C(F)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-5",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 64,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "NHC-5 instead of NHC-1"
+        }
+      ]
+    },
+    {
+      "reaction_id": "14",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2b",
+          "smiles": "O=C(Cl)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(Cl)c1ccccc1",
+          "smiles_ocsr": "O=C(Cl)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 66,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "with 2b instead of 2a"
+        }
+      ]
+    },
+    {
+      "reaction_id": "15",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2c",
+          "smiles": "O=C(Br)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(Br)c1ccccc1",
+          "smiles_ocsr": "O=C(Br)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 43,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "with 2c instead of 2a"
+        }
+      ]
+    },
+    {
+      "reaction_id": "16",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2d",
+          "smiles": "O=C(OC(=O)c1ccccc1)c1ccccc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(OC(=O)c1ccccc1)c1ccccc1",
+          "smiles_ocsr": "O=C(OC(=O)c1ccccc1)c1ccccc1",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 51,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "with 2d instead of 2a"
+        }
+      ]
+    },
+    {
+      "reaction_id": "17",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2e",
+          "smiles": "O=C(c1ccccc1)n1ccnc1",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(c1ccccc1)n1ccnc1"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "with 2e instead of 2a"
+        }
+      ]
+    },
+    {
+      "reaction_id": "18",
+      "reactants": [
+        {
+          "label": "1a",
+          "smiles": "COc1ccc(C=C=C)cc1",
+          "quantity": 0.1,
+          "unit": "mmol",
+          "smiles_llm": "COc1ccc(C=C=C)cc1"
+        },
+        {
+          "label": "2f",
+          "smiles": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+          "quantity": 0.25,
+          "unit": "mmol",
+          "smiles_llm": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+          "smiles_ocsr": "O=C(c1ccccc1)N1C(=O)c2ccccc2S1(=O)=O",
+          "smiles_source": "ocsr_coref"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "quantity": 3,
+          "unit": "mol%"
+        },
+        {
+          "role": "catalyst",
+          "text": "NHC-1",
+          "quantity": 20,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "quantity": 2.0,
+          "unit": "equiv"
+        },
+        {
+          "role": "solvent",
+          "text": "CH3CN/CH2Cl2 (1:1)"
+        },
+        {
+          "role": "light",
+          "text": "blue LEDs"
+        },
+        {
+          "role": "time",
+          "value": 12,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "rt"
+        },
+        {
+          "role": "yield",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "3",
+          "smiles": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1",
+          "smiles_llm": "COc1ccc(C=C=C(C(=O)c2ccccc2))cc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "deviation",
+          "text": "with 2f instead of 2a"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "reactions": [
+    {
+      "reaction_id": "1",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "CC(C)C",
+          "smiles_llm": "c1ccccc1C=CBr",
+          "smiles_ocsr": "CC(C)C",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "1i",
+          "smiles": "C=CC=CBr",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_ocsr": "C=CC=CBr",
+          "smiles_source": "ocsr_rxnscribe"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 4,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 85,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_ocsr": "c1ccccc1",
+          "smiles_source": "ocsr_rxnscribe"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Z/E <1:99 (Z/E values determined by 1H NMR of the crude product; values in parentheses from quantitative analysis of isolated product where provided) (footnote c)."
+        }
+      ]
+    },
+    {
+      "reaction_id": "2",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "none (no N2 protection)"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 27,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Deviation from standard conditions: reaction run without N2 protection (no degassing)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Z/E = 37:63 (Z/E values determined by 1H NMR of the crude product) (footnote c)."
+        }
+      ]
+    },
+    {
+      "reaction_id": "3",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "none (reaction run in the dark)"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 0,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Deviation from standard conditions: reaction run in the dark (no light irradiation)."
+        }
+      ]
+    },
+    {
+      "reaction_id": "4",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 24,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "reported as <5%",
+          "value": 5,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Deviation from standard conditions: no 4CzIPN (photocatalyst omitted)."
+        }
+      ]
+    },
+    {
+      "reaction_id": "5",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "(Ir [dF(CF3)ppy]2(dtbpy))PF6",
+          "smiles": "[Ir]"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 4,
+          "unit": "h"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 9,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Deviation from standard conditions: photocatalyst replaced by (Ir [dF(CF3)ppy]2(dtbpy))PF6."
+        }
+      ]
+    },
+    {
+      "reaction_id": "6",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 6,
+          "unit": "d"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 81,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Z/E = 81:19 (parenthetical 86:14 values determined by quantitative analysis of the isolated product) (footnote c)."
+        }
+      ]
+    },
+    {
+      "reaction_id": "7",
+      "reactants": [
+        {
+          "label": "2a",
+          "smiles": "c1ccccc1C=CBr",
+          "quantity": 10.98,
+          "unit": "g",
+          "smiles_llm": "c1ccccc1C=CBr"
+        },
+        {
+          "label": "1i",
+          "smiles": "CC(NC(=O)OC(C)(C)C)C(=O)O",
+          "smiles_llm": "CC(NC(=O)OC(C)(C)C)C(=O)O"
+        }
+      ],
+      "conditions": [
+        {
+          "role": "photocatalyst",
+          "text": "4CzIPN",
+          "smiles": "N#Cc1cc(N(c2ccccc2)c2ccccc2)cc(N(c2ccccc2)c2ccccc2)c1C#N",
+          "quantity": 5,
+          "unit": "mol%"
+        },
+        {
+          "role": "base",
+          "text": "Cs2CO3",
+          "smiles": "[Cs+].[Cs+].[O-]C(=O)[O-]"
+        },
+        {
+          "role": "solvent",
+          "text": "Dimethylformamide (DMF)",
+          "smiles": "CN(C)C=O",
+          "quantity": 1.5,
+          "unit": "mL"
+        },
+        {
+          "role": "degassing",
+          "text": "N2"
+        },
+        {
+          "role": "light",
+          "text": "blue LED"
+        },
+        {
+          "role": "time",
+          "text": "",
+          "value": 90,
+          "unit": "min"
+        },
+        {
+          "role": "temperature",
+          "text": "room temperature"
+        },
+        {
+          "role": "yield",
+          "text": "",
+          "value": 87,
+          "unit": "%"
+        }
+      ],
+      "products": [
+        {
+          "label": "E-3i",
+          "smiles": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C/C(NC(=O)OC(C)(C)C)c1ccccc1"
+        },
+        {
+          "label": "Z-3i",
+          "smiles": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1",
+          "smiles_llm": "CC/C=C\\C(NC(=O)OC(C)(C)C)c1ccccc1"
+        }
+      ],
+      "additional_info": [
+        {
+          "role": "additional_info",
+          "text": "Yield values are isolated yields (footnote b)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Deviation from standard conditions: scale-up to 10.98 g of 2a; flow conditions used (see Supporting Information) (footnote d)."
+        },
+        {
+          "role": "additional_info",
+          "text": "Z/E <1:99 (footnote c)."
+        }
+      ]
+    }
+  ]
+}
