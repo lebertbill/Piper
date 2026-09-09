@@ -984,7 +984,7 @@ class KGEnrichmentAgent:
         """Persist the graph back to the standard location."""
         try:
             from .builder import save_graph
-            out_path = Path(__file__).parent.parent / "kg" / "graph" / "reaction_network.json"
+            out_path = Path(__file__).parent.parent.parent / "kg" / "graph" / "reaction_network.json"
             out_path.parent.mkdir(parents=True, exist_ok=True)
             save_graph(self.G, str(out_path))
         except Exception:
