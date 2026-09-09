@@ -1,8 +1,32 @@
-Label Resolver Diagnostic Log — 2026-06-12 11:29:12
+Label Resolver Diagnostic Log — 2026-09-08 16:59:51
 ================================================================================
 
   [GlobalRegistry] Skipping 'Scheme 1' — not referenced by this table's columns
+  [GlobalRegistry] labels=['1a', '2a', '3aa', '4aa'] → image_000004_7de2c47a6bcf9b73818280380f5ca56ed70d6a8f24817f3a78c6bfa7e2c5de4a.png
   [GlobalRegistry] Skipping 'Table 2' — not referenced by this table's columns
   [GlobalRegistry] Skipping 'Table 3' — not referenced by this table's columns
   [GlobalRegistry] Skipping 'Scheme 2' — not referenced by this table's columns
   [GlobalRegistry] Skipping 'Figure 1' — not referenced by this table's columns
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['1a', '2a', '3aa', '4aa']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/CpCosupIIIsup_Catalyzed_SiteSelective_CH_Activation_of_Unsymmetrical_iOiAcyl_Oximes_Synthesis_of_Multisubstituted_Isoqui/GPT_5_MINI/processed/CpCosupIIIsup_Catalyzed_SiteSelective_CH_Activation_of_Unsymmetrical_iOiAcyl_Oximes_Synthesis_of_Multisubstituted_Isoqui_artifacts/image_000004_7de2c47a6bcf9b73818280380f5ca56ed70d6a8f24817f3a78c6bfa7e2c5de4a.png
+  Exists   : True
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='m-Cl-substituted O-acyloxime'
+  [Tier 0 NameMap] '2a' → pubchem_lookup via name='phenylacetylene'
+  [Tier 0 NameMap] '3aa' → pubchem_lookup via name='6-chloro-1-methyl-3-phenylisoquinoline'
+  [Tier 0 NameMap] '4aa' → opsin_lookup via name='8-chloro-1-methyl-3-phenylisoquinoline'
+  [Tier 0 NameMap] resolved=['1a', '2a', '3aa', '4aa']  remaining=[]
+
+────────────────────────────────────────────────────────────
+  LabelResolver: Table 1
+────────────────────────────────────────────────────────────
+  Labels   : ['4aa', '1a', '3aa']
+  Image    : /Users/lebertsambillgates/PycharmProjects/Piper Multi Agent/extracted_data/CpCosupIIIsup_Catalyzed_SiteSelective_CH_Activation_of_Unsymmetrical_iOiAcyl_Oximes_Synthesis_of_Multisubstituted_Isoqui/GPT_5_MINI/processed/CpCosupIIIsup_Catalyzed_SiteSelective_CH_Activation_of_Unsymmetrical_iOiAcyl_Oximes_Synthesis_of_Multisubstituted_Isoqui_artifacts/image_000004_7de2c47a6bcf9b73818280380f5ca56ed70d6a8f24817f3a78c6bfa7e2c5de4a.png
+  Exists   : True
+  [Tier 0 NameMap] '4aa' → opsin_lookup via name='8-chloro-1-methyl-3-phenylisoquinoline'
+  [Tier 0 NameMap] '1a' → llm_name_to_smiles via name='m-Cl-substituted O-acyloxime'
+  [Tier 0 NameMap] '3aa' → pubchem_lookup via name='6-chloro-1-methyl-3-phenylisoquinoline'
+  [Tier 0 NameMap] resolved=['4aa', '1a', '3aa']  remaining=[]
