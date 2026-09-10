@@ -171,9 +171,12 @@ async def _run_rag_query(
     # A plain combined-pool top-k search almost never surfaces figures — they're a small
     # minority of chunks and rarely share as much literal vocabulary with a query as prose
     # text does, so they lose ranking even when they're the actually-relevant content.
+    # seen_image_paths: set = set()
+    # mm_chunks = retriever.retrieve_multimodal_with_scores(question, top_k=4)
+    # image_paths = _collect_images([d for d, _ in mm_chunks], limit=4, seen=seen_image_paths)
+
     seen_image_paths: set = set()
-    mm_chunks = retriever.retrieve_multimodal_with_scores(question, top_k=4)
-    image_paths = _collect_images([d for d, _ in mm_chunks], limit=4, seen=seen_image_paths)
+    image_paths: list = []
 
     retrieved_docs: list = []
     reasoning = ""
@@ -230,8 +233,49 @@ async def _run_rag_query(
     # refinement round) — this is where multimodal figure chunks are most likely to show up,
     # since the top-4 plain search above rarely surfaces them (images are a small minority
     # of chunks per paper).
-    if retrieved_docs:
-        image_paths += _collect_images(retrieved_docs, limit=6, seen=seen_image_paths)
+    # if retrieved_docs:
+    #     image_paths += _collect_images(retrieved_docs, limit=6, seen=seen_image_paths)
+
+    # return answer, reasoning, image_paths
+
+    # UPDATED: Collect images only from papers explicitly cited in the answer text.
+    # Parse "[Author et al., YYYY]" / "[Author, YYYY]" patterns from the answer.
+    import re as _re
+    _cite_pats = [
+        _re.compile(r'\[([A-Z][A-Za-záéíóúÀ-ɏ\-]+)\s+et\s+al[.,]?\s*(\d{4})\]'),
+        _re.compile(r'\[([A-Z][A-Za-záéíóúÀ-ɏ\-]+)\s+and\s+[A-Z][A-Za-z]+[.,]?\s*(\d{4})\]'),
+        _re.compile(r'\[([A-Z][A-Za-záéíóúÀ-ɏ\-]+)[,\s]+(\d{4})\]'),
+    ]
+    _cited_refs: set[tuple[str, str]] = set()
+    for _pat in _cite_pats:
+        for _m in _pat.finditer(answer):
+            _cited_refs.add((_m.group(1).lower(), _m.group(2)))
+
+    # Filter retrieved_docs to only chunks from cited papers.
+    _cited_docs: list = []
+    if _cited_refs and retrieved_docs:
+        for _doc in retrieved_docs:
+            _doc_year = str(_doc.metadata.get("year", ""))
+            _doc_authors = _doc.metadata.get("authors", "").lower()
+            if any(_auth in _doc_authors and _yr == _doc_year
+                   for _auth, _yr in _cited_refs):
+                _cited_docs.append(_doc)
+    if not _cited_docs:
+        _cited_docs = retrieved_docs  # fallback when no citations parsed
+
+    # Step A: pull image-bearing chunks from cited papers' retrieved chunks.
+    if _cited_docs:
+        image_paths = _collect_images(_cited_docs, limit=4, seen=seen_image_paths)
+
+    # Step B: scoped multimodal search — restricted to cited papers only.
+    cited_papers = {doc.metadata.get("paper") for doc in _cited_docs if doc.metadata.get("paper")}
+    if cited_papers and len(image_paths) < 4:
+        mm_chunks = retriever.retrieve_multimodal_with_scores(
+            question, top_k=8, paper_filter=cited_papers
+        )
+        image_paths += _collect_images(
+            [d for d, _ in mm_chunks], limit=4 - len(image_paths), seen=seen_image_paths
+        )
 
     return answer, reasoning, image_paths
 

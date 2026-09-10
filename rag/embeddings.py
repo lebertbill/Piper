@@ -193,16 +193,21 @@ class EmbeddingRetriever:
         print(f"[ThresholdSearch] {len(results)} chunks with cosine_sim >= {min_similarity}")
         return results
 
-    def retrieve_multimodal_with_scores(self, query: str, top_k: int = 4) -> List[Tuple[Document, float]]:
+    def retrieve_multimodal_with_scores(
+        self, query: str, top_k: int = 4,
+        paper_filter: set | None = None,
+    ) -> List[Tuple[Document, float]]:
         """
-        Search only among indexed image-bearing (multimodal) chunks.
+        Search only among indexed image bearing (multimodal) chunks.
         Figure/table chunks are a small minority of the index and rarely share enough
         literal vocabulary with a query to outrank the much larger pool of prose text
-        chunks in a combined search — so this searches the image-only subset directly
+        chunks in a combined search so this searches the image only subset directly
         instead of requiring them to win a combined ranking.
+        paper_filter: when provided, restrict search to chunks from those paper names only.
         """
         mm_indices = [i for i, m in enumerate(self._meta)
-                      if m.get("item_type") == "multimodal" and m.get("image_path")]
+                      if m.get("item_type") == "multimodal" and m.get("image_path")
+                      and (paper_filter is None or m.get("paper") in paper_filter)]
         if not mm_indices or self._index.ntotal == 0:
             return []
         vec = self._embedder.embed(query)
